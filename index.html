@@ -4,22 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Plateforme Afrofuturiste Corporate - Innovation, Technologie et Héritage.">
-    <title>AfroFuture | Excellence & Innovation</title>
+    <title>GSF Consulting | Excellence & Innovation</title>
     
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <nav class="glass-card" style="margin: 20px; position: sticky; top: 10px; z-index: 1000;">
+    <nav id="navbar" class="glass-card" style="margin: 20px; position: sticky; top: 10px; z-index: 1000;">
         <div class="nav-container" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem;">
-            <div class="logo" style="font-family: 'Syne', sans-serif; font-weight: 800; font-size: 1.5rem; color: #06b6d4;">AFRO_CORP</div>
-            <ul style="display: flex; list-style: none; gap: 2rem; font-family: 'Space Grotesk';">
+            <div class="logo" style="font-family: 'Syne', sans-serif; font-weight: 800; font-size: 1.5rem; color: #06b6d4;">GSF Consulting</div>
+            <ul class="desktop-menu" style="display: flex; list-style: none; gap: 2rem; font-family: 'Space Grotesk';">
                 <li><a href="#home">Accueil</a></li>
                 <li><a href="#vision">Vision</a></li>
                 <li><a href="#solutions">Solutions</a></li>
                 <li><a href="#expert">Expert</a></li>
             </ul>
+            <button id="mobile-menu-btn" style="font-size: 1.5rem; background: transparent; border: none; cursor: pointer; display: none;">☰</button>
+        </div>
+        <div id="mobile-menu" class="hidden" style="display: none; flex-direction: column; background: rgba(0, 0, 0, 0.8); padding: 1rem; position: absolute; top: 100%; left: 0; width: 100%;">
+            <a href="#home" style="color: #fff; padding: 0.5rem; text-decoration: none;">Accueil</a>
+            <a href="#vision" style="color: #fff; padding: 0.5rem; text-decoration: none;">Vision</a>
+            <a href="#solutions" style="color: #fff; padding: 0.5rem; text-decoration: none;">Solutions</a>
+            <a href="#expert" style="color: #fff; padding: 0.5rem; text-decoration: none;">Expert</a>
         </div>
     </nav>
 
@@ -71,7 +78,7 @@
     </section>
 
     <footer style="text-align: center; padding: 50px; font-family: 'Space Grotesk'; opacity: 0.5;">
-        &copy; 2026 AFRO_CORP - Design System v5.0
+        &copy; 2026 GSF Consulting - Design System v5.0
     </footer>
 
     <script src="js/main.js"></script>
