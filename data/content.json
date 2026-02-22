@@ -1,12 +1,12 @@
 {
   "homepage": {
     "hero_title": "Transformer le Droit par l'Intelligence Artificielle.",
-    "hero_subtitle": "De l'expertise juridique OHADA aux solutions de recouvrement augmentées par l'IA, GSF Consulting International réinvente le conseil pour les acteurs de la Francophonie.",
-    "vision_text": "Depuis plus de 20 ans, GSF Conseil a accompagné les grandes institutions de l'espace francophone. Aujourd'hui, sous l'impulsion de Gilles Feliho, nous devenons **GSF Consulting International**."
+    "hero_subtitle": "De l'expertise juridique OHADA aux solutions de recouvrement augmentées par l'IA, GSF Consulting International réinvente le conseil pour l'Afrique.",
+    "vision_text": "Depuis plus de 20 ans, GSF Conseil a accompagné les grandes institutions. Aujourd'hui, nous fusionnons expertise juridique et IA pour sécuriser vos investissements."
   },
   "expert_section": {
-    "bio": "Expert international en droit des affaires...",
-    "book_fnac": "https://www.fnac.com/...",
-    "book_amazon": "https://a.co/d/..."
+    "bio": "Expert international en droit des affaires, pionnier de l'intersection entre le droit africain et l'intelligence artificielle. Auteur de *Homo Algorithmicus*.",
+    "book_fnac": "https://www.fnac.com/livre-numerique/a21477208/Gilles-Feliho-Homo-Algorithmicus",
+    "book_amazon": "https://www.amazon.fr/Gilles-Sixte-FELIHO-ebook/dp/B0DV937XB2"
   }
 }
