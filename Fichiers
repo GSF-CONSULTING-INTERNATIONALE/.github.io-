@@ -1,0 +1,9 @@
+/
+├── index.html          (Page d'accueil)
+├── admin/
+│   ├── index.html      (Interface d'administration)
+│   └── config.yml      (Configuration du CMS)
+├── css/
+│   └── style.css       (Styles personnalisés)
+└── js/
+    └── main.js         (Scripts : menu mobile, animations)
