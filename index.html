@@ -18,15 +18,16 @@
                 <li><a href="#home">Accueil</a></li>
                 <li><a href="#vision">Vision</a></li>
                 <li><a href="#solutions">Solutions</a></li>
+                <li><a href="#expert">Expert</a></li>
             </ul>
         </div>
     </nav>
 
-    <header id="home" style="padding: 100px 5% text-align: center;">
-        <h1 style="font-family: 'Syne', sans-serif; font-size: 4rem; text-transform: uppercase; letter-spacing: -2px;">
+    <header id="home" style="padding: 100px 5%; text-align: center;">
+        <h1 id="hero-title" style="font-family: 'Syne', sans-serif; font-size: 4rem; text-transform: uppercase; letter-spacing: -2px;">
             L'Innovation au <span style="color: #06b6d4;">Cœur de l'Héritage</span>
         </h1>
-        <p style="font-family: 'Space Grotesk'; max-width: 600px; margin: 20px auto; opacity: 0.8;">
+        <p id="hero-subtitle" style="font-family: 'Space Grotesk'; max-width: 600px; margin: 20px auto; opacity: 0.8;">
             Fusionner les racines ancestrales avec les technologies de pointe pour bâtir l'infrastructure de demain.
         </p>
         <button class="glass-card" style="padding: 15px 40px; cursor: pointer; border: 1px solid #06b6d4; color: #fff; background: transparent;">
@@ -34,7 +35,14 @@
         </button>
     </header>
 
-    <main style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; padding: 50px 5%;">
+    <section id="vision" style="padding: 50px 5%; text-align: center;">
+        <h2 style="font-family: 'Syne', sans-serif; font-size: 2.5rem; margin-bottom: 20px;">Notre Vision</h2>
+        <p id="vision-text" style="font-family: 'Space Grotesk'; max-width: 800px; margin: 0 auto;">
+            Placeholder pour le texte de la vision. Ce texte sera chargé depuis le JSON.
+        </p>
+    </section>
+
+    <main id="solutions" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; padding: 50px 5%;">
         
         <section class="glass-card" style="padding: 40px; border-radius: 20px;">
             <h2 style="font-family: 'Syne'; margin-bottom: 15px;">01. Technologie Bio-Sync</h2>
@@ -52,6 +60,15 @@
         </section>
 
     </main>
+
+    <section id="expert" style="padding: 50px 5%; text-align: center;">
+        <h2 style="font-family: 'Syne', sans-serif; font-size: 2.5rem; margin-bottom: 20px;">Notre Expert</h2>
+        <p id="expert-bio" style="font-family: 'Space Grotesk'; max-width: 800px; margin: 0 auto 20px;">
+            Placeholder pour la bio de l'expert. Ce texte sera chargé depuis le JSON.
+        </p>
+        <a id="book-fnac-link" href="#" style="margin-right: 20px; color: #06b6d4;">Acheter sur FNAC</a>
+        <a id="book-amazon-link" href="#" style="color: #06b6d4;">Acheter sur Amazon</a>
+    </section>
 
     <footer style="text-align: center; padding: 50px; font-family: 'Space Grotesk'; opacity: 0.5;">
         &copy; 2026 AFRO_CORP - Design System v5.0
