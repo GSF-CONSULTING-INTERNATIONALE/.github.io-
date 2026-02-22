@@ -1,2 +1,209 @@
 # .github.io-
 Site internet de GSF CONSULTING INTERNATIONALE
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GSF Consulting International - Innovation Juridique, IA & Conseil pour l'Afrique.">
+    <title>GSF Consulting International | Innovation Juridique</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- CSS Spécifique pour la démo (à mettre dans style.css idéalement) -->
+    <style>
+        body { background-color: #050505; color: white; font-family: 'Space Grotesk', sans-serif; margin: 0; }
+        a { color: #06b6d4; text-decoration: none; transition: 0.3s; }
+        a:hover { color: white; }
+        .glass-card { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        
+        /* Gestion du Menu Mobile */
+        #mobile-menu {
+            display: none; /* Caché par défaut */
+            flex-direction: column;
+            background: rgba(0, 0, 0, 0.95);
+            padding: 1rem;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            z-index: 999;
+        }
+        /* Classe ajoutée par le JS pour afficher le menu */
+        #mobile-menu.active {
+            display: flex;
+        }
+
+        /* Responsive : Afficher le bouton burger sur mobile */
+        @media (max-width: 768px) {
+            .desktop-menu { display: none !important; }
+            #mobile-menu-btn { display: block !important; }
+        }
+        /* Cacher le burger sur desktop */
+        @media (min-width: 769px) {
+            #mobile-menu-btn { display: none !important; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav id="navbar" class="glass-card" style="margin: 20px; position: sticky; top: 10px; z-index: 1000;">
+        <div class="nav-container" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem;">
+            <div class="logo" style="font-family: 'Syne', sans-serif; font-weight: 800; font-size: 1.5rem; color: #06b6d4;">GSF CONSULTING</div>
+            
+            <!-- Menu Desktop -->
+            <ul class="desktop-menu" style="display: flex; list-style: none; gap: 2rem; font-family: 'Space Grotesk';">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#vision">Vision</a></li>
+                <li><a href="#solutions">Solutions</a></li>
+                <li><a href="#expert">L'Expert</a></li>
+                <li><a href="#contact" style="border: 1px solid #06b6d4; padding: 5px 15px; border-radius: 4px;">Contact</a></li>
+            </ul>
+            
+            <!-- Bouton Burger Mobile -->
+            <button id="mobile-menu-btn" style="font-size: 1.5rem; background: transparent; border: none; cursor: pointer; color: white;">☰</button>
+        </div>
+        
+        <!-- Menu Mobile (Caché par défaut) -->
+        <div id="mobile-menu">
+            <a href="#home" style="color: #fff; padding: 0.5rem;">Accueil</a>
+            <a href="#vision" style="color: #fff; padding: 0.5rem;">Vision</a>
+            <a href="#solutions" style="color: #fff; padding: 0.5rem;">Solutions</a>
+            <a href="#expert" style="color: #fff; padding: 0.5rem;">L'Expert</a>
+            <a href="#contact" style="color: #06b6d4; padding: 0.5rem;">Contact</a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header id="home" style="padding: 100px 5%; text-align: center;">
+        <h1 id="hero-title" style="font-family: 'Syne', sans-serif; font-size: 4rem; text-transform: uppercase; letter-spacing: -2px; line-height: 1.1;">
+            Transformer le Droit par <span style="color: #06b6d4;">l'Intelligence Artificielle</span>.
+        </h1>
+        <p id="hero-subtitle" style="font-family: 'Space Grotesk'; max-width: 600px; margin: 20px auto; opacity: 0.8;">
+            De l'expertise juridique OHADA aux solutions de recouvrement augmentées par l'IA, GSF Consulting International réinvente le conseil pour l'Afrique.
+        </p>
+        <button class="glass-card" style="padding: 15px 40px; cursor: pointer; border: 1px solid #06b6d4; color: #fff; background: transparent;">
+            Demander un Devis
+        </button>
+    </header>
+
+    <!-- VISION SECTION -->
+    <section id="vision" style="padding: 50px 5%; text-align: center;">
+        <h2 style="font-family: 'Syne', sans-serif; font-size: 2.5rem; margin-bottom: 20px;">Notre Vision</h2>
+        <p id="vision-text" style="font-family: 'Space Grotesk'; max-width: 800px; margin: 0 auto; line-height: 1.6;">
+            Depuis plus de 20 ans, GSF Conseil a accompagné les grandes institutions. Aujourd'hui, nous fusionnons expertise juridique et IA pour sécuriser vos investissements.
+        </p>
+    </section>
+
+    <!-- SOLUTIONS SECTION -->
+    <main id="solutions" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; padding: 50px 5%;">
+        
+        <!-- Carte 1 : IA Recouvrement -->
+        <section class="glass-card" style="padding: 40px; border-radius: 20px; border: 1px solid #06b6d4;">
+            <h2 style="font-family: 'Syne'; margin-bottom: 15px;">⭐ Agent IA de Recouvrement</h2>
+            <p style="font-family: 'Space Grotesk';">Automatisez vos créances impayées. Analyse de risque, scoring prédictif et relances intelligentes conformes au droit OHADA.</p>
+        </section>
+
+        <!-- Carte 2 : Conseil -->
+        <section class="glass-card" style="padding: 40px; border-radius: 20px;">
+            <h2 style="font-family: 'Syne'; margin-bottom: 15px;">⚖️ Conseil Juridique & Financier</h2>
+            <p style="font-family: 'Space Grotesk';">Expertise reconnue auprès de la CEDEAO, l'AFD et la Francophonie. Négociation internationale et gestion des risques.</p>
+        </section>
+
+        <!-- Carte 3 : RegTech -->
+        <section class="glass-card" style="padding: 40px; border-radius: 20px;">
+            <h2 style="font-family: 'Syne'; margin-bottom: 15px;">🛡️ Conformité RegTech</h2>
+            <p style="font-family: 'Space Grotesk';">Plateforme SaaS pour Fintechs et Banques : cartographie des obligations (BCEAO, BEAC) et veille réglementaire automatisée.</p>
+        </section>
+
+    </main>
+
+    <!-- EXPERT SECTION -->
+    <section id="expert" style="padding: 50px 5%; text-align: center;">
+        <h2 style="font-family: 'Syne', sans-serif; font-size: 2.5rem; margin-bottom: 20px;">L'Expert : Gilles Feliho</h2>
+        <p id="expert-bio" style="font-family: 'Space Grotesk'; max-width: 800px; margin: 0 auto 20px; line-height: 1.6;">
+            Expert international en droit des affaires, pionnier de l'intersection entre le droit africain et l'intelligence artificielle.
+        </p>
+        <div style="margin-top: 20px;">
+            <a id="book-fnac-link" href="https://www.fnac.com/livre-numerique/a21477208/Gilles-Feliho-Homo-Algorithmicus" target="_blank" style="margin-right: 15px; color: #06b6d4; border: 1px solid #06b6d4; padding: 10px 20px; border-radius: 5px;">📖 Fnac</a>
+            <a id="book-amazon-link" href="https://a.co/d/0f7ot1TA" target="_blank" style="color: #06b6d4; border: 1px solid #06b6d4; padding: 10px 20px; border-radius: 5px;">📚 Amazon</a>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" style="padding: 50px 5%; text-align: center; background: #0a0a0a;">
+        <h2 style="font-family: 'Syne', sans-serif; font-size: 2.5rem; margin-bottom: 20px;">Contact</h2>
+        <p style="opacity: 0.7; margin-bottom: 20px;">Prêt à transformer vos défis juridiques ?</p>
+        <a href="mailto:contact@gsf-consulting.com" style="padding: 15px 40px; border: 1px solid #fff; color: #fff;">Envoyer un Email</a>
+    </section>
+
+    <footer style="text-align: center; padding: 50px; font-family: 'Space Grotesk'; opacity: 0.5; border-top: 1px solid #222;">
+        &copy; 2024 GSF Consulting International
+    </footer>
+
+    <!-- SCRIPT FINAL -->
+    <script>
+        // 1. MENU MOBILE
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if (mobileMenuBtn) {
+            mobileMenuBtn.addEventListener('click', () => {
+                // On ajoute/enlève la classe 'active' définie dans le <style>
+                mobileMenu.classList.toggle('active');
+            });
+        }
+
+        // Fermer le menu au clic sur un lien
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+            });
+        });
+
+        // 2. NAVBAR SCROLL (Effet au défilement)
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.style.backgroundColor = "rgba(5, 5, 5, 0.95)";
+                navbar.style.borderBottom = "1px solid #06b6d4";
+            } else {
+                navbar.style.backgroundColor = "rgba(255, 255, 255, 0.05)";
+                navbar.style.borderBottom = "none";
+            }
+        });
+
+        // 3. CHARGEMENT DU JSON
+        fetch('data/content.json')
+            .then(response => {
+                if (!response.ok) throw new Error("JSON non trouvé");
+                return response.json();
+            })
+            .then(data => {
+                console.log("✅ Contenu dynamique chargé :", data);
+                
+                // Mise à jour Hero
+                if (data.homepage) {
+                    if (document.getElementById('hero-title')) 
+                        document.getElementById('hero-title').innerHTML = data.homepage.hero_title;
+                    if (document.getElementById('hero-subtitle')) 
+                        document.getElementById('hero-subtitle').textContent = data.homepage.hero_subtitle;
+                    if (document.getElementById('vision-text')) 
+                        document.getElementById('vision-text').innerHTML = data.homepage.vision_text;
+                }
+                
+                // Mise à jour Expert
+                if (data.expert_section) {
+                    if (document.getElementById('expert-bio')) 
+                        document.getElementById('expert-bio').innerHTML = data.expert_section.bio;
+                    if (document.getElementById('book-fnac-link')) 
+                        document.getElementById('book-fnac-link').href = data.expert_section.book_fnac;
+                    if (document.getElementById('book-amazon-link')) 
+                        document.getElementById('book-amazon-link').href = data.expert_section.book_amazon;
+                }
+            })
+            .catch(error => console.warn("ℹ️ Mode par défaut (JSON absent).", error));
+    </script>
+</body>
+</html>
