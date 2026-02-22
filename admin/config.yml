@@ -1,0 +1,25 @@
+backend:
+  name: git-gateway
+  branch: main # Branche de votre repo
+
+media_folder: "images/uploads" # Dossier où les images seront stockées
+public_folder: "/images/uploads"
+
+collections:
+  - name: "site"
+    label: "Contenu du Site"
+    files:
+      - name: "homepage"
+        label: "Page d'Accueil"
+        file: "index.html"
+        fields:
+          - { label: "Titre Hero", name: "hero_title", widget: "string" }
+          - { label: "Sous-titre Hero", name: "hero_subtitle", widget: "text" }
+          - { label: "Section Vision", name: "vision_text", widget: "markdown" }
+          - name: "expert_section"
+            label: "Section Expert"
+            widget: "object"
+            fields:
+              - { label: "Biographie", name: "bio", widget: "markdown" }
+              - { label: "Lien Livre Fnac", name: "book_fnac", widget: "string" }
+              - { label: "Lien Livre Amazon", name: "book_amazon", widget: "string" }
