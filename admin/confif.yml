@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    
+    <!-- Titre aligné avec la marque -->
+    <title>Administration | GSF Consulting International</title>
+    
+    <!-- 1. Widget d'Authentification (Requis pour GitHub Pages + Netlify Identity) -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    
+    <!-- 2. Script Principal du CMS -->
+    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+    
+    <!-- 3. Configuration de la langue en Français -->
+    <script>
+        DecapCmsApp.init({ config: { locale: 'fr' } });
+    </script>
+
+    <!-- 4. Styles Personnalisés pour l'Admin -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* --- Thème de l'Écran de Chargement --- */
+        body {
+            background-color: #050505; /* Noir GSF */
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Space Grotesk', sans-serif;
+            overflow: hidden;
+        }
+
+        /* Animation du Loader */
+        .loader {
+            border: 4px solid rgba(6, 182, 212, 0.2); /* Cyan transparent */
+            border-top: 4px solid #06b6d4; /* Cyan GSF */
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin-bottom: 20px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* --- Personnalisation de l'Interface du CMS (Une fois chargé) --- */
+        /* On cible l'iframe de prévisualisation pour appliquer le style GSF */
+        .nc-previewPane-frame {
+            font-family: 'Space Grotesk', sans-serif !important;
+            background-color: #0a0f1e !important; /* Night GSF */
+            color: white !important;
+        }
+        
+        /* Couleurs de l'interface admin */
+        :root {
+            --color-primary: #06b6d4; /* Cyan */
+            --color-secondary: #d4af37; /* Gold */
+        }
+    </style>
+</head>
+<body>
+    <!-- Loader animé personnalisé -->
+    <div class="loader"></div>
+    <p>Initialisation du Back-Office GSF...</p>
+    
+    <!-- Script pour gérer la redirection après connexion -->
+    <script>
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", user => {
+                if (!user) {
+                    window.netlifyIdentity.on("login", () => {
+                        document.location.href = "/admin/";
+                    });
+                }
+            });
+        }
+    </script>
+</body>
+</html>
