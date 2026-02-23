@@ -8,31 +8,37 @@ public_folder: "/images/uploads"
 collections:
   - name: "site_content"
     label: "Contenu du Site"
-    file: "data/content.json"
-    format: json
+    delete: false # Empêche la suppression du fichier de contenu principal
+    files:
+      - name: "homepage_data"
+        label: "Données du Site"
+        file: "data/content.json"
+        format: json
+        fields:
+          - label: "Page d'Accueil (Hero)"
+            name: "homepage"
+            widget: "object"
+            fields:
+              - { label: "Titre Principal", name: "hero_title", widget: "string" }
+              - { label: "Sous-titre", name: "hero_subtitle", widget: "text" }
+              - { label: "Texte Vision", name: "vision_text", widget: "markdown" }
+          
+          - label: "Section Expert"
+            name: "expert_section"
+            widget: "object"
+            fields:
+              - { label: "Biographie", name: "bio", widget: "markdown" }
+              - { label: "Lien Livre Fnac", name: "book_fnac", widget: "string" }
+              - { label: "Lien Livre Amazon", name: "book_amazon", widget: "string" }
+
+  - name: "blog"
+    label: "Blog"
+    folder: "data/blog" # Ou un autre dossier dédié à vos articles
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - label: "Page d'Accueil (Hero)"
-        name: "homepage"
-        widget: "object"
-        fields:
-          - { label: "Titre Principal", name: "hero_title", widget: "string" }
-          - { label: "Sous-titre", name: "hero_subtitle", widget: "text" }
-          - { label: "Texte Vision", name: "vision_text", widget: "markdown" }
-      
-      - label: "Section Expert"
-        name: "expert_section"
-              - label: "Articles du Blog"
-        name: "blog_posts"
-        widget: "list"
-        summary: "{{fields.title}}"
-        fields:
-          - { label: "Titre de l'article", name: "title", widget: "string" }
-          - { label: "Date", name: "date", widget: "datetime" }
-          - { label: "Image", name: "image", widget: "image", required: false }
-          - { label: "Résumé", name: "excerpt", widget: "text" }
-          - { label: "Contenu", name: "body", widget: "markdown" }
-        widget: "object"
-        fields:
-          - { label: "Biographie", name: "bio", widget: "markdown" }
-          - { label: "Lien Livre Fnac", name: "book_fnac", widget: "string" }
-          - { label: "Lien Livre Amazon", name: "book_amazon", widget: "string" }
+      - { label: "Titre de l'article", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Image", name: "image", widget: "image", required: false }
+      - { label: "Résumé", name: "excerpt", widget: "text" }
+      - { label: "Contenu", name: "body", widget: "markdown" }
