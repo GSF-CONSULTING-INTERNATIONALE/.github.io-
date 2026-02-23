@@ -9,4 +9,12 @@
     "book_fnac": "https://www.fnac.com/livre-numerique/a21477208/Gilles-Feliho-Homo-Algorithmicus",
     "book_amazon": "https://www.amazon.fr/Gilles-Sixte-FELIHO-ebook/dp/B0DV937XB2"
   }
-}
+  "blog_posts": [
+    {
+      "title": "L'IA va-t-elle remplacer les avocats en Afrique ?",
+      "date": "2024-05-21T10:00:00.000Z",
+      "image": "images/uploads/default.jpg",
+      "excerpt": "Analyse de l'impact de l'intelligence artificielle sur les métiers du droit dans l'espace OHADA.",
+      "body": "L'intelligence artificielle transforme profondément le secteur juridique. En Afrique, les enjeux sont spécifiques..."
+    }
+  ]}
