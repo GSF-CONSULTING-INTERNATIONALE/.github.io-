@@ -12,19 +12,5 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - { label: "Titre de l'article", name: "title", widget: "string" }
-      - { label: "Date de publication", name: "date", widget: "datetime" }
-      - { label: "Image de couverture", name: "image", widget: "image", required: false }
-      - { label: "Résumé court", name: "excerpt", widget: "text" }
-      - { label: "Contenu de l'article", name: "body", widget: "markdown" }
-
-  - name: "site_content"
-    label: "Configuration Accueil"
-    files:
-      - name: "homepage_data"
-        label: "Textes du site"
-        file: "data/content.json"
-        format: json
-        fields:
-          - { label: "Titre Hero", name: "hero_title", widget: "string" }
-          - { label: "Sous-titre", name: "hero_subtitle", widget: "text" }
+      - { label: "Titre", name: "title", widget: "string" }
+      - { label: "Corps", name: "body", widget: "markdown" }
