@@ -21,6 +21,16 @@ collections:
       
       - label: "Section Expert"
         name: "expert_section"
+              - label: "Articles du Blog"
+        name: "blog_posts"
+        widget: "list"
+        summary: "{{fields.title}}"
+        fields:
+          - { label: "Titre de l'article", name: "title", widget: "string" }
+          - { label: "Date", name: "date", widget: "datetime" }
+          - { label: "Image", name: "image", widget: "image", required: false }
+          - { label: "Résumé", name: "excerpt", widget: "text" }
+          - { label: "Contenu", name: "body", widget: "markdown" }
         widget: "object"
         fields:
           - { label: "Biographie", name: "bio", widget: "markdown" }
