@@ -70,15 +70,20 @@
     <div class="loader"></div>
     <p>Initialisation du Back-Office GSF...</p>
 
-    <!-- Script pour gérer la redirection après connexion -->
+    <!-- Script pour gérer la redirection et l'ouverture automatique de la boîte de connexion -->
     <script>
         if (window.netlifyIdentity) {
+            // Initialise le widget
             window.netlifyIdentity.on("init", user => {
                 if (!user) {
-                    window.netlifyIdentity.on("login", () => {
-                        document.location.href = "/admin/";
-                    });
+                    // Si pas de session, on force l'ouverture de la boîte de connexion
+                    window.netlifyIdentity.open();
                 }
+            });
+
+            // Redirige après la connexion réussie
+            window.netlifyIdentity.on("login", () => {
+                document.location.href = "/admin/";
             });
         }
     </script>
