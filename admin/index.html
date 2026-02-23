@@ -4,21 +4,21 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex" />
-    
+
     <!-- Titre aligné avec la marque -->
     <title>Administration | GSF Consulting International</title>
-    
+
     <!-- 1. Widget d'Authentification (Requis pour GitHub Pages + Netlify Identity) -->
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    
+
     <!-- 2. Script Principal du CMS -->
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
-    
-    <!-- 4. Styles Personnalisés pour l'Admin -->
+
+    <!-- 3. Polices et styles personnalisés -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
-    
+
     <style>
         /* --- Thème de l'Écran de Chargement --- */
         body {
@@ -57,7 +57,7 @@
             background-color: #0a0f1e !important; /* Night GSF */
             color: white !important;
         }
-        
+
         /* Couleurs de l'interface admin */
         :root {
             --color-primary: #06b6d4; /* Cyan */
@@ -69,7 +69,7 @@
     <!-- Loader animé personnalisé -->
     <div class="loader"></div>
     <p>Initialisation du Back-Office GSF...</p>
-    
+
     <!-- Script pour gérer la redirection après connexion -->
     <script>
         if (window.netlifyIdentity) {
