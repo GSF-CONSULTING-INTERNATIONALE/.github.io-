@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: main # Vérifiez bien que votre branche s'appelle main
+  branch: main
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
@@ -8,8 +8,8 @@ public_folder: "/images/uploads"
 collections:
   - name: "blog"
     label: "Articles de Blog"
-    folder: "data/blog" # C'est ici que vos articles seront créés
-    create: true # Autorise la création de nouveaux articles
+    folder: "data/blog"
+    create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { label: "Titre de l'article", name: "title", widget: "string" }
