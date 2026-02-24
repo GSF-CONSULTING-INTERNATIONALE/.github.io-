@@ -8,26 +8,11 @@
   "piliers_section": {
     "title": "Nos 5 Piliers d'Excellence",
     "piliers": [
-      {
-        "title": "Innovation Juridique",
-        "description": "L'IA au service de la résolution de litiges et de la conformité. LegalTech et Intelligence Artificielle Juridique."
-      },
-      {
-        "title": "Expertise Afrique-Francophonie",
-        "description": "Maîtrise absolue des espaces OHADA, UEMOA, CEDEAO et CIMA. Conseil juridique OHADA."
-      },
-      {
-        "title": "Maîtrise Technologique",
-        "description": "Des solutions SaaS et des algorithmes propriétaires."
-      },
-      {
-        "title": "Négociation Internationale",
-        "description": "Une approche diplomatique et stratégique des conflits."
-      },
-      {
-        "title": "Gestion du Risque",
-        "description": "Protection des investissements et sécurisation des projets. Due Diligence et Sécurisation juridique."
-      }
+      { "title": "Innovation Juridique", "description": "L'IA au service de la résolution de litiges et de la conformité. LegalTech et Intelligence Artificielle Juridique." },
+      { "title": "Expertise Afrique-Francophonie", "description": "Maîtrise absolue des espaces OHADA, UEMOA, CEDEAO et CIMA. Conseil juridique OHADA." },
+      { "title": "Maîtrise Technologique", "description": "Des solutions SaaS et des algorithmes propriétaires." },
+      { "title": "Négociation Internationale", "description": "Une approche diplomatique et stratégique des conflits." },
+      { "title": "Gestion du Risque", "description": "Protection des investissements et sécurisation des projets. Due Diligence et Sécurisation juridique." }
     ]
   },
   "expert_section": {
@@ -35,12 +20,13 @@
     "book_fnac": "https://www.fnac.com/livre-numerique/a21477208/Gilles-Feliho-Homo-Algorithmicus",
     "book_amazon": "https://www.amazon.fr/dp/B0FBKFJRZC"
   },
-      "blog_posts": [
+  "blog_posts": [
     {
       "title": "L'Intelligence Artificielle va-t-elle remplacer les avocats en Afrique ?",
       "date": "2026-02-23T10:00:00.000Z",
-      "image": "images/uploads/default.png",
+      "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1200",
       "excerpt": "Analyse critique de l'impact de l'IA sur les métiers du droit dans l'espace OHADA et l'UEMOA.",
-      "body": "La question 'L'IA va-t-elle remplacer les avocats en Afrique ?' n'est plus une anticipation futuriste. Elle anime aujourd'hui les débats des bâtonniers à Abidjan, des magistrats à Nairobi et des juristes à Dakar. Nous assistons non pas à une substitution, mais à une réinvention profonde de la profession juridique africaine.\n\nL'espace OHADA présente une caractéristique unique : l'unification des Actes uniformes crée un corpus normatif structuré, particulièrement propice au traitement par IA. L'avocat de demain sera un 'Avocat Augmenté', alliant expertise traditionnelle et maîtrise technologique."
+      "body": "### Introduction\nLa question n'est plus une anticipation futuriste. Elle anime aujourd'hui les débats des bâtonniers d'Abidjan à Dakar. Nous assistons à une réinvention profonde de la profession.\n\n### I. L'IA déjà opérationnelle\nEn 2025, dans les hubs comme le Nigeria ou l'Afrique du Sud, des outils comme LawPavilion réduisent le temps de révision documentaire de 70%. Au Kenya, LegalBot offre déjà des conseils via chatbot.\n\n### II. Positions des Barreaux\n- **Kenya** : La Cour suprême appelle à une vigilance éthique après des citations fictives.\n- **Côte d'Ivoire** : Le Bâtonnier Florence Loan-Messan souligne que l'IA optimise déjà les coûts en cabinet.\n- **Sénégal** : Maître Léon Sarr voit l'IA comme une nécessité pour une justice équitable.\n\n### III. L'Avocat Augmenté\nL'IA remplace les tâches administratives (73% du temps des avocats), mais pas le jugement éthique ni la relation client. L'avocat qui utilise l'IA remplacera celui qui la refuse.\n\n### IV. Spécificités OHADA\nLe droit OHADA, par son unification, est un terrain idéal pour l'IA. GSF Consulting développe des solutions pour accélérer le recouvrement de créances via ces technologies.\n\n### Conclusion\nL'IA ne remplacera pas l'avocat, elle le transformera en Homo Algorithmicus."
     }
   ]
+}
