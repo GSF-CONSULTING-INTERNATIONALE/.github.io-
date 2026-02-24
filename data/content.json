@@ -1,13 +1,39 @@
 {
   "homepage": {
     "hero_title": "Transformer le Droit par l'Intelligence Artificielle.",
-    "hero_subtitle": "De l'expertise juridique OHADA et anti Blanchiment aux solutions de recouvrement augmentées par l'IA, GSF Consulting International réinvente le conseil pour l'Afrique.",
-    "vision_text": "Depuis plus de 20 ans, GSF Conseil a accompagné les grandes institutions. Aujourd'hui, nous fusionnons expertise juridique et IA pour sécuriser vos investissements."
+    "hero_subtitle": "De l'expertise juridique OHADA et anti blanchiment de capitaux, aux solutions de recouvrement augmentées par l'IA, GSF Consulting International réinvente le conseil pour l'Afrique.",
+    "vision_subtitle": "Une transition vers le conseil 4.0",
+    "vision_text": "Depuis plus de 20 ans, GSF Conseil a accompagné les grandes institutions de l'espace francophone. Aujourd'hui, sous l'impulsion de Gilles Feliho, nous devenons GSF Consulting International.\n\nNotre mission ? Allier la profondeur de l'expertise juridique traditionnelle à la puissance de l'intelligence artificielle. Nous aidons les entreprises, États et investisseurs à naviguer dans la complexité du droit des affaires africain, tout en optimisant leurs processus critiques comme le recouvrement de créances et la gestion des risques."
+  },
+  "piliers_section": {
+    "title": "Nos 5 Piliers d'Excellence",
+    "piliers": [
+      {
+        "title": "Innovation Juridique",
+        "description": "L'IA au service de la résolution de litiges et de la conformité. LegalTech et Intelligence Artificielle Juridique."
+      },
+      {
+        "title": "Expertise Afrique-Francophonie",
+        "description": "Maîtrise absolue des espaces OHADA, UEMOA, CEDEAO et CIMA. Conseil juridique OHADA."
+      },
+      {
+        "title": "Maîtrise Technologique",
+        "description": "Des solutions SaaS et des algorithmes propriétaires."
+      },
+      {
+        "title": "Négociation Internationale",
+        "description": "Une approche diplomatique et stratégique des conflits."
+      },
+      {
+        "title": "Gestion du Risque",
+        "description": "Protection des investissements et sécurisation des projets. Due Diligence et Sécurisation juridique."
+      }
+    ]
   },
   "expert_section": {
-    "bio": "Expert international en droit des affaires, pionnier de l'intersection entre le droit africain et l'intelligence artificielle. Auteur de *Homo Algorithmicus*.",
+    "bio": "Expert international en droit des affaires et blanchiment de capitaux, pionnier de l'intersection entre le droit africain et l'intelligence artificielle. Auteur de *Homo Algorithmicus* et *Blanchiment en liberté*.",
     "book_fnac": "https://www.fnac.com/livre-numerique/a21477208/Gilles-Feliho-Homo-Algorithmicus",
-    "book_amazon": "https://www.amazon.fr/Gilles-Sixte-FELIHO-ebook/dp/B0DV937XB2"
+    "book_amazon": "https://www.amazon.fr/dp/B0FBKFJRZC"
   },
   "blog_posts": [
     {
