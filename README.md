@@ -1,4 +1,4 @@
-![Aperçu du site GSF Consulting](assets/screenshot.png
+![Aperçu du site GSF Consulting](assets/screenshot.png)
 
 # GSF Consulting Internationale
 
