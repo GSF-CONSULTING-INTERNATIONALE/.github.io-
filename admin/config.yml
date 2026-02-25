@@ -6,11 +6,19 @@ media_folder: "images/uploads"
 public_folder: "/images/uploads"
 
 collections:
-  - name: "blog"
-    label: "Articles de Blog"
-    folder: "blog"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    fields:
-      - { label: "Titre", name: "title", widget: "string" }
-      - { label: "Corps", name: "body", widget: "markdown" }
+  - name: "content"
+    label: "Contenu du Site"
+    files:
+      - label: "Données Globales et Blog"
+        name: "data"
+        file: "data/content.json"
+        fields:
+          - label: "Articles de Blog"
+            name: "blog_posts"
+            widget: "list"
+            fields:
+              - { label: "Titre", name: "title", widget: "string" }
+              - { label: "Date", name: "date", widget: "datetime" }
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Extrait", name: "excerpt", widget: "text" }
+              - { label: "Corps de l'article", name: "body", widget: "markdown" }
