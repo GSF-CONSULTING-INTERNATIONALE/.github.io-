@@ -1,3 +1,5 @@
+![Aperçu du site GSF Consulting](assets/screenshot.png)
+
 GSF Consulting Internationale
 ￼ ￼
 Bienvenue sur le dépôt GitHub du site web de GSF Consulting Internationale. Ce site est hébergé via GitHub Pages et présente les services de conseil juridique, financier et en intelligence artificielle pour l’Afrique, avec un focus sur le droit OHADA, la conformité anti-blanchiment et les solutions RegTech.
