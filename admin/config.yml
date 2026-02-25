@@ -19,6 +19,6 @@ collections:
             fields:
               - { label: "Titre", name: "title", widget: "string" }
               - { label: "Date", name: "date", widget: "datetime" }
-              - { label: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1200" }
+              - { label: "label: "Image", name: "image", widget: "image" }
               - { label: "Extrait", name: "excerpt", widget: "text" }
               - { label: "Corps de l'article", name: "body", widget: "markdown" }
