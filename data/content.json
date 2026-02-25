@@ -38,10 +38,17 @@
   "blog_posts": [
     {
       "title": "L'IA va-t-elle remplacer les avocats en Afrique ?",
-      "date": "2024-05-21T10:00:00.000Z",
-      "image": "images/uploads/default.jpg",
-      "excerpt": "Analyse de l'impact de l'intelligence artificielle sur les métiers du droit dans l'espace OHADA.",
-      "body": "L'intelligence artificielle transforme profondément le secteur juridique. En Afrique, les enjeux sont spécifiques..."
+      "date": "2026-02-23T10:00:00.000Z",
+      "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1200",
+      "excerpt": "Analyse critique de l'impact de l'intelligence artificielle sur les métiers du droit dans l'espace OHADA.",
+      "body": "### Introduction\nL'intelligence artificielle transforme profondément le secteur juridique. En Afrique, les enjeux sont spécifiques : accès au droit, automatisation des procédures OHADA et aide à la décision pour les magistrats."
+    },
+    {
+      "title": "Révélation : 950 milliards FCFA échappent aux radars entre le Bénin et le Nigeria",
+      "date": "2026-02-25T10:00:00.000Z",
+      "image": "https://images.unsplash.com/photo-1526303328184-67541821e332?auto=format&fit=crop&q=80&w=1200",
+      "excerpt": "Entre 700 et 950 milliards de francs CFA circulent annuellement via des circuits de change parallèles, alimentant l'insécurité régionale.",
+      "body": "### Un trou noir financier\n\nMes investigations révèlent qu'environ **950 milliards de FCFA** circulent chaque année hors radars entre le Bénin et le Nigeria. Comme le souligne cette [enquête de Banouto](https://banouto.bj/investigation-reportages/article/20251229-flux-financiers-illicites-des-milliards-de-fcfa-entre-le-benin-et-le-nigeria), cette opacité fragilise l'économie formelle.\n\n### Dimension sécuritaire\nCes flux servent de carburant au financement du terrorisme dans la sous-région. Pour y remédier, l'adoption du KYC biométrique et de la traçabilité via la plateforme RASME est impérative."
     }
   ]
 }
