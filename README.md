@@ -1,5 +1,4 @@
-![Aperçu du site GSF Consulting](assets/screenshot.png)
-
+![Aperçu du site GSF Consulting](screenshot.png)
 # GSF Consulting Internationale
 
 Bienvenue sur le dépôt GitHub du site web de **GSF Consulting Internationale**. Ce site est hébergé via GitHub Pages.
