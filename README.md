@@ -1,10 +1,8 @@
-![Aperçu du site GSF Consulting](assets/screenshot.png)
+![Aperçu du site GSF Consulting](assets/screenshot.png
 
 # GSF Consulting Internationale
 
 Bienvenue sur le dépôt GitHub du site web de **GSF Consulting Internationale**. Ce site est hébergé via GitHub Pages.
-
-![Aperçu du site](screenshot.png)
 
 ## Description
 GSF Consulting Internationale transforme le droit par l’intelligence artificielle. De l’expertise juridique **OHADA** et anti-blanchiment de capitaux, aux solutions de recouvrement augmentées par l’IA, nous réinventons le conseil pour l’Afrique.
@@ -16,8 +14,10 @@ GSF Consulting Internationale transforme le droit par l’intelligence artificie
 
 ## L’Expert : Gilles Feliho
 Expert international en droit des affaires et blanchiment de capitaux, pionnier de l’intersection entre le droit africain et l’intelligence artificielle.
-* 📖 [Disponible sur Fnac](VOTRE_LIEN_ICI)
-* 📚 [Disponible sur Amazon](VOTRE_LIEN_ICI)
+
+* 📖 [Disponible sur Fnac : Homo Algorithmicus](https://www.fnac.com/livre-numerique/a21477208/Gilles-Feliho-Homo-Algorithmicus)
+* 📚 [Disponible sur Amazon : Blanchiment et liberté](https://www.amazon.fr/Blanchiment-liberté-Comment-failles-béninois-ebook/dp/B0FBKFJRZC)
+
 
 ## Structure du Dépôt
 * `index.html` : Page d’accueil principale.
