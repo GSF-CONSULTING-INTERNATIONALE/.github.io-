@@ -1,16 +1,16 @@
 {
   "homepage": {
-    "hero_title": "Transformer le Droit par l'Intelligence Artificielle.",
-    "hero_subtitle": "De l'expertise juridique OHADA et anti blanchiment de capitaux, aux solutions de recouvrement augmentées par l'IA, GSF Consulting International réinvente le conseil pour l'Afrique.",
+    "hero_title": "Transformer le Droit par l’Intelligence Artificielle.",
+    "hero_subtitle": "De l’expertise juridique OHADA et anti blanchiment de capitaux, aux solutions de recouvrement augmentées par l’IA, GSF Consulting International réinvente le conseil pour l’Afrique.",
     "vision_subtitle": "Une transition vers le conseil 4.0",
-    "vision_text": "Depuis plus de 20 ans, GSF Conseil a accompagné les grandes institutions de l'espace francophone. Aujourd'hui, sous l'impulsion de Gilles Feliho, nous devenons GSF Consulting International.\n\nNotre mission ? Allier la profondeur de l'expertise juridique traditionnelle à la puissance de l'intelligence artificielle. Nous aidons les entreprises, États et investisseurs à naviguer dans la complexité du droit des affaires africain, tout en optimisant leurs processus critiques comme le recouvrement de créances et la gestion des risques."
+    "vision_text": "Depuis plus de 20 ans, GSF Conseil a accompagné les grandes institutions de l’espace francophone. Aujourd’hui, sous l’impulsion de Gilles Feliho, nous devenons GSF Consulting International.\n\nNotre mission ? Allier la profondeur de l’expertise juridique traditionnelle à la puissance de l’intelligence artificielle. Nous aidons les entreprises, États et investisseurs à naviguer dans la complexité du droit des affaires africain, tout en optimisant leurs processus critiques comme le recouvrement de créances et la gestion des risques."
   },
   "piliers_section": {
-    "title": "Nos 5 Piliers d'Excellence",
+    "title": "Nos 5 Piliers d’Excellence",
     "piliers": [
       {
         "title": "Innovation Juridique",
-        "description": "L'IA au service de la résolution de litiges et de la conformité. LegalTech et Intelligence Artificielle Juridique."
+        "description": "L’IA au service de la résolution de litiges et de la conformité. LegalTech et Intelligence Artificielle Juridique."
       },
       {
         "title": "Expertise Afrique-Francophonie",
@@ -31,24 +31,24 @@
     ]
   },
   "expert_section": {
-    "bio": "Expert international en droit des affaires et anti-blanchiment de capitaux, pionnier de l'intersection entre le droit africain et l'intelligence artificielle. Auteur de *Homo Algorithmicus* et *Blanchiment en liberté*.",
+    "bio": "Expert international en droit des affaires et anti-blanchiment de capitaux, pionnier de l’intersection entre le droit africain et l’intelligence artificielle. Auteur de Homo Algorithmicus et Blanchiment en liberté.",
     "book_fnac": "https://www.fnac.com/livre-numerique/a21477208/Gilles-Feliho-Homo-Algorithmicus",
     "book_amazon": "https://www.amazon.fr/dp/B0FBKFJRZC"
   },
   "blog_posts": [
     {
-      "title": "L'IA va-t-elle remplacer les avocats en Afrique ?",
+      "title": "L’Intelligence Artificielle va-t-elle remplacer les avocats en Afrique ?",
       "date": "2026-02-23T10:00:00.000Z",
       "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1200",
-      "excerpt": "Analyse critique de l'impact de l'intelligence artificielle sur les métiers du droit dans l'espace OHADA.",
-      "body": "### Introduction\nL'intelligence artificielle transforme profondément le secteur juridique. En Afrique, les enjeux sont spécifiques : accès au droit, automatisation des procédures OHADA et aide à la décision pour les magistrats."
+      "excerpt": "Analyse critique de l’impact de l’IA sur les métiers du droit dans l’espace OHADA et l’UEMOA.",
+      "body": "### Introduction\nLa question n’est plus une anticipation futuriste. Elle anime aujourd’hui les débats des bâtonniers d’Abidjan à Dakar. Nous assistons à une réinvention profonde de la profession.\n\n### I. L’IA déjà opérationnelle\nEn 2025, des outils comme LawPavilion réduisent le temps de révision documentaire de 70%. Au Kenya, LegalBot offre déjà des conseils via chatbot.\n\n### II. Positions des Barreaux\n- Côte d’Ivoire : Le Bâtonnier Florence Loan-Messan souligne que l’IA optimise déjà les coûts en cabinet.\n- Sénégal : Maître Léon Sarr voit l’IA comme une nécessité pour une justice équitable.\n\n### III. L’Avocat Augmenté\nL’IA remplace les tâches administratives, mais pas le jugement éthique ni la relation client. L’avocat qui utilise l’IA remplacera celui qui la refuse.\n\n### Conclusion\nL’IA ne remplacera pas l’avocat, elle le transformera en Homo Algorithmicus."
     },
     {
       "title": "Révélation : 950 milliards FCFA échappent aux radars entre le Bénin et le Nigeria",
       "date": "2026-02-25T10:00:00.000Z",
       "image": "https://images.unsplash.com/photo-1526303328184-67541821e332?auto=format&fit=crop&q=80&w=1200",
-      "excerpt": "Entre 700 et 950 milliards de francs CFA circulent annuellement via des circuits de change parallèles, alimentant l'insécurité régionale.",
-      "body": "### Un trou noir financier\n\nMes investigations révèlent qu'environ **950 milliards de FCFA** circulent chaque année hors radars entre le Bénin et le Nigeria. Comme le souligne cette [enquête de Banouto](https://banouto.bj/investigation-reportages/article/20251229-flux-financiers-illicites-des-milliards-de-fcfa-entre-le-benin-et-le-nigeria), cette opacité fragilise l'économie formelle.\n\n### Dimension sécuritaire\nCes flux servent de carburant au financement du terrorisme dans la sous-région. Pour y remédier, l'adoption du KYC biométrique et de la traçabilité via la plateforme RASME est impérative."
+      "excerpt": "Analyse exclusive des flux financiers illicites transfrontaliers Bénin-Nigeria. Comment l’économie fantôme alimente le terrorisme.",
+      "body": "#### 1. Découvertes sur le terrain\n\nMes récentes investigations révèlent une réalité alarmante : entre 700 et 950 milliards de francs CFA circulent annuellement via des circuits parallèles.\n\n##### 1.1 Les chiffres révélateurs\n\n- 935,6 milliards FCFA d’importations informelles du Nigeria (2023)\n- 608,2 milliards FCFA d’exportations informelles vers le Nigeria (2023)\n- Équivalent : 15% du PIB béninois ou 3× le Budget Santé 2023.\n\n#### 2. L’inquiétante dimension sécuritaire\n\nCe qui rend cette situation explosive, c’est le lien direct avec le financement du terrorisme dans le nord du Bénin. \n\n##### 2.1 La chaîne criminelle\n\n1. Commerce illicite de carburant\n2. Conversion via cambistes sans traçabilité\n3. Approvisionnement des groupes terroristes en liquidités.\n\n#### 3. Recommandations stratégiques\n\n- Généralisation de la plateforme RASME.\n- Adoption de DAT-IDCanopy pour le KYC biométrique obligatoire.\n\n**Gilles Sixte FELIHO**\n*Expert Anti-Blanchiment & Auteur de [Blanchiment en liberté](https://amzn.eu/d/2ulIdWC)*"
     }
   ]
 }
