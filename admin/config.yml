@@ -17,18 +17,8 @@ collections:
             name: "blog_posts"
             widget: "list"
             fields:
-              - label: "Titre"
-                name: "title"
-                widget: "string"
-              - label: "Date"
-                name: "date"
-                widget: "datetime"
-              - label: "Image"
-                name: "image"
-                widget: "image"
-              - label: "Extrait"
-                name: "excerpt"
-                widget: "text"
-              - label: "Corps de l'article"
-                name: "body"
-                widget: "markdown"
+              - { label: "Titre", name: "title", widget: "string" }
+              - { label: "Date", name: "date", widget: "datetime" }
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Extrait", name: "excerpt", widget: "text" }
+              - { label: "Corps de l'article", name: "body", widget: "markdown" }
