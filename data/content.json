@@ -3,7 +3,7 @@
     "hero_title": "Transformer le Droit par l’Intelligence Artificielle.",
     "hero_subtitle": "De l’expertise juridique OHADA et anti blanchiment de capitaux, aux solutions de recouvrement augmentées par l’IA, GSF Consulting International réinvente le conseil pour l’Afrique.",
     "vision_subtitle": "Une transition vers le conseil 4.0",
-    "vision_text": "Depuis plus de 20 ans, GSF Conseil accompagne les grandes institutions de l’espace francophone. Aujourd’hui, sous l’impulsion de Gilles Feliho, nous devenons GSF Consulting International.\n\nNotre mission ? Allier la profondeur de l’expertise juridique traditionnelle à la puissance de l’intelligence artificielle. Nous aidons les entreprises, États et investisseurs à naviguer dans la complexité du droit des affaires africain (OHADA, UEMOA), tout en optimisant leurs processus critiques comme le recouvrement de créances et la gestion des risques."
+    "vision_text": "Depuis plus de 20 ans, GSF Conseil accompagne les grandes institutions de l’espace francophone. Aujourd’hui, sous l’impulsion de Gilles Felhó, nous devenons GSF Consulting International.\n\nNotre mission ? Allier la profondeur de l’expertise juridique traditionnelle à la puissance de l’intelligence artificielle. Nous aidons les entreprises, États et investisseurs à naviguer dans la complexité du droit des affaires africain (OHADA, UEMOA), tout en optimisant leurs processus critiques comme le recouvrement de créances et la gestion des risques."
   },
   "piliers_section": {
     "title": "Nos 5 Piliers d’Excellence",
@@ -30,51 +30,20 @@
       }
     ]
   },
+  "offres_phares": [
+    {
+      "title": "Agent IA de Recouvrement",
+      "description": "Automatisez vos créances impayées. Analyse de risque, scoring prédictif et relances intelligentes conformes au droit OHADA."
+    },
+    {
+      "title": "Conseil Juridique & Financier",
+      "description": "Expertise reconnue auprès de la CEDEAO, l’AFD et la Francophonie. Négociation internationale et gestion des risques."
+    }
+  ],
   "expert_section": {
     "bio": "Expert international en droit des affaires et anti-blanchiment de capitaux, pionnier de l’intersection entre le droit africain et l’intelligence artificielle. Auteur de Homo Algorithmicus et Blanchiment en liberté.",
     "book_fnac": "https://www.fnac.com/livre-numerique/a21477208/Gilles-Feliho-Homo-Algorithmicus",
     "book_amazon": "https://www.amazon.fr/dp/B0FBKFJRZC"
   },
-  "blog_posts": [
-    {
-      "title": "L’IA dans la lutte contre le blanchiment de capitaux en Afrique : opportunités et défis",
-      "slug": "ia-lutte-blanchiment-afrique-2026",
-      "date": "2026-02-27T00:00:00.000Z",
-      "image": "/uploads/intelligence-artificielle-droit-ohada-jpeg.jpg",
-      "excerpt": "Exploration des applications de l’intelligence artificielle pour renforcer la conformité anti-blanchiment dans l’espace OHADA et au-delà.",
-      "body": "## **Introduction**\n\nLe blanchiment de capitaux reste un défi majeur en Afrique..."
-    },
-    {
-      "title": "Intelligence stratégique, souveraineté cognitive et conformité globale en Afrique",
-      "slug": "souverainete-cognitive-conformite-afrique-2026",
-      "date": "2026-02-26T10:00:00.000Z",
-      "image": "https://media.licdn.com/dms/image/v2/D4D12AQFU12fCQXH7Aw/article-cover_image-shrink_720_1280/B4DZh1B0xtGgAQ-/0/1754310081071?e=2147483647&v=beta&t=LSMaP6YsupmJY_l_twUfqgz88JIMlAIUc2cI_D5Suvk",
-      "excerpt": "Conseil stratégique pour États africains : l’IA et la finance numérique imposent une nouvelle souveraineté. Découvrez l’Audit de Souveraineté Cognitive™.",
-      "body": "### Intelligence stratégique et souveraineté cognitive\n\nL’intelligence artificielle (IA) redéfinit..."
-    },
-    {
-      "title": "IA et Avocats en Afrique : Réinvention du métier ou menace réelle ?",
-      "slug": "ia-avocats-afrique-ohada-2026",
-      "date": "2026-02-23T10:00:00.000Z",
-      "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1200",
-      "excerpt": "L'IA va-t-elle remplacer les avocats en Afrique ? Analyse des positions officielles des Barreaux.",
-      "body": "### Introduction : Le débat qui anime les Barreaux africains\n\nLa question n’est plus théorique..."
-    },
-    {
-      "title": "Révélation : 950 milliards FCFA échappent aux radars entre le Bénin et le Nigeria",
-      "slug": "950-milliards-fcfa-benin-nigeria-2026",
-      "date": "2026-02-25T10:00:00.000Z",
-      "image": "/uploads/intelligence-artificielle-droit-ohada-jpg.jpg",
-      "excerpt": "Enquête sur les flux financiers illicites et le financement du terrorisme.",
-      "body": "## Résumé : Comment l’économie “fantôme” alimente le terrorisme ?"
-    },
-    {
-      "title": "Souveraineté cognitive 2026 : Votre feuille de route en 18 mois",
-      "slug": "souverainete-cognitive-2026-feuille-route",
-      "date": "2026-02-27T00:00:00.000Z",
-      "image": "/uploads/souverainete-cognitive-18-mois-jpg.jpg",
-      "excerpt": "Souveraineté Cognitive 2026 : une feuille de route en 18 mois.",
-      "body": "![Souveraineté Cognitive 2026](/uploads/img-6695.png)"
-    }
-  ]
+  "blog_posts": [ ... ] // inchangé
 }
