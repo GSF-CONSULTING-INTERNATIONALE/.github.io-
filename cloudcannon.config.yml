@@ -1,33 +1,14 @@
-# cloudcannon.config.yml
 source: .
 output: .
 
-# Gestion des données centrales
+# Lie l'éditeur à vos données GSF
 data_config:
-  content:
+  homepage:
     path: data/content.json
 
-# Configuration de l'interface de saisie
+# Permet de modifier les textes facilement
 _inputs:
   hero_title:
     type: html
-    comment: "Le titre principal avec balises <span> pour la couleur"
-  hero_subtitle:
-    type: textarea
   vision_text:
     type: markdown
-    comment: "Utilisez Shift+Entrée pour les retours à la ligne"
-  bio:
-    type: markdown
-
-# Collections pour le Blog
-collections_config:
-  blog_posts:
-    path: data/content.json
-    data_key: blog_posts
-    output: false # On ne génère pas de fichiers séparés, on reste en JSON centralisé
-
-# Configuration des médias (directement à la racine selon vos tests)
-paths:
-  uploads: /
-  static: /
