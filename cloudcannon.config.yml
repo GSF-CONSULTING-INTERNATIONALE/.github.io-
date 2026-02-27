@@ -10,7 +10,7 @@ collections_config:
     path: data/content.json
     icon: library_books
     parser: json
-    array: blog_posts        # <-- Ligne ajoutée
+    array: blog_posts        # <-- Ligne indispensable
     output: true
     _inputs:
       $.blog_posts[*].title:
@@ -66,3 +66,4 @@ data_config:
     path: data/content.json
 timezone: Etc/UTC
 output: .
+
