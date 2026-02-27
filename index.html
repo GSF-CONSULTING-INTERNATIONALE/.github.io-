@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- SEO POWER PACK - GSF CONSULTING INTERNATIONAL -->
-    <title>GSF Consulting International | Innovation Juridique & IA pour l'Afrique</title>
-    <meta name="description" content="GSF Consulting International : Expertise juridique OHADA, UEMOA, CEDEAO. Solutions IA de recouvrement de créances et pré-contentieux par Gilles Feliho.">
-    <meta name="keywords" content="GSF Consulting, Gilles Feliho, Droit OHADA, IA Afrique, Recouvrement IA, Homo Algorithmicus, CEDEAO, UEMOA, Conseil Juridique Afrique">
+    <title>Intelligence stratégique, souveraineté cognitive et conformité globale en Afrique | GSF Consulting</title>
+    <meta name="description" content="Expertise juridique OHADA et IA. Audit de Souveraineté Cognitive™, conformité financière UEMOA et solutions de recouvrement par Gilles Feliho.">
+    <meta name="keywords" content="Conseil stratégique États africains, conformité financière UEMOA, souveraineté numérique Afrique, IA finance numérique, Audit de Souveraineté Cognitive, Gilles Feliho, OHADA, Recouvrement créances IA">
     <meta name="author" content="Gilles Feliho">
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow">
@@ -247,81 +247,75 @@
             })
             .catch(error => console.warn("ℹ️ Mode par défaut (JSON absent).", error));
     </script>
-</body>
-   <!-- SCRIPT POUR JSON-LD (Données Structurées) -->
-<script>
-    fetch('data/content.json')
-        .then(response => response.json())
-        .then(data => {
-            const jsonLd = {
-                "@context": "https://schema.org",
-                "@graph": []  // Utilisation de @graph pour combiner plusieurs entités
-            };
+    
+    <!-- SCRIPT POUR JSON-LD (Données Structurées) -->
+    <script>
+        // Génération dynamique des données structurées depuis votre content.json
+        fetch('data/content.json')
+            .then(response => response.json())
+            .then(data => {
+                const jsonLd = {
+                    "@context": "https://schema.org",
+                    "@graph": [
+                        {
+                            "@type": "Organization",
+                            "@id": "https://gsfconsultinginternational.com/#organization",
+                            "name": "GSF Consulting International",
+                            "url": "https://gsfconsultinginternational.com/",
+                            "logo": "https://gsfconsultinginternational.com/images/logo-gsf.jpg",
+                            "description": data.homepage.hero_subtitle,
+                            "address": {  // Personnalisez si adresse réelle disponible
+                                "@type": "PostalAddress",
+                                "addressCountry": "FR",  // Ex. France ou Bénin selon localisation
+                                "addressRegion": "Afrique Francophone",
+                                "postalCode": "",
+                                "streetAddress": ""
+                            },
+                            "sameAs": [  // Ajoutez réseaux sociaux si disponibles
+                                "https://twitter.com/gsfconsulting",
+                                "https://linkedin.com/company/gsf-consulting-international"
+                            ]
+                        },
+                        {
+                            "@type": "Person",
+                            "@id": "https://gsfconsultinginternational.com/#person",
+                            "name": "Gilles Feliho",
+                            "jobTitle": "Expert international en droit des affaires et IA",
+                            "description": data.expert_section.bio,
+                            "url": "https://gsfconsultinginternational.com/#expert",
+                            "worksFor": {
+                                "@id": "https://gsfconsultinginternational.com/#organization"
+                            },
+                            "sameAs": [
+                                data.expert_section.book_fnac,
+                                data.expert_section.book_amazon
+                            ]
+                        }
+                    ]
+                };
 
-            // Organization
-            jsonLd["@graph"].push({
-                "@type": "Organization",
-                "@id": "https://gsfconsultinginternational.com/#organization",
-                "name": "GSF Consulting International",
-                "url": "https://gsfconsultinginternational.com/",
-                "logo": "https://gsfconsultinginternational.com/images/logo-gsf.jpg",
-                "description": data.homepage.hero_subtitle,
-                "address": {  // Personnalisez si adresse réelle disponible
-                    "@type": "PostalAddress",
-                    "addressCountry": "FR",  // Ex. France ou Bénin selon localisation
-                    "addressRegion": "Afrique Francophone",
-                    "postalCode": "",
-                    "streetAddress": ""
-                },
-                "sameAs": [  // Ajoutez réseaux sociaux si disponibles
-                    "https://twitter.com/gsfconsulting",
-                    "https://linkedin.com/company/gsf-consulting-international"
-                ]
-            });
-
-            // Person (Gilles Feliho)
-            jsonLd["@graph"].push({
-                "@type": "Person",
-                "@id": "https://gsfconsultinginternational.com/#person",
-                "name": "Gilles Feliho",
-                "jobTitle": "Expert international en droit des affaires et anti-blanchiment de capitaux",
-                "description": data.expert_section.bio.replace(/\*/g, ''),  // Enlève italique pour JSON-LD
-                "url": "https://gsfconsultinginternational.com/#expert",
-                "worksFor": {
-                    "@id": "https://gsfconsultinginternational.com/#organization"
-                },
-                "sameAs": [  // Ajoutez profils LinkedIn/X si disponibles
-                    data.expert_section.book_fnac,
-                    data.expert_section.book_amazon
-                ]
-            });
-
-            // BlogPosting (pour chaque post)
-            data.blog_posts.forEach((post, index) => {
-                jsonLd["@graph"].push({
-                    "@type": "BlogPosting",
-                    "@id": `https://gsfconsultinginternational.com/blog.html#post-${index}`,
-                    "headline": post.title,
-                    "datePublished": post.date,
-                    "image": post.image,
-                    "author": {
-                        "@id": "https://gsfconsultinginternational.com/#person"
-                    },
-                    "publisher": {
-                        "@id": "https://gsfconsultinginternational.com/#organization"
-                    },
-                    "description": post.excerpt,
-                    "articleBody": post.body  // Corps complet pour richesse
+                // Ajout automatique des articles de blog au graphe SEO
+                data.blog_posts.forEach((post, index) => {
+                    jsonLd["@graph"].push({
+                        "@type": "BlogPosting",
+                        "@id": `https://gsfconsultinginternational.com/#post-${index}`,
+                        "headline": post.title,
+                        "description": post.excerpt,
+                        "datePublished": post.date,
+                        "image": post.image,
+                        "articleBody": post.body,  // Corps complet pour richesse
+                        "author": { "@id": "https://gsfconsultinginternational.com/#person" },
+                        "publisher": { "@id": "https://gsfconsultinginternational.com/#organization" }
+                    });
                 });
-            });
 
-            // Insertion dans le <head>
-            const script = document.createElement('script');
-            script.type = 'application/ld+json';
-            script.textContent = JSON.stringify(jsonLd);
-            document.head.appendChild(script);
-            console.log("✅ JSON-LD généré et inséré :", jsonLd);
-        })
-        .catch(error => console.warn("⚠️ Erreur JSON-LD :", error));
-</script> 
+                const script = document.createElement('script');
+                script.type = 'application/ld+json';
+                script.textContent = JSON.stringify(jsonLd);
+                document.head.appendChild(script);
+                console.log("✅ JSON-LD généré et inséré :", jsonLd);
+            })
+            .catch(error => console.warn("⚠️ Erreur JSON-LD :", error));
+    </script> 
+</body>
 </html>
