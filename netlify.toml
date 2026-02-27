@@ -1,10 +1,9 @@
 # --- CONFIGURATION DU DÉPLOIEMENT ---
 [build]
-  publish = "." # Le dossier racine contient vos fichiers statiques
+  publish = "."
   command = "echo 'Building GSF Consulting International...'"
 
 # --- RÉÉCRITURE DES ROUTES (Crucial pour Decap CMS) ---
-# Cela redirige toutes les requêtes directes vers /admin/* vers l'index.html de l'admin
 [[redirects]]
   from = "/admin/*"
   to = "/admin/index.html"
@@ -19,11 +18,20 @@
     X-XSS-Protection = "1; mode=block"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
+    Content-Security-Policy = "upgrade-insecure-requests"
 
-# --- CONFIGURATION DES FONCTIONS (Pour Identity/Git Gateway) ---
+# --- CONFIGURATION DES SERVICES ---
 [functions]
   node_bundle = true
 
 [dev]
-  command = "npx serve" # Pour les tests en local si besoin
+  command = "npx serve"
   port = 8888
+
+# --- IDENTITÉ ET ACCÈS (Git Gateway) ---
+[identity]
+  external_registration_enabled = false
+
+[admin]
+  role_control_enabled = true
+
