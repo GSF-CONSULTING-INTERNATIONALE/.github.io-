@@ -11,6 +11,9 @@ collections_config:
     path: data
     icon: data_usage
     disable_url: true
+    _inputs:
+      $.blog_posts[*].title:
+        cascade: true
     disable_add: true
     disable_add_folder: true
     disable_file_actions: true
@@ -27,6 +30,8 @@ _inputs:
     cascade: true
   vision_text:
     type: markdown
+    cascade: true
+  $.blog_posts[*].excerpt:
     cascade: true
 data_config:
   homepage:
