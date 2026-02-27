@@ -3,7 +3,8 @@
   publish = "."
   command = "echo 'Building GSF Consulting International...'"
 
-# --- RÉÉCRITURE DES ROUTES (Crucial pour Decap CMS) ---
+# --- RÉÉCRITURE DES ROUTES ---
+# Indispensable pour que CloudCannon/Decap CMS fonctionne correctement
 [[redirects]]
   from = "/admin/*"
   to = "/admin/index.html"
@@ -18,20 +19,8 @@
     X-XSS-Protection = "1; mode=block"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
-    Content-Security-Policy = "upgrade-insecure-requests"
 
-# --- CONFIGURATION DES SERVICES ---
+# --- CONFIGURATION DES FONCTIONS ---
+# Correction : node_bundler avec valeur string "esbuild"
 [functions]
-  node_bundle = true
-
-[dev]
-  command = "npx serve"
-  port = 8888
-
-# --- IDENTITÉ ET ACCÈS (Git Gateway) ---
-[identity]
-  external_registration_enabled = false
-
-[admin]
-  role_control_enabled = true
-
+  node_bundler = "esbuild"
