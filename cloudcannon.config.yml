@@ -1,4 +1,3 @@
-source: .
 collections_config:
   pages:
     path: ''
@@ -7,16 +6,23 @@ collections_config:
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
-  data:
-    path: data
-    icon: data_usage
-    disable_url: true
+  posts:
+    path: data/content.json
+    parser: json
+    output: true
     _inputs:
       $.blog_posts[*].title:
         cascade: true
-    disable_add: true
-    disable_add_folder: true
-    disable_file_actions: true
+      $.blog_posts[*].body:
+        type: markdown
+        cascade: true
+        options:
+          headings: [2, 3]
+          bold: true
+          italic: true
+          bulletlist: true
+          link: true
+          image: true
   admin:
     path: admin
     icon: ad
@@ -31,8 +37,23 @@ _inputs:
   vision_text:
     type: markdown
     cascade: true
-  $.blog_posts[*].excerpt:
-    cascade: true
+  body:
+    type: markdown
+    comment: "Structurez votre article avec des titres H2/H3 et des listes pour le SEO."
+    options:
+      bold: true
+      italic: true
+      strike: false
+      blockquote: true
+      code: true
+      link: true
+      bulletlist: true
+      orderedlist: true
+      headings: [2, 3]
+      image: true
+  excerpt:
+    type: textarea
+    comment: "Bref résumé de l'article pour la page d'accueil (160 caractères max)."
 data_config:
   homepage:
     path: data/content.json
