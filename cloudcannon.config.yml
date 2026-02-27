@@ -10,6 +10,7 @@ collections_config:
     path: data/content.json
     icon: library_books
     parser: json
+    array: blog_posts        # <-- Ligne ajoutée
     output: true
     _inputs:
       $.blog_posts[*].title:
