@@ -17,8 +17,8 @@ collections_config:
         type: markdown
         cascade: true
         options:
-          format: p h2 h3 # Cela force l'affichage du menu Paragraph, Heading 2, Heading 3
-          headings: [2, 3]
+          format: p h2 h3
+          headings_start_with_h2: true  # Force H2 comme premier niveau
           bold: true
           italic: true
           bulletlist: true
@@ -31,6 +31,7 @@ collections_config:
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
+
 _inputs:
   hero_title:
     type: html
@@ -42,6 +43,9 @@ _inputs:
     type: markdown
     comment: "Structurez votre article avec des titres H2/H3 et des listes pour le SEO."
     options:
+      format: p h2 h3  # Ajoute cette ligne ici aussi
+      headings: [2, 3]
+      headings_start_with_h2: true  # Important pour l'affichage
       bold: true
       italic: true
       strike: false
@@ -50,11 +54,11 @@ _inputs:
       link: true
       bulletlist: true
       orderedlist: true
-      headings: [2, 3]
       image: true
   excerpt:
     type: textarea
     comment: "Bref résumé de l'article pour la page d'accueil (160 caractères max)."
+
 data_config:
   homepage:
     path: data/content.json
