@@ -8,6 +8,7 @@ collections_config:
     disable_file_actions: false
   posts:
     path: data/content.json
+    icon: library_books
     parser: json
     output: true
     _inputs:
@@ -43,7 +44,7 @@ _inputs:
     type: markdown
     comment: "Structurez votre article avec des titres H2/H3 et des listes pour le SEO."
     options:
-      format: p h2 h3  # Ajoute cette ligne ici aussi
+      format: p h2 h3
       headings: [2, 3]
       headings_start_with_h2: true  # Important pour l'affichage
       bold: true
