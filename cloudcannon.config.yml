@@ -17,6 +17,7 @@ collections_config:
         type: markdown
         cascade: true
         options:
+          format: p h2 h3 # Cela force l'affichage du menu Paragraph, Heading 2, Heading 3
           headings: [2, 3]
           bold: true
           italic: true
