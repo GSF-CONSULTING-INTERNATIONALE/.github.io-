@@ -66,4 +66,3 @@ data_config:
     path: data/content.json
 timezone: Etc/UTC
 output: .
-
