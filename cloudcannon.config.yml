@@ -11,11 +11,13 @@ collections_config:
     path: data/content.json
     icon: library_books
     parser: json
-    array_key: blog_posts  # ✅ Cible le tableau blog_posts dans le JSON
+    array_key: blog_posts
     output: true
     url: "/blog/[slug]/"
+    
+    # ✅ Déplacement des inputs ici pour une meilleure intégration
     _inputs:
-      # ✅ Tous les chemins JSONPath avec [*] sont entre guillemets
+      # Champs Blog
       "$.blog_posts[*].title":
         label: "Titre de l'article"
         type: text
@@ -46,6 +48,50 @@ collections_config:
           link: true
           image: true
 
+      # Champs Homepage (présents dans le même fichier)
+      "$.homepage.hero_title":
+        label: "Titre principal (Homepage)"
+        type: text
+      "$.homepage.hero_subtitle":
+        label: "Sous-titre (Homepage)"
+        type: text
+      "$.homepage.vision_subtitle":
+        label: "Sous-titre de la vision"
+        type: text
+      "$.homepage.vision_text":
+        label: "Texte de vision"
+        type: markdown
+
+      # Piliers
+      "$.piliers_section.title":
+        label: "Titre des Piliers"
+        type: text
+      "$.piliers_section.piliers[*].title":
+        label: "Titre du pilier"
+        type: text
+      "$.piliers_section.piliers[*].description":
+        label: "Description du pilier"
+        type: text
+
+      # Expert
+      "$.expert_section.bio":
+        label: "Biographie de l'expert"
+        type: text
+      "$.expert_section.book_fnac":
+        label: "Lien Fnac du livre"
+        type: url
+      "$.expert_section.book_amazon":
+        label: "Lien Amazon du livre"
+        type: url
+
+      # Offres phares (Correction pour inclure le 3ème)
+      "$.offres_phares[*].title":
+        label: "Titre de l'offre"
+        type: text
+      "$.offres_phares[*].description":
+        label: "Description de l'offre"
+        type: text
+
   admin:
     path: admin
     icon: ad
@@ -54,67 +100,9 @@ collections_config:
     disable_add_folder: false
     disable_file_actions: false
 
-# ✅ Tous les champs globaux avec guillemets pour JSONPath
-_inputs:
-  # Homepage
-  "$.homepage.hero_title":
-    label: "Titre principal (Homepage)"
-    type: html
-    cascade: true
-  "$.homepage.hero_subtitle":
-    label: "Sous-titre (Homepage)"
-    type: text
-    cascade: true
-  "$.homepage.vision_subtitle":
-    label: "Sous-titre de la vision"
-    type: text
-    cascade: true
-  "$.homepage.vision_text":
-    label: "Texte de vision"
-    type: markdown
-    cascade: true
-
-  # Piliers (activé)
-  "$.piliers_section.title":
-    label: "Titre des Piliers"
-    type: text
-    cascade: true
-  "$.piliers_section.piliers[*].title":
-    label: "Titre du pilier"
-    type: text
-    cascade: true
-  "$.piliers_section.piliers[*].description":
-    label: "Description du pilier"
-    type: markdown
-    cascade: true
-
-  # Expert (activé)
-  "$.expert_section.bio":
-    label: "Biographie de l'expert"
-    type: markdown
-    cascade: true
-  "$.expert_section.book_fnac":
-    label: "Lien Fnac du livre"
-    type: url
-    cascade: true
-  "$.expert_section.book_amazon":
-    label: "Lien Amazon du livre"
-    type: url
-    cascade: true
-
-  # Offres phares (ajouté)
-  "$.offres_phares[*].title":
-    label: "Titre de l'offre"
-    type: text
-    cascade: true
-  "$.offres_phares[*].description":
-    label: "Description de l'offre"
-    type: markdown
-    cascade: true
-
 data_config:
   site:
-    path: data/content.json  # Chemin vers le fichier JSON global
+    path: data/content.json
 
 timezone: Etc/UTC
 output: .
