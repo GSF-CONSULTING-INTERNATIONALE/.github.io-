@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -36,7 +37,7 @@
         
         /* Gestion du Menu Mobile */
         #mobile-menu {
-            display: none; /* Caché par défaut */
+            display: none; 
             flex-direction: column;
             background: rgba(0, 0, 0, 0.95);
             padding: 1rem;
@@ -46,9 +47,7 @@
             width: 100%;
             z-index: 999;
         }
-        #mobile-menu.active {
-            display: flex;
-        }
+        #mobile-menu.active { display: flex; }
 
         @media (max-width: 768px) {
             .desktop-menu { display: none !important; }
@@ -71,8 +70,8 @@
                 <li><a href="#vision">Vision</a></li>
                 <li><a href="#piliers">Piliers</a></li>
                 <li><a href="#solutions">Solutions</a></li>
+                <li><a href="#blog-list">Blog</a></li>
                 <li><a href="#expert">L'Expert</a></li>
-                <li><a href="blog.html">Blog</a></li>
                 <li><a href="#contact" style="border: 1px solid #06b6d4; padding: 5px 15px; border-radius: 4px;">Contact</a></li>
             </ul>
             
@@ -86,27 +85,27 @@
             <a href="#vision" style="color: #fff; padding: 0.5rem;">Vision</a>
             <a href="#piliers" style="color: #fff; padding: 0.5rem;">Piliers</a>
             <a href="#solutions" style="color: #fff; padding: 0.5rem;">Solutions</a>
+            <a href="#blog-list" style="color: #fff; padding: 0.5rem;">Blog</a>
             <a href="#expert" style="color: #fff; padding: 0.5rem;">L'Expert</a>
-            <a href="blog.html" style="color: #fff; padding: 0.5rem;">Blog</a>
             <a href="#contact" style="color: #06b6d4; padding: 0.5rem;">Contact</a>
         </div>
     </nav>
 
     <!-- HERO SECTION -->
     <header id="home" style="padding: 100px 5%; text-align: center;">
+        <!-- Le script ci-dessous ajoutera automatiquement la couleur sur "Intelligence Artificielle" -->
         <h1 id="hero-title" style="font-family: 'Syne', sans-serif; font-size: 4rem; text-transform: uppercase; letter-spacing: -2px; line-height: 1.1;">
             Transformer le Droit par <span style="color: #06b6d4;">l'Intelligence Artificielle</span>.
         </h1>
         <p id="hero-subtitle" style="font-family: 'Space Grotesk'; max-width: 600px; margin: 20px auto; opacity: 0.8;">
             De l'expertise juridique OHADA et anti blanchiment de capitaux, aux solutions de recouvrement augmentées par l'IA, GSF Consulting International réinvente le conseil pour l'Afrique.
         </p>
-        <!-- Lien Devis conservé du Code 1 -->
         <a href="#contact" class="glass-card" style="padding: 15px 40px; cursor: pointer; border: 1px solid #06b6d4; color: #fff; background: transparent; display: inline-block; text-decoration: none;">
             Demander un Devis
         </a>
     </header>
 
-    <!-- VISION SECTION (Contenu ajouté depuis Code 2) -->
+    <!-- VISION SECTION -->
     <section id="vision" style="padding: 50px 5%; text-align: center;">
         <h2 style="font-family: 'Syne', sans-serif; font-size: 2.5rem; margin-bottom: 20px;">Notre Vision</h2>
         <h3 id="vision-subtitle" style="font-family: 'Syne', sans-serif; font-size: 1.8rem; margin-bottom: 15px; color: #06b6d4;">Une transition vers le conseil 4.0</h3>
@@ -117,31 +116,26 @@
         </div>
     </section>
 
-    <!-- PILIERS SECTION (Ajouté depuis Code 2 avec style Code 1) -->
+    <!-- PILIERS SECTION -->
     <section id="piliers" style="padding: 50px 5%; text-align: center;">
         <h2 style="font-family: 'Syne', sans-serif; font-size: 2.5rem; margin-bottom: 40px;">Nos 5 Piliers d'Excellence</h2>
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; padding: 0 5%;">
-            <!-- Pilier 1 -->
             <div class="glass-card" style="padding: 30px; border-radius: 15px; text-align: center;">
                 <h3 style="font-family: 'Syne'; margin-bottom: 15px; color: #06b6d4;">Innovation Juridique</h3>
                 <p style="font-family: 'Space Grotesk'; font-size: 0.95rem; opacity: 0.9;">L'IA au service de la résolution de litiges et de la conformité. LegalTech et Intelligence Artificielle Juridique.</p>
             </div>
-            <!-- Pilier 2 -->
             <div class="glass-card" style="padding: 30px; border-radius: 15px; text-align: center;">
                 <h3 style="font-family: 'Syne'; margin-bottom: 15px; color: #06b6d4;">Expertise Afrique-Francophonie</h3>
                 <p style="font-family: 'Space Grotesk'; font-size: 0.95rem; opacity: 0.9;">Maîtrise absolue des espaces OHADA, UEMOA, CEDEAO et CIMA. Conseil juridique OHADA.</p>
             </div>
-            <!-- Pilier 3 -->
             <div class="glass-card" style="padding: 30px; border-radius: 15px; text-align: center;">
                 <h3 style="font-family: 'Syne'; margin-bottom: 15px; color: #06b6d4;">Maîtrise Technologique</h3>
                 <p style="font-family: 'Space Grotesk'; font-size: 0.95rem; opacity: 0.9;">Des solutions SaaS et des algorithmes propriétaires.</p>
             </div>
-            <!-- Pilier 4 -->
             <div class="glass-card" style="padding: 30px; border-radius: 15px; text-align: center;">
                 <h3 style="font-family: 'Syne'; margin-bottom: 15px; color: #06b6d4;">Négociation Internationale</h3>
                 <p style="font-family: 'Space Grotesk'; font-size: 0.95rem; opacity: 0.9;">Une approche diplomatique et stratégique des conflits.</p>
             </div>
-            <!-- Pilier 5 -->
             <div class="glass-card" style="padding: 30px; border-radius: 15px; text-align: center;">
                 <h3 style="font-family: 'Syne'; margin-bottom: 15px; color: #06b6d4;">Gestion du Risque</h3>
                 <p style="font-family: 'Space Grotesk'; font-size: 0.95rem; opacity: 0.9;">Protection des investissements et sécurisation des projets. Due Diligence et Sécurisation juridique.</p>
@@ -165,14 +159,21 @@
         </section>
     </main>
 
-    <!-- EXPERT SECTION (Texte mis à jour avec Code 2, Liens Code 1 conservés) -->
+    <!-- BLOG SECTION (Code mis à jour pour afficher les images) -->
+    <section id="blog-list" style="padding: 50px 5%;">
+        <h2 style="font-family: 'Syne', sans-serif; font-size: 2.5rem; margin-bottom: 30px; text-align: center;">Analyses & Publications</h2>
+        <div id="blog-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+            <!-- Les articles seront injectés ici par le script -->
+        </div>
+    </section>
+
+    <!-- EXPERT SECTION -->
     <section id="expert" style="padding: 50px 5%; text-align: center;">
         <h2 style="font-family: 'Syne', sans-serif; font-size: 2.5rem; margin-bottom: 20px;">L'Expert : Gilles Feliho</h2>
         <p id="expert-bio" style="font-family: 'Space Grotesk'; max-width: 800px; margin: 0 auto 20px; line-height: 1.6;">
             Expert international en droit des affaires et anti-blanchiment de capitaux, pionnier de l'intersection entre le droit africain et l'intelligence artificielle. Auteur de Homo Algorithmicus et Blanchiment en liberté.
         </p>
         <div style="margin-top: 20px;">
-            <!-- Liens actifs conservés -->
             <a id="book-fnac-link" href="https://www.fnac.com/livre-numerique/a21477208/Gilles-Feliho-Homo-Algorithmicus" target="_blank" style="margin-right: 15px; color: #06b6d4; border: 1px solid #06b6d4; padding: 10px 20px; border-radius: 5px;">📖 Fnac</a>
             <a id="book-amazon-link" href="https://www.amazon.fr/Gilles-Sixte-FELIHO-ebook/dp/B0DV937XB2" target="_blank" style="color: #06b6d4; border: 1px solid #06b6d4; padding: 10px 20px; border-radius: 5px;">📚 Amazon</a>
         </div>
@@ -182,7 +183,6 @@
     <section id="contact" style="padding: 50px 5%; text-align: center; background: #0a0a0a;">
         <h2 style="font-family: 'Syne', sans-serif; font-size: 2.5rem; margin-bottom: 20px;">Contact</h2>
         <p style="opacity: 0.7; margin-bottom: 20px;">Prêt à transformer vos défis juridiques ?</p>
-        <!-- Lien Email actif conservé -->
         <a href="mailto: contact@eji2.org" style="padding: 15px 40px; border: 1px solid #fff; color: #fff;">Envoyer un Email</a>
     </section>
 
@@ -224,8 +224,6 @@
         });
 
         // 3. CHARGEMENT DU JSON
-        // Note: La section Piliers est maintenant statique dans le HTML pour garantir l'affichage des 5 piliers du Code 2.
-        // Le JS continue de gérer les mises à jour dynamiques si le JSON est présent.
         fetch('data/content.json')
             .then(response => {
                 if (!response.ok) throw new Error("JSON non trouvé");
@@ -234,10 +232,15 @@
             .then(data => {
                 console.log("✅ Contenu dynamique chargé :", data);
                 
-                // Mise à jour Hero
+                // Mise à jour Hero (avec correction de la couleur IA)
                 if (data.homepage) {
-                    if (document.getElementById('hero-title')) 
-                        document.getElementById('hero-title').innerHTML = data.homepage.hero_title;
+                    if (document.getElementById('hero-title')) {
+                        // On récupère le titre, on colore les mots clés, puis on affiche
+                        let titleContent = data.homepage.hero_title;
+                        // Regex pour colorer "Intelligence Artificielle" ou "intelligence artificielle"
+                        titleContent = titleContent.replace(/(l\'Intelligence Artificielle|l'intelligence artificielle)/gi, '<span style="color: #06b6d4;">$1</span>');
+                        document.getElementById('hero-title').innerHTML = titleContent;
+                    }
                     if (document.getElementById('hero-subtitle')) 
                         document.getElementById('hero-subtitle').textContent = data.homepage.hero_subtitle;
                     if (document.getElementById('vision-subtitle')) 
@@ -255,13 +258,50 @@
                     if (document.getElementById('book-amazon-link')) 
                         document.getElementById('book-amazon-link').href = data.expert_section.book_amazon;
                 }
+
+                // --- SCRIPT BLOG AVEC IMAGES ---
+                if (data.blog_posts && document.getElementById('blog-container')) {
+                    const blogContainer = document.getElementById('blog-container');
+                    blogContainer.innerHTML = ''; 
+                    
+                    // Tri par date décroissante
+                    const sortedPosts = data.blog_posts.sort((a, b) => new Date(b.date) - new Date(a.date));
+                    
+                    // Affichage des 3 derniers articles
+                    const postsToShow = sortedPosts.slice(0, 3);
+
+                    postsToShow.forEach(post => {
+                        const articleCard = document.createElement('article');
+                        articleCard.className = 'glass-card';
+                        articleCard.style = 'padding: 0; border-radius: 15px; display: flex; flex-direction: column; overflow: hidden;';
+                        
+                        const dateObj = new Date(post.date);
+                        const dateStr = dateObj.toLocaleDateString('fr-FR', { year: 'numeric', month: 'long', day: 'numeric' });
+                        
+                        // Gestion de l'image (si présente)
+                        const imageHtml = post.image 
+                            ? `<div style="height: 180px; background-image: url('${post.image}'); background-size: cover; background-position: center;"></div>` 
+                            : '';
+
+                        articleCard.innerHTML = `
+                            ${imageHtml}
+                            <div style="padding: 30px; display: flex; flex-direction: column; flex-grow: 1;">
+                                <h3 style="font-family: 'Syne'; font-size: 1.3rem; margin-bottom: 10px; color: #fff;">${post.title}</h3>
+                                <p style="font-size: 0.85rem; color: #06b6d4; margin-bottom: 15px; text-transform: uppercase;">${dateStr}</p>
+                                <p style="font-family: 'Space Grotesk'; flex-grow: 1; opacity: 0.9; line-height: 1.5;">${post.excerpt}</p>
+                                <a href="#" style="margin-top: 20px; color: #06b6d4; font-weight: 500; text-decoration: none; align-self: flex-start;">Lire la suite →</a>
+                            </div>
+                        `;
+                        blogContainer.appendChild(articleCard);
+                    });
+                }
+
             })
             .catch(error => console.warn("ℹ️ Mode par défaut (JSON absent).", error));
     </script>
     
-    <!-- SCRIPT POUR JSON-LD (Données Structurées) -->
+    <!-- SCRIPT POUR JSON-LD -->
     <script>
-        // Génération dynamique des données structurées depuis votre content.json
         fetch('data/content.json')
             .then(response => response.json())
             .then(data => {
@@ -274,18 +314,7 @@
                             "name": "GSF Consulting International",
                             "url": "https://gsfconsultinginternational.com/",
                             "logo": "https://gsfconsultinginternational.com/logo-gsf.PNG",
-                            "description": data.homepage.hero_subtitle,
-                            "address": {
-                                "@type": "PostalAddress",
-                                "addressCountry": "FR",
-                                "addressRegion": "Afrique Francophone",
-                                "postalCode": "",
-                                "streetAddress": ""
-                            },
-                            "sameAs": [
-                                "https://twitter.com/gsfconsulting",
-                                "https://linkedin.com/company/gsf-consulting-international"
-                            ]
+                            "description": data.homepage.hero_subtitle
                         },
                         {
                             "@type": "Person",
@@ -294,18 +323,11 @@
                             "jobTitle": "Expert international en droit des affaires et IA",
                             "description": data.expert_section.bio,
                             "url": "https://gsfconsultinginternational.com/#expert",
-                            "worksFor": {
-                                "@id": "https://gsfconsultinginternational.com/#organization"
-                            },
-                            "sameAs": [
-                                data.expert_section.book_fnac,
-                                data.expert_section.book_amazon
-                            ]
+                            "worksFor": { "@id": "https://gsfconsultinginternational.com/#organization" }
                         }
                     ]
                 };
 
-                // Ajout automatique des articles de blog au graphe SEO
                 if(data.blog_posts) {
                     data.blog_posts.forEach((post, index) => {
                         jsonLd["@graph"].push({
@@ -326,9 +348,9 @@
                 script.type = 'application/ld+json';
                 script.textContent = JSON.stringify(jsonLd);
                 document.head.appendChild(script);
-                console.log("✅ JSON-LD généré et inséré :", jsonLd);
             })
             .catch(error => console.warn("⚠️ Erreur JSON-LD :", error));
     </script> 
 </body>
 </html>
+```
