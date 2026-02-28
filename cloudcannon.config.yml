@@ -6,49 +6,47 @@ collections_config:
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
-  
+
   posts:
     path: data/content.json
     icon: library_books
     parser: json
-    array: blog_posts
+    array: blog_posts  # ✅ Cible le tableau blog_posts dans votre JSON
     output: true
-    url: "/blog/[slug]/"  # ✅ Version corrigée avec [] au lieu de {}
+    url: "/blog/[slug]/"
     _inputs:
-      title:
+      # ✅ Syntaxe CORRECTE pour CloudCannon avec JSON imbriqué
+      # Le préfixe $.blog_posts[*]. est OBLIGATOIRE car vos posts sont dans un tableau
+      $.blog_posts[*].title:
         label: "Titre de l'article"
         type: text
-      slug:
+      $.blog_posts[*].slug:
         label: "Slug (URL)"
         type: text
-      body:
+      $.blog_posts[*].date:
+        label: "Date de publication"
+        type: datetime
+      $.blog_posts[*].image:
+        label: "Image de couverture"
+        type: image
+      $.blog_posts[*].excerpt:
+        label: "Résumé (160 caractères max)"
+        type: textarea
+      $.blog_posts[*].body:
         label: "Contenu de l'article"
         type: markdown
-        comment: "Structurez votre article avec des titres H2/H3 et des listes pour le SEO."
+        comment: "Utilisez des titres H2/H3 pour le SEO"
         options:
           format: p h2 h3
           headings: [2, 3]
-          headings_start_with_h2: true  # ✅ Force H2 comme premier niveau
+          headings_start_with_h2: true
           bold: true
           italic: true
-          strike: false
-          blockquote: true
-          code: true
-          link: true
           bulletlist: true
           orderedlist: true
+          link: true
           image: true
-      excerpt:
-        label: "Résumé"
-        type: textarea
-        comment: "Bref résumé de l'article pour la page d'accueil (160 caractères max)."
-      image:
-        label: "Image"
-        type: image
-      date:
-        label: "Date"
-        type: datetime
-  
+
   admin:
     path: admin
     icon: ad
@@ -57,18 +55,59 @@ collections_config:
     disable_add_folder: false
     disable_file_actions: false
 
+# ✅ Configuration des champs GLOBAUX (homepage, piliers, expert, etc.)
 _inputs:
-  hero_title:
+  # Homepage
+  $.homepage.hero_title:
+    label: "Titre principal (Homepage)"
     type: html
     cascade: true
-  
-  vision_text:
+  $.homepage.hero_subtitle:
+    label: "Sous-titre (Homepage)"
+    type: text
+    cascade: true
+  $.homepage.vision_subtitle:
+    label: "Sous-titre de la vision"
+    type: text
+    cascade: true
+  $.homepage.vision_text:
+    label: "Texte de vision"
+    type: markdown
+    cascade: true
+
+  # Piliers
+  $.piliers_section.title:
+    label: "Titre de la section Piliers"
+    type: text
+    cascade: true
+  $.piliers_section.piliers[*].title:
+    label: "Titre du pilier"
+    type: text
+    cascade: true
+  $.piliers_section.piliers[*].description:
+    label: "Description du pilier"
+    type: markdown
+    cascade: true
+
+  # Expert
+  $.expert_section.bio:
+    label: "Biographie de l'expert"
+    type: markdown
+    cascade: true
+
+  # Offres phares
+  $.offres_phares[*].title:
+    label: "Titre de l'offre"
+    type: text
+    cascade: true
+  $.offres_phares[*].description:
+    label: "Description de l'offre"
     type: markdown
     cascade: true
 
 data_config:
-  homepage:
-    path: data/content.json
+  site:
+    path: data/content.json  # ✅ Chemin vers votre fichier JSON global
 
 timezone: Etc/UTC
 output: .
