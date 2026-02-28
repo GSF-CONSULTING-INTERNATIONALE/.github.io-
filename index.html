@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -93,7 +92,6 @@
 
     <!-- HERO SECTION -->
     <header id="home" style="padding: 100px 5%; text-align: center;">
-        <!-- Le script ci-dessous ajoutera automatiquement la couleur sur "Intelligence Artificielle" -->
         <h1 id="hero-title" style="font-family: 'Syne', sans-serif; font-size: 4rem; text-transform: uppercase; letter-spacing: -2px; line-height: 1.1;">
             Transformer le Droit par <span style="color: #06b6d4;">l'Intelligence Artificielle</span>.
         </h1>
@@ -159,11 +157,11 @@
         </section>
     </main>
 
-    <!-- BLOG SECTION (Code mis à jour pour afficher les images) -->
+    <!-- BLOG SECTION -->
     <section id="blog-list" style="padding: 50px 5%;">
         <h2 style="font-family: 'Syne', sans-serif; font-size: 2.5rem; margin-bottom: 30px; text-align: center;">Analyses & Publications</h2>
         <div id="blog-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
-            <!-- Les articles seront injectés ici par le script -->
+            <!-- Les articles s'afficheront ici automatiquement -->
         </div>
     </section>
 
@@ -232,12 +230,10 @@
             .then(data => {
                 console.log("✅ Contenu dynamique chargé :", data);
                 
-                // Mise à jour Hero (avec correction de la couleur IA)
+                // Mise à jour Hero (avec correction couleur IA)
                 if (data.homepage) {
                     if (document.getElementById('hero-title')) {
-                        // On récupère le titre, on colore les mots clés, puis on affiche
                         let titleContent = data.homepage.hero_title;
-                        // Regex pour colorer "Intelligence Artificielle" ou "intelligence artificielle"
                         titleContent = titleContent.replace(/(l\'Intelligence Artificielle|l'intelligence artificielle)/gi, '<span style="color: #06b6d4;">$1</span>');
                         document.getElementById('hero-title').innerHTML = titleContent;
                     }
@@ -259,39 +255,42 @@
                         document.getElementById('book-amazon-link').href = data.expert_section.book_amazon;
                 }
 
-                // --- SCRIPT BLOG AVEC IMAGES ---
+                // --- VERSION RESTAURÉE : BLOG DYNAMIQUE & FONCTIONNEL ---
                 if (data.blog_posts && document.getElementById('blog-container')) {
                     const blogContainer = document.getElementById('blog-container');
                     blogContainer.innerHTML = ''; 
                     
-                    // Tri par date décroissante
+                    // Tri pour avoir les plus récents en premier
                     const sortedPosts = data.blog_posts.sort((a, b) => new Date(b.date) - new Date(a.date));
                     
-                    // Affichage des 3 derniers articles
-                    const postsToShow = sortedPosts.slice(0, 3);
+                    // On affiche TOUS les articles (slice supprimé)
+                    const postsToShow = sortedPosts; 
 
                     postsToShow.forEach(post => {
                         const articleCard = document.createElement('article');
                         articleCard.className = 'glass-card';
-                        articleCard.style = 'padding: 0; border-radius: 15px; display: flex; flex-direction: column; overflow: hidden;';
+                        // Style conforme : cartes élégantes et uniformes
+                        articleCard.style = 'padding: 0; border-radius: 20px; display: flex; flex-direction: column; overflow: hidden; border: 1px solid rgba(6, 182, 212, 0.2); transition: transform 0.3s ease;';
                         
-                        const dateObj = new Date(post.date);
-                        const dateStr = dateObj.toLocaleDateString('fr-FR', { year: 'numeric', month: 'long', day: 'numeric' });
+                        const dateStr = new Date(post.date).toLocaleDateString('fr-FR', { year: 'numeric', month: 'long', day: 'numeric' });
                         
-                        // Gestion de l'image (si présente)
-                        const imageHtml = post.image 
-                            ? `<div style="height: 180px; background-image: url('${post.image}'); background-size: cover; background-position: center;"></div>` 
-                            : '';
-
+                        // Structure de la carte avec lien dynamique vers blog.html
                         articleCard.innerHTML = `
-                            ${imageHtml}
-                            <div style="padding: 30px; display: flex; flex-direction: column; flex-grow: 1;">
-                                <h3 style="font-family: 'Syne'; font-size: 1.3rem; margin-bottom: 10px; color: #fff;">${post.title}</h3>
-                                <p style="font-size: 0.85rem; color: #06b6d4; margin-bottom: 15px; text-transform: uppercase;">${dateStr}</p>
-                                <p style="font-family: 'Space Grotesk'; flex-grow: 1; opacity: 0.9; line-height: 1.5;">${post.excerpt}</p>
-                                <a href="#" style="margin-top: 20px; color: #06b6d4; font-weight: 500; text-decoration: none; align-self: flex-start;">Lire la suite →</a>
+                            ${post.image ? `<div style="height: 200px; background-image: url('${post.image}'); background-size: cover; background-position: center;"></div>` : ''}
+                            <div style="padding: 25px; display: flex; flex-direction: column; flex-grow: 1;">
+                                <p style="font-size: 0.8rem; color: #06b6d4; margin-bottom: 10px; font-weight: bold;">${dateStr}</p>
+                                <h3 style="font-family: 'Syne'; font-size: 1.25rem; margin-bottom: 15px; color: #fff; line-height: 1.3;">${post.title}</h3>
+                                <p style="font-family: 'Space Grotesk'; flex-grow: 1; opacity: 0.8; font-size: 0.9rem; line-height: 1.6;">${post.excerpt}</p>
+                                <a href="blog.html?post=${post.slug}" style="margin-top: 25px; color: #06b6d4; font-weight: 700; text-decoration: none; display: flex; align-items: center; gap: 8px;">
+                                    Lire l'analyse <span style="font-size: 1.2rem;">→</span>
+                                </a>
                             </div>
                         `;
+                        
+                        // Effet au survol
+                        articleCard.onmouseover = () => articleCard.style.transform = "translateY(-5px)";
+                        articleCard.onmouseout = () => articleCard.style.transform = "translateY(0)";
+                        
                         blogContainer.appendChild(articleCard);
                     });
                 }
@@ -353,4 +352,3 @@
     </script> 
 </body>
 </html>
-```
