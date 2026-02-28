@@ -14,32 +14,36 @@ collections_config:
     array_key: blog_posts
     output: true
     url: "/blog/[slug]/"
-    
-    # ✅ Déplacement des inputs ici pour une meilleure intégration
+
     _inputs:
-      # Champs Blog
+      # ✅ Champs Blog (optimisés pour le SEO et l'expérience utilisateur)
       "$.blog_posts[*].title":
         label: "Titre de l'article"
         type: text
+        comment: "Titre accrocheur pour le SEO (60 caractères max recommandé)"
       "$.blog_posts[*].slug":
         label: "Slug (URL)"
         type: text
+        comment: "Utilisez des tirets pour séparer les mots (ex: mon-article)"
       "$.blog_posts[*].date":
         label: "Date de publication"
         type: datetime
+        comment: "Format: AAAA-MM-JJ HH:MM"
       "$.blog_posts[*].image":
         label: "Image de couverture"
         type: image
+        comment: "Format recommandé: 1200x630px pour les réseaux sociaux"
       "$.blog_posts[*].excerpt":
         label: "Résumé (160 caractères max)"
         type: textarea
+        comment: "Ce texte apparaît dans les résultats de recherche et sur la page d'accueil"
       "$.blog_posts[*].body":
         label: "Contenu de l'article"
         type: markdown
-        comment: "Utilisez des titres H2/H3 pour le SEO"
+        comment: "Structurez avec des titres H2/H3 pour un meilleur référencement"
         options:
-          format: p h2 h3
-          headings: [2, 3]
+          format: p h2 h3 h4
+          headings: [2, 3, 4]
           headings_start_with_h2: true
           bold: true
           italic: true
@@ -47,11 +51,13 @@ collections_config:
           orderedlist: true
           link: true
           image: true
+          table: true  # ✅ Ajout pour les tableaux si besoin
 
-      # Champs Homepage (présents dans le même fichier)
+      # ✅ Champs Homepage (avec types optimisés)
       "$.homepage.hero_title":
         label: "Titre principal (Homepage)"
-        type: text
+        type: html  # ✅ Changé en html pour permettre du mise en forme riche
+        comment: "Titre principal de votre page d'accueil"
       "$.homepage.hero_subtitle":
         label: "Sous-titre (Homepage)"
         type: text
@@ -60,9 +66,9 @@ collections_config:
         type: text
       "$.homepage.vision_text":
         label: "Texte de vision"
-        type: markdown
+        type: markdown  # ✅ Conservé en markdown pour la mise en forme
 
-      # Piliers
+      # ✅ Piliers (avec markdown pour les descriptions)
       "$.piliers_section.title":
         label: "Titre des Piliers"
         type: text
@@ -71,12 +77,13 @@ collections_config:
         type: text
       "$.piliers_section.piliers[*].description":
         label: "Description du pilier"
-        type: text
+        type: markdown  # ✅ Changé en markdown pour permettre la mise en forme
 
-      # Expert
+      # ✅ Expert (avec bio en markdown)
       "$.expert_section.bio":
         label: "Biographie de l'expert"
-        type: text
+        type: markdown  # ✅ Changé en markdown pour une meilleure mise en forme
+        comment: "Présentation détaillée de l'expertise"
       "$.expert_section.book_fnac":
         label: "Lien Fnac du livre"
         type: url
@@ -84,13 +91,13 @@ collections_config:
         label: "Lien Amazon du livre"
         type: url
 
-      # Offres phares (Correction pour inclure le 3ème)
+      # ✅ Offres phares (avec markdown pour les descriptions)
       "$.offres_phares[*].title":
         label: "Titre de l'offre"
         type: text
       "$.offres_phares[*].description":
         label: "Description de l'offre"
-        type: text
+        type: markdown  # ✅ Changé en markdown pour une meilleure présentation
 
   admin:
     path: admin
