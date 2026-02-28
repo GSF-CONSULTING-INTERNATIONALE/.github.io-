@@ -11,11 +11,11 @@ collections_config:
     path: data/content.json
     icon: library_books
     parser: json
-    array_key: blog_posts  # ✅ Utilisation de array_key pour cibler le tableau
+    array_key: blog_posts  # ✅ Cible le tableau blog_posts dans le JSON
     output: true
     url: "/blog/[slug]/"
     _inputs:
-      # ✅ TOUS les chemins avec [*] ont des guillemets (syntaxe JSONPath stricte)
+      # ✅ Tous les chemins JSONPath avec [*] sont entre guillemets
       "$.blog_posts[*].title":
         label: "Titre de l'article"
         type: text
@@ -54,7 +54,7 @@ collections_config:
     disable_add_folder: false
     disable_file_actions: false
 
-# ✅ Champs globaux avec guillemets pour JSONPath
+# ✅ Tous les champs globaux avec guillemets pour JSONPath
 _inputs:
   # Homepage
   "$.homepage.hero_title":
@@ -74,25 +74,47 @@ _inputs:
     type: markdown
     cascade: true
 
-  # Piliers (optionnel - à décommenter si besoin)
-  # "$.piliers_section.title":
-  #   label: "Titre des Piliers"
-  #   type: text
-  #   cascade: true
-  # "$.piliers_section.piliers[*].title":
-  #   label: "Titre du pilier"
-  #   type: text
-  #   cascade: true
+  # Piliers (activé)
+  "$.piliers_section.title":
+    label: "Titre des Piliers"
+    type: text
+    cascade: true
+  "$.piliers_section.piliers[*].title":
+    label: "Titre du pilier"
+    type: text
+    cascade: true
+  "$.piliers_section.piliers[*].description":
+    label: "Description du pilier"
+    type: markdown
+    cascade: true
 
-  # Expert (optionnel)
-  # "$.expert_section.bio":
-  #   label: "Biographie de l'expert"
-  #   type: markdown
-  #   cascade: true
+  # Expert (activé)
+  "$.expert_section.bio":
+    label: "Biographie de l'expert"
+    type: markdown
+    cascade: true
+  "$.expert_section.book_fnac":
+    label: "Lien Fnac du livre"
+    type: url
+    cascade: true
+  "$.expert_section.book_amazon":
+    label: "Lien Amazon du livre"
+    type: url
+    cascade: true
+
+  # Offres phares (ajouté)
+  "$.offres_phares[*].title":
+    label: "Titre de l'offre"
+    type: text
+    cascade: true
+  "$.offres_phares[*].description":
+    label: "Description de l'offre"
+    type: markdown
+    cascade: true
 
 data_config:
   site:
-    path: data/content.json  # ✅ Chemin vers le fichier JSON global
+    path: data/content.json  # Chemin vers le fichier JSON global
 
 timezone: Etc/UTC
 output: .
