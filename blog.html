@@ -3,102 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Analyse GSF Consulting</title>
+    <title>Blog & Analyses | GSF Consulting</title>
+    
+    <!-- SEO -->
+    <meta name="description" content="Analyses stratégiques sur l'IA, le droit OHADA, la conformité BCEAO et la souveraineté cognitive en Afrique par Gilles Feliho.">
+    
+    <!-- Fonts & Styles -->
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <style>
-        body { background-color: #050505; color: white; font-family: 'Space Grotesk', sans-serif; margin: 0; line-height: 1.6; }
-        .container { max-width: 900px; margin: 0 auto; padding: 120px 20px 50px; }
+        body { background-color: #050505; color: white; font-family: 'Space Grotesk', sans-serif; margin: 0; line-height: 1.7; }
         
-        /* Styles pour le contenu de l'article */
-        .glass-card { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); padding: 40px; border-radius: 20px; border: 1px solid rgba(255, 255, 255, 0.1); }
-        h1 { font-family: 'Syne'; font-size: 3rem; color: #fff; line-height: 1.1; margin-bottom: 20px; }
-        .meta { color: #06b6d4; font-weight: bold; text-transform: uppercase; font-size: 0.9rem; margin-bottom: 30px; }
-        .content h2 { font-family: 'Syne'; color: #06b6d4; margin-top: 40px; border-bottom: 1px solid rgba(6, 182, 212, 0.3); padding-bottom: 10px; }
-        .content p { margin-bottom: 20px; opacity: 0.9; }
-        .content ul { padding-left: 20px; }
-        .content li { margin-bottom: 10px; }
-        .back-link { display: inline-block; margin-bottom: 40px; color: #06b6d4; text-decoration: none; font-weight: bold; transition: 0.3s; }
-        .back-link:hover { color: white; }
-        #article-image { width: 100%; height: 400px; object-fit: cover; border-radius: 20px; margin-bottom: 40px; }
-        
-        /* Navbar styles rapides pour cette page */
-        #navbar { position: fixed; top: 0; width: 100%; z-index: 1000; background: rgba(5, 5, 5, 0.95); border-bottom: 1px solid #06b6d4; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; box-sizing: border-box; }
-        #navbar a { color: #fff; text-decoration: none; margin-left: 20px; font-family: 'Space Grotesk'; }
+        /* --- NAVBAR --- */
+        #navbar { position: fixed; top: 0; width: 100%; z-index: 1000; background: rgba(5, 5, 5, 0.95); border-bottom: 1px solid rgba(6, 182, 212, 0.3); padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; box-sizing: border-box; }
+        #navbar a { color: #fff; text-decoration: none; margin-left: 20px; font-weight: 500; transition: 0.3s; }
         #navbar a:hover { color: #06b6d4; }
         #navbar .logo { font-family: 'Syne'; font-weight: 800; font-size: 1.5rem; color: #06b6d4; margin-left: 0; }
+
+        /* --- LAYOUT --- */
+        .container { max-width: 900px; margin: 0 auto; padding: 120px 20px 50px; min-height: 80vh; }
         
-        /* Footer */
-        footer { text-align: center; padding: 50px; font-family: 'Space Grotesk'; opacity: 0.5; border-top: 1px solid #222; }
+        /* --- STYLE ARTICLE SEUL --- */
+        .back-link { display: inline-block; margin-bottom: 30px; color: #06b6d4; text-decoration: none; font-weight: bold; }
+        .back-link:hover { text-decoration: underline; }
+        
+        .article-header-img { width: 100%; height: 400px; object-fit: cover; border-radius: 20px; margin-bottom: 40px; background: #1a1a1a; }
+        
+        h1.article-title { font-family: 'Syne'; font-size: 3rem; color: #fff; line-height: 1.1; margin-bottom: 20px; }
+        .meta-date { color: #06b6d4; font-weight: bold; text-transform: uppercase; font-size: 0.9rem; margin-bottom: 40px; letter-spacing: 1px; }
+        
+        .article-content-wrapper { background: rgba(255, 255, 255, 0.03); padding: 40px; border-radius: 20px; border: 1px solid rgba(255, 255, 255, 0.1); }
+        
+        /* --- CORRECTION IMAGES DANS LE TEXTE --- */
+        .article-content-wrapper img { 
+            max-width: 100%;       /* L'image ne dépasse jamais le cadre */
+            height: auto;          /* Elle garde ses proportions */
+            display: block;        /* Elle se centre toute seule */
+            margin: 30px auto;     /* Espace au-dessus/dessous et centrage horizontal */
+            border-radius: 12px;   /* Coins arrondis élégants */
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5); /* Ombre légère */
+        }
+        
+        .article-content-wrapper h2 { font-family: 'Syne'; color: #06b6d4; margin-top: 50px; margin-bottom: 20px; font-size: 1.8rem; border-bottom: 1px solid rgba(6, 182, 212, 0.2); padding-bottom: 10px; }
+        .article-content-wrapper h3 { color: #fff; margin-top: 30px; font-size: 1.4rem; }
+        .article-content-wrapper p { margin-bottom: 20px; opacity: 0.9; font-size: 1.1rem; }
+        .article-content-wrapper ul, .article-content-wrapper ol { margin-bottom: 20px; padding-left: 25px; }
+        .article-content-wrapper li { margin-bottom: 10px; opacity: 0.9; }
+        .article-content-wrapper a { color: #06b6d4; text-decoration: underline; }
+
+        /* --- STYLE LISTE BLOG (GRILLE) --- */
+        .blog-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .glass-card { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); padding: 0; border-radius: 20px; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.1); transition: transform 0.3s ease; }
+        .glass-card:hover { transform: translateY(-5px); border-color: rgba(6, 182, 212, 0.4); }
+        .card-img { height: 200px; background-size: cover; background-position: center; }
+        .card-content { padding: 25px; }
+        .card-date { font-size: 0.8rem; color: #06b6d4; font-weight: bold; text-transform: uppercase; margin-bottom: 10px; }
+        .card-title { font-family: 'Syne'; font-size: 1.3rem; margin-bottom: 15px; color: #fff; }
+        .card-excerpt { font-size: 0.95rem; opacity: 0.8; margin-bottom: 20px; line-height: 1.5; }
+        .card-link { color: #06b6d4; font-weight: 700; text-decoration: none; }
+
+        footer { text-align: center; padding: 40px; border-top: 1px solid #222; opacity: 0.6; font-size: 0.9rem; }
+
+        /* Mobile Nav */
+        @media (max-width: 768px) {
+            #navbar { padding: 1rem; }
+            #navbar a { margin-left: 10px; font-size: 0.9rem; }
+            h1.article-title { font-size: 2rem; }
+            .article-header-img { height: 250px; }
+        }
     </style>
 </head>
 <body>
 
-    <!-- NAVIGATION (Copie simplifiée de l'index) -->
+    <!-- NAVBAR -->
     <nav id="navbar">
-        <div style="display: flex; align-items: center;">
-            <a href="index.html" class="logo">GSF CONSULTING</a>
-        </div>
+        <a href="index.html" class="logo">GSF CONSULTING</a>
         <div>
             <a href="index.html#home">Accueil</a>
             <a href="index.html#vision">Vision</a>
-            <a href="index.html#blog-list">Blog</a>
+            <a href="blog.html">Blog</a>
             <a href="index.html#contact">Contact</a>
         </div>
     </nav>
 
-    <div class="container">
-        <a href="index.html#blog-list" class="back-link">← Retour aux analyses</a>
-        
-        <article id="article-view">
-            <img id="article-image" src="" alt="" style="display:none;">
-            <div class="meta" id="article-date">Chargement...</div>
-            <h1 id="article-title">Lecture de l'analyse...</h1>
-            <div class="glass-card content" id="article-body"></div>
-        </article>
+    <div class="container" id="main-content">
+        <!-- Le contenu sera injecté ici par le script -->
+        <p style="text-align: center; margin-top: 50px;">Chargement des analyses...</p>
     </div>
 
     <footer>
-        <p>&copy; 2024 GSF Consulting International - Tous droits réservés.</p>
+        &copy; 2024 GSF Consulting International
     </footer>
 
+    <!-- SCRIPT LOGIQUE HYBRIDE -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script>
         const urlParams = new URLSearchParams(window.location.search);
         const postSlug = urlParams.get('post');
-
-        if (!postSlug) {
-            // Si pas de slug, on redirige vers l'accueil
-            window.location.href = 'index.html';
-        }
+        const mainContent = document.getElementById('main-content');
 
         fetch('content.json')
             .then(res => {
-                if (!res.ok) throw new Error("JSON introuvable");
+                if (!res.ok) throw new Error("Fichier JSON introuvable");
                 return res.json();
             })
             .then(data => {
-                const post = data.blog_posts.find(p => p.slug === postSlug);
-
-                if (post) {
-                    document.title = `${post.title} | GSF Consulting`;
-                    document.getElementById('article-title').textContent = post.title;
-                    document.getElementById('article-date').textContent = new Date(post.date).toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' });
+                // 1. MODE ARTICLE SEUL (Si ?post=slug dans l'URL)
+                if (postSlug) {
+                    const post = data.blog_posts.find(p => p.slug === postSlug);
                     
-                    if (post.image) {
-                        const img = document.getElementById('article-image');
-                        img.src = post.image;
-                        img.style.display = 'block';
-                    }
+                    if (post) {
+                        document.title = `${post.title} | GSF Consulting`;
+                        
+                        // Conversion Markdown sécurisée
+                        let bodyHtml = post.body;
+                        if (typeof marked !== 'undefined') {
+                            bodyHtml = marked.parse(post.body);
+                        } else {
+                            // Fallback si la librairie ne charge pas (remplace les sauts de ligne par des <br>)
+                            bodyHtml = post.body.replace(/\n/g, '<br>');
+                        }
 
-                    // Conversion Markdown vers HTML
-                    document.getElementById('article-body').innerHTML = marked.parse(post.body);
-                } else {
-                    document.getElementById('article-title').textContent = "Article non trouvé";
-                    document.getElementById('article-body').innerHTML = "<p>L'article que vous cherchez n'existe pas.</p>";
+                        mainContent.innerHTML = `
+                            <a href="blog.html" class="back-link">← Retour au Blog</a>
+                            <img src="${post.image}" alt="${post.title}" class="article-header-img" onerror="this.style.display='none'">
+                            <div class="meta-date">${new Date(post.date).toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' })}</div>
+                            <h1 class="article-title">${post.title}</h1>
+                            <div class="article-content-wrapper">${bodyHtml}</div>
+                        `;
+                    } else {
+                        mainContent.innerHTML = `<h1>Article non trouvé</h1><p><a href="blog.html">Retour au blog</a></p>`;
+                    }
+                } 
+                // 2. MODE LISTE BLOG (Page par défaut)
+                else {
+                    document.title = "Analyses & Publications | GSF Consulting";
+                    
+                    // Tri par date
+                    const sortedPosts = data.blog_posts.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+                    let listHtml = `<h1 style="font-family:'Syne'; font-size:3rem; text-align:center; margin-bottom:40px;">Analyses & Publications</h1><div class="blog-grid">`;
+                    
+                    sortedPosts.forEach(post => {
+                        listHtml += `
+                            <article class="glass-card">
+                                <div class="card-img" style="background-image: url('${post.image}');" onerror="this.style.background='#1a1a1a'"></div>
+                                <div class="card-content">
+                                    <div class="card-date">${new Date(post.date).toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' })}</div>
+                                    <h3 class="card-title">${post.title}</h3>
+                                    <p class="card-excerpt">${post.excerpt}</p>
+                                    <a href="blog.html?post=${post.slug}" class="card-link">Lire l'analyse →</a>
+                                </div>
+                            </article>
+                        `;
+                    });
+                    
+                    listHtml += `</div>`;
+                    mainContent.innerHTML = listHtml;
                 }
             })
-            .catch(err => console.error("Erreur de chargement de l'article:", err));
+            .catch(err => {
+                console.error(err);
+                mainContent.innerHTML = `<h1 style="color:red; text-align:center;">Erreur de chargement</h1><p style="text-align:center;">Vérifiez que le fichier content.json est bien présent.</p>`;
+            });
     </script>
 </body>
 </html>
