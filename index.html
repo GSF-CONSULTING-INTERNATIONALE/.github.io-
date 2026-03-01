@@ -8,7 +8,6 @@
     <!-- SEO POWER PACK -->
     <title>Intelligence stratégique, souveraineté cognitive et conformité globale en Afrique | GSF Consulting</title>
     <meta name="description" content="Expertise juridique OHADA et IA. Audit de Souveraineté Cognitive™, conformité financière UEMOA et solutions de recouvrement par Gilles Feliho.">
-    <!-- Autres balises meta (robots, og, etc.) inchangées -->
     <link rel="canonical" href="https://gsfconsultinginternational.com/" />
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
@@ -18,11 +17,39 @@
         a:hover { color: white; }
         .glass-card { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
         
-        /* Classes utilitaires pour le script */
+        /* Grilles et Cartes */
         .grid-layout { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
-        .pilier-card, .offre-card, .blog-card { padding: 30px; border-radius: 15px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(6, 182, 212, 0.2); transition: transform 0.3s ease; }
-        .pilier-card:hover, .blog-card:hover { transform: translateY(-5px); border-color: rgba(6, 182, 212, 0.5); }
+        .pilier-card { padding: 30px; border-radius: 15px; background: rgba(255, 255, 255, 0.05); text-align: center; }
+        .offre-card { padding: 40px; border-radius: 20px; background: rgba(255, 255, 255, 0.05); }
         
+        /* Style spécial Blog pour bien contenir les images techniques */
+        .blog-card {
+            border-radius: 20px;
+            overflow: hidden; /* Important pour contenir l'image */
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(6, 182, 212, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(6, 182, 212, 0.15);
+            border-color: rgba(6, 182, 212, 0.5);
+        }
+        .blog-card img {
+            width: 100%;
+            height: 220px; /* Hauteur fixe pour uniformiser graphiques et photos */
+            object-fit: cover; /* L'image remplit sans déformer */
+            background-color: #1a1a1a;
+        }
+        .blog-content {
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
         /* Menu Mobile */
         #mobile-menu { display: none; flex-direction: column; background: rgba(0, 0, 0, 0.95); padding: 1rem; position: absolute; top: 100%; left: 0; width: 100%; z-index: 999; }
         #mobile-menu.active { display: flex; }
@@ -58,6 +85,7 @@
 
     <!-- HERO SECTION -->
     <header id="home" style="padding: 100px 5%; text-align: center;">
+        <!-- Le script va injecter le titre avec la couleur ici -->
         <h1 id="hero-title" style="font-family: 'Syne', sans-serif; font-size: 4rem; text-transform: uppercase; letter-spacing: -2px; line-height: 1.1;">Chargement...</h1>
         <p id="hero-subtitle" style="font-family: 'Space Grotesk'; max-width: 600px; margin: 20px auto; opacity: 0.8;"></p>
         <a href="#contact" class="glass-card" style="padding: 15px 40px; cursor: pointer; border: 1px solid #06b6d4; color: #fff; background: transparent; display: inline-block;">Demander un Devis</a>
@@ -70,26 +98,24 @@
         <div id="vision-text" style="font-family: 'Space Grotesk'; max-width: 800px; margin: 0 auto; line-height: 1.6;"></div>
     </section>
 
-    <!-- PILIERS SECTION (ID modifié pour le script) -->
+    <!-- PILIERS SECTION -->
     <section id="piliers" style="padding: 50px 5%; text-align: center;">
         <h2 style="font-family: 'Syne', sans-serif; font-size: 2.5rem; margin-bottom: 40px;">Nos 5 Piliers d'Excellence</h2>
-        <!-- Le script injecte le contenu ici -->
         <div id="piliers-grid" class="grid-layout"></div>
     </section>
 
-    <!-- SOLUTIONS SECTION (ID modifié pour le script) -->
+    <!-- SOLUTIONS SECTION -->
     <main id="solutions" style="padding: 50px 5%;">
         <div id="offres-grid" class="grid-layout"></div>
     </main>
 
-    <!-- BLOG SECTION (ID modifié pour le script) -->
+    <!-- BLOG SECTION -->
     <section id="blog-list" style="padding: 50px 5%;">
         <h2 style="font-family: 'Syne', sans-serif; font-size: 2.5rem; margin-bottom: 30px; text-align: center;">Analyses & Publications</h2>
-        <!-- Le script injecte le contenu ici -->
         <div id="blog-grid" class="grid-layout"></div>
     </section>
 
-    <!-- EXPERT SECTION (IDs modifiés pour le script) -->
+    <!-- EXPERT SECTION -->
     <section id="expert" style="padding: 50px 5%; text-align: center;">
         <h2 style="font-family: 'Syne', sans-serif; font-size: 2.5rem; margin-bottom: 20px;">L'Expert : Gilles Feliho</h2>
         <p id="expert-bio" style="font-family: 'Space Grotesk'; max-width: 800px; margin: 0 auto 20px; line-height: 1.6;"></p>
@@ -110,7 +136,7 @@
         <p>&copy; 2024 GSF Consulting International - Tous droits réservés.</p>
     </footer>
 
-    <!-- SCRIPT UTILISATEUR ADAPTÉ -->
+    <!-- SCRIPT CORRIGÉ POUR LE TITRE ET LES IMAGES -->
     <script>
       document.addEventListener('DOMContentLoaded', function() {
         fetch('content.json')
@@ -121,15 +147,21 @@
           .then(data => {
             console.log("Données chargées :", data);
 
-            // 1. Hero section
-            setText('hero-title', data.homepage?.hero_title);
+            // 1. Hero Section (Correction Couleur)
+            const heroTitle = document.getElementById('hero-title');
+            if (heroTitle && data.homepage?.hero_title) {
+                // On utilise innerHTML pour injecter le span de couleur
+                let titleContent = data.homepage.hero_title;
+                // Regex pour colorer "Intelligence Artificielle"
+                titleContent = titleContent.replace(/(l\'Intelligence Artificielle|l'intelligence artificielle)/gi, '<span style="color: #06b6d4;">$1</span>');
+                heroTitle.innerHTML = titleContent;
+            }
             setText('hero-subtitle', data.homepage?.hero_subtitle);
 
-            // 2. Section vision (Correction pour les sauts de ligne)
+            // 2. Vision
             setText('vision-subtitle', data.homepage?.vision_subtitle);
             const visionEl = document.getElementById('vision-text');
             if (visionEl && data.homepage?.vision_text) {
-                // On remplace \n par <br> pour garder la mise en forme
                 visionEl.innerHTML = data.homepage.vision_text.replace(/\n/g, '<br>');
             }
 
@@ -144,7 +176,7 @@
               `).join('');
             }
 
-            // 4. Offres phares
+            // 4. Offres
             const offresGrid = document.getElementById('offres-grid');
             if (offresGrid && data.offres_phares) {
               offresGrid.innerHTML = data.offres_phares.map(o => `
@@ -155,32 +187,32 @@
               `).join('');
             }
 
-            // 5. Expert section (bio + liens)
+            // 5. Expert
             setText('expert-bio', data.expert_section?.bio);
             const fnacLink = document.getElementById('fnac-link');
             if (fnacLink) fnacLink.href = data.expert_section?.book_fnac || '#';
             const amazonLink = document.getElementById('amazon-link');
             if (amazonLink) amazonLink.href = data.expert_section?.book_amazon || '#';
 
-            // 6. Blog posts
+            // 6. Blog (Gestion des images techniques)
             const blogGrid = document.getElementById('blog-grid');
             if (blogGrid && data.blog_posts) {
-              blogGrid.innerHTML = ''; // vide le contenu par défaut
-              
-              // Tri par date
+              blogGrid.innerHTML = '';
               const sortedPosts = data.blog_posts.sort((a, b) => new Date(b.date) - new Date(a.date));
 
               sortedPosts.forEach(post => {
                 const card = document.createElement('div');
                 card.className = 'blog-card';
                 const postDate = new Date(post.date).toLocaleDateString('fr-FR');
+                
+                // On garde la structure propre pour les images
                 card.innerHTML = `
-                  <img src="${escapeHtml(post.image)}" alt="${escapeHtml(post.title)}" style="width:100%; height:200px; object-fit:cover; border-radius:15px 15px 0 0;" onerror="this.src='https://via.placeholder.com/400x250?text=Image+Non+Disponible'">
-                  <div style="padding: 25px;">
+                  <img src="${escapeHtml(post.image)}" alt="${escapeHtml(post.title)}" onerror="this.src='https://via.placeholder.com/400x220/0a0a0a/06b6d4?text=Image+Indisponible'">
+                  <div class="blog-content">
                     <p style="font-size: 0.8rem; color: #06b6d4; font-weight: bold; text-transform: uppercase;">${postDate}</p>
                     <h3 style="font-family:'Syne'; font-size:1.3rem; margin:10px 0;">${escapeHtml(post.title)}</h3>
-                    <p style="opacity:0.8; font-size:0.9rem; margin-bottom:20px;">${escapeHtml(post.excerpt)}</p>
-                    <a href="blog.html?post=${encodeURIComponent(post.slug)}" class="read-more" style="color: #06b6d4; font-weight: 700;">Lire l'analyse →</a>
+                    <p style="opacity:0.8; font-size:0.9rem; flex-grow:1;">${escapeHtml(post.excerpt)}</p>
+                    <a href="blog.html?post=${encodeURIComponent(post.slug)}" class="read-more" style="color: #06b6d4; font-weight: 700; margin-top:15px; display:block;">Lire l'analyse →</a>
                   </div>
                 `;
                 blogGrid.appendChild(card);
@@ -189,7 +221,6 @@
           })
           .catch(error => console.error('Erreur chargement JSON :', error));
 
-        // Fonctions utilitaires
         function setText(id, text) {
           const el = document.getElementById(id);
           if (el && text) el.textContent = text;
