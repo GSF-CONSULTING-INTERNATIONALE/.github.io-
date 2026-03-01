@@ -70,7 +70,7 @@
       "title": "Naviguer le Labyrinthe Réglementaire UEMOA/CEMAC",
       "slug": "naviguer-labyrinthe-reglementaire-uemoa-cemac-2026",
       "date": "2026-02-28T10:00:00.000Z",
-      "image": "/uploads/labyrinthe-reglementaire-uemoa-cemac.png",
+      "image": "/uploads/labyrinthe-reglementaire-uemoa-cemac.JPG",
       "excerpt": "L'essor des fintechs s'accompagne d'un durcissement prudentiel. Découvrez comment transformer la conformité en avantage compétitif.",
       "body": "## Introduction\n\nL'essor des fintechs en Afrique de l'Ouest et Centrale est spectaculaire. Mais cette dynamique s'accompagne d'un durcissement prudentiel sans précédent.\n\n## 1. Le Diagnostic : Un Cadre Règlementaire Fragmenté\nLe premier réflexe d'un professionnel est de cartographier la superposition des normes : OHADA, GAFI, BCEAO, BEAC/COBAC.\n\n## 2. L'IA Comme \"Co-pilote\"\n- **Onboarding & KYC** : L'IA automatise la détection d'anomalies.\n- **Veille Réglementaire Intelligente** : Le moteur d'IA analyse les nouvelles circulaires.\n- **Gestion du Recouvrement OHADA** : L'IA garantit que l'automatisation reste dans le cadre juridique.\n\n## Conclusion\nL'avenir de la finance en Afrique se jouera sur cette capacité à allier innovation technologique et robustesse juridique."
     },
@@ -78,7 +78,7 @@
       "title": "Scoring Credit & Conformité BCEAO : Retour d'Expérience",
       "slug": "scoring-credit-conformite-bceao-thin-file",
       "date": "2026-02-20T10:00:00.000Z",
-      "image": "/uploads/scoring-credit-conformite-bceao.jpg",
+      "image": "/uploads/Scoring-Credit.jpg",
       "excerpt": "Audit d'un modèle de prédiction pour une Fintech BNPL en UEMOA.",
       "body": "# Scoring Credit & Conformité BCEAO en Environnement \"Thin File\"\n\n## Le Chiffre qui Change la Donne\n\nLors d'une mission récente pour une fintech de paiement fractionné (BNPL), nous avons été confrontés à un problème critique : comment prouver au superviseur que son modèle de scoring était robuste, non-discriminatoire et traçable ?\n\nLe coût de l'immobilisation pour mise en conformité était estimé à 4500 € par jour.\n\n## La Matérialité du Risque\n\nEn zone UEMOA, le régulateur attend que les institutions soient capables d'expliquer leurs décisions. Nous avons suivi une méthodologie en trois couches :\n1. Performance Statistique.\n2. Stabilité (Data Drift).\n3. Auditabilité.\n\n## Conclusion\n\nCette mission a abouti à un modèle de scoring \"boîte blanche\" parfaitement documenté. La conformité devient un actif stratégique."
     },
@@ -86,7 +86,7 @@
       "title": "Interview : Gilles Feliho, l'architecte de la Souveraineté Cognitive™",
       "slug": "interview-gilles-feliho-souverainete-cognitive",
       "date": "2026-02-21T10:00:00.000Z",
-      "image": "/uploads/interview-gilles-feliho.png",
+      "image": "/uploads/interview-gilles-feliho.PNG",
       "excerpt": "Face aux nouveaux risques de l'IA, Gilles Feliho théorise l'Audit de Souveraineté Cognitive™.",
       "body": "# Interview : Gilles FELIHO, l'architecte de la Souveraineté Cognitive™\n\n**GSF Consulting :** Monsieur FELIHO, votre parcours est un pont entre la rigueur financière parisienne et l'agilité des marchés ouest-africains. Comment cette double culture forge-t-elle votre vision ?\n\n**Gilles FELIHO :** Mon expertise s'est construite à l'epicentre de ces deux mondes. J'ai passé plus de deux décennies sur le terrain africain. Aujourd'hui, je conçois des cadres qui permettent de transformer ces contraintes en leviers de compétitivité.\n\n**GSF Consulting :** Vous avez théorisé l'« Audit de Souveraineté Cognitive™ » (ASC™). Quel problème résout-il ?\n\n**Gilles FELIHO :** Le problème majeur est la « Black Box Juridique ». Si la direction juridique est incapable de justifier une décision algorithmique face à la BCEAO, l'institution s'expose à des amendes pouvant atteindre 11 % de son chiffre d'affaires. L'ASC™ est une architecture de confiance.\n\n**GSF Consulting :** Quel est le lien avec la souveraineté numérique ?\n\n**Gilles FELIHO :** Si nos banques utilisent des IA « boîtes noires » étrangères, elles perdent leur capacité d'audit et leur souveraineté monétaire."
     },
@@ -94,7 +94,7 @@
       "title": "Le Droit Exécutable : Transformer la Contrainte IA en Levier Stratégique",
       "slug": "droit-executable-gouvernance-ia-afrique",
       "date": "2026-02-22T10:00:00.000Z",
-      "image": "/uploads/droit-executable.png",
+      "image": "/uploads/droit-executable.png.PNG",
       "excerpt": "Découvrez comment le droit exécutable révolutionne la conformité IA en Afrique.",
       "body": "# Le Droit Exécutable : Quand la Norme Devient Architecture\n\n## Introduction\nNous sommes face à une contradiction. D'un côté, l'AI Act impose la traçabilité. De l'autre, la BCEAO renforce ses contrôles. Une solution émerge : le droit exécutable (executable law).\n\n## Qu'est-ce que le droit exécutable ?\nIl consiste à formaliser les règles juridiques sous forme d'algorithmes capables d'appliquer automatiquement des décisions conformes.\n\n## Les 4 Piliers selon GSF Consulting\n1. **Traçabilité** : Rendre l'algorithme accountable.\n2. **Opposabilité** : Faire du code un acte juridique.\n3. **Rétroactivité maîtrisée** : Mise à jour sans rompre la confiance.\n4. **Souveraineté Cognitive** : Garder le contrôle sur la logique algorithmique.\n\n**Conclusion** : Les institutions qui intégreront le droit exécutable disposeront d'un avantage compétitif décisif."
     }
