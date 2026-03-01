@@ -1,0 +1,126 @@
+{
+  "homepage": {
+    "hero_title": "Transformer le Droit par l'Intelligence Artificielle.",
+    "hero_subtitle": "De l'expertise juridique OHADA et anti blanchiment de capitaux, aux solutions de recouvrement augmentées par l'IA, GSF Consulting International réinvente le conseil pour l'Afrique.",
+    "vision_subtitle": "Une transition vers le conseil 4.0",
+    "vision_text": "Depuis plus de 20 ans, GSF Conseil accompagne les grandes institutions de l'espace francophone. Aujourd'hui, sous l'impulsion de Gilles Feliho, nous devenons GSF Consulting International.\n\nNotre mission ? Allier la profondeur de l'expertise juridique traditionnelle à la puissance de l'intelligence artificielle. Nous aidons les entreprises, États et investisseurs à naviguer dans la complexité du droit des affaires africain (OHADA, UEMOA), tout en optimisant leurs processus critiques comme le recouvrement de créances et la gestion des risques."
+  },
+  "piliers_section": {
+    "title": "Nos 5 Piliers d'Excellence",
+    "piliers": [
+      {
+        "title": "Innovation Juridique",
+        "description": "L'IA au service de la résolution de litiges et de la conformité. LegalTech et Intelligence Artificielle Juridique."
+      },
+      {
+        "title": "Expertise Afrique-Francophonie",
+        "description": "Maîtrise absolue des espaces OHADA, UEMOA, CEDEAO et CIMA. Conseil juridique OHADA."
+      },
+      {
+        "title": "Maîtrise Technologique",
+        "description": "Des solutions SaaS et des algorithmes propriétaires."
+      },
+      {
+        "title": "Négociation Internationale",
+        "description": "Une approche diplomatique et stratégique des conflits."
+      },
+      {
+        "title": "Gestion du Risque",
+        "description": "Protection des investissements et sécurisation des projets. Due Diligence et Sécurisation juridique."
+      }
+    ]
+  },
+  "offres_phares": [
+    {
+      "title": "Agent IA de Recouvrement",
+      "description": "Automatisez vos créances impayées. Analyse de risque, scoring prédictif et relances intelligentes conformes au droit OHADA."
+    },
+    {
+      "title": "Conseil Juridique & Financier",
+      "description": "Expertise reconnue auprès de la CEDEAO, l'AFD et la Francophonie. Négociation internationale et gestion des risques."
+    },
+    {
+      "title": "Plateforme RegTech & Conformité",
+      "description": "Solutions technologiques pour automatiser la conformité (AML) et sécuriser les opérations financières."
+    }
+  ],
+  "expert_section": {
+    "bio": "Expert international en droit des affaires et anti-blanchiment de capitaux, pionnier de l'intersection entre le droit africain et l'intelligence artificielle. Auteur de Homo Algorithmicus et Blanchiment en liberté.",
+    "book_fnac": "https://www.fnac.com/livre-numerique/a21477208/Gilles-Feliho-Homo-Algorithmicus",
+    "book_amazon": "https://www.amazon.fr/dp/B0FBKFJRZC"
+  },
+  "blog_posts": [
+    {
+      "title": "L'IA dans la lutte contre le blanchiment de capitaux en Afrique",
+      "slug": "ia-lutte-blanchiment-afrique-2026",
+      "date": "2026-02-27T00:00:00.000Z",
+      "image": "/uploads/intelligence-artificielle-droit-ohada-jpeg.jpg",
+      "excerpt": "Exploration des applications de l'intelligence artificielle pour renforcer la conformité.",
+      "body": "# L’IA dans la lutte contre le blanchiment de capitaux en Afrique : opportunités et défis\n\n**Résumé** : L’intelligence artificielle (IA) émerge comme un outil puissant pour renforcer la conformité anti-blanchiment (LBC/FT) en Afrique, notamment dans l’espace OHADA. Cet article explore les applications innovantes de l’IA pour détecter et prévenir les activités illicites, tout en abordant les opportunités et les défis inhérents à son déploiement sur le continent.\n\n## Introduction : Un défi persistant pour l’Afrique\nLe blanchiment de capitaux et le financement du terrorisme (BC/FT) représentent un défi majeur pour la stabilité économique et la gouvernance en Afrique. Des pays comme la Côte d’Ivoire figurent encore sur la liste grise du Groupe d’Action Financière (GAFI), soulignant la nécessité de renforcer les dispositifs de lutte. Face à l’ingéniosité croissante des réseaux criminels, les méthodes traditionnelles de détection montrent leurs limites.\n\n## L’IA : Un allié stratégique contre les flux financiers illicites\nL’intelligence artificielle, par sa capacité à traiter et analyser de vastes volumes de données, peut révolutionner la LBC/FT. Ses applications sont multiples :\n\n- **Détection des anomalies et des schémas suspects** : Les algorithmes d’apprentissage automatique peuvent identifier des comportements transactionnels inhabituels.\n- **Amélioration de la connaissance client (KYC)** : L’IA peut automatiser et affiner les processus de vérification d’identité.\n- **Automatisation des rapports réglementaires** : Les solutions basées sur l’IA peuvent générer automatiquement les déclarations d’opérations suspectes (DOS)."
+    },
+    {
+      "title": "Intelligence stratégique et souveraineté cognitive",
+      "slug": "souverainete-cognitive-afrique-2026",
+      "date": "2026-02-26T10:00:00.000Z",
+      "image": "https://media.licdn.com/dms/image/v2/D4D12AQFU12fCQXH7Aw/article-cover_image-shrink_720_1280/B4DZh1B0xtGgAQ-/0/1754310081071?e=2147483647&v=beta&t=LSMaP6YsupmJY_l_twUfqgz88JIMlAIUc2cI_D5Suvk",
+      "excerpt": "L'IA et la finance numérique imposent une nouvelle souveraineté.",
+      "body": "# Audit de Souveraineté Cognitive™ (ASC™)\n\nFace à l'explosion des exigences réglementaires (AI Act, ACPR, BCEAO), les institutions financières font face à un défi existentiel : celui de la \"Black Box Juridique\".\n\nL'ASC™ positionne votre établissement comme pionnier de la gouvernance IA. Un cadre robuste agit comme un \"passeport pour l'innovation\" , signalant aux régulateurs et investisseurs votre maîtrise du risque numérique."
+    },
+    {
+      "title": "IA et Avocats en Afrique : Réinvention ou menace ?",
+      "slug": "ia-avocats-afrique-ohada-2026",
+      "date": "2026-02-23T10:00:00.000Z",
+      "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1200",
+      "excerpt": "L'IA va-t-elle remplacer les avocats en Afrique ? Analyse des positions officielles.",
+      "body": "# IA et Avocats en Afrique : Réinvention du métier ou menace réelle ?\n\nLa question n’est plus théorique. À Abidjan, Dakar ou Nairobi, magistrats et avocats s’interrogent. L'IA ne remplacera pas l'essence du métier d'avocat : le conseil, la plaidoirie, l'éthique. En revanche, elle transforme profondément les méthodes de travail."
+    },
+    {
+      "title": "Révélation : 950 milliards FCFA échappent aux radars",
+      "slug": "950-milliards-fcfa-benin-nigeria-2026",
+      "date": "2026-02-25T10:00:00.000Z",
+      "image": "/uploads/intelligence-artificielle-droit-ohada-jpg.jpg",
+      "excerpt": "Enquête sur les flux financiers illicites entre le Bénin et le Nigeria.",
+      "body": "# Révélation exclusive : 950 milliards FCFA de flux illicites\n\nDans cette enquête exclusive, Gilles Sixte FELIHO lève le voile sur un système parallèle tentaculaire. Découvrez comment entre 700 et 950 milliards de FCFA échappent chaque année aux contrôles."
+    },
+    {
+      "title": "Souveraineté cognitive 2026 : Feuille de route",
+      "slug": "souverainete-cognitive-2026-feuille-route",
+      "date": "2026-02-28T00:00:00.000Z",
+      "image": "/uploads/souverainete-cognitive-18-mois-jpg.jpg",
+      "excerpt": "Une feuille de route en 18 mois pour transformer l'IA en actif stratégique.",
+      "body": "![Souveraineté Cognitive 2026](/uploads/img-6695.png)"
+    },
+    {
+      "title": "Naviguer le Labyrinthe Réglementaire UEMOA/CEMAC : Pourquoi une Approche \"IA + Expertise Juridique Locale\" Est Devenue un Avantage Compétitif pour les Fintechs",
+      "slug": "naviguer-labyrinthe-reglementaire-uemoa-cemac-2026",
+      "date": "2026-02-28T10:00:00.000Z",
+      "image": "https://z-cdn-media.chatglm.cn/files/2a543b6c-16a8-4c9d-8f3c-283520b1f102.png?auth_key=1872287549-5bbd982435914c99a173762106082edc-0-cf55eda32b41c47a81a839408ab49506",
+      "excerpt": "L’essor des fintechs en Afrique de l’Ouest et Centrale s’accompagne d’un durcissement prudentiel. Découvrez comment transformer la conformité en avantage compétitif via l’IA et l’expertise locale.",
+      "body": "## Introduction\n\nL’essor des fintechs en Afrique de l’Ouest et Centrale est spectaculaire. Les levées de fonds explosent, le mobile money se généralise et de nouveaux acteurs obtiennent des agréments d’établissement de paiement auprès de la BCEAO et de la BEAC. Mais cette dynamique s’accompagne d’un durcissement prudentiel sans précédent : exigences LCB-FT renforcées, protection du consommateur, reporting périodique, cybersécurité.\n\nPour un CEO de fintech ou un DAF d’institution financière, la question n’est plus \"comment innover ?\" mais \"comment innover sans se voir notifier une injonction du régulateur ?\". Trop souvent, la conformité est perçue comme une contrainte coûteuse. Nous proposons ici une grille de lecture inverse : comment transformer la complexité réglementaire en un avantage structurant, grâce à une alliance inédite entre l’intelligence artificielle et une expertise juridique pointue.\n\n## 1. Le Diagnostic : Un Cadre Règlementaire Fragmenté, Une Source de Risques et d’Opportunités\n\nLe premier réflexe d’un professionnel face à la conformité en zone UEMOA/CEMAC est de cartographier la superposition des normes :\n\n· Le socle commun : OHADA (droit des affaires), GAFI (recommandations LCB-FT).\n· Les directives régionales : BCEAO (paiements, microfinance), BEAC/COBAC, CIMA (assurance), CREPMF (marchés financiers).\n· Les spécificités locales : Instructions nationales, circulaires d’application, positions des superviseurs.\n\nFace à cela, les solutions \"globales\" (oracle, Fircosoft) ou les simples cabinets de conseil ponctuels montrent leurs limites. Les premières sont aveugles à la granularité d’une Instruction n°001-10-2015 de la BCEAO ; les seconds n’offrent pas de solution continue.\n\nC’est là qu’intervient la RegTech. Une plateforme comme celle que nous développons ne se contente pas de centraliser les textes. Elle les cartographie par type d’acteur (émetteur de monnaie électronique, PSP, IMF, banque) et génère, par exemple, votre matrice des obligations LCB-FT actualisée en temps réel. La contrainte devient un tableau de bord pilotable.\n\n## 2. L’IA Comme \"Co-pilote\", Pas Comme Boîte Noire : Rentrer Dans le Détail Produit\n\nPour un décideur, le vrai sujet est l’opérationnalisation. Comment l’IA transforme-t-elle concrètement le workflow compliance ?\n\n· Onboarding & KYC : L’IA ne se limite pas au scoring d’identité. Entraînée sur les spécificités des pièces d’identité locales et les listes nationales de sanctions, elle automatise la détection d’anomalies et suggère les niveaux de due diligence à appliquer (simplifiée, normale, renforcée) en fonction du profil de risque du client, en phase avec les attentes de la BCEAO.\n· Veille Réglementaire Intelligente : Fini la revue manuelle des bulletins officiels. Le moteur d’IA analyse une nouvelle circulaire de la BEAC sur le plafonnement des transactions et vous alerte immédiatement sur l’impact potentiel dans votre produit de mobile money, en proposant une mise à jour de votre politique interne.\n· Gestion du Recouvrement en Environnement OHADA : Pour une fintech \"Buy Now Pay Later\", le recouvrement amiable automatisé est crucial. L’IA peut segmenter les dossiers et prioriser les actions, mais elle doit le faire en intégrant les règles de procédure simplifiée de recouvrement de l’OHADA et les délais légaux, sous peine de nullité. Le \"co-pilote\" IA garantit que l’automatisation reste dans le cadre.\n\n## 3. Gouvernance des Modèles et Relation Régulateur : Le Sceau de l’Expertise\n\nC’est le point le plus critique et le moins discuté. Un régulateur comme la COBAC ou la BCEAO exigera de comprendre comment vous prenez des décisions, surtout si elles sont automatisées.\n\n· Traçabilité : Notre approche \"IA + expertise\" intègre la traçabilité des décisions. Pourquoi un client a-t-il été \"scoré\" à risque ? Le modèle peut expliquer ses features (ex : \"pays de provenance X\", \"transaction atypique Y\"), créant ainsi une piste d’audit.\n· Auditabilité : Nous accompagnons nos clients pour préparer ces dossiers. L’objectif est de pouvoir présenter au superviseur non seulement la politique, mais aussi la preuve que le modèle a été testé, challengeé, et que ses biais potentiels (ex : exclusion de certaines zones géographiques) ont été maîtrisés.\n\nLa conformité cesse d’être un centre de coût pour devenir un argument de confiance auprès des investisseurs et des régulateurs, notamment lors des demandes d’agrément ou des passages en \"sandbox\".\n\n## Conclusion et Conseils Pratiques\n\nPour les dirigeants de fintechs et institutions financières en Afrique francophone, la nouvelle équation est simple : vous ne pouvez plus faire l’impasse sur la conformité, mais vous ne pouvez pas non plus vous permettre de la traiter manuellement.\n\nVoici une feuille de route en trois points :\n\n1. Audit rapide : Cartographiez vos lacunes par rapport aux 5-6 textes clés qui régissent votre activité (ex : Instruction BCEAO LCB-FT, Règlement COBAC sur les risques).\n2. Outillez-vous : Adoptez une plateforme RegTech qui couvre votre périmètre géographique et normatif. Assurez-vous qu’elle offre une couche d’IA \"explicable\" et non une boîte noire.\n3. Formez et structurez : La technologie ne remplace pas l’expert ; elle la démultiplie. Formez vos équipes à cette nouvelle relation \"humain-machine\" et documentez vos processus pour être toujours \"prêt à auditer\".\n\nL’avenir de la finance en Afrique se jouera sur cette capacité à allier innovation technologique et robustesse juridique. C’est le défi que nous relevons au quotidien, pour faire de la conformité un véritable levier de croissance."
+    },
+    {
+      "title": "Scoring Credit & Conformité BCEAO : Retour d'Expérience",
+      "slug": "scoring-credit-conformite-bceao-thin-file",
+      "date": "2026-02-20T10:00:00.000Z",
+      "image": "https://z-cdn-media.chatglm.cn/files/a00a8109-a899-4ad9-b90a-9ff3f917ab9b.JPG?auth_key=1872346711-5f856841ea1d4c7582eaa03e57753a94-0-b78303cee9b75d3ff9dd9b2b10234af5",
+      "excerpt": "Audit d'un modèle de prédiction pour une Fintech BNPL en UEMOA : comment prouver la robustesse d'un scoring 'thin file' au régulateur.",
+      "body": "# Scoring Credit & Conformité BCEAO en Environnement \"Thin File\"\n\n## Le Chiffre qui Change la Donne\n\nLors d'une mission récente pour une fintech de paiement fractionné (BNPL) souhaitant obtenir un agrément d'établissement de paiement auprès de la BCEAO, nous avons été confrontés à un problème classique mais critique : comment prouver au superviseur que son modèle de scoring, fonctionnant avec des données parcellaires (\"thin file\"), était à la fois robuste, non-discriminatoire et traçable ?\n\nLe coût de l'immobilisation pour mise en conformité était estimé à 4500 € par jour d'activité suspendue. L'enjeu n'était donc pas théorique.\n\n## La Matérialité du Risque : Pourquoi un Modèle Opaque Est Rédhibitoire\n\nEn zone UEMOA, le régulateur attend de plus en plus que les institutions financières soient capables d'expliquer leurs décisions, surtout lorsqu'elles sont automatisées. Lors de cet audit, nous avons suivi une méthodologie en trois couches :\n\n· **Couche 1 - La Performance Statistique** : Analyse de la matrice de confusion. Taux de défaut global de 4,2%, faux positifs 11%.\n· **Couche 2 - La Stabilité** : Vérification de la dérive des données (data drift).\n· **Couche 3 - L'Auditabilité** : Traçabilité de la décision finale jusqu'aux features d'entrée.\n\n## Plongée dans la \"Boîte Blanche\"\n\nPour répondre à l'exigence de traçabilité face à la BCEAO et au juge OHADA, nous avons imposé la documentation de trois éléments précis, le \"passeport du modèle\" : le dictionnaire des features, le suivi des performances dans le temps, et les leçons apprises terrain.\n\n**Conclusion** : Cette mission a abouti à deux livrables clés : un modèle de scoring \"boîte blanche\" parfaitement documenté, et un dossier d'agrément renforcé. La conformité, quand elle est adossée à une IA transparente, cesse d'être un centre de coût pour devenir un actif stratégique."
+    },
+    {
+      "title": "Interview : Gilles Feliho, l'architecte de la Souveraineté Cognitive™",
+      "slug": "interview-gilles-feliho-souverainete-cognitive",
+      "date": "2026-02-21T10:00:00.000Z",
+      "image": "https://z-cdn-media.chatglm.cn/files/3b0c95c5-6ee8-4ea6-9017-7bf2b016bfe5.PNG?auth_key=1872346711-f04cae2abbf4445783a64e244f071253-0-2494e7f2f4f41c42df0c19c3f51a0e63",
+      "excerpt": "Face aux nouveaux risques de l'IA, Gilles Feliho théorise l'Audit de Souveraineté Cognitive™ pour transformer les contraintes en leviers de compétitivité.",
+      "body": "# Interview : Gilles FELIHO, l'architecte de la Souveraineté Cognitive™\n\n**GSF Consulting :** Monsieur FELIHO, votre parcours est un pont entre la rigueur financière parisienne et l’agilité des marchés ouest-africains. Comment cette double culture forge-t-elle votre vision actuelle de la gouvernance de l’IA ?\n\n**Gilles FELIHO :** Mon expertise s'est construite à l'épicentre de ces deux mondes. D'un côté, j'ai été immergé dans les rouages de la place financière de Paris. De l'autre, j'ai passé plus de deux décennies sur le terrain africain. Cette trajectoire m'a permis de comprendre que le risque n'est pas seulement technique, il est réglementaire et invisible. Aujourd'hui, je conçois des cadres qui permettent de transformer ces contraintes en leviers de compétitivité.\n\n**GSF Consulting :** Vous avez théorisé l’« Audit de Souveraineté Cognitive™ » (ASC™). Quel problème concret cette méthodologie résout-elle ?\n\n**Gilles FELIHO :** Le problème majeur est la « Black Box Juridique ». Imaginez un algorithme de scoring de crédit qui rejette systématiquement les PME dirigées par des femmes ou situées en zone rurale. Si la direction juridique est incapable de justifier cette décision face à un régulateur comme la BCEAO, l’institution s’expose à des amendes pouvant atteindre 7 % à 11 % de son chiffre d’affaires. L’ASC™ n’est pas qu’un audit de conformité ; c’est une architecture de confiance.\n\n**GSF Consulting :** Au-delà de l'IA, vous êtes un expert reconnu en lutte contre le blanchiment (LCB-FT). Quel est le lien avec la souveraineté numérique ?\n\n**Gilles FELIHO :** Ils sont indissociables. L’IA est l’outil ultime pour détecter ces « signaux faibles » de terrorisme financier, mais seulement si elle est entraînée sur des données locales souveraines. Si nos banques utilisent des IA « boîtes noires » étrangères, elles perdent leur capacité d'audit et, in fine, leur souveraineté monétaire."
+    },
+    {
+      "title": "Le Droit Exécutable : Transformer la Contrainte IA en Levier Stratégique",
+      "slug": "droit-executable-gouvernance-ia-afrique",
+      "date": "2026-02-22T10:00:00.000Z",
+      "image": "https://z-cdn-media.chatglm.cn/files/33ced19d-96ea-4981-8c43-87e0e3fde287.PNG?auth_key=1872346711-78497016565440ff888a2065c241dde0-0-77d966d1a72ad93ca713c78470053d06",
+      "excerpt": "Découvrez comment le droit exécutable révolutionne la conformité IA en Afrique et en Europe. Analyse des enjeux juridiques et techniques pour les banques.",
+      "body": "# Le Droit Exécutable : Quand la Norme Devient Architecture\n\n## Introduction : Le paradoxe de la conformité à l'ère des algorithmes\n\nNous sommes face à une contradiction majeure. D'un côté, l'AI Act européen impose des obligations de traçabilité. De l'autre, la BCEAO renforce ses exigences sur les modèles de scoring. Une solution émerge : le droit exécutable (executable law).\n\nCe concept propose de traduire les normes juridiques en code informatique auditable et exécutable. Il ne s'agit plus seulement de déclarer la conformité, mais de la programmer dans l'architecture même des systèmes d'information.\n\n## Qu'est-ce que le droit exécutable ?\n\nLe droit traditionnel est déclaratif. Le droit exécutable consiste à formaliser les règles sous forme d'algorithmes capables d'interpréter des conditions définies par la loi et d'appliquer automatiquement des décisions conformes.\n\nL'apport du langage **Catala** (Inria) est fondamental : un langage de programmation conçu avec et pour des juristes, permettant une transparence totale et une logique par défaut adaptée au raisonnement juridique.\n\n## Les 4 Piliers du Droit Exécutable selon GSF Consulting\n\n1. **Traçabilité** : Rendre l'algorithme accountable via des journaux d'audit cryptés.\n2. **Opposabilité** : Faire du code un acte juridique opposable (Règlement Intérieur IA).\n3. **Rétroactivité maîtrisée** : Mise à jour incrémentale sans rompre la confiance.\n4. **Souveraineté Cognitive** : Garder le contrôle sur la logique algorithmique et les données locales.\n\n**Conclusion** : L'attentisme est un déclassement stratégique. Les institutions qui sauront intégrer le droit exécutable dans leur gouvernance cognitive disposeront d'un avantage compétitif décisif : la capacité à prouver la fiabilité de leurs algorithmes à tout moment."
+    }
+  ]
+}
