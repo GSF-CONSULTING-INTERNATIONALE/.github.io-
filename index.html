@@ -1,4 +1,59 @@
-    <!-- SCRIPT FINAL UNIFIÉ -->
+  <!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSF - L'Intelligence Artificielle pour Tous</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700&family=Space+Grotesk:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Styles de base pour que le script fonctionne (ajustez selon besoins) */
+        body { background-color: #0a0a0a; color: #fff; font-family: 'Space Grotesk', sans-serif; margin: 0; padding: 0; }
+        #navbar { position: fixed; top: 0; width: 100%; transition: all 0.3s ease; z-index: 1000; }
+        #mobile-menu { display: none; }
+        #mobile-menu.active { display: block; }
+        .glass-card { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(20px); }
+        #blog-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header id="navbar" style="background-color: rgba(255, 255, 255, 0.05);">
+        <button id="mobile-menu-btn">Menu</button>
+        <nav id="mobile-menu">
+            <a href="#">Accueil</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+            <!-- Ajoutez d'autres liens si nécessaire -->
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <h1 id="hero-title">...</h1>
+        <p id="hero-subtitle">...</p>
+    </section>
+
+    <!-- Vision Section -->
+    <section id="vision">
+        <h3 id="vision-subtitle">...</h3>
+        <div id="vision-text">...</div>
+    </section>
+
+    <!-- Expert Section -->
+    <section id="expert">
+        <p id="expert-bio">...</p>
+        <a id="book-fnac-link" href="#">Acheter sur FNAC</a>
+        <a id="book-amazon-link" href="#">Acheter sur Amazon</a>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog">
+        <div id="blog-container"></div>
+    </section>
+
     <script>
         // 1. MENU MOBILE
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
@@ -112,3 +167,6 @@
             })
             .catch(error => console.error("❌ Erreur de chargement :", error));
     </script>
+
+</body>
+</html>
