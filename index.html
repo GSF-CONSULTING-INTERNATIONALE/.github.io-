@@ -7,8 +7,24 @@
     <!-- SEO POWER PACK -->
     <title>Intelligence stratégique, souveraineté cognitive et conformité globale en Afrique | GSF Consulting</title>
     <meta name="description" content="Expertise juridique OHADA et IA. Audit de Souveraineté Cognitive™, conformité financière UEMOA et solutions de recouvrement par Gilles Feliho.">
+    <meta name="keywords" content="Conseil stratégique États africains, conformité financière UEMOA, souveraineté numérique Afrique, IA finance numérique, Audit de Souveraineté Cognitive, Gilles Feliho, OHADA, Recouvrement créances IA">
+    <meta name="author" content="Gilles Feliho">
+    <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://gsfconsultinginternational.com/" />
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="GSF Consulting International | Droit & IA en Afrique" />
+    <meta property="og:description" content="Transformer le Droit par l'Intelligence Artificielle. Expertise juridique et solutions de recouvrement pour l'Afrique." />
+    <meta property="og:url" content="https://gsfconsultinginternational.com/" />
+    <meta property="og:site_name" content="GSF Consulting International" />
+    <meta property="og:image" content="https://gsfconsultinginternational.com/logo-gsf.PNG" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="GSF Consulting International">
+    <meta name="twitter:description" content="Innovation Juridique et IA pour le développement en Afrique.">
+    <meta name="twitter:image" content="https://gsfconsultinginternational.com/logo-gsf.PNG">
+    <link rel="icon" type="image/png" href="/favicon.JPG">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Space Grotesk:wght@300;500;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <style>
         body { background-color: #050505; color: white; font-family: 'Space Grotesk', sans-serif; margin: 0; }
@@ -16,39 +32,11 @@
         a:hover { color: white; }
         .glass-card { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
         
-        /* Grilles et Cartes */
+        /* Classes utilitaires pour le script */
         .grid-layout { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
-        .pilier-card { padding: 30px; border-radius: 15px; background: rgba(255, 255, 255, 0.05); text-align: center; }
-        .offre-card { padding: 40px; border-radius: 20px; background: rgba(255, 255, 255, 0.05); }
+        .pilier-card, .offre-card, .blog-card { padding: 30px; border-radius: 15px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(6, 182, 212, 0.2); transition: transform 0.3s ease; }
+        .pilier-card:hover, .blog-card:hover { transform: translateY(-5px); border-color: rgba(6, 182, 212, 0.5); }
         
-        /* Style spécial Blog pour bien contenir les images techniques */
-        .blog-card {
-            border-radius: 20px;
-            overflow: hidden; /* Important pour contenir l'image */
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(6, 182, 212, 0.2);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            display: flex;
-            flex-direction: column;
-        }
-        .blog-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(6, 182, 212, 0.15);
-            border-color: rgba(6, 182, 212, 0.5);
-        }
-        .blog-card img {
-            width: 100%;
-            height: 220px; /* Hauteur fixe pour uniformiser graphiques et photos */
-            object-fit: cover; /* L'image remplit sans déformer */
-            background-color: #1a1a1a;
-        }
-        .blog-content {
-            padding: 25px;
-            display: flex;
-            flex-direction: column;
-            flex-grow: 1;
-        }
-
         /* Menu Mobile */
         #mobile-menu { display: none; flex-direction: column; background: rgba(0, 0, 0, 0.95); padding: 1rem; position: absolute; top: 100%; left: 0; width: 100%; z-index: 999; }
         #mobile-menu.active { display: flex; }
@@ -84,7 +72,6 @@
 
     <!-- HERO SECTION -->
     <header id="home" style="padding: 100px 5%; text-align: center;">
-        <!-- Le script va injecter le titre avec la couleur ici -->
         <h1 id="hero-title" style="font-family: 'Syne', sans-serif; font-size: 4rem; text-transform: uppercase; letter-spacing: -2px; line-height: 1.1;">Chargement...</h1>
         <p id="hero-subtitle" style="font-family: 'Space Grotesk'; max-width: 600px; margin: 20px auto; opacity: 0.8;"></p>
         <a href="#contact" class="glass-card" style="padding: 15px 40px; cursor: pointer; border: 1px solid #06b6d4; color: #fff; background: transparent; display: inline-block;">Demander un Devis</a>
@@ -131,11 +118,17 @@
         <a href="mailto: contact@eji2.org" style="padding: 15px 40px; border: 1px solid #fff; color: #fff;">Envoyer un Email</a>
     </section>
 
-    <footer style="text-align: center; padding: 50px; font-family: 'Space Grotesk'; opacity: 0.5; border-top: 1px solid #222;">
-        <p>&copy; 2024 GSF Consulting International - Tous droits réservés.</p>
+    <!-- FOOTER MODIFIE (Sans logo, avec mentions légales) -->
+    <footer style="margin-top: 80px; padding: 40px 20px; border-top: 1px solid #06b6d4; text-align: center; font-family: 'Syne', sans-serif;">
+        <p style="color: #06b6d4; font-size: 0.9rem; margin-bottom: 10px;">
+            © 2026 GSF Consulting International — Expertise Juridique & IA
+        </p>
+        <a href="mentions-legales.html" style="color: #06b6d4; text-decoration: none; font-weight: 700; border-bottom: 1px solid transparent; transition: border 0.3s;" onmouseover="this.style.borderBottom='1px solid #06b6d4'" onmouseout="this.style.borderBottom='1px solid transparent'">
+            Mentions légales
+        </a>
     </footer>
 
-    <!-- SCRIPT CORRIGÉ POUR LE TITRE ET LES IMAGES -->
+    <!-- SCRIPT UTILISATEUR ADAPTÉ -->
     <script>
       document.addEventListener('DOMContentLoaded', function() {
         fetch('content.json')
@@ -146,18 +139,11 @@
           .then(data => {
             console.log("Données chargées :", data);
 
-            // 1. Hero Section (Correction Couleur)
-            const heroTitle = document.getElementById('hero-title');
-            if (heroTitle && data.homepage?.hero_title) {
-                // On utilise innerHTML pour injecter le span de couleur
-                let titleContent = data.homepage.hero_title;
-                // Regex pour colorer "Intelligence Artificielle"
-                titleContent = titleContent.replace(/(l\'Intelligence Artificielle|l'intelligence artificielle)/gi, '<span style="color: #06b6d4;">$1</span>');
-                heroTitle.innerHTML = titleContent;
-            }
+            // 1. Hero section
+            setText('hero-title', data.homepage?.hero_title);
             setText('hero-subtitle', data.homepage?.hero_subtitle);
 
-            // 2. Vision
+            // 2. Section vision (Correction pour les sauts de ligne)
             setText('vision-subtitle', data.homepage?.vision_subtitle);
             const visionEl = document.getElementById('vision-text');
             if (visionEl && data.homepage?.vision_text) {
@@ -175,7 +161,7 @@
               `).join('');
             }
 
-            // 4. Offres
+            // 4. Offres phares
             const offresGrid = document.getElementById('offres-grid');
             if (offresGrid && data.offres_phares) {
               offresGrid.innerHTML = data.offres_phares.map(o => `
@@ -186,32 +172,30 @@
               `).join('');
             }
 
-            // 5. Expert
+            // 5. Expert section (bio + liens)
             setText('expert-bio', data.expert_section?.bio);
             const fnacLink = document.getElementById('fnac-link');
             if (fnacLink) fnacLink.href = data.expert_section?.book_fnac || '#';
             const amazonLink = document.getElementById('amazon-link');
             if (amazonLink) amazonLink.href = data.expert_section?.book_amazon || '#';
 
-            // 6. Blog (Gestion des images techniques)
+            // 6. Blog posts
             const blogGrid = document.getElementById('blog-grid');
             if (blogGrid && data.blog_posts) {
-              blogGrid.innerHTML = '';
+              blogGrid.innerHTML = ''; 
               const sortedPosts = data.blog_posts.sort((a, b) => new Date(b.date) - new Date(a.date));
 
               sortedPosts.forEach(post => {
                 const card = document.createElement('div');
                 card.className = 'blog-card';
                 const postDate = new Date(post.date).toLocaleDateString('fr-FR');
-                
-                // On garde la structure propre pour les images
                 card.innerHTML = `
-                  <img src="${escapeHtml(post.image)}" alt="${escapeHtml(post.title)}" onerror="this.src='https://via.placeholder.com/400x220/0a0a0a/06b6d4?text=Image+Indisponible'">
-                  <div class="blog-content">
+                  <img src="${escapeHtml(post.image)}" alt="${escapeHtml(post.title)}" style="width:100%; height:200px; object-fit:cover; border-radius:15px 15px 0 0;" onerror="this.src='https://via.placeholder.com/400x250?text=Image+Non+Disponible'">
+                  <div style="padding: 25px;">
                     <p style="font-size: 0.8rem; color: #06b6d4; font-weight: bold; text-transform: uppercase;">${postDate}</p>
                     <h3 style="font-family:'Syne'; font-size:1.3rem; margin:10px 0;">${escapeHtml(post.title)}</h3>
-                    <p style="opacity:0.8; font-size:0.9rem; flex-grow:1;">${escapeHtml(post.excerpt)}</p>
-                    <a href="blog.html?post=${encodeURIComponent(post.slug)}" class="read-more" style="color: #06b6d4; font-weight: 700; margin-top:15px; display:block;">Lire l'analyse →</a>
+                    <p style="opacity:0.8; font-size:0.9rem; margin-bottom:20px;">${escapeHtml(post.excerpt)}</p>
+                    <a href="blog.html?post=${encodeURIComponent(post.slug)}" class="read-more" style="color: #06b6d4; font-weight: 700;">Lire l'analyse →</a>
                   </div>
                 `;
                 blogGrid.appendChild(card);
@@ -220,6 +204,7 @@
           })
           .catch(error => console.error('Erreur chargement JSON :', error));
 
+        // Fonctions utilitaires
         function setText(id, text) {
           const el = document.getElementById(id);
           if (el && text) el.textContent = text;
