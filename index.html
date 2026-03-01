@@ -222,7 +222,7 @@
         });
 
         // 3. CHARGEMENT DU JSON
-        fetch('data/content.json')
+        fetch('content.json')
             .then(response => {
                 if (!response.ok) throw new Error("JSON non trouvé");
                 return response.json();
@@ -307,7 +307,7 @@
     
     <!-- SCRIPT POUR JSON-LD -->
     <script>
-        fetch('data/content.json')
+        fetch('content.json')
             .then(response => response.json())
             .then(data => {
                 const jsonLd = {
