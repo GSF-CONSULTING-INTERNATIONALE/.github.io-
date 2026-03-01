@@ -3,81 +3,358 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GSF Consulting International | Intelligence Artificielle & Droit</title>
+    
+    <!-- SEO POWER PACK - GSF CONSULTING INTERNATIONAL -->
+    <title>Intelligence stratégique, souveraineté cognitive et conformité globale en Afrique | GSF Consulting</title>
+    <meta name="description" content="Expertise juridique OHADA et IA. Audit de Souveraineté Cognitive™, conformité financière UEMOA et solutions de recouvrement par Gilles Feliho.">
+    <meta name="keywords" content="Conseil stratégique États africains, conformité financière UEMOA, souveraineté numérique Afrique, IA finance numérique, Audit de Souveraineté Cognitive, Gilles Feliho, OHADA, Recouvrement créances IA">
+    <meta name="author" content="Gilles Feliho">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <link rel="canonical" href="https://gsfconsultinginternational.com/" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="GSF Consulting International | Droit & IA en Afrique" />
+    <meta property="og:description" content="Transformer le Droit par l'Intelligence Artificielle. Expertise juridique et solutions de recouvrement pour l'Afrique." />
+    <meta property="og:url" content="https://gsfconsultinginternational.com/" />
+    <meta property="og:site_name" content="GSF Consulting International" />
+    <meta property="og:image" content="https://gsfconsultinginternational.com/logo-gsf.PNG" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="GSF Consulting International">
+    <meta name="twitter:description" content="Innovation Juridique et IA pour le développement en Afrique.">
+    <meta name="twitter:image" content="https://gsfconsultinginternational.com/logo-gsf.PNG">
+    <link rel="icon" type="image/png" href="/favicon.JPG">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <style>
         body { background-color: #050505; color: white; font-family: 'Space Grotesk', sans-serif; margin: 0; }
+        a { color: #06b6d4; text-decoration: none; transition: 0.3s; }
+        a:hover { color: white; }
         .glass-card { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
-        nav { position: sticky; top: 10px; z-index: 1000; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; margin: 20px; border-radius: 12px; }
-        .logo { font-family: 'Syne'; font-weight: 800; font-size: 1.5rem; color: #06b6d4; }
-        #blog-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; padding: 50px 5%; }
-        section { padding: 100px 5%; text-align: center; }
-        h1 { font-family: 'Syne'; font-size: 4rem; text-transform: uppercase; line-height: 1.1; }
-        a { color: #06b6d4; text-decoration: none; }
+        
+        /* Gestion du Menu Mobile */
+        #mobile-menu {
+            display: none; 
+            flex-direction: column;
+            background: rgba(0, 0, 0, 0.95);
+            padding: 1rem;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            z-index: 999;
+        }
+        #mobile-menu.active { display: flex; }
+
+        @media (max-width: 768px) {
+            .desktop-menu { display: none !important; }
+            #mobile-menu-btn { display: block !important; }
+        }
+        @media (min-width: 769px) {
+            #mobile-menu-btn { display: none !important; }
+        }
     </style>
 </head>
 <body>
 
-    <nav class="glass-card">
-        <div class="logo">GSF CONSULTING</div>
-        <div style="gap: 20px; display: flex;">
-            <a href="#home">Accueil</a>
-            <a href="#blog">Analyses</a>
+    <nav id="navbar" class="glass-card" style="margin: 20px; position: sticky; top: 10px; z-index: 1000;">
+        <div class="nav-container" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem;">
+            <div class="logo" style="font-family: 'Syne', sans-serif; font-weight: 800; font-size: 1.5rem; color: #06b6d4;">GSF CONSULTING</div>
+            
+            <!-- Menu Desktop -->
+            <ul class="desktop-menu" style="display: flex; list-style: none; gap: 2rem; font-family: 'Space Grotesk';">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#vision">Vision</a></li>
+                <li><a href="#piliers">Piliers</a></li>
+                <li><a href="#solutions">Solutions</a></li>
+                <li><a href="#blog-list">Blog</a></li>
+                <li><a href="#expert">L'Expert</a></li>
+                <li><a href="#contact" style="border: 1px solid #06b6d4; padding: 5px 15px; border-radius: 4px;">Contact</a></li>
+            </ul>
+            
+            <!-- Bouton Burger Mobile -->
+            <button id="mobile-menu-btn" style="font-size: 1.5rem; background: transparent; border: none; cursor: pointer; color: white;">☰</button>
+        </div>
+        
+        <!-- Menu Mobile -->
+        <div id="mobile-menu">
+            <a href="#home" style="color: #fff; padding: 0.5rem;">Accueil</a>
+            <a href="#vision" style="color: #fff; padding: 0.5rem;">Vision</a>
+            <a href="#piliers" style="color: #fff; padding: 0.5rem;">Piliers</a>
+            <a href="#solutions" style="color: #fff; padding: 0.5rem;">Solutions</a>
+            <a href="#blog-list" style="color: #fff; padding: 0.5rem;">Blog</a>
+            <a href="#expert" style="color: #fff; padding: 0.5rem;">L'Expert</a>
+            <a href="#contact" style="color: #06b6d4; padding: 0.5rem;">Contact</a>
         </div>
     </nav>
 
+    <!-- HERO SECTION -->
     <header id="home" style="padding: 100px 5%; text-align: center;">
-        <h1 id="hero-title">Chargement...</h1>
-        <p id="hero-subtitle" style="max-width: 600px; margin: 20px auto; opacity: 0.8;"></p>
+        <h1 id="hero-title" style="font-family: 'Syne', sans-serif; font-size: 4rem; text-transform: uppercase; letter-spacing: -2px; line-height: 1.1;">
+            Transformer le Droit par <span style="color: #06b6d4;">l'Intelligence Artificielle</span>.
+        </h1>
+        <p id="hero-subtitle" style="font-family: 'Space Grotesk'; max-width: 600px; margin: 20px auto; opacity: 0.8;">
+            De l'expertise juridique OHADA et anti blanchiment de capitaux, aux solutions de recouvrement augmentées par l'IA, GSF Consulting International réinvente le conseil pour l'Afrique.
+        </p>
+        <a href="#contact" class="glass-card" style="padding: 15px 40px; cursor: pointer; border: 1px solid #06b6d4; color: #fff; background: transparent; display: inline-block; text-decoration: none;">
+            Demander un Devis
+        </a>
     </header>
 
-    <section id="vision">
-        <h2 id="vision-subtitle" style="color: #06b6d4; font-family: 'Syne';"></h2>
-        <div id="vision-text" style="max-width: 800px; margin: 0 auto; line-height: 1.6;"></div>
+    <!-- VISION SECTION -->
+    <section id="vision" style="padding: 50px 5%; text-align: center;">
+        <h2 style="font-family: 'Syne', sans-serif; font-size: 2.5rem; margin-bottom: 20px;">Notre Vision</h2>
+        <h3 id="vision-subtitle" style="font-family: 'Syne', sans-serif; font-size: 1.8rem; margin-bottom: 15px; color: #06b6d4;">Une transition vers le conseil 4.0</h3>
+        <div id="vision-text" style="font-family: 'Space Grotesk'; max-width: 800px; margin: 0 auto; line-height: 1.6;">
+            <p>Depuis plus de 20 ans, GSF Conseil accompagne les grandes institutions de l'espace francophone. Aujourd'hui, sous l'impulsion de Gilles Feliho, nous devenons GSF Consulting International.</p>
+            <br>
+            <p>Notre mission ? Allier la profondeur de l'expertise juridique traditionnelle à la puissance de l'intelligence artificielle. Nous aidons les entreprises, États et investisseurs à naviguer dans la complexité du droit des affaires africain (OHADA, UEMOA), tout en optimisant leurs processus critiques comme le recouvrement de créances et la gestion des risques.</p>
+        </div>
     </section>
 
-    <section id="blog">
-        <h2 style="font-family: 'Syne'; font-size: 2.5rem;">Analyses & Publications</h2>
-        <div id="blog-container">
+    <!-- PILIERS SECTION -->
+    <section id="piliers" style="padding: 50px 5%; text-align: center;">
+        <h2 style="font-family: 'Syne', sans-serif; font-size: 2.5rem; margin-bottom: 40px;">Nos 5 Piliers d'Excellence</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; padding: 0 5%;">
+            <div class="glass-card" style="padding: 30px; border-radius: 15px; text-align: center;">
+                <h3 style="font-family: 'Syne'; margin-bottom: 15px; color: #06b6d4;">Innovation Juridique</h3>
+                <p style="font-family: 'Space Grotesk'; font-size: 0.95rem; opacity: 0.9;">L'IA au service de la résolution de litiges et de la conformité. LegalTech et Intelligence Artificielle Juridique.</p>
             </div>
+            <div class="glass-card" style="padding: 30px; border-radius: 15px; text-align: center;">
+                <h3 style="font-family: 'Syne'; margin-bottom: 15px; color: #06b6d4;">Expertise Afrique-Francophonie</h3>
+                <p style="font-family: 'Space Grotesk'; font-size: 0.95rem; opacity: 0.9;">Maîtrise absolue des espaces OHADA, UEMOA, CEDEAO et CIMA. Conseil juridique OHADA.</p>
+            </div>
+            <div class="glass-card" style="padding: 30px; border-radius: 15px; text-align: center;">
+                <h3 style="font-family: 'Syne'; margin-bottom: 15px; color: #06b6d4;">Maîtrise Technologique</h3>
+                <p style="font-family: 'Space Grotesk'; font-size: 0.95rem; opacity: 0.9;">Des solutions SaaS et des algorithmes propriétaires.</p>
+            </div>
+            <div class="glass-card" style="padding: 30px; border-radius: 15px; text-align: center;">
+                <h3 style="font-family: 'Syne'; margin-bottom: 15px; color: #06b6d4;">Négociation Internationale</h3>
+                <p style="font-family: 'Space Grotesk'; font-size: 0.95rem; opacity: 0.9;">Une approche diplomatique et stratégique des conflits.</p>
+            </div>
+            <div class="glass-card" style="padding: 30px; border-radius: 15px; text-align: center;">
+                <h3 style="font-family: 'Syne'; margin-bottom: 15px; color: #06b6d4;">Gestion du Risque</h3>
+                <p style="font-family: 'Space Grotesk'; font-size: 0.95rem; opacity: 0.9;">Protection des investissements et sécurisation des projets. Due Diligence et Sécurisation juridique.</p>
+            </div>
+        </div>
     </section>
 
+    <!-- SOLUTIONS SECTION -->
+    <main id="solutions" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; padding: 50px 5%;">
+        <section class="glass-card" style="padding: 40px; border-radius: 20px; border: 1px solid #06b6d4;">
+            <h2 style="font-family: 'Syne'; margin-bottom: 15px;">⭐ Agent IA de Recouvrement</h2>
+            <p style="font-family: 'Space Grotesk';">Automatisez vos créances impayées. Analyse de risque, scoring prédictif et relances intelligentes conformes au droit OHADA.</p>
+        </section>
+        <section class="glass-card" style="padding: 40px; border-radius: 20px;">
+            <h2 style="font-family: 'Syne'; margin-bottom: 15px;">⚖️ Conseil Juridique & Financier</h2>
+            <p style="font-family: 'Space Grotesk';">Expertise reconnue auprès de la CEDEAO, l'AFD et la Francophonie. Négociation internationale et gestion des risques.</p>
+        </section>
+        <section class="glass-card" style="padding: 40px; border-radius: 20px;">
+            <h2 style="font-family: 'Syne'; margin-bottom: 15px;">🛡️ Conformité RegTech</h2>
+            <p style="font-family: 'Space Grotesk';">Plateforme SaaS pour Fintechs et Banques : cartographie des obligations (BCEAO, BEAC) et veille réglementaire automatisée.</p>
+        </section>
+    </main>
+
+    <!-- BLOG SECTION -->
+    <section id="blog-list" style="padding: 50px 5%;">
+        <h2 style="font-family: 'Syne', sans-serif; font-size: 2.5rem; margin-bottom: 30px; text-align: center;">Analyses & Publications</h2>
+        <div id="blog-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+            <!-- Les articles s'afficheront ici automatiquement -->
+        </div>
+    </section>
+
+    <!-- EXPERT SECTION -->
+    <section id="expert" style="padding: 50px 5%; text-align: center;">
+        <h2 style="font-family: 'Syne', sans-serif; font-size: 2.5rem; margin-bottom: 20px;">L'Expert : Gilles Feliho</h2>
+        <p id="expert-bio" style="font-family: 'Space Grotesk'; max-width: 800px; margin: 0 auto 20px; line-height: 1.6;">
+            Expert international en droit des affaires et anti-blanchiment de capitaux, pionnier de l'intersection entre le droit africain et l'intelligence artificielle. Auteur de Homo Algorithmicus et Blanchiment en liberté.
+        </p>
+        <div style="margin-top: 20px;">
+            <a id="book-fnac-link" href="https://www.fnac.com/livre-numerique/a21477208/Gilles-Feliho-Homo-Algorithmicus" target="_blank" style="margin-right: 15px; color: #06b6d4; border: 1px solid #06b6d4; padding: 10px 20px; border-radius: 5px;">📖 Fnac</a>
+            <a id="book-amazon-link" href="https://www.amazon.fr/Gilles-Sixte-FELIHO-ebook/dp/B0DV937XB2" target="_blank" style="color: #06b6d4; border: 1px solid #06b6d4; padding: 10px 20px; border-radius: 5px;">📚 Amazon</a>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" style="padding: 50px 5%; text-align: center; background: #0a0a0a;">
+        <h2 style="font-family: 'Syne', sans-serif; font-size: 2.5rem; margin-bottom: 20px;">Contact</h2>
+        <p style="opacity: 0.7; margin-bottom: 20px;">Prêt à transformer vos défis juridiques ?</p>
+        <a href="mailto: contact@eji2.org" style="padding: 15px 40px; border: 1px solid #fff; color: #fff;">Envoyer un Email</a>
+    </section>
+
+    <footer style="text-align: center; padding: 50px; font-family: 'Space Grotesk'; opacity: 0.5; border-top: 1px solid #222;">
+        <p>&copy; 2024 GSF Consulting International - Tous droits réservés.</p>
+        <p style="margin-top: 10px;">
+            <a href="mentions-legales.html" style="color: #fff; opacity: 0.7; font-size: 0.9rem;">Mentions Légales</a>
+        </p>
+    </footer>
+
+    <!-- SCRIPT FINAL -->
     <script>
+        // 1. MENU MOBILE
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if (mobileMenuBtn) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('active');
+            });
+        }
+
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+            });
+        });
+
+        // 2. NAVBAR SCROLL
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.style.backgroundColor = "rgba(5, 5, 5, 0.95)";
+                navbar.style.borderBottom = "1px solid #06b6d4";
+            } else {
+                navbar.style.backgroundColor = "rgba(255, 255, 255, 0.05)";
+                navbar.style.borderBottom = "none";
+            }
+        });
+
+        // 3. CHARGEMENT DU JSON
         fetch('data/content.json')
-            .then(res => res.json())
+            .then(response => {
+                if (!response.ok) throw new Error("JSON non trouvé");
+                return response.json();
+            })
             .then(data => {
-                // HERO & VISION
-                if(data.homepage) {
-                    document.getElementById('hero-title').innerHTML = data.homepage.hero_title.replace(/(Intelligence Artificielle)/gi, '<span style="color: #06b6d4;">$1</span>');
-                    document.getElementById('hero-subtitle').textContent = data.homepage.hero_subtitle;
-                    document.getElementById('vision-subtitle').textContent = data.homepage.vision_subtitle;
-                    document.getElementById('vision-text').innerHTML = data.homepage.vision_text.replace(/\n/g, '<br>');
+                console.log("✅ Contenu dynamique chargé :", data);
+                
+                // Mise à jour Hero
+                if (data.homepage) {
+                    const titleEl = document.getElementById('hero-title');
+                    if (titleEl) {
+                        let title = data.homepage.hero_title;
+                        title = title.replace(/(l\'Intelligence Artificielle|l'intelligence artificielle)/gi, '<span style="color: #06b6d4;">$1</span>');
+                        titleEl.innerHTML = title;
+                    }
+                    if (document.getElementById('hero-subtitle')) 
+                        document.getElementById('hero-subtitle').textContent = data.homepage.hero_subtitle;
+                    
+                    // Mise à jour Vision
+                    if (document.getElementById('vision-subtitle')) 
+                        document.getElementById('vision-subtitle').textContent = data.homepage.vision_subtitle;
+                    if (document.getElementById('vision-text')) 
+                        document.getElementById('vision-text').innerHTML = data.homepage.vision_text.replace(/\n/g, '<br>');
+                }
+                
+                // Mise à jour Expert
+                if (data.expert_section) {
+                    if (document.getElementById('expert-bio')) 
+                        document.getElementById('expert-bio').innerHTML = data.expert_section.bio;
+                    if (document.getElementById('book-fnac-link')) 
+                        document.getElementById('book-fnac-link').href = data.expert_section.book_fnac;
+                    if (document.getElementById('book-amazon-link')) 
+                        document.getElementById('book-amazon-link').href = data.expert_section.book_amazon;
                 }
 
-                // BLOG
-                if(data.blog_posts) {
-                    const container = document.getElementById('blog-container');
-                    container.innerHTML = '';
-                    data.blog_posts.sort((a,b) => new Date(b.date) - new Date(a.date)).forEach(post => {
-                        const card = document.createElement('div');
-                        card.className = 'glass-card';
-                        card.style = 'border-radius:20px; overflow:hidden; display:flex; flex-direction:column; text-align:left; transition: 0.3s;';
-                        card.innerHTML = `
-                            <div style="height:200px; background:url('${post.image}') center/cover;"></div>
-                            <div style="padding:25px;">
-                                <p style="color:#06b6d4; font-size:0.8rem; font-weight:bold;">${new Date(post.date).toLocaleDateString('fr-FR')}</p>
-                                <h3 style="font-family:Syne; margin:10px 0;">${post.title}</h3>
-                                <p style="font-size:0.9rem; opacity:0.8;">${post.excerpt}</p>
-                                <a href="blog.html?post=${post.slug}" style="margin-top:15px; display:inline-block; font-weight:bold;">Lire l'analyse →</a>
-                            </div>`;
-                        container.appendChild(card);
+                // --- AFFICHAGE DU BLOG COMPLET ---
+                if (data.blog_posts && document.getElementById('blog-container')) {
+                    const blogContainer = document.getElementById('blog-container');
+                    blogContainer.innerHTML = ''; 
+                    
+                    // Tri par date décroissante
+                    const sortedPosts = data.blog_posts.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+                    sortedPosts.forEach(post => {
+                        const articleCard = document.createElement('article');
+                        articleCard.className = 'glass-card';
+                        articleCard.style = 'padding: 0; border-radius: 20px; display: flex; flex-direction: column; overflow: hidden; border: 1px solid rgba(6, 182, 212, 0.2); transition: all 0.3s ease;';
+                        
+                        const dateStr = new Date(post.date).toLocaleDateString('fr-FR', { year: 'numeric', month: 'long', day: 'numeric' });
+                        
+                        // Sécurité image
+                        const imageUrl = post.image || 'https://via.placeholder.com/400x200/0a0a0a/06b6d4?text=GSF';
+
+                        articleCard.innerHTML = `
+                            <div style="height: 200px; background-image: url('${imageUrl}'); background-size: cover; background-position: center;"></div>
+                            <div style="padding: 25px; display: flex; flex-direction: column; flex-grow: 1;">
+                                <p style="font-size: 0.8rem; color: #06b6d4; margin-bottom: 10px; font-weight: bold; text-transform: uppercase;">${dateStr}</p>
+                                <h3 style="font-family: 'Syne'; font-size: 1.25rem; margin-bottom: 15px; color: #fff; line-height: 1.3;">${post.title}</h3>
+                                <p style="font-family: 'Space Grotesk'; flex-grow: 1; opacity: 0.8; font-size: 0.9rem; line-height: 1.6;">${post.excerpt}</p>
+                                <a href="blog.html?post=${post.slug}" style="margin-top: 25px; color: #06b6d4; font-weight: 700; text-decoration: none; display: flex; align-items: center; gap: 8px;">
+                                    Lire l'analyse <span style="font-size: 1.2rem;">→</span>
+                                </a>
+                            </div>
+                        `;
+                        
+                        // Animation au survol
+                        articleCard.onmouseover = () => {
+                            articleCard.style.transform = "translateY(-10px)";
+                            articleCard.style.boxShadow = "0 10px 30px rgba(6, 182, 212, 0.2)";
+                        };
+                        articleCard.onmouseout = () => {
+                            articleCard.style.transform = "translateY(0)";
+                            articleCard.style.boxShadow = "none";
+                        };
+                        
+                        blogContainer.appendChild(articleCard);
                     });
                 }
             })
-            .catch(err => {
-                console.error("Erreur JSON:", err);
-                document.getElementById('hero-title').innerHTML = "Erreur de configuration";
-            });
+            .catch(error => console.error("❌ Erreur de chargement :", error));
     </script>
+    
+    <!-- SCRIPT POUR JSON-LD -->
+    <script>
+        fetch('data/content.json')
+            .then(response => response.json())
+            .then(data => {
+                const jsonLd = {
+                    "@context": "https://schema.org",
+                    "@graph": [
+                        {
+                            "@type": "Organization",
+                            "@id": "https://gsfconsultinginternational.com/#organization",
+                            "name": "GSF Consulting International",
+                            "url": "https://gsfconsultinginternational.com/",
+                            "logo": "https://gsfconsultinginternational.com/logo-gsf.PNG",
+                            "description": data.homepage.hero_subtitle
+                        },
+                        {
+                            "@type": "Person",
+                            "@id": "https://gsfconsultinginternational.com/#person",
+                            "name": "Gilles Feliho",
+                            "jobTitle": "Expert international en droit des affaires et IA",
+                            "description": data.expert_section.bio,
+                            "url": "https://gsfconsultinginternational.com/#expert",
+                            "worksFor": { "@id": "https://gsfconsultinginternational.com/#organization" }
+                        }
+                    ]
+                };
+
+                if(data.blog_posts) {
+                    data.blog_posts.forEach((post, index) => {
+                        jsonLd["@graph"].push({
+                            "@type": "BlogPosting",
+                            "@id": `https://gsfconsultinginternational.com/#post-${index}`,
+                            "headline": post.title,
+                            "description": post.excerpt,
+                            "datePublished": post.date,
+                            "image": post.image,
+                            "articleBody": post.body,
+                            "author": { "@id": "https://gsfconsultinginternational.com/#person" },
+                            "publisher": { "@id": "https://gsfconsultinginternational.com/#organization" }
+                        });
+                    });
+                }
+
+                const script = document.createElement('script');
+                script.type = 'application/ld+json';
+                script.textContent = JSON.stringify(jsonLd);
+                document.head.appendChild(script);
+            })
+            .catch(error => console.warn("⚠️ Erreur JSON-LD :", error));
+    </script> 
 </body>
 </html>
