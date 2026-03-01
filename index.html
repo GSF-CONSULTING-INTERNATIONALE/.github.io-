@@ -1,172 +1,83 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GSF - L'Intelligence Artificielle pour Tous</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700&family=Space+Grotesk:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>GSF Consulting International | Intelligence Artificielle & Droit</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
     <style>
-        /* Styles de base pour que le script fonctionne (ajustez selon besoins) */
-        body { background-color: #0a0a0a; color: #fff; font-family: 'Space Grotesk', sans-serif; margin: 0; padding: 0; }
-        #navbar { position: fixed; top: 0; width: 100%; transition: all 0.3s ease; z-index: 1000; }
-        #mobile-menu { display: none; }
-        #mobile-menu.active { display: block; }
-        .glass-card { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(20px); }
-        #blog-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        body { background-color: #050505; color: white; font-family: 'Space Grotesk', sans-serif; margin: 0; }
+        .glass-card { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        nav { position: sticky; top: 10px; z-index: 1000; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; margin: 20px; border-radius: 12px; }
+        .logo { font-family: 'Syne'; font-weight: 800; font-size: 1.5rem; color: #06b6d4; }
+        #blog-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; padding: 50px 5%; }
+        section { padding: 100px 5%; text-align: center; }
+        h1 { font-family: 'Syne'; font-size: 4rem; text-transform: uppercase; line-height: 1.1; }
+        a { color: #06b6d4; text-decoration: none; }
     </style>
 </head>
 <body>
 
-    <!-- Navbar -->
-    <header id="navbar" style="background-color: rgba(255, 255, 255, 0.05);">
-        <button id="mobile-menu-btn">Menu</button>
-        <nav id="mobile-menu">
-            <a href="#">Accueil</a>
-            <a href="#">Blog</a>
-            <a href="#">Contact</a>
-            <!-- Ajoutez d'autres liens si nécessaire -->
-        </nav>
+    <nav class="glass-card">
+        <div class="logo">GSF CONSULTING</div>
+        <div style="gap: 20px; display: flex;">
+            <a href="#home">Accueil</a>
+            <a href="#blog">Analyses</a>
+        </div>
+    </nav>
+
+    <header id="home" style="padding: 100px 5%; text-align: center;">
+        <h1 id="hero-title">Chargement...</h1>
+        <p id="hero-subtitle" style="max-width: 600px; margin: 20px auto; opacity: 0.8;"></p>
     </header>
 
-    <!-- Hero Section -->
-    <section id="hero">
-        <h1 id="hero-title">...</h1>
-        <p id="hero-subtitle">...</p>
-    </section>
-
-    <!-- Vision Section -->
     <section id="vision">
-        <h3 id="vision-subtitle">...</h3>
-        <div id="vision-text">...</div>
+        <h2 id="vision-subtitle" style="color: #06b6d4; font-family: 'Syne';"></h2>
+        <div id="vision-text" style="max-width: 800px; margin: 0 auto; line-height: 1.6;"></div>
     </section>
 
-    <!-- Expert Section -->
-    <section id="expert">
-        <p id="expert-bio">...</p>
-        <a id="book-fnac-link" href="#">Acheter sur FNAC</a>
-        <a id="book-amazon-link" href="#">Acheter sur Amazon</a>
-    </section>
-
-    <!-- Blog Section -->
     <section id="blog">
-        <div id="blog-container"></div>
+        <h2 style="font-family: 'Syne'; font-size: 2.5rem;">Analyses & Publications</h2>
+        <div id="blog-container">
+            </div>
     </section>
 
     <script>
-        // 1. MENU MOBILE
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-
-        if (mobileMenuBtn) {
-            mobileMenuBtn.addEventListener('click', () => {
-                mobileMenu.classList.toggle('active');
-            });
-        }
-
-        document.querySelectorAll('#mobile-menu a').forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.remove('active');
-            });
-        });
-
-        // 2. NAVBAR SCROLL
-        const navbar = document.getElementById('navbar');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                navbar.style.backgroundColor = "rgba(5, 5, 5, 0.95)";
-                navbar.style.borderBottom = "1px solid #06b6d4";
-            } else {
-                navbar.style.backgroundColor = "rgba(255, 255, 255, 0.05)";
-                navbar.style.borderBottom = "none";
-            }
-        });
-
-        // 3. CHARGEMENT ET AFFICHAGE DYNAMIQUE
         fetch('data/content.json')
-            .then(response => {
-                if (!response.ok) throw new Error("JSON non trouvé");
-                return response.json();
-            })
+            .then(res => res.json())
             .then(data => {
-                console.log("✅ Données chargées :", data);
-                
-                // A. Mise à jour du Hero
-                if (data.homepage) {
-                    const titleEl = document.getElementById('hero-title');
-                    if (titleEl) {
-                        let title = data.homepage.hero_title;
-                        // Coloration automatique de "Intelligence Artificielle"
-                        title = title.replace(/(l\'Intelligence Artificielle|l'intelligence artificielle)/gi, '<span style="color: #06b6d4;">$1</span>');
-                        titleEl.innerHTML = title;
-                    }
-                    if (document.getElementById('hero-subtitle')) 
-                        document.getElementById('hero-subtitle').textContent = data.homepage.hero_subtitle;
-                    
-                    // B. Mise à jour de la Vision (Réintégrée)
-                    if (document.getElementById('vision-subtitle')) 
-                        document.getElementById('vision-subtitle').textContent = data.homepage.vision_subtitle;
-                    if (document.getElementById('vision-text')) 
-                        document.getElementById('vision-text').innerHTML = data.homepage.vision_text.replace(/\n/g, '<br>');
+                // HERO & VISION
+                if(data.homepage) {
+                    document.getElementById('hero-title').innerHTML = data.homepage.hero_title.replace(/(Intelligence Artificielle)/gi, '<span style="color: #06b6d4;">$1</span>');
+                    document.getElementById('hero-subtitle').textContent = data.homepage.hero_subtitle;
+                    document.getElementById('vision-subtitle').textContent = data.homepage.vision_subtitle;
+                    document.getElementById('vision-text').innerHTML = data.homepage.vision_text.replace(/\n/g, '<br>');
                 }
 
-                // C. Mise à jour de l'Expert
-                if (data.expert_section) {
-                    if (document.getElementById('expert-bio')) 
-                        document.getElementById('expert-bio').innerHTML = data.expert_section.bio;
-                    if (document.getElementById('book-fnac-link')) 
-                        document.getElementById('book-fnac-link').href = data.expert_section.book_fnac;
-                    if (document.getElementById('book-amazon-link')) 
-                        document.getElementById('book-amazon-link').href = data.expert_section.book_amazon;
-                }
-
-                // D. AFFICHAGE DU BLOG (Version optimisée avec vos 9 articles)
-                if (data.blog_posts && document.getElementById('blog-container')) {
-                    const blogContainer = document.getElementById('blog-container');
-                    blogContainer.innerHTML = ''; 
-                    
-                    // Tri par date décroissante (les plus récents en premier)
-                    const sortedPosts = data.blog_posts.sort((a, b) => new Date(b.date) - new Date(a.date));
-
-                    sortedPosts.forEach(post => {
-                        const articleCard = document.createElement('article');
-                        articleCard.className = 'glass-card';
-                        articleCard.style = 'padding: 0; border-radius: 20px; display: flex; flex-direction: column; overflow: hidden; border: 1px solid rgba(6, 182, 212, 0.2); transition: all 0.3s ease;';
-                        
-                        const dateStr = new Date(post.date).toLocaleDateString('fr-FR', { year: 'numeric', month: 'long', day: 'numeric' });
-                        
-                        // Sécurité : si pas d'image, on met un fond gris
-                        const imageUrl = post.image || 'https://via.placeholder.com/400x200/0a0a0a/06b6d4?text=GSF';
-
-                        articleCard.innerHTML = `
-                            <div style="height: 200px; background-image: url('${imageUrl}'); background-size: cover; background-position: center;"></div>
-                            <div style="padding: 25px; display: flex; flex-direction: column; flex-grow: 1;">
-                                <p style="font-size: 0.8rem; color: #06b6d4; margin-bottom: 10px; font-weight: bold; text-transform: uppercase;">${dateStr}</p>
-                                <h3 style="font-family: 'Syne'; font-size: 1.25rem; margin-bottom: 15px; color: #fff; line-height: 1.3;">${post.title}</h3>
-                                <p style="font-family: 'Space Grotesk'; flex-grow: 1; opacity: 0.8; font-size: 0.9rem; line-height: 1.6;">${post.excerpt}</p>
-                                <a href="blog.html?post=${post.slug}" style="margin-top: 25px; color: #06b6d4; font-weight: 700; text-decoration: none; display: flex; align-items: center; gap: 8px;">
-                                    Lire l'analyse <span style="font-size: 1.2rem;">→</span>
-                                </a>
-                            </div>
-                        `;
-                        
-                        // Animation au survol (Effet "Lever" et Ombre)
-                        articleCard.onmouseover = () => {
-                            articleCard.style.transform = "translateY(-10px)";
-                            articleCard.style.boxShadow = "0 10px 30px rgba(6, 182, 212, 0.2)";
-                        };
-                        articleCard.onmouseout = () => {
-                            articleCard.style.transform = "translateY(0)";
-                            articleCard.style.boxShadow = "none";
-                        };
-                        
-                        blogContainer.appendChild(articleCard);
+                // BLOG
+                if(data.blog_posts) {
+                    const container = document.getElementById('blog-container');
+                    container.innerHTML = '';
+                    data.blog_posts.sort((a,b) => new Date(b.date) - new Date(a.date)).forEach(post => {
+                        const card = document.createElement('div');
+                        card.className = 'glass-card';
+                        card.style = 'border-radius:20px; overflow:hidden; display:flex; flex-direction:column; text-align:left; transition: 0.3s;';
+                        card.innerHTML = `
+                            <div style="height:200px; background:url('${post.image}') center/cover;"></div>
+                            <div style="padding:25px;">
+                                <p style="color:#06b6d4; font-size:0.8rem; font-weight:bold;">${new Date(post.date).toLocaleDateString('fr-FR')}</p>
+                                <h3 style="font-family:Syne; margin:10px 0;">${post.title}</h3>
+                                <p style="font-size:0.9rem; opacity:0.8;">${post.excerpt}</p>
+                                <a href="blog.html?post=${post.slug}" style="margin-top:15px; display:inline-block; font-weight:bold;">Lire l'analyse →</a>
+                            </div>`;
+                        container.appendChild(card);
                     });
                 }
             })
-            .catch(error => console.error("❌ Erreur de chargement :", error));
+            .catch(err => {
+                console.error("Erreur JSON:", err);
+                document.getElementById('hero-title').innerHTML = "Erreur de configuration";
+            });
     </script>
-
 </body>
 </html>
