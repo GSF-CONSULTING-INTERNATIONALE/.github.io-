@@ -1,0 +1,13 @@
+baseURL = "https://gsfconsultinginternational.com/"
+languageCode = "fr-fr"
+title = "GSF Consulting International"
+theme = "mon-theme" # Remplacez par le nom exact de votre dossier dans /themes/
+
+[params]
+  description = "Expertise Juridique & IA"
+
+[menu]
+  [[main]]
+    name = "Blog"
+    url = "/posts/"
+    weight = 1
