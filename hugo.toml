@@ -1,8 +1,4 @@
 baseURL = "https://gsfconsultinginternational.com/"
-languageCode = "fr-fr"
 title = "GSF Consulting International"
+languageCode = "fr-fr"
 publishDir = "public"
-
-[params]
-  description = "Expertise Juridique & IA"
-  author = "Gilles Feliho"
