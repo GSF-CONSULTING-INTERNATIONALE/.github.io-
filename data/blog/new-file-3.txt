@@ -1,0 +1,8 @@
+{
+  "title": "IA et Avocats en Afrique : Réinvention ou menace ?",
+  "slug": "ia-avocats-afrique-ohada-2026",
+  "date": "2026-02-23T10:00:00.000Z",
+  "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1200",
+  "excerpt": "L'IA va-t-elle remplacer les avocats en Afrique ? Analyse des positions officielles.",
+  "body": "### Introduction\n\nLa question n'est plus théorique. Nous assistons à une réinvention."
+}
