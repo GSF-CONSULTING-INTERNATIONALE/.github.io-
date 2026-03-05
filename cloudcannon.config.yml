@@ -8,96 +8,39 @@ collections_config:
     disable_file_actions: false
 
   posts:
-    path: data/content.json
+    path: data/blog
     icon: library_books
     parser: json
-    array_key: blog_posts
     output: true
     url: "/blog/[slug]/"
 
     _inputs:
-      # ✅ Champs Blog (optimisés pour le SEO et l'expérience utilisateur)
-      "$.blog_posts[*].title":
+      title:
         label: "Titre de l'article"
         type: text
-        comment: "Titre accrocheur pour le SEO (60 caractères max recommandé)"
-      "$.blog_posts[*].slug":
+      slug:
         label: "Slug (URL)"
         type: text
-        comment: "Utilisez des tirets pour séparer les mots (ex: mon-article)"
-      "$.blog_posts[*].date":
+      date:
         label: "Date de publication"
         type: datetime
-        comment: "Format: AAAA-MM-JJ HH:MM"
-      "$.blog_posts[*].image":
+      image:
         label: "Image de couverture"
         type: image
-        comment: "Format recommandé: 1200x630px pour les réseaux sociaux"
-      "$.blog_posts[*].excerpt":
+      excerpt:
         label: "Résumé (160 caractères max)"
         type: textarea
-        comment: "Ce texte apparaît dans les résultats de recherche et sur la page d'accueil"
-      "$.blog_posts[*].body":
+      body:
         label: "Contenu de l'article"
         type: markdown
-        comment: "Structurez avec des titres H2/H3 pour un meilleur référencement"
         options:
           format: p h2 h3 h4
           headings: [2, 3, 4]
-          headings_start_with_h2: true
           bold: true
           italic: true
           bulletlist: true
-          orderedlist: true
           link: true
           image: true
-          table: true  # ✅ Ajout pour les tableaux si besoin
-
-      # ✅ Champs Homepage (avec types optimisés)
-      "$.homepage.hero_title":
-        label: "Titre principal (Homepage)"
-        type: html  # ✅ Changé en html pour permettre du mise en forme riche
-        comment: "Titre principal de votre page d'accueil"
-      "$.homepage.hero_subtitle":
-        label: "Sous-titre (Homepage)"
-        type: text
-      "$.homepage.vision_subtitle":
-        label: "Sous-titre de la vision"
-        type: text
-      "$.homepage.vision_text":
-        label: "Texte de vision"
-        type: markdown  # ✅ Conservé en markdown pour la mise en forme
-
-      # ✅ Piliers (avec markdown pour les descriptions)
-      "$.piliers_section.title":
-        label: "Titre des Piliers"
-        type: text
-      "$.piliers_section.piliers[*].title":
-        label: "Titre du pilier"
-        type: text
-      "$.piliers_section.piliers[*].description":
-        label: "Description du pilier"
-        type: markdown  # ✅ Changé en markdown pour permettre la mise en forme
-
-      # ✅ Expert (avec bio en markdown)
-      "$.expert_section.bio":
-        label: "Biographie de l'expert"
-        type: markdown  # ✅ Changé en markdown pour une meilleure mise en forme
-        comment: "Présentation détaillée de l'expertise"
-      "$.expert_section.book_fnac":
-        label: "Lien Fnac du livre"
-        type: url
-      "$.expert_section.book_amazon":
-        label: "Lien Amazon du livre"
-        type: url
-
-      # ✅ Offres phares (avec markdown pour les descriptions)
-      "$.offres_phares[*].title":
-        label: "Titre de l'offre"
-        type: text
-      "$.offres_phares[*].description":
-        label: "Description de l'offre"
-        type: markdown  # ✅ Changé en markdown pour une meilleure présentation
 
   admin:
     path: admin
