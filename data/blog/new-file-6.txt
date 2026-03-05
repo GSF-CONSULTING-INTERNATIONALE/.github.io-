@@ -1,8 +1,0 @@
-{
-  "title": "Interview : Gilles FELIHO, l'architecte de la Souveraineté Cognitive™",
-  "slug": "interview-gilles-feliho-souverainete-cognitive",
-  "date": "2026-03-03T14:00:00Z",
-  "image": "/uploads/gilles-feliho-interview.jpg",
-  "excerpt": "Face aux nouveaux risques de l'IA, comment transformer les contraintes réglementaires en leviers de compétitivité ?",
-  [span_14](start_span)"body": "## Un Parcours à l'Épicentre de Deux Mondes\n\nAncien Conseiller juridique du Président de la BIDC (CEDEAO) et expert de la place financière de Paris, Gilles FELIHO forge sa vision à l'intersection de la rigueur européenne et de l'agilité africaine[span_14](end_span)[span_15](start_span)[span_16](start_span).\n\n## L'Audit de Souveraineté Cognitive™ (ASC)\n\nL'ASC™ résout le problème de la 'Black Box Juridique'[span_15](end_span)[span_16](end_span). [span_17](start_span)Sans traçabilité, une institution s'expose à des amendes allant de 7% à 11% de son chiffre d'affaires auprès de régulateurs comme la BCEAO[span_17](end_span)[span_18](start_span)[span_19](start_span).\n\n## Preuves du Terrain\n\nLors d'un audit pour une banque ouest-africaine, l'expertise de Gilles FELIHO a révélé un biais de rejet de 40% sur les PME rurales, évitant ainsi une amende de 2,8 millions d'euros[span_18](end_span)[span_19](end_span).\n\n> 'La décision finale doit rester entre les mains d'un humain éclairé et responsable.' [span_20](start_span)— Gilles FELIHO[span_20](end_span)."
-}
