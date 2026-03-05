@@ -1,13 +1,17 @@
 baseURL = "https://gsfconsultinginternational.com/"
 languageCode = "fr-fr"
 title = "GSF Consulting International"
-theme = "mon-theme" # Remplacez par le nom exact de votre dossier dans /themes/
+
+# Configuration des dossiers pour correspondre à votre structure actuelle
+[publishDir]
+  publishDir = "public"
+
+[content]
+  # Hugo cherchera vos articles dans les dossiers que nous voyons : blog et dat.blog
+  sectionDir = "content"
 
 [params]
-  description = "Expertise Juridique & IA"
+  description = "Expertise Juridique & Intelligence Artificielle"
+  author = "Gilles Feliho"
 
-[menu]
-  [[main]]
-    name = "Blog"
-    url = "/posts/"
-    weight = 1
+# Suppression totale de la ligne 'theme' pour éviter l'erreur "module not found"
