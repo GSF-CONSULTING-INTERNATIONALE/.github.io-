@@ -1,17 +1,8 @@
 baseURL = "https://gsfconsultinginternational.com/"
 languageCode = "fr-fr"
 title = "GSF Consulting International"
-
-# Configuration des dossiers pour correspondre à votre structure actuelle
-[publishDir]
-  publishDir = "public"
-
-[content]
-  # Hugo cherchera vos articles dans les dossiers que nous voyons : blog et dat.blog
-  sectionDir = "content"
+publishDir = "public"
 
 [params]
-  description = "Expertise Juridique & Intelligence Artificielle"
+  description = "Expertise Juridique & IA"
   author = "Gilles Feliho"
-
-# Suppression totale de la ligne 'theme' pour éviter l'erreur "module not found"
