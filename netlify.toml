@@ -1,10 +1,13 @@
 # --- CONFIGURATION DU DÉPLOIEMENT ---
 [build]
-  publish = "."
-  command = "echo 'Building GSF Consulting International...'"
+  publish = "public"
+  command = "hugo --gc --minify"
+
+[build.environment]
+  HUGO_VERSION = "0.128.1"
+  HUGO_ENV = "production"
 
 # --- RÉÉCRITURE DES ROUTES ---
-# Indispensable pour que CloudCannon/Decap CMS fonctionne correctement
 [[redirects]]
   from = "/admin/*"
   to = "/admin/index.html"
@@ -21,6 +24,5 @@
     Referrer-Policy = "strict-origin-when-cross-origin"
 
 # --- CONFIGURATION DES FONCTIONS ---
-# Correction : node_bundler avec valeur string "esbuild"
 [functions]
   node_bundler = "esbuild"
