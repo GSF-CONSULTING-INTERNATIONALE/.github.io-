@@ -53,6 +53,9 @@ collections_config:
 data_config:
   site:
     path: data/content.json
+  blog_index:
+    path: data/blog-index.json
+    source: data/blog
 
 timezone: Etc/UTC
 output: .
