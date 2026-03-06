@@ -41,6 +41,12 @@ collections_config:
           bulletlist: true
           link: true
           image: true
+      seo_title:
+        label: "SEO Title (Onglet Navigateur)"
+        type: text
+      meta_description:
+        label: "Meta Description (Google)"
+        type: textarea
 
   admin:
     path: admin
