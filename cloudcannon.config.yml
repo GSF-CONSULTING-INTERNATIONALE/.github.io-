@@ -20,7 +20,7 @@ collections_config:
         type: text
       slug:
         label: "Slug (URL)"
-        type: text
+        type: text   
       date:
         label: "Date de publication"
         type: datetime
