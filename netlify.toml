@@ -1,13 +1,9 @@
-# --- CONFIGURATION DU DÉPLOIEMENT ---
+# --- CONFIGURATION DU DÉPLOIEMENT GSF (VANILLA) ---
 [build]
-  publish = "public"
-  command = "hugo --gc --minify"
+  publish = "."
+  command = "echo 'Déploiement GSF Consulting International en cours...'"
 
-[build.environment]
-  HUGO_VERSION = "0.128.1"
-  HUGO_ENV = "production"
-
-# --- RÉÉCRITURE DES ROUTES ---
+# --- RÉÉCRITURE DES ROUTES (Indispensable pour Netlify Identity) ---
 [[redirects]]
   from = "/admin/*"
   to = "/admin/index.html"
@@ -22,7 +18,3 @@
     X-XSS-Protection = "1; mode=block"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
-
-# --- CONFIGURATION DES FONCTIONS ---
-[functions]
-  node_bundler = "esbuild"
