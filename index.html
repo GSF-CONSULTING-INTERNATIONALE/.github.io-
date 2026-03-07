@@ -1,243 +1,295 @@
+-----
+
+## layout: default
+
 <!DOCTYPE html>
+
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- SEO POWER PACK -->
-    <title>Intelligence stratégique, souveraineté cognitive et conformité globale en Afrique | GSF Consulting</title>
-    <meta name="description" content="Expertise juridique OHADA et IA. Audit de Souveraineté Cognitive™, conformité financière UEMOA et solutions de recouvrement par Gilles Feliho.">
-    <meta name="keywords" content="Conseil stratégique États africains, conformité financière UEMOA, souveraineté numérique Afrique, IA finance numérique, Audit de Souveraineté Cognitive, Gilles Feliho, OHADA, Recouvrement créances IA">
-    <meta name="author" content="Gilles Feliho">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://gsfconsultinginternational.com/" />
-    <meta property="og:locale" content="fr_FR" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="GSF Consulting International | Droit & IA en Afrique" />
-    <meta property="og:description" content="Transformer le Droit par l'Intelligence Artificielle. Expertise juridique et solutions de recouvrement pour l'Afrique." />
-    <meta property="og:url" content="https://gsfconsultinginternational.com/" />
-    <meta property="og:site_name" content="GSF Consulting International" />
-    <meta property="og:image" content="https://gsfconsultinginternational.com/logo-gsf.PNG" />
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="GSF Consulting International">
-    <meta name="twitter:description" content="Innovation Juridique et IA pour le développement en Afrique.">
-    <meta name="twitter:image" content="https://gsfconsultinginternational.com/logo-gsf.PNG">
-    <link rel="icon" type="image/png" href="/favicon.JPG">
+```
+<title>Intelligence stratégique, souveraineté cognitive et conformité globale en Afrique | GSF Consulting</title>
+<meta name="description" content="Expertise juridique OHADA et IA. Audit de Souveraineté Cognitive™, conformité financière UEMOA et solutions de recouvrement par Gilles Feliho.">
+<meta name="keywords" content="Conseil stratégique États africains, conformité financière UEMOA, souveraineté numérique Afrique, IA finance numérique, Audit de Souveraineté Cognitive, Gilles Feliho, OHADA, Recouvrement créances IA">
+<meta name="author" content="Gilles Feliho">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://gsfconsultinginternational.com/" />
+<meta property="og:locale" content="fr_FR" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="GSF Consulting International | Droit & IA en Afrique" />
+<meta property="og:description" content="Transformer le Droit par l'Intelligence Artificielle. Expertise juridique et solutions de recouvrement pour l'Afrique." />
+<meta property="og:url" content="https://gsfconsultinginternational.com/" />
+<meta property="og:site_name" content="GSF Consulting International" />
+<meta property="og:image" content="https://gsfconsultinginternational.com/logo-gsf.PNG" />
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="GSF Consulting International">
+<meta name="twitter:description" content="Innovation Juridique et IA pour le développement en Afrique.">
+<meta name="twitter:image" content="https://gsfconsultinginternational.com/logo-gsf.PNG">
+<link rel="icon" type="image/png" href="/favicon.JPG">
 
-    <link href="https://fonts.googleapis.com/css2?family=Space Grotesk:wght@300;500;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <style>
-        body { background-color: #050505; color: white; font-family: 'Space Grotesk', sans-serif; margin: 0; }
-        a { color: #06b6d4; text-decoration: none; transition: 0.3s; }
-        a:hover { color: white; }
-        .glass-card { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+<!-- CORRECTION : Space+Grotesk encodé correctement -->
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    body { background-color: #050505; color: white; font-family: 'Space Grotesk', sans-serif; margin: 0; }
+    a { color: #06b6d4; text-decoration: none; transition: 0.3s; }
+    a:hover { color: white; }
+    .glass-card { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+    .grid-layout { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+    .pilier-card, .offre-card { padding: 30px; border-radius: 15px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(6, 182, 212, 0.2); transition: transform 0.3s ease; }
+    .pilier-card:hover, .offre-card:hover { transform: translateY(-5px); border-color: rgba(6, 182, 212, 0.5); }
+    .blog-card { border-radius: 15px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(6, 182, 212, 0.2); overflow: hidden; transition: transform 0.3s ease, border-color 0.3s ease; }
+    .blog-card:hover { transform: translateY(-5px); border-color: #06b6d4; }
 
-        /* Classes utilitaires pour le script */
-        .grid-layout { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
-        .pilier-card, .offre-card, .blog-card { padding: 30px; border-radius: 15px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(6, 182, 212, 0.2); transition: transform 0.3s ease; }
-        .pilier-card:hover, .blog-card:hover { transform: translateY(-5px); border-color: rgba(6, 182, 212, 0.5); }
+    /* Highlight cyan pour "Intelligence Artificielle" */
+    .cyan { color: #06b6d4; }
 
-        /* Menu Mobile */
-        #mobile-menu { display: none; flex-direction: column; background: rgba(0, 0, 0, 0.95); padding: 1rem; position: absolute; top: 100%; left: 0; width: 100%; z-index: 999; }
-        #mobile-menu.active { display: flex; }
-        @media (max-width: 768px) { .desktop-menu { display: none !important; } #mobile-menu-btn { display: block !important; } }
-    </style>
+    /* Menu Mobile */
+    #mobile-menu { display: none; flex-direction: column; background: rgba(0, 0, 0, 0.95); padding: 1rem; position: absolute; top: 100%; left: 0; width: 100%; z-index: 999; }
+    #mobile-menu.active { display: flex; }
+    #mobile-menu-btn { display: none; }
+    @media (max-width: 768px) {
+        .desktop-menu { display: none !important; }
+        #mobile-menu-btn { display: block !important; }
+        h1 { font-size: 2.5rem !important; }
+    }
+</style>
+```
+
 </head>
 <body>
 
-    <nav id="navbar" class="glass-card" style="margin: 20px; position: sticky; top: 10px; z-index: 1000;">
-        <div class="nav-container" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem;">
-            <div class="logo" style="font-family: 'Syne', sans-serif; font-weight: 800; font-size: 1.5rem; color: #06b6d4;">GSF CONSULTING</div>
-            <ul class="desktop-menu" style="display: flex; list-style: none; gap: 2rem; font-family: 'Space Grotesk';">
-                <li><a href="#home">Accueil</a></li>
-                <li><a href="#vision">Vision</a></li>
-                <li><a href="#piliers">Piliers</a></li>
-                <li><a href="#solutions">Solutions</a></li>
-                <li><a href="#blog-list">Blog</a></li>
-                <li><a href="#expert">L'Expert</a></li>
-                <li><a href="#contact" style="border: 1px solid #06b6d4; padding: 5px 15px; border-radius: 4px;">Contact</a></li>
-            </ul>
-            <button id="mobile-menu-btn" style="font-size: 1.5rem; background: transparent; border: none; cursor: pointer; color: white;">☰</button>
-        </div>
-        <div id="mobile-menu">
-            <a href="#home" style="color: #fff; padding: 0.5rem;">Accueil</a>
-            <a href="#vision" style="color: #fff; padding: 0.5rem;">Vision</a>
-            <a href="#piliers" style="color: #fff; padding: 0.5rem;">Piliers</a>
-            <a href="#solutions" style="color: #fff; padding: 0.5rem;">Solutions</a>
-            <a href="#blog-list" style="color: #fff; padding: 0.5rem;">Blog</a>
-            <a href="#expert" style="color: #fff; padding: 0.5rem;">L'Expert</a>
-            <a href="#contact" style="color: #06b6d4; padding: 0.5rem;">Contact</a>
-        </div>
-    </nav>
+```
+<nav id="navbar" class="glass-card" style="margin: 20px; position: sticky; top: 10px; z-index: 1000;">
+    <div class="nav-container" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; position: relative;">
+        <div class="logo" style="font-family: 'Syne', sans-serif; font-weight: 800; font-size: 1.5rem; color: #06b6d4;">GSF CONSULTING</div>
+        <ul class="desktop-menu" style="display: flex; list-style: none; gap: 2rem; font-family: 'Space Grotesk'; margin: 0; padding: 0;">
+            <li><a href="#home">Accueil</a></li>
+            <li><a href="#vision">Vision</a></li>
+            <li><a href="#piliers">Piliers</a></li>
+            <li><a href="#solutions">Solutions</a></li>
+            <li><a href="#blog-list">Blog</a></li>
+            <li><a href="#expert">L'Expert</a></li>
+            <li><a href="#contact" style="border: 1px solid #06b6d4; padding: 5px 15px; border-radius: 4px;">Contact</a></li>
+        </ul>
+        <button id="mobile-menu-btn" style="font-size: 1.5rem; background: transparent; border: none; cursor: pointer; color: white;">☰</button>
+    </div>
+    <div id="mobile-menu">
+        <a href="#home" style="color: #fff; padding: 0.5rem;">Accueil</a>
+        <a href="#vision" style="color: #fff; padding: 0.5rem;">Vision</a>
+        <a href="#piliers" style="color: #fff; padding: 0.5rem;">Piliers</a>
+        <a href="#solutions" style="color: #fff; padding: 0.5rem;">Solutions</a>
+        <a href="#blog-list" style="color: #fff; padding: 0.5rem;">Blog</a>
+        <a href="#expert" style="color: #fff; padding: 0.5rem;">L'Expert</a>
+        <a href="#contact" style="color: #06b6d4; padding: 0.5rem;">Contact</a>
+    </div>
+</nav>
 
-    <!-- HERO SECTION -->
-    <header id="home" style="padding: 100px 5%; text-align: center;">
-        <h1 id="hero-title" style="font-family: 'Syne', sans-serif; font-size: 4rem; text-transform: uppercase; letter-spacing: -2px; line-height: 1.1;">Chargement...</h1>
-        <p id="hero-subtitle" style="font-family: 'Space Grotesk'; max-width: 600px; margin: 20px auto; opacity: 0.8;"></p>
-        <a href="#contact" class="glass-card" style="padding: 15px 40px; cursor: pointer; border: 1px solid #06b6d4; color: #fff; background: transparent; display: inline-block;">Demander un Devis</a>
-    </header>
+<!-- HERO SECTION -->
+<header id="home" style="padding: 100px 5%; text-align: center;">
+    <h1 id="hero-title" style="font-family: 'Syne', sans-serif; font-size: 4rem; text-transform: uppercase; letter-spacing: -2px; line-height: 1.1;">Chargement...</h1>
+    <p id="hero-subtitle" style="font-family: 'Space Grotesk'; max-width: 600px; margin: 20px auto; opacity: 0.8;"></p>
+    <a href="#contact" class="glass-card" style="padding: 15px 40px; cursor: pointer; border: 1px solid #06b6d4; color: #fff; background: transparent; display: inline-block; margin-top: 10px;">Demander un Devis</a>
+</header>
 
-    <!-- VISION SECTION -->
-    <section id="vision" style="padding: 50px 5%; text-align: center;">
-        <h2 style="font-family: 'Syne', sans-serif; font-size: 2.5rem; margin-bottom: 20px;">Notre Vision</h2>
-        <h3 id="vision-subtitle" style="font-family: 'Syne', sans-serif; font-size: 1.8rem; margin-bottom: 15px; color: #06b6d4;"></h3>
-        <div id="vision-text" style="font-family: 'Space Grotesk'; max-width: 800px; margin: 0 auto; line-height: 1.6;"></div>
-    </section>
+<!-- VISION SECTION -->
+<section id="vision" style="padding: 80px 5%; text-align: center;">
+    <h2 style="font-family: 'Syne', sans-serif; font-size: 2.5rem; margin-bottom: 20px;">Notre Vision</h2>
+    <h3 id="vision-subtitle" style="font-family: 'Syne', sans-serif; font-size: 1.8rem; margin-bottom: 15px; color: #06b6d4;"></h3>
+    <div id="vision-text" style="font-family: 'Space Grotesk'; max-width: 800px; margin: 0 auto; line-height: 1.6;"></div>
+</section>
 
-    <!-- PILIERS SECTION -->
-    <section id="piliers" style="padding: 50px 5%; text-align: center;">
-        <h2 style="font-family: 'Syne', sans-serif; font-size: 2.5rem; margin-bottom: 40px;">Nos 5 Piliers d'Excellence</h2>
-        <div id="piliers-grid" class="grid-layout"></div>
-    </section>
+<!-- PILIERS SECTION -->
+<section id="piliers" style="padding: 80px 5%; text-align: center;">
+    <h2 style="font-family: 'Syne', sans-serif; font-size: 2.5rem; margin-bottom: 40px;">Nos 5 Piliers d'Excellence</h2>
+    <div id="piliers-grid" class="grid-layout"></div>
+</section>
 
-    <!-- SOLUTIONS SECTION -->
-    <main id="solutions" style="padding: 50px 5%;">
-        <div id="offres-grid" class="grid-layout"></div>
-    </main>
+<!-- SOLUTIONS SECTION -->
+<main id="solutions" style="padding: 80px 5%;">
+    <h2 style="font-family: 'Syne', sans-serif; font-size: 2.5rem; margin-bottom: 40px; text-align: center;">Nos Solutions</h2>
+    <div id="offres-grid" class="grid-layout"></div>
+</main>
 
-    <!-- BLOG SECTION -->
-    <section id="blog-list" style="padding: 50px 5%;">
-        <h2 style="font-family: 'Syne', sans-serif; font-size: 2.5rem; margin-bottom: 30px; text-align: center;">Analyses & Publications</h2>
-        <div id="blog-grid" class="grid-layout"></div>
-    </section>
-
-    <!-- EXPERT SECTION -->
-    <section id="expert" style="padding: 50px 5%; text-align: center;">
-        <h2 style="font-family: 'Syne', sans-serif; font-size: 2.5rem; margin-bottom: 20px;">L'Expert : Gilles Feliho</h2>
-        <p id="expert-bio" style="font-family: 'Space Grotesk'; max-width: 800px; margin: 0 auto 20px; line-height: 1.6;"></p>
-        <div style="margin-top: 20px;">
-            <a id="fnac-link" href="#" target="_blank" style="margin-right: 15px; color: #06b6d4; border: 1px solid #06b6d4; padding: 10px 20px; border-radius: 5px;">📖 Fnac</a>
-            <a id="amazon-link" href="#" target="_blank" style="color: #06b6d4; border: 1px solid #06b6d4; padding: 10px 20px; border-radius: 5px;">📚 Amazon</a>
-        </div>
-    </section>
-
-    <!-- CONTACT SECTION -->
-    <section id="contact" style="padding: 50px 5%; text-align: center; background: #0a0a0a;">
-        <h2 style="font-family: 'Syne', sans-serif; font-size: 2.5rem; margin-bottom: 20px;">Contact</h2>
-        <p style="opacity: 0.7; margin-bottom: 20px;">Prêt à transformer vos défis juridiques ?</p>
-        <a href="mailto: contact@eji2.org" style="padding: 15px 40px; border: 1px solid #fff; color: #fff;">Envoyer un Email</a>
-    </section>
-
-    <!-- FOOTER MODIFIE (Sans logo, avec mentions légales) -->
-    <footer style="margin-top: 80px; padding: 40px 20px; border-top: 1px solid #06b6d4; text-align: center; font-family: 'Syne', sans-serif;">
-        <p style="color: #06b6d4; font-size: 0.9rem; margin-bottom: 10px;">
-            © 2026 GSF Consulting International — Expertise Juridique & IA
-        </p>
-        <a href="mentions-legales.html" style="color: #06b6d4; text-decoration: none; font-weight: 700; border-bottom: 1px solid transparent; transition: border 0.3s;" onmouseover="this.style.borderBottom='1px solid #06b6d4'" onmouseout="this.style.borderBottom='1px solid transparent'">
-            Mentions légales
+<!-- BLOG SECTION — fetch data/blog-index.json -->
+<section id="blog-list" style="padding: 80px 5%; background: rgba(6, 182, 212, 0.02);">
+    <h2 style="font-family: 'Syne', sans-serif; font-size: 2.5rem; margin-bottom: 40px; text-align: center;">Analyses & Publications</h2>
+    <div id="blog-grid" class="grid-layout"></div>
+    <div style="text-align: center; margin-top: 50px;">
+        <a href="blog.html" style="border: 1px solid #06b6d4; padding: 12px 35px; border-radius: 5px; color: #06b6d4; transition: 0.3s;"
+           onmouseover="this.style.background='#06b6d4';this.style.color='#000';"
+           onmouseout="this.style.background='transparent';this.style.color='#06b6d4';">
+            Toutes les publications
         </a>
-    </footer>
+    </div>
+</section>
 
-    <!-- SCRIPT UTILISATEUR ADAPTÉ -->
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        fetch('content.json')
-          .then(response => {
-            if (!response.ok) throw new Error('Fichier JSON introuvable');
-            return response.json();
-          })
-          .then(data => {
-            console.log("Données chargées :", data);
+<!-- EXPERT SECTION -->
+<section id="expert" style="padding: 80px 5%; text-align: center;">
+    <h2 style="font-family: 'Syne', sans-serif; font-size: 2.5rem; margin-bottom: 20px;">L'Expert : Gilles Feliho</h2>
+    <p id="expert-bio" style="font-family: 'Space Grotesk'; max-width: 800px; margin: 0 auto 20px; line-height: 1.6;"></p>
+    <div style="margin-top: 20px;">
+        <a id="fnac-link" href="#" target="_blank" rel="noopener" style="margin-right: 15px; color: #06b6d4; border: 1px solid #06b6d4; padding: 10px 20px; border-radius: 5px;">📖 Fnac</a>
+        <a id="amazon-link" href="#" target="_blank" rel="noopener" style="color: #06b6d4; border: 1px solid #06b6d4; padding: 10px 20px; border-radius: 5px;">📚 Amazon</a>
+    </div>
+</section>
 
-            // 1. Hero section
-            setText('hero-title', data.homepage?.hero_title);
-            setText('hero-subtitle', data.homepage?.hero_subtitle);
+<!-- CONTACT SECTION — CORRECTION : espace supprimé dans mailto: -->
+<section id="contact" style="padding: 80px 5%; text-align: center; background: #0a0a0a;">
+    <h2 style="font-family: 'Syne', sans-serif; font-size: 2.5rem; margin-bottom: 20px;">Contact</h2>
+    <p style="opacity: 0.7; margin-bottom: 20px;">Prêt à transformer vos défis juridiques ?</p>
+    <a href="mailto:contact@eji2.org" style="padding: 15px 40px; border: 1px solid #fff; color: #fff; border-radius: 4px; display: inline-block; transition: 0.3s;"
+       onmouseover="this.style.background='#fff';this.style.color='#050505';"
+       onmouseout="this.style.background='transparent';this.style.color='#fff';">
+        Envoyer un Email
+    </a>
+</section>
 
-            // 2. Section vision (Correction pour les sauts de ligne)
-            setText('vision-subtitle', data.homepage?.vision_subtitle);
-            const visionEl = document.getElementById('vision-text');
-            if (visionEl && data.homepage?.vision_text) {
-                visionEl.innerHTML = data.homepage.vision_text.replace(/\n/g, '<br>');
-            }
+<!-- FOOTER -->
+<footer style="margin-top: 0; padding: 40px 20px; border-top: 1px solid #06b6d4; text-align: center; font-family: 'Syne', sans-serif;">
+    <p style="color: #06b6d4; font-size: 0.9rem; margin-bottom: 10px;">
+        © 2026 GSF Consulting International — Expertise Juridique & IA
+    </p>
+    <a href="mentions-legales.html" style="color: #06b6d4; text-decoration: none; font-weight: 700; border-bottom: 1px solid transparent; transition: border 0.3s;"
+       onmouseover="this.style.borderBottom='1px solid #06b6d4'"
+       onmouseout="this.style.borderBottom='1px solid transparent'">
+        Mentions légales
+    </a>
+</footer>
 
-            // 3. Piliers
-            const piliersGrid = document.getElementById('piliers-grid');
-            if (piliersGrid && data.piliers_section?.piliers) {
-              piliersGrid.innerHTML = data.piliers_section.piliers.map(p => `
-                <div class="pilier-card">
-                  <h3 style="font-family: 'Syne'; margin-bottom: 15px; color: #06b6d4;">${escapeHtml(p.title)}</h3>
-                  <p>${escapeHtml(p.description)}</p>
-                </div>
-              `).join('');
-            }
+<script>
+  // ── Menu Mobile ──────────────────────────────────────────
+  const mobileBtn = document.getElementById('mobile-menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  if (mobileBtn) {
+    mobileBtn.addEventListener('click', () => mobileMenu.classList.toggle('active'));
+  }
+  mobileMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => mobileMenu.classList.remove('active'));
+  });
 
-            // 4. Offres phares
-            const offresGrid = document.getElementById('offres-grid');
-            if (offresGrid && data.offres_phares) {
-              offresGrid.innerHTML = data.offres_phares.map(o => `
-                <div class="offre-card" style="border: 1px solid #06b6d4;">
-                  <h2 style="font-family: 'Syne'; margin-bottom: 15px;">⭐ ${escapeHtml(o.title)}</h2>
-                  <p>${escapeHtml(o.description)}</p>
-                </div>
-              `).join('');
-            }
+  // ── Chargement principal ─────────────────────────────────
+  document.addEventListener('DOMContentLoaded', function() {
+    fetch('content.json')
+      .then(response => {
+        if (!response.ok) throw new Error('Fichier JSON introuvable');
+        return response.json();
+      })
+      .then(data => {
 
-            // 5. Expert section (bio + liens)
-            setText('expert-bio', data.expert_section?.bio);
-            const fnacLink = document.getElementById('fnac-link');
-            if (fnacLink) fnacLink.href = data.expert_section?.book_fnac || '#';
-            const amazonLink = document.getElementById('amazon-link');
-            if (amazonLink) amazonLink.href = data.expert_section?.book_amazon || '#';
-
-            // 6. Blog posts (Chargement dynamique depuis le nouvel index)
-            const blogGrid = document.getElementById('blog-grid');
-            if (blogGrid) {
-              fetch('data/blog-index.json')
-                .then(res => {
-                    if (!res.ok) throw new Error('Index non généré');
-                    return res.json();
-                })
-                .then(posts => {
-                  // Transformation de l'objet en tableau, tri par date et on garde les 3 derniers
-                  const sortedPosts = Object.values(posts)
-                                     .sort((a, b) => new Date(b.date) - new Date(a.date))
-                                     .slice(0, 3);
-
-                  if (sortedPosts.length === 0) {
-                      blogGrid.innerHTML = '<p style="text-align:center; width:100%;">Analyses à venir...</p>';
-                      return;
-                  }
-
-                  blogGrid.innerHTML = sortedPosts.map(post => `
-                    <div class="blog-card">
-                      <img src="${escapeHtml(post.image)}" alt="${escapeHtml(post.title)}"
-                           style="width:100%; height:200px; object-fit:cover; border-radius:15px 15px 0 0;"
-                           onerror="this.src='https://via.placeholder.com/400x250?text=GSF+Expertise'">
-                      <div style="padding: 25px;">
-                        <p style="font-size: 0.8rem; color: #06b6d4; font-weight: bold; text-transform: uppercase;">
-                            ${new Date(post.date).toLocaleDateString('fr-FR')}
-                        </p>
-                        <h3 style="font-family:'Syne'; font-size:1.3rem; margin:10px 0;">${escapeHtml(post.title)}</h3>
-                        <p style="opacity:0.8; font-size:0.9rem; margin-bottom:20px;">${escapeHtml(post.excerpt)}</p>
-                        <a href="blog.html?post=${encodeURIComponent(post.slug)}" style="color: #06b6d4; font-weight: 700;">Lire l'analyse →</a>
-                      </div>
-                    </div>
-                  `).join('');
-                })
-                .catch(err => {
-                    console.log("L'index du blog sera disponible après la première publication CloudCannon.");
-                    blogGrid.innerHTML = '<p style="text-align:center; width:100%;">Mise à jour des analyses en cours...</p>';
-                });
-            }
-          })
-          .catch(error => console.error('Erreur chargement JSON :', error));
-
-        // Fonctions utilitaires
-        function setText(id, text) {
-          const el = document.getElementById(id);
-          if (el && text) el.textContent = text;
+        // 1. Hero — "Intelligence Artificielle" mis en cyan
+        const heroTitleEl = document.getElementById('hero-title');
+        if (heroTitleEl && data.homepage?.hero_title) {
+          heroTitleEl.innerHTML = data.homepage.hero_title.replace(
+            /(Intelligence Artificielle)/gi,
+            '<span class="cyan">$1</span>'
+          );
+        }
+        const heroSubEl = document.getElementById('hero-subtitle');
+        if (heroSubEl && data.homepage?.hero_subtitle) {
+          heroSubEl.innerHTML = data.homepage.hero_subtitle.replace(
+            /(Intelligence Artificielle)/gi,
+            '<span class="cyan">$1</span>'
+          );
         }
 
-        function escapeHtml(unsafe) {
-          if (!unsafe) return '';
-          return unsafe
-            .replace(/&/g, "&amp;")
-            .replace(/</g, "&lt;")
-            .replace(/>/g, "&gt;")
-            .replace(/"/g, "&quot;")
-            .replace(/'/g, "&#039;");
+        // 2. Vision
+        setText('vision-subtitle', data.homepage?.vision_subtitle);
+        const visionEl = document.getElementById('vision-text');
+        if (visionEl && data.homepage?.vision_text) {
+          visionEl.innerHTML = data.homepage.vision_text.replace(/\n/g, '<br>');
         }
-      });
-    </script>
+
+        // 3. Piliers
+        const piliersGrid = document.getElementById('piliers-grid');
+        if (piliersGrid && data.piliers_section?.piliers) {
+          piliersGrid.innerHTML = data.piliers_section.piliers.map(p => `
+            <div class="pilier-card">
+              <h3 style="font-family:'Syne',sans-serif; margin-bottom:15px; color:#06b6d4;">${escapeHtml(p.title)}</h3>
+              <p>${escapeHtml(p.description)}</p>
+            </div>
+          `).join('');
+        }
+
+        // 4. Offres / Solutions
+        const offresGrid = document.getElementById('offres-grid');
+        if (offresGrid && data.offres_phares) {
+          offresGrid.innerHTML = data.offres_phares.map(o => `
+            <div class="offre-card" style="border:1px solid #06b6d4;">
+              <h2 style="font-family:'Syne',sans-serif; margin-bottom:15px;">⭐ ${escapeHtml(o.title)}</h2>
+              <p>${escapeHtml(o.description)}</p>
+            </div>
+          `).join('');
+        }
+
+        // 5. Expert
+        setText('expert-bio', data.expert_section?.bio);
+        const fnacLink = document.getElementById('fnac-link');
+        if (fnacLink) fnacLink.href = data.expert_section?.book_fnac || '#';
+        const amazonLink = document.getElementById('amazon-link');
+        if (amazonLink) amazonLink.href = data.expert_section?.book_amazon || '#';
+
+        // 6. Blog — fetch data/blog-index.json
+        const blogGrid = document.getElementById('blog-grid');
+        if (blogGrid) {
+          fetch('data/blog-index.json')
+            .then(res => {
+              if (!res.ok) throw new Error('Index non généré');
+              return res.json();
+            })
+            .then(posts => {
+              const sortedPosts = Object.values(posts)
+                .sort((a, b) => new Date(b.date) - new Date(a.date))
+                .slice(0, 3);
+
+              if (sortedPosts.length === 0) {
+                blogGrid.innerHTML = '<p style="text-align:center;width:100%;opacity:0.6;">Analyses à venir...</p>';
+                return;
+              }
+
+              blogGrid.innerHTML = sortedPosts.map(post => `
+                <div class="blog-card">
+                  <img src="${escapeHtml(post.image)}" alt="${escapeHtml(post.title)}"
+                       style="width:100%; height:200px; object-fit:cover; display:block;"
+                       onerror="this.src='https://via.placeholder.com/400x250?text=GSF+Expertise'">
+                  <div style="padding:25px;">
+                    <p style="font-size:0.8rem; color:#06b6d4; font-weight:bold; text-transform:uppercase; margin-bottom:8px;">
+                      ${new Date(post.date).toLocaleDateString('fr-FR')}
+                    </p>
+                    <h3 style="font-family:'Syne',sans-serif; font-size:1.3rem; margin:0 0 12px;">${escapeHtml(post.title)}</h3>
+                    <p style="opacity:0.8; font-size:0.9rem; margin-bottom:20px; line-height:1.6;">${escapeHtml(post.excerpt)}</p>
+                    <a href="blog.html?post=${encodeURIComponent(post.slug)}" style="color:#06b6d4; font-weight:700;">Lire l'analyse →</a>
+                  </div>
+                </div>
+              `).join('');
+            })
+            .catch(() => {
+              blogGrid.innerHTML = '<p style="text-align:center;width:100%;opacity:0.6;">Mise à jour des analyses en cours...</p>';
+            });
+        }
+      })
+      .catch(error => console.error('Erreur chargement content.json :', error));
+
+    // ── Utilitaires ──────────────────────────────────────
+    function setText(id, text) {
+      const el = document.getElementById(id);
+      if (el && text) el.textContent = text;
+    }
+
+    function escapeHtml(str) {
+      if (!str) return '';
+      return str
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#039;');
+    }
+  });
+</script>
+```
+
 </body>
 </html>
