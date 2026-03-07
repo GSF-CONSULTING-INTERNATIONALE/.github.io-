@@ -2,10 +2,6 @@ collections_config:
   pages:
     path: ''
     icon: wysiwyg
-    disable_url: false
-    disable_add: false
-    disable_add_folder: false
-    disable_file_actions: false
 
   posts:
     path: data/blog
@@ -13,14 +9,13 @@ collections_config:
     parser: json
     output: true
     url: "/blog/[slug]/"
-
     _inputs:
       title:
         label: "Titre de l'article"
         type: text
       slug:
         label: "Slug (URL)"
-        type: text   
+        type: text
       date:
         label: "Date de publication"
         type: datetime
@@ -33,62 +28,12 @@ collections_config:
       body:
         label: "Contenu de l'article"
         type: markdown
-        options:
-          format: p h2 h3 h4
-          headings: [2, 3, 4]
-          bold: true
-          italic: true
-          bulletlist: true
-          link: true
-          image: true
       seo_title:
-        label: "SEO Title (Onglet Navigateur)"
+        label: "SEO Title"
         type: text
       meta_description:
-        label: "Meta Description (Google)"
+        label: "Meta Description"
         type: textarea
-
-  # ──────────────────────────────────────────────────────────────
-  # NOUVELLE COLLECTION (recommandée pour le Code 1)
-  # ──────────────────────────────────────────────────────────────
-  _blog:
-    name: Articles du Blog
-    path: _blog
-    output: true
-    url: /blog/[slug]
-    sort_by: date
-    sort_direction: descending
-    icon: description
-    create: true
-    delete: true
-
-    _inputs:
-      title:
-        label: "Titre de l'article"
-        type: text
-      slug:
-        label: "Slug (URL)"
-        type: text
-      date:
-        label: "Date de publication"
-        type: datetime
-      image:
-        label: "Image de couverture"
-        type: image
-      excerpt:
-        label: "Résumé (160 caractères max)"
-        type: textarea
-      body:
-        label: "Contenu de l'article (Markdown)"
-        type: markdown
-        options:
-          format: p h2 h3 h4
-          headings: [2, 3, 4]
-          bold: true
-          italic: true
-          bulletlist: true
-          link: true
-          image: true
 
 data_config:
   site:
