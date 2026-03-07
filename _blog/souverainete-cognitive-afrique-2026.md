@@ -1,0 +1,7 @@
+---
+title: "Intelligence stratégique et souveraineté cognitive"
+slug: "souverainete-cognitive-afrique-2026"
+date: "2026-02-26T10:00:00.000Z"
+image: "https://media.licdn.com/dms/image/v2/D4D12AQFU12fCQXH7Aw/article-cover_image-shrink_720_1280/B4DZh1B0xtGgAQ-/0/1754310081071?e=2147483647&v=beta&t=LSMaP6YsupmJY_l_twUfqgz88JIMlAIUc2cI_D5Suvk"
+excerpt: "L'IA et la finance numérique imposent une nouvelle souveraineté."
+---
