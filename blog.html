@@ -1,10 +1,9 @@
------
-
-## layout: default
+---
+layout: default
 permalink: /blog.html
+---
 
 <!DOCTYPE html>
-
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -12,77 +11,70 @@ permalink: /blog.html
     <title>Blog & Analyses | GSF Consulting</title>
     <meta name="description" content="Analyses stratégiques sur l'IA, le droit OHADA, la conformité BCEAO et la souveraineté cognitive en Afrique par Gilles Feliho.">
 
-```
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
-<style>
-    body { background-color: #050505; color: white; font-family: 'Space Grotesk', sans-serif; margin: 0; line-height: 1.7; }
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { background-color: #050505; color: white; font-family: 'Space Grotesk', sans-serif; margin: 0; line-height: 1.7; }
 
-    /* --- NAVBAR --- */
-    #navbar { position: fixed; top: 0; width: 100%; z-index: 1000; background: rgba(5, 5, 5, 0.95); border-bottom: 1px solid rgba(6, 182, 212, 0.3); padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; box-sizing: border-box; }
-    #navbar a { color: #fff; text-decoration: none; margin-left: 20px; font-weight: 500; transition: 0.3s; }
-    #navbar a:hover { color: #06b6d4; }
-    #navbar .logo { font-family: 'Syne'; font-weight: 800; font-size: 1.5rem; color: #06b6d4; margin-left: 0; }
+        /* --- NAVBAR --- */
+        #navbar { position: fixed; top: 0; width: 100%; z-index: 1000; background: rgba(5, 5, 5, 0.95); border-bottom: 1px solid rgba(6, 182, 212, 0.3); padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; box-sizing: border-box; }
+        #navbar a { color: #fff; text-decoration: none; margin-left: 20px; font-weight: 500; transition: 0.3s; }
+        #navbar a:hover { color: #06b6d4; }
+        #navbar .logo { font-family: 'Syne'; font-weight: 800; font-size: 1.5rem; color: #06b6d4; margin-left: 0; }
 
-    /* --- LAYOUT --- */
-    .container { max-width: 900px; margin: 0 auto; padding: 120px 20px 50px; min-height: 80vh; }
+        /* --- LAYOUT --- */
+        .container { max-width: 900px; margin: 0 auto; padding: 120px 20px 50px; min-height: 80vh; }
 
-    /* --- GRILLE BLOG --- */
-    .blog-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
-    .glass-card { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); padding: 0; border-radius: 20px; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.1); transition: transform 0.3s ease; }
-    .glass-card:hover { transform: translateY(-5px); border-color: rgba(6, 182, 212, 0.4); }
-    .card-img { height: 200px; background-size: cover; background-position: center; }
-    .card-content { padding: 25px; }
-    .card-date { font-size: 0.8rem; color: #06b6d4; font-weight: bold; text-transform: uppercase; margin-bottom: 10px; }
-    .card-title { font-family: 'Syne'; font-size: 1.3rem; margin-bottom: 15px; color: #fff; }
-    .card-excerpt { font-size: 0.95rem; opacity: 0.8; margin-bottom: 20px; line-height: 1.5; }
-    .card-link { color: #06b6d4; font-weight: 700; text-decoration: none; }
+        /* --- GRILLE BLOG --- */
+        .blog-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .glass-card { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); padding: 0; border-radius: 20px; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.1); transition: transform 0.3s ease; }
+        .glass-card:hover { transform: translateY(-5px); border-color: rgba(6, 182, 212, 0.4); }
+        .card-img { height: 200px; background-size: cover; background-position: center; }
+        .card-content { padding: 25px; }
+        .card-date { font-size: 0.8rem; color: #06b6d4; font-weight: bold; text-transform: uppercase; margin-bottom: 10px; }
+        .card-title { font-family: 'Syne'; font-size: 1.3rem; margin-bottom: 15px; color: #fff; }
+        .card-excerpt { font-size: 0.95rem; opacity: 0.8; margin-bottom: 20px; line-height: 1.5; }
+        .card-link { color: #06b6d4; font-weight: 700; text-decoration: none; }
 
-    footer { text-align: center; padding: 40px; border-top: 1px solid #06b6d4; opacity: 0.6; font-size: 0.9rem; }
+        footer { text-align: center; padding: 40px; border-top: 1px solid #06b6d4; opacity: 0.6; font-size: 0.9rem; }
 
-    @media (max-width: 768px) {
-        #navbar { padding: 1rem; }
-        #navbar a { margin-left: 10px; font-size: 0.9rem; }
-        .blog-grid { grid-template-columns: 1fr; }
-    }
-</style>
-```
-
+        @media (max-width: 768px) {
+            #navbar { padding: 1rem; }
+            #navbar a { margin-left: 10px; font-size: 0.9rem; }
+            .blog-grid { grid-template-columns: 1fr; }
+        }
+    </style>
 </head>
 <body>
+    <nav id="navbar">
+        <a href="{{ site.baseurl }}/" class="logo">GSF CONSULTING</a>
+        <div>
+            <a href="{{ site.baseurl }}/#home">Accueil</a>
+            <a href="{{ site.baseurl }}/#vision">Vision</a>
+            <a href="{{ site.baseurl }}/blog.html">Blog</a>
+            <a href="{{ site.baseurl }}/#contact">Contact</a>
+        </div>
+    </nav>
 
-```
-<nav id="navbar">
-    <a href="{{ site.baseurl }}/" class="logo">GSF CONSULTING</a>
-    <div>
-        <a href="{{ site.baseurl }}/#home">Accueil</a>
-        <a href="{{ site.baseurl }}/#vision">Vision</a>
-        <a href="{{ site.baseurl }}/blog.html">Blog</a>
-        <a href="{{ site.baseurl }}/#contact">Contact</a>
+    <div class="container">
+        <h1 style="font-family:'Syne'; font-size:3rem; text-align:center; margin-bottom:40px;">Analyses & Publications</h1>
+
+        <div class="blog-grid">
+            {% for post in site.blog %}
+            <article class="glass-card">
+                <div class="card-img" style="background-image: url('{{ post.image | default: "/images/fallback-article.jpg" }}');"></div>
+                <div class="card-content">
+                    <div class="card-date">{{ post.date | date: "%d %B %Y" }}</div>
+                    <h3 class="card-title">{{ post.title }}</h3>
+                    <p class="card-excerpt">{{ post.excerpt }}</p>
+                    <a href="{{ post.url }}" class="card-link">Lire l'analyse →</a>
+                </div>
+            </article>
+            {% endfor %}
+        </div>
     </div>
-</nav>
 
-<div class="container">
-    <h1 style="font-family:'Syne'; font-size:3rem; text-align:center; margin-bottom:40px;">Analyses & Publications</h1>
-
-    <div class="blog-grid">
-      {% for post in site.blog %}
-        <article class="glass-card">
-          <div class="card-img" style="background-image: url('{{ post.image | default: "/images/fallback-article.jpg" }}');"></div>
-          <div class="card-content">
-            <div class="card-date">{{ post.date | date: "%d %B %Y" }}</div>
-            <h3 class="card-title">{{ post.title }}</h3>
-            <p class="card-excerpt">{{ post.excerpt }}</p>
-            <a href="{{ post.url }}" class="card-link">Lire l'analyse →</a>
-          </div>
-        </article>
-      {% endfor %}
-    </div>
-</div>
-
-<footer>
-    &copy; 2026 GSF Consulting International
-</footer>
-```
-
+    <footer>
+        &copy; 2026 GSF Consulting International
+    </footer>
 </body>
 </html>
