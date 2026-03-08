@@ -1,14 +1,10 @@
------
-
+---
 ## layout: default
-
 <!DOCTYPE html>
-
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 ```
 <title>Intelligence stratégique, souveraineté cognitive et conformité globale en Afrique | GSF Consulting</title>
 <meta name="description" content="Expertise juridique OHADA et IA. Audit de Souveraineté Cognitive™, conformité financière UEMOA et solutions de recouvrement par Gilles Feliho.">
@@ -28,11 +24,10 @@
 <meta name="twitter:description" content="Innovation Juridique et IA pour le développement en Afrique.">
 <meta name="twitter:image" content="https://gsfconsultinginternational.com/logo-gsf.PNG">
 <link rel="icon" type="image/png" href="/favicon.JPG">
-
-<!-- CORRECTION : Space+Grotesk encodé correctement -->
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 <style>
+    
     body { background-color: #050505; color: white; font-family: 'Space Grotesk', sans-serif; margin: 0; }
     a { color: #06b6d4; text-decoration: none; transition: 0.3s; }
     a:hover { color: white; }
@@ -42,11 +37,7 @@
     .pilier-card:hover, .offre-card:hover { transform: translateY(-5px); border-color: rgba(6, 182, 212, 0.5); }
     .blog-card { border-radius: 15px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(6, 182, 212, 0.2); overflow: hidden; transition: transform 0.3s ease, border-color 0.3s ease; }
     .blog-card:hover { transform: translateY(-5px); border-color: #06b6d4; }
-
-    /* Highlight cyan pour "Intelligence Artificielle" */
     .cyan { color: #06b6d4; }
-
-    /* Menu Mobile */
     #mobile-menu { display: none; flex-direction: column; background: rgba(0, 0, 0, 0.95); padding: 1rem; position: absolute; top: 100%; left: 0; width: 100%; z-index: 999; }
     #mobile-menu.active { display: flex; }
     #mobile-menu-btn { display: none; }
@@ -57,10 +48,8 @@
     }
 </style>
 ```
-
 </head>
 <body>
-
 ```
 <nav id="navbar" class="glass-card" style="margin: 20px; position: sticky; top: 10px; z-index: 1000;">
     <div class="nav-container" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; position: relative;">
@@ -85,35 +74,30 @@
         <a href="#expert" style="color: #fff; padding: 0.5rem;">L'Expert</a>
         <a href="#contact" style="color: #06b6d4; padding: 0.5rem;">Contact</a>
     </div>
+    
 </nav>
-
-<!-- HERO SECTION -->
 <header id="home" style="padding: 100px 5%; text-align: center;">
     <h1 id="hero-title" style="font-family: 'Syne', sans-serif; font-size: 4rem; text-transform: uppercase; letter-spacing: -2px; line-height: 1.1;">Chargement...</h1>
     <p id="hero-subtitle" style="font-family: 'Space Grotesk'; max-width: 600px; margin: 20px auto; opacity: 0.8;"></p>
     <a href="#contact" class="glass-card" style="padding: 15px 40px; cursor: pointer; border: 1px solid #06b6d4; color: #fff; background: transparent; display: inline-block; margin-top: 10px;">Demander un Devis</a>
 </header>
-
-<!-- VISION SECTION -->
+    
 <section id="vision" style="padding: 80px 5%; text-align: center;">
     <h2 style="font-family: 'Syne', sans-serif; font-size: 2.5rem; margin-bottom: 20px;">Notre Vision</h2>
     <h3 id="vision-subtitle" style="font-family: 'Syne', sans-serif; font-size: 1.8rem; margin-bottom: 15px; color: #06b6d4;"></h3>
     <div id="vision-text" style="font-family: 'Space Grotesk'; max-width: 800px; margin: 0 auto; line-height: 1.6;"></div>
 </section>
 
-<!-- PILIERS SECTION -->
 <section id="piliers" style="padding: 80px 5%; text-align: center;">
     <h2 style="font-family: 'Syne', sans-serif; font-size: 2.5rem; margin-bottom: 40px;">Nos 5 Piliers d'Excellence</h2>
     <div id="piliers-grid" class="grid-layout"></div>
 </section>
 
-<!-- SOLUTIONS SECTION -->
 <main id="solutions" style="padding: 80px 5%;">
     <h2 style="font-family: 'Syne', sans-serif; font-size: 2.5rem; margin-bottom: 40px; text-align: center;">Nos Solutions</h2>
     <div id="offres-grid" class="grid-layout"></div>
 </main>
 
-<!-- BLOG SECTION — fetch data/blog-index.json -->
 <section id="blog-list" style="padding: 80px 5%; background: rgba(6, 182, 212, 0.02);">
     <h2 style="font-family: 'Syne', sans-serif; font-size: 2.5rem; margin-bottom: 40px; text-align: center;">Analyses & Publications</h2>
     <div id="blog-grid" class="grid-layout"></div>
@@ -126,7 +110,6 @@
     </div>
 </section>
 
-<!-- EXPERT SECTION -->
 <section id="expert" style="padding: 80px 5%; text-align: center;">
     <h2 style="font-family: 'Syne', sans-serif; font-size: 2.5rem; margin-bottom: 20px;">L'Expert : Gilles Feliho</h2>
     <p id="expert-bio" style="font-family: 'Space Grotesk'; max-width: 800px; margin: 0 auto 20px; line-height: 1.6;"></p>
@@ -136,7 +119,6 @@
     </div>
 </section>
 
-<!-- CONTACT SECTION — CORRECTION : espace supprimé dans mailto: -->
 <section id="contact" style="padding: 80px 5%; text-align: center; background: #0a0a0a;">
     <h2 style="font-family: 'Syne', sans-serif; font-size: 2.5rem; margin-bottom: 20px;">Contact</h2>
     <p style="opacity: 0.7; margin-bottom: 20px;">Prêt à transformer vos défis juridiques ?</p>
@@ -147,7 +129,6 @@
     </a>
 </section>
 
-<!-- FOOTER -->
 <footer style="margin-top: 0; padding: 40px 20px; border-top: 1px solid #06b6d4; text-align: center; font-family: 'Syne', sans-serif;">
     <p style="color: #06b6d4; font-size: 0.9rem; margin-bottom: 10px;">
         © 2026 GSF Consulting International — Expertise Juridique & IA
@@ -160,7 +141,6 @@
 </footer>
 
 <script>
-  // ── Menu Mobile ──────────────────────────────────────────
   const mobileBtn = document.getElementById('mobile-menu-btn');
   const mobileMenu = document.getElementById('mobile-menu');
   if (mobileBtn) {
@@ -170,7 +150,6 @@
     link.addEventListener('click', () => mobileMenu.classList.remove('active'));
   });
 
-  // ── Chargement principal ─────────────────────────────────
   document.addEventListener('DOMContentLoaded', function() {
     fetch('content.json')
       .then(response => {
@@ -179,7 +158,6 @@
       })
       .then(data => {
 
-        // 1. Hero — "Intelligence Artificielle" mis en cyan
         const heroTitleEl = document.getElementById('hero-title');
         if (heroTitleEl && data.homepage?.hero_title) {
           heroTitleEl.innerHTML = data.homepage.hero_title.replace(
@@ -195,14 +173,12 @@
           );
         }
 
-        // 2. Vision
         setText('vision-subtitle', data.homepage?.vision_subtitle);
         const visionEl = document.getElementById('vision-text');
         if (visionEl && data.homepage?.vision_text) {
           visionEl.innerHTML = data.homepage.vision_text.replace(/\n/g, '<br>');
         }
 
-        // 3. Piliers
         const piliersGrid = document.getElementById('piliers-grid');
         if (piliersGrid && data.piliers_section?.piliers) {
           piliersGrid.innerHTML = data.piliers_section.piliers.map(p => `
@@ -213,7 +189,6 @@
           `).join('');
         }
 
-        // 4. Offres / Solutions
         const offresGrid = document.getElementById('offres-grid');
         if (offresGrid && data.offres_phares) {
           offresGrid.innerHTML = data.offres_phares.map(o => `
@@ -224,14 +199,12 @@
           `).join('');
         }
 
-        // 5. Expert
         setText('expert-bio', data.expert_section?.bio);
         const fnacLink = document.getElementById('fnac-link');
         if (fnacLink) fnacLink.href = data.expert_section?.book_fnac || '#';
         const amazonLink = document.getElementById('amazon-link');
         if (amazonLink) amazonLink.href = data.expert_section?.book_amazon || '#';
 
-        // 6. Blog — fetch data/blog-index.json
         const blogGrid = document.getElementById('blog-grid');
         if (blogGrid) {
           fetch('data/blog-index.json')
@@ -272,7 +245,6 @@
       })
       .catch(error => console.error('Erreur chargement content.json :', error));
 
-    // ── Utilitaires ──────────────────────────────────────
     function setText(id, text) {
       const el = document.getElementById(id);
       if (el && text) el.textContent = text;
@@ -289,7 +261,5 @@
     }
   });
 </script>
-```
-
 </body>
 </html>
