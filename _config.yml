@@ -1,0 +1,27 @@
+# _config.yml - Configuration du moteur Jekyll
+
+title: GSF Consulting International
+description: Expertise Juridique & IA en Afrique
+url: "https://gsfconsultinginternational.com"
+author: Gilles Feliho
+
+# C'est ce qui active le traitement des fichiers .html
+markdown: kramdown
+highlighter: rouge
+
+# Indispensable pour que Netlify/CloudCannon compile le site
+plugins:
+  - jekyll-seo-tag
+
+# Définition des collections (pour les articles)
+collections:
+  posts:
+    output: true
+    permalink: /analyses/:title/
+
+# Exclude inutiles
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
