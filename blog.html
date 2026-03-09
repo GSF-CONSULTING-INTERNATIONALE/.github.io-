@@ -1,80 +1,105 @@
 ---
-layout: default
-permalink: /blog.html
+layout: null
 ---
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog & Analyses | GSF Consulting</title>
-    <meta name="description" content="Analyses stratégiques sur l'IA, le droit OHADA, la conformité BCEAO et la souveraineté cognitive en Afrique par Gilles Feliho.">
-
+    <title>Analyses & Publications | GSF Consulting</title>
+    <meta name="description" content="Toutes les analyses juridiques et stratégiques de GSF Consulting.">
+    
+    <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    
+    <!-- STYLE INTÉGRÉ -->
     <style>
-        body { background-color: #050505; color: white; font-family: 'Space Grotesk', sans-serif; margin: 0; line-height: 1.7; }
-
-        /* --- NAVBAR --- */
-        #navbar { position: fixed; top: 0; width: 100%; z-index: 1000; background: rgba(5, 5, 5, 0.95); border-bottom: 1px solid rgba(6, 182, 212, 0.3); padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; box-sizing: border-box; }
-        #navbar a { color: #fff; text-decoration: none; margin-left: 20px; font-weight: 500; transition: 0.3s; }
-        #navbar a:hover { color: #06b6d4; }
-        #navbar .logo { font-family: 'Syne'; font-weight: 800; font-size: 1.5rem; color: #06b6d4; margin-left: 0; }
-
-        /* --- LAYOUT --- */
-        .container { max-width: 900px; margin: 0 auto; padding: 120px 20px 50px; min-height: 80vh; }
-
-        /* --- GRILLE BLOG --- */
-        .blog-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
-        .glass-card { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); padding: 0; border-radius: 20px; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.1); transition: transform 0.3s ease; }
-        .glass-card:hover { transform: translateY(-5px); border-color: rgba(6, 182, 212, 0.4); }
-        .card-img { height: 200px; background-size: cover; background-position: center; }
-        .card-content { padding: 25px; }
-        .card-date { font-size: 0.8rem; color: #06b6d4; font-weight: bold; text-transform: uppercase; margin-bottom: 10px; }
-        .card-title { font-family: 'Syne'; font-size: 1.3rem; margin-bottom: 15px; color: #fff; }
-        .card-excerpt { font-size: 0.95rem; opacity: 0.8; margin-bottom: 20px; line-height: 1.5; }
-        .card-link { color: #06b6d4; font-weight: 700; text-decoration: none; }
-
-        footer { text-align: center; padding: 40px; border-top: 1px solid #06b6d4; opacity: 0.6; font-size: 0.9rem; }
-
-        @media (max-width: 768px) {
-            #navbar { padding: 1rem; }
-            #navbar a { margin-left: 10px; font-size: 0.9rem; }
-            .blog-grid { grid-template-columns: 1fr; }
-        }
+        body { background-color: #050505; color: white; font-family: 'Space Grotesk', sans-serif; margin: 0; }
+        a { color: #06b6d4; text-decoration: none; transition: 0.3s; }
+        a:hover { color: white; }
+        .glass-card { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .grid-layout { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; padding: 0 5%; }
+        .cyan { color: #06b6d4; }
+        nav { position: sticky; top: 10px; z-index: 1000; margin: 20px; border-radius: 10px; }
+        .nav-container { display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; }
+        .logo { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 1.5rem; color: #06b6d4; }
+        .desktop-menu { display: flex; list-style: none; gap: 2rem; margin: 0; padding: 0; }
+        .blog-card { border-radius: 15px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(6, 182, 212, 0.2); overflow: hidden; text-align: left; transition: transform 0.3s ease; }
+        .blog-card:hover { transform: translateY(-5px); border-color: #06b6d4; }
+        #mobile-menu { display: none; flex-direction: column; background: rgba(0, 0, 0, 0.95); padding: 1rem; position: absolute; top: 100%; left: 0; width: 100%; }
+        #mobile-menu.active { display: flex; }
+        #mobile-menu-btn { display: none; background: none; border: none; color: white; font-size: 1.5rem; cursor: pointer; }
+        @media (max-width: 768px) { .desktop-menu { display: none !important; } #mobile-menu-btn { display: block !important; } }
     </style>
 </head>
 <body>
-    <nav id="navbar">
-        <a href="{{ site.baseurl }}/" class="logo">GSF CONSULTING</a>
-        <div>
-            <a href="{{ site.baseurl }}/#home">Accueil</a>
-            <a href="{{ site.baseurl }}/#vision">Vision</a>
-            <a href="{{ site.baseurl }}/blog.html">Blog</a>
-            <a href="{{ site.baseurl }}/#contact">Contact</a>
+
+    <!-- NAVIGATION -->
+    <nav id="navbar" class="glass-card">
+        <div class="nav-container">
+            <a href="/" class="logo">GSF CONSULTING</a>
+            <ul class="desktop-menu">
+                <li><a href="/">Accueil</a></li>
+                <li><a href="/#vision">Vision</a></li>
+                <li><a href="/blog.html" style="color: white; font-weight: bold;">Blog</a></li>
+                <li><a href="/#contact" style="border: 1px solid #06b6d4; padding: 5px 15px; border-radius: 4px;">Contact</a></li>
+            </ul>
+            <button id="mobile-menu-btn">☰</button>
+        </div>
+        <div id="mobile-menu">
+            <a href="/" style="color: #fff; padding: 0.5rem;">Accueil</a>
+            <a href="/blog.html" style="color: #06b6d4; padding: 0.5rem;">Blog</a>
+            <a href="/#contact" style="color: #fff; padding: 0.5rem;">Contact</a>
         </div>
     </nav>
 
-    <div class="container">
-        <h1 style="font-family:'Syne'; font-size:3rem; text-align:center; margin-bottom:40px;">Analyses & Publications</h1>
+    <!-- HEADER -->
+    <header style="padding: 120px 5% 60px; text-align: center;">
+        <h1 style="font-family: 'Syne', sans-serif; font-size: 3rem;">Analyses & <span class="cyan">Publications</span></h1>
+        <p style="opacity: 0.7; max-width: 600px; margin: 10px auto 0;">Expertise juridique et Intelligence Artificielle en Afrique.</p>
+    </header>
 
-        <div class="blog-grid">
-            {% for post in site.blog %}
-            <article class="glass-card">
-                <div class="card-img" style="background-image: url('{{ post.image | default: "/images/fallback-article.jpg" }}');"></div>
-                <div class="card-content">
-                    <div class="card-date">{{ post.date | date: "%d %B %Y" }}</div>
-                    <h3 class="card-title">{{ post.title }}</h3>
-                    <p class="card-excerpt">{{ post.excerpt }}</p>
-                    <a href="{{ post.url }}" class="card-link">Lire l'analyse →</a>
-                </div>
+    <!-- GRILLE BLOG (BOUCLE CORRIGÉE) -->
+    <section style="padding: 0 5% 80px;">
+        <div class="grid-layout">
+          {% for post in site.posts %} /* Correction : site.posts et non site.blog */
+            <article class="blog-card">
+              {% if post.image %}
+                <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" style="width:100%; height:200px; object-fit:cover;">
+              {% else %}
+                <div style="width:100%; height:200px; background:#111; display:flex; align-items:center; justify-content:center; color:#333;">GSF</div>
+              {% endif %}
+              
+              <div style="padding:25px;">
+                <p class="cyan" style="font-size:0.8rem; font-weight:bold; text-transform:uppercase; margin-bottom:8px;">
+                  {{ post.date | date: "%d %b %Y" }}
+                </p>
+                <h3 style="font-family:'Syne', sans-serif; font-size:1.3rem; margin:0 0 12px;">{{ post.title }}</h3>
+                <p style="opacity:0.8; font-size:0.9rem; line-height:1.6;">{{ post.excerpt }}</p>
+                <a href="{{ post.url | relative_url }}" style="color:#06b6d4; font-weight:700; display:inline-block; margin-top:15px;">Lire l'analyse →</a>
+              </div>
             </article>
-            {% endfor %}
+          {% endfor %}
         </div>
-    </div>
+        
+        <!-- Message si aucun article -->
+        {% if site.posts.size == 0 %}
+            <p style="text-align: center; opacity: 0.6; margin-top: 50px;">Aucune publication pour le moment.</p>
+        {% endif %}
+    </section>
 
-    <footer>
-        &copy; 2026 GSF Consulting International
+    <!-- FOOTER -->
+    <footer style="padding: 40px 20px; border-top: 1px solid #06b6d4; text-align: center; font-family: 'Syne', sans-serif;">
+        <p class="cyan" style="font-size: 0.9rem;">© 2024 GSF Consulting International</p>
     </footer>
+
+    <script>
+      const mobileBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      if (mobileBtn) {
+        mobileBtn.addEventListener('click', () => mobileMenu.classList.toggle('active'));
+      }
+    </script>
 </body>
 </html>
