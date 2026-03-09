@@ -1,0 +1,27 @@
+---
+layout: default
+---
+<article style="max-width: 800px; margin: 0 auto; padding: 100px 20px;">
+    <header style="margin-bottom: 40px; text-align: center;">
+        <p class="cyan" style="font-weight: bold; text-transform: uppercase; font-size: 0.9rem;">
+            {{ page.date | date: "%d %B %Y" }}
+        </p>
+        <h1 style="font-family: 'Syne', sans-serif; font-size: clamp(2rem, 5vw, 3.5rem); line-height: 1.1; margin-top: 10px;">
+            {{ page.title }}
+        </h1>
+    </header>
+
+    {% if page.image %}
+    <div style="margin-bottom: 50px;">
+        <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" style="width: 100%; border-radius: 20px; border: 1px solid rgba(6, 182, 212, 0.2);">
+    </div>
+    {% endif %}
+
+    <div class="content" style="line-height: 1.8; font-size: 1.15rem; opacity: 0.9;">
+        {{ content }}
+    </div>
+
+    <div style="margin-top: 60px; padding-top: 30px; border-top: 1px solid rgba(255,255,255,0.1); text-align: center;">
+        <a href="/blog.html" class="cyan" style="font-weight: bold;">← Retour aux analyses</a>
+    </div>
+</article>
