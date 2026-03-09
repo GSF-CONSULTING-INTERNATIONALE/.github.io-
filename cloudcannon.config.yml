@@ -1,46 +1,53 @@
-collections_config:
-  pages:
-    path: ''
-    icon: wysiwyg
+# cloudcannon.config.yml - VERSION CORRIGÉE POUR STANDARD JEKYLL
 
+collections_config:
+  # Configuration de la collection "Posts" (Vos Analyses)
   posts:
-    path: data/blog
+    path: "_posts"           # On pointe vers le dossier standard Jekyll
+    output: true             # On active la génération de pages HTML
+    permalink: /analyses/:slug/  # Structure d'URL propre (ex: /analyses/ia-ohada/)
+    name: "Analyses"
     icon: library_books
-    parser: json
-    output: true
-    url: "/blog/[slug]/"
+    description: "Vos publications juridiques et analyses stratégiques."
+    _enabled_editors:
+      - visual
+      - content
+    
+    # Définition des champs dans l'interface CloudCannon
     _inputs:
       title:
-        label: "Titre de l'article"
-        type: text
-      slug:
-        label: "Slug (URL)"
+        label: "Titre de l'analyse"
         type: text
       date:
         label: "Date de publication"
         type: datetime
+      author:
+        label: "Auteur"
+        type: text
+        default: "Gilles Feliho"
       image:
         label: "Image de couverture"
         type: image
       excerpt:
-        label: "Résumé (160 caractères max)"
+        label: "Résumé (extrait)"
         type: textarea
-      body:
-        label: "Contenu de l'article"
-        type: markdown
-      seo_title:
-        label: "SEO Title"
-        type: text
-      meta_description:
-        label: "Meta Description"
-        type: textarea
+      layout:
+        hidden: true  # On cache le layout car il sera défini par défaut
+      categories:
+        label: "Catégories"
+        type: multiselect
+        options:
+          values: ["Conformité", "IA Juridique", "OHADA", "Recouvrement"]
 
-data_config:
-  site:
-    path: data/content.json
-  blog_index:
-    path: data/blog-index.json
-    source: data/blog
+  # Configuration des Pages fixes (Accueil, Mentions Légales)
+  pages:
+    path: ""
+    name: "Pages"
+    icon: wysiwyg
+    description: "Pages principales du site (Accueil, Contact, etc.)"
+    _inputs:
+      layout:
+        label: "Modèle de page"
 
-timezone: Etc/UTC
-output: .
+# On supprime la section "data_config" car nous n'utilisons plus de JSON pour le blog.
+# Cela simplifie grandement la gestion.
