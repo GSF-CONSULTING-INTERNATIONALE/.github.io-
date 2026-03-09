@@ -1,64 +1,62 @@
 ---
 layout: default
-title: "Intelligence stratégique et conformité en Afrique | GSF Consulting"
-description: "Expertise juridique OHADA et IA. Audit de Souveraineté Cognitive™ et solutions de recouvrement."
+title: "Intelligence stratégique & IA | GSF Consulting"
 ---
 
-<!-- SECTION HERO (Spécifique à l'accueil) -->
+<!-- HERO SECTION -->
 <header id="home" style="padding: 100px 5%; text-align: center;">
-    <h1 style="font-family: 'Syne', sans-serif; font-size: 4rem; text-transform: uppercase; line-height: 1.1;">
+    <h1 style="font-family: 'Syne', sans-serif; font-size: 4rem; text-transform: uppercase; letter-spacing: -2px; line-height: 1.1;">
         TRANSFORMER LE DROIT PAR L'<span class="cyan">INTELLIGENCE ARTIFICIELLE</span>
     </h1>
-    <p style="max-width: 600px; margin: 20px auto; opacity: 0.8;">
+    <p style="font-family: 'Space Grotesk'; max-width: 600px; margin: 20px auto; opacity: 0.8;">
         Expertise juridique OHADA et IA. Audit de Souveraineté Cognitive™, conformité financière UEMOA.
     </p>
-    <a href="#contact" class="glass-card" style="padding: 15px 40px; border: 1px solid #06b6d4; color: #fff;">Demander un Devis</a>
+    <a href="#contact" class="glass-card" style="padding: 15px 40px; border: 1px solid #06b6d4; color: #fff; display: inline-block;">Demander un Devis</a>
 </header>
 
+<!-- VISION SECTION (Rajoutée pour la complétude) -->
 <section id="vision" style="padding: 80px 5%; text-align: center;">
-    <h2 style="font-family: 'Syne', sans-serif; font-size: 2.5rem;">Notre Vision</h2>
-    <h3 class="cyan" style="font-size: 1.8rem;">Une transition vers le conseil 4.0</h3>
-    <p style="max-width: 800px; margin: 0 auto;">Depuis 2008, GSF Consulting International accompagne les États et entreprises en Afrique...</p>
+    <h2 style="font-family: 'Syne', sans-serif; font-size: 2.5rem; margin-bottom: 20px;">Notre Vision</h2>
+    <h3 class="cyan" style="font-size: 1.5rem;">Une transition vers le conseil 4.0</h3>
+    <p style="max-width: 800px; margin: 0 auto; line-height: 1.6;">
+        Depuis 2008, GSF Consulting International accompagne les États et entreprises en Afrique...
+    </p>
 </section>
 
-<!-- SECTION BLOG (Moteur Jekyll) -->
+<!-- BLOG SECTION AMÉLIORÉE -->
 <section id="blog-list" style="padding: 80px 5%; background: rgba(6, 182, 212, 0.02);">
-    <h2 style="font-family: 'Syne', sans-serif; font-size: 2.5rem; text-align: center;">Analyses & Publications</h2>
+    <h2 style="font-family: 'Syne', sans-serif; font-size: 2.5rem; margin-bottom: 40px; text-align: center;">Analyses & Publications</h2>
     
+    <!-- Ajout de la classe "grid-layout" pour l'alignement -->
     <div class="grid-layout">
       {% for post in site.posts limit:3 %}
         <article class="blog-card">
           {% if post.image %}
             <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" style="width:100%; height:200px; object-fit:cover;">
           {% endif %}
+          
           <div style="padding:25px;">
-            <p class="cyan" style="font-size:0.8rem; font-weight:bold; text-transform:uppercase;">
+            <!-- Affichage de la date -->
+            <p class="cyan" style="font-size:0.8rem; font-weight:bold; text-transform:uppercase; margin-bottom:8px;">
               {{ post.date | date: "%d %b %Y" }}
             </p>
-            <h3 style="font-family:'Syne'; margin-bottom:12px;">{{ post.title }}</h3>
-            <p style="opacity:0.8; font-size:0.9rem;">{{ post.excerpt }}</p>
-            <a href="{{ post.url | relative_url }}" style="font-weight:700;">Lire l'analyse →</a>
+            
+            <h3 style="font-family:'Syne', sans-serif; font-size:1.3rem; margin:0 0 12px;">{{ post.title }}</h3>
+            
+            <!-- Style sur l'extrait -->
+            <p style="opacity:0.8; font-size:0.9rem; line-height:1.6;">{{ post.excerpt }}</p>
+            
+            <a href="{{ post.url | relative_url }}" style="color:#06b6d4; font-weight:700; display:inline-block; margin-top:15px;">
+              Lire l'analyse →
+            </a>
           </div>
         </article>
       {% endfor %}
     </div>
-    
+
     <div style="text-align: center; margin-top: 50px;">
         <a href="/blog.html" style="border: 1px solid #06b6d4; padding: 12px 35px; border-radius: 5px; color: #06b6d4;">
             Toutes les publications
         </a>
     </div>
 </section>
-
-<!-- Styles spécifiques à cette page (si nécessaire) -->
-<style>
-  /* Ici, uniquement les styles qui ne sont pas dans default.html */
-  .blog-card { 
-    border-radius: 15px; 
-    background: rgba(255, 255, 255, 0.05); 
-    border: 1px solid rgba(6, 182, 212, 0.2); 
-  }
-  .blog-card:hover { 
-    transform: translateY(-5px); 
-  }
-</style>
