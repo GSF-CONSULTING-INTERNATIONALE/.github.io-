@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Les variables SEO dynamiques -->
+    <title>{{ page.title | default: "GSF Consulting" }}</title>
+    <meta name="description" content="{{ page.description }}">
+    
+    <!-- Vos CSS et Fonts globaux -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    
+    <!-- Styles globaux communs -->
+    <style>
+        body { background-color: #050505; color: white; font-family: 'Space Grotesk', sans-serif; margin: 0; }
+        a { color: #06b6d4; text-decoration: none; transition: 0.3s; }
+        a:hover { color: white; }
+        .glass-card { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .grid-layout { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .cyan { color: #06b6d4; }
+        
+        /* Styles Mobiles Globaux */
+        #mobile-menu { display: none; flex-direction: column; background: rgba(0, 0, 0, 0.95); padding: 1rem; position: absolute; top: 100%; left: 0; width: 100%; z-index: 999; }
+        #mobile-menu.active { display: flex; }
+        #mobile-menu-btn { display: none; }
+        @media (max-width: 768px) {
+            .desktop-menu { display: none !important; }
+            #mobile-menu-btn { display: block !important; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVIGATION GLOBALE -->
+    <nav id="navbar" class="glass-card" style="margin: 20px; position: sticky; top: 10px; z-index: 1000;">
+        <div class="nav-container" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; position: relative;">
+            <div class="logo" style="font-family: 'Syne', sans-serif; font-weight: 800; font-size: 1.5rem; color: #06b6d4;">GSF CONSULTING</div>
+            <ul class="desktop-menu" style="display: flex; list-style: none; gap: 2rem; margin: 0; padding: 0;">
+                <li><a href="/">Accueil</a></li>
+                <li><a href="/#vision">Vision</a></li>
+                <li><a href="/#solutions">Solutions</a></li>
+                <li><a href="/blog.html">Blog</a></li>
+                <li><a href="/#contact" style="border: 1px solid #06b6d4; padding: 5px 15px; border-radius: 4px;">Contact</a></li>
+            </ul>
+            <button id="mobile-menu-btn" style="font-size: 1.5rem; background: transparent; border: none; cursor: pointer; color: white;">☰</button>
+        </div>
+        <div id="mobile-menu">
+            <a href="/" style="color: #fff; padding: 0.5rem;">Accueil</a>
+            <!-- Autres liens mobiles... -->
+        </div>
+    </nav>
+
+    <!-- ICI S'INSÈRE LE CONTENU DE VOS PAGES -->
+    {{ content }}
+
+    <!-- FOOTER GLOBAL -->
+    <footer style="margin-top: 0; padding: 40px 20px; border-top: 1px solid #06b6d4; text-align: center;">
+        <p style="color: #06b6d4; font-size: 0.9rem;">© 2024 GSF Consulting International</p>
+    </footer>
+
+    <!-- SCRIPTS GLOBAUX -->
+    <script>
+      const mobileBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      if (mobileBtn) {
+        mobileBtn.addEventListener('click', () => mobileMenu.classList.toggle('active'));
+      }
+    </script>
+</body>
+</html>
