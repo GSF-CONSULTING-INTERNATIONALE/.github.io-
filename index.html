@@ -5,11 +5,151 @@ layout: null
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Test GSF Consulting</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSF Consulting International | Droit & IA en Afrique</title>
+    
+    <!-- ✅ BALISE CANONICAL AJOUTÉE ICI - Indispensable pour le SEO -->
+    <link rel="canonical" href="https://gsfconsultinginternational.com/">
+    
+    <!-- Optimisations SEO supplémentaires recommandées -->
+    <meta name="description" content="Expertise juridique OHADA et IA. Audit de Souveraineté Cognitive. Cabinet conseil spécialisé en droit des affaires africain et intelligence artificielle depuis 2008.">
+    <meta name="keywords" content="GSF Consulting, droit OHADA, intelligence artificielle Afrique, conseil juridique UEMOA, audit souveraineté cognitive, Gilles Feliho">
+    <meta name="author" content="GSF Consulting International">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph pour les réseaux sociaux -->
+    <meta property="og:title" content="GSF Consulting International | Droit & IA en Afrique">
+    <meta property="og:description" content="Expertise juridique OHADA et IA. Audit de Souveraineté Cognitive.">
+    <meta property="og:url" content="https://gsfconsultinginternational.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://gsfconsultinginternational.com/assets/images/logo-gsf.png">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="GSF Consulting International | Droit & IA en Afrique">
+    <meta name="twitter:description" content="Expertise juridique OHADA et IA. Audit de Souveraineté Cognitive.">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    
+    <style>
+        /* [Votre CSS existant reste inchangé] */
+        body { background-color: #050505; color: white; font-family: 'Space Grotesk', sans-serif; margin: 0; }
+        a { color: #06b6d4; text-decoration: none; transition: 0.3s; }
+        a:hover { color: white; }
+        .glass-card { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .grid-layout { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; padding: 0 5%; }
+        .cyan { color: #06b6d4; }
+        nav { position: sticky; top: 10px; z-index: 1000; margin: 20px; border-radius: 10px; }
+        .nav-container { display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; }
+        .logo { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 1.5rem; color: #06b6d4; }
+        .desktop-menu { display: flex; list-style: none; gap: 2rem; margin: 0; padding: 0; }
+        .blog-card { border-radius: 15px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(6, 182, 212, 0.2); overflow: hidden; text-align: left; transition: transform 0.3s ease; }
+        .blog-card:hover { transform: translateY(-5px); border-color: #06b6d4; }
+        #mobile-menu { display: none; flex-direction: column; background: rgba(0, 0, 0, 0.95); padding: 1rem; position: absolute; top: 100%; left: 0; width: 100%; }
+        #mobile-menu.active { display: flex; }
+        #mobile-menu-btn { display: none; background: none; border: none; color: white; font-size: 1.5rem; cursor: pointer; }
+        @media (max-width: 768px) { .desktop-menu { display: none !important; } #mobile-menu-btn { display: block !important; } h1 { font-size: 2.5rem !important; } }
+    </style>
 </head>
-<body style="background-color: #050505; color: white; font-family: sans-serif; padding: 50px; text-align: center;">
-    <h1 style="color: #06b6d4;">Le site est en ligne !</h1>
-    <p>Si vous voyez cette page, le problème venait du code précédent.</p>
-    <p><a href="/blog.html" style="color: white;">Voir le Blog</a></p>
+<body>
+    <!-- [Le reste de votre HTML reste strictement identique] -->
+    <!-- NAVIGATION -->
+    <nav id="navbar" class="glass-card">
+        <div class="nav-container">
+            <div class="logo">GSF CONSULTING</div>
+            <ul class="desktop-menu">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#vision">Vision</a></li>
+                <li><a href="#blog-list">Analyses</a></li>
+                <li><a href="#contact" style="border: 1px solid #06b6d4; padding: 5px 15px; border-radius: 4px;">Contact</a></li>
+            </ul>
+            <button id="mobile-menu-btn">☰</button>
+        </div>
+        <div id="mobile-menu">
+            <a href="#home" style="color: #fff; padding: 0.5rem;">Accueil</a>
+            <a href="#vision" style="color: #fff; padding: 0.5rem;">Vision</a>
+            <a href="#blog-list" style="color: #fff; padding: 0.5rem;">Analyses</a>
+            <a href="#contact" style="color: #06b6d4; padding: 0.5rem;">Contact</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header id="home" style="padding: 100px 5%; text-align: center;">
+        <h1 style="font-family: 'Syne', sans-serif; font-size: 4rem; text-transform: uppercase; letter-spacing: -2px; line-height: 1.1;">
+            TRANSFORMER LE DROIT PAR L'<span class="cyan">INTELLIGENCE ARTIFICIELLE</span>
+        </h1>
+        <p style="max-width: 600px; margin: 20px auto; opacity: 0.8;">
+            Expertise juridique OHADA et IA. Audit de Souveraineté Cognitive™, conformité financière UEMOA.
+        </p>
+        <a href="#contact" class="glass-card" style="padding: 15px 40px; border: 1px solid #06b6d4; color: #fff; display: inline-block; margin-top: 10px;">Demander un Devis</a>
+    </header>
+
+    <!-- VISION -->
+    <section id="vision" style="padding: 80px 5%; text-align: center; background: rgba(255,255,255,0.02);">
+        <h2 style="font-family: 'Syne', sans-serif; font-size: 2.5rem; margin-bottom: 20px;">Notre Vision</h2>
+        <h3 class="cyan" style="font-size: 1.5rem; margin-bottom: 15px;">Une transition vers le conseil 4.0</h3>
+        <div style="max-width: 800px; margin: 0 auto;">
+            <p>Depuis 2008, GSF Consulting International accompagne les États et entreprises en Afrique. Nous transformons les défis juridiques en opportunités stratégiques grâce à l'IA.</p>
+        </div>
+    </section>
+
+    <!-- BLOG LOOP -->
+    <section id="blog-list" style="padding: 80px 5%;">
+        <h2 style="font-family: 'Syne', sans-serif; font-size: 2.5rem; margin-bottom: 40px; text-align: center;">Analyses & Publications</h2>
+        
+        <div class="grid-layout">
+          {% for post in site.posts limit:3 %}
+            <article class="blog-card">
+              {% if post.image %}
+                <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" style="width:100%; height:200px; object-fit:cover;">
+              {% else %}
+                <div style="width:100%; height:200px; background:#111; display:flex; align-items:center; justify-content:center; color:#333;">GSF</div>
+              {% endif %}
+              
+              <div style="padding:25px;">
+                <p class="cyan" style="font-size:0.8rem; font-weight:bold; text-transform:uppercase; margin-bottom:8px;">
+                  {{ post.date | date: "%d %b %Y" }}
+                </p>
+                <h3 style="font-family:'Syne', sans-serif; font-size:1.3rem; margin:0 0 12px;">{{ post.title }}</h3>
+                <p style="opacity:0.8; font-size:0.9rem; line-height:1.6;">{{ post.excerpt }}</p>
+                <a href="{{ post.url | relative_url }}" style="color:#06b6d4; font-weight:700; display:inline-block; margin-top:15px;">Lire l'analyse →</a>
+              </div>
+            </article>
+          {% endfor %}
+        </div>
+
+        <div style="text-align: center; margin-top: 50px;">
+            <a href="/blog.html" style="border: 1px solid #06b6d4; padding: 12px 35px; border-radius: 5px; color: #06b6d4;">
+                Toutes les publications
+            </a>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" style="padding: 80px 5%; text-align: center; background: #0a0a0a;">
+        <h2 style="font-family: 'Syne', sans-serif; font-size: 2.5rem; margin-bottom: 20px;">Contact</h2>
+        <p style="opacity: 0.7; margin-bottom: 20px;">Prêt à transformer vos défis juridiques ?</p>
+        <a href="mailto:contact@eji2.org" style="padding: 15px 40px; border: 1px solid #fff; color: #fff; border-radius: 4px; display: inline-block;">
+            Envoyer un Email
+        </a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer style="padding: 40px 20px; border-top: 1px solid #06b6d4; text-align: center; font-family: 'Syne', sans-serif;">
+        <p class="cyan" style="font-size: 0.9rem;">© 2024 GSF Consulting International — Expertise Juridique & IA</p>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script>
+      const mobileBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      if (mobileBtn) {
+        mobileBtn.addEventListener('click', () => mobileMenu.classList.toggle('active'));
+      }
+      document.querySelectorAll('#mobile-menu a').forEach(link => {
+        link.addEventListener('click', () => mobileMenu.classList.remove('active'));
+      });
+    </script>
 </body>
 </html>
