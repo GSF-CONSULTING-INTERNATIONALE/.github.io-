@@ -7,33 +7,9 @@ layout: null
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GSF Consulting International | Droit & IA en Afrique</title>
-    
-    <!-- ✅ BALISE CANONICAL AJOUTÉE ICI - Indispensable pour le SEO -->
-    <link rel="canonical" href="https://gsfconsultinginternational.com/">
-    
-    <!-- Optimisations SEO supplémentaires recommandées -->
-    <meta name="description" content="Expertise juridique OHADA et IA. Audit de Souveraineté Cognitive. Cabinet conseil spécialisé en droit des affaires africain et intelligence artificielle depuis 2008.">
-    <meta name="keywords" content="GSF Consulting, droit OHADA, intelligence artificielle Afrique, conseil juridique UEMOA, audit souveraineté cognitive, Gilles Feliho">
-    <meta name="author" content="GSF Consulting International">
-    <meta name="robots" content="index, follow">
-    
-    <!-- Open Graph pour les réseaux sociaux -->
-    <meta property="og:title" content="GSF Consulting International | Droit & IA en Afrique">
-    <meta property="og:description" content="Expertise juridique OHADA et IA. Audit de Souveraineté Cognitive.">
-    <meta property="og:url" content="https://gsfconsultinginternational.com/">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://gsfconsultinginternational.com/assets/images/logo-gsf.png">
-    
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="GSF Consulting International | Droit & IA en Afrique">
-    <meta name="twitter:description" content="Expertise juridique OHADA et IA. Audit de Souveraineté Cognitive.">
-    
+    <meta name="description" content="Expertise juridique OHADA et IA. Audit de Souveraineté Cognitive.">
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
-    
     <style>
-        /* [Votre CSS existant reste inchangé] */
         body { background-color: #050505; color: white; font-family: 'Space Grotesk', sans-serif; margin: 0; }
         a { color: #06b6d4; text-decoration: none; transition: 0.3s; }
         a:hover { color: white; }
@@ -53,8 +29,7 @@ layout: null
     </style>
 </head>
 <body>
-    <!-- [Le reste de votre HTML reste strictement identique] -->
-    <!-- NAVIGATION -->
+
     <nav id="navbar" class="glass-card">
         <div class="nav-container">
             <div class="logo">GSF CONSULTING</div>
@@ -74,7 +49,6 @@ layout: null
         </div>
     </nav>
 
-    <!-- HERO -->
     <header id="home" style="padding: 100px 5%; text-align: center;">
         <h1 style="font-family: 'Syne', sans-serif; font-size: 4rem; text-transform: uppercase; letter-spacing: -2px; line-height: 1.1;">
             TRANSFORMER LE DROIT PAR L'<span class="cyan">INTELLIGENCE ARTIFICIELLE</span>
@@ -85,7 +59,6 @@ layout: null
         <a href="#contact" class="glass-card" style="padding: 15px 40px; border: 1px solid #06b6d4; color: #fff; display: inline-block; margin-top: 10px;">Demander un Devis</a>
     </header>
 
-    <!-- VISION -->
     <section id="vision" style="padding: 80px 5%; text-align: center; background: rgba(255,255,255,0.02);">
         <h2 style="font-family: 'Syne', sans-serif; font-size: 2.5rem; margin-bottom: 20px;">Notre Vision</h2>
         <h3 class="cyan" style="font-size: 1.5rem; margin-bottom: 15px;">Une transition vers le conseil 4.0</h3>
@@ -94,7 +67,6 @@ layout: null
         </div>
     </section>
 
-    <!-- BLOG LOOP -->
     <section id="blog-list" style="padding: 80px 5%;">
         <h2 style="font-family: 'Syne', sans-serif; font-size: 2.5rem; margin-bottom: 40px; text-align: center;">Analyses & Publications</h2>
         
@@ -103,8 +75,6 @@ layout: null
             <article class="blog-card">
               {% if post.image %}
                 <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" style="width:100%; height:200px; object-fit:cover;">
-              {% else %}
-                <div style="width:100%; height:200px; background:#111; display:flex; align-items:center; justify-content:center; color:#333;">GSF</div>
               {% endif %}
               
               <div style="padding:25px;">
@@ -126,7 +96,6 @@ layout: null
         </div>
     </section>
 
-    <!-- CONTACT -->
     <section id="contact" style="padding: 80px 5%; text-align: center; background: #0a0a0a;">
         <h2 style="font-family: 'Syne', sans-serif; font-size: 2.5rem; margin-bottom: 20px;">Contact</h2>
         <p style="opacity: 0.7; margin-bottom: 20px;">Prêt à transformer vos défis juridiques ?</p>
@@ -135,12 +104,10 @@ layout: null
         </a>
     </section>
 
-    <!-- FOOTER -->
     <footer style="padding: 40px 20px; border-top: 1px solid #06b6d4; text-align: center; font-family: 'Syne', sans-serif;">
         <p class="cyan" style="font-size: 0.9rem;">© 2024 GSF Consulting International — Expertise Juridique & IA</p>
     </footer>
 
-    <!-- SCRIPTS -->
     <script>
       const mobileBtn = document.getElementById('mobile-menu-btn');
       const mobileMenu = document.getElementById('mobile-menu');
