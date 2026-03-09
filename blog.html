@@ -1,93 +1,179 @@
 ---
-layout: null
+layout: default
+title: "Analyses & Publications"
+description: "Toutes les analyses juridiques et stratégiques de GSF Consulting sur l'IA et le droit en Afrique."
 ---
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Analyses & Publications | GSF Consulting</title>
-    <meta name="description" content="Toutes les analyses juridiques et stratégiques de GSF Consulting.">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
-    <style>
-        body { background-color: #050505; color: white; font-family: 'Space Grotesk', sans-serif; margin: 0; }
-        a { color: #06b6d4; text-decoration: none; transition: 0.3s; }
-        a:hover { color: white; }
-        .glass-card { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
-        .grid-layout { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; padding: 0 5%; }
-        .cyan { color: #06b6d4; }
-        nav { position: sticky; top: 10px; z-index: 1000; margin: 20px; border-radius: 10px; }
-        .nav-container { display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; }
-        .logo { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 1.5rem; color: #06b6d4; }
-        .desktop-menu { display: flex; list-style: none; gap: 2rem; margin: 0; padding: 0; }
-        .blog-card { border-radius: 15px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(6, 182, 212, 0.2); overflow: hidden; text-align: left; transition: transform 0.3s ease; }
-        .blog-card:hover { transform: translateY(-5px); border-color: #06b6d4; }
-        #mobile-menu { display: none; flex-direction: column; background: rgba(0, 0, 0, 0.95); padding: 1rem; position: absolute; top: 100%; left: 0; width: 100%; }
-        #mobile-menu.active { display: flex; }
-        #mobile-menu-btn { display: none; background: none; border: none; color: white; font-size: 1.5rem; cursor: pointer; }
-        @media (max-width: 768px) { .desktop-menu { display: none !important; } #mobile-menu-btn { display: block !important; } }
-    </style>
-</head>
-<body>
 
-    <nav id="navbar" class="glass-card">
-        <div class="nav-container">
-            <a href="/" class="logo">GSF CONSULTING</a>
-            <ul class="desktop-menu">
-                <li><a href="/">Accueil</a></li>
-                <li><a href="/#vision">Vision</a></li>
-                <li><a href="/blog.html" style="color: white; font-weight: bold;">Blog</a></li>
-                <li><a href="/#contact" style="border: 1px solid #06b6d4; padding: 5px 15px; border-radius: 4px;">Contact</a></li>
-            </ul>
-            <button id="mobile-menu-btn">☰</button>
-        </div>
-        <div id="mobile-menu">
-            <a href="/" style="color: #fff; padding: 0.5rem;">Accueil</a>
-            <a href="/blog.html" style="color: #06b6d4; padding: 0.5rem;">Blog</a>
-            <a href="/#contact" style="color: #fff; padding: 0.5rem;">Contact</a>
-        </div>
-    </nav>
-
-    <header style="padding: 120px 5% 60px; text-align: center;">
-        <h1 style="font-family: 'Syne', sans-serif; font-size: 3rem;">Analyses & <span class="cyan">Publications</span></h1>
-        <p style="opacity: 0.7; max-width: 600px; margin: 10px auto 0;">Expertise juridique et Intelligence Artificielle en Afrique.</p>
-    </header>
-
-    <section style="padding: 0 5% 80px;">
-        <div class="grid-layout">
-          {% for post in site.posts %}
-            <article class="blog-card">
-              {% if post.image %}
-                <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" style="width:100%; height:200px; object-fit:cover;">
-              {% endif %}
-              
-              <div style="padding:25px;">
-                <p class="cyan" style="font-size:0.8rem; font-weight:bold; text-transform:uppercase; margin-bottom:8px;">
-                  {{ post.date | date: "%d %b %Y" }}
-                </p>
-                <h3 style="font-family:'Syne', sans-serif; font-size:1.3rem; margin:0 0 12px;">{{ post.title }}</h3>
-                <p style="opacity:0.8; font-size:0.9rem; line-height:1.6;">{{ post.excerpt }}</p>
-                <a href="{{ post.url | relative_url }}" style="color:#06b6d4; font-weight:700; display:inline-block; margin-top:15px;">Lire l'analyse →</a>
-              </div>
-            </article>
-          {% endfor %}
-        </div>
+<!-- Styles spécifiques à la page Blog -->
+<style>
+    .blog-header {
+        padding: 120px 5% 60px;
+        text-align: center;
+    }
+    
+    .blog-header h1 {
+        font-family: 'Syne', sans-serif;
+        font-size: clamp(2rem, 5vw, 3.5rem);
+        margin-bottom: 1rem;
+    }
+    
+    .blog-header p {
+        opacity: 0.7;
+        max-width: 600px;
+        margin: 0 auto;
+        font-size: 1.1rem;
+    }
+    
+    .blog-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 30px;
+        padding: 0 5% 100px;
+    }
+    
+    .blog-card {
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(6, 182, 212, 0.2);
+        overflow: hidden;
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .blog-card:hover {
+        transform: translateY(-10px);
+        border-color: #06b6d4;
+        box-shadow: 0 20px 40px rgba(6, 182, 212, 0.1);
+    }
+    
+    .blog-card-image {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-bottom: 1px solid rgba(6, 182, 212, 0.2);
+    }
+    
+    .blog-card-content {
+        padding: 30px;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .blog-date {
+        color: #06b6d4;
+        font-size: 0.85rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 12px;
+    }
+    
+    .blog-card h2 {
+        font-family: 'Syne', sans-serif;
+        font-size: 1.4rem;
+        margin: 0 0 15px 0;
+        line-height: 1.3;
+        color: white;
+    }
+    
+    .blog-excerpt {
+        opacity: 0.8;
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin-bottom: 20px;
+        flex-grow: 1;
+    }
+    
+    .read-more {
+        color: #06b6d4;
+        font-weight: 700;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        transition: all 0.3s;
+    }
+    
+    .read-more:hover {
+        color: white;
+        gap: 12px;
+    }
+    
+    .empty-state {
+        text-align: center;
+        padding: 80px 20px;
+        opacity: 0.6;
+        grid-column: 1 / -1;
+    }
+    
+    .category-tag {
+        display: inline-block;
+        background: rgba(6, 182, 212, 0.1);
+        color: #06b6d4;
+        padding: 4px 12px;
+        border-radius: 20px;
+        font-size: 0.75rem;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+    
+    @media (max-width: 768px) {
+        .blog-grid {
+            grid-template-columns: 1fr;
+            padding: 0 5% 60px;
+        }
         
-        {% if site.posts.size == 0 %}
-            <p style="text-align: center; opacity: 0.6; margin-top: 50px;">Aucune publication pour le moment.</p>
-        {% endif %}
-    </section>
+        .blog-card-image {
+            height: 200px;
+        }
+    }
+</style>
 
-    <footer style="padding: 40px 20px; border-top: 1px solid #06b6d4; text-align: center; font-family: 'Syne', sans-serif;">
-        <p class="cyan" style="font-size: 0.9rem;">© 2024 GSF Consulting International</p>
-    </footer>
+<section class="blog-header">
+    <h1>Analyses & <span class="cyan">Publications</span></h1>
+    <p>Expertise juridique et Intelligence Artificielle en Afrique. Découvrez nos analyses stratégiques sur la conformité, la propriété intellectuelle et la transformation digitale.</p>
+</section>
 
-    <script>
-      const mobileBtn = document.getElementById('mobile-menu-btn');
-      const mobileMenu = document.getElementById('mobile-menu');
-      if (mobileBtn) {
-        mobileBtn.addEventListener('click', () => mobileMenu.classList.toggle('active'));
-      }
-    </script>
-</body>
-</html>
+<section>
+    <div class="blog-grid">
+        {% for post in site.posts %}
+        <article class="blog-card">
+            {% if post.image %}
+            <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="blog-card-image" loading="lazy">
+            {% else %}
+            <div class="blog-card-image" style="background: linear-gradient(135deg, rgba(6,182,212,0.2), rgba(6,182,212,0.05)); display: flex; align-items: center; justify-content: center;">
+                <span style="font-size: 3rem; opacity: 0.3;">📄</span>
+            </div>
+            {% endif %}
+            
+            <div class="blog-card-content">
+                {% if post.category %}
+                <span class="category-tag">{{ post.category }}</span>
+                {% endif %}
+                
+                <time class="blog-date">{{ post.date | date: "%d %B %Y" }}</time>
+                
+                <h2>{{ post.title }}</h2>
+                
+                <p class="blog-excerpt">
+                    {{ post.excerpt | strip_html | truncate: 160 }}
+                </p>
+                
+                <a href="{{ post.url | relative_url }}" class="read-more">
+                    Lire l'analyse 
+                    <span style="transition: transform 0.3s;">→</span>
+                </a>
+            </div>
+        </article>
+        {% endfor %}
+    </div>
+    
+    {% if site.posts.size == 0 %}
+    <div class="empty-state">
+        <p style="font-size: 1.2rem; margin-bottom: 10px;">📝 Aucune publication pour le moment</p>
+        <p>Revenez bientôt pour découvrir nos analyses juridiques.</p>
+    </div>
+    {% endif %}
+</section>
