@@ -161,7 +161,8 @@ description: "Toutes les analyses juridiques et stratégiques de GSF Consulting 
                     {{ post.excerpt | strip_html | truncate: 160 }}
                 </p>
                 
-                <a href="{{ post.url | relative_url }}" class="read-more">
+                <!-- LIGNE CORRIGÉE : Utilisation simple de post.url sans relative_url -->
+                <a href="{{ post.url }}" class="read-more">
                     Lire l'analyse 
                     <span style="transition: transform 0.3s;">→</span>
                 </a>
