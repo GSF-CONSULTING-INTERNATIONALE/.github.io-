@@ -1,28 +1,21 @@
-# _config.yml - Configuration du moteur Jekyll
-
 title: GSF Consulting International
 description: Expertise Juridique & IA en Afrique
 url: "https://gsfconsultinginternational.com"
 author: Gilles Feliho
 
-# Traitement du contenu
 markdown: kramdown
 highlighter: rouge
 
-# Plugins indispensables pour Netlify/CloudCannon et le SEO
 plugins:
   - jekyll-seo-tag
   - jekyll-feed
   - jekyll-sitemap
 
-# Définition des collections (pour les articles)
 collections:
   posts:
     output: true
     permalink: /analyses/:title/
 
-# Valeurs par défaut (LE BLOC MANQUANT)
-# Cela force l'utilisation du layout 'post' pour tout ce qui est dans _posts
 defaults:
   -
     scope:
@@ -31,9 +24,9 @@ defaults:
     values:
       layout: "post"
 
-# Exclude pour optimiser la compilation
 exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules
   - vendor
+  - hugo.toml
