@@ -21,9 +21,20 @@
         .cyan { color: #06b6d4; }
         
         /* Styles Mobiles Globaux */
-        #mobile-menu { display: none; flex-direction: column; background: rgba(0, 0, 0, 0.95); padding: 1rem; position: absolute; top: 100%; left: 0; width: 100%; z-index: 999; }
+        #mobile-menu { 
+            display: none; 
+            flex-direction: column; 
+            background: rgba(0, 0, 0, 0.95); 
+            padding: 1rem; 
+            position: absolute; 
+            top: 100%; 
+            left: 0; 
+            width: 100%; 
+            z-index: 999; 
+        }
         #mobile-menu.active { display: flex; }
         #mobile-menu-btn { display: none; }
+        
         @media (max-width: 768px) {
             .desktop-menu { display: none !important; }
             #mobile-menu-btn { display: block !important; }
@@ -36,6 +47,7 @@
     <nav id="navbar" class="glass-card" style="margin: 20px; position: sticky; top: 10px; z-index: 1000;">
         <div class="nav-container" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; position: relative;">
             <div class="logo" style="font-family: 'Syne', sans-serif; font-weight: 800; font-size: 1.5rem; color: #06b6d4;">GSF CONSULTING</div>
+            
             <ul class="desktop-menu" style="display: flex; list-style: none; gap: 2rem; margin: 0; padding: 0;">
                 <li><a href="/">Accueil</a></li>
                 <li><a href="/#vision">Vision</a></li>
@@ -43,11 +55,17 @@
                 <li><a href="/blog.html">Blog</a></li>
                 <li><a href="/#contact" style="border: 1px solid #06b6d4; padding: 5px 15px; border-radius: 4px;">Contact</a></li>
             </ul>
+            
             <button id="mobile-menu-btn" style="font-size: 1.5rem; background: transparent; border: none; cursor: pointer; color: white;">☰</button>
         </div>
+        
+        <!-- SECTION MOBILE MENU CORRIGÉE -->
         <div id="mobile-menu">
             <a href="/" style="color: #fff; padding: 0.5rem;">Accueil</a>
-            <!-- Autres liens mobiles... -->
+            <a href="/#vision" style="color: #fff; padding: 0.5rem;">Vision</a>
+            <a href="/#solutions" style="color: #fff; padding: 0.5rem;">Solutions</a>
+            <a href="/blog.html" style="color: #06b6d4; padding: 0.5rem;">Analyses</a>
+            <a href="/#contact" style="color: #fff; padding: 0.5rem;">Contact</a>
         </div>
     </nav>
 
