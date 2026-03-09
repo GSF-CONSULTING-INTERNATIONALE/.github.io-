@@ -8,12 +8,7 @@ layout: null
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Analyses & Publications | GSF Consulting</title>
     <meta name="description" content="Toutes les analyses juridiques et stratégiques de GSF Consulting.">
-    
-    <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
-    
-    <!-- STYLE INTÉGRÉ -->
     <style>
         body { background-color: #050505; color: white; font-family: 'Space Grotesk', sans-serif; margin: 0; }
         a { color: #06b6d4; text-decoration: none; transition: 0.3s; }
@@ -35,7 +30,6 @@ layout: null
 </head>
 <body>
 
-    <!-- NAVIGATION -->
     <nav id="navbar" class="glass-card">
         <div class="nav-container">
             <a href="/" class="logo">GSF CONSULTING</a>
@@ -54,21 +48,17 @@ layout: null
         </div>
     </nav>
 
-    <!-- HEADER -->
     <header style="padding: 120px 5% 60px; text-align: center;">
         <h1 style="font-family: 'Syne', sans-serif; font-size: 3rem;">Analyses & <span class="cyan">Publications</span></h1>
         <p style="opacity: 0.7; max-width: 600px; margin: 10px auto 0;">Expertise juridique et Intelligence Artificielle en Afrique.</p>
     </header>
 
-    <!-- GRILLE BLOG (BOUCLE CORRIGÉE) -->
     <section style="padding: 0 5% 80px;">
         <div class="grid-layout">
-          {% for post in site.posts %} /* Correction : site.posts et non site.blog */
+          {% for post in site.posts %}
             <article class="blog-card">
               {% if post.image %}
                 <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" style="width:100%; height:200px; object-fit:cover;">
-              {% else %}
-                <div style="width:100%; height:200px; background:#111; display:flex; align-items:center; justify-content:center; color:#333;">GSF</div>
               {% endif %}
               
               <div style="padding:25px;">
@@ -83,13 +73,11 @@ layout: null
           {% endfor %}
         </div>
         
-        <!-- Message si aucun article -->
         {% if site.posts.size == 0 %}
             <p style="text-align: center; opacity: 0.6; margin-top: 50px;">Aucune publication pour le moment.</p>
         {% endif %}
     </section>
 
-    <!-- FOOTER -->
     <footer style="padding: 40px 20px; border-top: 1px solid #06b6d4; text-align: center; font-family: 'Syne', sans-serif;">
         <p class="cyan" style="font-size: 0.9rem;">© 2024 GSF Consulting International</p>
     </footer>
