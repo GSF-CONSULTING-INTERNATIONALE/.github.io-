@@ -2,125 +2,645 @@
 layout: default
 ---
 
-<article style="max-width: 800px; margin: 0 auto; padding: 120px 5% 60px;">
-    <!-- En-tête de l'article -->
-    <header style="margin-bottom: 40px; text-align: center;">
-        {% if page.category %}
-        <span style="display: inline-block; background: rgba(6, 182, 212, 0.1); color: #06b6d4; padding: 6px 16px; border-radius: 20px; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 20px;">
-            {{ page.category }}
-        </span>
-        {% endif %}
-        
-        <h1 style="font-family: 'Syne', sans-serif; font-size: clamp(1.8rem, 4vw, 2.8rem); line-height: 1.2; margin-bottom: 20px; color: white;">
-            {{ page.title }}
-        </h1>
-        
-        <div style="opacity: 0.7; font-size: 0.9rem;">
-            <time datetime="{{ page.date | date_to_xmlschema }}">
-                {{ page.date | date: "%d %B %Y" }}
-            </time>
-            {% if page.author %}
-            <span style="margin: 0 10px;">•</span>
-            <span>{{ page.author }}</span>
-            {% endif %}
-        </div>
-    </header>
+<article class="post-shell">
+    <div class="post-container">
+        <!-- Fil d'Ariane -->
+        <nav class="post-breadcrumbs" aria-label="Fil d'Ariane">
+            <a href="/">Accueil</a>
+            <span>•</span>
+            <a href="/blog.html">Analyses</a>
+            <span>•</span>
+            <span aria-current="page">{{ page.title }}</span>
+        </nav>
 
-    <!-- Image principale -->
-    {% if page.image %}
-    <div style="margin-bottom: 40px; border-radius: 15px; overflow: hidden;">
-        <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" style="width: 100%; height: auto; display: block;">
-    </div>
-    {% endif %}
-
-    <!-- Contenu de l'article -->
-    <div style="font-size: 1.1rem; line-height: 1.8; color: rgba(255,255,255,0.9);">
-        {{ content }}
-    </div>
-
-    <!-- ==================== SECTION EEAT : AUTHOR-BOX ==================== -->
-    <section class="author-box glass-card" style="margin: 60px 0 50px; padding: 30px; background: rgba(255,255,255,0.05); border-radius: 16px; border: 1px solid rgba(6, 182, 212, 0.2);">
-        <h3 style="font-family: 'Syne', sans-serif; color: #06b6d4; margin-bottom: 20px; font-size: 1.35rem;">À propos de l’auteur</h3>
-        
-        <div class="author-flex" style="display: flex; gap: 25px; align-items: flex-start;">
-            <!-- Photo auteur -->
-            <img src="/assets/images/authors/gilles-feliho.jpg" 
-                 alt="Gilles Sixte Feliho" 
-                 style="width: 90px; height: 90px; border-radius: 50%; object-fit: cover; flex-shrink: 0; border: 3px solid #06b6d4;">
-            
-            <div>
-                <p style="margin: 0 0 12px 0;">
-                    <strong style="color: white; font-size: 1.1rem;">Gilles Sixte Feliho</strong>
-                </p>
-                <p style="margin: 0 0 18px 0; color: rgba(255,255,255,0.85); line-height: 1.65;">
-                    Intervient sur les sujets de droit des affaires, conformité, intelligence artificielle, 
-                    gouvernance algorithmique et souveraineté cognitive appliqués à l’Afrique francophone.
-                </p>
-                <a href="/gilles-feliho/" 
-                   style="display: inline-flex; align-items: center; gap: 8px; color: #06b6d4; font-weight: 600; text-decoration: none;">
-                    Voir la biographie complète 
-                    <span style="font-size: 1.2em; line-height: 1;">→</span>
-                </a>
+        <!-- En-tête -->
+        <header class="post-header">
+            {% if page.category %}
+            <div class="post-category-wrap">
+                <span class="post-category">{{ page.category }}</span>
             </div>
-        </div>
-    </section>
-    <!-- ================================================================ -->
+            {% endif %}
 
-    <!-- Navigation -->
-    <div style="margin-top: 60px; padding-top: 40px; border-top: 1px solid rgba(6, 182, 212, 0.2); display: flex; justify-content: space-between; align-items: center;">
-        <a href="/blog.html" style="display: inline-flex; align-items: center; gap: 8px; color: #06b6d4; font-weight: 500;">
-            <span>←</span> Retour aux analyses
-        </a>
-        
-        <div style="display: flex; gap: 15px;">
-            {% if page.previous.url %}
-            <a href="{{ page.previous.url | relative_url }}" style="color: #06b6d4; opacity: 0.7; font-size: 0.9rem;">
-                Précédent
-            </a>
+            <h1 class="post-title">{{ page.title }}</h1>
+
+            {% if page.excerpt %}
+            <p class="post-excerpt">{{ page.excerpt }}</p>
             {% endif %}
-            {% if page.next.url %}
-            <a href="{{ page.next.url | relative_url }}" style="color: #06b6d4; opacity: 0.7; font-size: 0.9rem;">
-                Suivant
-            </a>
+
+            <div class="post-meta">
+                <time datetime="{{ page.date | date_to_xmlschema }}">
+                    {{ page.date | date: "%d %B %Y" }}
+                </time>
+
+                {% if page.author %}
+                <span class="post-meta-separator">•</span>
+                <span>{{ page.author }}</span>
+                {% endif %}
+
+                {% if page.last_updated %}
+                <span class="post-meta-separator">•</span>
+                <span>Mis à jour le {{ page.last_updated | date: "%d %B %Y" }}</span>
+                {% endif %}
+            </div>
+        </header>
+
+        <!-- Image principale -->
+        {% if page.image %}
+        <figure class="post-hero glass-card">
+            <img src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+        </figure>
+        {% endif %}
+
+        <!-- Contenu -->
+        <div class="post-content">
+            {{ content }}
+        </div>
+
+        <!-- Bloc méthodologie / source éditoriale -->
+        <section class="post-methodology glass-card">
+            <h2>Méthodologie éditoriale</h2>
+            <p>
+                Cet article s’inscrit dans la ligne éditoriale de GSF Consulting International,
+                centrée sur le droit des affaires, la conformité, l’intelligence artificielle,
+                la souveraineté cognitive et les enjeux réglementaires en Afrique francophone.
+            </p>
+
+            {% if page.author %}
+            <p>
+                <strong>Auteur :</strong> {{ page.author }}
+            </p>
             {% endif %}
+
+            {% if page.date %}
+            <p>
+                <strong>Date de publication :</strong>
+                {{ page.date | date: "%d %B %Y" }}
+            </p>
+            {% endif %}
+
+            {% if page.last_updated %}
+            <p>
+                <strong>Dernière mise à jour :</strong>
+                {{ page.last_updated | date: "%d %B %Y" }}
+            </p>
+            {% endif %}
+
+            {% if page.source_url %}
+            <p>
+                <strong>Source externe mentionnée :</strong>
+                <a href="{{ page.source_url }}" target="_blank" rel="noopener noreferrer nofollow">
+                    Consulter la source
+                </a>
+            </p>
+            {% endif %}
+        </section>
+
+        <!-- ==================== SECTION EEAT : AUTEUR ==================== -->
+        <section class="author-box glass-card">
+            <div class="author-box-header">
+                <h2>À propos de l’auteur</h2>
+            </div>
+
+            <div class="author-flex">
+                <img
+                    src="/uploads/gilles-sixte-feliho.jpg"
+                    alt="Gilles Sixte Feliho"
+                    class="author-avatar"
+                >
+
+                <div class="author-content">
+                    <p class="author-name">Gilles Sixte Feliho</p>
+
+                    <p class="author-description">
+                        Gilles Sixte Feliho intervient sur les sujets de droit des affaires,
+                        conformité, intelligence artificielle, gouvernance algorithmique
+                        et souveraineté cognitive appliqués à l’Afrique francophone.
+                    </p>
+
+                    <p class="author-description">
+                        Ses analyses publiées sur le site portent notamment sur les risques
+                        réglementaires liés à l’IA, la traçabilité financière, la conformité
+                        bancaire et les mécanismes de souveraineté cognitive.
+                    </p>
+
+                    <div class="author-links">
+                        <a href="/gilles-feliho/" class="author-link primary">
+                            Voir la biographie complète
+                        </a>
+                        <a href="/a-propos/" class="author-link">
+                            Découvrir le cabinet
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- =============================================================== -->
+
+        <!-- CTA -->
+        <section class="post-cta glass-card">
+            <h2>Besoin d’un accompagnement stratégique ?</h2>
+            <p>
+                GSF Consulting International accompagne les banques, institutions, entreprises
+                et décideurs sur les enjeux de conformité, gouvernance de l’IA, droit OHADA,
+                souveraineté cognitive et transformation réglementaire.
+            </p>
+            <div class="post-cta-links">
+                <a href="/audit-souverainete-cognitive/" class="cta-btn-primary">Découvrir l’Audit ASC™</a>
+                <a href="/#contact" class="cta-btn-secondary">Demander un échange</a>
+            </div>
+        </section>
+
+        <!-- Navigation -->
+        <div class="post-navigation">
+            <a href="/blog.html" class="back-link">
+                <span>←</span>
+                <span>Retour aux analyses</span>
+            </a>
+
+            <div class="next-prev-links">
+                {% if page.previous.url %}
+                <a href="{{ page.previous.url | relative_url }}">Précédent</a>
+                {% endif %}
+                {% if page.next.url %}
+                <a href="{{ page.next.url | relative_url }}">Suivant</a>
+                {% endif %}
+            </div>
         </div>
     </div>
 </article>
 
-<!-- Styles spécifiques + EEAT + Mobile -->
-<style>
-    /* ... (tes styles existants restent inchangés) ... */
+<!-- Données structurées Article + Author -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": {{ page.title | jsonify }},
+  "description": {{ page.excerpt | default: site.description | jsonify }},
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  {% if page.last_updated %}"dateModified": "{{ page.last_updated | date_to_xmlschema }}",{% endif %}
+  {% if page.image %}"image": ["{{ page.image | absolute_url }}"],{% endif %}
+  "author": {
+    "@type": "Person",
+    "name": "Gilles Sixte Feliho",
+    "url": "{{ '/gilles-feliho/' | absolute_url }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "GSF Consulting International",
+    "url": "{{ site.url }}",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ '/uploads/gilles-sixte-feliho.jpg' | absolute_url }}"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ page.url | absolute_url }}"
+  }
+}
+</script>
 
-    /* Styles dédiés EEAT author-box */
+<style>
+    .post-shell {
+        max-width: 100%;
+        padding: 120px 5% 70px;
+    }
+
+    .post-container {
+        max-width: 860px;
+        margin: 0 auto;
+    }
+
+    .post-breadcrumbs {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 28px;
+        font-size: 0.9rem;
+        color: rgba(255,255,255,0.58);
+    }
+
+    .post-breadcrumbs a {
+        color: rgba(255,255,255,0.72);
+        text-decoration: none;
+        transition: color 0.25s ease;
+    }
+
+    .post-breadcrumbs a:hover {
+        color: #06b6d4;
+    }
+
+    .post-header {
+        margin-bottom: 36px;
+        text-align: center;
+    }
+
+    .post-category-wrap {
+        margin-bottom: 18px;
+    }
+
+    .post-category {
+        display: inline-block;
+        background: rgba(6, 182, 212, 0.12);
+        color: #06b6d4;
+        padding: 8px 18px;
+        border-radius: 999px;
+        font-size: 0.78rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        border: 1px solid rgba(6, 182, 212, 0.22);
+    }
+
+    .post-title {
+        font-family: 'Syne', sans-serif;
+        font-size: clamp(2rem, 4.8vw, 3.2rem);
+        line-height: 1.12;
+        margin: 0 0 18px 0;
+        color: #ffffff;
+    }
+
+    .post-excerpt {
+        max-width: 720px;
+        margin: 0 auto 20px;
+        font-size: 1.08rem;
+        line-height: 1.75;
+        color: rgba(255,255,255,0.78);
+    }
+
+    .post-meta {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        color: rgba(255,255,255,0.64);
+        font-size: 0.95rem;
+    }
+
+    .post-meta-separator {
+        opacity: 0.45;
+    }
+
+    .glass-card {
+        background: rgba(255,255,255,0.05);
+        border: 1px solid rgba(255,255,255,0.08);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: 18px;
+        box-shadow: 0 12px 40px rgba(0,0,0,0.18);
+    }
+
+    .post-hero {
+        margin: 0 0 42px 0;
+        overflow: hidden;
+    }
+
+    .post-hero img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .post-content {
+        color: rgba(255,255,255,0.90);
+        font-size: 1.08rem;
+        line-height: 1.9;
+    }
+
+    .post-content h2,
+    .post-content h3,
+    .post-content h4 {
+        font-family: 'Syne', sans-serif;
+        color: #ffffff;
+        line-height: 1.25;
+        margin-top: 2.2em;
+        margin-bottom: 0.8em;
+    }
+
+    .post-content h2 {
+        font-size: 1.85rem;
+    }
+
+    .post-content h3 {
+        font-size: 1.4rem;
+    }
+
+    .post-content p,
+    .post-content ul,
+    .post-content ol,
+    .post-content blockquote {
+        margin-bottom: 1.2em;
+    }
+
+    .post-content ul,
+    .post-content ol {
+        padding-left: 1.4em;
+    }
+
+    .post-content li {
+        margin-bottom: 0.65em;
+    }
+
+    .post-content a {
+        color: #06b6d4;
+        text-decoration: underline;
+        text-decoration-color: rgba(6, 182, 212, 0.35);
+        text-underline-offset: 3px;
+    }
+
+    .post-content a:hover {
+        text-decoration-color: rgba(6, 182, 212, 0.95);
+    }
+
+    .post-content strong {
+        color: #ffffff;
+    }
+
+    .post-content blockquote {
+        margin: 2em 0;
+        padding: 20px 22px;
+        border-left: 4px solid #06b6d4;
+        background: rgba(6, 182, 212, 0.08);
+        border-radius: 12px;
+        color: rgba(255,255,255,0.88);
+    }
+
+    .post-content img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 14px;
+        margin: 1.8em auto;
+        display: block;
+    }
+
+    .post-content hr {
+        border: none;
+        border-top: 1px solid rgba(255,255,255,0.10);
+        margin: 2.5em 0;
+    }
+
+    .post-methodology {
+        margin: 55px 0 45px;
+        padding: 28px;
+    }
+
+    .post-methodology h2 {
+        margin: 0 0 16px 0;
+        font-family: 'Syne', sans-serif;
+        color: #06b6d4;
+        font-size: 1.35rem;
+    }
+
+    .post-methodology p {
+        margin: 0 0 12px 0;
+        color: rgba(255,255,255,0.84);
+        line-height: 1.7;
+    }
+
     .author-box {
         position: relative;
+        margin: 0 0 45px;
+        padding: 30px;
+        border: 1px solid rgba(6, 182, 212, 0.18);
     }
+
     .author-box::before {
         content: '';
         position: absolute;
-        top: -1px;
-        left: -1px;
-        right: -1px;
-        bottom: -1px;
-        background: linear-gradient(135deg, rgba(6,182,212,0.15), transparent);
+        inset: -1px;
+        background: linear-gradient(135deg, rgba(6,182,212,0.14), transparent 45%, rgba(255,255,255,0.03));
         z-index: -1;
-        border-radius: 17px;
-        filter: blur(8px);
-        opacity: 0.6;
+        border-radius: 19px;
+        filter: blur(10px);
+        opacity: 0.85;
     }
 
-    /* ==================== OPTIMISATION MOBILE ==================== */
+    .author-box-header h2 {
+        margin: 0 0 20px 0;
+        font-family: 'Syne', sans-serif;
+        color: #06b6d4;
+        font-size: 1.4rem;
+    }
+
+    .author-flex {
+        display: flex;
+        gap: 24px;
+        align-items: flex-start;
+    }
+
+    .author-avatar {
+        width: 92px;
+        height: 92px;
+        border-radius: 50%;
+        object-fit: cover;
+        flex-shrink: 0;
+        border: 3px solid #06b6d4;
+        box-shadow: 0 0 0 6px rgba(6,182,212,0.08);
+    }
+
+    .author-content {
+        flex: 1;
+    }
+
+    .author-name {
+        margin: 0 0 10px 0;
+        color: #ffffff;
+        font-size: 1.08rem;
+        font-weight: 700;
+    }
+
+    .author-description {
+        margin: 0 0 14px 0;
+        color: rgba(255,255,255,0.84);
+        line-height: 1.7;
+    }
+
+    .author-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 8px;
+    }
+
+    .author-link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 16px;
+        border-radius: 999px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: transform 0.2s ease, opacity 0.2s ease, background 0.2s ease;
+        border: 1px solid rgba(6,182,212,0.24);
+        color: #06b6d4;
+        background: rgba(6,182,212,0.08);
+    }
+
+    .author-link:hover {
+        transform: translateY(-1px);
+        opacity: 0.95;
+    }
+
+    .author-link.primary {
+        background: #06b6d4;
+        color: #041014;
+        border-color: transparent;
+    }
+
+    .post-cta {
+        margin: 0 0 46px;
+        padding: 32px;
+        text-align: center;
+        border: 1px solid rgba(6, 182, 212, 0.18);
+    }
+
+    .post-cta h2 {
+        margin: 0 0 14px 0;
+        font-family: 'Syne', sans-serif;
+        color: #ffffff;
+        font-size: 1.7rem;
+    }
+
+    .post-cta p {
+        margin: 0 auto 22px;
+        max-width: 680px;
+        color: rgba(255,255,255,0.82);
+        line-height: 1.75;
+    }
+
+    .post-cta-links {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 14px;
+    }
+
+    .cta-btn-primary,
+    .cta-btn-secondary {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px 20px;
+        border-radius: 999px;
+        text-decoration: none;
+        font-weight: 700;
+        transition: transform 0.2s ease, opacity 0.2s ease, background 0.2s ease;
+    }
+
+    .cta-btn-primary {
+        background: #06b6d4;
+        color: #031014;
+    }
+
+    .cta-btn-secondary {
+        background: rgba(255,255,255,0.06);
+        color: #ffffff;
+        border: 1px solid rgba(255,255,255,0.10);
+    }
+
+    .cta-btn-primary:hover,
+    .cta-btn-secondary:hover {
+        transform: translateY(-1px);
+        opacity: 0.96;
+    }
+
+    .post-navigation {
+        margin-top: 56px;
+        padding-top: 34px;
+        border-top: 1px solid rgba(6,182,212,0.18);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+        flex-wrap: wrap;
+    }
+
+    .back-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        color: #06b6d4;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    .next-prev-links {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+    }
+
+    .next-prev-links a {
+        color: rgba(255,255,255,0.72);
+        text-decoration: none;
+        font-size: 0.95rem;
+    }
+
+    .next-prev-links a:hover {
+        color: #06b6d4;
+    }
+
+    @media (max-width: 768px) {
+        .post-shell {
+            padding: 105px 5% 60px;
+        }
+
+        .post-content {
+            font-size: 1.02rem;
+            line-height: 1.85;
+        }
+
+        .post-methodology,
+        .author-box,
+        .post-cta {
+            padding: 22px;
+        }
+
+        .post-cta h2 {
+            font-size: 1.45rem;
+        }
+    }
+
     @media (max-width: 640px) {
+        .post-breadcrumbs {
+            font-size: 0.82rem;
+            gap: 8px;
+        }
+
+        .post-title {
+            font-size: clamp(1.8rem, 8vw, 2.35rem);
+        }
+
+        .post-excerpt {
+            font-size: 1rem;
+        }
+
         .author-flex {
             flex-direction: column;
             align-items: center;
             text-align: center;
-            gap: 20px;
+            gap: 18px;
         }
-        
-        .author-flex img {
-            width: 80px;
-            height: 80px;
+
+        .author-avatar {
+            width: 84px;
+            height: 84px;
+        }
+
+        .author-links,
+        .post-cta-links {
+            justify-content: center;
+        }
+
+        .post-navigation {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .next-prev-links {
+            width: 100%;
+            justify-content: space-between;
         }
     }
 </style>
