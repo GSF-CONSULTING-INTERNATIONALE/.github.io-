@@ -2,97 +2,137 @@
 layout: default
 title: "Études de cas"
 permalink: /etudes-de-cas/
-description: "Exemples d'interventions, d'impacts mesurables et de transformation conformité / gouvernance / IA."
+description: "Études de cas anonymisées : gouvernance de l’IA, intelligence bancaire souveraine, ECL v2.0 et lutte contre les flux financiers illicites en Afrique francophone."
 ---
 
-# Études de cas
+<section class="legal-page">
+  <div class="container">
+    <div class="glass-card legal-card">
+      <p class="section-kicker">Références & impacts</p>
+      <h1>Études de cas</h1>
+      <p class="lead">
+        Cette page présente des cas d’usage anonymisés illustrant le type d’impact recherché par GSF Consulting International :
+        sécurisation réglementaire, gouvernance de l’IA, réduction du risque, conformité bancaire et création d’avantage
+        concurrentiel durable.
+      </p>
 
-Cette page présente des cas d’usage anonymisés illustrant le type d’impact recherché par GSF Consulting International : sécurisation réglementaire, gouvernance de l’IA, réduction du risque et création d’avantage concurrentiel durable. Les données ci-dessous sont issues des documents projet et proposition fournis, et doivent être présentées comme des cas de référence anonymisés ou des scénarios documentés. [Source](https://gensparkstorageprodwest.blob.core.windows.net/personal/707b95f7-fe40-4402-a474-d3265aa5c722/upload/default/26e91e4a-522d-48f5-a266-7fce47745150?se=2026-03-10T02%3A33%3A48Z&sp=r&sv=2025-05-05&sr=b&rsct=application/pdf&sig=67YanD6L5gVf4dGJ5Zw/nhyZHjfi8ytNrkGuZquhnls%3D) [Source](https://gensparkstorageprodwest.blob.core.windows.net/personal/707b95f7-fe40-4402-a474-d3265aa5c722/upload/default/0d4508a4-d947-43a5-bd69-5ec590b3e8a9?se=2026-03-10T02%3A33%3A51Z&sp=r&sv=2025-05-05&sr=b&rsct=application/pdf&sig=m%2BNItwD/cftMHnWa48oFR2B1pENskqCVVvkJ01fRMFU%3D)
+      <hr class="soft-divider">
 
-## Cas 1 — Plateforme d’intelligence bancaire souveraine
+      <h2>Cas 1 — Plateforme d’intelligence bancaire souveraine</h2>
+      <p>
+        Déploiement d’une plateforme souveraine de pilotage bancaire conçue pour améliorer la traçabilité des décisions,
+        sécuriser l’architecture réglementaire et accélérer l’exploitation des données critiques dans un environnement bancaire
+        à forte intensité de conformité.
+      </p>
 
-### Contexte
-Un groupe bancaire multi-entités souhaitait moderniser son pilotage du risque, renforcer sa conformité et déployer une architecture d’intelligence bancaire capable d’absorber des exigences de supervision plus strictes, tout en restant compatible avec des contraintes régionales et multi-pays. [Source](https://gensparkstorageprodwest.blob.core.windows.net/personal/707b95f7-fe40-4402-a474-d3265aa5c722/upload/default/26e91e4a-522d-48f5-a266-7fce47745150?se=2026-03-10T02%3A33%3A48Z&sp=r&sv=2025-05-05&sr=b&rsct=application/pdf&sig=67YanD6L5gVf4dGJ5Zw/nhyZHjfi8ytNrkGuZquhnls%3D)
+      <h3>Enjeux traités</h3>
+      <ul>
+        <li>Fragmentation des systèmes décisionnels et faible auditabilité</li>
+        <li>Besoin de conformité renforcée face aux exigences BCEAO / COBAC</li>
+        <li>Dépendance technologique et besoin de souveraineté opérationnelle</li>
+        <li>Recherche d’une meilleure performance métier sous contrainte réglementaire</li>
+      </ul>
 
-### Enjeu
-L’organisation avait besoin d’un dispositif combinant gouvernance, architecture, conformité, performance opérationnelle et formation des équipes, avec une cible d’environ 500 utilisateurs, une latence inférieure à 2 secondes et des standards élevés en matière de continuité, sécurité et auditabilité. [Source](https://gensparkstorageprodwest.blob.core.windows.net/personal/707b95f7-fe40-4402-a474-d3265aa5c722/upload/default/26e91e4a-522d-48f5-a266-7fce47745150?se=2026-03-10T02%3A33%3A48Z&sp=r&sv=2025-05-05&sr=b&rsct=application/pdf&sig=67YanD6L5gVf4dGJ5Zw/nhyZHjfi8ytNrkGuZquhnls%3D)
+      <h3>Résultats mis en avant</h3>
+      <ul>
+        <li><strong>1,1 milliard FCFA</strong> de fonds libérés sur 18 mois</li>
+        <li><strong>30 % de réduction d’OPEX</strong></li>
+        <li><strong>100 millions FCFA</strong> de revenus additionnels annuels</li>
+        <li><strong>RTO &lt; 4 h</strong> dans le dispositif de continuité</li>
+      </ul>
 
-### Réponse proposée
-La feuille de route a été structurée sur 90 jours en trois phases :
-1. audit, cadrage et architecture ;
-2. déploiement du cœur de plateforme ;
-3. certification, formation et go-live.
+      <h3>Approche</h3>
+      <p>
+        L’intervention a combiné audit d’architecture, cadrage réglementaire, sécurisation de l’infrastructure,
+        gouvernance des accès, stratégie de déploiement et accompagnement du changement.
+      </p>
 
-L’approche mobilise des expertises en architecture infrastructure, conformité, stratégie data, IA, DevSecOps, intégration, conduite du changement et QA. [Source](https://gensparkstorageprodwest.blob.core.windows.net/personal/707b95f7-fe40-4402-a474-d3265aa5c722/upload/default/26e91e4a-522d-48f5-a266-7fce47745150?se=2026-03-10T02%3A33%3A48Z&sp=r&sv=2025-05-05&sr=b&rsct=application/pdf&sig=67YanD6L5gVf4dGJ5Zw/nhyZHjfi8ytNrkGuZquhnls%3D)
+      <p class="case-cta">
+        <a class="btn-source" href="/#contact">
+          Demander le dossier anonymisé
+        </a>
+      </p>
 
-### Impact attendu
-- **1,1 milliard FCFA** de fonds libérés sur 18 mois ;
-- **30 % de réduction d’OPEX** ;
-- **100 millions FCFA** de revenus additionnels annuels ;
-- continuité validée avec **RTO < 4 h** ;
-- alignement avec des exigences de type ISO 27001, SOC 2 et supervision régionale. [Source](https://gensparkstorageprodwest.blob.core.windows.net/personal/707b95f7-fe40-4402-a474-d3265aa5c722/upload/default/26e91e4a-522d-48f5-a266-7fce47745150?se=2026-03-10T02%3A33%3A48Z&sp=r&sv=2025-05-05&sr=b&rsct=application/pdf&sig=67YanD6L5gVf4dGJ5Zw/nhyZHjfi8ytNrkGuZquhnls%3D)
+      <hr class="soft-divider">
 
----
+      <h2>Cas 2 — Industrialisation d’un framework ECL v2.0</h2>
+      <p>
+        Structuration et industrialisation d’un cadre ECL v2.0 articulant performance financière, gouvernance algorithmique,
+        conformité réglementaire et protection de la responsabilité décisionnelle au niveau des organes de direction.
+      </p>
 
-## Cas 2 — Industrialisation d’un framework ECL v2.0
+      <h3>Enjeux traités</h3>
+      <ul>
+        <li>Fiabiliser un cadre de calcul à fort enjeu prudentiel</li>
+        <li>Renforcer la documentation, la gouvernance et l’explicabilité</li>
+        <li>Réduire le coût de déploiement et accélérer la montée en maturité MLOps</li>
+        <li>Transformer une contrainte réglementaire en avantage compétitif durable</li>
+      </ul>
 
-### Contexte
-Une institution bancaire souhaitait industrialiser un framework ECL v2.0 en combinant IA, MLOps, conformité réglementaire et souveraineté technologique, dans un cadre compatible avec des exigences de supervision fortes et une logique de réplication multi-juridictionnelle. [Source](https://gensparkstorageprodwest.blob.core.windows.net/personal/707b95f7-fe40-4402-a474-d3265aa5c722/upload/default/0d4508a4-d947-43a5-bd69-5ec590b3e8a9?se=2026-03-10T02%3A33%3A51Z&sp=r&sv=2025-05-05&sr=b&rsct=application/pdf&sig=m%2BNItwD/cftMHnWa48oFR2B1pENskqCVVvkJ01fRMFU%3D)
+      <h3>Résultats mis en avant</h3>
+      <ul>
+        <li><strong>ROI certifié : +1,21 milliard MAD / an</strong></li>
+        <li>Potentiel jusqu’à <strong>+1,66 milliard MAD / an</strong></li>
+        <li><strong>40 à 60 % de réduction de coût</strong></li>
+        <li><strong>Score de maturité MLOps : 88,3 / 100</strong></li>
+      </ul>
 
-### Enjeu
-Le défi consistait à transformer une contrainte réglementaire en avantage compétitif, avec une architecture hybride, des mécanismes de contrôle, une gouvernance documentée et un niveau de maturité MLOps élevé. [Source](https://gensparkstorageprodwest.blob.core.windows.net/personal/707b95f7-fe40-4402-a474-d3265aa5c722/upload/default/0d4508a4-d947-43a5-bd69-5ec590b3e8a9?se=2026-03-10T02%3A33%3A51Z&sp=r&sv=2025-05-05&sr=b&rsct=application/pdf&sig=m%2BNItwD/cftMHnWa48oFR2B1pENskqCVVvkJ01fRMFU%3D)
+      <h3>Approche</h3>
+      <p>
+        Le travail a articulé audit de maturité, revue juridique et réglementaire, gouvernance des modèles,
+        scénarios de déploiement, sécurisation de la chaîne de responsabilité et pilotage exécutif.
+      </p>
 
-### Réponse proposée
-Le dispositif comprend :
-- audit de maturité ;
-- mémorandum de conformité ;
-- business case multi-scénarios ;
-- feuille de route de déploiement régional ;
-- opinion juridique structurante ;
-- mécanisme de “kill switch” réglementaire ;
-- comité mensuel de supervision incluant risque, IT, juridique et gouvernance. [Source](https://gensparkstorageprodwest.blob.core.windows.net/personal/707b95f7-fe40-4402-a474-d3265aa5c722/upload/default/0d4508a4-d947-43a5-bd69-5ec590b3e8a9?se=2026-03-10T02%3A33%3A51Z&sp=r&sv=2025-05-05&sr=b&rsct=application/pdf&sig=m%2BNItwD/cftMHnWa48oFR2B1pENskqCVVvkJ01fRMFU%3D)
+      <p class="case-cta">
+        <a class="btn-source" href="/#contact">
+          Demander le dossier anonymisé
+        </a>
+      </p>
 
-### Impact attendu
-- **ROI certifié : +1,21 milliard MAD / an**
-- potentiel jusqu’à **+1,66 milliard MAD / an**
-- **40 à 60 %** de réduction de coût par rapport à des approches de marché plus lourdes
-- avance technologique estimée entre **12 et 18 mois**
-- score de maturité MLOps de **88,3 / 100**. [Source](https://gensparkstorageprodwest.blob.core.windows.net/personal/707b95f7-fe40-4402-a474-d3265aa5c722/upload/default/0d4508a4-d947-43a5-bd69-5ec590b3e8a9?se=2026-03-10T02%3A33%3A51Z&sp=r&sv=2025-05-05&sr=b&rsct=application/pdf&sig=m%2BNItwD/cftMHnWa48oFR2B1pENskqCVVvkJ01fRMFU%3D)
+      <hr class="soft-divider">
 
----
+      <h2>Cas 3 — Conformité, traçabilité et flux financiers illicites</h2>
+      <p>
+        Analyse stratégique des flux financiers illicites entre le Bénin et le Nigeria, mettant en lumière les ruptures
+        de traçabilité entre circuits formels et informels, ainsi que leurs impacts sécuritaires, réglementaires et macroéconomiques.
+      </p>
 
-## Cas 3 — Conformité, traçabilité et flux financiers illicites
+      <h3>Constats clés</h3>
+      <ul>
+        <li>Circulation annuelle estimée entre <strong>700 et 950 milliards FCFA</strong></li>
+        <li>Existence d’un système parallèle à forte opacité et à faible traçabilité</li>
+        <li>Risque de financement criminel et de fragilisation de la souveraineté financière</li>
+        <li>Nécessité d’un socle combinant KYC biométrique, IA de détection et supervision géolocalisée des flux</li>
+      </ul>
 
-### Contexte
-L’analyse publiée sur le site décrit une circulation annuelle estimée entre **700 et 950 milliards FCFA** via des circuits parallèles entre le Bénin et le Nigeria, avec un déficit de traçabilité entre canaux formels et circuits informels. [Source](https://gsfconsultinginternational.com/analyses/flux-financiers-illicites-benin-nigeria-950-milliards-fcfa/)
+      <h3>Leviers de réponse</h3>
+      <ul>
+        <li><strong>KYC biométrique obligatoire</strong></li>
+        <li><strong>IA pour détecter les patterns suspects</strong></li>
+        <li><strong>Plateforme RASME</strong> pour la traçabilité géolocalisée des flux</li>
+      </ul>
 
-### Réponse proposée
-Trois leviers sont mis en avant :
-1. **KYC biométrique obligatoire**
-2. **IA pour détecter les schémas suspects**
-3. **plateforme RASME pour tracer les flux**. [Source](https://gsfconsultinginternational.com/analyses/flux-financiers-illicites-benin-nigeria-950-milliards-fcfa/)
+      <p class="case-cta">
+        <a class="btn-source" href="/analyses/flux-financiers-illicites-benin-nigeria-950-milliards-fcfa/">
+          Lire l’analyse complète
+        </a>
+      </p>
 
-### Enseignement
-Ce cas montre qu’une intervention de conseil peut être à la fois :
-- juridique ;
-- technologique ;
-- opérationnelle ;
-- sécuritaire ;
-- géopolitique.
+      <hr class="soft-divider">
 
-## Méthodologie
+      <h2>Pourquoi ces cas sont importants</h2>
+      <p>
+        Ces références illustrent une même logique d’intervention : rendre les dispositifs décisionnels plus explicables,
+        plus traçables, plus conformes et plus souverains. Pour les banques, institutions et décideurs publics, la gouvernance
+        de l’IA, la conformité financière et la robustesse réglementaire ne sont plus des sujets séparés : ils forment désormais
+        un seul et même enjeu stratégique.
+      </p>
 
-Chaque étude de cas présentée ici peut être enrichie avec :
-- contexte initial ;
-- niveau de risque ;
-- intervention ;
-- résultats ;
-- indicateurs ;
-- cadre réglementaire ;
-- gouvernance mise en place.
-
-## Pour aller plus loin
-
-- [Audit de Souveraineté Cognitive™](/audit-souverainete-cognitive/)
-- [Gilles Feliho](/gilles-feliho/)
-- [Blog / Analyses](/blog.html)
+      <p>
+        Vous souhaitez évaluer vos propres vulnérabilités réglementaires, algorithmiques ou opérationnelles ?
+        <a href="/audit-souverainete-cognitive/">Découvrir l’Audit de Souveraineté Cognitive™</a>
+        ou <a href="/#contact">prendre contact avec le cabinet</a>.
+      </p>
+    </div>
+  </div>
+</section>
