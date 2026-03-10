@@ -2,114 +2,168 @@
 layout: default
 title: "Politique de confidentialité"
 permalink: /politique-de-confidentialite/
-description: "Politique de confidentialité et informations relatives au traitement des données personnelles."
+description: "Politique de confidentialité de GSF Consulting International : collecte, traitement, sécurité et droits relatifs aux données personnelles."
 ---
 
-# Politique de confidentialité
+<section class="legal-page">
+  <div class="container">
+    <div class="glass-card legal-card">
+      <p class="section-kicker">Confiance & conformité</p>
+      <h1>Politique de confidentialité</h1>
 
-La présente politique de confidentialité a pour objet d’informer les utilisateurs du site **GSF Consulting International** sur la manière dont leurs données personnelles peuvent être collectées, utilisées, conservées et protégées lorsqu’ils naviguent sur le site ou prennent contact avec le cabinet.
+      <p class="lead">
+        La présente politique de confidentialité a pour objet d’informer les utilisateurs du site
+        <strong>GSF Consulting International</strong> sur la manière dont leurs données personnelles
+        peuvent être collectées, utilisées, conservées et protégées lorsqu’ils naviguent sur le site
+        ou prennent contact avec le cabinet.
+      </p>
 
-> **Important :** certains éléments ci-dessous doivent être complétés avec vos informations juridiques exactes avant publication définitive.
+      <hr class="soft-divider">
 
-## 1. Responsable du traitement
+      <h2>1. Responsable du traitement</h2>
+      <p>
+        Le responsable du traitement des données collectées sur le site est :
+      </p>
+      <p>
+        <strong>GSF Consulting International</strong><br>
+        Siège social : 11 quai Anatole France, 75007 Paris<br>
+        SIRET : 512 365 339 00039<br>
+        Représentant légal : Monsieur Gilles Feliho<br>
+        Email : <a href="mailto:gilles.feliho@gsfconsultinginternational.com">gilles.feliho@gsfconsultinginternational.com</a>
+      </p>
 
-**Responsable du traitement** : GSF Consulting International  
-**Siège social** : 11 quai Anatole France, 75007 Paris  
-**SIRET** : 512 365 339 00039  
-**Représentant légal** : Monsieur Gilles Feliho  
-**Email de contact** : contact@gsfconsultinginternational.com 
-**Téléphone** : + 33 1 48 98 02 07
+      <h2>2. Données susceptibles d’être collectées</h2>
+      <p>
+        Selon l’utilisation du site, les données personnelles suivantes peuvent être collectées :
+      </p>
+      <ul>
+        <li>nom et prénom ;</li>
+        <li>adresse email ;</li>
+        <li>numéro de téléphone ;</li>
+        <li>nom de société, institution ou organisation ;</li>
+        <li>contenu du message transmis via formulaire ou email ;</li>
+        <li>données techniques de navigation ;</li>
+        <li>adresse IP ;</li>
+        <li>données de mesure d’audience, si un outil statistique est activé.</li>
+      </ul>
 
-## 2. Données susceptibles d’être collectées
+      <h2>3. Finalités du traitement</h2>
+      <p>
+        Les données collectées peuvent être utilisées pour :
+      </p>
+      <ul>
+        <li>répondre aux demandes de contact ;</li>
+        <li>traiter les demandes de devis ou de diagnostic ;</li>
+        <li>assurer le suivi des échanges professionnels ;</li>
+        <li>améliorer le fonctionnement du site et l’expérience utilisateur ;</li>
+        <li>assurer la sécurité technique du site ;</li>
+        <li>respecter les obligations légales et réglementaires applicables.</li>
+      </ul>
 
-Selon l’utilisation du site, les données suivantes peuvent être collectées :
+      <h2>4. Base légale des traitements</h2>
+      <p>
+        Les traitements de données mis en œuvre sur le site reposent, selon les cas, sur :
+      </p>
+      <ul>
+        <li>le consentement de l’utilisateur ;</li>
+        <li>l’exécution de mesures précontractuelles à la demande de l’utilisateur ;</li>
+        <li>l’intérêt légitime de GSF Consulting International ;</li>
+        <li>le respect d’obligations légales et réglementaires.</li>
+      </ul>
 
-- nom et prénom ;
-- adresse email ;
-- numéro de téléphone ;
-- nom de société / organisation ;
-- contenu du message envoyé via formulaire ou email ;
-- données techniques de navigation ;
-- adresse IP ;
-- données de mesure d’audience, si des outils statistiques sont activés.
+      <h2>5. Durée de conservation</h2>
+      <p>
+        Les données personnelles sont conservées pendant une durée proportionnée à la finalité du traitement,
+        sauf obligation légale imposant une durée différente.
+      </p>
+      <ul>
+        <li>demandes de contact : 12 mois maximum ;</li>
+        <li>demandes de devis ou d’échange professionnel : 12 mois maximum ;</li>
+        <li>données techniques et journaux de sécurité : 12 mois maximum ;</li>
+        <li>données conservées pour obligation légale : selon les délais prévus par la réglementation applicable.</li>
+      </ul>
 
-## 3. Finalités du traitement
+      <h2>6. Destinataires des données</h2>
+      <p>
+        Les données collectées sont destinées exclusivement aux personnes habilitées au sein de
+        GSF Consulting International et, lorsque cela est nécessaire, à des prestataires techniques
+        intervenant pour l’hébergement, la maintenance, la messagerie ou l’administration technique du site.
+      </p>
+      <p>
+        Les données ne sont ni vendues, ni louées, ni cédées à des tiers à des fins commerciales.
+      </p>
 
-Les données peuvent être utilisées pour :
+      <h2>7. Hébergement et services techniques</h2>
+      <p>
+        Le site est publié à partir d’un dépôt GitHub et déployé dans un environnement technique de site statique.
+        Lorsque cela s’applique, certains services techniques peuvent intervenir pour l’hébergement,
+        le déploiement, l’administration du contenu et la maintenance du site.
+      </p>
+      <p>
+        Si vous souhaitez une version juridiquement ultra-précise de cette section, vous pouvez y faire figurer
+        le nom exact de votre hébergeur ou prestataire de déploiement tel qu’indiqué dans vos conditions techniques en vigueur.
+      </p>
 
-- répondre aux demandes de contact ;
-- traiter les demandes de devis ;
-- assurer le suivi commercial ou éditorial ;
-- améliorer le fonctionnement du site ;
-- assurer la sécurité technique du site ;
-- respecter les obligations légales et réglementaires.
+      <h2>8. Cookies et traceurs</h2>
+      <p>
+        Le site peut utiliser des cookies ou technologies similaires strictement nécessaires à son bon fonctionnement,
+        à la sécurité de la navigation et, le cas échéant, à la mesure d’audience.
+      </p>
+      <p>
+        Aucun cookie publicitaire ni traceur non essentiel ne doit être activé sans information claire
+        et, lorsque la réglementation l’exige, sans consentement préalable de l’utilisateur.
+      </p>
 
-## 4. Base légale
+      <h2>9. Droits des utilisateurs</h2>
+      <p>
+        Conformément à la réglementation applicable en matière de protection des données personnelles,
+        vous disposez des droits suivants :
+      </p>
+      <ul>
+        <li>droit d’accès ;</li>
+        <li>droit de rectification ;</li>
+        <li>droit à l’effacement ;</li>
+        <li>droit à la limitation du traitement ;</li>
+        <li>droit d’opposition ;</li>
+        <li>droit à la portabilité, lorsque ce droit est applicable.</li>
+      </ul>
+      <p>
+        Vous pouvez exercer vos droits à tout moment en écrivant à :
+        <a href="mailto:gilles.feliho@gsfconsultinginternational.com">gilles.feliho@gsfconsultinginternational.com</a>
+      </p>
 
-Les traitements peuvent être fondés sur :
+      <h2>10. Sécurité</h2>
+      <p>
+        GSF Consulting International s’efforce de mettre en œuvre des mesures techniques
+        et organisationnelles appropriées afin de protéger les données personnelles contre la perte,
+        l’altération, l’accès non autorisé, la divulgation ou tout traitement non conforme.
+      </p>
 
-- le consentement de l’utilisateur ;
-- l’exécution de mesures précontractuelles ;
-- l’intérêt légitime du responsable du traitement ;
-- le respect d’obligations légales.
+      <h2>11. Liens externes</h2>
+      <p>
+        Le site peut contenir des liens vers des ressources externes, notamment vers des publications,
+        analyses, sources réglementaires, plateformes partenaires ou ouvrages de référence.
+        GSF Consulting International ne saurait être responsable de la politique de confidentialité
+        ou du contenu de ces sites tiers.
+      </p>
 
-## 5. Durée de conservation
+      <h2>12. Mise à jour de la politique</h2>
+      <p>
+        La présente politique de confidentialité peut être modifiée à tout moment pour tenir compte
+        des évolutions légales, réglementaires, techniques ou organisationnelles.
+      </p>
+      <p>
+        <strong>Dernière mise à jour :</strong> 10 mars 2026
+      </p>
 
-Les données sont conservées pendant une durée limitée et proportionnée à la finalité poursuivie, sauf obligation légale contraire.
+      <hr class="soft-divider">
 
-À titre indicatif :
-- demandes de contact : 1 an
-- données de prospection : 1 an
-- journaux techniques : 1 an
-
-## 6. Destinataires des données
-
-Les données collectées sont destinées aux personnes habilitées au sein de GSF Consulting International et, si nécessaire, à certains sous-traitants techniques intervenant dans l’hébergement, la maintenance, l’emailing, l’analyse d’audience ou la gestion du site.
-
-## 7. Hébergement et services techniques
-
-Ce site est hébergé par :
-
-**GitHub, Inc.**  
-**Adresse** : 88 Colin P Kelly Jr Street, San Francisco, CA 94107, États-Unis  
-Site web : [github.com](https://github.com)
-
-## 8. Cookies et traceurs
-
-Le site peut utiliser des cookies ou technologies similaires à des fins :
-
-- de fonctionnement ;
-- de mesure d’audience ;
-- de sécurité ;
-- d’amélioration de l’expérience utilisateur.
-
-Conformément aux informations légales du site, ce site utilise des cookies **strictement nécessaires** à son fonctionnement technique (navigation). Aucun cookie publicitaire ou de tracking tiers n'est utilisé sans consentement préalable.
-
-Si des cookies non strictement nécessaires sont utilisés, un mécanisme de consentement doit être mis en place.
-
-## 9. Droits des utilisateurs
-
-Conformément à la réglementation applicable, vous pouvez demander :
-
-- l’accès à vos données ;
-- la rectification de vos données ;
-- l’effacement de vos données ;
-- la limitation du traitement ;
-- l’opposition au traitement ;
-- la portabilité de vos données, lorsque cela s’applique.
-
-Vous pouvez exercer vos droits en écrivant à : contact@gsfconsutltinginternational.com
-
-## 10. Sécurité
-
-GSF Consulting International s’efforce de mettre en œuvre des mesures techniques et organisationnelles appropriées afin de protéger les données personnelles contre la perte, l’altération, l’accès non autorisé ou la divulgation.
-
-## 11. Sources et liens externes
-
-Le site peut contenir des liens vers des ressources externes, notamment vers des publications, sources réglementaires, ouvrages ou analyses. GSF Consulting International n’est pas responsable des politiques de confidentialité propres à ces sites tiers.
-
-## 12. Mise à jour de la politique
-
-La présente politique peut être modifiée à tout moment pour tenir compte des évolutions légales, réglementaires ou techniques.
-
-**Dernière mise à jour** : 10 mars 2026
+      <p>
+        Pour toute question relative à la confidentialité, aux données personnelles ou à l’usage du site,
+        vous pouvez écrire à
+        <a href="mailto:gilles.feliho@gsfconsultinginternational.com">gilles.feliho@gsfconsultinginternational.com</a>
+        ou <a href="/#contact">utiliser la page de contact</a>.
+      </p>
+    </div>
+  </div>
+</section>
