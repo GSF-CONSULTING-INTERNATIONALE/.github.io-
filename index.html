@@ -1,6 +1,7 @@
 ---
 layout: null
 ---
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -38,6 +39,43 @@ layout: null
         }
         .blog-card:hover, .pilier-card:hover, .offre-card:hover { transform: translateY(-5px); border-color: #06b6d4; }
 
+        /* Trust Section – Glassmorphism harmonisé */
+        .trust-section {
+            padding: 80px 5%;
+            text-align: center;
+            background: rgba(255,255,255,0.02);
+        }
+        .trust-section .glass-card {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px;
+            text-align: left;
+        }
+        .trust-section h2 {
+            font-family: 'Syne', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        .trust-section ul {
+            list-style: none;
+            padding: 0;
+            margin: 25px 0;
+        }
+        .trust-section li {
+            padding: 12px 0 12px 30px;
+            position: relative;
+            font-size: 1.05rem;
+        }
+        .trust-section li:before {
+            content: "•";
+            color: #06b6d4;
+            position: absolute;
+            left: 0;
+            font-size: 1.5rem;
+            line-height: 1;
+        }
+
         /* Mobile */
         #mobile-menu { display: none; flex-direction: column; background: rgba(0, 0, 0, 0.95); padding: 1rem; position: absolute; top: 100%; left: 0; width: 100%; }
         #mobile-menu.active { display: flex; }
@@ -52,26 +90,26 @@ layout: null
         <div class="nav-container">
             <div class="logo">GSF CONSULTING</div>
             <ul class="desktop-menu">
-                <li><a href="/">Accueil</a></li>
-                <li><a href="/a-propos/">À propos</a></li>
-                <li><a href="/audit-souverainete-cognitive/">Audit ASC™</a></li>
-                <li><a href="/etudes-de-cas/">Études de cas</a></li>
-                <li><a href="/gilles-feliho/">L’Expert</a></li>
-                <li><a href="/blog.html">Blog</a></li>
-                <li><a href="/politique-de-confidentialite/">Confidentialité</a></li>
-                <li><a href="/#contact" style="border: 1px solid #06b6d4; padding: 5px 15px; border-radius: 4px;">Contact</a></li>
+                <li><a href="{{ '/' | relative_url }}">Accueil</a></li>
+                <li><a href="{{ '/a-propos/' | relative_url }}">À propos</a></li>
+                <li><a href="{{ '/audit-souverainete-cognitive/' | relative_url }}">Audit ASC™</a></li>
+                <li><a href="{{ '/etudes-de-cas/' | relative_url }}">Études de cas</a></li>
+                <li><a href="{{ '/gilles-feliho/' | relative_url }}">L’Expert</a></li>
+                <li><a href="{{ '/blog.html' | relative_url }}">Blog</a></li>
+                <li><a href="{{ '/politique-de-confidentialite/' | relative_url }}">Confidentialité</a></li>
+                <li><a href="{{ '/#contact' | relative_url }}" style="border: 1px solid #06b6d4; padding: 5px 15px; border-radius: 4px;">Contact</a></li>
             </ul>
             <button id="mobile-menu-btn">☰</button>
         </div>
         <div id="mobile-menu">
-            <a href="/" style="color: #fff; padding: 0.5rem;">Accueil</a>
-            <a href="/a-propos/" style="color: #fff; padding: 0.5rem;">À propos</a>
-            <a href="/audit-souverainete-cognitive/" style="color: #fff; padding: 0.5rem;">Audit ASC™</a>
-            <a href="/etudes-de-cas/" style="color: #fff; padding: 0.5rem;">Études de cas</a>
-            <a href="/gilles-feliho/" style="color: #fff; padding: 0.5rem;">L’Expert</a>
-            <a href="/blog.html" style="color: #fff; padding: 0.5rem;">Blog</a>
-            <a href="/politique-de-confidentialite/" style="color: #fff; padding: 0.5rem;">Confidentialité</a>
-            <a href="/#contact" style="color: #06b6d4; padding: 0.5rem;">Contact</a>
+            <a href="{{ '/' | relative_url }}" style="color: #fff; padding: 0.5rem;">Accueil</a>
+            <a href="{{ '/a-propos/' | relative_url }}" style="color: #fff; padding: 0.5rem;">À propos</a>
+            <a href="{{ '/audit-souverainete-cognitive/' | relative_url }}" style="color: #fff; padding: 0.5rem;">Audit ASC™</a>
+            <a href="{{ '/etudes-de-cas/' | relative_url }}" style="color: #fff; padding: 0.5rem;">Études de cas</a>
+            <a href="{{ '/gilles-feliho/' | relative_url }}" style="color: #fff; padding: 0.5rem;">L’Expert</a>
+            <a href="{{ '/blog.html' | relative_url }}" style="color: #fff; padding: 0.5rem;">Blog</a>
+            <a href="{{ '/politique-de-confidentialite/' | relative_url }}" style="color: #fff; padding: 0.5rem;">Confidentialité</a>
+            <a href="{{ '/#contact' | relative_url }}" style="color: #06b6d4; padding: 0.5rem;">Contact</a>
         </div>
     </nav>
 
@@ -126,6 +164,29 @@ layout: null
         </div>
     </main>
 
+    <!-- BLOC AJOUTÉ : POURQUOI NOUS FAIRE CONFIANCE ? (sous les services) -->
+    <section class="trust-section">
+      <div class="glass-card">
+        <h2>Pourquoi nous faire confiance ?</h2>
+        <p>
+          GSF Consulting International combine expertise juridique, conformité financière,
+          intelligence artificielle et connaissance opérationnelle des environnements
+          africains à forte intensité réglementaire.
+        </p>
+        <ul>
+          <li>Expertise OHADA, LCB-FT, gouvernance IA et conformité bancaire</li>
+          <li>Méthodologie Audit de Souveraineté Cognitive™</li>
+          <li>Analyses publiées sur la souveraineté cognitive, les risques algorithmiques et les flux financiers illicites</li>
+          <li>Approche orientée traçabilité, explicabilité et gouvernance</li>
+        </ul>
+        <p>
+          <a href="{{ '/a-propos/' | relative_url }}">Découvrir le cabinet</a> ·
+          <a href="{{ '/gilles-feliho/' | relative_url }}">Voir le profil de l’expert</a> ·
+          <a href="{{ '/etudes-de-cas/' | relative_url }}">Consulter les études de cas</a>
+        </p>
+      </div>
+    </section>
+
     <!-- BLOG – SECTION RESTÉE EN L'ÉTAT -->
     <section id="blog-list" style="padding: 80px 5%;">
         <h2 style="font-family: 'Syne', sans-serif; font-size: 2.5rem; margin-bottom: 40px; text-align: center;">Analyses & Publications</h2>
@@ -143,7 +204,7 @@ layout: null
           {% endfor %}
         </div>
         <div style="text-align: center; margin-top: 50px;">
-            <a href="/blog.html" style="border: 1px solid #06b6d4; padding: 12px 35px; border-radius: 5px; color: #06b6d4;">Toutes les publications</a>
+            <a href="{{ '/blog.html' | relative_url }}" style="border: 1px solid #06b6d4; padding: 12px 35px; border-radius: 5px; color: #06b6d4;">Toutes les publications</a>
         </div>
     </section>
 
@@ -171,7 +232,7 @@ layout: null
         <p class="cyan" style="font-size: 0.9rem; margin-bottom: 10px;">
             © 2024 GSF Consulting International - Tous droits réservés
         </p>
-        <a href="/mentions-legales.html" style="color: #06b6d4; text-decoration: none; font-weight: 700;">
+        <a href="{{ '/mentions-legales.html' | relative_url }}" style="color: #06b6d4; text-decoration: none; font-weight: 700;">
             Mentions Légales
         </a>
     </footer>
