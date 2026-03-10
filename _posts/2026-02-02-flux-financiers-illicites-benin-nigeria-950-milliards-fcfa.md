@@ -8,7 +8,7 @@ image: /uploads/intelligence-artificielle-droit-ohada-jpg.jpg
 excerpt: "Analyse exclusive des flux financiers illicites transfrontaliers Bénin-Nigeria. Comment l'économie fantôme alimente le terrorisme et quelles solutions technologiques adopter pour restaurer la traçabilité."
 ---
 
-![Flux financiers illicites Bénin-Nigeria — Analyse GSF Consulting](/uploads/intelligence-artificielle-droit-ohada-jpg.jpg)
+![Flux financiers illicites Bénin-Nigeria — Analyse GSF Consulting]
 
 > **Analyse exclusive** des flux financiers illicites transfrontaliers Bénin-Nigeria, basée sur des investigations terrain et données institutionnelles. Révélation des mécanismes de financement du terrorisme via les circuits parallèles de change et propositions de solutions technologiques et réglementaires.
 
