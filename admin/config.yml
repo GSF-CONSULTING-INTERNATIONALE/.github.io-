@@ -1,24 +1,87 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: GSF-CONSULTING-INTERNATIONALE/.github.io-
   branch: main
 
-media_folder: "images/uploads"
-public_folder: "/images/uploads"
+media_folder: "uploads"
+public_folder: "/uploads"
+
+site_url: "https://gsfconsultinginternational.com"
+display_url: "https://gsfconsultinginternational.com"
+logo_url: "/uploads/gilles-sixte-feliho.jpg"
+
+locale: "fr"
 
 collections:
-  - name: "content"
-    label: "Contenu du Site"
+  - name: "posts"
+    label: "Articles du blog"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    preview_path: "analyses/{{slug}}/"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
+      - { label: "Titre", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD" }
+      - { label: "Catégorie", name: "category", widget: "string", required: false }
+      - { label: "Auteur", name: "author", widget: "string", default: "Gilles Sixte Feliho", required: false }
+      - { label: "Image", name: "image", widget: "image", required: false }
+      - { label: "Résumé", name: "excerpt", widget: "text", required: false }
+      - { label: "Dernière mise à jour", name: "last_updated", widget: "datetime", format: "YYYY-MM-DD", required: false }
+      - { label: "URL source", name: "source_url", widget: "string", required: false }
+      - { label: "Contenu", name: "body", widget: "markdown" }
+
+  - name: "pages"
+    label: "Pages fixes"
     files:
-      - label: "Données Globales et Blog"
-        name: "data"
-        file: "data/content.json"
+      - label: "À propos"
+        name: "a_propos"
+        file: "a-propos.md"
         fields:
-          - label: "Articles de Blog"
-            name: "blog_posts"
-            widget: "list"
-            fields:
-              - { label: "Titre", name: "title", widget: "string" }
-              - { label: "Date", name: "date", widget: "datetime" }
-              - { label: "Image", name: "image", widget: "image" }
-              - { label: "Extrait", name: "excerpt", widget: "text" }
-              - { label: "Corps de l'article", name: "body", widget: "markdown" }
+          - { label: "Layout", name: "layout", widget: "hidden", default: "default" }
+          - { label: "Titre", name: "title", widget: "string" }
+          - { label: "Permalien", name: "permalink", widget: "string" }
+          - { label: "Description SEO", name: "description", widget: "text", required: false }
+          - { label: "Contenu", name: "body", widget: "markdown" }
+
+      - label: "Gilles Feliho"
+        name: "gilles_feliho"
+        file: "gilles-feliho.md"
+        fields:
+          - { label: "Layout", name: "layout", widget: "hidden", default: "default" }
+          - { label: "Titre", name: "title", widget: "string" }
+          - { label: "Permalien", name: "permalink", widget: "string" }
+          - { label: "Description SEO", name: "description", widget: "text", required: false }
+          - { label: "Contenu", name: "body", widget: "markdown" }
+
+      - label: "Audit de Souveraineté Cognitive™"
+        name: "audit_souverainete_cognitive"
+        file: "audit-souverainete-cognitive.md"
+        fields:
+          - { label: "Layout", name: "layout", widget: "hidden", default: "default" }
+          - { label: "Titre", name: "title", widget: "string" }
+          - { label: "Permalien", name: "permalink", widget: "string" }
+          - { label: "Description SEO", name: "description", widget: "text", required: false }
+          - { label: "Contenu", name: "body", widget: "markdown" }
+
+      - label: "Études de cas"
+        name: "etudes_de_cas"
+        file: "etudes-de-cas.md"
+        fields:
+          - { label: "Layout", name: "layout", widget: "hidden", default: "default" }
+          - { label: "Titre", name: "title", widget: "string" }
+          - { label: "Permalien", name: "permalink", widget: "string" }
+          - { label: "Description SEO", name: "description", widget: "text", required: false }
+          - { label: "Contenu", name: "body", widget: "markdown" }
+
+      - label: "Politique de confidentialité"
+        name: "politique_confidentialite"
+        file: "politique-de-confidentialite.md"
+        fields:
+          - { label: "Layout", name: "layout", widget: "hidden", default: "default" }
+          - { label: "Titre", name: "title", widget: "string" }
+          - { label: "Permalien", name: "permalink", widget: "string" }
+          - { label: "Description SEO", name: "description", widget: "text", required: false }
+          - { label: "Contenu", name: "body", widget: "markdown" }
