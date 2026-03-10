@@ -95,13 +95,17 @@ description: "Politique de confidentialité de GSF Consulting International : co
 
       <h2>7. Hébergement et services techniques</h2>
       <p>
-        Le site est publié à partir d’un dépôt GitHub et déployé dans un environnement technique de site statique.
-        Lorsque cela s’applique, certains services techniques peuvent intervenir pour l’hébergement,
-        le déploiement, l’administration du contenu et la maintenance du site.
+        Le site est hébergé par :
       </p>
       <p>
-        Si vous souhaitez une version juridiquement ultra-précise de cette section, vous pouvez y faire figurer
-        le nom exact de votre hébergeur ou prestataire de déploiement tel qu’indiqué dans vos conditions techniques en vigueur.
+        <strong>Netlify, Inc.</strong><br>
+        101 2nd Street, San Francisco, CA 94105-2239, États-Unis<br>
+        Site web :
+        <a href="https://www.netlify.com/" target="_blank" rel="noopener">www.netlify.com</a>
+      </p>
+      <p>
+        Le code source et l’administration éditoriale du site peuvent s’appuyer sur des services techniques complémentaires,
+        notamment pour la gestion des fichiers, du versioning ou de la publication de contenu.
       </p>
 
       <h2>8. Cookies et traceurs</h2>
