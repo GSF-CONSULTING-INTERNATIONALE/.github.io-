@@ -3,6 +3,7 @@ layout: default
 title: "Références & preuves sociales"
 permalink: /references-et-preuves/
 description: "Références de mission, preuves sociales, résultats documentés et éléments de confiance de GSF Consulting International."
+last_updated: 2026-03-10
 ---
 
 <section class="legal-page">
@@ -39,7 +40,7 @@ description: "Références de mission, preuves sociales, résultats documentés 
       <p><strong>Pays :</strong> Afrique francophone</p>
       <p><strong>Mode de publication :</strong> Référence anonymisée ; dossier détaillé communiqué uniquement sur demande confidentielle.</p>
       <p class="case-cta">
-        <a class="btn-source" href="/#contact">Demander le dossier anonymisé</a>
+        <a class="btn-source" href="{{ '/#contact' | relative_url }}">Demander le dossier anonymisé</a>
       </p>
     </article>
 
@@ -52,7 +53,7 @@ description: "Références de mission, preuves sociales, résultats documentés 
       <p><strong>Pays :</strong> Afrique francophone</p>
       <p><strong>Mode de publication :</strong> Référence anonymisée ; éléments détaillés transmis après échange confidentiel.</p>
       <p class="case-cta">
-        <a class="btn-source" href="/#contact">Demander le dossier anonymisé</a>
+        <a class="btn-source" href="{{ '/#contact' | relative_url }}">Demander le dossier anonymisé</a>
       </p>
     </article>
 
@@ -65,7 +66,7 @@ description: "Références de mission, preuves sociales, résultats documentés 
       <p><strong>Pays :</strong> Bénin / Nigeria</p>
       <p><strong>Mode de publication :</strong> Source publique accessible en ligne</p>
       <p class="case-cta">
-        <a class="btn-source" href="/analyses/flux-financiers-illicites-benin-nigeria-950-milliards-fcfa/">Lire l’analyse complète</a>
+        <a class="btn-source" href="{{ '/analyses/flux-financiers-illicites-benin-nigeria-950-milliards-fcfa/' | relative_url }}">Lire l’analyse complète</a>
       </p>
     </article>
   </div>
@@ -81,7 +82,7 @@ description: "Références de mission, preuves sociales, résultats documentés 
       </p>
       <p><strong>Date :</strong> 09 mars 2026</p>
       <p class="case-cta">
-        <a class="btn-source" href="/analyses/interview-gilles-feliho-souverainete-cognitive/">Lire l’interview</a>
+        <a class="btn-source" href="{{ '/analyses/interview-gilles-feliho-souverainete-cognitive/' | relative_url }}">Lire l’interview</a>
       </p>
     </article>
 
@@ -92,7 +93,7 @@ description: "Références de mission, preuves sociales, résultats documentés 
         dans un format compatible avec la confidentialité des mandats.
       </p>
       <p class="case-cta">
-        <a class="btn-source" href="/etudes-de-cas/">Voir les études de cas</a>
+        <a class="btn-source" href="{{ '/etudes-de-cas/' | relative_url }}">Voir les études de cas</a>
       </p>
     </article>
 
@@ -130,6 +131,6 @@ description: "Références de mission, preuves sociales, résultats documentés 
   </div>
 
   <p class="case-cta" style="margin-top:2rem;">
-    <a class="btn-source" href="/#contact">Demander un échange confidentiel</a>
+    <a class="btn-source" href="{{ '/#contact' | relative_url }}">Demander un échange confidentiel</a>
   </p>
 </section>
