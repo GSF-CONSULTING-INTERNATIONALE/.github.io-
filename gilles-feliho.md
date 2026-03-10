@@ -1,80 +1,152 @@
 ---
 layout: default
-title: "Gilles Feliho"
+title: "Gilles Sixte Feliho"
 permalink: /gilles-feliho/
-description: "Biographie, expertise, publications et domaines d'intervention de Gilles Sixte Feliho."
+description: "Gilles Sixte Feliho : expert en droit des affaires, conformité bancaire, lutte anti-blanchiment, gouvernance de l’intelligence artificielle et souveraineté cognitive en Afrique francophone."
+image: /uploads/gilles-sixte-feliho.jpg
 ---
 
-# Gilles Sixte Feliho
+<section class="legal-page">
+  <div class="container">
+    <div class="glass-card legal-card">
+      <p class="section-kicker">L’Expert</p>
+      <h1>Gilles Sixte Feliho</h1>
 
-![Gilles Sixte Feliho](/uploads/gilles-sixte-feliho.jpg)
+      <p style="text-align:center; margin: 30px 0;">
+        <img src="/uploads/gilles-sixte-feliho.jpg" alt="Gilles Sixte Feliho" style="max-width: 260px; width: 100%; border-radius: 14px; border: 1px solid rgba(6,182,212,0.25);">
+      </p>
 
-Gilles Sixte Feliho est juriste, analyste stratégique et praticien de la conformité, avec un positionnement singulier à la croisée du droit, de la finance, de la gouvernance algorithmique et de l’intelligence artificielle appliquée à l’Afrique. À travers GSF Consulting International, il développe une approche orientée vers la maîtrise des risques réglementaires, la souveraineté cognitive et l’intégration responsable des technologies d’IA dans les organisations. [Source](https://gsfconsultinginternational.com/) [Source](https://gsfconsultinginternational.com/analyses/interview-gilles-feliho-souverainete-cognitive/)
+      <p class="lead">
+        Gilles Sixte Feliho est juriste, analyste stratégique et praticien de la conformité,
+        avec un positionnement à la croisée du droit des affaires, de la finance, de la lutte
+        contre le blanchiment de capitaux, de la gouvernance algorithmique et de l’intelligence
+        artificielle appliquée à l’Afrique francophone.
+      </p>
 
-## Profil
+      <p>
+        À travers GSF Consulting International, il développe une approche centrée sur la maîtrise
+        des risques réglementaires, la traçabilité des décisions, la souveraineté cognitive et
+        l’intégration responsable de l’intelligence artificielle dans les organisations.
+      </p>
 
-Son travail porte notamment sur :
+      <hr class="soft-divider">
 
-- le droit des affaires et l’environnement OHADA ;
-- la lutte contre le blanchiment de capitaux et le financement du terrorisme ;
-- la gouvernance de l’intelligence artificielle ;
-- la conformité bancaire et financière ;
-- la structuration de dispositifs de traçabilité, d’explicabilité et de contrôle ;
-- la souveraineté cognitive appliquée aux organisations africaines.
+      <h2>Formation</h2>
+      <ul>
+        <li><strong>DESS Banques et Finances</strong></li>
+        <li><strong>Maîtrise en Droit des affaires</strong></li>
+      </ul>
 
-## Une expertise entre droit, terrain et technologies
+      <h2>Domaines d’expertise</h2>
+      <ul>
+        <li>droit des affaires et environnement OHADA ;</li>
+        <li>conformité bancaire et financière ;</li>
+        <li>lutte contre le blanchiment de capitaux et le financement du terrorisme ;</li>
+        <li>gouvernance de l’intelligence artificielle ;</li>
+        <li>audit de traçabilité, d’explicabilité et de responsabilité ;</li>
+        <li>négociation, sécurisation juridique et transformation réglementaire ;</li>
+        <li>souveraineté cognitive appliquée aux institutions et entreprises africaines.</li>
+      </ul>
 
-Dans l’interview publiée sur le site, Gilles Feliho expose une vision dans laquelle le risque lié à l’IA n’est pas seulement technique, mais aussi juridique, invisible, réputationnel et stratégique. Il y présente l’**Audit de Souveraineté Cognitive™**, conçu pour aider les dirigeants à reprendre le contrôle sur les systèmes automatisés influençant leurs décisions. [Source](https://gsfconsultinginternational.com/analyses/interview-gilles-feliho-souverainete-cognitive/)
+      <h2>Parcours et positionnement</h2>
+      <p>
+        Son parcours articule expertise juridique, finance internationale, conformité,
+        lecture stratégique des risques et accompagnement de structures évoluant dans des
+        environnements à forte intensité réglementaire.
+      </p>
 
-Son analyse des flux financiers illicites entre le Bénin et le Nigeria illustre également une forte expérience des mécanismes financiers non tracés, des risques systémiques et des réponses technologiques en matière de KYC biométrique, d’IA de détection et de traçabilité géolocalisée. [Source](https://gsfconsultinginternational.com/analyses/flux-financiers-illicites-benin-nigeria-950-milliards-fcfa/)
+      <p>
+        Des références professionnelles pertinentes et projets de haut niveau confirment une expérience
+        liée au conseil, à la structuration d’initiatives financières, à l’accompagnement d’institutions
+        bancaires ouest-africaines et à des problématiques de développement, de gouvernance et de sécurité
+        juridique. Cette expérience nourrit une approche résolument opérationnelle, orientée résultats,
+        conformité et robustesse décisionnelle.
+      </p>
 
-## Publications et prises de position
+      <p>
+        Gilles Sixte Feliho intervient aujourd’hui sur des sujets où se rencontrent droit, finance,
+        technologie et souveraineté : conformité réglementaire, audit des risques invisibles,
+        explicabilité algorithmique, dispositifs de preuve et sécurisation des chaînes de décision.
+      </p>
 
-Gilles Feliho est mis en avant sur votre site comme auteur et expert, notamment autour des thèmes suivants :
+      <hr class="soft-divider">
 
-- intelligence artificielle et souveraineté cognitive ;
-- gouvernance et conformité ;
-- économie parallèle et sécurité financière ;
-- Afrique, innovation réglementaire et transformation décisionnelle.
+      <h2>Audit de Souveraineté Cognitive™</h2>
+      <p>
+        Gilles Sixte Feliho a développé l’<strong>Audit de Souveraineté Cognitive™</strong>,
+        une méthodologie destinée à aider les organisations à reprendre le contrôle sur les systèmes
+        automatisés et dispositifs décisionnels qui influencent leur gouvernance, leur conformité
+        et leur responsabilité.
+      </p>
 
-Le site mentionne également ses ouvrages, dont *Homo Algorithmicus* et *Blanchiment en liberté*. [Source](https://gsfconsultinginternational.com/) [Source](https://www.amazon.fr/Blanchiment-libert%C3%A9-Comment-failles-b%C3%A9ninois-ebook/dp/B0FBKFJRZC)
+      <p>Cette méthodologie repose sur trois piliers :</p>
 
-## Méthodologie : Audit de Souveraineté Cognitive™
+      <h3>1. Cartographier les risques invisibles</h3>
+      <p>
+        Identifier les biais, angles morts, dépendances, zones d’opacité et risques de
+        « black box juridique » susceptibles d’affaiblir la décision.
+      </p>
 
-L’ASC™ repose sur trois piliers :
+      <h3>2. Assurer la traçabilité de la décision</h3>
+      <p>
+        Mettre en place des mécanismes de preuve, de journalisation, d’auditabilité et de justification
+        pour renforcer la sécurité juridique et la gouvernance.
+      </p>
 
-### 1. Cartographier les risques invisibles
-Identifier les biais, angles morts, zones de non-explicabilité, points de dépendance et risques de “black box juridique”.
+      <h3>3. Installer une gouvernance proactive</h3>
+      <p>
+        Définir les responsabilités, seuils d’alerte, procédures d’arbitrage, règles de supervision
+        et mécanismes de conformité adaptés aux usages de l’IA et aux enjeux réglementaires.
+      </p>
 
-### 2. Assurer la traçabilité de la décision
-Mettre en place des mécanismes de preuve, de journalisation, d’auditabilité et de justification des recommandations ou décisions assistées par IA.
+      <hr class="soft-divider">
 
-### 3. Installer une gouvernance proactive
-Définir les règles internes, les responsabilités, les seuils d’alerte, les procédures d’arbitrage et le pilotage de la conformité.
+      <h2>Publications et analyses</h2>
+      <p>
+        Les travaux et prises de position de Gilles Sixte Feliho portent notamment sur :
+      </p>
+      <ul>
+        <li>la souveraineté cognitive et la gouvernance de l’IA ;</li>
+        <li>la conformité bancaire et financière ;</li>
+        <li>les flux financiers illicites et la traçabilité ;</li>
+        <li>l’innovation réglementaire en Afrique francophone ;</li>
+        <li>l’intersection entre droit, sécurité économique et transformation technologique.</li>
+      </ul>
 
-Cette méthodologie est décrite dans l’interview comme un levier pour transformer une contrainte réglementaire en avantage stratégique. [Source](https://gsfconsultinginternational.com/analyses/interview-gilles-feliho-souverainete-cognitive/)
+      <p>
+        Le site met également en avant ses ouvrages, dont <em>Homo Algorithmicus</em>
+        et <em>Blanchiment en liberté</em>.
+      </p>
 
-## Références éditoriales du site
+      <p>
+        Articles à consulter :
+      </p>
+      <ul>
+        <li><a href="/analyses/interview-gilles-feliho-souverainete-cognitive/">Interview : Gilles FELIHO, l’architecte de la Souveraineté Cognitive™ face aux nouveaux risques de l’IA</a></li>
+        <li><a href="/analyses/flux-financiers-illicites-benin-nigeria-950-milliards-fcfa/">Révélation : 700 à 950 milliards FCFA échappent chaque année aux contrôles entre le Bénin et le Nigeria</a></li>
+      </ul>
 
-Articles à lire :
-- [Interview : Gilles FELIHO, l'architecte de la Souveraineté Cognitive™ face aux nouveaux risques de l'IA](/analyses/interview-gilles-feliho-souverainete-cognitive/)
-- [Révélation : 700 à 950 milliards FCFA échappent chaque année aux contrôles entre le Bénin et le Nigeria](/analyses/flux-financiers-illicites-benin-nigeria-950-milliards-fcfa/)
+      <hr class="soft-divider">
 
-## Présence professionnelle
+      <h2>Présence professionnelle</h2>
+      <p>
+        Profil LinkedIn :
+        <a href="https://fr.linkedin.com/in/gillesfelihoformateur" target="_blank" rel="noopener">
+          fr.linkedin.com/in/gillesfelihoformateur
+        </a>
+      </p>
 
-- LinkedIn : [Profil public Gilles Feliho](https://fr.linkedin.com/in/gillesfelihoformateur)
+      <h2>Contact</h2>
+      <p>
+        Pour toute demande de conseil, d’audit, d’intervention, de conférence ou de partenariat,
+        vous pouvez écrire à :
+        <a href="mailto:gilles.feliho@gsfconsultinginternational.com">gilles.feliho@gsfconsultinginternational.com</a>
+      </p>
 
-## Informations à compléter pour renforcer la page
-
-Ajoutez si possible :
-- CV détaillé ;
-- diplômes et certifications ;
-- affiliations professionnelles ;
-- interventions / conférences ;
-- publications académiques ou tribunes externes ;
-- distinctions ;
-- liens presse.
-
-## Contact
-
-Pour une demande d’intervention, d’audit, de conseil ou de conférence, utilisez la page d’accueil ou contactez GSF Consulting International via les coordonnées affichées sur le site. [Source](https://gsfconsultinginternational.com/)
+      <p>
+        Vous pouvez également <a href="/#contact">utiliser la page de contact</a>
+        ou <a href="/a-propos/">découvrir le cabinet</a>.
+      </p>
+    </div>
+  </div>
+</section>
