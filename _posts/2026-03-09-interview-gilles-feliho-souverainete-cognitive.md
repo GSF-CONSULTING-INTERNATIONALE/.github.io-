@@ -8,7 +8,7 @@ image: /uploads/interview-gilles-feliho.PNG
 excerpt: "Parcours entre Paris et l'Afrique de l'Ouest, Audit de Souveraineté Cognitive™, lutte anti-blanchiment et gouvernance de l'IA : Gilles FELIHO dévoile sa vision exclusive."
 ---
 
-![Gilles FELIHO — Architecte de la Souveraineté Cognitive™](/uploads/interview-gilles-feliho.PNG)
+![Gilles FELIHO — Architecte de la Souveraineté Cognitive™]
 
 ---
 
