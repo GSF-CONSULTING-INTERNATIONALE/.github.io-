@@ -1,0 +1,856 @@
+---
+layout: null
+---
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flux financiers illicites Bénin–Nigeria — GSF Consulting International</title>
+  <meta name="description" content="Étude de cas : analyse des flux financiers transfrontaliers illicites Bénin–Nigeria. 700 à 950 milliards FCFA annuels, 15 % du PIB béninois, 211 points de passage frauduleux. Recommandations KYC, IA et RASME.">
+  <meta name="keywords" content="flux financiers illicites, Bénin, Nigeria, LCB-FT, BCEAO, GIABA, KYC biométrique, RASME, blanchiment, Afrique de l'Ouest, GSF Consulting International">
+  <link rel="canonical" href="https://gsfconsultinginternational.com/etudes-de-cas/flux-financiers-benin-nigeria/">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/css/style.css">
+
+  <style>
+    /* ── Reset & base ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: #050505;
+      color: #e2e8f0;
+      font-family: 'Space Grotesk', sans-serif;
+      min-height: 100vh;
+      line-height: 1.7;
+    }
+
+    /* ── Animated grid background ── */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(6,182,212,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(6,182,212,0.04) 1px, transparent 1px);
+      background-size: 60px 60px;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    /* ── Navbar ── */
+    .navbar {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1000;
+      padding: 18px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: rgba(5,5,5,0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(6,182,212,0.12);
+      transition: padding 0.3s ease;
+    }
+    .navbar.scrolled { padding: 12px 40px; }
+    .navbar-brand {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: #06b6d4;
+      text-decoration: none;
+      letter-spacing: 0.02em;
+      white-space: nowrap;
+    }
+    .navbar-brand span { color: #e2e8f0; }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      list-style: none;
+    }
+    .nav-links a {
+      color: #94a3b8;
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 500;
+      letter-spacing: 0.03em;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover,
+    .nav-links a.active { color: #06b6d4; }
+    .nav-cta {
+      background: linear-gradient(135deg, #06b6d4, #0891b2);
+      color: #050505 !important;
+      padding: 8px 20px;
+      border-radius: 6px;
+      font-weight: 700 !important;
+      transition: transform 0.2s, box-shadow 0.2s !important;
+    }
+    .nav-cta:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 16px rgba(6,182,212,0.35);
+    }
+
+    /* ── Hamburger ── */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 4px;
+    }
+    .hamburger span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: #e2e8f0;
+      border-radius: 2px;
+      transition: all 0.3s ease;
+    }
+
+    /* ── Mobile menu ── */
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 999;
+      background: rgba(5,5,5,0.97);
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 32px;
+    }
+    .mobile-menu.active { display: flex; }
+    .mobile-menu a {
+      color: #e2e8f0;
+      text-decoration: none;
+      font-family: 'Syne', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      transition: color 0.2s;
+    }
+    .mobile-menu a:hover { color: #06b6d4; }
+    .mobile-close {
+      position: absolute;
+      top: 24px; right: 32px;
+      font-size: 2rem;
+      color: #94a3b8;
+      cursor: pointer;
+      background: none;
+      border: none;
+      line-height: 1;
+    }
+
+    /* ── Page wrapper ── */
+    .page-wrapper {
+      position: relative;
+      z-index: 1;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 110px 24px 80px;
+    }
+
+    /* ── Breadcrumb ── */
+    .breadcrumb {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.82rem;
+      color: #475569;
+      margin-bottom: 28px;
+      flex-wrap: wrap;
+    }
+    .breadcrumb a {
+      color: #64748b;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .breadcrumb a:hover { color: #06b6d4; }
+    .breadcrumb .sep { color: #334155; }
+    .breadcrumb .current { color: #94a3b8; }
+
+    /* ── Méta bar ── */
+    .meta-bar {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 36px;
+    }
+    .meta-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(6,182,212,0.08);
+      border: 1px solid rgba(6,182,212,0.2);
+      border-radius: 20px;
+      padding: 5px 14px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #06b6d4;
+    }
+    .meta-tag.alert {
+      background: rgba(239,68,68,0.08);
+      border-color: rgba(239,68,68,0.25);
+      color: #f87171;
+    }
+
+    /* ── Glass card ── */
+    .glass-card {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(6,182,212,0.15);
+      border-radius: 16px;
+      padding: 48px 56px;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      margin-bottom: 24px;
+    }
+
+    /* ── Section kicker ── */
+    .section-kicker {
+      font-family: 'Syne', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #06b6d4;
+      margin-bottom: 14px;
+    }
+
+    /* ── Typography ── */
+    h1 {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(1.8rem, 3.5vw, 2.4rem);
+      font-weight: 800;
+      color: #f1f5f9;
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+    h2 {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #06b6d4;
+      margin: 36px 0 12px;
+    }
+    h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #e2e8f0;
+      margin: 0 0 4px;
+    }
+    p {
+      color: #94a3b8;
+      margin-bottom: 16px;
+      font-size: 0.975rem;
+    }
+    ol {
+      color: #94a3b8;
+      padding-left: 22px;
+      margin-bottom: 16px;
+    }
+    ol li {
+      margin-bottom: 10px;
+      font-size: 0.975rem;
+      line-height: 1.65;
+    }
+    a { color: #06b6d4; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    strong { color: #e2e8f0; }
+
+    /* ── Divider ── */
+    .soft-divider {
+      border: none;
+      border-top: 1px solid rgba(6,182,212,0.14);
+      margin: 36px 0;
+    }
+
+    /* ── KPI grid ── */
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+      gap: 16px;
+      margin: 24px 0;
+    }
+    .kpi-card {
+      background: rgba(6,182,212,0.06);
+      border: 1px solid rgba(6,182,212,0.2);
+      border-radius: 12px;
+      padding: 22px 16px;
+      text-align: center;
+      transition: border-color 0.25s, transform 0.25s;
+    }
+    .kpi-card:hover {
+      border-color: #06b6d4;
+      transform: translateY(-3px);
+    }
+    .kpi-card.danger {
+      background: rgba(239,68,68,0.05);
+      border-color: rgba(239,68,68,0.18);
+    }
+    .kpi-card.danger:hover { border-color: #ef4444; }
+    .kpi-value {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: #06b6d4;
+      line-height: 1.1;
+      margin-bottom: 6px;
+    }
+    .kpi-card.danger .kpi-value { color: #f87171; }
+    .kpi-label {
+      font-size: 0.77rem;
+      color: #64748b;
+      font-weight: 500;
+      line-height: 1.4;
+    }
+
+    /* ── Données table ── */
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 0.92rem;
+    }
+    .data-table th {
+      background: rgba(6,182,212,0.1);
+      color: #06b6d4;
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 0.8rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 12px 16px;
+      text-align: left;
+      border-bottom: 1px solid rgba(6,182,212,0.2);
+    }
+    .data-table td {
+      padding: 11px 16px;
+      color: #94a3b8;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+    }
+    .data-table tr:last-child td { border-bottom: none; }
+    .data-table td:first-child { color: #cbd5e1; font-weight: 500; }
+    .data-table td strong { color: #06b6d4; font-weight: 700; }
+    .data-table tr:hover td { background: rgba(6,182,212,0.03); }
+
+    /* ── Risques ── */
+    .risk-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin: 16px 0;
+      list-style: none;
+      padding: 0;
+    }
+    .risk-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      background: rgba(239,68,68,0.05);
+      border: 1px solid rgba(239,68,68,0.15);
+      border-left: 3px solid #ef4444;
+      border-radius: 8px;
+      padding: 14px 16px;
+      font-size: 0.93rem;
+      color: #fca5a5;
+      line-height: 1.5;
+    }
+    .risk-list li::before {
+      content: '⚠️';
+      font-size: 1rem;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    /* ── Recommandations ── */
+    .reco-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin: 20px 0;
+      counter-reset: reco;
+    }
+    .reco-item {
+      display: grid;
+      grid-template-columns: 44px 1fr;
+      gap: 16px;
+      align-items: start;
+      padding: 16px 18px;
+      background: rgba(6,182,212,0.04);
+      border: 1px solid rgba(6,182,212,0.12);
+      border-radius: 10px;
+      transition: border-color 0.2s;
+      counter-increment: reco;
+    }
+    .reco-item:hover { border-color: rgba(6,182,212,0.3); }
+    .reco-num {
+      background: rgba(6,182,212,0.12);
+      border: 1px solid rgba(6,182,212,0.3);
+      border-radius: 8px;
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Syne', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 800;
+      color: #06b6d4;
+      flex-shrink: 0;
+    }
+    .reco-item h3 { font-size: 0.95rem; color: #e2e8f0; margin-bottom: 4px; }
+    .reco-item p { margin: 0; font-size: 0.87rem; color: #64748b; line-height: 1.55; }
+
+    /* ── Impact table ── */
+    .impact-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 0.92rem;
+    }
+    .impact-table th {
+      background: rgba(16,185,129,0.1);
+      color: #10b981;
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 0.8rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 12px 16px;
+      text-align: left;
+      border-bottom: 1px solid rgba(16,185,129,0.2);
+    }
+    .impact-table td {
+      padding: 12px 16px;
+      color: #94a3b8;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+    }
+    .impact-table tr:last-child td { border-bottom: none; }
+    .impact-table td:first-child {
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+    .impact-table tr:nth-child(1) td:first-child { color: #fbbf24; }
+    .impact-table tr:nth-child(2) td:first-child { color: #34d399; }
+    .impact-table tr:nth-child(3) td:first-child { color: #06b6d4; }
+    .impact-table td strong { color: #e2e8f0; font-weight: 700; }
+    .impact-table tr:hover td { background: rgba(16,185,129,0.03); }
+
+    /* ── Publication info ── */
+    .pub-info {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      background: rgba(6,182,212,0.04);
+      border: 1px solid rgba(6,182,212,0.12);
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin-bottom: 28px;
+      font-size: 0.85rem;
+      color: #64748b;
+    }
+    .pub-info span { display: flex; align-items: center; gap: 6px; }
+    .pub-info strong { color: #94a3b8; }
+
+    /* ── CTA block ── */
+    .cta-block {
+      background: linear-gradient(135deg, rgba(6,182,212,0.06), rgba(8,145,178,0.04));
+      border: 1px solid rgba(6,182,212,0.2);
+      border-radius: 14px;
+      padding: 36px 40px;
+      text-align: center;
+    }
+    .cta-block h2 {
+      font-size: 1.3rem;
+      margin-top: 0;
+      margin-bottom: 12px;
+      color: #f1f5f9;
+    }
+    .cta-block p { margin-bottom: 24px; font-size: 0.95rem; }
+    .cta-row {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .btn-primary {
+      display: inline-block;
+      background: linear-gradient(135deg, #06b6d4, #0891b2);
+      color: #050505;
+      font-weight: 700;
+      font-family: 'Space Grotesk', sans-serif;
+      padding: 12px 28px;
+      border-radius: 8px;
+      text-decoration: none !important;
+      transition: transform 0.2s, box-shadow 0.2s;
+      font-size: 0.95rem;
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(6,182,212,0.35);
+    }
+    .btn-secondary {
+      display: inline-block;
+      border: 1px solid rgba(6,182,212,0.35);
+      color: #06b6d4;
+      font-weight: 600;
+      font-family: 'Space Grotesk', sans-serif;
+      padding: 12px 28px;
+      border-radius: 8px;
+      text-decoration: none !important;
+      transition: border-color 0.2s, background 0.2s;
+      font-size: 0.95rem;
+    }
+    .btn-secondary:hover {
+      border-color: #06b6d4;
+      background: rgba(6,182,212,0.08);
+    }
+
+    /* ── Footer ── */
+    footer {
+      position: relative;
+      z-index: 1;
+      background: rgba(5,5,5,0.9);
+      border-top: 1px solid rgba(6,182,212,0.1);
+      padding: 40px 24px;
+      text-align: center;
+    }
+    footer p { font-size: 0.85rem; color: #475569; margin-bottom: 8px; }
+    footer a { color: #06b6d4; font-size: 0.85rem; }
+
+    /* ── Responsive ── */
+    @media (max-width: 768px) {
+      .navbar { padding: 16px 20px; }
+      .navbar.scrolled { padding: 12px 20px; }
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+      .page-wrapper { padding: 95px 16px 60px; }
+      .glass-card { padding: 28px 20px; }
+      .kpi-grid { grid-template-columns: repeat(2, 1fr); }
+      .reco-item { grid-template-columns: 1fr; gap: 8px; }
+      .cta-block { padding: 28px 20px; }
+      .cta-row { flex-direction: column; align-items: center; }
+      .data-table,
+      .impact-table { font-size: 0.83rem; }
+      .data-table th,
+      .data-table td,
+      .impact-table th,
+      .impact-table td { padding: 9px 10px; }
+      .pub-info { flex-direction: column; gap: 8px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <a href="/" class="navbar-brand">GSF <span>Consulting</span></a>
+    <ul class="nav-links">
+      <li><a href="/">Accueil</a></li>
+      <li><a href="/a-propos/">À propos</a></li>
+      <li><a href="/audit-souverainete-cognitive/">Audit ASC™</a></li>
+      <li><a href="/etudes-de-cas/" class="active">Études de cas</a></li>
+      <li><a href="/gilles-feliho/">L'Expert</a></li>
+      <li><a href="/analyses/">Blog</a></li>
+      <li><a href="/politique-de-confidentialite/">Confidentialité</a></li>
+      <li><a href="/#contact" class="nav-cta">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════
+       MOBILE MENU
+  ═══════════════════════════════════════════ -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" id="mobileClose" aria-label="Fermer">✕</button>
+    <a href="/" onclick="closeMobile()">Accueil</a>
+    <a href="/a-propos/" onclick="closeMobile()">À propos</a>
+    <a href="/audit-souverainete-cognitive/" onclick="closeMobile()">Audit ASC™</a>
+    <a href="/etudes-de-cas/" onclick="closeMobile()">Études de cas</a>
+    <a href="/gilles-feliho/" onclick="closeMobile()">L'Expert</a>
+    <a href="/analyses/" onclick="closeMobile()">Blog</a>
+    <a href="/politique-de-confidentialite/" onclick="closeMobile()">Confidentialité</a>
+    <a href="/#contact" onclick="closeMobile()">Contact</a>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       MAIN CONTENT
+  ═══════════════════════════════════════════ -->
+  <main class="page-wrapper">
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb" aria-label="Fil d'Ariane">
+      <a href="/">Accueil</a>
+      <span class="sep">›</span>
+      <a href="/etudes-de-cas/">Études de cas</a>
+      <span class="sep">›</span>
+      <span class="current">Flux financiers Bénin–Nigeria</span>
+    </nav>
+
+    <!-- Méta -->
+    <div class="meta-bar">
+      <span class="meta-tag">🔍 LCB-FT</span>
+      <span class="meta-tag">📅 02 février 2026</span>
+      <span class="meta-tag">✍️ Gilles Sixte Feliho</span>
+      <span class="meta-tag alert">⚠️ Analyse publique</span>
+    </div>
+
+    <!-- ── Card principale ── -->
+    <div class="glass-card">
+      <p class="section-kicker">Étude de cas · Cas 3</p>
+      <h1>Flux financiers illicites Bénin–Nigeria</h1>
+
+      <!-- Info publication -->
+      <div class="pub-info">
+        <span>📋 <strong>Domaine :</strong> LCB-FT, conformité transfrontalière</span>
+        <span>📅 <strong>Publication :</strong> 02 février 2026</span>
+        <span>✍️ <strong>Auteur :</strong>
+          <a href="/gilles-feliho/">Gilles Sixte Feliho</a>
+        </span>
+      </div>
+
+      <!-- KPIs vedette -->
+      <div class="kpi-grid">
+        <div class="kpi-card">
+          <div class="kpi-value">700–950 Mrd</div>
+          <div class="kpi-label">FCFA de flux<br>annuels estimés</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-value">≈ 15 %</div>
+          <div class="kpi-label">du PIB<br>béninois</div>
+        </div>
+        <div class="kpi-card danger">
+          <div class="kpi-value">211</div>
+          <div class="kpi-label">points de passage<br>frauduleux identifiés</div>
+        </div>
+        <div class="kpi-card danger">
+          <div class="kpi-value">30 %</div>
+          <div class="kpi-label">écart de change<br>maximal</div>
+        </div>
+      </div>
+
+      <hr class="soft-divider">
+
+      <!-- Contexte -->
+      <h2>Contexte</h2>
+      <p>
+        Une analyse publique commandée sur les flux financiers transfrontaliers informels
+        entre le <strong>Bénin</strong> et le <strong>Nigeria</strong> révèle une économie
+        fantôme structurée représentant <strong>15 % du PIB béninois</strong>, soit
+        <strong>deux fois l'aide internationale</strong> reçue par le pays.
+      </p>
+
+      <!-- Données clés -->
+      <h2>Données clés</h2>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Indicateur</th>
+            <th>Valeur</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Flux annuels estimés</td>
+            <td><strong>700 – 950 milliards FCFA</strong></td>
+          </tr>
+          <tr>
+            <td>Part du PIB béninois</td>
+            <td><strong>≈ 15 %</strong></td>
+          </tr>
+          <tr>
+            <td>Importations informelles Nigeria → Bénin (2023)</td>
+            <td><strong>935,6 milliards FCFA</strong></td>
+          </tr>
+          <tr>
+            <td>Exportations informelles Bénin → Nigeria (2023)</td>
+            <td><strong>608,2 milliards FCFA</strong></td>
+          </tr>
+          <tr>
+            <td>Points de passage frauduleux identifiés</td>
+            <td><strong>211</strong> (source : INStaD Bénin)</td>
+          </tr>
+          <tr>
+            <td>Écart de change</td>
+            <td><strong>jusqu'à 30 %</strong></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <hr class="soft-divider">
+
+      <!-- Risques identifiés -->
+      <h2>Risques identifiés</h2>
+      <ul class="risk-list">
+        <li>Financement du terrorisme dans le <strong>nord du Bénin</strong></li>
+        <li>Transferts anonymes hors de tout contrôle <strong>BCEAO / GIABA</strong></li>
+        <li>Absence de <strong>KYC</strong> sur les corridors informels</li>
+      </ul>
+
+      <hr class="soft-divider">
+
+      <!-- Recommandations -->
+      <h2>Recommandations GSF Consulting International</h2>
+      <div class="reco-grid">
+        <div class="reco-item">
+          <div class="reco-num">1</div>
+          <div>
+            <h3>KYC biométrique obligatoire</h3>
+            <p>Déploiement des plateformes <strong>RASME</strong> (Banque mondiale) et
+            <strong>DAT-IDCanopy</strong> (UEMOA) sur les corridors à risque.</p>
+          </div>
+        </div>
+        <div class="reco-item">
+          <div class="reco-num">2</div>
+          <div>
+            <h3>Détection IA des patterns</h3>
+            <p>Modèles de surveillance des flux pour le reporting
+            <strong>LCB-FT</strong> — identification des schémas atypiques en temps réel.</p>
+          </div>
+        </div>
+        <div class="reco-item">
+          <div class="reco-num">3</div>
+          <div>
+            <h3>Harmonisation réglementaire</h3>
+            <p>Application de l'<strong>Instruction BCEAO n°003-03-2025</strong>,
+            coordination renforcée avec le <strong>GIABA</strong>.</p>
+          </div>
+        </div>
+        <div class="reco-item">
+          <div class="reco-num">4</div>
+          <div>
+            <h3>Inclusion financière</h3>
+            <p>Déploiement d'<strong>agences mobiles à faible coût</strong> dans les zones
+            frontalières pour canaliser les flux informels vers le circuit formel.</p>
+          </div>
+        </div>
+        <div class="reco-item">
+          <div class="reco-num">5</div>
+          <div>
+            <h3>Coopération sécuritaire</h3>
+            <p>Accord <strong>Bénin–Égypte</strong> (4 juin 2025) pour la surveillance
+            financière intégrée et le partage de renseignement financier.</p>
+          </div>
+        </div>
+      </div>
+
+      <hr class="soft-divider">
+
+      <!-- Simulation d'impact -->
+      <h2>Simulation d'impact économique</h2>
+      <p>
+        Si une fraction seulement des flux est récupérée via les mécanismes proposés,
+        l'impact sur l'économie béninoise serait considérable :
+      </p>
+      <table class="impact-table">
+        <thead>
+          <tr>
+            <th>Scénario</th>
+            <th>Flux récupérés</th>
+            <th>Impact estimé</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>10 % récupérés</td>
+            <td><strong>95 milliards FCFA</strong></td>
+            <td>≈ <strong>47 500 emplois</strong> créés</td>
+          </tr>
+          <tr>
+            <td>25 % récupérés</td>
+            <td><strong>237 milliards FCFA</strong></td>
+            <td>≈ <strong>5 hôpitaux régionaux</strong></td>
+          </tr>
+          <tr>
+            <td>50 % récupérés</td>
+            <td><strong>468 milliards FCFA</strong></td>
+            <td>≈ <strong>10 universités</strong></td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div><!-- /.glass-card -->
+
+    <!-- ── CTA ── -->
+    <div class="cta-block">
+      <h2>Approfondir l'analyse</h2>
+      <p>
+        L'analyse complète de <a href="/gilles-feliho/">Gilles Sixte Feliho</a> est
+        disponible en accès public. Consultez également les
+        <a href="/etudes-de-cas/">autres études de cas</a> ou contactez l'expert
+        pour une mission de conformité LCB-FT.
+      </p>
+      <div class="cta-row">
+        <a href="/analyses/flux-financiers-illicites-benin-nigeria-950-milliards-fcfa/"
+           class="btn-primary">Lire l'analyse publique complète</a>
+        <a href="/#contact" class="btn-secondary">Contacter l'expert</a>
+        <a href="/etudes-de-cas/" class="btn-secondary">← Toutes les études de cas</a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer>
+    <p>© 2024 GSF Consulting International — Tous droits réservés</p>
+    <p>
+      <a href="/politique-de-confidentialite/">Mentions légales &amp; Confidentialité</a>
+      &nbsp;·&nbsp;
+      <a href="mailto:gilles.feliho@gsfconsultinginternational.com">
+        gilles.feliho@gsfconsultinginternational.com
+      </a>
+    </p>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════
+       SCRIPTS
+  ═══════════════════════════════════════════ -->
+  <script>
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 40);
+    });
+
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileClose = document.getElementById('mobileClose');
+
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    });
+
+    mobileClose.addEventListener('click', closeMobile);
+
+    function closeMobile() {
+      mobileMenu.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') closeMobile();
+    });
+  </script>
+
+</body>
+</html>
