@@ -209,4 +209,4 @@ Chez **GSF Consulting International**, notre approche repose sur l'**Audit de So
 
 **Gilles Feliho** est Directeur de [GSF Consulting International](https://gsfconsultinginternational.com), cabinet spécialisé dans l'alliance du droit OHADA/UEMOA et de l'intelligence artificielle. Depuis plus de 20 ans, il accompagne les grandes institutions de l'espace francophone dans la sécurisation de leurs processus juridiques critiques. Auteur de *Homo Algorithmicus* et *Blanchiment en liberté*.
 
-📩 **Contactez-nous** pour un audit de souveraineté cognitive de vos données judiciaires : [gsfconsultinginternational.com](https://gsfconsultinginternational.com/#contact)
+📩 **Contactez-nous** pour un audit de souveraineté cognitive de vos données judiciaires : [ gilles.feliho@gsfconsultinginternational.com](https://gsfconsultinginternational.com/#contact)
