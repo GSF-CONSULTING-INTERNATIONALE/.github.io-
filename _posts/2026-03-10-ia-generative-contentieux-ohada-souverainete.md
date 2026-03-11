@@ -16,7 +16,7 @@ tags:
   - justice prédictive
   - droit des affaires africain
 author: "Gilles Sixte Feliho"
-image: /uploads/ia-generative-prédictions-juridiques-enjeux-souverains.PNG 
+image: /uploads/ia-generative-predictions-juridiques-enjeux-souverains.PNG 
 excerpt: "IA générative et contentieux OHADA : entre outils concrets (Jurisprudence.cc, Maathis) et défis de souveraineté numérique. Analyse des prédictions juridiques automatisées et recommandations opérationnelles par GSF Consulting International."
 source_url: "https://gsfconsultinginternational.com/analyses/ia-generative-contentieux-ohada-souverainete/"
 permalink: /analyses/ia-generative-contentieux-ohada-souverainete/
