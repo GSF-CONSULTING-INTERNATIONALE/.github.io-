@@ -7,7 +7,7 @@ last_updated: 2026-03-10
 category: "Intelligence Artificielle"
 tags: [Droit OHADA, LegalTech, Expertise Humaine, UEMOA, Barreaux africains]
 author: "Gilles Sixte Feliho"
-image: /uploads/intelligence-artificielle-droit-ohada-jpg.jpg
+image: /uploads/img-6965.png
 excerpt: "L'IA remplacera-t-elle les avocats en Afrique ? Analyse critique ancrée dans les réalités du droit OHADA, de l'UEMOA et des prises de position officielles des barreaux africains en 2025."
 source_url: "https://gsfconsultinginternational.com"
 ---
