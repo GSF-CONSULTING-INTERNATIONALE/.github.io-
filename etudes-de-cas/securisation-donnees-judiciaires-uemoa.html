@@ -1,0 +1,1155 @@
+---
+layout: null
+---
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sécurisation des données judiciaires — État UEMOA | GSF Consulting International</title>
+  <meta name="description" content="Étude de cas : sécurisation souveraine des données judiciaires d'un État membre de l'UEMOA. 2 400 milliards FCFA protégés, uptime 99,9 %, latence 25 ms, risque CLOUD Act réduit à &lt;5 %. Audit de Souveraineté Cognitive™.">
+  <meta name="keywords" content="données judiciaires, UEMOA, OHADA, souveraineté numérique, CLOUD Act, e-RCCM, GSF Consulting International, Gilles Feliho, audit de souveraineté cognitive">
+  <link rel="canonical" href="https://gsfconsultinginternational.com/etudes-de-cas/securisation-donnees-judiciaires-uemoa/">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/css/style.css">
+
+  <style>
+    /* ── Reset & base ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: #050505;
+      color: #e2e8f0;
+      font-family: 'Space Grotesk', sans-serif;
+      min-height: 100vh;
+      line-height: 1.7;
+    }
+
+    /* ── Animated grid background ── */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(6,182,212,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(6,182,212,0.04) 1px, transparent 1px);
+      background-size: 60px 60px;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    /* ── Navbar ── */
+    .navbar {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1000;
+      padding: 18px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: rgba(5,5,5,0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(6,182,212,0.12);
+      transition: padding 0.3s ease;
+    }
+    .navbar.scrolled { padding: 12px 40px; }
+    .navbar-brand {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: #06b6d4;
+      text-decoration: none;
+      letter-spacing: 0.02em;
+      white-space: nowrap;
+    }
+    .navbar-brand span { color: #e2e8f0; }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      list-style: none;
+    }
+    .nav-links a {
+      color: #94a3b8;
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 500;
+      letter-spacing: 0.03em;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover,
+    .nav-links a.active { color: #06b6d4; }
+    .nav-cta {
+      background: linear-gradient(135deg, #06b6d4, #0891b2);
+      color: #050505 !important;
+      padding: 8px 20px;
+      border-radius: 6px;
+      font-weight: 700 !important;
+      transition: transform 0.2s, box-shadow 0.2s !important;
+    }
+    .nav-cta:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 16px rgba(6,182,212,0.35);
+    }
+
+    /* ── Hamburger ── */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 4px;
+    }
+    .hamburger span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: #e2e8f0;
+      border-radius: 2px;
+      transition: all 0.3s ease;
+    }
+
+    /* ── Mobile menu ── */
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 999;
+      background: rgba(5,5,5,0.97);
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 32px;
+    }
+    .mobile-menu.active { display: flex; }
+    .mobile-menu a {
+      color: #e2e8f0;
+      text-decoration: none;
+      font-family: 'Syne', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      transition: color 0.2s;
+    }
+    .mobile-menu a:hover { color: #06b6d4; }
+    .mobile-close {
+      position: absolute;
+      top: 24px; right: 32px;
+      font-size: 2rem;
+      color: #94a3b8;
+      cursor: pointer;
+      background: none;
+      border: none;
+      line-height: 1;
+    }
+
+    /* ── Page wrapper ── */
+    .page-wrapper {
+      position: relative;
+      z-index: 1;
+      max-width: 940px;
+      margin: 0 auto;
+      padding: 110px 24px 80px;
+    }
+
+    /* ── Breadcrumb ── */
+    .breadcrumb {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.82rem;
+      color: #475569;
+      margin-bottom: 28px;
+      flex-wrap: wrap;
+    }
+    .breadcrumb a {
+      color: #64748b;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .breadcrumb a:hover { color: #06b6d4; }
+    .breadcrumb .sep { color: #334155; }
+    .breadcrumb .current { color: #94a3b8; }
+
+    /* ── Méta bar ── */
+    .meta-bar {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 36px;
+    }
+    .meta-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(6,182,212,0.08);
+      border: 1px solid rgba(6,182,212,0.2);
+      border-radius: 20px;
+      padding: 5px 14px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #06b6d4;
+    }
+    .meta-tag.warning {
+      background: rgba(251,191,36,0.08);
+      border-color: rgba(251,191,36,0.25);
+      color: #fbbf24;
+    }
+
+    /* ── Glass card ── */
+    .glass-card {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(6,182,212,0.15);
+      border-radius: 16px;
+      padding: 48px 56px;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      margin-bottom: 24px;
+    }
+
+    /* ── Section kicker ── */
+    .section-kicker {
+      font-family: 'Syne', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #06b6d4;
+      margin-bottom: 14px;
+    }
+
+    /* ── Typography ── */
+    h1 {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(1.7rem, 3.2vw, 2.3rem);
+      font-weight: 800;
+      color: #f1f5f9;
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+    h2 {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #06b6d4;
+      margin: 36px 0 12px;
+    }
+    h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #e2e8f0;
+      margin: 0 0 4px;
+    }
+    p {
+      color: #94a3b8;
+      margin-bottom: 16px;
+      font-size: 0.975rem;
+    }
+    ul {
+      color: #94a3b8;
+      padding-left: 22px;
+      margin-bottom: 16px;
+    }
+    ul li {
+      margin-bottom: 8px;
+      font-size: 0.975rem;
+      line-height: 1.65;
+    }
+    a { color: #06b6d4; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    strong { color: #e2e8f0; }
+    blockquote {
+      border-left: 3px solid #06b6d4;
+      padding: 14px 20px;
+      margin: 16px 0;
+      background: rgba(6,182,212,0.04);
+      border-radius: 0 8px 8px 0;
+    }
+    blockquote p {
+      color: #cbd5e1;
+      font-style: italic;
+      margin: 0;
+      font-size: 0.95rem;
+    }
+
+    /* ── Divider ── */
+    .soft-divider {
+      border: none;
+      border-top: 1px solid rgba(6,182,212,0.14);
+      margin: 36px 0;
+    }
+
+    /* ── KPI grid hero ── */
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 16px;
+      margin: 24px 0;
+    }
+    .kpi-card {
+      background: rgba(6,182,212,0.06);
+      border: 1px solid rgba(6,182,212,0.2);
+      border-radius: 12px;
+      padding: 22px 14px;
+      text-align: center;
+      transition: border-color 0.25s, transform 0.25s;
+    }
+    .kpi-card:hover { border-color: #06b6d4; transform: translateY(-3px); }
+    .kpi-card.green {
+      background: rgba(16,185,129,0.06);
+      border-color: rgba(16,185,129,0.2);
+    }
+    .kpi-card.green:hover { border-color: #10b981; }
+    .kpi-value {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: #06b6d4;
+      line-height: 1.1;
+      margin-bottom: 6px;
+    }
+    .kpi-card.green .kpi-value { color: #10b981; }
+    .kpi-label {
+      font-size: 0.77rem;
+      color: #64748b;
+      font-weight: 500;
+      line-height: 1.4;
+    }
+
+    /* ── Crisis alert box ── */
+    .crisis-box {
+      background: rgba(239,68,68,0.05);
+      border: 1px solid rgba(239,68,68,0.2);
+      border-left: 3px solid #ef4444;
+      border-radius: 10px;
+      padding: 20px 24px;
+      margin: 20px 0;
+    }
+    .crisis-box p {
+      color: #fca5a5;
+      font-size: 0.93rem;
+      margin-bottom: 8px;
+    }
+    .crisis-box p:last-child { margin-bottom: 0; }
+    .crisis-box strong { color: #fecaca; }
+
+    /* ── Vulnérabilités table ── */
+    .vuln-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 0.88rem;
+    }
+    .vuln-table th {
+      background: rgba(239,68,68,0.1);
+      color: #f87171;
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 0.77rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 11px 14px;
+      text-align: left;
+      border-bottom: 1px solid rgba(239,68,68,0.2);
+    }
+    .vuln-table td {
+      padding: 11px 14px;
+      color: #94a3b8;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+      vertical-align: top;
+    }
+    .vuln-table tr:last-child td { border-bottom: none; }
+    .vuln-table td:first-child { color: #e2e8f0; font-size: 0.87rem; max-width: 300px; }
+    .vuln-table tr:hover td { background: rgba(239,68,68,0.03); }
+    .badge-red {
+      display: inline-block;
+      background: rgba(239,68,68,0.15);
+      color: #f87171;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 20px;
+      white-space: nowrap;
+    }
+    .badge-orange {
+      display: inline-block;
+      background: rgba(249,115,22,0.15);
+      color: #fb923c;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 20px;
+      white-space: nowrap;
+    }
+    .badge-yellow {
+      display: inline-block;
+      background: rgba(234,179,8,0.15);
+      color: #facc15;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 20px;
+      white-space: nowrap;
+    }
+
+    /* ── Phases ── */
+    .phases {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin: 20px 0;
+    }
+    .phase-item {
+      display: grid;
+      grid-template-columns: 110px 1fr;
+      gap: 20px;
+      align-items: start;
+    }
+    .phase-label {
+      background: rgba(6,182,212,0.1);
+      border: 1px solid rgba(6,182,212,0.25);
+      border-radius: 8px;
+      padding: 10px 8px;
+      text-align: center;
+      font-family: 'Syne', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: #06b6d4;
+      line-height: 1.4;
+    }
+    .phase-content h3 { margin-top: 2px; margin-bottom: 8px; font-size: 0.97rem; }
+    .phase-content p { font-size: 0.9rem; margin-bottom: 10px; }
+
+    /* ── Infra spec table ── */
+    .spec-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 14px 0 10px;
+      font-size: 0.88rem;
+    }
+    .spec-table td {
+      padding: 9px 14px;
+      border-bottom: 1px solid rgba(6,182,212,0.08);
+      color: #94a3b8;
+    }
+    .spec-table tr:last-child td { border-bottom: none; }
+    .spec-table td:first-child {
+      color: #64748b;
+      font-weight: 600;
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      width: 40%;
+    }
+    .spec-table td strong { color: #06b6d4; }
+
+    /* ── Formation list ── */
+    .formation-list {
+      list-style: none;
+      padding: 0;
+      margin: 12px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .formation-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 0.92rem;
+      color: #94a3b8;
+      line-height: 1.55;
+    }
+    .formation-list li::before {
+      content: '✓';
+      color: #10b981;
+      font-weight: 700;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    /* ── Résultats table (avant/après) ── */
+    .results-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 0.88rem;
+    }
+    .results-table th {
+      background: rgba(6,182,212,0.1);
+      color: #06b6d4;
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 0.77rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 11px 14px;
+      text-align: left;
+      border-bottom: 1px solid rgba(6,182,212,0.2);
+    }
+    .results-table td {
+      padding: 11px 14px;
+      color: #94a3b8;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+    }
+    .results-table tr:last-child td { border-bottom: none; }
+    .results-table td:first-child { color: #cbd5e1; font-weight: 500; }
+    .results-table .col-before { color: #64748b; font-size: 0.85rem; }
+    .results-table .col-after { color: #10b981; font-weight: 700; }
+    .results-table .col-impact { color: #06b6d4; font-size: 0.85rem; }
+    .results-table tr:hover td { background: rgba(6,182,212,0.03); }
+
+    /* ── Résilience box ── */
+    .resilience-box {
+      background: rgba(16,185,129,0.05);
+      border: 1px solid rgba(16,185,129,0.2);
+      border-left: 3px solid #10b981;
+      border-radius: 10px;
+      padding: 18px 22px;
+      margin: 20px 0;
+    }
+    .resilience-box p {
+      color: #6ee7b7;
+      font-size: 0.92rem;
+      margin: 0;
+    }
+
+    /* ── Témoignage ── */
+    .testimonial {
+      background: rgba(6,182,212,0.04);
+      border: 1px solid rgba(6,182,212,0.15);
+      border-radius: 12px;
+      padding: 28px 32px;
+      margin: 20px 0;
+      position: relative;
+    }
+    .testimonial::before {
+      content: '"';
+      position: absolute;
+      top: -10px;
+      left: 24px;
+      font-family: 'Syne', sans-serif;
+      font-size: 4rem;
+      color: #06b6d4;
+      opacity: 0.3;
+      line-height: 1;
+    }
+    .testimonial p {
+      color: #cbd5e1;
+      font-style: italic;
+      font-size: 0.97rem;
+      line-height: 1.75;
+      margin-bottom: 16px;
+    }
+    .testimonial-author {
+      font-size: 0.82rem;
+      color: #64748b;
+      font-style: normal;
+    }
+    .testimonial-author strong { color: #94a3b8; }
+
+    /* ── Benchmark table ── */
+    .benchmark-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 0.88rem;
+    }
+    .benchmark-table th {
+      background: rgba(139,92,246,0.1);
+      color: #a78bfa;
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 0.77rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 11px 14px;
+      text-align: left;
+      border-bottom: 1px solid rgba(139,92,246,0.2);
+    }
+    .benchmark-table td {
+      padding: 11px 14px;
+      color: #94a3b8;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+    }
+    .benchmark-table tr:last-child td { border-bottom: none; }
+    .benchmark-table td:first-child { color: #e2e8f0; font-weight: 600; }
+    .benchmark-table tr.highlight td { background: rgba(6,182,212,0.05); }
+    .benchmark-table tr.highlight td:first-child { color: #06b6d4; }
+    .benchmark-table tr:hover td { background: rgba(139,92,246,0.03); }
+    .status-ok {
+      display: inline-block;
+      background: rgba(16,185,129,0.12);
+      color: #10b981;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 20px;
+    }
+    .status-pioneer {
+      display: inline-block;
+      background: rgba(6,182,212,0.12);
+      color: #06b6d4;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 20px;
+    }
+
+    /* ── CTA block ── */
+    .cta-block {
+      background: linear-gradient(135deg, rgba(6,182,212,0.06), rgba(8,145,178,0.04));
+      border: 1px solid rgba(6,182,212,0.2);
+      border-radius: 14px;
+      padding: 36px 40px;
+      text-align: center;
+    }
+    .cta-block h2 {
+      font-size: 1.3rem;
+      margin-top: 0;
+      margin-bottom: 12px;
+      color: #f1f5f9;
+    }
+    .cta-block p { margin-bottom: 24px; font-size: 0.95rem; }
+    .cta-row {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .btn-primary {
+      display: inline-block;
+      background: linear-gradient(135deg, #06b6d4, #0891b2);
+      color: #050505;
+      font-weight: 700;
+      font-family: 'Space Grotesk', sans-serif;
+      padding: 12px 28px;
+      border-radius: 8px;
+      text-decoration: none !important;
+      transition: transform 0.2s, box-shadow 0.2s;
+      font-size: 0.95rem;
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(6,182,212,0.35);
+    }
+    .btn-secondary {
+      display: inline-block;
+      border: 1px solid rgba(6,182,212,0.35);
+      color: #06b6d4;
+      font-weight: 600;
+      font-family: 'Space Grotesk', sans-serif;
+      padding: 12px 28px;
+      border-radius: 8px;
+      text-decoration: none !important;
+      transition: border-color 0.2s, background 0.2s;
+      font-size: 0.95rem;
+    }
+    .btn-secondary:hover {
+      border-color: #06b6d4;
+      background: rgba(6,182,212,0.08);
+    }
+
+    /* ── Footer ── */
+    footer {
+      position: relative;
+      z-index: 1;
+      background: rgba(5,5,5,0.9);
+      border-top: 1px solid rgba(6,182,212,0.1);
+      padding: 40px 24px;
+      text-align: center;
+    }
+    footer p { font-size: 0.85rem; color: #475569; margin-bottom: 8px; }
+    footer a { color: #06b6d4; font-size: 0.85rem; }
+
+    /* ── Responsive ── */
+    @media (max-width: 768px) {
+      .navbar { padding: 16px 20px; }
+      .navbar.scrolled { padding: 12px 20px; }
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+      .page-wrapper { padding: 95px 16px 60px; }
+      .glass-card { padding: 28px 20px; }
+      .kpi-grid { grid-template-columns: repeat(2, 1fr); }
+      .phase-item { grid-template-columns: 1fr; gap: 8px; }
+      .cta-block { padding: 28px 20px; }
+      .cta-row { flex-direction: column; align-items: center; }
+      .vuln-table,
+      .results-table,
+      .benchmark-table,
+      .spec-table { font-size: 0.81rem; }
+      .vuln-table th,
+      .vuln-table td,
+      .results-table th,
+      .results-table td,
+      .benchmark-table th,
+      .benchmark-table td { padding: 8px 10px; }
+      .testimonial { padding: 22px 18px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <a href="/" class="navbar-brand">GSF <span>Consulting</span></a>
+    <ul class="nav-links">
+      <li><a href="/">Accueil</a></li>
+      <li><a href="/a-propos/">À propos</a></li>
+      <li><a href="/audit-souverainete-cognitive/">Audit ASC™</a></li>
+      <li><a href="/etudes-de-cas/" class="active">Études de cas</a></li>
+      <li><a href="/gilles-feliho/">L'Expert</a></li>
+      <li><a href="/analyses/">Blog</a></li>
+      <li><a href="/politique-de-confidentialite/">Confidentialité</a></li>
+      <li><a href="/#contact" class="nav-cta">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════
+       MOBILE MENU
+  ═══════════════════════════════════════════ -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" id="mobileClose" aria-label="Fermer">✕</button>
+    <a href="/" onclick="closeMobile()">Accueil</a>
+    <a href="/a-propos/" onclick="closeMobile()">À propos</a>
+    <a href="/audit-souverainete-cognitive/" onclick="closeMobile()">Audit ASC™</a>
+    <a href="/etudes-de-cas/" onclick="closeMobile()">Études de cas</a>
+    <a href="/gilles-feliho/" onclick="closeMobile()">L'Expert</a>
+    <a href="/analyses/" onclick="closeMobile()">Blog</a>
+    <a href="/politique-de-confidentialite/" onclick="closeMobile()">Confidentialité</a>
+    <a href="/#contact" onclick="closeMobile()">Contact</a>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       MAIN CONTENT
+  ═══════════════════════════════════════════ -->
+  <main class="page-wrapper">
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb" aria-label="Fil d'Ariane">
+      <a href="/">Accueil</a>
+      <span class="sep">›</span>
+      <a href="/etudes-de-cas/">Études de cas</a>
+      <span class="sep">›</span>
+      <span class="current">Données judiciaires — État UEMOA</span>
+    </nav>
+
+    <!-- Méta -->
+    <div class="meta-bar">
+      <span class="meta-tag">🏛️ Secteur public</span>
+      <span class="meta-tag">🔐 Souveraineté numérique</span>
+      <span class="meta-tag">⚖️ Droit OHADA · e-RCCM</span>
+      <span class="meta-tag">🌍 Zone UEMOA</span>
+      <span class="meta-tag warning">⚠️ CLOUD Act</span>
+    </div>
+
+    <!-- ── Card principale ── -->
+    <div class="glass-card">
+
+      <p class="section-kicker">Étude de cas · Cas 4</p>
+      <h1>Sécurisation des données judiciaires d'un État membre de l'UEMOA</h1>
+
+      <!-- KPIs vedette -->
+      <div class="kpi-grid">
+        <div class="kpi-card green">
+          <div class="kpi-value">2 400 Mrd</div>
+          <div class="kpi-label">FCFA de créances<br>protégées</div>
+        </div>
+        <div class="kpi-card green">
+          <div class="kpi-value">99,9 %</div>
+          <div class="kpi-label">Uptime<br>garanti</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-value">25 ms</div>
+          <div class="kpi-label">Latence<br>(vs 180 ms avant)</div>
+        </div>
+        <div class="kpi-card green">
+          <div class="kpi-value">&lt; 5 %</div>
+          <div class="kpi-label">Risque CLOUD Act<br>résiduel</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-value">– 20 %</div>
+          <div class="kpi-label">Coûts cloud<br>annuels</div>
+        </div>
+        <div class="kpi-card green">
+          <div class="kpi-value">45 000</div>
+          <div class="kpi-label">Entreprises<br>protégées</div>
+        </div>
+      </div>
+
+      <hr class="soft-divider">
+
+      <!-- Contexte de crise -->
+      <h2>Contexte de crise : du risque CLOUD Act à la souveraineté numérique</h2>
+      <p>
+        En <strong>avril 2024</strong>, une panne majeure des services cloud d'un fournisseur
+        américain paralyse pendant <strong>48 heures</strong> les Tribunaux de Commerce de
+        plusieurs pays de la zone UEMOA. Les registres <strong>e-RCCM</strong> deviennent
+        inaccessibles, bloquant les procédures de créances et menaçant la continuité économique.
+      </p>
+
+      <div class="crisis-box">
+        <p>
+          <strong>Six mois plus tard</strong>, un ministère de la Justice d'un État membre de
+          l'UEMOA (anonymisé) découvre une alerte critique : ses données judiciaires sensibles,
+          hébergées sur AWS, sont potentiellement exposées à une demande d'accès extraterritoriale
+          via le <strong>CLOUD Act américain</strong>.
+        </p>
+        <p>
+          Une enquête fiscale US visant un partenaire étranger menace de déborder sur des
+          <strong>documents stratégiques de l'État</strong>. Les données à risque incluent des
+          arbitrages CCJA confidentiels et des procédures collectives bloquantes.
+        </p>
+      </div>
+
+      <p>
+        <strong>Enjeu économique total</strong> : <strong>12 % du PIB régional</strong>, soit
+        <strong>≈ 2 400 milliards FCFA</strong> de créances en litige, reposent sur l'intégrité
+        de ce système. <strong>45 000 entreprises</strong> dépendent de la fiabilité des registres
+        e-RCCM pour leurs opérations quotidiennes.
+      </p>
+
+      <hr class="soft-divider">
+
+      <!-- Vulnérabilités -->
+      <h2>Vulnérabilités identifiées</h2>
+      <table class="vuln-table">
+        <thead>
+          <tr>
+            <th>Vulnérabilité</th>
+            <th>Gravité</th>
+            <th>Impact</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>85 % des flux de données transfrontaliers non cartographiés</td>
+            <td><span class="badge-red">🔴 Critique</span></td>
+            <td>Perte de contrôle sur la chaîne de valeur juridique</td>
+          </tr>
+          <tr>
+            <td>70 % des sauvegardes répliquées en Europe (Irlande, Allemagne)</td>
+            <td><span class="badge-orange">🟠 Élevée</span></td>
+            <td>Soumission au GDPR et accès US via CLOUD Act</td>
+          </tr>
+          <tr>
+            <td>Absence de chiffrement end-to-end avec clés locales</td>
+            <td><span class="badge-red">🔴 Critique</span></td>
+            <td>Lecture directe possible par autorités étrangères</td>
+          </tr>
+          <tr>
+            <td>Utilisation de Gmail et OneDrive par les magistrats</td>
+            <td><span class="badge-yellow">🟡 Moyenne</span></td>
+            <td>Fuites de données dans les contentieux sensibles</td>
+          </tr>
+          <tr>
+            <td>Dépendance à 90 % d'infrastructures extraterritoriales</td>
+            <td><span class="badge-red">🔴 Critique</span></td>
+            <td>Asymétrie juridique dans les contentieux internationaux</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <hr class="soft-divider">
+
+      <!-- Solution : ASC 3 phases -->
+      <h2>Solution déployée : <a href="/audit-souverainete-cognitive/">Audit de Souveraineté Cognitive™</a> en 3 phases</h2>
+
+      <div class="phases">
+
+        <!-- Phase 1 -->
+        <div class="phase-item">
+          <div class="phase-label">Phase 1<br>Mois 1–2<br>Audit &amp; anticipation</div>
+          <div class="phase-content">
+            <h3>Cartographie &amp; identification des risques</h3>
+            <p>
+              Cartographie exhaustive des flux e-RCCM, arbitrages et contentieux fiscaux.
+              Identification de <strong>12 vulnérabilités critiques</strong>, dont 3 classées
+              "rouges" (accès direct possible par autorités étrangères).
+            </p>
+            <p>
+              Benchmark régional : analyse des stratégies du <strong>Sénégal</strong>
+              (Sénégal Numérique SA), du <strong>Bénin</strong> (Smart Bénin) et
+              anticipation du modèle burkinabè (data centers 3 000 To inaugurés janvier 2026).
+            </p>
+            <blockquote>
+              <p>
+                "Nous avons identifié une opportunité stratégique : l'alignement sur
+                l'initiative burkinabè permettrait de créer un effet de synergie régionale
+                en OHADA."
+              </p>
+            </blockquote>
+            <p style="font-size:0.82rem; color:#475569; margin-top:-8px;">
+              — <a href="/gilles-feliho/">Gilles Feliho</a>, Directeur GSF Consulting International
+            </p>
+          </div>
+        </div>
+
+        <!-- Phase 2 -->
+        <div class="phase-item">
+          <div class="phase-label">Phase 2<br>Mois 3–5<br>Migration souveraine</div>
+          <div class="phase-content">
+            <h3>Première migration e-RCCM 100 % souveraine dans l'espace UEMOA</h3>
+            <p>
+              Déploiement d'une infrastructure révolutionnaire : <strong>première migration
+              d'un système e-RCCM vers une infrastructure 100 % souveraine</strong> dans
+              l'espace UEMOA, réalisée avant l'inauguration des data centers burkinabès.
+            </p>
+            <table class="spec-table">
+              <tbody>
+                <tr>
+                  <td>Localisation</td>
+                  <td><strong>100 % zone OHADA</strong> — data center national</td>
+                </tr>
+                <tr>
+                  <td>Capacité</td>
+                  <td><strong>500 téraoctets</strong> (extensible à 1 500 To)</td>
+                </tr>
+                <tr>
+                  <td>Chiffrement</td>
+                  <td>End-to-end — clés détenues par le <strong>Conseil National de Cryptologie</strong></td>
+                </tr>
+                <tr>
+                  <td>Partenaire</td>
+                  <td>Opérateur public national certifié (anonymisé)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Phase 3 -->
+        <div class="phase-item">
+          <div class="phase-label">Phase 3<br>Mois 6<br>Conformité &amp; formation</div>
+          <div class="phase-content">
+            <h3>Gouvernance contractuelle &amp; montée en compétences</h3>
+            <ul class="formation-list">
+              <li>
+                <strong>Clauses contractuelles innovantes</strong> : interdiction stricte de
+                transfert hors UEMOA, audits annuels par experts certifiés GSF Consulting,
+                pénalités en cas de violation de la souveraineté des données.
+              </li>
+              <li>
+                <strong>Formation de 150 magistrats et greffiers</strong> : remplacement de
+                Gmail/OneDrive par messagerie chiffrée régionale, protocoles de sécurité
+                pour actes authentiques électroniques.
+              </li>
+              <li>
+                <strong>Intégration des Actes Uniformes OHADA modernisés</strong> :
+                conformité AUDCG et Convention de Malabo sur la cybersécurité.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div><!-- /.phases -->
+
+      <hr class="soft-divider">
+
+      <!-- Résultats -->
+      <h2>Résultats mesurables</h2>
+      <table class="results-table">
+        <thead>
+          <tr>
+            <th>Indicateur</th>
+            <th>Avant</th>
+            <th>Après</th>
+            <th>Impact</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Disponibilité système (uptime)</td>
+            <td class="col-before">97,2 %</td>
+            <td class="col-after">99,9 %</td>
+            <td class="col-impact">Continuité garantie malgré tensions géopolitiques</td>
+          </tr>
+          <tr>
+            <td>Latence d'accès</td>
+            <td class="col-before">180 ms (Europe)</td>
+            <td class="col-after">25 ms</td>
+            <td class="col-impact">×7 plus rapide</td>
+          </tr>
+          <tr>
+            <td>Coûts cloud annuels</td>
+            <td class="col-before">850 M FCFA</td>
+            <td class="col-after">680 M FCFA</td>
+            <td class="col-impact">– 20 %</td>
+          </tr>
+          <tr>
+            <td>Risque d'accès CLOUD Act</td>
+            <td class="col-before">95 %</td>
+            <td class="col-after">&lt; 5 %</td>
+            <td class="col-impact">Souveraineté algorithmique totale</td>
+          </tr>
+          <tr>
+            <td>Valeur des créances protégées</td>
+            <td class="col-before">Exposées</td>
+            <td class="col-after">2 400 milliards FCFA</td>
+            <td class="col-impact">100 % souverain</td>
+          </tr>
+          <tr>
+            <td>Entreprises protégées</td>
+            <td class="col-before">45 000</td>
+            <td class="col-after">45 000</td>
+            <td class="col-impact">Capacité juridique pleinement préservée</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Résilience -->
+      <div class="resilience-box">
+        <p>
+          🛡️ <strong>Résilience démontrée :</strong> En janvier 2026, lors de tensions
+          géopolitiques régionales affectant les infrastructures cloud internationales,
+          le ministère a maintenu un accès <strong>ininterrompu</strong> aux procédures
+          judiciaires critiques. Les contentieux fiscaux et arbitrages CCJA se sont déroulés
+          sans exposition aux sanctions économiques externes.
+        </p>
+      </div>
+
+      <hr class="soft-divider">
+
+      <!-- Témoignage -->
+      <h2>Témoignage client</h2>
+      <div class="testimonial">
+        <p>
+          "L'Audit de Souveraineté Cognitive de GSF Consulting nous a permis de transformer
+          une crise en opportunité. Nous sommes passés de la vulnérabilité à la pionnière en
+          moins d'un an. La méthodologie de Gilles Feliho, alliant expertise OHADA et
+          anticipation géopolitique, a été déterminante."
+        </p>
+        <div class="testimonial-author">
+          <strong>Directeur des Systèmes d'Information, Ministère de la Justice</strong><br>
+          État membre de l'UEMOA · 2025 · Publication autorisée sous anonymat
+        </div>
+      </div>
+
+      <hr class="soft-divider">
+
+      <!-- Benchmark régional -->
+      <h2>Benchmark régional &amp; perspectives</h2>
+      <p>
+        Cette mission constitue une référence pour les États UEMOA engagés dans la
+        modernisation judiciaire numérique. Le modèle est reproductible dans les
+        <strong>8 États membres de l'UEMOA</strong> et applicable aux systèmes de
+        registres commerciaux OHADA.
+      </p>
+      <table class="benchmark-table">
+        <thead>
+          <tr>
+            <th>Pays / Entité</th>
+            <th>Initiative</th>
+            <th>Capacité</th>
+            <th>Statut</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>🇸🇳 Sénégal</td>
+            <td>Sénégal Numérique SA</td>
+            <td>National</td>
+            <td><span class="status-ok">Opérationnel 2022</span></td>
+          </tr>
+          <tr>
+            <td>🇧🇯 Bénin</td>
+            <td>Smart Bénin</td>
+            <td>National</td>
+            <td><span class="status-ok">Opérationnel 2023</span></td>
+          </tr>
+          <tr>
+            <td>🇧🇫 Burkina Faso</td>
+            <td>2 data centers modulaires</td>
+            <td>3 000 To</td>
+            <td><span class="status-ok">Inauguré jan. 2026</span></td>
+          </tr>
+          <tr class="highlight">
+            <td>🏛️ Client GSF</td>
+            <td>Data center judiciaire souverain</td>
+            <td>500 To → 1 500 To</td>
+            <td><span class="status-pioneer">⭐ Pionnier UEMOA — déc. 2025</span></td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div><!-- /.glass-card -->
+
+    <!-- ── CTA ── -->
+    <div class="cta-block">
+      <h2>Répliquer ce modèle dans votre organisation</h2>
+      <p>
+        Ce cas est disponible sous forme de dossier anonymisé sur demande.
+        Découvrez également le guide <strong>12 points de contrôle OHADA</strong>
+        ou contactez <a href="/gilles-feliho/">Gilles Sixte Feliho</a> pour
+        une mission de souveraineté numérique.
+      </p>
+      <div class="cta-row">
+        <a href="/#contact" class="btn-primary">Télécharger le dossier anonymisé</a>
+        <a href="/audit-souverainete-cognitive/" class="btn-secondary">Audit ASC™</a>
+        <a href="/etudes-de-cas/" class="btn-secondary">← Toutes les études de cas</a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer>
+    <p>© 2024 GSF Consulting International — Tous droits réservés</p>
+    <p>
+      <a href="/politique-de-confidentialite/">Mentions légales &amp; Confidentialité</a>
+      &nbsp;·&nbsp;
+      <a href="mailto:gilles.feliho@gsfconsultinginternational.com">
+        gilles.feliho@gsfconsultinginternational.com
+      </a>
+    </p>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════
+       SCRIPTS
+  ═══════════════════════════════════════════ -->
+  <script>
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 40);
+    });
+
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileClose = document.getElementById('mobileClose');
+
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    });
+
+    mobileClose.addEventListener('click', closeMobile);
+
+    function closeMobile() {
+      mobileMenu.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') closeMobile();
+    });
+  </script>
+
+</body>
+</html>
