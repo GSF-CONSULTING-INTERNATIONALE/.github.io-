@@ -1,0 +1,727 @@
+---
+layout: null
+---
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plateforme d'intelligence bancaire souveraine — GSF Consulting International</title>
+  <meta name="description" content="Étude de cas : déploiement d'une plateforme d'intelligence bancaire souveraine pour un groupe panafricain. 1,1 milliard FCFA libérés, –30 % OPEX, RTO &lt; 4 h, certification ISO 27001.">
+  <meta name="keywords" content="intelligence bancaire souveraine, COBAC, BCEAO, ISO 27001, conformité bancaire Afrique, GSF Consulting International, étude de cas IA">
+  <link rel="canonical" href="https://gsfconsultinginternational.com/etudes-de-cas/intelligence-bancaire-souveraine/">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/css/style.css">
+
+  <style>
+    /* ── Reset & base ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: #050505;
+      color: #e2e8f0;
+      font-family: 'Space Grotesk', sans-serif;
+      min-height: 100vh;
+      line-height: 1.7;
+    }
+
+    /* ── Animated grid background ── */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(6,182,212,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(6,182,212,0.04) 1px, transparent 1px);
+      background-size: 60px 60px;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    /* ── Navbar ── */
+    .navbar {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1000;
+      padding: 18px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: rgba(5,5,5,0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(6,182,212,0.12);
+      transition: padding 0.3s ease;
+    }
+    .navbar.scrolled { padding: 12px 40px; }
+    .navbar-brand {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: #06b6d4;
+      text-decoration: none;
+      letter-spacing: 0.02em;
+      white-space: nowrap;
+    }
+    .navbar-brand span { color: #e2e8f0; }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      list-style: none;
+    }
+    .nav-links a {
+      color: #94a3b8;
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 500;
+      letter-spacing: 0.03em;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover,
+    .nav-links a.active { color: #06b6d4; }
+    .nav-cta {
+      background: linear-gradient(135deg, #06b6d4, #0891b2);
+      color: #050505 !important;
+      padding: 8px 20px;
+      border-radius: 6px;
+      font-weight: 700 !important;
+      transition: transform 0.2s, box-shadow 0.2s !important;
+    }
+    .nav-cta:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 16px rgba(6,182,212,0.35);
+    }
+
+    /* ── Hamburger ── */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 4px;
+    }
+    .hamburger span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: #e2e8f0;
+      border-radius: 2px;
+      transition: all 0.3s ease;
+    }
+
+    /* ── Mobile menu ── */
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 999;
+      background: rgba(5,5,5,0.97);
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 32px;
+    }
+    .mobile-menu.active { display: flex; }
+    .mobile-menu a {
+      color: #e2e8f0;
+      text-decoration: none;
+      font-family: 'Syne', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      transition: color 0.2s;
+    }
+    .mobile-menu a:hover { color: #06b6d4; }
+    .mobile-close {
+      position: absolute;
+      top: 24px; right: 32px;
+      font-size: 2rem;
+      color: #94a3b8;
+      cursor: pointer;
+      background: none;
+      border: none;
+      line-height: 1;
+    }
+
+    /* ── Page wrapper ── */
+    .page-wrapper {
+      position: relative;
+      z-index: 1;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 110px 24px 80px;
+    }
+
+    /* ── Breadcrumb ── */
+    .breadcrumb {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.82rem;
+      color: #475569;
+      margin-bottom: 28px;
+      flex-wrap: wrap;
+    }
+    .breadcrumb a {
+      color: #64748b;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .breadcrumb a:hover { color: #06b6d4; }
+    .breadcrumb .sep { color: #334155; }
+    .breadcrumb .current { color: #94a3b8; }
+
+    /* ── Méta bar ── */
+    .meta-bar {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 36px;
+    }
+    .meta-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(6,182,212,0.08);
+      border: 1px solid rgba(6,182,212,0.2);
+      border-radius: 20px;
+      padding: 5px 14px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #06b6d4;
+    }
+
+    /* ── Glass card ── */
+    .glass-card {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(6,182,212,0.15);
+      border-radius: 16px;
+      padding: 48px 56px;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      margin-bottom: 24px;
+    }
+
+    /* ── Section kicker ── */
+    .section-kicker {
+      font-family: 'Syne', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #06b6d4;
+      margin-bottom: 14px;
+    }
+
+    /* ── Typography ── */
+    h1 {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+      font-weight: 800;
+      color: #f1f5f9;
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+    h2 {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #06b6d4;
+      margin: 36px 0 12px;
+    }
+    h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #e2e8f0;
+      margin: 20px 0 6px;
+    }
+    p {
+      color: #94a3b8;
+      margin-bottom: 16px;
+      font-size: 0.975rem;
+    }
+    p.lead {
+      color: #cbd5e1;
+      font-size: 1.05rem;
+      line-height: 1.8;
+      margin-bottom: 24px;
+    }
+    ul {
+      color: #94a3b8;
+      padding-left: 22px;
+      margin-bottom: 16px;
+    }
+    ul li {
+      margin-bottom: 7px;
+      font-size: 0.975rem;
+      line-height: 1.65;
+    }
+    a { color: #06b6d4; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    strong { color: #e2e8f0; }
+
+    /* ── Divider ── */
+    .soft-divider {
+      border: none;
+      border-top: 1px solid rgba(6,182,212,0.14);
+      margin: 36px 0;
+    }
+
+    /* ── KPI grid ── */
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 16px;
+      margin: 24px 0;
+    }
+    .kpi-card {
+      background: rgba(6,182,212,0.06);
+      border: 1px solid rgba(6,182,212,0.2);
+      border-radius: 12px;
+      padding: 20px 18px;
+      text-align: center;
+      transition: border-color 0.25s, transform 0.25s;
+    }
+    .kpi-card:hover {
+      border-color: #06b6d4;
+      transform: translateY(-3px);
+    }
+    .kpi-value {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.45rem;
+      font-weight: 800;
+      color: #06b6d4;
+      line-height: 1.1;
+      margin-bottom: 6px;
+    }
+    .kpi-label {
+      font-size: 0.78rem;
+      color: #64748b;
+      font-weight: 500;
+      line-height: 1.4;
+    }
+
+    /* ── Phases timeline ── */
+    .phases {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin: 20px 0;
+    }
+    .phase-item {
+      display: grid;
+      grid-template-columns: 100px 1fr;
+      gap: 20px;
+      align-items: start;
+    }
+    .phase-label {
+      background: rgba(6,182,212,0.1);
+      border: 1px solid rgba(6,182,212,0.25);
+      border-radius: 8px;
+      padding: 8px 10px;
+      text-align: center;
+      font-family: 'Syne', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #06b6d4;
+      line-height: 1.3;
+    }
+    .phase-content h3 { margin-top: 4px; }
+    .phase-content p { margin-bottom: 0; font-size: 0.9rem; }
+
+    /* ── Résultats table ── */
+    .results-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 0.92rem;
+    }
+    .results-table th {
+      background: rgba(6,182,212,0.1);
+      color: #06b6d4;
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 0.8rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 12px 16px;
+      text-align: left;
+      border-bottom: 1px solid rgba(6,182,212,0.2);
+    }
+    .results-table td {
+      padding: 11px 16px;
+      color: #94a3b8;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+    }
+    .results-table tr:last-child td { border-bottom: none; }
+    .results-table td:first-child { color: #cbd5e1; font-weight: 500; }
+    .results-table td strong { color: #06b6d4; font-weight: 700; }
+    .results-table tr:hover td { background: rgba(6,182,212,0.03); }
+
+    /* ── Conformité badges ── */
+    .badges-row {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 14px;
+    }
+    .cert-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(16,185,129,0.08);
+      border: 1px solid rgba(16,185,129,0.25);
+      border-radius: 20px;
+      padding: 7px 16px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: #10b981;
+    }
+
+    /* ── CTA block ── */
+    .cta-block {
+      background: linear-gradient(135deg, rgba(6,182,212,0.06), rgba(8,145,178,0.04));
+      border: 1px solid rgba(6,182,212,0.2);
+      border-radius: 14px;
+      padding: 36px 40px;
+      text-align: center;
+    }
+    .cta-block h2 {
+      font-size: 1.3rem;
+      margin-top: 0;
+      margin-bottom: 12px;
+      color: #f1f5f9;
+    }
+    .cta-block p { margin-bottom: 24px; font-size: 0.95rem; }
+    .cta-row {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .btn-primary {
+      display: inline-block;
+      background: linear-gradient(135deg, #06b6d4, #0891b2);
+      color: #050505;
+      font-weight: 700;
+      font-family: 'Space Grotesk', sans-serif;
+      padding: 12px 28px;
+      border-radius: 8px;
+      text-decoration: none !important;
+      transition: transform 0.2s, box-shadow 0.2s;
+      font-size: 0.95rem;
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(6,182,212,0.35);
+    }
+    .btn-secondary {
+      display: inline-block;
+      border: 1px solid rgba(6,182,212,0.35);
+      color: #06b6d4;
+      font-weight: 600;
+      font-family: 'Space Grotesk', sans-serif;
+      padding: 12px 28px;
+      border-radius: 8px;
+      text-decoration: none !important;
+      transition: border-color 0.2s, background 0.2s;
+      font-size: 0.95rem;
+    }
+    .btn-secondary:hover {
+      border-color: #06b6d4;
+      background: rgba(6,182,212,0.08);
+    }
+
+    /* ── Footer ── */
+    footer {
+      position: relative;
+      z-index: 1;
+      background: rgba(5,5,5,0.9);
+      border-top: 1px solid rgba(6,182,212,0.1);
+      padding: 40px 24px;
+      text-align: center;
+    }
+    footer p { font-size: 0.85rem; color: #475569; margin-bottom: 8px; }
+    footer a { color: #06b6d4; font-size: 0.85rem; }
+
+    /* ── Responsive ── */
+    @media (max-width: 768px) {
+      .navbar { padding: 16px 20px; }
+      .navbar.scrolled { padding: 12px 20px; }
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+      .page-wrapper { padding: 95px 16px 60px; }
+      .glass-card { padding: 28px 20px; }
+      .kpi-grid { grid-template-columns: repeat(2, 1fr); }
+      .phase-item { grid-template-columns: 1fr; gap: 8px; }
+      .cta-block { padding: 28px 20px; }
+      .cta-row { flex-direction: column; align-items: center; }
+      .results-table { font-size: 0.85rem; }
+      .results-table th,
+      .results-table td { padding: 9px 12px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <a href="/" class="navbar-brand">GSF <span>Consulting</span></a>
+    <ul class="nav-links">
+      <li><a href="/">Accueil</a></li>
+      <li><a href="/a-propos/">À propos</a></li>
+      <li><a href="/audit-souverainete-cognitive/">Audit ASC™</a></li>
+      <li><a href="/etudes-de-cas/" class="active">Études de cas</a></li>
+      <li><a href="/gilles-feliho/">L'Expert</a></li>
+      <li><a href="/analyses/">Blog</a></li>
+      <li><a href="/politique-de-confidentialite/">Confidentialité</a></li>
+      <li><a href="/#contact" class="nav-cta">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════
+       MOBILE MENU
+  ═══════════════════════════════════════════ -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" id="mobileClose" aria-label="Fermer">✕</button>
+    <a href="/" onclick="closeMobile()">Accueil</a>
+    <a href="/a-propos/" onclick="closeMobile()">À propos</a>
+    <a href="/audit-souverainete-cognitive/" onclick="closeMobile()">Audit ASC™</a>
+    <a href="/etudes-de-cas/" onclick="closeMobile()">Études de cas</a>
+    <a href="/gilles-feliho/" onclick="closeMobile()">L'Expert</a>
+    <a href="/analyses/" onclick="closeMobile()">Blog</a>
+    <a href="/politique-de-confidentialite/" onclick="closeMobile()">Confidentialité</a>
+    <a href="/#contact" onclick="closeMobile()">Contact</a>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       MAIN CONTENT
+  ═══════════════════════════════════════════ -->
+  <main class="page-wrapper">
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb" aria-label="Fil d'Ariane">
+      <a href="/">Accueil</a>
+      <span class="sep">›</span>
+      <a href="/etudes-de-cas/">Études de cas</a>
+      <span class="sep">›</span>
+      <span class="current">Intelligence bancaire souveraine</span>
+    </nav>
+
+    <!-- Méta -->
+    <div class="meta-bar">
+      <span class="meta-tag">🏦 Banque panafricaine</span>
+      <span class="meta-tag">⏱ 90 jours</span>
+      <span class="meta-tag">🌍 Afrique subsaharienne</span>
+      <span class="meta-tag">📅 Anonymisé</span>
+    </div>
+
+    <!-- ── Card principale ── -->
+    <div class="glass-card">
+      <p class="section-kicker">Étude de cas · Cas 1</p>
+      <h1>Plateforme d'intelligence bancaire souveraine</h1>
+
+      <!-- KPIs en vedette -->
+      <div class="kpi-grid">
+        <div class="kpi-card">
+          <div class="kpi-value">1,1 Mrd</div>
+          <div class="kpi-label">FCFA libérés<br>en 18 mois</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-value">–30 %</div>
+          <div class="kpi-label">Réduction<br>des OPEX</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-value">+100 M</div>
+          <div class="kpi-label">FCFA de revenus<br>additionnels/an</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-value">&lt; 4 h</div>
+          <div class="kpi-label">RTO<br>(reprise d'activité)</div>
+        </div>
+      </div>
+
+      <hr class="soft-divider">
+
+      <!-- Contexte -->
+      <h2>Contexte</h2>
+      <p>
+        Un groupe bancaire panafricain opérant dans <strong>9 pays</strong> et ciblant
+        <strong>500 utilisateurs</strong> faisait face à une paralysie opérationnelle :
+        <strong>1,1 milliard FCFA</strong> de fonds bloqués, absence de traçabilité
+        décisionnelle, systèmes hétérogènes non conformes aux exigences
+        <strong>COBAC/BCEAO</strong>.
+      </p>
+
+      <!-- Problématique -->
+      <h2>Problématique</h2>
+      <ul>
+        <li>Fonds bloqués : <strong>1,1 milliard FCFA</strong></li>
+        <li>Systèmes fragmentés, latence <strong>&gt; 10 secondes</strong></li>
+        <li>Non-conformité <strong>ISO 27001</strong>, <strong>SOC 2</strong></li>
+        <li>Absence de plan de reprise d'activité (DRP)</li>
+      </ul>
+
+      <hr class="soft-divider">
+
+      <!-- Intervention -->
+      <h2>Intervention GSF Consulting International</h2>
+      <div class="phases">
+        <div class="phase-item">
+          <div class="phase-label">Phase 1<br>J1 – J30</div>
+          <div class="phase-content">
+            <h3>Audit &amp; Architecture</h3>
+            <p>Cartographie des risques, audit de conformité, conception d'une architecture
+            souveraine (95 % on-premise).</p>
+          </div>
+        </div>
+        <div class="phase-item">
+          <div class="phase-label">Phase 2<br>J31 – J60</div>
+          <div class="phase-content">
+            <h3>Déploiement</h3>
+            <p>Installation des modèles XAI, hardening sécurité 7 couches, war-rooms
+            hebdomadaires, tests d'intégration multi-pays.</p>
+          </div>
+        </div>
+        <div class="phase-item">
+          <div class="phase-label">Phase 3<br>J61 – J90</div>
+          <div class="phase-content">
+            <h3>Certification &amp; Go-Live</h3>
+            <p>Formation 500 utilisateurs (Bronze / Silver / Gold), certification ISO 27001,
+            validation DRP, go-live supervisé.</p>
+          </div>
+        </div>
+      </div>
+
+      <hr class="soft-divider">
+
+      <!-- Résultats -->
+      <h2>Résultats mesurables</h2>
+      <table class="results-table">
+        <thead>
+          <tr>
+            <th>Indicateur</th>
+            <th>Résultat</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Fonds libérés</td>
+            <td><strong>1,1 milliard FCFA en 18 mois</strong></td>
+          </tr>
+          <tr>
+            <td>Réduction OPEX</td>
+            <td><strong>– 30 %</strong></td>
+          </tr>
+          <tr>
+            <td>Revenus additionnels</td>
+            <td><strong>+ 100 millions FCFA/an</strong></td>
+          </tr>
+          <tr>
+            <td>Latence système</td>
+            <td><strong>&lt; 2 secondes</strong></td>
+          </tr>
+          <tr>
+            <td>RTO (reprise d'activité)</td>
+            <td><strong>&lt; 4 heures</strong></td>
+          </tr>
+          <tr>
+            <td>Utilisateurs formés</td>
+            <td><strong>500</strong></td>
+          </tr>
+          <tr>
+            <td>Budget projet</td>
+            <td><strong>≈ 154 millions FCFA</strong></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Conformité -->
+      <h2>Conformité certifiée</h2>
+      <div class="badges-row">
+        <span class="cert-badge">✔ COBAC</span>
+        <span class="cert-badge">✔ BCEAO</span>
+        <span class="cert-badge">✔ ISO 27001</span>
+        <span class="cert-badge">✔ SOC 2</span>
+      </div>
+
+    </div><!-- /.glass-card -->
+
+    <!-- ── CTA ── -->
+    <div class="cta-block">
+      <h2>Accéder au dossier complet</h2>
+      <p>
+        Ce cas est disponible sous forme de dossier anonymisé sur demande.
+        Contactez <a href="/gilles-feliho/">Gilles Sixte Feliho</a> pour en
+        discuter ou consulter les <a href="/etudes-de-cas/">autres études de cas</a>.
+      </p>
+      <div class="cta-row">
+        <a href="/#contact" class="btn-primary">Demander le dossier anonymisé</a>
+        <a href="/etudes-de-cas/" class="btn-secondary">← Toutes les études de cas</a>
+        <a href="/audit-souverainete-cognitive/" class="btn-secondary">Audit ASC™</a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer>
+    <p>© 2024 GSF Consulting International — Tous droits réservés</p>
+    <p>
+      <a href="/politique-de-confidentialite/">Mentions légales &amp; Confidentialité</a>
+      &nbsp;·&nbsp;
+      <a href="mailto:gilles.feliho@gsfconsultinginternational.com">
+        gilles.feliho@gsfconsultinginternational.com
+      </a>
+    </p>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════
+       SCRIPTS
+  ═══════════════════════════════════════════ -->
+  <script>
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 40);
+    });
+
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileClose = document.getElementById('mobileClose');
+
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    });
+
+    mobileClose.addEventListener('click', closeMobile);
+
+    function closeMobile() {
+      mobileMenu.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') closeMobile();
+    });
+  </script>
+
+</body>
+</html>
