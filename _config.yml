@@ -1,32 +1,71 @@
+# ======================================================
+# _config.yml — GSF Consulting International
+# Mis à jour le 2026-03-11
+# ======================================================
+
+# ===== SITE =====
 title: GSF Consulting International
 description: Expertise Juridique & IA en Afrique
 url: "https://gsfconsultinginternational.com"
-author: Gilles Feliho
+author: "Gilles Sixte Feliho"
+lang: fr
+timezone: "Europe/Paris"
 
+# ===== JEKYLL BUILD =====
 markdown: kramdown
 highlighter: rouge
+future: true
 
+kramdown:
+  input: GFM
+  parse_block_html: true
+  parse_inline_html: true
+  hard_wrap: false
+  auto_ids: true
+  syntax_highlighter: rouge
+
+# ===== PLUGINS =====
 plugins:
   - jekyll-seo-tag
   - jekyll-feed
   - jekyll-sitemap
 
+# ===== COLLECTIONS =====
 collections:
   posts:
     output: true
     permalink: /analyses/:title/
 
+# ===== DEFAULTS =====
 defaults:
-  -
-    scope:
+  # Articles de blog
+  - scope:
       path: ""
       type: "posts"
     values:
       layout: "post"
 
+  # Pages institutionnelles (racine)
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+
+  # Dossier études de cas
+  - scope:
+      path: "etudes-de-cas"
+    values:
+      layout: "default"
+
+# ===== EXCLUSIONS BUILD =====
 exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules
   - vendor
   - hugo.toml
+  - .jekyll-cache
+  - .jekyll-metadata
+  - .sass-cache
+  - README.md
