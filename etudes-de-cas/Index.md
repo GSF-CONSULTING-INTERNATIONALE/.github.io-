@@ -2,26 +2,30 @@
 layout: default
 title: "Études de cas"
 permalink: /etudes-de-cas/
-description: "Études de cas anonymisées : gouvernance de l’IA, intelligence bancaire souveraine, ECL v2.0 et lutte contre les flux financiers illicites en Afrique francophone."
+description: "Études de cas anonymisées : gouvernance de l'IA, intelligence bancaire souveraine, ECL v2.0 et lutte contre les flux financiers illicites en Afrique francophone."
+last_updated: 2026-03-11
 ---
 
 <section class="legal-page">
   <div class="container">
     <div class="glass-card legal-card">
+
       <p class="section-kicker">Références & impacts</p>
       <h1>Études de cas</h1>
       <p class="lead">
-        Cette page présente des cas d’usage anonymisés illustrant le type d’impact recherché par GSF Consulting International :
-        sécurisation réglementaire, gouvernance de l’IA, réduction du risque, conformité bancaire et création d’avantage
-        concurrentiel durable.
+        Cette page présente des cas d'usage anonymisés illustrant le type d'impact obtenu par
+        <a href="/gilles-feliho/">Gilles Sixte Feliho</a> et GSF Consulting International :
+        sécurisation réglementaire, gouvernance de l'IA, réduction du risque, conformité bancaire
+        et création d'avantage concurrentiel durable.
       </p>
 
       <hr class="soft-divider">
 
-      <h2>Cas 1 — Plateforme d’intelligence bancaire souveraine</h2>
+      <!-- CAS 1 -->
+      <h2>Cas 1 — Plateforme d'intelligence bancaire souveraine</h2>
       <p>
-        Déploiement d’une plateforme souveraine de pilotage bancaire conçue pour améliorer la traçabilité des décisions,
-        sécuriser l’architecture réglementaire et accélérer l’exploitation des données critiques dans un environnement bancaire
+        Déploiement d'une plateforme souveraine de pilotage bancaire conçue pour améliorer la traçabilité des décisions,
+        sécuriser l'architecture réglementaire et accélérer l'exploitation des données critiques dans un environnement bancaire
         à forte intensité de conformité.
       </p>
 
@@ -30,41 +34,42 @@ description: "Études de cas anonymisées : gouvernance de l’IA, intelligence 
         <li>Fragmentation des systèmes décisionnels et faible auditabilité</li>
         <li>Besoin de conformité renforcée face aux exigences BCEAO / COBAC</li>
         <li>Dépendance technologique et besoin de souveraineté opérationnelle</li>
-        <li>Recherche d’une meilleure performance métier sous contrainte réglementaire</li>
+        <li>Recherche d'une meilleure performance métier sous contrainte réglementaire</li>
       </ul>
 
       <h3>Résultats mis en avant</h3>
       <ul>
         <li><strong>1,1 milliard FCFA</strong> de fonds libérés sur 18 mois</li>
-        <li><strong>30 % de réduction d’OPEX</strong></li>
+        <li><strong>30 % de réduction d'OPEX</strong></li>
         <li><strong>100 millions FCFA</strong> de revenus additionnels annuels</li>
         <li><strong>RTO &lt; 4 h</strong> dans le dispositif de continuité</li>
       </ul>
 
       <h3>Approche</h3>
       <p>
-        L’intervention a combiné audit d’architecture, cadrage réglementaire, sécurisation de l’infrastructure,
+        L'intervention a combiné audit d'architecture, cadrage réglementaire, sécurisation de l'infrastructure,
         gouvernance des accès, stratégie de déploiement et accompagnement du changement.
       </p>
 
       <p class="case-cta">
-        <a class="btn-source" href="/#contact">
-          Demander le dossier anonymisé
-        </a>
+        <a class="btn-source" href="/etudes-de-cas/intelligence-bancaire-souveraine/">Voir le détail</a>
+        &nbsp;
+        <a class="btn-source" href="/#contact">Demander le dossier</a>
       </p>
 
       <hr class="soft-divider">
 
-      <h2>Cas 2 — Industrialisation d’un framework ECL v2.0</h2>
+      <!-- CAS 2 -->
+      <h2>Cas 2 — Industrialisation d'un framework ECL v2.0</h2>
       <p>
-        Structuration et industrialisation d’un cadre ECL v2.0 articulant performance financière, gouvernance algorithmique,
+        Structuration et industrialisation d'un cadre ECL v2.0 articulant performance financière, gouvernance algorithmique,
         conformité réglementaire et protection de la responsabilité décisionnelle au niveau des organes de direction.
       </p>
 
       <h3>Enjeux traités</h3>
       <ul>
         <li>Fiabiliser un cadre de calcul à fort enjeu prudentiel</li>
-        <li>Renforcer la documentation, la gouvernance et l’explicabilité</li>
+        <li>Renforcer la documentation, la gouvernance et l'explicabilité</li>
         <li>Réduire le coût de déploiement et accélérer la montée en maturité MLOps</li>
         <li>Transformer une contrainte réglementaire en avantage compétitif durable</li>
       </ul>
@@ -72,7 +77,7 @@ description: "Études de cas anonymisées : gouvernance de l’IA, intelligence 
       <h3>Résultats mis en avant</h3>
       <ul>
         <li><strong>ROI certifié : +1,21 milliard MAD / an</strong></li>
-        <li>Potentiel jusqu’à <strong>+1,66 milliard MAD / an</strong></li>
+        <li>Potentiel jusqu'à <strong>+1,66 milliard MAD / an</strong></li>
         <li><strong>40 à 60 % de réduction de coût</strong></li>
         <li><strong>Score de maturité MLOps : 88,3 / 100</strong></li>
       </ul>
@@ -84,13 +89,14 @@ description: "Études de cas anonymisées : gouvernance de l’IA, intelligence 
       </p>
 
       <p class="case-cta">
-        <a class="btn-source" href="/#contact">
-          Demander le dossier anonymisé
-        </a>
+        <a class="btn-source" href="/etudes-de-cas/industrialisation-ecl-v2/">Voir le détail</a>
+        &nbsp;
+        <a class="btn-source" href="/#contact">Demander le dossier</a>
       </p>
 
       <hr class="soft-divider">
 
+      <!-- CAS 3 -->
       <h2>Cas 3 — Conformité, traçabilité et flux financiers illicites</h2>
       <p>
         Analyse stratégique des flux financiers illicites entre le Bénin et le Nigeria, mettant en lumière les ruptures
@@ -100,9 +106,9 @@ description: "Études de cas anonymisées : gouvernance de l’IA, intelligence 
       <h3>Constats clés</h3>
       <ul>
         <li>Circulation annuelle estimée entre <strong>700 et 950 milliards FCFA</strong></li>
-        <li>Existence d’un système parallèle à forte opacité et à faible traçabilité</li>
+        <li>Existence d'un système parallèle à forte opacité et à faible traçabilité</li>
         <li>Risque de financement criminel et de fragilisation de la souveraineté financière</li>
-        <li>Nécessité d’un socle combinant KYC biométrique, IA de détection et supervision géolocalisée des flux</li>
+        <li>Nécessité d'un socle combinant KYC biométrique, IA de détection et supervision géolocalisée des flux</li>
       </ul>
 
       <h3>Leviers de réponse</h3>
@@ -113,26 +119,65 @@ description: "Études de cas anonymisées : gouvernance de l’IA, intelligence 
       </ul>
 
       <p class="case-cta">
-        <a class="btn-source" href="/analyses/flux-financiers-illicites-benin-nigeria-950-milliards-fcfa/">
-          Lire l’analyse complète
-        </a>
+        <a class="btn-source" href="/etudes-de-cas/flux-financiers-benin-nigeria/">Voir le détail</a>
+        &nbsp;
+        <a class="btn-source" href="/analyses/flux-financiers-illicites-benin-nigeria-950-milliards-fcfa/">Lire l'analyse publique</a>
       </p>
 
       <hr class="soft-divider">
 
+      <!-- CAS 4 -->
+      <h2>Cas 4 — Sécurisation des données judiciaires d'un État membre de l'UEMOA</h2>
+      <p>
+        Face à des vulnérabilités critiques exposant 12 % du PIB national (≈ 2 400 milliards FCFA) et plus de 45 000 entreprises,
+        déploiement d'une architecture souveraine certifiée de protection des données judiciaires en seulement 90 jours.
+      </p>
+
+      <h3>Enjeux traités</h3>
+      <ul>
+        <li>Exposition massive de données judiciaires sensibles et stratégiques</li>
+        <li>Risques cybernétiques menaçant la souveraineté nationale et judiciaire</li>
+        <li>Impact économique majeur (12 % du PIB et 45 000 entreprises)</li>
+        <li>Nécessité d'une solution souveraine, performante et à déploiement rapide</li>
+      </ul>
+
+      <h3>Résultats mis en avant</h3>
+      <ul>
+        <li><strong>Uptime : 99,9 %</strong></li>
+        <li><strong>Latence : 25 ms</strong></li>
+        <li><strong>Risque résiduel : &lt; 5 %</strong></li>
+        <li><strong>Valeur sécurisée : 2 400 milliards FCFA</strong></li>
+      </ul>
+
+      <h3>Approche</h3>
+      <p>
+        Audit complet des vulnérabilités, conception et mise en œuvre d'une infrastructure souveraine hautement sécurisée,
+        gouvernance renforcée des accès, certification accélérée et déploiement en 90 jours avec transfert de compétences.
+      </p>
+
+      <p class="case-cta">
+        <a class="btn-source" href="/etudes-de-cas/securisation-donnees-judiciaires-uemoa/">Voir le détail</a>
+        &nbsp;
+        <a class="btn-source" href="/#contact">Demander le dossier</a>
+      </p>
+
+      <hr class="soft-divider">
+
+      <!-- CONCLUSION -->
       <h2>Pourquoi ces cas sont importants</h2>
       <p>
-        Ces références illustrent une même logique d’intervention : rendre les dispositifs décisionnels plus explicables,
+        Ces références illustrent une même logique d'intervention : rendre les dispositifs décisionnels plus explicables,
         plus traçables, plus conformes et plus souverains. Pour les banques, institutions et décideurs publics, la gouvernance
-        de l’IA, la conformité financière et la robustesse réglementaire ne sont plus des sujets séparés : ils forment désormais
+        de l'IA, la conformité financière et la robustesse réglementaire ne sont plus des sujets séparés : ils forment désormais
         un seul et même enjeu stratégique.
       </p>
 
       <p>
         Vous souhaitez évaluer vos propres vulnérabilités réglementaires, algorithmiques ou opérationnelles ?
-        <a href="/audit-souverainete-cognitive/">Découvrir l’Audit de Souveraineté Cognitive™</a>
+        <a href="/audit-souverainete-cognitive/">Découvrir l'Audit de Souveraineté Cognitive™</a>
         ou <a href="/#contact">prendre contact avec le cabinet</a>.
       </p>
+
     </div>
   </div>
 </section>
