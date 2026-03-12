@@ -203,5 +203,4 @@ En définitive, le recouvrement de créances en Afrique n'est plus un simple act
 ## À propos de l'auteur
 
 **Gilles Feliho** est Directeur de [GSF Consulting International](https://gsfconsultinginternational.com), cabinet spécialisé dans l'alliance du droit OHADA/UEMOA et de l'intelligence artificielle. Depuis plus de 20 ans, il accompagne les grandes institutions de l'espace francophone dans la sécurisation de leurs processus juridiques critiques. Auteur de *Homo Algorithmicus* et *Blanchiment en liberté*.
-
-📩 **Contactez-nous** pour auditer la résilience cyber de vos créances : [gsfconsultinginternational.com](https://gsfconsultinginternational.com/#contact)
+📩 **Contactez-nous** pour auditer la résilience cyber de vos créances : [contact@gsfconsultinginternational.com](https://gsfconsultinginternational.com/#contact)
