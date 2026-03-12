@@ -169,7 +169,11 @@ layout: default
     </div>
 </article>
 
-<!-- Données structurées Article + Author -->
+        </div>
+    </div>
+</article>
+
+<!-- === SCHEMA ARTICLE OPTIMISÉ EEAT (lié à Person + Organization) === -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -178,27 +182,33 @@ layout: default
   "description": {{ page.excerpt | default: site.description | jsonify }},
   "datePublished": "{{ page.date | date_to_xmlschema }}",
   {% if page.last_updated %}"dateModified": "{{ page.last_updated | date_to_xmlschema }}",{% endif %}
-  {% if page.image %}"image": ["{{ page.image | absolute_url }}"],{% endif %}
+  {% if page.image %}"image": {
+    "@type": "ImageObject",
+    "url": "{{ page.image | absolute_url }}",
+    "width": 1200,
+    "height": 630
+  },{% endif %}
   "author": {
     "@type": "Person",
-    "name": "Gilles Sixte Feliho",
-    "url": "{{ '/gilles-feliho/' | absolute_url }}"
+    "name": "Gilles Sixte FELIHO",
+    "@id": "{{ '/gilles-feliho/' | absolute_url }}#person"
   },
   "publisher": {
     "@type": "Organization",
     "name": "GSF Consulting International",
-    "url": "{{ site.url }}",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "{{ '/uploads/gilles-sixte-feliho.jpg' | absolute_url }}"
-    }
+    "@id": "{{ site.url }}#organization"
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "{{ page.url | absolute_url }}"
-  }
+  },
+  "articleSection": "{{ page.category | default: 'Analyses' }}",
+  "keywords": "OHADA, Afrique francophone, conformité, LCB-FT, intelligence artificielle, souveraineté cognitive, {{ page.category | downcase | default: '' }}",
+  "inLanguage": "fr-FR"
 }
 </script>
+
+<style>
 
 <style>
     .post-shell {
