@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "De l'Acte uniforme OHADA à l'Acte algorithmique : quelle réglementation pour les contrats intelligents (smart contracts) en zone CEMAC?"
-date: 2026-03-13
+date: 2026-03-12
 last_updated: 2026-03-12 
 category: "Intelligence Artificielle"
 tags:
