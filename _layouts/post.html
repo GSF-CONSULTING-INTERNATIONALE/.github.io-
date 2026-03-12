@@ -4,6 +4,7 @@ layout: default
 
 <article class="post-shell">
     <div class="post-container">
+
         <!-- Fil d'Ariane -->
         <nav class="post-breadcrumbs" aria-label="Fil d'Ariane">
             <a href="/">Accueil</a>
@@ -31,12 +32,10 @@ layout: default
                 <time datetime="{{ page.date | date_to_xmlschema }}">
                     {{ page.date | date: "%d %B %Y" }}
                 </time>
-
                 {% if page.author %}
                 <span class="post-meta-separator">•</span>
                 <span>{{ page.author }}</span>
                 {% endif %}
-
                 {% if page.last_updated %}
                 <span class="post-meta-separator">•</span>
                 <span>Mis à jour le {{ page.last_updated | date: "%d %B %Y" }}</span>
@@ -60,31 +59,19 @@ layout: default
         <section class="post-methodology glass-card">
             <h2>Méthodologie éditoriale</h2>
             <p>
-                Cet article s’inscrit dans la ligne éditoriale de GSF Consulting International,
-                centrée sur le droit des affaires, la conformité, l’intelligence artificielle,
+                Cet article s'inscrit dans la ligne éditoriale de GSF Consulting International,
+                centrée sur le droit des affaires, la conformité, l'intelligence artificielle,
                 la souveraineté cognitive et les enjeux réglementaires en Afrique francophone.
             </p>
-
             {% if page.author %}
-            <p>
-                <strong>Auteur :</strong> {{ page.author }}
-            </p>
+            <p><strong>Auteur :</strong> {{ page.author }}</p>
             {% endif %}
-
             {% if page.date %}
-            <p>
-                <strong>Date de publication :</strong>
-                {{ page.date | date: "%d %B %Y" }}
-            </p>
+            <p><strong>Date de publication :</strong> {{ page.date | date: "%d %B %Y" }}</p>
             {% endif %}
-
             {% if page.last_updated %}
-            <p>
-                <strong>Dernière mise à jour :</strong>
-                {{ page.last_updated | date: "%d %B %Y" }}
-            </p>
+            <p><strong>Dernière mise à jour :</strong> {{ page.last_updated | date: "%d %B %Y" }}</p>
             {% endif %}
-
             {% if page.source_url %}
             <p>
                 <strong>Source externe mentionnée :</strong>
@@ -98,38 +85,29 @@ layout: default
         <!-- ==================== SECTION EEAT : AUTEUR ==================== -->
         <section class="author-box glass-card">
             <div class="author-box-header">
-                <h2>À propos de l’auteur</h2>
+                <h2>À propos de l'auteur</h2>
             </div>
-
             <div class="author-flex">
                 <img
                     src="/uploads/gilles-sixte-feliho.jpg"
                     alt="Gilles Sixte Feliho"
                     class="author-avatar"
                 >
-
                 <div class="author-content">
                     <p class="author-name">Gilles Sixte Feliho</p>
-
                     <p class="author-description">
                         Gilles Sixte Feliho intervient sur les sujets de droit des affaires,
                         conformité, intelligence artificielle, gouvernance algorithmique
-                        et souveraineté cognitive appliqués à l’Afrique francophone.
+                        et souveraineté cognitive appliqués à l'Afrique francophone.
                     </p>
-
                     <p class="author-description">
                         Ses analyses publiées sur le site portent notamment sur les risques
-                        réglementaires liés à l’IA, la traçabilité financière, la conformité
+                        réglementaires liés à l'IA, la traçabilité financière, la conformité
                         bancaire et les mécanismes de souveraineté cognitive.
                     </p>
-
                     <div class="author-links">
-                        <a href="/gilles-feliho/" class="author-link primary">
-                            Voir la biographie complète
-                        </a>
-                        <a href="/a-propos/" class="author-link">
-                            Découvrir le cabinet
-                        </a>
+                        <a href="/gilles-feliho/" class="author-link primary">Voir la biographie complète</a>
+                        <a href="/a-propos/" class="author-link">Découvrir le cabinet</a>
                     </div>
                 </div>
             </div>
@@ -138,14 +116,14 @@ layout: default
 
         <!-- CTA -->
         <section class="post-cta glass-card">
-            <h2>Besoin d’un accompagnement stratégique ?</h2>
+            <h2>Besoin d'un accompagnement stratégique ?</h2>
             <p>
                 GSF Consulting International accompagne les banques, institutions, entreprises
-                et décideurs sur les enjeux de conformité, gouvernance de l’IA, droit OHADA,
+                et décideurs sur les enjeux de conformité, gouvernance de l'IA, droit OHADA,
                 souveraineté cognitive et transformation réglementaire.
             </p>
             <div class="post-cta-links">
-                <a href="/audit-souverainete-cognitive/" class="cta-btn-primary">Découvrir l’Audit ASC™</a>
+                <a href="/audit-souverainete-cognitive/" class="cta-btn-primary">Découvrir l'Audit ASC™</a>
                 <a href="/#contact" class="cta-btn-secondary">Demander un échange</a>
             </div>
         </section>
@@ -156,7 +134,6 @@ layout: default
                 <span>←</span>
                 <span>Retour aux analyses</span>
             </a>
-
             <div class="next-prev-links">
                 {% if page.previous.url %}
                 <a href="{{ page.previous.url | relative_url }}">Précédent</a>
@@ -166,14 +143,11 @@ layout: default
                 {% endif %}
             </div>
         </div>
-    </div>
-</article>
 
-        </div>
-    </div>
-</article>
+    </div><!-- /.post-container -->
+</article><!-- /.post-shell -->
 
-<!-- === SCHEMA ARTICLE OPTIMISÉ EEAT (lié à Person + Organization) === -->
+<!-- ====== SCHEMA ARTICLE OPTIMISÉ EEAT (lié à Person + Organization) ====== -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -203,12 +177,10 @@ layout: default
     "@id": "{{ page.url | absolute_url }}"
   },
   "articleSection": "{{ page.category | default: 'Analyses' }}",
-  "keywords": "OHADA, Afrique francophone, conformité, LCB-FT, intelligence artificielle, souveraineté cognitive, {{ page.category | downcase | default: '' }}",
+  "keywords": "OHADA, Afrique francophone, conformité, LCB-FT, intelligence artificielle, souveraineté cognitive{% if page.category %}, {{ page.category | downcase }}{% endif %}",
   "inLanguage": "fr-FR"
 }
 </script>
-
-<style>
 
 <style>
     .post-shell {
@@ -237,18 +209,10 @@ layout: default
         transition: color 0.25s ease;
     }
 
-    .post-breadcrumbs a:hover {
-        color: #06b6d4;
-    }
+    .post-breadcrumbs a:hover { color: #06b6d4; }
 
-    .post-header {
-        margin-bottom: 36px;
-        text-align: center;
-    }
-
-    .post-category-wrap {
-        margin-bottom: 18px;
-    }
+    .post-header { margin-bottom: 36px; text-align: center; }
+    .post-category-wrap { margin-bottom: 18px; }
 
     .post-category {
         display: inline-block;
@@ -288,9 +252,7 @@ layout: default
         font-size: 0.95rem;
     }
 
-    .post-meta-separator {
-        opacity: 0.45;
-    }
+    .post-meta-separator { opacity: 0.45; }
 
     .glass-card {
         background: rgba(255,255,255,0.05);
@@ -301,16 +263,8 @@ layout: default
         box-shadow: 0 12px 40px rgba(0,0,0,0.18);
     }
 
-    .post-hero {
-        margin: 0 0 42px 0;
-        overflow: hidden;
-    }
-
-    .post-hero img {
-        width: 100%;
-        height: auto;
-        display: block;
-    }
+    .post-hero { margin: 0 0 42px 0; overflow: hidden; }
+    .post-hero img { width: 100%; height: auto; display: block; }
 
     .post-content {
         color: rgba(255,255,255,0.90);
@@ -328,29 +282,17 @@ layout: default
         margin-bottom: 0.8em;
     }
 
-    .post-content h2 {
-        font-size: 1.85rem;
-    }
-
-    .post-content h3 {
-        font-size: 1.4rem;
-    }
+    .post-content h2 { font-size: 1.85rem; }
+    .post-content h3 { font-size: 1.4rem; }
 
     .post-content p,
     .post-content ul,
     .post-content ol,
-    .post-content blockquote {
-        margin-bottom: 1.2em;
-    }
+    .post-content blockquote { margin-bottom: 1.2em; }
 
     .post-content ul,
-    .post-content ol {
-        padding-left: 1.4em;
-    }
-
-    .post-content li {
-        margin-bottom: 0.65em;
-    }
+    .post-content ol { padding-left: 1.4em; }
+    .post-content li { margin-bottom: 0.65em; }
 
     .post-content a {
         color: #06b6d4;
@@ -358,14 +300,8 @@ layout: default
         text-decoration-color: rgba(6, 182, 212, 0.35);
         text-underline-offset: 3px;
     }
-
-    .post-content a:hover {
-        text-decoration-color: rgba(6, 182, 212, 0.95);
-    }
-
-    .post-content strong {
-        color: #ffffff;
-    }
+    .post-content a:hover { text-decoration-color: rgba(6, 182, 212, 0.95); }
+    .post-content strong { color: #ffffff; }
 
     .post-content blockquote {
         margin: 2em 0;
@@ -390,18 +326,13 @@ layout: default
         margin: 2.5em 0;
     }
 
-    .post-methodology {
-        margin: 55px 0 45px;
-        padding: 28px;
-    }
-
+    .post-methodology { margin: 55px 0 45px; padding: 28px; }
     .post-methodology h2 {
         margin: 0 0 16px 0;
         font-family: 'Syne', sans-serif;
         color: #06b6d4;
         font-size: 1.35rem;
     }
-
     .post-methodology p {
         margin: 0 0 12px 0;
         color: rgba(255,255,255,0.84);
@@ -433,11 +364,7 @@ layout: default
         font-size: 1.4rem;
     }
 
-    .author-flex {
-        display: flex;
-        gap: 24px;
-        align-items: flex-start;
-    }
+    .author-flex { display: flex; gap: 24px; align-items: flex-start; }
 
     .author-avatar {
         width: 92px;
@@ -449,29 +376,11 @@ layout: default
         box-shadow: 0 0 0 6px rgba(6,182,212,0.08);
     }
 
-    .author-content {
-        flex: 1;
-    }
+    .author-content { flex: 1; }
+    .author-name { margin: 0 0 10px 0; color: #ffffff; font-size: 1.08rem; font-weight: 700; }
+    .author-description { margin: 0 0 14px 0; color: rgba(255,255,255,0.84); line-height: 1.7; }
 
-    .author-name {
-        margin: 0 0 10px 0;
-        color: #ffffff;
-        font-size: 1.08rem;
-        font-weight: 700;
-    }
-
-    .author-description {
-        margin: 0 0 14px 0;
-        color: rgba(255,255,255,0.84);
-        line-height: 1.7;
-    }
-
-    .author-links {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 12px;
-        margin-top: 8px;
-    }
+    .author-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px; }
 
     .author-link {
         display: inline-flex;
@@ -486,45 +395,14 @@ layout: default
         color: #06b6d4;
         background: rgba(6,182,212,0.08);
     }
+    .author-link:hover { transform: translateY(-1px); opacity: 0.95; }
+    .author-link.primary { background: #06b6d4; color: #041014; border-color: transparent; }
 
-    .author-link:hover {
-        transform: translateY(-1px);
-        opacity: 0.95;
-    }
+    .post-cta { margin: 0 0 46px; padding: 32px; text-align: center; border: 1px solid rgba(6, 182, 212, 0.18); }
+    .post-cta h2 { margin: 0 0 14px 0; font-family: 'Syne', sans-serif; color: #ffffff; font-size: 1.7rem; }
+    .post-cta p { margin: 0 auto 22px; max-width: 680px; color: rgba(255,255,255,0.82); line-height: 1.75; }
 
-    .author-link.primary {
-        background: #06b6d4;
-        color: #041014;
-        border-color: transparent;
-    }
-
-    .post-cta {
-        margin: 0 0 46px;
-        padding: 32px;
-        text-align: center;
-        border: 1px solid rgba(6, 182, 212, 0.18);
-    }
-
-    .post-cta h2 {
-        margin: 0 0 14px 0;
-        font-family: 'Syne', sans-serif;
-        color: #ffffff;
-        font-size: 1.7rem;
-    }
-
-    .post-cta p {
-        margin: 0 auto 22px;
-        max-width: 680px;
-        color: rgba(255,255,255,0.82);
-        line-height: 1.75;
-    }
-
-    .post-cta-links {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 14px;
-    }
+    .post-cta-links { display: flex; justify-content: center; flex-wrap: wrap; gap: 14px; }
 
     .cta-btn-primary,
     .cta-btn-secondary {
@@ -538,22 +416,10 @@ layout: default
         transition: transform 0.2s ease, opacity 0.2s ease, background 0.2s ease;
     }
 
-    .cta-btn-primary {
-        background: #06b6d4;
-        color: #031014;
-    }
-
-    .cta-btn-secondary {
-        background: rgba(255,255,255,0.06);
-        color: #ffffff;
-        border: 1px solid rgba(255,255,255,0.10);
-    }
-
+    .cta-btn-primary { background: #06b6d4; color: #031014; }
+    .cta-btn-secondary { background: rgba(255,255,255,0.06); color: #ffffff; border: 1px solid rgba(255,255,255,0.10); }
     .cta-btn-primary:hover,
-    .cta-btn-secondary:hover {
-        transform: translateY(-1px);
-        opacity: 0.96;
-    }
+    .cta-btn-secondary:hover { transform: translateY(-1px); opacity: 0.96; }
 
     .post-navigation {
         margin-top: 56px;
@@ -566,91 +432,30 @@ layout: default
         flex-wrap: wrap;
     }
 
-    .back-link {
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        color: #06b6d4;
-        font-weight: 600;
-        text-decoration: none;
-    }
+    .back-link { display: inline-flex; align-items: center; gap: 8px; color: #06b6d4; font-weight: 600; text-decoration: none; }
 
-    .next-prev-links {
-        display: flex;
-        gap: 16px;
-        flex-wrap: wrap;
-    }
-
-    .next-prev-links a {
-        color: rgba(255,255,255,0.72);
-        text-decoration: none;
-        font-size: 0.95rem;
-    }
-
-    .next-prev-links a:hover {
-        color: #06b6d4;
-    }
+    .next-prev-links { display: flex; gap: 16px; flex-wrap: wrap; }
+    .next-prev-links a { color: rgba(255,255,255,0.72); text-decoration: none; font-size: 0.95rem; }
+    .next-prev-links a:hover { color: #06b6d4; }
 
     @media (max-width: 768px) {
-        .post-shell {
-            padding: 105px 5% 60px;
-        }
-
-        .post-content {
-            font-size: 1.02rem;
-            line-height: 1.85;
-        }
-
+        .post-shell { padding: 105px 5% 60px; }
+        .post-content { font-size: 1.02rem; line-height: 1.85; }
         .post-methodology,
         .author-box,
-        .post-cta {
-            padding: 22px;
-        }
-
-        .post-cta h2 {
-            font-size: 1.45rem;
-        }
+        .post-cta { padding: 22px; }
+        .post-cta h2 { font-size: 1.45rem; }
     }
 
     @media (max-width: 640px) {
-        .post-breadcrumbs {
-            font-size: 0.82rem;
-            gap: 8px;
-        }
-
-        .post-title {
-            font-size: clamp(1.8rem, 8vw, 2.35rem);
-        }
-
-        .post-excerpt {
-            font-size: 1rem;
-        }
-
-        .author-flex {
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            gap: 18px;
-        }
-
-        .author-avatar {
-            width: 84px;
-            height: 84px;
-        }
-
+        .post-breadcrumbs { font-size: 0.82rem; gap: 8px; }
+        .post-title { font-size: clamp(1.8rem, 8vw, 2.35rem); }
+        .post-excerpt { font-size: 1rem; }
+        .author-flex { flex-direction: column; align-items: center; text-align: center; gap: 18px; }
+        .author-avatar { width: 84px; height: 84px; }
         .author-links,
-        .post-cta-links {
-            justify-content: center;
-        }
-
-        .post-navigation {
-            flex-direction: column;
-            align-items: flex-start;
-        }
-
-        .next-prev-links {
-            width: 100%;
-            justify-content: space-between;
-        }
+        .post-cta-links { justify-content: center; }
+        .post-navigation { flex-direction: column; align-items: flex-start; }
+        .next-prev-links { width: 100%; justify-content: space-between; }
     }
 </style>
