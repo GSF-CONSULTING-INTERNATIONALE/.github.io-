@@ -101,6 +101,13 @@ nav.scrolled {
     text-align: center;
 }
 
+/* ===== TITRES INSTITUTIONNELS — Autorité typographique ===== */
+.legal-page h1,
+.post-title {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+}
+
 .legal-page h2 {
     font-family: 'Syne', sans-serif;
     font-size: 2rem;
@@ -292,17 +299,4 @@ nav.scrolled {
         padding: 18px 20px;
         margin: 1.5rem 0;
     }
-}
-
-
-Et le passage à supprimer dans le <style> interne de post.html (environ ligne 130) :
-
-/* SUPPRIMER CE BLOC DE post.html */
-.post-content blockquote {
-    margin: 2em 0;
-    padding: 20px 22px;
-    border-left: 4px solid #06b6d4;
-    background: rgba(6, 182, 212, 0.08);
-    border-radius: 12px;
-    color: rgba(255,255,255,0.88);
 }
