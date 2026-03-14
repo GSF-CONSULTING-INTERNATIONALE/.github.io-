@@ -9,7 +9,7 @@ layout: default
         <nav class="post-breadcrumbs" aria-label="Fil d'Ariane">
             <a href="/">Accueil</a>
             <span>•</span>
-            <a href="/blog.html">Analyses</a>
+            <a href="/blog/">Analyses</a>
             <span>•</span>
             <span aria-current="page">{{ page.title }}</span>
         </nav>
@@ -130,7 +130,7 @@ layout: default
 
         <!-- Navigation -->
         <div class="post-navigation">
-            <a href="/blog.html" class="back-link">
+            <a href="/blog/" class="back-link">
                 <span>←</span>
                 <span>Retour aux analyses</span>
             </a>
@@ -228,6 +228,7 @@ layout: default
 
     .post-title {
         font-family: 'Syne', sans-serif;
+        font-weight: 800;
         font-size: clamp(2rem, 4.8vw, 3.2rem);
         line-height: 1.12;
         margin: 0 0 18px 0;
@@ -302,15 +303,6 @@ layout: default
     }
     .post-content a:hover { text-decoration-color: rgba(6, 182, 212, 0.95); }
     .post-content strong { color: #ffffff; }
-
-    .post-content blockquote {
-        margin: 2em 0;
-        padding: 20px 22px;
-        border-left: 4px solid #06b6d4;
-        background: rgba(6, 182, 212, 0.08);
-        border-radius: 12px;
-        color: rgba(255,255,255,0.88);
-    }
 
     .post-content img {
         max-width: 100%;
