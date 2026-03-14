@@ -1,0 +1,189 @@
+---
+layout: null
+title: Analyses & Publications - GSF Consulting International
+description: Retrouvez toutes nos analyses juridiques, insights IA et perspectives stratégiques pour l’Afrique (OHADA, conformité, souveraineté cognitive).
+---
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analyses & Publications - GSF Consulting International</title>
+    <link rel="canonical" href="https://gsfconsultinginternational.com/blog/">
+    <meta name="description" content="Retrouvez toutes nos analyses juridiques, insights IA et perspectives stratégiques pour l’Afrique (OHADA, conformité, souveraineté cognitive).">
+    <meta name="keywords" content="GSF Consulting, analyses juridiques, IA Afrique, OHADA, souveraineté cognitive, Gilles Feliho">
+
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #050505;
+            color: white;
+            font-family: 'Space Grotesk', sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        a { color: #06b6d4; text-decoration: none; transition: 0.3s; }
+        a:hover { color: white; }
+        .glass-card, .blog-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+        }
+        .blog-card:hover {
+            transform: translateY(-5px);
+            border-color: #06b6d4;
+        }
+        .grid-layout {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 0 5%;
+        }
+        .cyan { color: #06b6d4; }
+        nav {
+            position: sticky;
+            top: 10px;
+            z-index: 1000;
+            margin: 20px;
+            border-radius: 10px;
+        }
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
+        .logo {
+            font-family: 'Syne', sans-serif;
+            font-weight: 800;
+            font-size: 1.5rem;
+            color: #06b6d4;
+            text-transform: uppercase;
+        }
+        .desktop-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            margin: 0;
+            padding: 0;
+        }
+        .pagination {
+            text-align: center;
+            margin: 60px 0;
+            font-size: 1.1rem;
+        }
+        .pagination a {
+            color: #06b6d4;
+            padding: 12px 25px;
+            margin: 0 8px;
+            border: 1px solid #06b6d4;
+            border-radius: 6px;
+            font-weight: 700;
+        }
+        .pagination a:hover {
+            background: #06b6d4;
+            color: #050505;
+        }
+        @media (max-width: 768px) {
+            .desktop-menu { display: none !important; }
+            #mobile-menu-btn { display: block !important; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav id="navbar" class="glass-card">
+        <div class="nav-container">
+            <div class="logo">GSF CONSULTING</div>
+            <ul class="desktop-menu">
+                <li><a href="{{ '/' | relative_url }}">Accueil</a></li>
+                <li><a href="{{ '/a-propos/' | relative_url }}">À propos</a></li>
+                <li><a href="{{ '/audit-souverainete-cognitive/' | relative_url }}">Audit ASC™</a></li>
+                <li><a href="{{ '/etudes-de-cas/' | relative_url }}">Études de cas</a></li>
+                <li><a href="{{ '/references-et-preuves/' | relative_url }}">Références</a></li>
+                <li><a href="{{ '/gilles-feliho/' | relative_url }}">L’Expert</a></li>
+                <li><a href="{{ '/blog/' | relative_url }}" style="font-weight:700; color:#06b6d4;">Blog</a></li>
+                <li><a href="{{ '/politique-de-confidentialite/' | relative_url }}">Confidentialité</a></li>
+                <li><a href="{{ '/#contact' | relative_url }}" style="border: 1px solid #06b6d4; padding: 5px 15px; border-radius: 4px;">Contact</a></li>
+            </ul>
+            <button id="mobile-menu-btn">☰</button>
+        </div>
+
+        <div id="mobile-menu">
+            <a href="{{ '/' | relative_url }}" style="color: #fff; padding: 0.5rem;">Accueil</a>
+            <a href="{{ '/a-propos/' | relative_url }}" style="color: #fff; padding: 0.5rem;">À propos</a>
+            <a href="{{ '/audit-souverainete-cognitive/' | relative_url }}" style="color: #fff; padding: 0.5rem;">Audit ASC™</a>
+            <a href="{{ '/etudes-de-cas/' | relative_url }}" style="color: #fff; padding: 0.5rem;">Études de cas</a>
+            <a href="{{ '/references-et-preuves/' | relative_url }}" style="color: #fff; padding: 0.5rem;">Références</a>
+            <a href="{{ '/gilles-feliho/' | relative_url }}" style="color: #fff; padding: 0.5rem;">L’Expert</a>
+            <a href="{{ '/blog/' | relative_url }}" style="color: #06b6d4; padding: 0.5rem; font-weight:700;">Blog</a>
+            <a href="{{ '/politique-de-confidentialite/' | relative_url }}" style="color: #fff; padding: 0.5rem;">Confidentialité</a>
+            <a href="{{ '/#contact' | relative_url }}" style="color: #06b6d4; padding: 0.5rem;">Contact</a>
+        </div>
+    </nav>
+
+    <!-- SECTION ANALYSES PAGINÉE -->
+    <section style="padding: 80px 5%;">
+        <h1 style="font-family:'Syne',sans-serif; font-size:3rem; text-align:center; margin-bottom:50px;">Nos Analyses & Publications</h1>
+        
+        <div class="grid-layout">
+            {% for post in paginator.posts %}
+            <article class="blog-card" style="padding:0; overflow:hidden;">
+                {% if post.image %}
+                <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" style="width:100%; height:200px; object-fit:cover;">
+                {% endif %}
+                <div style="padding:25px;">
+                    <p class="cyan" style="font-size:0.85rem; font-weight:bold; text-transform:uppercase; margin-bottom:8px;">
+                        {{ post.date | date: "%d %B %Y" }}   <!-- ← CORRECTION ICI (mois complet) -->
+                    </p>
+                    <h3 style="font-family:'Syne',sans-serif; font-size:1.4rem; margin:0 0 12px;">{{ post.title }}</h3>
+                    <p style="opacity:0.85; font-size:0.95rem;">{{ post.excerpt | strip_html | truncate: 180 }}</p>
+                    <a href="{{ post.url | relative_url }}" style="color:#06b6d4; font-weight:700; margin-top:15px; display:inline-block;">Lire l’analyse →</a>
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+
+        <!-- PAGINATION -->
+        {% if paginator.total_pages > 1 %}
+        <div class="pagination">
+            {% if paginator.previous_page %}
+                <a href="{{ paginator.previous_page_path }}">← Précédent</a>
+            {% endif %}
+            <span style="margin:0 20px; opacity:0.8;">Page {{ paginator.page }} sur {{ paginator.total_pages }}</span>
+            {% if paginator.next_page %}
+                <a href="{{ paginator.next_page_path }}">Suivant →</a>
+            {% endif %}
+        </div>
+        {% endif %}
+    </section>
+
+    <!-- FOOTER -->
+    <footer style="margin-top: 0; padding: 40px 20px; border-top: 1px solid #06b6d4; text-align: center; font-family: 'Syne', sans-serif;">
+        <p class="cyan" style="font-size: 0.9rem; margin-bottom: 10px;">
+            © {{ 'now' | date: '%Y' }} GSF Consulting International - Tous droits réservés
+        </p>
+        <p style="margin: 0 0 12px;">
+            <a href="mailto:gilles.feliho@gsfconsultinginternational.com" style="color: #06b6d4; text-decoration: none; font-weight: 700;">
+                gilles.feliho@gsfconsultinginternational.com
+            </a>
+        </p>
+        <a href="{{ '/mentions-legales.html' | relative_url }}" style="color: #06b6d4; text-decoration: none; font-weight: 700;">
+            Mentions Légales
+        </a>
+    </footer>
+
+    <script>
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileBtn) {
+            mobileBtn.addEventListener('click', () => mobileMenu.classList.toggle('active'));
+        }
+    </script>
+</body>
+</html>
