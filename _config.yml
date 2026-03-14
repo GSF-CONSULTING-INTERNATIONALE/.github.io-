@@ -1,6 +1,5 @@
-# ======================================================
 # _config.yml — GSF Consulting International
-# Mis à jour le 2026-03-11
+# Mis à jour le 2026-03-14
 # ======================================================
 
 # ===== SITE =====
@@ -29,6 +28,12 @@ plugins:
   - jekyll-seo-tag
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-paginate  # <--- AJOUTÉ POUR LA PAGINATION
+
+# ===== PAGINATION =====
+paginate: 10         # Nombre d'articles par page
+paginate_path: "/blog/page:num/" # Structure des URLs paginées 
+# ======================================================
 
 # ===== COLLECTIONS =====
 collections:
