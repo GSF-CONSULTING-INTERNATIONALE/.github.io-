@@ -31,7 +31,7 @@ plugins:
   - jekyll-paginate  # <--- AJOUTÉ POUR LA PAGINATION
 
 # ===== PAGINATION =====
-paginate: 9        # Nombre d'articles par page
+paginate: 8     # Nombre d'articles par page
 paginate_path: "/blog/page:num/" # Structure des URLs paginées 
 # ======================================================
 
