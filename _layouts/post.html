@@ -36,7 +36,7 @@ layout: default
             <p class="post-excerpt">{{ page.excerpt }}</p>
             {% endif %}
 
-            <!-- ==================== POST-META (date + auteur + last_updated + temps de lecture) ==================== -->
+            <!-- ==================== POST-META ==================== -->
             <div class="post-meta">
                 <time datetime="{{ page.date | date_to_xmlschema }}">
                     {{ page.date | date: "%d %B %Y" }}
@@ -59,8 +59,6 @@ layout: default
                     {% if words < 360 %} 1 min {% else %} {{ words | divided_by: 180 }} min {% endif %} de lecture
                 </span>
             </div>
-            <!-- ============================================================================ -->
-
         </header>
 
         <!-- ==================== SOMMAIRE AUTOMATIQUE (H2 + H3) ==================== -->
@@ -79,25 +77,22 @@ layout: default
             const tocList = document.getElementById('auto-toc-list');
             const tocContainer = document.getElementById('auto-toc-container');
 
-            // Extraction des titres H2 et H3
             const headings = container.querySelectorAll('h2, h3');
 
             if (headings.length > 0) {
                 tocContainer.style.display = 'block';
-                let currentH2Li = null; // Pour suivre le <li> parent du dernier H2
+                let currentH2Li = null;
 
                 headings.forEach((heading) => {
                     const level = heading.tagName.toLowerCase();
                     const text = heading.textContent.trim();
 
-                    // Génère un ID unique si absent
                     if (!heading.id) {
                         const baseId = text.toLowerCase().replace(/[^\w]/g, '-');
                         const existingId = document.getElementById(baseId);
                         heading.id = existingId ? `${baseId}-${Math.floor(Math.random() * 1000)}` : baseId;
                     }
 
-                    // Crée le lien
                     const a = document.createElement('a');
                     a.href = '#' + heading.id;
                     a.textContent = text;
@@ -106,14 +101,12 @@ layout: default
                     a.style.fontWeight = level === 'h2' ? "600" : "400";
 
                     if (level === 'h2') {
-                        // Pour un H2, crée un nouvel item de liste
                         const li = document.createElement('li');
                         li.style.marginBottom = "12px";
                         li.appendChild(a);
                         tocList.appendChild(li);
-                        currentH2Li = li; // Stocke le <li> pour les H3 enfants
+                        currentH2Li = li;
                     } else if (level === 'h3' && currentH2Li) {
-                        // Pour un H3, ajoute une sous-liste au H2 parent
                         let sublist = currentH2Li.querySelector('ul');
                         if (!sublist) {
                             sublist = document.createElement('ul');
@@ -132,7 +125,6 @@ layout: default
         });
         </script>
         {% endif %}
-        <!-- ====================================================================== -->
 
         <!-- Image principale -->
         {% if page.image %}
@@ -146,7 +138,7 @@ layout: default
             {{ content }}
         </div>
 
-        <!-- Bloc méthodologie / source éditoriale -->
+        <!-- Bloc méthodologie -->
         <section class="post-methodology glass-card">
             <h2>Méthodologie éditoriale</h2>
             <p>
@@ -173,7 +165,7 @@ layout: default
             {% endif %}
         </section>
 
-        <!-- ==================== SECTION EEAT : AUTEUR ==================== -->
+        <!-- ==================== SECTION AUTEUR (AVEC PHOTO CORRIGÉE) ==================== -->
         <section class="author-box glass-card">
             <div class="author-box-header">
                 <h2>À propos de l'auteur</h2>
@@ -183,6 +175,9 @@ layout: default
                     src="/uploads/gilles-sixte-feliho.jpg"
                     alt="Gilles Sixte Feliho"
                     class="author-avatar"
+                    width="100"
+                    height="100"
+                    loading="lazy"
                 >
                 <div class="author-content">
                     <p class="author-name">Gilles Sixte Feliho</p>
@@ -237,7 +232,7 @@ layout: default
     </div><!-- /.post-container -->
 </article><!-- /.post-shell -->
 
-<!-- ====== SCHEMA JSON-LD : Article + BreadcrumbList (EEAT optimisé) ====== -->
+<!-- ====== SCHEMA JSON-LD ====== -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -301,14 +296,18 @@ layout: default
 </script>
 
 <style>
-    /* ===== STYLES EXISTANTS (inchangés) ===== */
+    /* ===== STYLES GLOBAUX ===== */
     .post-shell {
         max-width: 100%;
         padding: 120px 5% 70px;
     }
-    /* ... (tous tes styles existants restent identiques) ... */
 
-    /* ===== STYLES SUPPLÉMENTAIRES POUR LE SOMMAIRE ===== */
+    .post-container {
+        max-width: 860px;
+        margin: 0 auto;
+    }
+
+    /* ===== STYLES POUR LE SOMMAIRE ===== */
     #auto-toc-container ul {
         margin: 8px 0 8px 1.2em;
         padding-left: 0;
@@ -320,13 +319,137 @@ layout: default
     #auto-toc-container a[style*="rgba(255,255,255,0.8)"]:hover {
         color: #06b6d4 !important;
     }
-    /* Évite que le sommaire ne soit coupé sur mobile */
     @media (max-width: 768px) {
         #auto-toc-container {
             padding: 20px !important;
             margin: 30px 0 !important;
         }
     }
+
+    /* ===== STYLES POUR LA SECTION AUTEUR (AVEC PHOTO CORRIGÉE) ===== */
+    .author-box {
+        position: relative;
+        margin: 0 0 45px;
+        padding: 30px;
+        border: 1px solid rgba(6, 182, 212, 0.18);
+        border-radius: 18px;
+    }
+
+    .author-box::before {
+        content: '';
+        position: absolute;
+        inset: -1px;
+        background: linear-gradient(135deg, rgba(6,182,212,0.14), transparent 45%, rgba(255,255,255,0.03));
+        z-index: -1;
+        border-radius: 19px;
+        filter: blur(10px);
+        opacity: 0.85;
+    }
+
+    .author-box-header h2 {
+        margin: 0 0 20px 0;
+        font-family: 'Syne', sans-serif;
+        color: #06b6d4;
+        font-size: 1.4rem;
+    }
+
+    .author-flex {
+        display: flex;
+        gap: 20px;
+        align-items: flex-start;
+    }
+
+    .author-avatar {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center;
+        flex-shrink: 0;
+        border: 3px solid #06b6d4;
+        box-shadow: 0 0 0 6px rgba(6, 182, 212, 0.08);
+    }
+
+    .author-content {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .author-name {
+        margin: 0 0 10px 0;
+        color: #ffffff;
+        font-size: 1.08rem;
+        font-weight: 700;
+    }
+
+    .author-description {
+        margin: 0 0 14px 0;
+        color: rgba(255,255,255,0.84);
+        line-height: 1.7;
+    }
+
+    .author-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 8px;
+    }
+
+    .author-link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 16px;
+        border-radius: 999px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.2s ease;
+        border: 1px solid rgba(6, 182, 212, 0.24);
+        color: #06b6d4;
+        background: rgba(6, 182, 212, 0.08);
+        font-size: 0.9rem;
+    }
+
+    .author-link:hover {
+        transform: translateY(-1px);
+        opacity: 0.95;
+    }
+
+    .author-link.primary {
+        background: #06b6d4;
+        color: #041014;
+        border-color: transparent;
+    }
+
+    /* ===== RESPONSIVE POUR MOBILE ===== */
+    @media (max-width: 768px) {
+        .post-shell { padding: 105px 5% 60px; }
+        .author-flex {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .author-avatar {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 16px;
+        }
+        .author-links {
+            justify-content: center;
+        }
+    }
+
+    /* ===== AUTRES STYLES (inchangés) ===== */
+    .post-breadcrumbs {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 28px;
+        font-size: 0.9rem;
+        color: rgba(255,255,255,0.58);
+    }
+    /* ... (le reste de tes styles existants) ... */
 </style>
 
 <!-- ==================== SCRIPT PROGRESS BAR + BACK TO TOP ==================== -->
