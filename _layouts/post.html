@@ -3,11 +3,15 @@ layout: default
 ---
 
 <!-- ==================== PROGRESS BAR + BOUTON RETOUR ==================== -->
-<div class="progress-container">
-    <div class="progress-bar" id="myBar"></div>
+<div class="progress-container" style="position: fixed; top: 0; left: 0; width: 100%; height: 5px; background: rgba(255,255,255,0.05); z-index: 10000;">
+    <div class="progress-bar" id="myBar" style="height: 100%; background: #06b6d4; width: 0%; transition: width 0.1s ease;"></div>
 </div>
 
-<button id="backToTop" title="Retour en haut">↑</button>
+<button id="backToTop" title="Retour en haut" style="display: none; position: fixed; bottom: 30px; right: 30px; z-index: 10000; border: none; outline: none; background: #06b6d4; color: white; cursor: pointer; padding: 15px; border-radius: 50%; width: 50px; height: 50px; font-size: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.5); transition: transform 0.2s;">
+    ↑
+</button>
+
+
 <!-- ====================================================================== -->
 
 <article class="post-shell">
@@ -455,14 +459,21 @@ layout: default
 <!-- ==================== SCRIPT PROGRESS BAR + BACK TO TOP ==================== -->
 <script>
     window.onscroll = function() {
+        // Calcul de la progression
         const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
         const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
         const scrolled = (winScroll / height) * 100;
+        
+        // Mise à jour de la barre (ID: myBar)
         const progressBar = document.getElementById("myBar");
-        if (progressBar) progressBar.style.width = scrolled + "%";
+        if (progressBar) {
+            progressBar.style.width = scrolled + "%";
+        }
 
+        // Affichage du bouton (ID: backToTop)
         const btn = document.getElementById("backToTop");
         if (btn) {
+            // Apparaît après 500px de scroll
             if (winScroll > 500) {
                 btn.style.display = "block";
             } else {
@@ -471,7 +482,12 @@ layout: default
         }
     };
 
-    document.getElementById("backToTop").onclick = function() {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    };
+    // Action de retour en haut fluide
+    const backBtn = document.getElementById("backToTop");
+    if (backBtn) {
+        backBtn.onclick = function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+    }
 </script>
+
