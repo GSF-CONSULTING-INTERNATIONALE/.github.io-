@@ -6,7 +6,7 @@ last_updated: 2026-03-15
 category: "Droit des affaires"
 tags: [IA, OHADA, AUPSRVE 2023, Souveraineté Cognitive, Contrats intelligents, Smart Contracts, CCJA, Formalisme, Recouvrement, Droit 4.0]
 author: "Gilles Sixte Feliho"
-image: uploads/ia-ohada-contrats-intelligents-souverainete-cognitive-aupsrve-2023.PNG
+image:uploads/ia-ohada-contrats-intelligents-souverainete-cognitive-aupsrve-2023.PNG
 excerpt: "Jurisprudence CCJA 2025 et arrêt Niger Lait : analyse des 5 erreurs fatales qui invalident les clauses IA devant les juges OHADA, et méthodologie ASC™ pour sécuriser juridiquement l'automatisation contractuelle."
 source_url: "https://gsfconsultinginternational.com/analyses/clause-ia-juges-ohada-5-erreurs-invalidantes/"
 permalink: /analyses/clause-ia-ohada-contrats-intelligents/
