@@ -208,7 +208,8 @@ Face à ces 5 risques — confirmés par la jurisprudence récente de la CCJA et
 
 ## <span id="checklist">Votre checklist : 10 points de contrôle clauses IA OHADA</span>
 
-**[📥 TÉLÉCHARGER LE PDF COMPLET (Gratuit)]**
+  **[📩 Demander le PDF COMPLET (Gratuit)](mailto:contact@gsfconsultinginternational.com?subject=Demande%20Checklist%20IA%20OHADA&body=Bonjour,%20je%20souhaiterais%20recevoir%20la%20checklist%20complète%20des%2010%20points%20de%20contrôle%20IA%20OHADA.)**
+
 
 Avant de signer votre prochain contrat avec clause IA, vérifiez ces 10 points critiques :
 
