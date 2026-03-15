@@ -11,6 +11,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ '/css/style.css' | relative_url }}">
 
+    <!-- ==================== FONT AWESOME (version fiable) ==================== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ===================================================================== -->
+
     <style>
         #mobile-menu {
             display: none;
@@ -21,7 +26,7 @@
             top: 100%;
             left: 0;
             width: 100%;
-            z-index: 999;
+            z-index: 2100;
         }
 
         #mobile-menu.active {
@@ -32,7 +37,7 @@
             display: none;
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 1024px) {
             .desktop-menu {
                 display: none !important;
             }
@@ -45,7 +50,8 @@
 </head>
 <body>
 
-    <nav id="navbar" class="glass-card" style="margin: 20px; position: sticky; top: 10px; z-index: 1000;">
+    <!-- ==================== NAVBAR (z-index optimisé) ==================== -->
+    <nav id="navbar" class="glass-card" style="margin: 20px; position: sticky; top: 10px; z-index: 1500;">
         <div class="nav-container" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; position: relative;">
             <div class="logo" style="font-family: 'Syne', sans-serif; font-weight: 800; font-size: 1.5rem; color: #06b6d4;">GSF CONSULTING</div>
 
@@ -76,6 +82,7 @@
             <a href="{{ '/#contact' | relative_url }}" style="color: #06b6d4; padding: 0.5rem;">Contact</a>
         </div>
     </nav>
+    <!-- ================================================================== -->
 
     {{ content }}
 
@@ -91,12 +98,23 @@
         </p>
     </footer>
 
+    <!-- ==================== SCRIPT FINAL (menu mobile amélioré) ==================== -->
     <script>
       const mobileBtn = document.getElementById('mobile-menu-btn');
       const mobileMenu = document.getElementById('mobile-menu');
+      
       if (mobileBtn) {
         mobileBtn.addEventListener('click', () => mobileMenu.classList.toggle('active'));
       }
+
+      // Ferme automatiquement le menu mobile après un clic sur un lien
+      // Indispensable pour les ancres comme "#contact"
+      document.querySelectorAll('#mobile-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.remove('active');
+        });
+      });
     </script>
+    <!-- ======================================================================== -->
 </body>
 </html>
