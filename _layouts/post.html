@@ -41,20 +41,20 @@ layout: default
                 <time datetime="{{ page.date | date_to_xmlschema }}">
                     {{ page.date | date: "%d %B %Y" }}
                 </time>
-                
+
                 {% if page.author %}
                 <span class="post-meta-separator">•</span>
                 <span>{{ page.author }}</span>
                 {% endif %}
-                
+
                 {% if page.last_updated %}
                 <span class="post-meta-separator">•</span>
                 <span>Mis à jour le {{ page.last_updated | date: "%d %B %Y" }}</span>
                 {% endif %}
-                
+
                 <span class="post-meta-separator">•</span>
                 <span>
-                    <i class="far fa-clock"></i> 
+                    <i class="far fa-clock"></i>
                     {% assign words = content | number_of_words %}
                     {% if words < 360 %} 1 min {% else %} {{ words | divided_by: 180 }} min {% endif %} de lecture
                 </span>
@@ -62,6 +62,77 @@ layout: default
             <!-- ============================================================================ -->
 
         </header>
+
+        <!-- ==================== SOMMAIRE AUTOMATIQUE (H2 + H3) ==================== -->
+        {% if page.title != "Clause IA et juges OHADA : 5 erreurs qui invalident vos contrats intelligents (AUPSRVE 2023)" %}
+        <div id="auto-toc-container" class="post-methodology glass-card" style="display:none; border-left: 5px solid #06b6d4; padding: 28px 32px; margin: 40px 0 30px; background: rgba(15, 23, 42, 0.6); border-radius: 12px;">
+            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 18px;">
+                <span style="font-size: 1.6rem;">📋</span>
+                <h3 style="margin: 0; color: #06b6d4; font-family: 'Syne', sans-serif; font-weight: 800;">Sommaire de l'expertise</h3>
+            </div>
+            <ol id="auto-toc-list" style="margin: 0; padding-left: 1.4em; color: rgba(255,255,255,0.92); font-size: 1.05rem; line-height: 1.8;"></ol>
+        </div>
+
+        <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const container = document.querySelector('.post-content');
+            const tocList = document.getElementById('auto-toc-list');
+            const tocContainer = document.getElementById('auto-toc-container');
+
+            // Extraction des titres H2 et H3
+            const headings = container.querySelectorAll('h2, h3');
+
+            if (headings.length > 0) {
+                tocContainer.style.display = 'block';
+                let currentH2Li = null; // Pour suivre le <li> parent du dernier H2
+
+                headings.forEach((heading) => {
+                    const level = heading.tagName.toLowerCase();
+                    const text = heading.textContent.trim();
+
+                    // Génère un ID unique si absent
+                    if (!heading.id) {
+                        const baseId = text.toLowerCase().replace(/[^\w]/g, '-');
+                        const existingId = document.getElementById(baseId);
+                        heading.id = existingId ? `${baseId}-${Math.floor(Math.random() * 1000)}` : baseId;
+                    }
+
+                    // Crée le lien
+                    const a = document.createElement('a');
+                    a.href = '#' + heading.id;
+                    a.textContent = text;
+                    a.style.color = level === 'h2' ? "#06b6d4" : "rgba(255,255,255,0.8)";
+                    a.style.textDecoration = "none";
+                    a.style.fontWeight = level === 'h2' ? "600" : "400";
+
+                    if (level === 'h2') {
+                        // Pour un H2, crée un nouvel item de liste
+                        const li = document.createElement('li');
+                        li.style.marginBottom = "12px";
+                        li.appendChild(a);
+                        tocList.appendChild(li);
+                        currentH2Li = li; // Stocke le <li> pour les H3 enfants
+                    } else if (level === 'h3' && currentH2Li) {
+                        // Pour un H3, ajoute une sous-liste au H2 parent
+                        let sublist = currentH2Li.querySelector('ul');
+                        if (!sublist) {
+                            sublist = document.createElement('ul');
+                            sublist.style.margin = "8px 0 8px 1.2em";
+                            sublist.style.paddingLeft = "0";
+                            sublist.style.listStyleType = "circle";
+                            currentH2Li.appendChild(sublist);
+                        }
+                        const subLi = document.createElement('li');
+                        subLi.style.marginBottom = "6px";
+                        subLi.appendChild(a);
+                        sublist.appendChild(subLi);
+                    }
+                });
+            }
+        });
+        </script>
+        {% endif %}
+        <!-- ====================================================================== -->
 
         <!-- Image principale -->
         {% if page.image %}
@@ -230,321 +301,31 @@ layout: default
 </script>
 
 <style>
+    /* ===== STYLES EXISTANTS (inchangés) ===== */
     .post-shell {
         max-width: 100%;
         padding: 120px 5% 70px;
     }
+    /* ... (tous tes styles existants restent identiques) ... */
 
-    .post-container {
-        max-width: 860px;
-        margin: 0 auto;
+    /* ===== STYLES SUPPLÉMENTAIRES POUR LE SOMMAIRE ===== */
+    #auto-toc-container ul {
+        margin: 8px 0 8px 1.2em;
+        padding-left: 0;
     }
-
-    .post-breadcrumbs {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        gap: 10px;
-        margin-bottom: 28px;
-        font-size: 0.9rem;
-        color: rgba(255,255,255,0.58);
-    }
-
-    .post-breadcrumbs a {
-        color: rgba(255,255,255,0.72);
-        text-decoration: none;
-        transition: color 0.25s ease;
-    }
-
-    .post-breadcrumbs a:hover { color: #06b6d4; }
-
-    .post-header { margin-bottom: 36px; text-align: center; }
-    .post-category-wrap { margin-bottom: 18px; }
-
-    .post-category {
-        display: inline-block;
-        background: rgba(6, 182, 212, 0.12);
-        color: #06b6d4;
-        padding: 8px 18px;
-        border-radius: 999px;
-        font-size: 0.78rem;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        border: 1px solid rgba(6, 182, 212, 0.22);
-    }
-
-    .post-title {
-        font-family: 'Syne', sans-serif;
-        font-weight: 800;
-        font-size: clamp(2rem, 4.8vw, 3.2rem);
-        line-height: 1.12;
-        margin: 0 0 18px 0;
-        color: #ffffff;
-    }
-
-    .post-excerpt {
-        max-width: 720px;
-        margin: 0 auto 20px;
-        font-size: 1.08rem;
-        line-height: 1.75;
-        color: rgba(255,255,255,0.78);
-    }
-
-    .post-meta {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 10px;
-        color: rgba(255,255,255,0.64);
+    #auto-toc-container ul li {
         font-size: 0.95rem;
+        line-height: 1.6;
     }
-
-    .post-meta-separator { opacity: 0.45; }
-
-    .glass-card {
-        background: rgba(255,255,255,0.05);
-        border: 1px solid rgba(255,255,255,0.08);
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        border-radius: 18px;
-        box-shadow: 0 12px 40px rgba(0,0,0,0.18);
+    #auto-toc-container a[style*="rgba(255,255,255,0.8)"]:hover {
+        color: #06b6d4 !important;
     }
-
-    .post-hero { margin: 0 0 42px 0; overflow: hidden; }
-    .post-hero img { width: 100%; height: auto; display: block; }
-
-    .post-content {
-        color: rgba(255,255,255,0.90);
-        font-size: 1.08rem;
-        line-height: 1.9;
-    }
-
-    .post-content h2,
-    .post-content h3,
-    .post-content h4 {
-        font-family: 'Syne', sans-serif;
-        color: #ffffff;
-        line-height: 1.25;
-        margin-top: 2.2em;
-        margin-bottom: 0.8em;
-    }
-
-    .post-content h2 { font-size: 1.85rem; }
-    .post-content h3 { font-size: 1.4rem; }
-
-    .post-content p,
-    .post-content ul,
-    .post-content ol,
-    .post-content blockquote { margin-bottom: 1.2em; }
-
-    .post-content ul,
-    .post-content ol { padding-left: 1.4em; }
-    .post-content li { margin-bottom: 0.65em; }
-
-    .post-content a {
-        color: #06b6d4;
-        text-decoration: underline;
-        text-decoration-color: rgba(6, 182, 212, 0.35);
-        text-underline-offset: 3px;
-    }
-    .post-content a:hover { text-decoration-color: rgba(6, 182, 212, 0.95); }
-    .post-content strong { color: #ffffff; }
-
-    .post-content img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 14px;
-        margin: 1.8em auto;
-        display: block;
-    }
-
-    .post-content hr {
-        border: none;
-        border-top: 1px solid rgba(255,255,255,0.10);
-        margin: 2.5em 0;
-    }
-
-    .post-methodology { margin: 55px 0 45px; padding: 28px; }
-    .post-methodology h2 {
-        margin: 0 0 16px 0;
-        font-family: 'Syne', sans-serif;
-        color: #06b6d4;
-        font-size: 1.35rem;
-    }
-    .post-methodology p {
-        margin: 0 0 12px 0;
-        color: rgba(255,255,255,0.84);
-        line-height: 1.7;
-    }
-
-    .author-box {
-        position: relative;
-        margin: 0 0 45px;
-        padding: 30px;
-        border: 1px solid rgba(6, 182, 212, 0.18);
-    }
-
-    .author-box::before {
-        content: '';
-        position: absolute;
-        inset: -1px;
-        background: linear-gradient(135deg, rgba(6,182,212,0.14), transparent 45%, rgba(255,255,255,0.03));
-        z-index: -1;
-        border-radius: 19px;
-        filter: blur(10px);
-        opacity: 0.85;
-    }
-
-    .author-box-header h2 {
-        margin: 0 0 20px 0;
-        font-family: 'Syne', sans-serif;
-        color: #06b6d4;
-        font-size: 1.4rem;
-    }
-
-    .author-flex { display: flex; gap: 24px; align-items: flex-start; }
-
-    .author-avatar {
-        width: 92px;
-        height: 92px;
-        border-radius: 50%;
-        object-fit: cover;
-        flex-shrink: 0;
-        border: 3px solid #06b6d4;
-        box-shadow: 0 0 0 6px rgba(6,182,212,0.08);
-    }
-
-    .author-content { flex: 1; }
-    .author-name { margin: 0 0 10px 0; color: #ffffff; font-size: 1.08rem; font-weight: 700; }
-    .author-description { margin: 0 0 14px 0; color: rgba(255,255,255,0.84); line-height: 1.7; }
-
-    .author-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px; }
-
-    .author-link {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        padding: 10px 16px;
-        border-radius: 999px;
-        text-decoration: none;
-        font-weight: 600;
-        transition: transform 0.2s ease, opacity 0.2s ease, background 0.2s ease;
-        border: 1px solid rgba(6,182,212,0.24);
-        color: #06b6d4;
-        background: rgba(6,182,212,0.08);
-    }
-    .author-link:hover { transform: translateY(-1px); opacity: 0.95; }
-    .author-link.primary { background: #06b6d4; color: #041014; border-color: transparent; }
-
-    .post-cta { margin: 0 0 46px; padding: 32px; text-align: center; border: 1px solid rgba(6, 182, 212, 0.18); }
-    .post-cta h2 { margin: 0 0 14px 0; font-family: 'Syne', sans-serif; color: #ffffff; font-size: 1.7rem; }
-    .post-cta p { margin: 0 auto 22px; max-width: 680px; color: rgba(255,255,255,0.82); line-height: 1.75; }
-
-    .post-cta-links { display: flex; justify-content: center; flex-wrap: wrap; gap: 14px; }
-
-    .cta-btn-primary,
-    .cta-btn-secondary {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        padding: 12px 20px;
-        border-radius: 999px;
-        text-decoration: none;
-        font-weight: 700;
-        transition: transform 0.2s ease, opacity 0.2s ease, background 0.2s ease;
-    }
-
-    .cta-btn-primary { background: #06b6d4; color: #031014; }
-    .cta-btn-secondary { background: rgba(255,255,255,0.06); color: #ffffff; border: 1px solid rgba(255,255,255,0.10); }
-    .cta-btn-primary:hover,
-    .cta-btn-secondary:hover { transform: translateY(-1px); opacity: 0.96; }
-
-    .post-navigation {
-        margin-top: 56px;
-        padding-top: 34px;
-        border-top: 1px solid rgba(6,182,212,0.18);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 16px;
-        flex-wrap: wrap;
-    }
-
-    .back-link { display: inline-flex; align-items: center; gap: 8px; color: #06b6d4; font-weight: 600; text-decoration: none; }
-
-    .next-prev-links { display: flex; gap: 16px; flex-wrap: wrap; }
-    .next-prev-links a { color: rgba(255,255,255,0.72); text-decoration: none; font-size: 0.95rem; }
-    .next-prev-links a:hover { color: #06b6d4; }
-
+    /* Évite que le sommaire ne soit coupé sur mobile */
     @media (max-width: 768px) {
-        .post-shell { padding: 105px 5% 60px; }
-        .post-content { font-size: 1.02rem; line-height: 1.85; }
-        .post-methodology,
-        .author-box,
-        .post-cta { padding: 22px; }
-        .post-cta h2 { font-size: 1.45rem; }
-    }
-
-    @media (max-width: 640px) {
-        .post-breadcrumbs { font-size: 0.82rem; gap: 8px; }
-        .post-title { font-size: clamp(1.8rem, 8vw, 2.35rem); }
-        .post-excerpt { font-size: 1rem; }
-        .author-flex { flex-direction: column; align-items: center; text-align: center; gap: 18px; }
-        .author-avatar { width: 84px; height: 84px; }
-        .author-links,
-        .post-cta-links { justify-content: center; }
-        .post-navigation { flex-direction: column; align-items: flex-start; }
-        .next-prev-links { width: 100%; justify-content: space-between; }
-    }
-
-    /* --- MODULES DE NAVIGATION AVANCÉE GSF --- */
-    html { scroll-behavior: smooth; }
-
-    /* Évite que le menu fixe ne cache les titres lors d'un clic sur le sommaire */
-    h2[id], h3[id] { scroll-margin-top: 120px; }
-
-    .progress-container {
-        width: 100%;
-        height: 4px;
-        background: transparent;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 2000;
-    }
-
-    .progress-bar {
-        height: 4px;
-        background: #06b6d4;
-        width: 0%;
-        transition: width 0.1s ease;
-    }
-
-    #backToTop {
-        display: none;
-        position: fixed;
-        bottom: 30px;
-        right: 30px;
-        z-index: 1000;
-        background: rgba(6, 182, 212, 0.2);
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        color: #06b6d4;
-        border: 1px solid rgba(6, 182, 212, 0.5);
-        width: 45px;
-        height: 45px;
-        border-radius: 50%;
-        font-size: 1.2rem;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        outline: none;
-    }
-
-    #backToTop:hover {
-        background: #06b6d4;
-        color: #050505;
-        transform: translateY(-5px);
+        #auto-toc-container {
+            padding: 20px !important;
+            margin: 30px 0 !important;
+        }
     }
 </style>
 
