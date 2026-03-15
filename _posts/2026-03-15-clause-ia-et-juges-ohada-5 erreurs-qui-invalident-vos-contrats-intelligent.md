@@ -22,15 +22,11 @@ Ce cas illustre une réalité brutale : **73% des contrats avec clauses IA ne r�
 >
 > **[📥 Télécharger le jugement complet (PDF)](uploads/jugement-niger-lait.pdf)**
 
-## Sommaire
-1. [Erreur #1 : L'exécution 100% automatique sans "human-in-the-loop"](#erreur-1)
-2. [Erreur #2 : L'opacité algorithmique (la "boîte noire")](#erreur-2)
-3. [Erreur #3 : La preuve numérique non certifiée](#erreur-3)
-4. [Erreur #4 : Le scoring prédictif non audité](#erreur-4)
-5. [Erreur #5 : L'absence de clause de souveraineté cognitive](#erreur-5)
-6. [La position de la CCJA : Ce que dit la Cour en 2025](#ccja)
-7. [La solution : L'Audit de Souveraineté Cognitive™ GSF](#solution)
-8. [Checklist téléchargeable : 10 points de contrôle](#checklist)
+## Erreur #1 : L'exécution 100% automatique sans "human-in-the-loop" {: #erreur-1 }
+## Erreur #2 : L'opacité algorithmique (la "boîte noire") {: #erreur-2 }
+## La position de la CCJA : Ce que dit la Cour en 2025 {: #ccja }
+## La solution : L'Audit de Souveraineté Cognitive™ (ASC) {: #solution }
+## Votre checklist : 10 points de contrôle clauses IA OHADA {: #checklist }
 
 ## Erreur #1 : L'exécution 100% automatique sans "human-in-the-loop"
 
