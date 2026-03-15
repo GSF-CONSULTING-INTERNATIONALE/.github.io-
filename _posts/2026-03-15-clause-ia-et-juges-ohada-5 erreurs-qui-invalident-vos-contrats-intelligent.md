@@ -13,23 +13,20 @@ permalink: /analyses/clause-ia-ohada-contrats-intelligents/
 ---
 
 <div class="post-methodology glass-card" style="border-left: 5px solid #06b6d4; padding: 28px 32px; margin: 40px 0; background: rgba(15, 23, 42, 0.6); border-radius: 12px;">
-    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 18px;">
-        <span style="font-size: 1.6rem;">📋</span>
-        <h3 style="margin: 0; color: #06b6d4; font-family: 'Syne', sans-serif; font-weight: 800;">Sommaire</h3>
-    </div>
-    <ol style="margin: 0; padding-left: 1.4em; color: rgba(255,255,255,0.92); font-size: 1.05rem; line-height: 1.8;">
-        <li style="margin-bottom: 10px;"><a href="#erreur-1" style="color: #06b6d4; text-decoration: none;">Erreur #1 : L'exécution 100% automatique sans "human-in-the-loop"</a></li>
-        <li style="margin-bottom: 10px;"><a href="#erreur-2" style="color: #06b6d4; text-decoration: none;">Erreur #2 : L'opacité algorithmique (la "boîte noire")</a></li>
-        <li style="margin-bottom: 10px;"><a href="#erreur-3" style="color: #06b6d4; text-decoration: none;">Erreur #3 : La preuve numérique non certifiée</a></li>
-        <li style="margin-bottom: 10px;"><a href="#erreur-4" style="color: #06b6d4; text-decoration: none;">Erreur #4 : Le scoring prédictif non audité</a></li>
-        <li style="margin-bottom: 10px;"><a href="#erreur-5" style="color: #06b6d4; text-decoration: none;">Erreur #5 : L'absence de clause de souveraineté cognitive</a></li>
-        <li style="margin-bottom: 10px;"><a href="#ccja" style="color: #06b6d4; text-decoration: none;">La position de la CCJA : Ce que dit la Cour en 2025</a></li>
-        <li style="margin-bottom: 10px;"><a href="#solution" style="color: #06b6d4; text-decoration: none;">La solution : L'Audit de Souveraineté Cognitive™ GSF</a></li>
-        <li style="margin-bottom: 10px;"><a href="#checklist" style="color: #06b6d4; text-decoration: none;">Checklist téléchargeable : 10 points de contrôle</a></li>
-    </ol>
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 18px;">
+<span style="font-size: 1.6rem;">📋</span>
+<h3 style="margin: 0; color: #06b6d4; font-family: 'Syne', sans-serif; font-weight: 800;">Sommaire de l'expertise</h3>
+</div>
+<ol style="margin: 0; padding-left: 1.4em; color: rgba(255,255,255,0.92); font-size: 1.05rem; line-height: 1.8;">
+<li style="margin-bottom: 10px;"><a href="#erreur-1" style="color: #06b6d4; text-decoration: none;">Erreur #1 : L'exécution 100% automatique</a></li>
+<li style="margin-bottom: 10px;"><a href="#erreur-2" style="color: #06b6d4; text-decoration: none;">Erreur #2 : L'opacité algorithmique</a></li>
+<li style="margin-bottom: 10px;"><a href="#ccja" style="color: #06b6d4; text-decoration: none;">La position de la CCJA en 2025</a></li>
+</ol>
 </div>
 
 ## Le risque réel : quand votre contrat "intelligent" devient un titre exécutoire nul
+
+
 
 En janvier 2025, une multinationale pétrolière opérant au Gabon a vu sa **clause d'ajustement automatique des prix** — pilotée par algorithme — déclarée **nulle et non avenue** par la Cour d'appel de Libreville. Le juge n'a pas contesté l'intelligence artificielle. Il a sanctionné **l'absence de traçabilité de la décision algorithmique** et l'omission des mentions obligatoires de l'article 8 de l'AUPSRVE.
 
