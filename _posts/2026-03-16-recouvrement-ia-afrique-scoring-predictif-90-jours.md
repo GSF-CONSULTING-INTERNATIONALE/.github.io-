@@ -187,7 +187,7 @@ Template structuré en 3 onglets pour le **Recouvrement IA Afrique** :
 <div class="cta-box">
   <h3>🚀 Téléchargez le Template de Scoring IA (Conforme BCEAO)</h3>
   <p>Le fichier Excel complet pour documenter votre modèle et piloter votre projet</p>
-  <a href="sandbox:///mnt/kimi/output/Template_Scoring_IA_GSF_Consulting.xlsx" class="btn-primary" download>
+  <a href="sandbox:///mnt/kimi/output/uploads/template-scoring-ia-gsf-consulting.xlsx" class="btn-primary" download>
     📥 Télécharger Template_Scoring_IA_GSF_Consulting.xlsx
   </a>
 </div>
