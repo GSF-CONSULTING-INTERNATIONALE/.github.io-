@@ -1,4 +1,3 @@
-[Contactez-nous](mailto:contact@gsfconsultinginternational.com?subject=Demande%20d%27accompagnement%20Jurisprudence%20CCJA%202026%20-%20S%C3%A9curisation%20contrats%20transfrontaliers)
 ---
 layout: post
 title: "Jurisprudence CCJA 2026 : 10 décisions clés pour sécuriser vos contrats et investissements transfrontaliers"
