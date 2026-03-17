@@ -90,12 +90,21 @@ La BCEAO a déjà posé des jalons avec l’Instruction n°001-01-2024. Le modè
 [Contactez GSF pour un calendrier sur mesure adapté à votre banque UEMOA](mailto:contact@gsfconsultinginternational.com?subject=Calendrier%20transposition%20Sandbox%202.0%20CBN%20-%20Acc%C3%A9l%C3%A9rez%20votre%20conformit%C3%A9%20IA%20en%203%20phases&body=Bonjour%20GSF%20Consulting%2C%0A%0AJe%20souhaite%20un%20calendrier%20de%20transposition%20Sandbox%202.0%20IA%20sur%20mesure%20pour%20ma%20structure%20UEMOA.%0A%0AInformations%20%3A%0A-%20Nom%20%3A%0A-%20Soci%C3%A9t%C3%A9%20%3A%0A-%20Fintech%20agr%C3%A9%C3%A9e%20BCEAO%20%3A%20Oui%20%2F%20Non%0A-%20Volume%20mensuel%20transactions%20%3A%0A-%20Core%20Banking%20%3A%0A%0APriorit%C3%A9s%20%3A%0A%5B%20Phase%201%20Forum%20%2F%20Phase%202%20Pilote%20IA%20%2F%20Phase%203%20Single%20Window%20%2F%20Passeport%20r%C3%A9gional%20%5D%0A%0ACordialement%2C)
 
 ## IA et Flux Financiers Illicites : renforcer l’arsenal de l’UEMOA avec l’analyse de graphes et Isolation Forest
+[span_0](start_span)La lutte contre le blanchiment d'argent et le financement du terrorisme (LBC/FT) est un pilier de la stabilité monétaire[span_0](end_span). [span_1](start_span)En Guinée, comme dans le reste de la région, les dispositifs se durcissent avec des pouvoirs accrus pour les autorités de contrôle[span_1](end_span). [span_2](start_span)L'IA offre des outils de détection proactive essentiels pour faire face à l'augmentation des cybermenaces[span_2](end_span).
 
-L’IA remplace les règles statiques par des modèles comportementaux. Un exemple concret :
+### Vers une surveillance granulaire et prédictive
 
-$$ s = 2^{-\frac{E(h(x))}{c(n)}} $$
+[span_3](start_span)Les banques centrales, dont la BCEAO, intègrent progressivement l'IA pour surveiller les transactions suspectes en temps réel[span_3](end_span). [span_4](start_span)L'usage de l'analyse de graphes permet de visualiser les relations entre comptes et de détecter des réseaux de blanchiment complexes qui échappent aux analyses linéaires[span_4](end_span).
 
-où \( E(h(x)) \) est l’espérance de la longueur du chemin pour isoler la transaction \( x \), et \( c(n) \) la longueur moyenne dans un arbre binaire. Plus \( s \) est proche de 1, plus la transaction est anormale.
+[span_5](start_span)Un modèle de détection d'anomalies par **forêt d'isolation (Isolation Forest)** peut être utilisé pour isoler les transactions suspectes $x$[span_5](end_span):
+
+$$s = 2^{-\frac{E(h(x))}{c(n)}}$$
+
+**Où :**
+* **[span_6](start_span)$E(h(x))$** est l'espérance de la longueur du chemin pour isoler $x$[span_6](end_span).
+* **[span_7](start_span)$c(n)$** est la longueur moyenne d'un chemin échoué dans un arbre de recherche binaire[span_7](end_span).
+* **[span_8](start_span)Interprétation :** Plus le score $s$ est proche de **1**, plus la transaction est jugée anormale[span_8](end_span).
+
 
 Le Cadre de concertation sur la Lutte Anti-Blanchiment (CLAB) est l’enceinte idéale pour harmoniser l’usage de l’IA dans la surveillance des actifs virtuels.
 
