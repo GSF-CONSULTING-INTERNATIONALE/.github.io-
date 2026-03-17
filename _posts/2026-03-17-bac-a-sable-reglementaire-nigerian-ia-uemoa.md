@@ -35,7 +35,7 @@ Le rapport de 2026 propose trois piliers stratégiques : une régulation favorab
 | Utilisateurs enregistrés BVN           | 67,8 millions                        |
 
 **Prêt à répliquer le modèle nigérian dans votre institution UEMOA ?**  
-[Contactez-nous pour une étude de faisabilité Sandbox 2.0 IA – Réduisez votre time-to-market de 50 % tout en renforçant la conformité](mailto:contact@gsfconsultinginternational.com?subject=Sandbox%202.0%20IA%20UEMOA%20-%20Acc%C3%A9l%C3%A9rez%20votre%20time-to-market%20de%2050%25%20avec%20le%20mod%C3%A8le%20CBN)
+[Contactez-nous pour une étude de faisabilité Sandbox 2.0 IA – Réduisez votre time-to-market de 50 % tout en renforçant la conformité](mailto:contact@gsfconsultinginternational.com?subject=Sandbox%202.0%20IA%20UEMOA%20-%20Acc%C3%A9l%C3%A9rez%20votre%20time-to-market%20de%2050%25%20avec%20le%20mod%C3%A8le%20CBN&body=Bonjour%20GSF%20Consulting%2C%0A%0AJe%20souhaite%20une%20%C3%A9tude%20de%20faisabilit%C3%A9%20Sandbox%202.0%20IA%20adapt%C3%A9e%20%C3%A0%20ma%20banque%20ou%20fintech%20UEMOA.%0A%0AInformations%20%3A%0A-%20Nom%20%3A%0A-%20Soci%C3%A9t%C3%A9%20%3A%0A-%20Fintech%20agr%C3%A9%C3%A9e%20BCEAO%20%3A%20Oui%20%2F%20Non%0A-%20Volume%20mensuel%20transactions%20%3A%0A-%20Core%20Banking%20%3A%0A%0APriorit%C3%A9s%20%3A%0A%5B%20Acc%C3%A9l%C3%A9ration%20time-to-market%20%2F%20Conformit%C3%A9%20IA%20%2F%20RegTech%20%2F%20Inclusion%20financi%C3%A8re%20%5D%0A%0ACordialement%2C)
 
 ## Le Bac à Sable 2.0 : Tester, Apprendre, Codifier – Comment la CBN transforme les pilotes IA en règles officielles
 
@@ -87,7 +87,7 @@ La BCEAO a déjà posé des jalons avec l’Instruction n°001-01-2024. Le modè
 | Phase 3 : Institutionnalisation | 9-18 mois | Single Regulatory Window + passeport réglementaire régional    |
 
 **Besoin d’un accompagnement personnalisé pour lancer votre Sandbox 2.0 ?**  
-[Contactez GSF pour un calendrier sur mesure adapté à votre banque UEMOA](mailto:contact@gsfconsultinginternational.com?subject=Calendrier%20transposition%20Sandbox%202.0%20CBN%20-%20Acc%C3%A9l%C3%A9rez%20votre%20conformit%C3%A9%20IA%20en%203%20phases)
+[Contactez GSF pour un calendrier sur mesure adapté à votre banque UEMOA](mailto:contact@gsfconsultinginternational.com?subject=Calendrier%20transposition%20Sandbox%202.0%20CBN%20-%20Acc%C3%A9l%C3%A9rez%20votre%20conformit%C3%A9%20IA%20en%203%20phases&body=Bonjour%20GSF%20Consulting%2C%0A%0AJe%20souhaite%20un%20calendrier%20de%20transposition%20Sandbox%202.0%20IA%20sur%20mesure%20pour%20ma%20structure%20UEMOA.%0A%0AInformations%20%3A%0A-%20Nom%20%3A%0A-%20Soci%C3%A9t%C3%A9%20%3A%0A-%20Fintech%20agr%C3%A9%C3%A9e%20BCEAO%20%3A%20Oui%20%2F%20Non%0A-%20Volume%20mensuel%20transactions%20%3A%0A-%20Core%20Banking%20%3A%0A%0APriorit%C3%A9s%20%3A%0A%5B%20Phase%201%20Forum%20%2F%20Phase%202%20Pilote%20IA%20%2F%20Phase%203%20Single%20Window%20%2F%20Passeport%20r%C3%A9gional%20%5D%0A%0ACordialement%2C)
 
 ## IA et Flux Financiers Illicites : renforcer l’arsenal de l’UEMOA avec l’analyse de graphes et Isolation Forest
 
@@ -108,7 +108,7 @@ Le Cadre de concertation sur la Lutte Anti-Blanchiment (CLAB) est l’enceinte i
 5. **Engagement Réglementaire** : Participer aux forums BCEAO et préparer les dossiers Sandbox.
 
 **Voulez-vous un audit gratuit de votre conformité IA ?**  
-[Recevez votre checklist personnalisée + diagnostic en 48h](mailto:contact@gsfconsultinginternational.com?subject=Audit%20gratuit%20Checklist%20Conformit%C3%A9%20IA%20UEMOA%20-%20Gouvernance%20et%20risques%20r%C3%A9glementaires)
+[Recevez votre checklist personnalisée + Diagnostic Flash 48h](mailto:contact@gsfconsultinginternational.com?subject=Diagnostic%20Flash%2048h%20Conformit%C3%A9%20IA%20UEMOA%20-%20Maturit%C3%A9%20Sandbox%20et%20AML&body=Bonjour%20GSF%20Consulting%2C%0A%0AJe%20demande%20le%20Diagnostic%20Flash%2048h%20sur%20ma%20maturit%C3%A9%20Conformit%C3%A9%20IA%20et%20Sandbox%20BCEAO.%0A%0AInformations%20%3A%0A-%20Nom%20%3A%0A-%20Soci%C3%A9t%C3%A9%20%3A%0A-%20Fintech%20agr%C3%A9%C3%A9e%20BCEAO%20%3A%20Oui%20%2F%20Non%0A-%20Volume%20mensuel%20transactions%20%3A%0A-%20DSO%20actuel%20%3A%0A-%20Core%20Banking%20%3A%0A%0APriorit%C3%A9s%20%3A%0A%5B%20R%C3%A9duction%20co%C3%BBts%20conformit%C3%A9%20%2F%20Conformit%C3%A9%20BCEAO%20%2F%20Automatisation%20KYC-AML%20%2F%20Souverainet%C3%A9%20cognitive%20%5D%0A%0ACordialement%2C)
 
 ## Conclusion : Anticiper la réglementation IA pour un avantage compétitif
 
@@ -119,7 +119,8 @@ L’IA, encadrée par un bac à sable intelligent et des outils CaaS, devient le
 GSF Consulting International accompagne les acteurs financiers dans cette transition vers une IA souveraine et responsable.
 
 **Prochain webinaire GSF – Anticiper les directives BCEAO 2026**  
-[Inscrivez-vous ou demandez une consultation privée](mailto:contact@gsfconsultinginternational.com?subject=Webinaire%20BCEAO%202026%20-%20IA%20souveraine%20et%20Sandbox%20UEMOA%20-%20Votre%20place%20dans%20la%20finance%20num%C3%A9rique%20africaine)
+[Inscrivez-vous ou demandez une consultation privée](mailto:contact@gsfconsultinginternational.com?subject=Webinaire%20BCEAO%202026%20-%20IA%20souveraine%20et%20Sandbox%20UEMOA&body=Bonjour%20GSF%20Consulting%2C%0A%0AJe%20souhaite%20m%27inscrire%20au%20prochain%20webinaire%20%22IA%20souveraine%20et%20Sandbox%20UEMOA%22%20ou%20demander%20une%20consultation%20priv%C3%A9e.%0A%0AInformations%20%3A%0A-%20Nom%20%3A%0A-%20Soci%C3%A9t%C3%A9%20%3A%0A-%20Fintech%20agr%C3%A9%C3%A9e%20BCEAO%20%3A%20Oui%20%2F%20Non%0A-%20Volume%20mensuel%20transactions%20%3A%0A-%20Core%20Banking%20%3A%0A%0APriorit%C3%A9s%20%3A%0A%5B%20Participation%20webinaire%20%2F%20Consultation%20priv%C3%A9e%20%2F%20Accompagnement%20Sandbox%20%5D%0A%0ACordialement%2C)
+
 
 ## Sources des citations
 1. The CBN Has a Plan to Make Regulation Work for Fintechs…  
