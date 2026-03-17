@@ -80,21 +80,4 @@ GSF Consulting International vous accompagne dans cette transition vers une conf
 **Prochain webinaire GSF – Mise en œuvre Instruction BCEAO 2025**  
 [Inscrivez-vous ou demandez une consultation privée](mailto:contact@gsfconsultinginternational.com?subject=Webinaire%20Instruction%20BCEAO%202025%20-%20Automatisation%20Reporting%20et%20Surveillance%20Renforc%C3%A9e&body=Bonjour%20GSF%20Consulting%2C%0A%0AJe%20souhaite%20m%27inscrire%20au%20webinaire%20%22Instruction%20BCEAO%202025%20-%20Automatisation%20des%20rapports%20r%C3%A9glementaires%22%20ou%20une%20consultation%20priv%C3%A9e.%0A%0AInformations%20%3A%0A-%20Nom%20%3A%0A-%20Soci%C3%A9t%C3%A9%20%3A%0A-%20Fintech%20agr%C3%A9%C3%A9e%20BCEAO%20%3A%20Oui%20%2F%20Non%0A-%20Volume%20mensuel%20transactions%20%3A%0A-%20Core%20Banking%20%3A%0A%0APriorit%C3%A9s%20%3A%0A%5B%20Participation%20webinaire%20%2F%20Consultation%20priv%C3%A9e%20%2F%20Accompagnement%20RegTech%20%5D%0A%0ACordialement%2C)
 
-## Sources des citations
-
-1. Intelligence artificielle et métiers de la conformité dans le secteur bancaire au Bénin…
-2. IA et banques africaines : 5 enjeux clés pour 2025 – Hogwarts Advisory
-3. L'explicabilité des algorithmes au service de la lutte contre le blanchiment d'argent…
-4. Explicabilité de l'intelligence artificielle pour la lutte contre le blanchiment d'argent | ANR
-5. Surmonter les défis du blanchiment d'argent par voie commerciale grâce à l'IA – CGI
-6. [source 6]
-7. [source 7]
-8. [source 8]
-9. [source 9]
-10. [source 10]
-11. [source 11]
-12. [source 12]
-13. Afrique – IA : les meilleures pratiques en examen à Kigali – Africa24 TV
-
-
 *Article rédigé par Gilles Sixte Feliho – GSF Consulting International – Mars 2026*
