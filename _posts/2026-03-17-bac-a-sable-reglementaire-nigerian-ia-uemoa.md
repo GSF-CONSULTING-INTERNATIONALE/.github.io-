@@ -107,20 +107,6 @@ où \( E(h(x)) \) est l’espérance de la longueur du chemin pour isoler \( x \
 
 Le Cadre de concertation sur la Lutte Anti-Blanchiment (CLAB) est l’enceinte idéale pour harmoniser l’usage de l’IA dans la surveillance des actifs virtuels.
 
-### Vers une surveillance granulaire et prédictive
-
-[span_3](start_span)Les banques centrales, dont la BCEAO, intègrent progressivement l'IA pour surveiller les transactions suspectes en temps réel[span_3](end_span). [span_4](start_span)L'usage de l'analyse de graphes permet de visualiser les relations entre comptes et de détecter des réseaux de blanchiment complexes qui échappent aux analyses linéaires[span_4](end_span).
-
-[span_5](start_span)Un modèle de détection d'anomalies par **forêt d'isolation (Isolation Forest)** peut être utilisé pour isoler les transactions suspectes $x$[span_5](end_span):
-
-$$s = 2^{-\frac{E(h(x))}{c(n)}}$$
-
-**Où :**
-* **[span_6](start_span)$E(h(x))$** est l'espérance de la longueur du chemin pour isoler $x$[span_6](end_span).
-* **[span_7](start_span)$c(n)$** est la longueur moyenne d'un chemin échoué dans un arbre de recherche binaire[span_7](end_span).
-* **[span_8](start_span)Interprétation :** Plus le score $s$ est proche de **1**, plus la transaction est jugée anormale[span_8](end_span).
-
-
 Le Cadre de concertation sur la Lutte Anti-Blanchiment (CLAB) est l’enceinte idéale pour harmoniser l’usage de l’IA dans la surveillance des actifs virtuels.
 
 ## Pratico-Pratique : Checklist pour les institutions financières de l’UEMOA
