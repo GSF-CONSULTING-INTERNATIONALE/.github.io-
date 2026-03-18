@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Fintech UEMOA 2028 : Pourquoi l'IA capturera 40% des parts de marché"
-date: 2024-05-22
-last_updated: 2024-05-22
+date: 2026-03-18
+last_updated: 2026-03-18
 category: "Stratégie Fintech"
 tags: [Fintech UEMOA, Intelligence Artificielle, Stratégie IA, Marché Afrique, BCEAO, McKinsey, Croissance Fintech, Digital Finance, RegTech]
 author: "Gilles Sixte Feliho"
