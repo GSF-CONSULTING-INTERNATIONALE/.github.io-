@@ -6,7 +6,7 @@ last_updated: 2026-03-19
 category: "Conformité & Risques"
 tags: [De-risking, Flux Financiers Illicites, Compliance-by-Design, LBC/FT, BCEAO, COBAC, Banque Correspondante, Standard Wolfsberg, Framework ASC, RBA]
 author: "Gilles Sixte Feliho"
-image: uploads/framework-asc-compliance-by-design.png
+image: uploads/fintech_compliance_by_design.pdf
 excerpt: "Face au de-risking bancaire et aux sanctions records de l'UMOA, découvrez comment prouver votre conformité 'by-design' aux banques correspondantes. Méthodologie RBA, Framework ASC et Standard Wolfsberg."
 focus_keywords: 
   - "de-risking bancaire UEMOA"
