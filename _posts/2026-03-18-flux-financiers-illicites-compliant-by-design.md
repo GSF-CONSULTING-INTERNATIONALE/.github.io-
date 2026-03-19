@@ -41,6 +41,15 @@ Votre système doit croiser trois dimensions pour couvrir l'ensemble des vecteur
 
 > **Le saviez-vous ?** Le **triptyque KYC KYB KYT flux illicites** forme la base de toute défense face à une demande de justification bancaire. [Découvrez notre guide RBA UEMOA](/analyses/cartographie-risques-rba-2026/).
 
+**Découvrez notre guide RBA UEMOA (version interactive et complète) :**
+
+<iframe 
+    src="https://gamma.app/embed/w3mz5x0twmyjm6f" 
+    style="width: 100%; max-width: 700px; height: 450px; border: none; display: block; margin: 20px auto;" 
+    allow="fullscreen" 
+    title="Guide Pratique : Implémenter l'Approche Basée sur les Risques (RBA) en Zone UEMOA">
+</iframe>
+
 ---
 
 ## II. Le Framework "ASC" (Architecture Souveraine & Conformité)
@@ -136,4 +145,3 @@ Le **Framework ASC** de GSF Consulting International transforme votre départeme
 *Gilles Sixte Feliho, fondateur GSF Consulting International. Expert en stratégie réglementaire, lutte contre les flux financiers illicites et souveraineté cognitive.*
 
 **GSF Consulting International** — Anticiper le risque réglementaire pour sécuriser la croissance financière.
-```
