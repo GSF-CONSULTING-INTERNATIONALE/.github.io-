@@ -24,7 +24,6 @@ Dans un marché où les régulateurs BCEAO et BEAC exigent à la fois **souverai
 
 Voici l’architecture hybride exclusive GSF Consulting International qui transforme votre conformité en avantage compétitif.
 <p><strong>core banking ia générative ohada</strong> : Diagnostic personnalisé microservices + RAG</p>
-[image:53]
 
 **Core Banking IA Générative sous Droit OHADA : +45% Efficacité Opérationnelle**
 
