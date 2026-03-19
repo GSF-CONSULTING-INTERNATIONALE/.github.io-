@@ -2,8 +2,8 @@
 layout: post
 title: "Architecture Hybride Fintech OHADA : Core Banking + IA Générative = +45% Efficacité"
 permalink: /analyses/core-banking-ia-generative-souverainete-ohada/
-date: 2026-03-20
-last_updated: 2026-03-20
+date: 2026-03-19
+last_updated: 2026-03-19
 category: "Fintech & Innovation"
 author: "Gilles Sixte Feliho"
 image: "/uploads/infographie-core-banking-ia-ohada-45-performance.png"
@@ -218,9 +218,6 @@ Le Shadow Core est la seule approche sécurisée en zone OHADA.
 Voir également : [Audit Flash architecture](/services/audit-flash/)
 
 ---
-
-**Impact attendu** : 40+ requêtes longue traîne ciblées + maillage interne renforcé (de-risking → core banking → souveraineté cognitive). Architecture prête pour Jekyll.
-
 ---
 
 <div class="cta-box">
