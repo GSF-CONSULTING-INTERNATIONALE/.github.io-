@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "De la RegTech à la SupTech : Quand les Régulateurs Africains deviennent Clients de la Compliance"
-date: 2026-03-22
-last_updated: 2026-03-22
+date: 2026-03-20
+last_updated: 2026-03-20
 category: "RegTech & SupTech"
 author: "Gilles Sixte Feliho"
 permalink: /analyses/regtech-suptech-regulateurs-africains-compliance/
