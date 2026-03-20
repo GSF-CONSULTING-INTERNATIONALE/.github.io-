@@ -14,7 +14,7 @@ focus_keywords:
 - "Compliance-by-design IA"
 tags: [SupTech, RegTech, CEMAC, OHADA, IA, B2G, Souveraineté Numérique, Compliance-by-Design]
 excerpt: "En 2026, les régulateurs de la zone OHADA (BEAC, COBAC) passent à la SupTech. Découvrez comment l'IA et l'automatisation transforment la supervision en un nouveau marché B2G pour les Fintechs."
-source_url: "https://gsfconsultinginternational.com"
+source_url: "[https://gsfconsultinginternational.com](https://cio-mag.com/regtech-suptech-catalyseurs-dune-supervision-financiere-moderne-en-afrique/)"
 ---
 
 <script type="application/ld+json">
