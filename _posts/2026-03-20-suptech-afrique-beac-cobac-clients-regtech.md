@@ -6,7 +6,7 @@ last_updated: 2026-03-22
 category: "RegTech & SupTech"
 author: "Gilles Sixte Feliho"
 permalink: /analyses/regtech-suptech-regulateurs-africains-compliance/
-image: /uploads/infographie-suptech-afrique-opportunites-b2g-fintech-gsf.png
+image:uploads/infographie-suptech-afrique-opportunites-b2g-fintech-gsf.png
 focus_keywords:
 •  "SupTech CEMAC BEAC COBAC"
 •  "Souveraineté cognitive régulation Afrique"
