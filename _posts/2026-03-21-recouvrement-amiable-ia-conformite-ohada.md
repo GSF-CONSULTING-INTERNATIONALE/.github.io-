@@ -23,6 +23,15 @@ Le poste client est le baromètre de la santé financière de toute entreprise, 
 
 Pour GSF Consulting International, l'enjeu n'est pas seulement d'automatiser des messages, mais d'injecter une « intelligence de conformité » dans chaque interaction pour garantir que la phase amiable serve de socle indestructible à une éventuelle phase judiciaire. **Conformément à l’Acte Uniforme révisé du 17 octobre 2023**, la dématérialisation et l'efficacité des procédures sont désormais au cœur de la stratégie de cash-flow.
 
+### Sommaire de l'expertise
+
+- [1. Cadre OHADA et Logique Générale de la Preuve](#1-cadre-ohada-et-logique-generale-de-la-preuve)
+- [2. Contenu Minimal d’une Relance « IA-Ready »](#2-contenu-minimal-dune-relance-ia-ready)
+- [3. Grille de Scoring IA : Prioriser pour Récupérer](#3-grille-de-scoring-ia--prioriser-pour-recuperer)
+- [4. Séquencement et SROC (Séquencement de Recouvrement Optimisé)](#4-séquencement-et-sroc-séquencement-de-recouvrement-optimisé)
+- [5. Exigences Data et Conformité (IA + OHADA + RGPD-like)](#5-exigences-data-et-conformité-ia--ohada--rgpd-like)
+- [6. Gabarit de Prompt IA pour Relances](#6-gabarit-de-prompt-ia-pour-relances)
+
 ### 1. Cadre OHADA et Logique Générale de la Preuve
 
 Le recouvrement amiable précède et conditionne en pratique le succès du basculement vers l’injonction de payer. Cette procédure suppose une créance certaine, liquide et exigible (**Art. 2 de l'AUPSRVE révisé**).
