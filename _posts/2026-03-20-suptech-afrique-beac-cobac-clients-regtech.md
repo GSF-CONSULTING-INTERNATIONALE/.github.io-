@@ -17,43 +17,21 @@ excerpt: "En 2026, les régulateurs de la zone OHADA (BEAC, COBAC) passent à la
 source_url: "[https://gsfconsultinginternational.com](https://cio-mag.com/regtech-suptech-catalyseurs-dune-supervision-financiere-moderne-en-afrique/)"
 ---
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "AnalysisNewsArticle",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://gsfconsultinginternational.com/analyses/regtech-suptech-regulateurs-africains-compliance/"
-  },
-  "headline": "De la RegTech à la SupTech : Quand les Régulateurs Africains deviennent Clients de la Compliance",
-  "description": "Analyse de la transition vers la SupTech en zone OHADA (BEAC, COBAC). Focus sur l'IA, l'ISO 20022 et les opportunités B2G pour les Fintechs.",
-  "image": "https://gsfconsultinginternational.com/uploads/infographie-suptech-afrique-opportunites-b2g-fintech-gsf.png",
-  "author": {
-    "@type": "Person",
-    "name": "Gilles Sixte Feliho",
-    "jobTitle": "Expert Consultant en Droit OHADA et Compliance",
-    "url": "https://gsfconsultinginternational.com/about"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "GSF Consulting International",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://gsfconsultinginternational.com/logo.png"
-    }
-  },
-  "datePublished": "2026-03-22",
-  "dateModified": "2026-03-22",
-  "keywords": "SupTech, RegTech, OHADA, BEAC, COBAC, IA, Fintech, B2G, Compliance-by-design",
-  "articleSection": "RegTech & SupTech"
-}
-</script>
+
 
 # De la RegTech à la "SupTech" : Quand les Régulateurs Africains deviennent Clients de la Compliance
 
 Dans l'architecture financière mondiale, la technologie a longtemps été l'apanage des assujettis pour répondre aux exigences réglementaires (RegTech). Cependant, en 2026, nous assistons à un basculement de paradigme au sein de la zone OHADA et plus largement sur le continent : les régulateurs eux-mêmes — Banques Centrales et Commissions Bancaires — se transforment en clients de l'innovation technologique.
 
 Ce passage à la SupTech (Supervisory Technology) marque la fin d'une supervision réactive et statique au profit d'une surveillance préventive, agile et pilotée par la donnée. Pour GSF Consulting International, cette mutation est le garant d'une souveraineté cognitive où le régulateur n'est plus un simple observateur des flux, mais l'architecte de la confiance numérique.
+
+---
+
+**L’œil de l’expert**
+
+> « Alors que la Banque de France appelle à une supervision financière "augmentée" pour répondre aux cyber-risques et à la numérisation (Discours de l'ACPR, 2025), l'espace OHADA doit saisir cette opportunité pour sauter l'étape du papier et passer directement à la SupTech Native. C'est le cœur de notre mission chez GSF Consulting. »  
+> [cite : 1.1, 1.3]  
+> [Source : Banque de France](https://www.banque-france.fr/fr/interventions-gouverneur/how-keep-suptech-future-proof)
 
 ---
 
