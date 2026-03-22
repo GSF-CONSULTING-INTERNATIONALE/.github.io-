@@ -9,7 +9,7 @@ tags: [Droit OHADA, AI Act, LegalTech, Conformité, UEMOA, Transformation Digita
 author: "Gilles Sixte Feliho"
 image: /uploads/transformation-juridique-ia-afrique.png
 excerpt: "Analyse des nouvelles attentes des directions juridiques : comment passer du rôle de garde-barrière à celui d'architecte de la conformité stratégique à l'ère de l'IA et du droit OHADA."
-source_url: "https://gsfconsultinginternational.com"
+source_url: "https://careers.capgemini.com/job/Issy-les-Moulineaux-ConsultanteConsultant-Senior-IA-de-confiance%2C-gouvernance-%C3%A9thique-et-responsable/1366937633/"
 ---
 
 **À destination des directions juridiques, compliance et risques des groupes et fintechs en Afrique de l'Ouest**
