@@ -16,7 +16,7 @@ source_url: "https://careers.capgemini.com/job/Issy-les-Moulineaux-ConsultanteCo
 
 > « Pendant que les cabinets mondiaux recrutent des "Juristes-Architectes" capables de piloter l'IA et la transformation digitale, que font vos équipes juridiques aujourd'hui ? »
 
-Cette offre d'emploi de Capgemini Invent Consultante/Consultant Senior - IA de confiance, gouvernance éthique et responsable n'est pas qu'une simple annonce. C'est un symptôme. Un signal fort que la fonction juridique est en train de vivre l'une des plus grandes mutations depuis l'industrialisation du droit des affaires.
+Cette offre d'emploi de Capgemini Invent Consultante/Consultant Senior - IA de confiance, gouvernance éthique et responsable de févrer 2026 n'est pas qu'une simple annonce. C'est un symptôme. Un signal fort que la fonction juridique est en train de vivre l'une des plus grandes mutations depuis l'industrialisation du droit des affaires.
 
 Le constat est clair : Les grandes directions juridiques européennes ne cherchent plus des "gardes-barrières" du droit, mais des **stratèges de la conformité augmentée**. Ils veulent des profils hybrides qui maîtrisent à la fois le RGPD, l'**AI Act**, la Loi Sapin… et les outils de Legal Tech, la Gen AI, le pilotage de transformation.
 
