@@ -2,8 +2,8 @@
 layout: post
 title: "Radar Hebdo UEMOA #1 : 3 Décisions BCEAO à Fort Impact Conformité (Mars 2026)"
 permalink: /analyses/radar-hebdo-uemoa-1-decisions-bceao-conformite-mars-2026/
-date: 2026-03-16
-last_updated: 2026-03-16
+date: 2026-03-23
+last_updated: 2026-03-23
 category: Conformité & Réglementation
 tags:
   - UEMOA
