@@ -291,17 +291,15 @@ Ces trois décisions ouvrent une fenêtre d'action courte. Les équipes non pré
   </p>
 
   <!-- Calendly inline widget -->
-  <div 
-    class="calendly-inline-widget" 
-    data-url="https://calendly.com/gsfconsultinginternational/diagnostic-flash-conformite-uemoa?hide_gdpr_banner=1&primary_color=00d4ff" 
-    style="min-width: 320px; height: 630px; border-radius: 8px; overflow: hidden;">
-  </div>
+  <div class="diagnostic-flash-container" style="margin: 40px 0; padding: 25px; border: 2px solid #0056b3; border-radius: 12px; background-color: #f8f9fa; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+  <h3 style="color: #0056b3; text-align: center; margin-top: 0; font-size: 1.4em;">⚡ Diagnostic Flash : IA & Conformité (30 min)</h3>
+  <p style="text-align: center; color: #444; font-size: 1.1em;">Séance de cadrage stratégique avec <strong>Gilles Sixte Feliho</strong> pour votre projet Fintech.</p>
+  
+  <div class="calendly-inline-widget" data-url="https://calendly.com/contact-gsfconsultinginternational/30min" style="min-width:320px; height:750px;"></div>
   <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-
-  <p style="color: #4a5568; font-size: 0.75rem; margin-top: 1rem;">
-    🔒 Confidentialité : Vos données sont protégées et traitées selon les standards de conformité UEMOA/RGPD.
+  <p style="text-align: center; font-size: 0.85em; color: #777; margin-top: 15px; border-top: 1px solid #ddd; padding-top: 10px;">
+    🔒 <strong>Confidentialité :</strong> Vos données sont protégées et traitées selon les standards de conformité UEMOA/GDPR.
   </p>
-
 </div>
 
 ---
