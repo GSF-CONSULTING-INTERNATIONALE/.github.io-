@@ -16,7 +16,7 @@ tags:
   - IA conformité
   - souveraineté cognitive
   - taux directeurs
-image: /uploads/radar-hebdo-uemoa-1-decisions-bceao-mars-2026.png
+image: /uploads/decisions-majeures-conformite-bceao-mars-2026.png
 excerpt: >
   La BCEAO baisse ses taux directeurs, généralise l'interopérabilité des
   paiements et le Conseil des ministres UEMOA renforce les contrôles sur
