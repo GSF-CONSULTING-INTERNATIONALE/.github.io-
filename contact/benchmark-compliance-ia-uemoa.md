@@ -63,7 +63,3 @@ Ce benchmark est une version synthétique. Pour recevoir le rapport complet (for
 
 ---
 *© 2026 GSF Consulting International — Accès réservé aux professionnels du secteur financier.*
-
-
----
-*© 2026 GSF Consulting International — Document confidentiel. Accès réservé aux professionnels du secteur financier UEMOA.*
