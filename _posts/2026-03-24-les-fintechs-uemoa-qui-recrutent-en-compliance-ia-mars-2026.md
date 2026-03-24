@@ -143,7 +143,15 @@ Le vrai enjeu n'est donc plus le recrutement « à l'ancienne », mais la **tran
 
 **Titre de l'infographie** : IA-OHADA → Compétences compliance fintech UEMOA 2026
 
-*(Visuel croisé : flèche reliant l'article Capgemini à notre Focus RH avec les 4 blocs de compétences + benchmark salarial. Image : `/uploads/evolution-compliance-ia-mutation-marche-fintech-uemoa-2026.png`)*
+<div style="text-align: center; margin: 30px 0;">
+  <img src="/uploads/infographie-ia-ohada-competences-compliance-fintech-uemoa-2026.png" 
+       alt="IA-OHADA : Compétences Compliance Fintech UEMOA 2026" 
+       style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+  <p style="font-size: 0.85em; color: #888; margin-top: 10px;">
+    Exclusivité GSF : Évolution des compétences et grille salariale prospective 2026.
+  </p>
+</div>
+
 
 ---
 
