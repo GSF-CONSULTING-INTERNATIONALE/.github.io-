@@ -185,6 +185,8 @@ GSF Consulting International finalise actuellement un **benchmark salarial confi
 - **Formations sur mesure** « Compliance IA & OHADA »
 - **Accompagnement au recrutement** de talents hybrides
 
+📧 **Contactez-nous directement** : [contact@gsfconsultinginternational.com](mailto:contact@gsfconsultinginternational.com?subject=Demande%20d'information%20-%20Compliance%20IA%20UEMOA&body=Bonjour%20GSF%20Consulting%20International,%0A%0AJe%20souhaite%20obtenir%20des%20informations%20sur%20vos%20services%20:%0A%0A-%20Audit%20de%20souveraineté%20cognitive%0A-%20Formation%20Compliance%20IA%20%26%20OHADA%0A-%20Accompagnement%20recrutement%20talents%20hybrides%0A-%20Benchmark%20salarial%20confidentiel%0A%0AMon%20entreprise%20:%20%0AMon%20rôle%20:%20%0AMon%20téléphone%20:%20%0A%0ACordialement,)
+
 <div class="diagnostic-flash-container" style="margin: 40px 0; padding: 25px; border: 2px solid #0056b3; border-radius: 12px; background-color: #f8f9fa; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
   <h3 style="color: #0056b3; text-align: center; margin-top: 0; font-size: 1.4em;">⚡ Diagnostic Flash : IA & Conformité (30 min)</h3>
   <p style="text-align: center; color: #444; font-size: 1.1em;">Séance de cadrage stratégique avec <strong>Gilles Sixte Feliho</strong> pour votre projet Fintech.</p>
@@ -196,6 +198,7 @@ GSF Consulting International finalise actuellement un **benchmark salarial confi
     🔒 <strong>Confidentialité :</strong> Vos données sont protégées et traitées selon les standards de conformité UEMOA/GDPR.
   </p>
 </div>
+
 
 ---
 
