@@ -7,7 +7,7 @@ last_updated: 2026-03-24
 category: "Études & Analyses"
 tags: [Fintech, UEMOA, Compliance, IA, Salaire, RH]
 author: "Gilles Sixte Feliho"
-image: /uploads/infographie-cyber-lab-souveraine-ohada-gsf.md.PNG
+image: /uploads/infographie-ia-ohada-competences-compliance-fintech-uemoa-2026.png
 excerpt: "Profils « Compliance Augmentée par l'IA » — Zone UEMOA 2026 : Méthodologie, grille de rémunération et tendances clés."
 ---
 
