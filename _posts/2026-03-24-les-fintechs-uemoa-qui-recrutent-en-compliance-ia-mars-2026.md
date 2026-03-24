@@ -162,7 +162,7 @@ Manifester mon intérêt →
 </a>
 </div>
 
-**Contactez directement Gilles Sixte Feliho :**  
+**Ou contactez directement Gilles Sixte Feliho :**  
 <a href="mailto:gilles.feliho@gsfconsultinginternational.com" style="color: #00d4ff; text-decoration: underline;">gilles.feliho@gsfconsultinginternational.com</a>
 
 ### Nous proposons également :
@@ -171,31 +171,13 @@ Manifester mon intérêt →
 - **Formations sur mesure** « Compliance IA & OHADA »
 - **Accompagnement au recrutement** de talents hybrides
 
-< **diagnostic flash de 30 minutes** pour évaluer votre niveau d'exposition et identifier les actions prioritaires.
-
-<div style="background: linear-gradient(135deg, #0a0a1a 0%, #1a1a3e 50%, #0d2137 100%); border: 1px solid #00d4ff; border-radius: 12px; padding: 2rem; margin: 2rem 0; text-align: center; box-shadow: 0 0 30px rgba(0, 212, 255, 0.15);">
-
-  <p style="color: #00d4ff; font-size: 0.8rem; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 0.5rem;">
-    ◈ GSF CONSULTING INTERNATIONAL — DIAGNOSTIC CONFORMITÉ UEMOA
-  </p>
-
-  <h3 style="color: #ffffff; font-size: 1.6rem; font-weight: 700; margin: 0.5rem 0; line-height: 1.3;">
-    Votre Exposition au Nouveau Régime BCEAO<br>
-    <span style="color: #00d4ff;">Évaluée en 30 Minutes</span>
-  </h3>
-
-  <p style="color: #a0aec0; font-size: 0.95rem; margin: 1rem 0 1.5rem 0; max-width: 500px; margin-left: auto; margin-right: auto;">
-    Taux directeurs · Interopérabilité · Contrôle des flux<br>
-    Identifiez vos angles morts avant les contrôles BCEAO Q2 2026.
-  </p>
-
-  <!-- Calendly inline widget -->
-  <div class="diagnostic-flash-container" style="margin: 40px 0; padding: 25px; border: 2px solid #0056b3; border-radius: 12px; background-color: #f8f9fa; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+<div class="diagnostic-flash-container" style="margin: 40px 0; padding: 25px; border: 2px solid #0056b3; border-radius: 12px; background-color: #f8f9fa; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
   <h3 style="color: #0056b3; text-align: center; margin-top: 0; font-size: 1.4em;">⚡ Diagnostic Flash : IA & Conformité (30 min)</h3>
   <p style="text-align: center; color: #444; font-size: 1.1em;">Séance de cadrage stratégique avec <strong>Gilles Sixte Feliho</strong> pour votre projet Fintech.</p>
   
   <div class="calendly-inline-widget" data-url="https://calendly.com/contact-gsfconsultinginternational/30min" style="min-width:320px; height:750px;"></div>
   <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+  
   <p style="text-align: center; font-size: 0.85em; color: #777; margin-top: 15px; border-top: 1px solid #ddd; padding-top: 10px;">
     🔒 <strong>Confidentialité :</strong> Vos données sont protégées et traitées selon les standards de conformité UEMOA/GDPR.
   </p>
@@ -203,7 +185,7 @@ Manifester mon intérêt →
 
 ---
 
-## Sources & Références 
+## Sources & Références
 
 1. **Agence Ecofin** – Fintech en UEMOA : à l'aube d'un nouvel ordre financier régional  
 2. **KPMG / Agence Ecofin** – 26 % des entreprises africaines prévoient d'investir plus de 20 % de leur budget dans l'IA  
