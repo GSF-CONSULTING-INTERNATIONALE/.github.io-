@@ -7,7 +7,7 @@ last_updated: 2026-03-24
 category: "Études & Analyses"
 tags: [Fintech, UEMOA, Compliance, IA, Salaire, RH]
 author: "Gilles Sixte Feliho"
-image: /uploads/default.jpg
+image: /uploads/infographie-cyber-lab-souveraine-ohada-gsf.md.PNG
 excerpt: "Profils « Compliance Augmentée par l'IA » — Zone UEMOA 2026 : Méthodologie, grille de rémunération et tendances clés."
 ---
 
@@ -43,10 +43,20 @@ excerpt: "Profils « Compliance Augmentée par l'IA » — Zone UEMOA 2026 : Mé
 2. **Pénurie marquée** : Sénégal et Côte d'Ivoire = marché vendeur
 3. **Souveraineté cognitive** : nouvelle variable de négociation salariale
 
-### RECOMMANDATIONS GSF
-* **Anticiper la fuite des cerveaux :** Alignez vos packages sur les compétences IA, pas seulement sur l'ancienneté.
-* **Hybridation des rôles :** Formez vos juristes aux outils data pour réduire les coûts de recrutement externe.
+* ### 💡 RECOMMANDATIONS GSF
+- **Anticiper la fuite des cerveaux** : Alignez vos packages sur les compétences IA, pas seulement sur l'ancienneté.
+- **Hybridation des rôles** : Formez vos juristes aux outils data pour réduire les coûts de recrutement externe.
 
 ---
-© 2026 GSF Consulting International — Document confidentiel
-Accès réservé aux professionnels du secteur financier UEMOA
+
+## 📩 OBTENIR LE RAPPORT DÉTAILLÉ
+Ce benchmark est une version synthétique. Pour recevoir l'analyse complète (30 pages) incluant les **stratégies de rétention par pays** et les **fiches de postes types**, cliquez sur le bouton ci-dessous :
+
+<div style="text-align: center; margin: 30px 0;">
+  <a href="https://gsfconsultinginternational.com/contact/" style="background-color: #004a99; color: white; padding: 15px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 1.2em; display: inline-block; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    🚀 Manifester mon intérêt pour le rapport complet
+  </a>
+</div>
+
+---
+*© 2026 GSF Consulting International — Document confidentiel. Accès réservé aux professionnels du secteur financier UEMOA.*
