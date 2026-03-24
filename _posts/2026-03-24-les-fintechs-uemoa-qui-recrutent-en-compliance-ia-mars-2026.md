@@ -122,12 +122,6 @@ Utilisation avancée de l'IA générative pour AML, KYC, détection de fraude + 
 ### Bloc gouvernance & souveraineté cognitive
 Sensibilité aux risques de localisation des données, dépendance aux modèles étrangers et capacité à dialoguer avec les régulateurs sur ces sujets.
 
-#### Lien direct avec notre expertise OHADA
-Comme nous l'avons détaillé dans notre article ### Lien direct avec notre expertise OHADA
-
-Comme nous l’avons détaillé dans notre article [Transformation juridique IA-OHADA : l’analyse de Capgemini](/blog/transformation-juridique-ia-ohada-capgemini/), l’Acte Uniforme OHADA sur les sociétés impose désormais une gouvernance des algorithmes. Les fintechs UEMOA internalisent donc ces exigences via des profils compliance hybrides : traçabilité IA pour audits OHADA, responsabilité algorithmique des dirigeants, etc.
-
-
 ---
 
 ## 4. Ce que cela révèle du marché : vers une compliance augmentée (et non remplacée)
