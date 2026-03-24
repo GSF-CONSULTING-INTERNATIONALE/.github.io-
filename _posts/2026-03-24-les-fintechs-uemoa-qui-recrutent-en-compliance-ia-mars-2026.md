@@ -125,7 +125,7 @@ Sensibilité aux risques de localisation des données, dépendance aux modèles 
 #### Lien direct avec notre expertise OHADA
 Comme nous l'avons détaillé dans notre article ### Lien direct avec notre expertise OHADA
 
-Comme nous l’avons détaillé dans notre article [Transformation juridique IA-OHADA : l’analyse de Capgemini](/analyses/transformation-juridique-ia-ohada-capgemini/), l’Acte Uniforme OHADA sur les sociétés impose désormais une gouvernance des algorithmes. Les fintechs UEMOA internalisent donc ces exigences via des profils compliance hybrides : traçabilité IA pour audits OHADA, responsabilité algorithmique des dirigeants, etc.
+Comme nous l’avons détaillé dans notre article [Transformation juridique IA-OHADA : l’analyse de Capgemini](/blog/transformation-juridique-ia-ohada-capgemini/), l’Acte Uniforme OHADA sur les sociétés impose désormais une gouvernance des algorithmes. Les fintechs UEMOA internalisent donc ces exigences via des profils compliance hybrides : traçabilité IA pour audits OHADA, responsabilité algorithmique des dirigeants, etc.
 
 
 ---
