@@ -143,9 +143,7 @@ Le vrai enjeu n'est donc plus le recrutement « à l'ancienne », mais la **tran
 
 **Titre de l'infographie** : IA-OHADA → Compétences compliance fintech UEMOA 2026
 
-*(Disponible sur demande : contact@gsfconsultinginternational.com)*
-
-
+*(Visuel croisé : flèche reliant l'article Capgemini à notre Focus RH avec les 4 blocs de compétences + benchmark salarial. Image : `/uploads/evolution-compliance-ia-mutation-marche-fintech-uemoa-2026.png`)*
 
 ---
 
@@ -157,35 +155,21 @@ Les fintechs UEMOA ne recrutent pas encore massivement des « Compliance IA Offi
 
 GSF Consulting International finalise actuellement un **benchmark salarial confidentiel** des profils « compliance augmentée par l'IA » dans la région (lecture croisée RH / souveraineté cognitive / risques réglementaires BCEAO-OHADA).
 
-<div style="background: linear-gradient(135deg, #0a0a1a 0%, #1a1a3e 50%, #0d2137 100%); border: 1px solid #00d4ff; border-radius: 12px; padding: 2rem; margin: 2rem 0; text-align: center; box-shadow: 0 0 30px rgba(0, 212, 255, 0.15);">
-
-  <p style="color: #00d4ff; font-size: 0.8rem; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 0.5rem;">
-    ◈ BENCHMARK CONFIDENTIEL GSF
-  </p>
-
-  <h3 style="color: #ffffff; font-size: 1.6rem; font-weight: 700; margin: 0.5rem 0; line-height: 1.3;">
-    Profils « Compliance Augmentée IA »<br>
-    <span style="color: #00d4ff;">Benchmark Salarial UEMOA 2026</span>
-  </h3>
-
-  <p style="color: #a0aec0; font-size: 0.95rem; margin: 1rem 0 1.5rem 0; max-width: 500px; margin-left: auto; margin-right: auto;">
-    Accès réservé aux professionnels du secteur<br>
-    Lecture croisée RH / Souveraineté cognitive / Risques BCEAO-OHADA
-  </p>
-
-  <a href="https://gsfconsultinginternational.com/contact/benchmark-compliance-ia-uemoa/" style="display: inline-block; background: linear-gradient(135deg, #00d4ff, #0077b6); color: #0a0a1a; padding: 12px 32px; border-radius: 6px; text-decoration: none; font-weight: 700; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 1px; transition: all 0.3s ease;">
-    Manifester mon intérêt → 📧 **Contactez-nous directement** : [contact@gsfconsultinginternational.com](mailto:contact@gsfconsultinginternational.com?subject=Demande%20d'information%20-%20Compliance%20IA%20UEMOA&body=Bonjour%20GSF%20Consulting%20International,%0A%0AJe%20souhaite%20obtenir%20des%20informations%20sur%20vos%20services%20:%0A%0A-%20Audit%20de%20souveraineté%20cognitive%0A-%20Formation%20Compliance%20IA%20%26%20OHADA%0A-%20Accompagnement%20recrutement%20talents%20hybrides%0A-%20Benchmark%20salarial%20confidentiel%0A%0AMon%20entreprise%20:%20%0AMon%20rôle%20:%20%0AMon%20téléphone%20:%20%0A%0ACordialement,)
-  </a>
-
+<div style="text-align: center; background-color: #0a0a1a; padding: 40px 20px; border-radius: 12px; border: 1px solid #1a202c;">
+<a href="https://gsfconsultinginternational.com/contact/benchmark-compliance-ia-uemoa/" 
+style="display: inline-block; background: linear-gradient(135deg, #00d4ff, #0077b6); color: #0a0a1a; padding: 14px 36px; border-radius: 6px; text-decoration: none; font-weight: 800; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; transition: transform 0.2s ease, box-shadow 0.2s ease; box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);">
+Manifester mon intérêt →
+</a>
 </div>
+
+**Ou contactez directement Gilles Sixte Feliho :**  
+<a href="mailto:gilles.feliho@gsfconsultinginternational.com" style="color: #00d4ff; text-decoration: underline;">gilles.feliho@gsfconsultinginternational.com</a>
 
 ### Nous proposons également :
 
 - **Audits de souveraineté cognitive** de votre dispositif compliance IA
 - **Formations sur mesure** « Compliance IA & OHADA »
 - **Accompagnement au recrutement** de talents hybrides
-
-📧 **Contactez-nous directement** : [contact@gsfconsultinginternational.com](mailto:contact@gsfconsultinginternational.com?subject=Demande%20d'information%20-%20Compliance%20IA%20UEMOA&body=Bonjour%20GSF%20Consulting%20International,%0A%0AJe%20souhaite%20obtenir%20des%20informations%20sur%20vos%20services%20:%0A%0A-%20Audit%20de%20souveraineté%20cognitive%0A-%20Formation%20Compliance%20IA%20%26%20OHADA%0A-%20Accompagnement%20recrutement%20talents%20hybrides%0A-%20Benchmark%20salarial%20confidentiel%0A%0AMon%20entreprise%20:%20%0AMon%20rôle%20:%20%0AMon%20téléphone%20:%20%0A%0ACordialement,)
 
 <div class="diagnostic-flash-container" style="margin: 40px 0; padding: 25px; border: 2px solid #0056b3; border-radius: 12px; background-color: #f8f9fa; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
   <h3 style="color: #0056b3; text-align: center; margin-top: 0; font-size: 1.4em;">⚡ Diagnostic Flash : IA & Conformité (30 min)</h3>
@@ -199,25 +183,23 @@ GSF Consulting International finalise actuellement un **benchmark salarial confi
   </p>
 </div>
 
-
 ---
 
-## Sources & Références 
+## Sources & Références (pour EEAT)
 
-1. **Agence Ecofin** – Fintech en UEMOA : à l'aube d'un nouvel ordre financier régional
-2. **KPMG / Agence Ecofin** – 26 % des entreprises africaines prévoient d'investir plus de 20 % de leur budget dans l'IA
-3. **Offre UEMOA Compliance Associate** – Capi Money (mars 2026)
-4. **MEST IA 2026** – Candidatures ouvertes
-5. **Offre Responsable de la conformité** – Paysika
-6. **Mastercard Foundation** – L'IA et le secteur BPO en Afrique
-7. **Conformité BCEAO/BEAC** – Nouvelles exigences 2026 pour les IMF
+1. **Agence Ecofin** – Fintech en UEMOA : à l'aube d'un nouvel ordre financier régional  
+2. **KPMG / Agence Ecofin** – 26 % des entreprises africaines prévoient d'investir plus de 20 % de leur budget dans l'IA  
+3. **Offre UEMOA Compliance Associate** – Capi Money (mars 2026)  
+4. **MEST IA 2026** – Candidatures ouvertes  
+5. **Offre Responsable de la conformité** – Paysika  
+6. **Mastercard Foundation** – L'IA et le secteur BPO en Afrique  
+7. **Conformité BCEAO/BEAC** – Nouvelles exigences 2026 pour les IMF  
 
 ### Maillage interne recommandé :
 
-- Lien entrant depuis l'article [« Transformation juridique IA-OHADA : Capgemini »](/analyses/transformation-juridique-ia-ohada-capgemini/)
-- Lien sortant vers cet article dans le billet Capgemini
+- Lien entrant depuis l'article [« Transformation juridique IA-OHADA : Capgemini »](/analyses/transformation-juridique-ia-ohada-capgemini/)  
+- Lien sortant vers cet article dans le billet Capgemini  
 
 ---
 
 *© 2026 GSF Consulting International — Analyses réservées à des fins d'information générale. Toute reproduction partielle ou totale est soumise à autorisation expresse.*
-
