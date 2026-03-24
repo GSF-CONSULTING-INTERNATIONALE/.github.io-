@@ -174,7 +174,7 @@ GSF Consulting International finalise actuellement un **benchmark salarial confi
   </p>
 
   <a href="https://gsfconsultinginternational.com/contact/benchmark-compliance-ia-uemoa/" style="display: inline-block; background: linear-gradient(135deg, #00d4ff, #0077b6); color: #0a0a1a; padding: 12px 32px; border-radius: 6px; text-decoration: none; font-weight: 700; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 1px; transition: all 0.3s ease;">
-    Manifester mon intérêt →
+    Manifester mon intérêt → 📧 **Contactez-nous directement** : [contact@gsfconsultinginternational.com](mailto:contact@gsfconsultinginternational.com?subject=Demande%20d'information%20-%20Compliance%20IA%20UEMOA&body=Bonjour%20GSF%20Consulting%20International,%0A%0AJe%20souhaite%20obtenir%20des%20informations%20sur%20vos%20services%20:%0A%0A-%20Audit%20de%20souveraineté%20cognitive%0A-%20Formation%20Compliance%20IA%20%26%20OHADA%0A-%20Accompagnement%20recrutement%20talents%20hybrides%0A-%20Benchmark%20salarial%20confidentiel%0A%0AMon%20entreprise%20:%20%0AMon%20rôle%20:%20%0AMon%20téléphone%20:%20%0A%0ACordialement,)
   </a>
 
 </div>
