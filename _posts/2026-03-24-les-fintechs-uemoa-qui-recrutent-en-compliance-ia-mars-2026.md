@@ -143,9 +143,9 @@ Le vrai enjeu n'est donc plus le recrutement « à l'ancienne », mais la **tran
 
 **Titre de l'infographie** : IA-OHADA → Compétences compliance fintech UEMOA 2026
 
-*(Visuel croisé : flèche reliant l'article Capgemini à notre Focus RH avec les 4 blocs de compétences + benchmark salarial)*
+*(Disponible sur demande : contact@gsfconsultinginternational.com)*
 
-[Vous pouvez utiliser l'image générée par Grok Imagine ou notre équipe design – elle est unique sur le web francophone et renforce votre autorité thématique.]
+
 
 ---
 
