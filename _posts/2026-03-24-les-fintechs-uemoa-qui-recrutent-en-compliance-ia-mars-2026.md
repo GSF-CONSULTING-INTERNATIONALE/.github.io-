@@ -162,7 +162,7 @@ Manifester mon intérêt →
 </a>
 </div>
 
-**Ou contactez directement Gilles Sixte Feliho :**  
+**Contactez directement Gilles Sixte Feliho :**  
 <a href="mailto:gilles.feliho@gsfconsultinginternational.com" style="color: #00d4ff; text-decoration: underline;">gilles.feliho@gsfconsultinginternational.com</a>
 
 ### Nous proposons également :
@@ -185,7 +185,7 @@ Manifester mon intérêt →
 
 ---
 
-## Sources & Références (pour EEAT)
+## Sources & Références 
 
 1. **Agence Ecofin** – Fintech en UEMOA : à l'aube d'un nouvel ordre financier régional  
 2. **KPMG / Agence Ecofin** – 26 % des entreprises africaines prévoient d'investir plus de 20 % de leur budget dans l'IA  
