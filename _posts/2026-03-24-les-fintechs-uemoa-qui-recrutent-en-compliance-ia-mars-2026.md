@@ -205,7 +205,8 @@ Manifester mon intérêt →
 
 ### Maillage interne recommandé :
 
-- Lien entrant depuis l'article [« Transformation juridique IA-OHADA : Capgemini »](/analyses/transformation-juridique-ia-ohada-capgemini/)  
+* Lien entrant depuis l'article [« Transformation juridique IA-OHADA : Capgemini »](https://gsfconsultinginternational.com/blog/transformation-juridique-ia-ohada-capgemini/)
+
 - Lien sortant vers cet article dans le billet Capgemini  
 
 ---
