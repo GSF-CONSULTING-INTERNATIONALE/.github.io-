@@ -115,15 +115,21 @@ La ZLECAf impose une fluidité des flux financiers identique à celle des marcha
 
 ### 1.3 Risques & Opportunités de first-mover
 
-**Risques identifiés :**  
-| Risque | Impact opérationnel | Mitigation GSF |
-|--------|---------------------|----------------|
-| Divergence de rythmes UEMOA/CEMAC | Assèchement marché dette régionale | Veille RegTech automatisée |
-| Hausse exigences fonds propres | Compression marge d’intérêt | Audit d’écart Gap Analysis™ |
+**⚠️ Risques identifiés :**
 
-**Opportunités stratégiques :**  
-- Accès au marché financier africain intégré (croissance intra-africaine +15-20 %).  
-- Positionnement comme « hub réglementaire » pour les investisseurs européens.
+| Risque                        | Impact opérationnel                          | Mitigation GSF                                      |
+|-------------------------------|----------------------------------------------|-----------------------------------------------------|
+| **Fragmentation normative**   | Exigences contradictoires UEMOA vs. UA      | Audit de mapping réglementaire multi-juridictions   |
+| **Dépendance technologique**  | ~78 % des infrastructures cloud hors Afrique | Stratégie de migration vers AI Factories africaines |
+| **Utilisation malveillante IA**| Réseaux terroristes et transferts opaques    | Déploiement d’IA défensives explicables             |
+| **Divergence de rythmes**     | Assèchement du marché de la dette régionale  | Veille RegTech automatisée via plateforme GSF      |
+
+**✅ Opportunités stratégiques :**
+
+| Opportunité                              | Bénéfice concret                                      |
+|------------------------------------------|-------------------------------------------------------|
+| **Accès au marché financier africain intégré** | Croissance intra-africaine estimée à +15-20 %        |
+| **Positionnement "Hub Réglementaire"**   | Devenir la référence de conformité pour les investisseurs européens |
 
 ### 1.4 Actions Prioritaires GSF (Avant fin T2 2026)
 
