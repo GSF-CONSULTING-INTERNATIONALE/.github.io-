@@ -320,7 +320,20 @@ Méthodologie propriétaire GSF combinant cartographie des risques algorithmique
 
 **Auteur** : **[Gilles Sixte Feliho](https://gsfconsultinginternational.com/gilles-feliho/)** — Juriste Expert OHADA/UEMOA, Fondateur de GSF Consulting International. Expert reconnu auprès de la **CEDEAO**, de l'**AFD** et de la **Francophonie**. Auteur de *Homo Algorithmicus* et *Blanchiment en liberté*.
 
-**Méthodologie** : Analyse croisée des sources primaires (BCEAO.int, AU.int, Smart Africa, OCDE) et études de cas réels anonymisés. Cette analyse constitue une information générale et ne saurait se substituer à un avis juridique personnalisé. **[Consulter nos autres analyses](https://gsfconsultinginternational.com/analyses/)**.
+**Méthodologie** : Analyse croisée des sources primaires (BCEAO.int, AU.int, Smart Africa, OCDE) et études de cas réels anonymisés. Cette analyse constitue une information générale et ne saurait se substituer à un avis juridique personnalisé. **<p style="text-align: center; margin-top: 2rem;">
+  
+  <a href="https://gsfconsultinginternational.com/blog/" 
+     style="background: linear-gradient(135deg, #0056b3 0%, #003d82 100%); 
+            color: white; 
+            padding: 12px 24px; 
+            text-decoration: none; 
+            border-radius: 6px; 
+            font-weight: 600; 
+            display: inline-block;">
+    📚 Consulter nos autres analyses
+  </a>
+</p>
+
 
 ---
 
@@ -360,7 +373,7 @@ Méthodologie propriétaire GSF combinant cartographie des risques algorithmique
 
 ## Prochaine Analyse : Le Futur de la Finance UEMOA
 
-**Dans notre prochain article** (publication prévue : 15 avril 2026) :  
+**Dans notre prochain article** (publication prévue : 25 mars 2026) : 
 **"Le futur de la finance UEMOA : 5 scénarios de disruption (et comment s'y préparer dès maintenant)"**
 
 Nous explorerons la prospective stratégique et la résilience réglementaire à travers cinq scénarios de rupture :
