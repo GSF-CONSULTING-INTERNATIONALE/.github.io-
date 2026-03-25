@@ -354,22 +354,9 @@ Oui – les bailleurs européens l’exigent déjà pour le refinancement. Nous 
 
 **Objet pré-rempli pour demande de documentation stratégique :**
 
-> **Objet** : White Paper Finance UEMOA 2028 — Demande Checklists Scénarios - [Nom de votre institution]
+<a href="mailto:contact@gsfconsultinginternational.com?subject=White%20Paper%202026-2030%20Demande%20Strat%C3%A9gie%20IA%20%26%20Souverainet%C3%A9%20Financi%C3%A8re%20-%20%5BNom%20de%20votre%20institution%5D&body=Madame%2C%20Monsieur%2C%0D%0A%0D%0ASuite%20%C3%A0%20la%20lecture%20de%20votre%20analyse%20sur%20la%20souverainet%C3%A9%20financi%C3%A8re%20africaine%20et%20la%20compliance%20IA%2C%20nous%20souhaitons%20%3A%0D%0A%0D%0A%E2%96%A1%20Recevoir%20le%20White%20Paper%20exclusif%20%E2%80%9CStrat%C3%A9gie%20IA%20%26%20Souverainet%C3%A9%20Financi%C3%A8re%202026-2030%20%3A%205%20sc%C3%A9narios%20de%20disruption%20et%20plan%20d%E2%80%99action%20UEMOA%E2%80%9D%0D%0A%0D%0A%E2%96%A1%20Programmer%20un%20Audit%20de%20Souverainet%C3%A9%20Cognitive%E2%84%A2%20pour%20%C3%A9valuer%20notre%20maturit%C3%A9%20r%C3%A9glementaire%20BCEAO%2FUA%20et%20identifier%20nos%20leviers%20de%20performance%0D%0A%0D%0A%E2%96%A1%20D%C3%A9couvrir%20le%20Framework%20ECL%20v2.0%20pour%20l%E2%80%99int%C3%A9gration%20MLOps%20conforme%20aux%20Instructions%20BCEAO%202025%0D%0A%0D%0A%E2%96%A1%20Recevoir%20le%20dossier%20anonymis%C3%A9%20de%20la%20mission%20document%C3%A9e%20(1%2C1%20milliard%20FCFA%20lib%C3%A9r%C3%A9s)%0D%0A%0D%0AInstitution%20%3A%20_____%0D%0AR%C3%B4le%20%3A%20_______%0D%0AT%C3%A9l%C3%A9phone%20%3A%20_______%0D%0APrincipal%20d%C3%A9fi%20conformit%C3%A9%202026%20%3A%20_________%0D%0A%0D%0ACordialement%2C" style="color: #0056b3; text-decoration: underline; font-weight: 600;">contact@gsfconsultinginternational.com</a>
 
-> **Corps** :  
-> Madame, Monsieur,  
-> Suite à la lecture de votre analyse sur les 5 disruptions UEMOA 2028, nous souhaitons :  
-> □ **Recevoir le White Paper exclusif** « 5 Checklists Opérationnelles par Scénario »  
-> □ **Programmer un Audit Souveraineté Cognitive™** pour évaluer notre maturité face aux risques hybrides  
-> □ **Découvrir le Framework RegTech GSF** pour transformer ces ruptures en opportunités stratégiques  
-> □ **Recevoir le dossier anonymisé** de la mission documentée (+28 % résilience bilan)  
-> **Institution***: ____________________  
-> **Rôle***: ____________________  
-> **Téléphone***: ____________________  
-> **Principal défi finance UEMOA 2028** : ____________________  
-> Cordialement,
-
-**Envoyez à** [contact@gsfconsultinginternational.com](mailto:contact@gsfconsultinginternational.com?subject=White%20Paper%20Finance%20UEMOA%202028%20-%20Demande%20Checklists%20Sc%C3%A9narios)
+**Cliquez sur l’adresse ci-dessus** → votre client email s’ouvrira automatiquement avec l’objet et le corps pré-remplis.
 
 ---
 
