@@ -349,27 +349,12 @@ Méthodologie propriétaire GSF combinant cartographie des risques algorithmique
 
 ### Canal 2 : White Paper Stratégique + Audit (Nurturing B2B)
 
-**📧 Objet pré-rempli pour demande de documentation stratégique :**
-
-> **Objet** : [White Paper 2026-2030] Demande Stratégie IA & Souveraineté Financière - [Nom de votre institution]  
-> **Corps** :  
-> Madame, Monsieur,  
-> 
-> Suite à la lecture de votre analyse sur la souveraineté financière africaine et la compliance IA, nous souhaitons :  
-> 
-> □ **Recevoir le White Paper exclusif** *"Stratégie IA & Souveraineté Financière 2026-2030 : 5 scénarios de disruption et plan d'action UEMOA"*  
-> □ **Programmer un Audit de Souveraineté Cognitive™** pour évaluer notre maturité réglementaire BCEAO/UA et identifier nos leviers de performance  
-> □ **Découvrir le Framework ECL v2.0** pour l'intégration MLOps conforme aux Instructions BCEAO 2025  
-> □ **Recevoir le dossier anonymisé** de la mission documentée (1,1 milliard FCFA libérés)  
-> 
-> **Institution** : _______________  
-> **Rôle** : _______________  
-> **Téléphone** : _______________  
-> **Principal défi conformité 2026** : _______________  
-> 
-> Cordialement,
-
-**👉 Envoyez à :** [contact@gsfconsultinginternational.com](mailto:contact@gsfconsultinginternational.com?subject=[White%20Paper%202026-2030]%20Demande%20Stratégie%20IA%20&%20Souveraineté%20Financière)
+<div style="text-align: center; margin: 2rem 0;">
+  <a href="mailto:contact@gsfconsultinginternational.com?subject=[White%20Paper%202026-2030]%20Demande%20Strategie%20IA%20%26%20Souverainete%20Financiere&body=Madame%2C%20Monsieur%2C%0A%0ASuite%20a%20la%20lecture%20de%20votre%20analyse%20sur%20la%20souverainete%20financiere%20africaine%20et%20la%20compliance%20IA%2C%20nous%20souhaitons%20%3A%0A%0A%E2%96%A1%20Recevoir%20le%20White%20Paper%20exclusif%20%22Strategie%20IA%20%26%20Souverainete%20Financiere%202026-2030%20%3A%205%20scenarios%20de%20disruption%20et%20plan%20d%27action%20UEMOA%22%0A%E2%96%A1%20Programmer%20un%20Audit%20de%20Souverainete%20Cognitive%E2%84%A2%20pour%20evaluer%20notre%20maturite%20reglementaire%20BCEAO%2FUA%20et%20identifier%20nos%20leviers%20de%20performance%0A%E2%96%A1%20Decouvrir%20le%20Framework%20ECL%20v2.0%20pour%20l%27integration%20MLOps%20conforme%20aux%20Instructions%20BCEAO%202025%0A%E2%96%A1%20Recevoir%20le%20dossier%20anonymise%20de%20la%20mission%20documentee%20%281%2C1%20milliard%20FCFA%20liberes%29%0A%0AInstitution%20%3A%20_______________%0ARole%20%3A%20_______________%0ATelephone%20%3A%20_______________%0APrincipal%20defi%20conformite%202026%20%3A%20_______________%0A%0ACordialement%2C" 
+     style="background: linear-gradient(135deg, #0056b3 0%, #003d82 100%); color: white; padding: 15px 30px; text-decoration: none; border-radius: 8px; font-weight: 600; display: inline-block; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+    📧 ENVOYER MA DEMANDE PRE-REMPLIE
+  </a>
+</div>
 
 ---
 
