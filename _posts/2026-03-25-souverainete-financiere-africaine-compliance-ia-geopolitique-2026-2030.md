@@ -120,19 +120,15 @@ L'**[Africa AI Council](https://au.int/en/pressreleases/20250404/africa-ai-counc
 
 | Risque | Impact opérationnel | Mitigation GSF |
 | :--- | :--- | :--- |
-| **Fragmentation normative** | Exigences contradictoires (UEMOA vs UA) | Audit de mapping réglementaire multi-juridictions |
-| **Dépendance Cloud** | ~78% des données critiques sous juridictions étrangères[^1] | Stratégie de migration vers AI Factories africaines |
-| **Cyber-criminalité IA** | Sophistication des transferts opaques (Deepfakes/AML) | Déploiement d'IA défensives "Privacy-by-design" |
+| **Fragmentation normative** | Exigences contradictoires UEMOA vs. UA | Audit de mapping réglementaire multi-juridictions |
+| **Dépendance technologique** | ~78% des infrastructures cloud hors Afrique[^1] | Stratégie de migration vers AI Factories africaines |
+| **Utilisation malveillante IA** | Réseaux terroristes et transferts opaques[^2] | Déploiement d'IA défensives explicables |
 | **Divergence de rythmes** | Assèchement du marché de la dette régionale | Veille RegTech automatisée via plateforme GSF |
 
-**Opportunités stratégiques :**
+✅ **Opportunités stratégiques :**
 
-* **Souveraineté Financière :** Réduction des frais d'intermédiation étrangère via le PAPSS (gain estimé à 5 Mds $ / an pour le continent).
-* **Accès au Marché ZLECAf :** Positionnement sur un flux d'exportations additionnel de 560 Mds $ d'ici 2035.
-* **Hub Réglementaire :** Devenir le garant de la conformité pour les investisseurs directs étrangers (IDE).
-
-[^1]: Basé sur l'exposition des infrastructures au CLOUD Act (Source : Financial Afrik / UA, fév. 2026).
-
+* **[span_3](start_span)Accès au marché financier africain intégré :** Croissance intra-africaine estimée à +15-20 %[span_3](end_span).
+* **[span_4](start_span)Positionnement "Hub Réglementaire" :** Devenir la référence de conformité pour les investisseurs européens[span_4](end_span).
 
 ✅ **Opportunités stratégiques :**
 
