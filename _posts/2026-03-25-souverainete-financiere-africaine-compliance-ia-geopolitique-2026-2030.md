@@ -1,3 +1,4 @@
+---
 layout: post
 title: "Souveraineté financière africaine : pourquoi la compliance IA est un enjeu géopolitique (et votre opportunité stratégique 2026-2030)"
 permalink: /analyses/souverainete-financiere-africaine-compliance-ia-geopolitique-2026-2030/
@@ -52,8 +53,8 @@ schema_type: Article
       "url": "https://gsfconsultinginternational.com/assets/img/logo-gsf.png"
     }
   },
-  "datePublished": "2026-03-24",
-  "dateModified": "2026-03-24",
+  "datePublished": "2026-03-25",
+  "dateModified": "2026-03-25",
   "image": "https://gsfconsultinginternational.com/uploads/souverainete-financiere-africaine-ia-levier-strategique-2026-2030.png",
   "url": "https://gsfconsultinginternational.com/analyses/souverainete-financiere-africaine-compliance-ia-geopolitique-2026-2030/",
   "keywords": ["Souveraineté financière africaine IA", "Compliance IA bancaire Afrique", "Enjeux géopolitiques IA CEDEAO UA", "BCEAO 2025", "OHADA clauses IA conformité", "Africa AI Council", "Audit Souveraineté Cognitive"],
