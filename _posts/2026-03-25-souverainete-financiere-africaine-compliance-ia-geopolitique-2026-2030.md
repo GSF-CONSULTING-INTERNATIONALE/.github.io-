@@ -116,20 +116,21 @@ L'**[Africa AI Council](https://au.int/en/pressreleases/20250404/africa-ai-counc
 
 ### 1.3 Risques géopolitiques & Opportunités de first-mover
 
-⚠️ **Risques identifiés :**
+**⚠️ Risques identifiés :**
 
-| Risque | Impact opérationnel | Mitigation GSF |
-| :--- | :--- | :--- |
-| **Fragmentation normative** | Exigences contradictoires UEMOA vs. UA | Audit de mapping réglementaire multi-juridictions |
-| **Dépendance technologique** | ~78% des infrastructures cloud hors Afrique[^1] | Stratégie de migration vers AI Factories africaines |
-| **Utilisation malveillante IA** | Réseaux terroristes et transferts opaques[^2] | Déploiement d'IA défensives explicables |
-| **Divergence de rythmes** | Assèchement du marché de la dette régionale | Veille RegTech automatisée via plateforme GSF |
+| Risque                        | Impact opérationnel                          | Mitigation GSF                                      |
+|-------------------------------|----------------------------------------------|-----------------------------------------------------|
+| **Fragmentation normative**   | Exigences contradictoires UEMOA vs. UA      | Audit de mapping réglementaire multi-juridictions   |
+| **Dépendance technologique**  | ~78 % des infrastructures cloud hors Afrique | Stratégie de migration vers AI Factories africaines |
+| **Utilisation malveillante IA**| Réseaux terroristes et transferts opaques    | Déploiement d’IA défensives explicables             |
+| **Divergence de rythmes**     | Assèchement du marché de la dette régionale  | Veille RegTech automatisée via plateforme GSF      |
 
-✅ **Opportunités stratégiques :**
+**✅ Opportunités stratégiques :**
 
-* **[span_3](start_span)Accès au marché financier africain intégré :** Croissance intra-africaine estimée à +15-20 %[span_3](end_span).
-* **[span_4](start_span)Positionnement "Hub Réglementaire" :** Devenir la référence de conformité pour les investisseurs européens[span_4](end_span).
-
+| Opportunité                              | Bénéfice concret                                      |
+|------------------------------------------|-------------------------------------------------------|
+| **Accès au marché financier africain intégré** | Croissance intra-africaine estimée à +15-20 %        |
+| **Positionnement "Hub Réglementaire"**   | Devenir la référence de conformité pour les investisseurs européens |
 ✅ **Opportunités stratégiques :**
 
 - **Position de first-mover** : Adopter les standards de transparence de Kigali dès 2026 permet d'anticiper les exigences régionales et de négocier avec les correspondants bancaires internationaux (Swift, grandes banques) depuis une position de force normative.
