@@ -332,9 +332,6 @@ Méthodologie propriétaire GSF combinant cartographie des risques algorithmique
             display: inline-block;">
     📚 Consulter nos autres analyses
   </a>
-</p>
-
-
 ---
 
 ## CTA Double Canal : Diagnostic Flash + White Paper Stratégique
