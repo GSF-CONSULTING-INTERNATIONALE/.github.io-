@@ -127,15 +127,17 @@ L'**[Africa AI Council](https://au.int/en/pressreleases/20250404/africa-ai-counc
 
 **✅ Opportunités stratégiques :**
 
-| Opportunité                              | Bénéfice concret                                      |
-|------------------------------------------|-------------------------------------------------------|
-| **Accès au marché financier africain intégré** | Croissance intra-africaine estimée à +15-20 %        |
-| **Positionnement "Hub Réglementaire"**   | Devenir la référence de conformité pour les investisseurs européens |
-✅ **Opportunités stratégiques :**
+| Opportunité | Bénéfice concret |
+| :--- | :--- |
+| **Accès au marché financier intégré** | Croissance intra-africaine estimée à +15-20 % |
+| **Positionnement "Hub Réglementaire"** | Référence de conformité pour les investisseurs européens |
 
-- **Position de first-mover** : Adopter les standards de transparence de Kigali dès 2026 permet d'anticiper les exigences régionales et de négocier avec les correspondants bancaires internationaux (Swift, grandes banques) depuis une position de force normative.
+- **Position de first-mover** : Adopter les standards de transparence de Kigali dès 2026 permet d’anticiper les exigences régionales et de négocier avec les correspondants bancaires internationaux (Swift, grandes banques) depuis une position de force normative.
 
-- **Inclusion financière massive** : L'OCDE estime que l'**IA-based credit scoring** pourrait ajouter **1,5 trillion USD** à l'économie africaine d'ici 2030[^11^], en débloquant l'accès au crédit pour 380 000 PME éthiopiennes et des millions de micro-entrepreneurs en Afrique de l'Ouest.
+- **Inclusion financière massive** : L’OCDE estime que l’**IA-based credit scoring** pourrait ajouter **1,5 trillion USD** à l’économie africaine d’ici 2030[^11^], en débloquant l’accès au crédit pour 380 000 PME éthiopiennes et des millions de micro-entrepreneurs en Afrique de l’Ouest.
+
+[^11^]: Étude OCDE : "Artificial Intelligence for Development in Africa", horizon 2030.
+
 
 ### 1.4 Actions Prioritaires GSF (Avant fin Q2 2026)
 
