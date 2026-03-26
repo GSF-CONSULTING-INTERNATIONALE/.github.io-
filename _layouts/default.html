@@ -83,4 +83,30 @@
     </style>
 </head>
 <body>
-    <!-- ... (le reste de ton code) ... -->
+    <!-- navbar ici (votre code existant) -->
+
+    {{ content }}
+
+    <footer style="margin-top: 0; padding: 40px 20px; border-top: 1px solid #06b6d4; text-align: center;">
+        <p style="color: #06b6d4; font-size: 0.9rem;">© {{ 'now' | date: '%Y' }} GSF Consulting International</p>
+        <p style="margin: 0 0 12px;">
+            <a href="mailto:gilles.feliho@gsfconsultinginternational.com" style="color: #06b6d4; font-weight: 700;">
+                gilles.feliho@gsfconsultinginternational.com
+            </a>
+        </p>
+        <p><a href="{{ '/mentions-legales.html' | relative_url }}">Mentions légales</a></p>
+    </footer>
+
+    <script>
+      const mobileBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      if (mobileBtn) {
+        mobileBtn.addEventListener('click', () => mobileMenu.classList.toggle('active'));
+      }
+      document.querySelectorAll('#mobile-menu a').forEach(link => {
+        link.addEventListener('click', () => mobileMenu.classList.remove('active'));
+      });
+    </script>
+</body>
+</html>
+
