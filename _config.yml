@@ -23,6 +23,13 @@ kramdown:
   auto_ids: true
   syntax_highlighter: rouge
 
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate
+
+
 # ===== PAGINATION =====
 # Note : jekyll-paginate ne fonctionne que sur index.html ou un fichier dans un dossier (ex: blog/index.html)
 paginate: 8
