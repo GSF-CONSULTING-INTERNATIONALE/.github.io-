@@ -7,6 +7,7 @@
     <title>{{ page.title | default: "GSF Consulting International" }}</title>
     <meta name="description" content="{{ page.excerpt | default: site.description | escape }}">
     <link rel="canonical" href="{{ page.url | absolute_url }}">
+    
     <meta property="og:title" content="{{ page.title | escape }}">
     <meta property="og:description" content="{{ page.excerpt | default: site.description | escape }}">
     <meta property="og:url" content="{{ page.url | absolute_url }}">
@@ -43,21 +44,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ '/css/style.css' | relative_url }}">
 
-    <!-- ==================== FONT AWESOME (version fiable) ==================== -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-          crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- ===================================================================== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <style>
+        /* Styles spécifiques au menu mobile */
         #mobile-menu {
             display: none;
             flex-direction: column;
             background: rgba(0, 0, 0, 0.95);
             padding: 1rem;
             position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            z-index: 2100;
+        }
+
+        #mobile-menu.active {
+            display: flex;
+        }
+
+        #mobile-menu-btn {
+            display: none;
+        }
+
+        @media (max-width: 1024px) {
+            .desktop-menu {
+                display: none !important;
+            }
+
+            #mobile-menu-btn {
+                display: block !important;
+            }
+        }
     </style>
 </head>
 <body>
-    <!-- Le reste de ton code HTML ici -->
+    {{ content }}
 </body>
 </html>
