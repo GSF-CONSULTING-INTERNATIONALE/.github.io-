@@ -1,5 +1,5 @@
-# _config.yml — GSF Consulting International
-# Mis à jour le 2026-03-14
+# _config.yml — GSF Consulting International (Version Corrigée)
+# Date : 2026-03-26
 # ======================================================
 
 # ===== SITE =====
@@ -28,12 +28,14 @@ plugins:
   - jekyll-seo-tag
   - jekyll-feed
   - jekyll-sitemap
-  - jekyll-paginate  # <--- AJOUTÉ POUR LA PAGINATION
+  - jekyll-paginate
 
 # ===== PAGINATION =====
-paginate: 8     # Nombre d'articles par page
-paginate_path: "/blog/page:num/" # Structure des URLs paginées 
-# ======================================================
+# Note : jekyll-paginate ne fonctionne que sur index.html ou un fichier dans un dossier (ex: blog/index.html)
+paginate: 8
+paginate_path: "/blog/page:num/" # Structure correcte (sans ":" supplémentaire)
+
+
 
 # ===== COLLECTIONS =====
 collections:
@@ -43,21 +45,18 @@ collections:
 
 # ===== DEFAULTS =====
 defaults:
+  # Valeurs par défaut pour TOUTES les pages et fichiers
   - scope:
       path: ""
     values:
       layout: "default"
+
+  # Valeurs par défaut spécifiques aux articles (dossier _posts)
   - scope:
       path: ""
       type: "posts"
     values:
       layout: "post"
-
-  # Pages institutionnelles (Correction ici)
-  - scope:
-      path: "" # Cible tous les fichiers à la racine
-    values:
-      layout: "default"
 
   # Dossier études de cas
   - scope:
