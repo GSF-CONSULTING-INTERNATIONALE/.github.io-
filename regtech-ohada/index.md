@@ -2,7 +2,7 @@
 layout: page
 title: "GSF Compliance Accelerator : L'excellence RegTech pour l'espace OHADA & BCEAO"
 permalink: /regtech-ohada/
-date: 2026-03-26
+date: 2026-03-25
 author: "Gilles Sixte Feliho"
 image: /uploads/notre-offre-reg-tech-gsf-consulting-international.png
 excerpt: "Optimisez votre conformité LCB-FT, KYC et Sapin II grâce à l'automatisation intelligente. Découvrez comment GSF Consulting transforme vos contraintes réglementaires en leviers de performance."
