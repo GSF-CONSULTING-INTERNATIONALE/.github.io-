@@ -17,7 +17,7 @@
       <script type="application/ld+json">
         {{ page.seo_custom_jsonld }}
       </script>
-    {% else %}
+    {% elsif page.layout != "page" %}
       <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -29,9 +29,7 @@
         "foundingDate": "2020",
         "description": "Cabinet de conseil en stratégie, conformité financière et intelligence artificielle opérant dans l'espace OHADA.",
         "areaServed": ["OHADA", "UEMOA", "CEMAC"],
-        "sameAs": [
-          "https://www.linkedin.com/in/gilles-feliho/"
-        ],
+        "sameAs": ["https://www.linkedin.com/in/gilles-feliho/"],
         "contactPoint": {
           "@type": "ContactPoint",
           "email": "contact@gsfconsultinginternational.com",
@@ -57,56 +55,9 @@
             background: rgba(0, 0, 0, 0.95);
             padding: 1rem;
             position: absolute;
-            top: 100%;
-            left: 0;
-            width: 100%;
-            z-index: 2100;
-        }
-
-        #mobile-menu.active {
-            display: flex;
-        }
-
-        #mobile-menu-btn {
-            display: none;
-        }
-
-        @media (max-width: 1024px) {
-            .desktop-menu {
-                display: none !important;
-            }
-
-            #mobile-menu-btn {
-                display: block !important;
-            }
-        }
     </style>
 </head>
 <body>
-    <!-- navbar ici (votre code existant) -->
-
-    {{ content }}
-
-    <footer style="margin-top: 0; padding: 40px 20px; border-top: 1px solid #06b6d4; text-align: center;">
-        <p style="color: #06b6d4; font-size: 0.9rem;">© {{ 'now' | date: '%Y' }} GSF Consulting International</p>
-        <p style="margin: 0 0 12px;">
-            <a href="mailto:gilles.feliho@gsfconsultinginternational.com" style="color: #06b6d4; font-weight: 700;">
-                gilles.feliho@gsfconsultinginternational.com
-            </a>
-        </p>
-        <p><a href="{{ '/mentions-legales.html' | relative_url }}">Mentions légales</a></p>
-    </footer>
-
-    <script>
-      const mobileBtn = document.getElementById('mobile-menu-btn');
-      const mobileMenu = document.getElementById('mobile-menu');
-      if (mobileBtn) {
-        mobileBtn.addEventListener('click', () => mobileMenu.classList.toggle('active'));
-      }
-      document.querySelectorAll('#mobile-menu a').forEach(link => {
-        link.addEventListener('click', () => mobileMenu.classList.remove('active'));
-      });
-    </script>
+    <!-- Le reste de ton code HTML ici -->
 </body>
 </html>
-
