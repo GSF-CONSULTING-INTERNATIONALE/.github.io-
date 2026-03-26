@@ -137,8 +137,7 @@ La ZLECAf impose une fluidité des flux financiers identique à celle des marcha
 ✅ **Action 2** : Déployer la veille RegTech automatisée couvrant les trois espaces.  
 ✅ **Action 3** : Anticiper la hausse des fonds propres et standardisation des reporting prudentiels.
 
-[![Offre RegTech GSF Consulting](uploads/notre-offre-reg-tech-gsf-consulting-international.png)](/regtech-ohada/)
-
+**[Découvrez notre service RegTech OHADA & BCEAO](uploads/notre-offre-reg-tech-gsf-consulting-international.png)**
 
 ---
 
