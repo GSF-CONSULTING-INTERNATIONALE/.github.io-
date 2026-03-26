@@ -6,18 +6,33 @@ date: 2026-03-26
 author: "Gilles Sixte Feliho"
 image: /uploads/notre-offre-reg-tech-gsf-consulting-international.png
 excerpt: "Optimisez votre conformité LCB-FT, KYC et Sapin II grâce à l'automatisation intelligente."
-seo_custom_jsonld: |
+seo_custom_jsonld: >
   {
     "@context": "https://schema.org",
     "@type": "Service",
     "name": "GSF Compliance Accelerator",
+    "url": "https://gsfconsultinginternational.com/regtech-ohada/",
     "serviceType": "RegTech & Compliance Consulting",
+    "description": "Optimisation de la conformité LCB-FT et KYC en Afrique francophone (OHADA, UEMOA, CEMAC).",
+    "image": "https://gsfconsultinginternational.com/uploads/notre-offre-reg-tech-gsf-consulting-international.png",
     "provider": {
       "@type": "Organization",
-      "name": "GSF Consulting International"
+      "name": "GSF Consulting International",
+      "url": "https://gsfconsultinginternational.com",
+      "email": "contact@gsfconsultinginternational.com"
     },
-    "areaServed": ["OHADA", "UEMOA", "CEMAC"],
-    "description": "Optimisation de la conformité LCB-FT et KYC en Afrique."
+    "areaServed": [
+      { "@type": "Place", "name": "Espace OHADA" },
+      { "@type": "Place", "name": "UEMOA" },
+      { "@type": "Place", "name": "CEMAC" }
+    ],
+    "offers": {
+      "@type": "Offer",
+      "name": "Diagnostic RegTech Readiness",
+      "url": "https://gsfconsultinginternational.com/regtech-ohada/",
+      "availability": "https://schema.org/InStock",
+      "priceCurrency": "XOF"
+    }
   }
 ---
 ## L'Alliance de la Conformité et de la Performance
