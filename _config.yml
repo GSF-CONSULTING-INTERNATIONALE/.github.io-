@@ -33,7 +33,7 @@ plugins:
 # ===== PAGINATION =====
 # Note : jekyll-paginate ne fonctionne que sur index.html ou un fichier dans un dossier (ex: blog/index.html)
 paginate: 8
-paginate_path: "/blog/page:num/" # Structure correcte (sans ":" supplémentaire)
+paginate_path: "/analyses/page:num/" # Structure correcte (sans ":" supplémentaire)
 
 # ===== COLLECTIONS =====
 collections:
