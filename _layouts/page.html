@@ -5,3 +5,34 @@ layout: default
   <h1>{{ page.title }}</h1>
   {{ content }}
 </article>
+
+{% if page.permalink == "/regtech-ohada/" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "GSF Compliance Accelerator",
+  "url": "https://gsfconsultinginternational.com/regtech-ohada/",
+  "serviceType": "RegTech & Compliance Consulting",
+  "description": "Optimisation de la conformité LCB-FT et KYC en Afrique francophone.",
+  "image": "https://gsfconsultinginternational.com/uploads/notre-offre-reg-tech-gsf-consulting-international.png",
+  "provider": {
+    "@type": "Organization",
+    "name": "GSF Consulting International",
+    "url": "https://gsfconsultinginternational.com"
+  },
+  "areaServed": [
+    { "@type": "Place", "name": "Espace OHADA" },
+    { "@type": "Place", "name": "UEMOA" },
+    { "@type": "Place", "name": "CEMAC" }
+  ],
+  "offers": {
+    "@type": "Offer",
+    "name": "Diagnostic RegTech Readiness",
+    "url": "https://gsfconsultinginternational.com/regtech-ohada/",
+    "availability": "https://schema.org/InStock",
+    "priceCurrency": "XOF"
+  }
+}
+</script>
+{% endif %}
