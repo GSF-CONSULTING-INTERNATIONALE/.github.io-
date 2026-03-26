@@ -1,14 +1,17 @@
 [build]
-  # COMMANDE OBLIGATOIRE : On dit à Netlify de compiler avec Jekyll
   command = "jekyll build"
-  
-  # DOSSIER DE PUBLICATION : Jekyll génère le site dans le dossier _site
   publish = "_site"
 
 [build.environment]
   JEKYLL_ENV = "production"
 
-# On garde vos redirections et headers qui sont corrects
+# --- AJOUT STRATÉGIQUE POUR LE SEO ---
+[build.processing]
+  skip_node_bundling = true
+[build.processing.html]
+  pretty_urls = true
+# -------------------------------------
+
 [[redirects]]
   from = "/admin/*"
   to = "/admin/index.html"
