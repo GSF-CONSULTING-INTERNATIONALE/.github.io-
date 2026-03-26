@@ -50,10 +50,9 @@ defaults:
     values:
       layout: "post"
 
-  # Pages institutionnelles (racine)
+  # Pages institutionnelles (Correction ici)
   - scope:
-      path: ""
-      type: "pages"
+      path: "" # Cible tous les fichiers à la racine
     values:
       layout: "default"
 
