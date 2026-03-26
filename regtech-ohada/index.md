@@ -1,5 +1,5 @@
 ---
-layout: defaut
+layout: page
 title: "GSF Compliance Accelerator : L'excellence RegTech pour l'espace OHADA & BCEAO"
 permalink: /regtech-ohada/
 date: 2026-03-26
