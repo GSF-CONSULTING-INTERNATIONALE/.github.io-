@@ -50,7 +50,7 @@ Le **GSF Compliance Accelerator** est notre méthodologie propriétaire conçue 
 
 ---
 
-### Infographie Stratégique : Cyber-LAB Souveraine 2026
+### Infographie Stratégique : Compliance Accelerator
 
 Cette ressource, pilier de notre vision, détaille la convergence entre la résilience numérique et l'intégrité financière dans l'espace OHADA.
 <style>
