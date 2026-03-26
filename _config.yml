@@ -43,7 +43,10 @@ collections:
 
 # ===== DEFAULTS =====
 defaults:
-  # Articles de blog
+  - scope:
+      path: ""
+    values:
+      layout: "default"
   - scope:
       path: ""
       type: "posts"
