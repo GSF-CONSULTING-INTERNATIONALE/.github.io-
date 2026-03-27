@@ -45,82 +45,62 @@ Cette ressource, pilier de notre vision, détaille la convergence entre la rési
 ## Questions Fréquentes
 
 <style>
-.faq-section h2 {
-  color: #06b6d4;
-  margin-bottom: 2rem;
-  text-align: center;
-}
-
-.faq-grid {
-  display: grid;
-  gap: 1.5rem;
+.faq-section {
   margin: 2rem 0;
 }
-
 .faq-item {
   background: rgba(6, 182, 212, 0.05);
   border-left: 3px solid #06b6d4;
   padding: 1.5rem;
   border-radius: 0 8px 8px 0;
+  margin-bottom: 1.5rem;
 }
-
 .faq-item h3 {
   color: #06b6d4;
   font-size: 1.1rem;
   margin: 0 0 1rem 0;
 }
-
 .faq-item p {
   color: rgba(255,255,255,0.9);
   line-height: 1.6;
   margin: 0;
 }
-
 .faq-item a {
   color: #06b6d4;
   text-decoration: none;
   border-bottom: 1px dotted #06b6d4;
 }
-
 .faq-item a:hover {
   border-bottom-style: solid;
-}
-
-@media (min-width: 768px) {
-  .faq-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 </style>
 
 <section class="faq-section" itemscope itemtype="https://schema.org/FAQPage">
-  <div class="faq-grid">
-    <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-      <h3 itemprop="name">Qu'est-ce que le GSF Compliance Accelerator ?</h3>
-      <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-        <p itemprop="text">Le GSF Compliance Accelerator est une méthodologie propriétaire qui transforme vos obligations LCB-FT, KYC et Sapin II en leviers de croissance grâce à l'automatisation intelligente des processus de conformité.</p>
-      </div>
+  <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Qu'est-ce que le GSF Compliance Accelerator ?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">Le GSF Compliance Accelerator est une méthodologie propriétaire qui transforme vos obligations LCB-FT, KYC et Sapin II en leviers de croissance grâce à l'automatisation intelligente des processus de conformité.</p>
     </div>
+  </div>
 
-    <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-      <h3 itemprop="name">Quels pays couvre votre offre RegTech ?</h3>
-      <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-        <p itemprop="text">Notre offre couvre l'ensemble de l'espace OHADA, incluant les zones UEMOA et CEMAC, soit 17 pays africains soumis au droit des affaires harmonisé.</p>
-      </div>
+  <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Quels pays couvre votre offre RegTech ?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">Notre offre couvre l'ensemble de l'espace OHADA, incluant les zones UEMOA et CEMAC, soit 17 pays africains soumis au droit des affaires harmonisé.</p>
     </div>
+  </div>
 
-    <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-      <h3 itemprop="name">Comment démarrer un diagnostic de conformité ?</h3>
-      <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-        <p itemprop="text">Contactez-nous à <a href="mailto:contact@gsfconsultinginternational.com" aria-label="Demander un diagnostic de conformité RegTech par email">contact@gsfconsultinginternational.com</a> pour planifier votre diagnostic RegTech Readiness personnalisé. Notre équipe vous répond sous 48h.</p>
-      </div>
+  <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Comment démarrer un diagnostic de conformité ?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">Contactez-nous à <a href="mailto:contact@gsfconsultinginternational.com" aria-label="Demander un diagnostic de conformité RegTech par email">contact@gsfconsultinginternational.com</a> pour planifier votre diagnostic RegTech Readiness personnalisé. Notre équipe vous répond sous 48h.</p>
     </div>
+  </div>
 
-    <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-      <h3 itemprop="name">Quelles réglementations sont couvertes ?</h3>
-      <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-        <p itemprop="text">Nous couvrons la LCB-FT (Lutte contre le blanchiment et le financement du terrorisme), les procédures KYC (Know Your Customer), la loi Sapin II, ainsi que les normes spécifiques BCEAO et Commission Bancaire UMOA.</p>
-      </div>
+  <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Quelles réglementations sont couvertes ?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">Nous couvrons la LCB-FT (Lutte contre le blanchiment et le financement du terrorisme), les procédures KYC (Know Your Customer), la loi Sapin II, ainsi que les normes spécifiques BCEAO et Commission Bancaire UMOA.</p>
     </div>
   </div>
 </section>
