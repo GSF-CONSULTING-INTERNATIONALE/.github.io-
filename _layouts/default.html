@@ -3,51 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#06b6d4">
+    <meta name="robots" content="index, follow">
 
     <title>{{ page.title | default: "GSF Consulting International" }}</title>
     <meta name="description" content="{{ page.excerpt | default: site.description | escape }}">
     <link rel="canonical" href="{{ page.url | absolute_url }}">
     
+    <!-- Open Graph -->
     <meta property="og:title" content="{{ page.title | escape }}">
     <meta property="og:description" content="{{ page.excerpt | default: site.description | escape }}">
     <meta property="og:url" content="{{ page.url | absolute_url }}">
     <meta property="og:image" content="{{ page.image | absolute_url }}">
     <meta property="og:type" content="website">
 
-    {% if page.seo_custom_jsonld %}
-      <script type="application/ld+json">
-        {{ page.seo_custom_jsonld }}
-      </script>
-    {% elsif page.layout != "page" %}
-      <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "GSF Consulting International",
-        "url": "https://gsfconsultinginternational.com",
-        "logo": "https://gsfconsultinginternational.com/uploads/logo.png",
-        "email": "contact@gsfconsultinginternational.com",
-        "foundingDate": "2020",
-        "description": "Cabinet de conseil en stratégie, conformité financière et intelligence artificielle opérant dans l'espace OHADA.",
-        "areaServed": ["OHADA", "UEMOA", "CEMAC"],
-        "sameAs": ["https://www.linkedin.com/in/gilles-feliho/"],
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "email": "contact@gsfconsultinginternational.com",
-          "contactType": "customer service",
-          "availableLanguage": "French"
-        }
-      }
-      </script>
+    <!-- Schema.org JSON-LD -->
+    {% if page.url == "/regtech-ohada/" %}
+        {% include schemas/regtech.html %}
+    {% elsif page.url == "/" %}
+        {% include schemas/organization.html %}
+    {% elsif page.layout == "post" %}
+        {% include schemas/article.html %}
+        {% include schemas/breadcrumbs-post.html %}
+    {% elsif page.url != "/" %}
+        {% include schemas/breadcrumbs.html %}
     {% endif %}
 
+    <!-- Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ '/css/style.css' | relative_url }}">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
 
     <style>
-        /* Styles spécifiques au menu mobile */
+        /* Navigation styles */
+        #navbar {
+            margin: 20px;
+            position: sticky;
+            top: 10px;
+            z-index: 1500;
+        }
+
+        .glass-card {
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            position: relative;
+        }
+
+        .logo {
+            font-family: 'Syne', sans-serif;
+            font-weight: 800;
+            font-size: 1.5rem;
+            color: #06b6d4;
+            text-decoration: none;
+        }
+
+        .desktop-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            margin: 0;
+            padding: 0;
+        }
+
+        .desktop-menu a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .desktop-menu a:hover {
+            color: #06b6d4;
+        }
+
+        .contact-btn {
+            border: 1px solid #06b6d4;
+            padding: 5px 15px;
+            border-radius: 4px;
+        }
+
+        /* Mobile menu styles */
         #mobile-menu {
             display: none;
             flex-direction: column;
@@ -64,10 +108,49 @@
             display: flex;
         }
 
-        #mobile-menu-btn {
-            display: none;
+        #mobile-menu a {
+            color: #fff;
+            padding: 0.5rem;
+            text-decoration: none;
         }
 
+        #mobile-menu .contact-link {
+            color: #06b6d4;
+        }
+
+        #mobile-menu-btn {
+            display: none;
+            font-size: 1.5rem;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            color: white;
+        }
+
+        /* Footer styles */
+        footer {
+            margin-top: 0;
+            padding: 40px 20px;
+            border-top: 1px solid #06b6d4;
+            text-align: center;
+        }
+
+        footer .copyright {
+            color: #06b6d4;
+            font-size: 0.9rem;
+        }
+
+        footer .contact {
+            margin: 0 0 12px;
+        }
+
+        footer a {
+            color: #06b6d4;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        /* Responsive */
         @media (max-width: 1024px) {
             .desktop-menu {
                 display: none !important;
@@ -80,6 +163,75 @@
     </style>
 </head>
 <body>
-    {{ content }}
+    <header>
+        <nav id="navbar" class="glass-card">
+            <div class="nav-container">
+                <a href="/" class="logo">GSF CONSULTING</a>
+                
+                <ul class="desktop-menu">
+                    <li><a href="/">Accueil</a></li>
+                    <li><a href="/a-propos/">À propos</a></li>
+                    <li><a href="/audit-souverainete-cognitive/">Audit ASC™</a></li>
+                    <li><a href="/etudes-de-cas/">Études de cas</a></li>
+                    <li><a href="/references-et-preuves/">Références</a></li>
+                    <li><a href="/gilles-feliho/">L'Expert</a></li>
+                    <li><a href="/analyses/">Analyses</a></li>
+                    <li><a href="/politique-de-confidentialite/">Confidentialité</a></li>
+                    <li><a href="/#contact" class="contact-btn">Contact</a></li>
+                </ul>
+
+                <button id="mobile-menu-btn" aria-label="Menu mobile">☰</button>
+            </div>
+
+            <div id="mobile-menu" aria-hidden="true">
+                <a href="/">Accueil</a>
+                <a href="/a-propos/">À propos</a>
+                <a href="/audit-souverainete-cognitive/">Audit ASC™</a>
+                <a href="/etudes-de-cas/">Études de cas</a>
+                <a href="/references-et-preuves/">Références</a>
+                <a href="/gilles-feliho/">L'Expert</a>
+                <a href="/analyses/">Analyses</a>
+                <a href="/politique-de-confidentialite/">Confidentialité</a>
+                <a href="/#contact" class="contact-link">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        {{ content }}
+    </main>
+
+    <footer>
+        <p class="copyright">© {{ 'now' | date: '%Y' }} GSF Consulting International</p>
+        <p class="contact">
+            <a href="mailto:gilles.feliho@gsfconsultinginternational.com">
+                gilles.feliho@gsfconsultinginternational.com
+            </a>
+        </p>
+        <p><a href="/mentions-legales/">Mentions légales</a></p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            if (mobileBtn && mobileMenu) {
+                mobileBtn.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('active');
+                    mobileMenu.setAttribute('aria-hidden', !mobileMenu.classList.contains('active'));
+                    this.setAttribute('aria-expanded', mobileMenu.classList.contains('active'));
+                });
+
+                document.querySelectorAll('#mobile-menu a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.remove('active');
+                        mobileMenu.setAttribute('aria-hidden', 'true');
+                        mobileBtn.setAttribute('aria-expanded', 'false');
+                    });
+                });
+            }
+        });
+    </script>
 </body>
 </html>
