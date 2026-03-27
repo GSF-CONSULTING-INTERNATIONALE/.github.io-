@@ -51,10 +51,9 @@ Cette ressource, pilier de notre vision, détaille la convergence entre la rési
 
 ---
 
-<div class="faq-container">
-  {% include faq-regtech.html %}
-</div>
-
+{::nomarkdown}
+{% include faq-regtech.html %}
+{:/nomarkdown}
 
 <div style="text-align: center; margin-top: 2.5rem;">
   <a href="mailto:contact@gsfconsultinginternational.com?subject=Demande%20de%20diagnostic%20-%20GSF%20Compliance%20Accelerator&body=Bonjour%2C%0D%0A%0D%0AJe%20souhaite%20obtenir%20des%20informations%20sur%20votre%20offre%20%22GSF%20Compliance%20Accelerator%22%20pour%20mon%20entreprise.%0D%0A%0D%0ANos%20besoins%20actuels%20concernent%20%3A%0D%0A-%20%5BExemple%3A%20Automatisation%20KYC%2C%20Reporting%20BCEAO%2C%20Sapin%20II%5D%0D%0A%0D%0AMerci%20de%20me%20recontacter%20pour%20%C3%A9changer%20%C3%A0%20ce%20sujet.%0D%0A%0D%0ACordialement." 
