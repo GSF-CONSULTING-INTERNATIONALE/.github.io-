@@ -5,37 +5,8 @@ permalink: /regtech-ohada/
 date: 2026-03-26
 author: "Gilles Sixte Feliho"
 image: /uploads/notre-offre-reg-tech-gsf-consulting-international.png
-excerpt: "Optimisez votre conformite LCB-FT, KYC et Sapin II grâce à l'automatisation intelligente."
-seo_custom_jsonld: >
-  {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "GSF Compliance Accelerator",
-    "url": "https://gsfconsultinginternational.com/regtech-ohada/",
-    "serviceType": "RegTech & Compliance Consulting",
-    "description": "Optimisation de la conformite LCB-FT et KYC en Afrique francophone (OHADA, UEMOA, CEMAC).",
-    "image": "https://gsfconsultinginternational.com/uploads/notre-offre-reg-tech-gsf-consulting-international.png",
-    "provider": {
-      "@type": "Organization",
-      "name": "GSF Consulting International",
-      "url": "https://gsfconsultinginternational.com",
-      "email": "contact@gsfconsultinginternational.com"
-    },
-    "areaServed": [
-      { "@type": "Place", "name": "Espace OHADA" },
-      { "@type": "Place", "name": "UEMOA" },
-      { "@type": "Place", "name": "CEMAC" }
-    ],
-    "offers": {
-      "@type": "Offer",
-      "name": "Diagnostic RegTech Readiness",
-      "url": "https://gsfconsultinginternational.com/regtech-ohada/",
-      "availability": "https://schema.org/InStock",
-      "priceCurrency": "XOF"
-    }
-  }
+excerpt: "Optimisez votre conformite LCB-FT, KYC et Sapin II grace a l'automatisation intelligente."
 ---
-MA VALEUR URL EST : {{ page.url }}
 ## L'Alliance de la Conformité et de la Performance
 
 Dans un environnement réglementaire en constante mutation (**BCEAO, Commission Bancaire, Normes OHADA**), la conformité ne doit plus être perçue comme un centre de coûts, mais comme un actif stratégique.
@@ -53,9 +24,11 @@ Le **GSF Compliance Accelerator** est notre méthodologie propriétaire conçue 
 ### Infographie Stratégique : Compliance Accelerator
 
 Cette ressource, pilier de notre vision, détaille la convergence entre la résilience numérique et l'intégrité financière dans l'espace OHADA.
+
 <style>
   img { max-width: 100%; height: auto; border-radius: 8px; }
 </style>
+
 ![Infographie GSF Compliance Accelerator](/uploads/notre-offre-reg-tech-gsf-consulting-international.png)
 
 ---
