@@ -1,0 +1,241 @@
+---
+layout: default
+title: "Analyses & Publications"
+description: "Retrouvez toutes nos analyses juridiques, insights IA et perspectives stratégiques pour l'Afrique."
+permalink: /analyses/
+pagination:
+  enabled: true
+  per_page: 9
+---
+
+<div class="container analyses-section">
+    <h1>Nos Analyses & Publications</h1>
+    
+    {% if paginator.posts.size > 0 %}
+    <div class="articles-grid">
+        {% for post in paginator.posts %}
+        <article class="glass-card article-card">
+            {% if post.image %}
+            <div class="article-image">
+                <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" loading="lazy">
+            </div>
+            {% endif %}
+            
+            <div class="article-content">
+                <div class="article-meta">
+                    <time datetime="{{ post.date | date_to_xmlschema }}">
+                        {{ post.date | date: "%d %B %Y" }}
+                    </time>
+                    
+                    {% if post.tags.size > 0 %}
+                    <div class="tags">
+                        {% for tag in post.tags limit:3 %}
+                        <span class="tag">{{ tag }}</span>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+                </div>
+
+                <h2>
+                    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                </h2>
+                
+                <p class="excerpt">
+                    {{ post.excerpt | strip_html | truncate: 160 }}
+                </p>
+                
+                <div class="article-footer">
+                    <span class="reading-time">
+                        <i class="far fa-clock"></i>
+                        {% assign words = post.content | number_of_words %}
+                        {% if words < 360 %}1 min{% else %}{{ words | divided_by: 180 }} min{% endif %} de lecture
+                    </span>
+
+                    <a href="{{ post.url | relative_url }}" class="read-more">
+                        Lire l'analyse →
+                    </a>
+                </div>
+            </div>
+        </article>
+        {% endfor %}
+    </div>
+
+    {% if paginator.total_pages > 1 %}
+    <nav class="pagination" aria-label="Navigation des pages">
+        {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path | relative_url }}" class="prev">← Précédent</a>
+        {% endif %}
+        
+        <span class="current">Page {{ paginator.page }} sur {{ paginator.total_pages }}</span>
+        
+        {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path | relative_url }}" class="next">Suivant →</a>
+        {% endif %}
+    </nav>
+    {% endif %}
+
+    {% else %}
+    <p class="no-posts">Aucune analyse n'est disponible pour le moment.</p>
+    {% endif %}
+</div>
+
+<style>
+    .analyses-section {
+        padding: 120px 20px 60px;
+    }
+
+    .analyses-section h1 {
+        font-family: 'Syne', sans-serif;
+        color: #06b6d4;
+        text-align: center;
+        margin-bottom: 50px;
+        font-size: 3rem;
+    }
+
+    .articles-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 30px;
+    }
+
+    .article-card {
+        padding: 0;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        transition: transform 0.3s ease;
+    }
+
+    .article-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .article-image {
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+    }
+
+    .article-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    }
+
+    .article-card:hover .article-image img {
+        transform: scale(1.05);
+    }
+
+    .article-content {
+        padding: 25px;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .article-meta {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 12px;
+    }
+
+    time {
+        color: #06b6d4;
+        font-weight: bold;
+        font-size: 0.85rem;
+        text-transform: uppercase;
+    }
+
+    .tags {
+        display: flex;
+        gap: 8px;
+    }
+
+    .tag {
+        font-size: 0.75rem;
+        color: #06b6d4;
+        background: rgba(6, 182, 212, 0.1);
+        padding: 2px 8px;
+        border-radius: 4px;
+    }
+
+    .article-content h2 {
+        font-family: 'Syne', sans-serif;
+        font-size: 1.4rem;
+        margin: 12px 0;
+    }
+
+    .article-content h2 a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .excerpt {
+        font-size: 0.95rem;
+        color: #ccc;
+        opacity: 0.85;
+        margin-bottom: 15px;
+    }
+
+    .article-footer {
+        margin-top: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .reading-time {
+        font-size: 0.8rem;
+        opacity: 0.7;
+    }
+
+    .read-more {
+        color: #06b6d4;
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+    .pagination {
+        margin-top: 60px;
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pagination a {
+        color: #06b6d4;
+        padding: 10px 20px;
+        border: 1px solid #06b6d4;
+        border-radius: 6px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+
+    .pagination a:hover {
+        background: rgba(6, 182, 212, 0.1);
+    }
+
+    .pagination .current {
+        color: white;
+        font-weight: bold;
+    }
+
+    .no-posts {
+        text-align: center;
+        color: #ccc;
+        padding: 40px;
+    }
+
+    @media (max-width: 768px) {
+        .analyses-section h1 {
+            font-size: 2rem;
+        }
+
+        .articles-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
