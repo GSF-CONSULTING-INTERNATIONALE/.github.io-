@@ -18,54 +18,83 @@
     <meta property="og:type" content="website">
 
     <!-- Schema.org JSON-LD -->
-  {% if page.url == "/regtech-ohada/" %}
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "RegTech OHADA - Solutions de Conformité Réglementaire",
-  "provider": {
-    "@type": "Organization",
-    "name": "GSF Consulting International",
-    "url": "https://gsfconsultinginternational.com",
-    "logo": "https://gsfconsultinginternational.com/uploads/logo.png"
-  },
-  "serviceType": "RegTech",
-  "description": "Solutions technologiques de conformité réglementaire adaptées au droit OHADA.",
-  "areaServed": { "@type": "GeoRegion", "name": "Zone OHADA" },
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://gsfconsultinginternational.com/regtech-ohada/" }
-}
-</script>
-{% elsif page.url == "/" %}
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "GSF Consulting International",
-  "url": "https://gsfconsultinginternational.com",
-  "logo": "https://gsfconsultinginternational.com/uploads/logo.png",
-  "email": "contact@gsfconsultinginternational.com",
-  "sameAs": ["https://www.linkedin.com/in/gilles-feliho/"]
-}
-</script>
-{% elsif page.layout == "post" %}
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": {{ page.title | jsonify }},
-  "datePublished": "{{ page.date | date_to_xmlschema }}",
-  "author": { "@type": "Person", "name": "Gilles Feliho" },
-  "publisher": {
-    "@type": "Organization",
-    "name": "GSF Consulting International",
-    "logo": { "@type": "ImageObject", "url": "https://gsfconsultinginternational.com/uploads/logo.png" }
-  },
-  "mainEntityOfPage": { "@type": "WebPage", "@id": {{ page.url | absolute_url | jsonify }} }
-}
-</script>
-{% endif %}
-
+    {% if page.url == "/regtech-ohada/" %}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": {{ page.title | jsonify }},
+      "url": {{ page.url | absolute_url | jsonify }},
+      "description": {{ page.excerpt | default: site.description | jsonify }},
+      "inLanguage": "fr-FR",
+      "datePublished": "{{ page.date | date_to_xmlschema }}",
+      "image": {{ page.image | absolute_url | jsonify }},
+      "mainEntity": {
+        "@type": "Service",
+        "name": {{ page.title | jsonify }},
+        "description": {{ page.excerpt | default: site.description | jsonify }},
+        "provider": {
+          "@type": "Organization",
+          "name": "GSF Consulting International",
+          "url": "https://gsfconsultinginternational.com",
+          "logo": "https://gsfconsultinginternational.com/uploads/logo.png",
+          "email": "contact@gsfconsultinginternational.com"
+        },
+        "serviceType": "GSF Compliance Accelerator - Solution RegTech LCB-FT, KYC, Sapin II",
+        "areaServed": {
+          "@type": "AdministrativeArea",
+          "name": "Espace OHADA & BCEAO"
+        },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Prestations RegTech",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": { "@type": "Service", "name": "Diagnostic RegTech Readiness" }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": { "@type": "Service", "name": "Intégration solutions SaaS / IA conformes OHADA" }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": { "@type": "Service", "name": "Pilotage Data & KPI conformité" }
+            }
+          ]
+        }
+      }
+    }
+    </script>
+    {% elsif page.url == "/" %}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "GSF Consulting International",
+      "url": "https://gsfconsultinginternational.com",
+      "logo": "https://gsfconsultinginternational.com/uploads/logo.png",
+      "email": "contact@gsfconsultinginternational.com",
+      "sameAs": ["https://www.linkedin.com/in/gilles-feliho/"]
+    }
+    </script>
+    {% elsif page.layout == "post" %}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": {{ page.title | jsonify }},
+      "datePublished": "{{ page.date | date_to_xmlschema }}",
+      "author": { "@type": "Person", "name": "Gilles Feliho" },
+      "publisher": {
+        "@type": "Organization",
+        "name": "GSF Consulting International",
+        "logo": { "@type": "ImageObject", "url": "https://gsfconsultinginternational.com/uploads/logo.png" }
+      },
+      "mainEntityOfPage": { "@type": "WebPage", "@id": {{ page.url | absolute_url | jsonify }} }
+    }
+    </script>
+    {% endif %}
 
     <!-- Styles -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -75,20 +104,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
 
     <style>
-        /* Navigation styles */
         #navbar {
             margin: 20px;
             position: sticky;
             top: 10px;
             z-index: 1500;
         }
-
         .glass-card {
             background: rgba(0, 0, 0, 0.8);
             backdrop-filter: blur(10px);
             border-radius: 10px;
         }
-
         .nav-container {
             display: flex;
             justify-content: space-between;
@@ -96,7 +122,6 @@
             padding: 1rem 2rem;
             position: relative;
         }
-
         .logo {
             font-family: 'Syne', sans-serif;
             font-weight: 800;
@@ -104,7 +129,6 @@
             color: #06b6d4;
             text-decoration: none;
         }
-
         .desktop-menu {
             display: flex;
             list-style: none;
@@ -112,24 +136,17 @@
             margin: 0;
             padding: 0;
         }
-
         .desktop-menu a {
             color: white;
             text-decoration: none;
             transition: color 0.3s;
         }
-
-        .desktop-menu a:hover {
-            color: #06b6d4;
-        }
-
+        .desktop-menu a:hover { color: #06b6d4; }
         .contact-btn {
             border: 1px solid #06b6d4;
             padding: 5px 15px;
             border-radius: 4px;
         }
-
-        /* Mobile menu styles */
         #mobile-menu {
             display: none;
             flex-direction: column;
@@ -141,21 +158,13 @@
             width: 100%;
             z-index: 2100;
         }
-
-        #mobile-menu.active {
-            display: flex;
-        }
-
+        #mobile-menu.active { display: flex; }
         #mobile-menu a {
             color: #fff;
             padding: 0.5rem;
             text-decoration: none;
         }
-
-        #mobile-menu .contact-link {
-            color: #06b6d4;
-        }
-
+        #mobile-menu .contact-link { color: #06b6d4; }
         #mobile-menu-btn {
             display: none;
             font-size: 1.5rem;
@@ -164,39 +173,18 @@
             cursor: pointer;
             color: white;
         }
-
-        /* Footer styles */
         footer {
             margin-top: 0;
             padding: 40px 20px;
             border-top: 1px solid #06b6d4;
             text-align: center;
         }
-
-        footer .copyright {
-            color: #06b6d4;
-            font-size: 0.9rem;
-        }
-
-        footer .contact {
-            margin: 0 0 12px;
-        }
-
-        footer a {
-            color: #06b6d4;
-            font-weight: 700;
-            text-decoration: none;
-        }
-
-        /* Responsive */
+        footer .copyright { color: #06b6d4; font-size: 0.9rem; }
+        footer .contact { margin: 0 0 12px; }
+        footer a { color: #06b6d4; font-weight: 700; text-decoration: none; }
         @media (max-width: 1024px) {
-            .desktop-menu {
-                display: none !important;
-            }
-
-            #mobile-menu-btn {
-                display: block !important;
-            }
+            .desktop-menu { display: none !important; }
+            #mobile-menu-btn { display: block !important; }
         }
     </style>
 </head>
@@ -205,7 +193,6 @@
         <nav id="navbar" class="glass-card">
             <div class="nav-container">
                 <a href="/" class="logo">GSF CONSULTING</a>
-                
                 <ul class="desktop-menu">
                     <li><a href="/">Accueil</a></li>
                     <li><a href="/a-propos/">À propos</a></li>
@@ -217,10 +204,8 @@
                     <li><a href="/politique-de-confidentialite/">Confidentialité</a></li>
                     <li><a href="/#contact" class="contact-btn">Contact</a></li>
                 </ul>
-
                 <button id="mobile-menu-btn" aria-label="Menu mobile">☰</button>
             </div>
-
             <div id="mobile-menu" aria-hidden="true">
                 <a href="/">Accueil</a>
                 <a href="/a-propos/">À propos</a>
@@ -253,14 +238,12 @@
         document.addEventListener('DOMContentLoaded', function() {
             const mobileBtn = document.getElementById('mobile-menu-btn');
             const mobileMenu = document.getElementById('mobile-menu');
-
             if (mobileBtn && mobileMenu) {
                 mobileBtn.addEventListener('click', function() {
                     mobileMenu.classList.toggle('active');
                     mobileMenu.setAttribute('aria-hidden', !mobileMenu.classList.contains('active'));
                     this.setAttribute('aria-expanded', mobileMenu.classList.contains('active'));
                 });
-
                 document.querySelectorAll('#mobile-menu a').forEach(link => {
                     link.addEventListener('click', () => {
                         mobileMenu.classList.remove('active');
