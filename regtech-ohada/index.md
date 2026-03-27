@@ -35,7 +35,7 @@ seo_custom_jsonld: >
     }
   }
 ---
-<!-- DEBUG: {{ page.url }} -->
+MA VALEUR URL EST : {{ page.url }}
 ## L'Alliance de la Conformité et de la Performance
 
 Dans un environnement réglementaire en constante mutation (**BCEAO, Commission Bancaire, Normes OHADA**), la conformité ne doit plus être perçue comme un centre de coûts, mais comme un actif stratégique.
