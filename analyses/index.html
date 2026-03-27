@@ -11,9 +11,9 @@ pagination:
 <div class="container analyses-section">
     <h1>Nos Analyses & Publications</h1>
     
-    {% if paginator.posts.size > 0 %}
+    {% if site.posts.size > 0 %}
     <div class="articles-grid">
-        {% for post in paginator.posts %}
+        {% for post in site.posts %}
         <article class="glass-card article-card">
             {% if post.image %}
             <div class="article-image">
