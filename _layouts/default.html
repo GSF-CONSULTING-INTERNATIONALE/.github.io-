@@ -18,16 +18,54 @@
     <meta property="og:type" content="website">
 
     <!-- Schema.org JSON-LD -->
-    {% if page.url == "/regtech-ohada/" %}
-        {% include schemas/regtech.html %}
-    {% elsif page.url == "/" %}
-        {% include schemas/organization.html %}
-    {% elsif page.layout == "post" %}
-        {% include schemas/article.html %}
-        {% include schemas/breadcrumbs-post.html %}
-    {% elsif page.url != "/" %}
-        {% include schemas/breadcrumbs.html %}
-    {% endif %}
+  {% if page.url == "/regtech-ohada/" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "RegTech OHADA - Solutions de Conformité Réglementaire",
+  "provider": {
+    "@type": "Organization",
+    "name": "GSF Consulting International",
+    "url": "https://gsfconsultinginternational.com",
+    "logo": "https://gsfconsultinginternational.com/uploads/logo.png"
+  },
+  "serviceType": "RegTech",
+  "description": "Solutions technologiques de conformité réglementaire adaptées au droit OHADA.",
+  "areaServed": { "@type": "GeoRegion", "name": "Zone OHADA" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://gsfconsultinginternational.com/regtech-ohada/" }
+}
+</script>
+{% elsif page.url == "/" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "GSF Consulting International",
+  "url": "https://gsfconsultinginternational.com",
+  "logo": "https://gsfconsultinginternational.com/uploads/logo.png",
+  "email": "contact@gsfconsultinginternational.com",
+  "sameAs": ["https://www.linkedin.com/in/gilles-feliho/"]
+}
+</script>
+{% elsif page.layout == "post" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": {{ page.title | jsonify }},
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  "author": { "@type": "Person", "name": "Gilles Feliho" },
+  "publisher": {
+    "@type": "Organization",
+    "name": "GSF Consulting International",
+    "logo": { "@type": "ImageObject", "url": "https://gsfconsultinginternational.com/uploads/logo.png" }
+  },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": {{ page.url | absolute_url | jsonify }} }
+}
+</script>
+{% endif %}
+
 
     <!-- Styles -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
