@@ -22,7 +22,7 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
 
 WORKDIR /app
 
-RUN useradd --create-home --shell /bin/false appuser
+RUN useradd --create-home --shell /sbin/nologin appuser
 
 COPY --from=builder /wheels /wheels
 COPY requirements.txt .
