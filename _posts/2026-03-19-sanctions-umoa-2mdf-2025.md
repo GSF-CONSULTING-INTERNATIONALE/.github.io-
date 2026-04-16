@@ -146,7 +146,7 @@ L'écosystème financier de l'UMOA est donc en pleine mutation. La réussite de 
   <h3>📋 Téléchargez l'Analyse Sanctions UMOA 2025 & Framework Résilience</h3>
   <p>Accédez au rapport complet sur les 2 milliards de FCFA de sanctions, la PI-SPI et le Cloud Souverain OHADA. Document stratégique réservé aux décideurs fintech & bancaires.</p>
   <p><small>Page service liée : <a href="/services/audit-flash/">Audit Flash 48h GSF</a></small></p>
-  <a href="mailto:contact@gsfconsultinginternational.com?subject=Demande Analyse Sanctions UMOA 2025&body=Bonjour GSF Consulting,%0A%0AJe souhaite recevoir l'analyse complète sur les sanctions 2025 et la stratégie de résilience UMOA.%0A%0AMes informations :%0A- Nom : [Votre nom]%0A- Société : [Votre entreprise]%0A- Fonction : [Votre poste]%0A- Pays : [UEMOA / CEMAC]%0A%0ACordialement," class="btn-primary">
+  <a href="mailto:contact@gsfarbitral.ai?subject=Demande Analyse Sanctions UMOA 2025&body=Bonjour GSF Consulting,%0A%0AJe souhaite recevoir l'analyse complète sur les sanctions 2025 et la stratégie de résilience UMOA.%0A%0AMes informations :%0A- Nom : [Votre nom]%0A- Société : [Votre entreprise]%0A- Fonction : [Votre poste]%0A- Pays : [UEMOA / CEMAC]%0A%0ACordialement," class="btn-primary">
     📧 Recevoir l'Analyse Complète
   </a>
 </div>
@@ -154,7 +154,7 @@ L'écosystème financier de l'UMOA est donc en pleine mutation. La réussite de 
 <div class="cta-section secondary">
   <h3>⚡ Audit Flash "De-Risking" 48h</h3>
   <p>Évaluez votre exposition. <strong>Audit flash de-risking 48h UEMOA</strong> : Diagnostic RBA, PI-SPI et Cloud Souverain. Livrable : Plan d'action prioritaire pour rassurer vos correspondants.</p>
-  <a href="mailto:contact@gsfconsultinginternational.com?subject=Demande Audit Flash De-Risking 48h&body=Bonjour GSF Consulting,%0A%0AJe souhaite réaliser un Audit Flash pour évaluer mon exposition au de-risking.%0A%0AMes informations :%0A- Nom : [Votre nom]%0A- Société : [Votre entreprise]%0A- Statut : [Agréée / En cours]%0A- Banque partenaire actuelle : [Nom banque]%0A%0APoint d'attention urgent :%0A[ Sanctions / PI-SPI / Cloud Souverain / Autre ]%0A%0ACordialement," class="btn-secondary">
+  <a href="mailto:contact@gsfarbitral.ai?subject=Demande Audit Flash De-Risking 48h&body=Bonjour GSF Consulting,%0A%0AJe souhaite réaliser un Audit Flash pour évaluer mon exposition au de-risking.%0A%0AMes informations :%0A- Nom : [Votre nom]%0A- Société : [Votre entreprise]%0A- Statut : [Agréée / En cours]%0A- Banque partenaire actuelle : [Nom banque]%0A%0APoint d'attention urgent :%0A[ Sanctions / PI-SPI / Cloud Souverain / Autre ]%0A%0ACordialement," class="btn-secondary">
     🎯 Demander mon Audit Flash
   </a>
 </div>
@@ -162,7 +162,7 @@ L'écosystème financier de l'UMOA est donc en pleine mutation. La réussite de 
 <div class="cta-section tertiary">
   <h3>💡 Masterclass : Réussir son Questionnaire Wolfsberg (CBDDQ)</h3>
   <p><strong>Masterclass Wolfsberg CBDDQ 2026</strong> : Atelier pratique pour répondre aux exigences des banques correspondantes face au de-risking. Prochaine session : [DATE À DÉFINIR]. Places limitées.</p>
-  <a href="mailto:contact@gsfconsultinginternational.com?subject=Inscription Masterclass Wolfsberg CBDDQ&body=Bonjour GSF Consulting,%0A%0AJe souhaite m'inscrire à la Masterclass sur le standard Wolfsberg.%0A%0AMes informations :%0A- Nom : [Votre nom]%0A- Société : [Votre entreprise]%0A- Fonction : [Votre poste]%0A- Email : [Votre email]%0A%0AMes attentes :%0A[ Comprendre le standard / Préparer un dossier / Autre ]%0A%0ACordialement," class="btn-tertiary">
+  <a href="mailto:contact@gsfarbitral.ai?subject=Inscription Masterclass Wolfsberg CBDDQ&body=Bonjour GSF Consulting,%0A%0AJe souhaite m'inscrire à la Masterclass sur le standard Wolfsberg.%0A%0AMes informations :%0A- Nom : [Votre nom]%0A- Société : [Votre entreprise]%0A- Fonction : [Votre poste]%0A- Email : [Votre email]%0A%0AMes attentes :%0A[ Comprendre le standard / Préparer un dossier / Autre ]%0A%0ACordialement," class="btn-tertiary">
     🎟️ Réserver ma place
   </a>
 </div>

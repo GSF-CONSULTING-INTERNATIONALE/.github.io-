@@ -1,0 +1,69 @@
+name: Main CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+          cache-dependency-path: |
+            package-lock.json
+            pnpm-lock.yaml
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+
+      - name: Install JavaScript dependencies (npm)
+        if: ${{ hashFiles('package-lock.json') != '' }}
+        run: npm ci
+
+      - name: Install JavaScript dependencies (pnpm)
+        if: ${{ hashFiles('pnpm-lock.yaml') != '' }}
+        run: |
+          corepack enable
+          pnpm install --frozen-lockfile
+
+      - name: Build verification
+        run: |
+          if [ -f package.json ]; then
+            if [ -f pnpm-lock.yaml ]; then
+              corepack enable
+              pnpm run build
+            else
+              npm run build
+            fi
+          elif [ -f Gemfile ]; then
+            bundle exec jekyll build
+          else
+            echo "No supported build configuration found."
+            exit 1
+          fi
+
+      - name: JavaScript dependency security scan
+        if: ${{ hashFiles('package.json') != '' }}
+        run: |
+          if [ -f pnpm-lock.yaml ]; then
+            corepack enable
+            pnpm audit --audit-level high
+          else
+            npm audit --audit-level=high
+          fi
+
+      - name: Ruby dependency security scan
+        if: ${{ hashFiles('Gemfile') != '' }}
+        run: |
+          gem install bundler-audit --no-document
+          bundle audit check --update

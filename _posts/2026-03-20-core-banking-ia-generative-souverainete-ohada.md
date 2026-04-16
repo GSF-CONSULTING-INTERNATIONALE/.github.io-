@@ -223,7 +223,7 @@ Voir également : [Audit Flash architecture](/services/audit-flash/)
   <h3>📋 Téléchargez l’Étude Complète « Architecture Hybride +45 % »</h3>
   <p>Accédez au guide stratégique réservé aux décideurs : schémas techniques, tableaux comparatifs, ROI détaillé et checklist d’implémentation. Ce document est exclusivement pour les institutions financières et fintechs OHADA/UEMOA/CEMAC.</p>
   <p><small>Page service liée : <a href="/services/audit-flash/">Audit Flash 48h GSF</a></small></p>
-  <a href="mailto:contact@gsfconsultinginternational.com?subject=Téléchargement Etude Architecture Hybride Core Banking IA OHADA&body=Bonjour Gilles,%0A%0AJe souhaite télécharger l’étude complète « Architecture Hybride Fintech OHADA : Core Banking + IA Générative = +45% Efficacité ».%0A%0AMes informations :%0A- Nom : [Votre nom]%0A- Société : [Votre entreprise]%0A- Fonction : [Votre poste]%0A- Pays : [UEMOA / CEMAC]%0A%0ACordialement," class="btn-primary">
+  <a href="mailto:contact@gsfarbitral.ai?subject=Téléchargement Etude Architecture Hybride Core Banking IA OHADA&body=Bonjour Gilles,%0A%0AJe souhaite télécharger l’étude complète « Architecture Hybride Fintech OHADA : Core Banking + IA Générative = +45% Efficacité ».%0A%0AMes informations :%0A- Nom : [Votre nom]%0A- Société : [Votre entreprise]%0A- Fonction : [Votre poste]%0A- Pays : [UEMOA / CEMAC]%0A%0ACordialement," class="btn-primary">
     📧 Recevoir l’Étude Complète
   </a>
 </div>
@@ -231,7 +231,7 @@ Voir également : [Audit Flash architecture](/services/audit-flash/)
 <div class="cta-section secondary">
   <h3>⚡ Audit Flash Architecture Hybride 48h</h3>
   <p>Diagnostic complet de votre core banking actuel + roadmap microservices + RAG + souveraineté cognitive. Livrable : plan d’action prioritaire avec ROI projeté à +45 %.</p>
-  <a href="mailto:contact@gsfconsultinginternational.com?subject=Demande Audit Flash Core Banking IA OHADA&body=Bonjour GSF Consulting,%0A%0AJe souhaite un Audit Flash 48h pour évaluer mon architecture core banking et intégrer l’IA Générative.%0A%0AMes informations :%0A- Nom : [Votre nom]%0A- Société : [Votre entreprise]%0A- Statut : [Agréée / En cours]%0A- Point d’attention : [Monolithe / LBC-FT / Souveraineté / Scoring crédit]%0A%0ACordialement," class="btn-secondary">
+  <a href="mailto:contact@gsfarbitral.ai?subject=Demande Audit Flash Core Banking IA OHADA&body=Bonjour GSF Consulting,%0A%0AJe souhaite un Audit Flash 48h pour évaluer mon architecture core banking et intégrer l’IA Générative.%0A%0AMes informations :%0A- Nom : [Votre nom]%0A- Société : [Votre entreprise]%0A- Statut : [Agréée / En cours]%0A- Point d’attention : [Monolithe / LBC-FT / Souveraineté / Scoring crédit]%0A%0ACordialement," class="btn-secondary">
     🎯 Demander mon Audit Flash
   </a>
 </div>
@@ -239,7 +239,7 @@ Voir également : [Audit Flash architecture](/services/audit-flash/)
 <div class="cta-section tertiary">
   <h3>💡 Webinaire Exclusif : Souveraineté Cognitive & IA Générative en Fintech OHADA</h3>
   <p>Session pratique de 90 minutes avec démonstration live RAG + Shadow Core. Prochaine session : [DATE À DÉFINIR]. Places limitées à 20 participants.</p>
-  <a href="mailto:contact@gsfconsultinginternational.com?subject=Inscription Webinaire Souveraineté Cognitive IA OHADA&body=Bonjour GSF Consulting,%0A%0AJe souhaite m’inscrire au webinaire « Architecture Hybride Fintech OHADA : Core Banking + IA Générative ».%0A%0AMes informations :%0A- Nom : [Votre nom]%0A- Société : [Votre entreprise]%0A- Fonction : [Votre poste]%0A%0ACordialement," class="btn-tertiary">
+  <a href="mailto:contact@gsfarbitral.ai?subject=Inscription Webinaire Souveraineté Cognitive IA OHADA&body=Bonjour GSF Consulting,%0A%0AJe souhaite m’inscrire au webinaire « Architecture Hybride Fintech OHADA : Core Banking + IA Générative ».%0A%0AMes informations :%0A- Nom : [Votre nom]%0A- Société : [Votre entreprise]%0A- Fonction : [Votre poste]%0A%0ACordialement," class="btn-tertiary">
     🎟️ Réserver ma place (20 max)
   </a>
 </div>

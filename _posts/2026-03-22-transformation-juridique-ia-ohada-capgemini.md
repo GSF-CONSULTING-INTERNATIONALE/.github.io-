@@ -141,7 +141,7 @@ Séance de cadrage stratégique avec **Gilles Sixte Feliho** pour évaluer votre
 
 Cabinet de conseil spécialisé dans la transformation juridique et la conformité réglementaire en Afrique de l'Ouest. Notre méthodologie **SCO™ (Souveraineté Cognitive)** accompagne les directions juridiques, compliance et risques des groupes et fintechs dans leur mutation digitale, en combinant expertise juridique OHADA, maîtrise des enjeux réglementaires (AI Act, RGPD, BCEAO, CIMA) et intégration de solutions Legal Tech adaptées aux réalités locales.
 
-**Contact :** contact@gsfconsultinginternational.com | [www.gsfconsultinginternational.com](https://www.gsfconsultinginternational.com)
+**Contact :** contact@gsfarbitral.ai | [www.gsfconsultinginternational.com](https://www.gsfconsultinginternational.com)
 
 ---
 

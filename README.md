@@ -35,4 +35,4 @@ Expert international en droit des affaires et blanchiment de capitaux, pionnier 
 Le site est déployé automatiquement sur [gsfconsultinginternational.com](https://gsfconsultinginternational.com).
 
 ---
-**Contact :** [Envoyer un Email](mailto:votre-email@exemple.com) | [Demander un Devis](https://gsfconsultinginternational.com)
+**Contact :** [Envoyer un Email](mailto:contact@gsfarbitral.ai) | [Demander un Devis](https://gsfconsultinginternational.com)

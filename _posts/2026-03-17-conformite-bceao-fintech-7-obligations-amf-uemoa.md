@@ -249,7 +249,7 @@ Pour sécuriser votre conformité réglementaire, nous mettons à disposition un
 <div class="cta-box">
   <h3>📋 Téléchargez la Cartographie d'Obligations BCEAO 2026</h3>
   <p>Le document complet pour auditer votre conformité et préparer vos dossiers réglementaires</p>
-  <a href="mailto:contact@gsfconsultinginternational.com?subject=Demande Cartographie Obligations BCEAO 2026 - Conformité Fintech UEMOA&body=Bonjour GSF Consulting,%0A%0AJe souhaite recevoir la Cartographie d'Obligations BCEAO 2026 pour auditer la conformité de ma fintech.%0A%0AInformations :%0A- Nom : %0A- Société : %0A- Fonction : %0A- Téléphone : %0A%0AStatut actuel :%0A[ En cours d'agrément / Agréée BCEAO / Opérationnelle non agréée ]%0A%0AServices proposés :%0A[ Monnaie électronique / Agrégation / Initiation / Crowdfunding / IA ]%0A%0ACordialement," class="btn-primary">
+  <a href="mailto:contact@gsfarbitral.ai?subject=Demande Cartographie Obligations BCEAO 2026 - Conformité Fintech UEMOA&body=Bonjour GSF Consulting,%0A%0AJe souhaite recevoir la Cartographie d'Obligations BCEAO 2026 pour auditer la conformité de ma fintech.%0A%0AInformations :%0A- Nom : %0A- Société : %0A- Fonction : %0A- Téléphone : %0A%0AStatut actuel :%0A[ En cours d'agrément / Agréée BCEAO / Opérationnelle non agréée ]%0A%0AServices proposés :%0A[ Monnaie électronique / Agrégation / Initiation / Crowdfunding / IA ]%0A%0ACordialement," class="btn-primary">
     📧 Recevoir la Cartographie d'Obligations
   </a>
 </div>
@@ -257,7 +257,7 @@ Pour sécuriser votre conformité réglementaire, nous mettons à disposition un
 <div class="cta-section secondary">
   <h3>⚡ Audit Flash 48h - Conformité BCEAO et Risques Sanction</h3>
   <p>Diagnostic rapide de vos lacunes réglementaires + plan de mise en conformité prioritaire. Gratuit pour fintechs UEMOA.</p>
-  <a href="mailto:contact@gsfconsultinginternational.com?subject=Audit Flash 48h - Conformité BCEAO - Risques Sanction AMF UEMOA&body=Bonjour GSF Consulting,%0A%0AJe demande l'Audit Flash 48h sur ma conformité BCEAO et mes risques de sanction.%0A%0AInformations :%0A- Nom : %0A- Société : %0A- Pays d'implantation : %0A- Statut BCEAO : %0A- Services concernés : %0A%0AUrgence identifiée :%0A[ Agrégation non déclarée / Cantonnement non conforme / LBC/FT à renforcer / PI-SPI non connecté / Autre ]%0A%0ACordialement," class="btn-secondary">
+  <a href="mailto:contact@gsfarbitral.ai?subject=Audit Flash 48h - Conformité BCEAO - Risques Sanction AMF UEMOA&body=Bonjour GSF Consulting,%0A%0AJe demande l'Audit Flash 48h sur ma conformité BCEAO et mes risques de sanction.%0A%0AInformations :%0A- Nom : %0A- Société : %0A- Pays d'implantation : %0A- Statut BCEAO : %0A- Services concernés : %0A%0AUrgence identifiée :%0A[ Agrégation non déclarée / Cantonnement non conforme / LBC/FT à renforcer / PI-SPI non connecté / Autre ]%0A%0ACordialement," class="btn-secondary">
     🎯 Demander mon Audit Flash
   </a>
 </div>

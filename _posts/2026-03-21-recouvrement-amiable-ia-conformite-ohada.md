@@ -73,7 +73,7 @@ Pour que le recouvrement soit « performance-ready », l'IA doit classer chaque 
 - **36–52** : Classe D (Très élevé) — Mise en demeure immédiate, préparation du dossier d’injonction de payer.
 
 **🔍 CTA Niveau 2 – Diagnostic de Performance**  
-[🔍 Demander un diagnostic de mon poste client](mailto:contact@gsfconsultinginternational.com?subject=[GSF]%20Diagnostic%20Scoring%20IA%20-%20Recouvrement&body=Bonjour%20Gilles%20Sixte%20Feliho,%0D%0A%0D%0ANous%20souhaitons%20optimiser%20notre%20processus%20de%20recouvrement.%20Pouvez-vous nous aider à intégrer votre grille de scoring IA à notre workflow actuel ?%0D%0A%0D%0AEntreprise%20%3A%20)
+[🔍 Demander un diagnostic de mon poste client](mailto:contact@gsfarbitral.ai?subject=[GSF]%20Diagnostic%20Scoring%20IA%20-%20Recouvrement&body=Bonjour%20Gilles%20Sixte%20Feliho,%0D%0A%0D%0ANous%20souhaitons%20optimiser%20notre%20processus%20de%20recouvrement.%20Pouvez-vous nous aider à intégrer votre grille de scoring IA à notre workflow actuel ?%0D%0A%0D%0AEntreprise%20%3A%20)
 
 ### 4. Séquencement et SROC (Séquencement de Recouvrement Optimisé)
 
@@ -149,8 +149,8 @@ Le recouvrement amiable par IA n'est pas une simple commodité technique ; c'est
 **GSF Consulting International** vous accompagne dans l'optimisation de vos scénarios de recouvrement intelligent pour transformer votre conformité en levier de performance financière.
 
 **CTA Niveau 1 – Accès aux Prompts**
-**Accéder aux prompts juridiquement validés →** [📥 Recevoir le kit de prompts GSF](mailto:contact@gsfconsultinginternational.com?subject=[GSF]%20Kit%20de%20Prompts%20Recouvrement%20IA%20-%20OHADA&body=Bonjour%20Gilles%20Sixte%20Feliho,%0D%0A%0D%0AJe%20souhaite%20recevoir%20le%20kit%20de%20prompts%20juridiquement%20validés%20pour%20le%20recouvrement%20amiable%20par%20IA%20conforme%20à%20l'AUPSRVE.%0D%0A%0D%0AEntreprise%20%3A%20)
+**Accéder aux prompts juridiquement validés →** [📥 Recevoir le kit de prompts GSF](mailto:contact@gsfarbitral.ai?subject=[GSF]%20Kit%20de%20Prompts%20Recouvrement%20IA%20-%20OHADA&body=Bonjour%20Gilles%20Sixte%20Feliho,%0D%0A%0D%0AJe%20souhaite%20recevoir%20le%20kit%20de%20prompts%20juridiquement%20validés%20pour%20le%20recouvrement%20amiable%20par%20IA%20conforme%20à%20l'AUPSRVE.%0D%0A%0D%0AEntreprise%20%3A%20)
 
 
 **CTA Niveau 1 – Accès aux Prompts**  
-**Accéder aux prompts juridiquement validés →** [📥 Recevoir le kit de prompts GSF](mailto:contact@gsfconsultinginternational.com?subject=[GSF]%20Kit%20de%20Prompts%20Recouvrement%20IA%20-%20OHADA&body=Bonjour%20Gilles%20Sixte%20Feliho,%0D%0A%0D%0AJe%20souhaite%20recevoir%20le%20kit%20de%20prompts%20juridiquement%20validés%20pour%20le%20recouvrement%20amiable%20par%20IA%20conforme%20à%20l'AUPSRVE.%0D%0A%0D%0AEntreprise%20%3A%20)
+**Accéder aux prompts juridiquement validés →** [📥 Recevoir le kit de prompts GSF](mailto:contact@gsfarbitral.ai?subject=[GSF]%20Kit%20de%20Prompts%20Recouvrement%20IA%20-%20OHADA&body=Bonjour%20Gilles%20Sixte%20Feliho,%0D%0A%0D%0AJe%20souhaite%20recevoir%20le%20kit%20de%20prompts%20juridiquement%20validés%20pour%20le%20recouvrement%20amiable%20par%20IA%20conforme%20à%20l'AUPSRVE.%0D%0A%0D%0AEntreprise%20%3A%20)

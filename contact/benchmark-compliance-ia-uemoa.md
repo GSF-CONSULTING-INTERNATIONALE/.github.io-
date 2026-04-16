@@ -55,7 +55,7 @@ excerpt: "Profils « Compliance Augmentée par l'IA » — Zone UEMOA 2026 : Mé
 Ce benchmark est une version synthétique. Pour recevoir le rapport complet (format PDF) incluant les **stratégies de rétention par pays** et les **fiches de postes types**, cliquez sur le bouton ci-dessous :
 
 <div style="text-align: center; margin: 30px 0;">
-  <a href="mailto:contact@gsfconsultinginternational.com?subject=Demande de Rapport Détaillé : Benchmark Salarial IA-UEMOA 2026&body=Bonjour Gilles,%0D%0A%0D%0AJe souhaite recevoir le rapport complet du Benchmark Salarial 2026 (Profils Compliance IA - Zone UEMOA).%0D%0A%0D%0AVoici mes coordonnées pour l'envoi :%0D%0A- Nom / Prénom :%0D%0A- Organisation :%0D%0A- Fonction :%0D%0A%0D%0AEn vous remerciant d'avance." 
+  <a href="mailto:contact@gsfarbitral.ai?subject=Demande de Rapport Détaillé : Benchmark Salarial IA-UEMOA 2026&body=Bonjour Gilles,%0D%0A%0D%0AJe souhaite recevoir le rapport complet du Benchmark Salarial 2026 (Profils Compliance IA - Zone UEMOA).%0D%0A%0D%0AVoici mes coordonnées pour l'envoi :%0D%0A- Nom / Prénom :%0D%0A- Organisation :%0D%0A- Fonction :%0D%0A%0D%0AEn vous remerciant d'avance." 
      style="background-color: #004a99; color: white; padding: 15px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 1.1em; display: inline-block; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
     ✉️ Envoyer ma demande par email
   </a>

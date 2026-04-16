@@ -208,7 +208,7 @@ Face à ces 5 risques — confirmés par la jurisprudence récente de la CCJA et
 
 ## <span id="checklist">Votre checklist : 10 points de contrôle clauses IA OHADA</span>
 
-  **[📩 Demander le PDF COMPLET (Gratuit)](mailto:contact@gsfconsultinginternational.com?subject=Demande%20Checklist%20IA%20OHADA&body=Bonjour,%20je%20souhaiterais%20recevoir%20la%20checklist%20complète%20des%2010%20points%20de%20contrôle%20IA%20OHADA.)**
+  **[📩 Demander le PDF COMPLET (Gratuit)](mailto:contact@gsfarbitral.ai?subject=Demande%20Checklist%20IA%20OHADA&body=Bonjour,%20je%20souhaiterais%20recevoir%20la%20checklist%20complète%20des%2010%20points%20de%20contrôle%20IA%20OHADA.)**
 
 
 Avant de signer votre prochain contrat avec clause IA, vérifiez ces 10 points critiques :
@@ -240,7 +240,7 @@ Le passage au Droit des affaires 4.0 est inéluctable. Mais contrairement aux my
 Les entreprises qui intègrent dès maintenant une **gouvernance algorithmique souveraine**, conforme à l'AUPSRVE 2023 et certifiée par audit, ne se protègent pas seulement d'un contentieux. Elles **transforment la conformité en avantage compétitif**.
 
 > **Vos contrats IA résisteront-ils au test du juge ?**
-> **[📅 Demander un audit ASC™ gratuit →](mailto:contact@gsfconsultinginternational.com)**
+> **[📅 Demander un audit ASC™ gratuit →](mailto:contact@gsfarbitral.ai)**
 > **[📧 Contacter Gilles Feliho directement →](mailto:gilles.feliho@gsfconsultinginternational.com)**
 
 ---

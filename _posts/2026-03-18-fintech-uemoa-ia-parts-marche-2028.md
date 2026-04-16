@@ -101,7 +101,7 @@ Celles qui sauront conjuguer **souveraineté cognitive** (maîtrise de leurs alg
 <div class="cta-box">
   <h3>📊 Accédez à l'étude complète & Modèle de Projection</h3>
   <p>Téléchargez le "White Paper" exclusif : Modèle quantitatif 2024-2030, segmentation par verticales (Paiement, Crédit, Insurtech) et analyse détaillée des facteurs clés de succès UEMOA. Ce document stratégique est réservé aux décideurs du secteur financier.</p>
-  <a href="mailto:contact@gsfconsultinginternational.com?subject=Demande Etude Fintech IA UEMOA 2028&body=Bonjour GSF Consulting,%0A%0AJe souhaite recevoir l'étude complète sur la projection des parts de marché Fintech IA dans l'UEMOA à l'horizon 2028.%0A%0AMes informations :%0A- Nom : [Votre nom]%0A- Société : [Votre entreprise]%0A- Fonction : [Votre poste]%0A- Email : [Votre email]%0A- Téléphone : [Optionnel]%0A%0AContexte : Je suis intéressé(e) par [stratégie IA / conformité RegTech / modèle économique fintech] pour mon organisation.%0A%0ACordialement," class="btn-primary">
+  <a href="mailto:contact@gsfarbitral.ai?subject=Demande Etude Fintech IA UEMOA 2028&body=Bonjour GSF Consulting,%0A%0AJe souhaite recevoir l'étude complète sur la projection des parts de marché Fintech IA dans l'UEMOA à l'horizon 2028.%0A%0AMes informations :%0A- Nom : [Votre nom]%0A- Société : [Votre entreprise]%0A- Fonction : [Votre poste]%0A- Email : [Votre email]%0A- Téléphone : [Optionnel]%0A%0AContexte : Je suis intéressé(e) par [stratégie IA / conformité RegTech / modèle économique fintech] pour mon organisation.%0A%0ACordialement," class="btn-primary">
     📧 Recevoir l'étude complète
   </a>
 </div>
@@ -109,7 +109,7 @@ Celles qui sauront conjuguer **souveraineté cognitive** (maîtrise de leurs alg
 <div class="cta-section secondary">
   <h3>🚀 Diagnostic "AI-Readiness" pour Fintechs UEMOA</h3>
   <p>Évaluez la maturité de votre infrastructure data et identifiez les cas d'usage IA à ROI rapide (< 18 mois) pour votre structure. Notre équipe d'experts BCEAO vous accompagne dans cette transformation décisive.</p>
-  <a href="mailto:contact@gsfconsultinginternational.com?subject=Demande Diagnostic AI-Readiness Fintech UEMOA&body=Bonjour GSF Consulting,%0A%0AJe souhaite réaliser un diagnostic AI-Readiness pour ma structure.%0A%0AMes informations :%0A- Nom : [Votre nom]%0A- Société : [Votre entreprise]%0A- Pays : [Sénégal / Côte d'Ivoire / Burkina Faso / Mali / Bénin / Togo / Niger / Guinée-Bissau]%0A- Effectif : [Nombre d'employés]%0A- Email : [Votre email]%0A%0AObjectif prioritaire : [Scoring crédit / Automatisation KYC / Détection fraude / Conformité BCEAO / Autre]%0A%0ADélai envisagé : [Immédiat / 3 mois / 6 mois / 12 mois]%0A%0ACordialement," class="btn-secondary">
+  <a href="mailto:contact@gsfarbitral.ai?subject=Demande Diagnostic AI-Readiness Fintech UEMOA&body=Bonjour GSF Consulting,%0A%0AJe souhaite réaliser un diagnostic AI-Readiness pour ma structure.%0A%0AMes informations :%0A- Nom : [Votre nom]%0A- Société : [Votre entreprise]%0A- Pays : [Sénégal / Côte d'Ivoire / Burkina Faso / Mali / Bénin / Togo / Niger / Guinée-Bissau]%0A- Effectif : [Nombre d'employés]%0A- Email : [Votre email]%0A%0AObjectif prioritaire : [Scoring crédit / Automatisation KYC / Détection fraude / Conformité BCEAO / Autre]%0A%0ADélai envisagé : [Immédiat / 3 mois / 6 mois / 12 mois]%0A%0ACordialement," class="btn-secondary">
     🎯 Demander un diagnostic personnalisé
   </a>
 </div>
@@ -117,7 +117,7 @@ Celles qui sauront conjuguer **souveraineté cognitive** (maîtrise de leurs alg
 <div class="cta-section tertiary">
   <h3>💡 Webinaire Exclusif : "Industrialiser l'IA en 2026"</h3>
   <p>Rejoignez les décideurs fintech de la zone UEMOA pour une session stratégique de 45 minutes. Date : prochaine session le [DATE À DÉFINIR]. Places limitées à 20 participants pour garantir des échanges de qualité.</p>
-  <a href="mailto:contact@gsfconsultinginternational.com?subject=Inscription Webinaire IA UEMOA 2026&body=Bonjour GSF Consulting,%0A%0AJe souhaite m'inscrire au webinaire 'Industrialiser l'IA en 2026'.%0A%0AMes informations :%0A- Nom : [Votre nom]%0A- Prénom : [Votre prénom]%0A- Société : [Votre entreprise]%0A- Fonction : [Votre poste]%0A- Email : [Votre email]%0A- Pays : [Votre pays UEMOA]%0A%0AQuestions que j'aimerais voir abordées :%0A- [Question 1]%0A- [Question 2]%0A%0ACordialement," class="btn-tertiary">
+  <a href="mailto:contact@gsfarbitral.ai?subject=Inscription Webinaire IA UEMOA 2026&body=Bonjour GSF Consulting,%0A%0AJe souhaite m'inscrire au webinaire 'Industrialiser l'IA en 2026'.%0A%0AMes informations :%0A- Nom : [Votre nom]%0A- Prénom : [Votre prénom]%0A- Société : [Votre entreprise]%0A- Fonction : [Votre poste]%0A- Email : [Votre email]%0A- Pays : [Votre pays UEMOA]%0A%0AQuestions que j'aimerais voir abordées :%0A- [Question 1]%0A- [Question 2]%0A%0ACordialement," class="btn-tertiary">
     🎟️ Réserver ma place gratuite
   </a>
 </div>

@@ -94,7 +94,7 @@ Le **Framework ASC** de GSF Consulting International transforme votre départeme
   <h3>📋 Téléchargez le Framework ASC (Architecture Souveraine & Conformité)</h3>
   <p>Accédez au guide complet pour <strong>télécharger framework ASC conformité</strong>, intégrer le standard Wolfsberg et sécuriser vos partenariats. Ce document stratégique est réservé aux décideurs.</p>
   <p><small>Page service liée : <a href="/services/audit-flash/">Audit Flash 48h GSF</a></small></p>
-  <a href="mailto:contact@gsfconsultinginternational.com?subject=Demande Framework ASC Compliance By-Design&body=Bonjour GSF Consulting,%0A%0AJe souhaite recevoir le Framework ASC pour structurer ma preuve de conformité.%0A%0AMes informations :%0A- Nom : [Votre nom]%0A- Société : [Votre entreprise]%0A- Fonction : [Votre poste]%0A- Pays : [UEMOA / CEMAC]%0A%0ASituation actuelle :%0A[ En cours de négociation bancaire / Audit réglementaire / Mise en place LBC-FT ]%0A%0ACordialement," class="btn-primary">
+  <a href="mailto:contact@gsfarbitral.ai?subject=Demande Framework ASC Compliance By-Design&body=Bonjour GSF Consulting,%0A%0AJe souhaite recevoir le Framework ASC pour structurer ma preuve de conformité.%0A%0AMes informations :%0A- Nom : [Votre nom]%0A- Société : [Votre entreprise]%0A- Fonction : [Votre poste]%0A- Pays : [UEMOA / CEMAC]%0A%0ASituation actuelle :%0A[ En cours de négociation bancaire / Audit réglementaire / Mise en place LBC-FT ]%0A%0ACordialement," class="btn-primary">
     📧 Recevoir le Framework ASC
   </a>
 </div>
@@ -102,7 +102,7 @@ Le **Framework ASC** de GSF Consulting International transforme votre départeme
 <div class="cta-section secondary">
   <h3>⚡ Audit Flash "De-Risking" 48h</h3>
   <p>Évaluez votre exposition. <strong>Audit flash de-risking 48h UEMOA</strong> : Diagnostic RBA et architecture technique. Livrable : Plan d'action prioritaire pour lever les objections de vos correspondants.</p>
-  <a href="mailto:contact@gsfconsultinginternational.com?subject=Demande Audit Flash De-Risking 48h&body=Bonjour GSF Consulting,%0A%0AJe souhaite réaliser un Audit Flash pour évaluer mon exposition au de-risking.%0A%0AMes informations :%0A- Nom : [Votre nom]%0A- Société : [Votre entreprise]%0A- Statut : [Agréée / En cours]%0A- Banque partenaire actuelle : [Nom banque]%0A%0APoint d'attention urgent :%0A[ Questionnaire Wolfsberg / KYC défaillant / Architecture technique / Autre ]%0A%0ACordialement," class="btn-secondary">
+  <a href="mailto:contact@gsfarbitral.ai?subject=Demande Audit Flash De-Risking 48h&body=Bonjour GSF Consulting,%0A%0AJe souhaite réaliser un Audit Flash pour évaluer mon exposition au de-risking.%0A%0AMes informations :%0A- Nom : [Votre nom]%0A- Société : [Votre entreprise]%0A- Statut : [Agréée / En cours]%0A- Banque partenaire actuelle : [Nom banque]%0A%0APoint d'attention urgent :%0A[ Questionnaire Wolfsberg / KYC défaillant / Architecture technique / Autre ]%0A%0ACordialement," class="btn-secondary">
     🎯 Demander mon Audit Flash
   </a>
 </div>
@@ -110,7 +110,7 @@ Le **Framework ASC** de GSF Consulting International transforme votre départeme
 <div class="cta-section tertiary">
   <h3>💡 Masterclass : Réussir son Questionnaire Wolfsberg (CBDDQ)</h3>
   <p><strong>Masterclass Wolfsberg CBDDQ 2026</strong> : Atelier pratique pour répondre aux exigences des banques correspondantes. Prochaine session : [DATE À DÉFINIR]. Places limitées.</p>
-  <a href="mailto:contact@gsfconsultinginternational.com?subject=Inscription Masterclass Wolfsberg CBDDQ&body=Bonjour GSF Consulting,%0A%0AJe souhaite m'inscrire à la Masterclass sur le standard Wolfsberg.%0A%0AMes informations :%0A- Nom : [Votre nom]%0A- Société : [Votre entreprise]%0A- Fonction : [Votre poste]%0A- Email : [Votre email]%0A%0AMes attentes :%0A[ Comprendre le standard / Préparer un dossier / Autre ]%0A%0ACordialement," class="btn-tertiary">
+  <a href="mailto:contact@gsfarbitral.ai?subject=Inscription Masterclass Wolfsberg CBDDQ&body=Bonjour GSF Consulting,%0A%0AJe souhaite m'inscrire à la Masterclass sur le standard Wolfsberg.%0A%0AMes informations :%0A- Nom : [Votre nom]%0A- Société : [Votre entreprise]%0A- Fonction : [Votre poste]%0A- Email : [Votre email]%0A%0AMes attentes :%0A[ Comprendre le standard / Préparer un dossier / Autre ]%0A%0ACordialement," class="btn-tertiary">
     🎟️ Réserver ma place
   </a>
 </div>

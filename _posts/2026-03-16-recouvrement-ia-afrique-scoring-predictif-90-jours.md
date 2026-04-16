@@ -226,7 +226,7 @@ Trois questions déterminent la faisabilité à 90 jours :
 <div class="cta-section">
   <h3>📘 Guide Technique : Recouvrement IA Afrique et Conformité BCEAO</h3>
   <p>42 pages couvrant : architecture technique, code source pipelines, checklists conformité BCEAO, benchmarks 12 fintechs UEMOA</p>
-  <a href="mailto:contact@gsfconsultinginternational.com?subject=Guide Recouvrement IA Afrique - Conformité BCEAO - Réduction DSO 31%&body=Bonjour GSF Consulting,%0A%0AJe souhaite recevoir le Guide Technique 'Recouvrement IA Afrique : Scoring Prédictif en 90 Jours' avec les exigences de conformité BCEAO.%0A%0AInformations :%0A- Nom : %0A- Société : %0A- Fonction : %0A- Téléphone : %0A%0AContexte :%0A[ Fintech UEMOA / Volume créances / Core banking / Défi recouvrement actuel ]%0A%0ACordialement," class="btn-primary">
+  <a href="mailto:contact@gsfarbitral.ai?subject=Guide Recouvrement IA Afrique - Conformité BCEAO - Réduction DSO 31%&body=Bonjour GSF Consulting,%0A%0AJe souhaite recevoir le Guide Technique 'Recouvrement IA Afrique : Scoring Prédictif en 90 Jours' avec les exigences de conformité BCEAO.%0A%0AInformations :%0A- Nom : %0A- Société : %0A- Fonction : %0A- Téléphone : %0A%0AContexte :%0A[ Fintech UEMOA / Volume créances / Core banking / Défi recouvrement actuel ]%0A%0ACordialement," class="btn-primary">
     📧 Recevoir le Guide Technique (42 pages)
   </a>
 </div>
@@ -234,7 +234,7 @@ Trois questions déterminent la faisabilité à 90 jours :
 <div class="cta-section secondary">
   <h3>⚡ Diagnostic Flash 48h — Conformité BCEAO et Scoring IA</h3>
   <p>Audit rapide maturité data + estimation ROI + conformité BCEAO. Gratuit pour fintechs agréées BCEAO.</p>
-  <a href="mailto:contact@gsfconsultinginternational.com?subject=Diagnostic Flash 48h - Recouvrement IA Afrique - Conformité BCEAO&body=Bonjour GSF Consulting,%0A%0AJe demande le Diagnostic Flash 48h sur ma maturité Recouvrement IA et conformité BCEAO.%0A%0AInformations :%0A- Nom : %0A- Société : %0A- Fintech agréée BCEAO : Oui / Non%0A- Volume mensuel créances : %0A- DSO actuel : %0A- Core Banking : %0A%0APriorités :%0A[ Réduction DSO / Conformité BCEAO / Automatisation / Réduction coûts ]%0A%0ACordialement," class="btn-secondary">
+  <a href="mailto:contact@gsfarbitral.ai?subject=Diagnostic Flash 48h - Recouvrement IA Afrique - Conformité BCEAO&body=Bonjour GSF Consulting,%0A%0AJe demande le Diagnostic Flash 48h sur ma maturité Recouvrement IA et conformité BCEAO.%0A%0AInformations :%0A- Nom : %0A- Société : %0A- Fintech agréée BCEAO : Oui / Non%0A- Volume mensuel créances : %0A- DSO actuel : %0A- Core Banking : %0A%0APriorités :%0A[ Réduction DSO / Conformité BCEAO / Automatisation / Réduction coûts ]%0A%0ACordialement," class="btn-secondary">
     🎯 Demander mon Diagnostic Flash
   </a>
 </div>
