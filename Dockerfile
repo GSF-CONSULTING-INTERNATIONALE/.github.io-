@@ -17,12 +17,11 @@ RUN pip wheel --wheel-dir /wheels -r requirements.txt
 FROM python:3.12-slim AS runtime
 
 ENV PYTHONDONTWRITEBYTECODE=1 \
-    PYTHONUNBUFFERED=1 \
-    PATH="/home/appuser/.local/bin:${PATH}"
+    PYTHONUNBUFFERED=1
 
 WORKDIR /app
 
-RUN useradd --create-home --shell /sbin/nologin appuser
+RUN useradd --no-create-home --home-dir /nonexistent --shell /sbin/nologin appuser
 
 COPY --from=builder /wheels /wheels
 COPY requirements.txt .
