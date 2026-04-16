@@ -116,7 +116,7 @@ permalink: /core/habilitation-avocat/
                     <label><input type="checkbox" name="notif-sms" value="oui"> Notifications SMS</label>
                 </div>
                 <label>Téléphone (si notifications SMS)
-                    <input type="tel" name="telephone" id="telephone-sms" pattern="^\+?[0-9\s\-().]{8,20}$" inputmode="tel">
+                    <input type="tel" name="telephone" id="telephone-sms" pattern="^(?=(?:\D*\d){8,20}\D*$)\+?[0-9\s\-().]{8,24}$" inputmode="tel">
                 </label>
                 <label>Email de destination pour notifications de validation du Greffe
                     <input type="email" name="email-greffe-validation" required>
