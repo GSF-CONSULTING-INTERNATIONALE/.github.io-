@@ -76,7 +76,11 @@ permalink: /core/habilitation-avocat/
 
         <div class="status">Statut par défaut du dossier : <strong>En attente de validation par le Greffe</strong>. Le dépôt de pièces est bloqué tant que la validation n'est pas accordée.</div>
 
-        <form id="habilitation-form" action="/core/habilitation-avocat/" method="post" enctype="multipart/form-data">
+        <form id="habilitation-form" name="habilitation-avocat" method="post" action="/core/habilitation-avocat/" enctype="multipart/form-data" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="habilitation-avocat">
+            <p style="display:none;">
+                <label>Ne pas remplir ce champ <input name="bot-field"></label>
+            </p>
             <fieldset>
                 <legend>1. Identité Pro</legend>
                 <div class="grid-2">
@@ -112,7 +116,7 @@ permalink: /core/habilitation-avocat/
                     <label><input type="checkbox" name="notif-sms" value="oui"> Notifications SMS</label>
                 </div>
                 <label>Téléphone (si notifications SMS)
-                    <input type="tel" name="telephone">
+                    <input type="tel" name="telephone" id="telephone-sms" pattern="^\+?[0-9\s\-().]{8,20}$" inputmode="tel">
                 </label>
                 <label>Email de destination pour notifications de validation du Greffe
                     <input type="email" name="email-greffe-validation" required>
@@ -146,20 +150,19 @@ permalink: /core/habilitation-avocat/
 
             <button class="submit" type="submit">Soumettre la demande d'habilitation</button>
         </form>
-        <p id="submission-feedback" class="status" style="display:none; margin-top:16px; border-color:#06b6d4; color:#67e8f9; background:rgba(6,182,212,0.12);">Demande enregistrée côté Frontend Core. Statut initial maintenu : « En attente de validation par le Greffe ».</p>
+        <p class="status" style="margin-top:16px; border-color:#06b6d4; color:#67e8f9; background:rgba(6,182,212,0.12);">Après soumission, le dossier reste au statut « En attente de validation par le Greffe » jusqu'à confirmation officielle.</p>
 
         <p style="margin-top:22px;"><a class="back" href="/">← Retour à l'accueil</a></p>
     </main>
     <script>
-        const form = document.getElementById('habilitation-form');
-        const feedback = document.getElementById('submission-feedback');
-        if (form && feedback) {
-            form.addEventListener('submit', function(event) {
-                event.preventDefault();
-                feedback.style.display = 'block';
-                form.reset();
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-            });
+        const smsCheckbox = document.querySelector('input[name="notif-sms"]');
+        const telephoneField = document.getElementById('telephone-sms');
+        if (smsCheckbox && telephoneField) {
+            const syncPhoneRequirement = () => {
+                telephoneField.required = smsCheckbox.checked;
+            };
+            syncPhoneRequirement();
+            smsCheckbox.addEventListener('change', syncPhoneRequirement);
         }
     </script>
 </body>
