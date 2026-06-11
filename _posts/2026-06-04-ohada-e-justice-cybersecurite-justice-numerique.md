@@ -191,10 +191,3 @@ Oui. Architecture T-03 avec Hash-Souveraineté, Zero-Knowledge RAG et Human-in-t
 **Canal 2** – Audit de Souveraineté Cognitive™ & Cybersécurité judiciaire
 
 📚 [Consulter nos autres analyses](https://gsfconsultinginternational.com/analyses/)
-
-Instructions pour CloudCannon :
-	•	Copiez tout le bloc ci-dessus (du --- initial jusqu’à la fin).
-	•	Créez un nouveau Post ou Article.
-	•	Collez directement dans l’éditeur Markdown.
-	•	L’image principale (image:) doit être uploadée dans /uploads/ohada-ejustice-cybersecurite-justice-numerique.png.
-Souhaitez-vous également une version HTML complète ?
