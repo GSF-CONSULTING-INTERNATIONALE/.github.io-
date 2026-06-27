@@ -49,9 +49,9 @@ Depuis l’explosion des modèles de langage (LLM), les entreprises font face à
 **Performance** = accès aux meilleurs modèles, quelle que soit leur origine géographique  
 **Souveraineté** = maîtrise des données, conformité réglementaire, indépendance stratégique
 
-Ce dilemme est particulièrement aigu dans les secteurs réglementés — banque, assurance, santé, et justice. L’arbitrage commercial international, que nous pratiquons au sein de **GSF Arbitral AI**, est exemplaire à cet égard : il mobilise des données juridiques sensibles, des enjeux financiers critiques, et une exigence de conformité absolue (OHADA, AI Act, RGPD, Convention de New York).
+Ce dilemme est particulièrement aigu dans les secteurs réglementés — banque, assurance, santé, et justice. L’arbitrage commercial international, que nous pratiquons au sein de **GSF Arbitral AI**, est exemplaire à cet égard.
 
-Pourtant, notre expérience concrète — la construction du **Cockpit Avocat V2** — démontre que ce dilemme est faux. La souveraineté cognitive, loin d’être un frein, est devenue notre principal atout compétitif.
+Pourtant, notre expérience concrète — la construction du **Cockpit Avocat V2** — démontre que ce dilemme est faux. La souveraineté cognitive est devenue notre principal atout compétitif.
 
 ---
 
@@ -59,17 +59,15 @@ Pourtant, notre expérience concrète — la construction du **Cockpit Avocat V2
 
 ### 1.1 Ce n’est pas du protectionnisme technologique
 
-La tentation est forte, face aux risques géopolitiques, de tout interdire. Cette posture est suicidaire pour la performance.
-
-| Posture                    | Risque                          | Conséquence                     |
-|----------------------------|---------------------------------|---------------------------------|
-| Protectionnisme strict     | Perte de compétitivité          | Retard technologique irrémédiable |
-| Achat « national » systématique | Surcoût, sous-performance     | Insatisfaction utilisateurs     |
-| Repli autarcique           | Isolement                       | Obsolescence rapide             |
+| Posture                          | Risque                          | Conséquence                          |
+|----------------------------------|---------------------------------|--------------------------------------|
+| Protectionnisme strict           | Perte de compétitivité          | Retard technologique irrémédiable    |
+| Achat « national » systématique  | Surcoût, sous-performance       | Insatisfaction utilisateurs          |
+| Repli autarcique                 | Isolement                       | Obsolescence rapide                  |
 
 ### 1.2 Ce n’est pas une simple question d’hébergement
 
-« Héberger en Europe » ne suffit pas. La souveraineté cognitive concerne la traçabilité des décisions, l’auditabilité des chaînes de traitement, la réversibilité et la gouvernance humaine des sorties IA.
+La souveraineté cognitive concerne la traçabilité des décisions, l’auditabilité, la réversibilité et la gouvernance humaine des sorties IA.
 
 ---
 
@@ -77,19 +75,19 @@ La tentation est forte, face aux risques géopolitiques, de tout interdire. Cett
 
 ### 2.1 Le déclencheur : une faille juridique majeure
 
-L’analyse de la **loi chinoise sur le renseignement (2017)** a conduit à la mise en place d’une architecture de contingence avec anonymisation **Zéro-Knowledge**.
+L’analyse de la loi chinoise sur le renseignement (2017) a conduit à l’adoption d’une **anonymisation Zéro-Knowledge**.
 
-### 2.2 L’architecture tiered : gouvernance par la criticité
+### 2.2 L’architecture tiered
 
-| Tier                  | Modèle              | Origine     | Mécanisme légal          | Données transférées              | Validation humaine          |
-|-----------------------|---------------------|-------------|--------------------------|----------------------------------|-----------------------------|
-| Tier 1 — Stratégique  | Claude Opus 4.8     | États-Unis  | DPF + CCT                | Prompts conclusions juridiques   | Toujours obligatoire        |
-| Tier 2 — Médiation    | Mistral Large 3     | France      | Adéquation UE            | Correspondance protocolaire      | Si confiance < 0,70         |
-| Tier 3 — Technique    | Qwen VL Max         | Chine       | SCC + Anonymisation ZK   | Texte OCR anonymisé              | Auto si confiance > 0,95    |
+| Tier               | Modèle            | Origine     | Mécanisme légal         | Données transférées             | Validation humaine             |
+|--------------------|-------------------|-------------|-------------------------|---------------------------------|--------------------------------|
+| Tier 1 — Stratégique | Claude Opus 4.8  | États-Unis  | DPF + CCT               | Prompts conclusions juridiques  | Toujours obligatoire           |
+| Tier 2 — Médiation   | Mistral Large 3  | France      | Adéquation UE           | Correspondance protocolaire     | Si confiance < 0,70            |
+| Tier 3 — Technique   | Qwen VL Max      | Chine       | SCC + Anonymisation ZK  | Texte OCR anonymisé             | Auto si confiance > 0,95       |
 
-### 2.3 L’anonymisation Zéro-Knowledge : la preuve que la souveraineté crée de la valeur
+### 2.3 L’anonymisation Zéro-Knowledge
 
-Document sensible → Extraction locale des entités → Pseudonymisation → Envoi à Qwen → Reconstruction locale.  
+Document sensible → Extraction locale → Pseudonymisation → Envoi à Qwen → Reconstruction locale.  
 **Qwen ne voit jamais de donnée sensible.**
 
 ---
@@ -98,25 +96,80 @@ Document sensible → Extraction locale des entités → Pseudonymisation → En
 
 ### 3.1 Un argument de différenciation commerciale
 
-Notre architecture tiered documentée devient un véritable argument de vente face aux banques et fonds d’investissement en Afrique.
+Notre architecture tiered documentée rassure les banques et fonds d’investissement.
 
 ### 3.2 Une réduction des risques juridiques
 
-| Risque sans souveraineté          | Probabilité | Coût estimé       | Mitigation avec architecture tiered |
-|-----------------------------------|-------------|-------------------|-------------------------------------|
-| Amende RGPD (Art. 83)             | Élevée      | 4% CA mondial     | AIPD, DPO, transferts documentés    |
-| Invalidation sentence             | Moyenne     | Litige complet    | HITL, audit trail                   |
-| Fuite données                     | Moyenne     | Réputation + pénal| Anonymisation ZK                    |
-| Blocage régulateur (AI Act)       | Élevée      | Arrêt service     | Conformité ex ante                  |
+| Risque                              | Probabilité | Mitigation avec tiered          |
+|-------------------------------------|-------------|---------------------------------|
+| Amende RGPD                         | Élevée      | AIPD + transferts documentés    |
+| Invalidation de sentence            | Moyenne     | HITL + audit trail              |
+| Fuite de données                    | Moyenne     | Anonymisation ZK                |
+| Blocage régulateur AI Act           | Élevée      | Conformité ex ante              |
 
-### 3.3 Une accélération de la décision interne
+### 3.3 Accélération de la décision interne
 
-La conformité architecturée supprime les comités ad hoc de dernière minute.
+La conformité est intégrée dès la conception.
 
 ---
 
-## IV. Les conditions de succès : de la contrainte au système
+## IV. Les conditions de succès
 
-### 4.1 Condition 1 : La souveraineté ne s’oppose pas à l’ouverture
+### 4.1 Condition 1 : Ouverture maîtrisée
 
-### 4
+La souveraineté n’est pas un mur mais un filtre intelligent.
+
+### 4.2 Condition 2 : La documentation comme actif
+
+AIPD, registre des risques IA et audit trail deviennent des preuves de maturité.
+
+### 4.3 Condition 3 : La formation
+
+Certification obligatoire (9h) → utilisateurs plus performants.
+
+---
+
+## V. Ce que les entreprises doivent retenir
+
+**Pour les dirigeants** : La souveraineté cognitive accélère la performance quand elle est bien architecturée.  
+**Pour les juristes & DSI** : Intégrer l’analyse des transferts dès la phase de design.
+
+---
+
+## VI. Résultats concrets chez GSF Arbitral AI
+
+| Indicateur                        | Avant          | Après          |
+|-----------------------------------|----------------|----------------|
+| Temps d’analyse transfert         | 3 semaines     | 2 jours        |
+| Conformité AI Act                 | Non évalué     | 94%            |
+| Satisfaction utilisateurs         | 72%            | 89%            |
+| Résolution litige OHADA           | 180 jours      | < 90 jours     |
+
+---
+
+## Conclusion
+
+La souveraineté cognitive n’est pas un frein à la performance. Elle en est la condition lorsqu’elle est architecturée, ouverte et documentée.
+
+---
+
+## FAQ
+
+**Faut-il exclure les modèles étrangers ?**  
+Non, mais maîtriser ce qu’ils traitent.
+
+**L’AI Act est-il un frein pour les PME ?**  
+Non, si l’architecture est pensée dès le départ.
+
+**Peut-on utiliser un modèle chinois ?**  
+Oui, avec anonymisation Zéro-Knowledge.
+
+---
+
+## À Propos & Méthodologie
+
+**Auteur** : **[Gilles Sixte Feliho](https://gsfconsultinginternational.com/gilles-feliho/)** — Juriste Expert OHADA/UEMOA, Fondateur GSF Consulting International & GSF Arbitral AI.
+
+**CTA** :  
+- Démonstration GSF Arbitral AI → [gsfarbitral.ai](https://www.gsfarbitral.ai)  
+- Audit de Souveraineté Cognitive™ → [gsfconsultinginternational.com](https://gsfconsultinginternational.com)
