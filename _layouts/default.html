@@ -6,12 +6,23 @@
     <meta name="theme-color" content="#06b6d4">
     <meta name="robots" content="index, follow">
 
-    <title>{{ page.title | default: "GSF Consulting International" }}</title>
+    {%- comment -%}
+      Sur les pages paginées (/analyses/page2/ ...), on suffixe le titre par le
+      numero de page : sans cela les 4 pages d'archives partagent un titre identique.
+      `default: 1` protege les pages sans paginator (paginator vaut alors nil).
+    {%- endcomment -%}
+    {% assign page_num = paginator.page | default: 1 %}
+    {% assign page_title = page.title | default: "GSF Consulting International" %}
+    {% if page_num > 1 %}{% assign page_title = page_title | append: " — Page " | append: page_num %}{% endif %}
+
+    <title>{{ page_title }}</title>
     <meta name="description" content="{{ page.excerpt | default: site.description | escape }}">
     <link rel="canonical" href="{{ page.url | absolute_url }}">
-    
+    {% if paginator.previous_page_path %}<link rel="prev" href="{{ paginator.previous_page_path | absolute_url }}">{% endif %}
+    {% if paginator.next_page_path %}<link rel="next" href="{{ paginator.next_page_path | absolute_url }}">{% endif %}
+
     <!-- Open Graph -->
-    <meta property="og:title" content="{{ page.title | escape }}">
+    <meta property="og:title" content="{{ page_title | escape }}">
     <meta property="og:description" content="{{ page.excerpt | default: site.description | escape }}">
     <meta property="og:url" content="{{ page.url | absolute_url }}">
     <meta property="og:image" content="{{ page.image | absolute_url }}">
