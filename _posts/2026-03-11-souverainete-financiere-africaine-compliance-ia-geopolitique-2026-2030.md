@@ -3,7 +3,7 @@ layout: post
 title: "Souveraineté financière africaine : pourquoi la compliance IA est un enjeu géopolitique (et votre opportunité stratégique 2026-2030)"
 permalink: /analyses/souverainete-financiere-africaine-compliance-ia-geopolitique-2026-2030/
 date: 2026-03-25
-last_updated: 2026-03-25
+last_modified_at: 2026-03-25
 category: Conformité & Réglementation
 tags:
   - Souveraineté financière africaine IA
@@ -32,43 +32,6 @@ author: Gilles Sixte Feliho
 job_title: "Juriste Expert OHADA/UEMOA — Fondateur GSF Consulting International"
 schema_type: Article
 ---
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "Souveraineté financière africaine : pourquoi la compliance IA est un enjeu géopolitique (et votre opportunité stratégique 2026-2030)",
-  "description": "Analyse exclusive GSF : Déclaration de Kigali, Instructions BCEAO 001-003, Stratégie UA IA et Audit de Souveraineté Cognitive™. Impacts opérationnels, risques géopolitiques et plan d'action concret pour banques et fintechs UEMOA/OHADA.",
-  "author": {
-    "@type": "Person",
-    "name": "Gilles Sixte Feliho",
-    "jobTitle": "Juriste Expert OHADA/UEMOA — Fondateur GSF Consulting International",
-    "url": "https://gsfconsultinginternational.com/a-propos/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "GSF Consulting International",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://gsfconsultinginternational.com/assets/img/logo-gsf.png"
-    }
-  },
-  "datePublished": "2026-03-25",
-  "dateModified": "2026-03-25",
-  "image": "https://gsfconsultinginternational.com/uploads/souverainete-financiere-africaine-ia-levier-strategique-2026-2030.png",
-  "url": "https://gsfconsultinginternational.com/analyses/souverainete-financiere-africaine-compliance-ia-geopolitique-2026-2030/",
-  "keywords": ["Souveraineté financière africaine IA", "Compliance IA bancaire Afrique", "Enjeux géopolitiques IA CEDEAO UA", "BCEAO 2025", "OHADA clauses IA conformité", "Africa AI Council", "Audit Souveraineté Cognitive"],
-  "about": {
-    "@type": "Thing",
-    "name": "Réglementation IA et conformité bancaire en Afrique de l'Ouest"
-  },
-  "isPartOf": {
-    "@type": "Blog",
-    "name": "Analyses GSF Consulting International",
-    "url": "https://gsfconsultinginternational.com/analyses/"
-  }
-}
-</script>
 
 # Souveraineté financière africaine : pourquoi la compliance IA est un enjeu géopolitique (et votre opportunité stratégique 2026-2030)
 
@@ -137,7 +100,6 @@ L'**[Africa AI Council](https://au.int/en/pressreleases/20250404/africa-ai-counc
 - **Inclusion financière massive** : L’OCDE estime que l’**IA-based credit scoring** pourrait ajouter **1,5 trillion USD** à l’économie africaine d’ici 2030[^11^], en débloquant l’accès au crédit pour 380 000 PME éthiopiennes et des millions de micro-entrepreneurs en Afrique de l’Ouest.
 
 [^11^]: Étude OCDE : "Artificial Intelligence for Development in Africa", horizon 2030.
-
 
 ### 1.4 Actions Prioritaires GSF (Avant fin Q2 2026)
 

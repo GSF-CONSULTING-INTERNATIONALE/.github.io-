@@ -2,7 +2,7 @@
 layout: post
 title: "L'impératif de la conformité pour les Fintech en UEMOA : Gouvernance, résilience technologique et enjeux géopolitiques à l'horizon 2026"
 date: 2026-03-13
-last_updated: 2026-03-13
+last_modified_at: 2026-03-13
 category: "Intelligence Artificielle"
 tags:
   - UEMOA

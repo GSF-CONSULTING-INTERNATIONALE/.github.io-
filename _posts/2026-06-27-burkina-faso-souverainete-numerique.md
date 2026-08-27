@@ -3,7 +3,7 @@ layout: post
 title: "Burkina Faso et souveraineté numérique : pourquoi développer sa propre IA devient un choix stratégique"
 permalink: /analyses/burkina-faso-souverainete-numerique-developper-propre-ia/
 date: 2026-06-27
-last_updated: 2026-06-27
+last_modified_at: 2026-06-27
 category: "Géopolitique technologique & Intelligence Artificielle"
 tags:
   - Burkina Faso

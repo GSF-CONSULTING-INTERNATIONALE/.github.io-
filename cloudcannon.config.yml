@@ -21,6 +21,10 @@ collections_config:
       date:
         label: "Date de publication"
         type: datetime
+      last_modified_at:
+        label: "Dernière mise à jour"
+        type: datetime
+        comment: "Alimente <lastmod> dans sitemap.xml. À mettre à jour à chaque révision de fond."
       author:
         label: "Auteur"
         type: text

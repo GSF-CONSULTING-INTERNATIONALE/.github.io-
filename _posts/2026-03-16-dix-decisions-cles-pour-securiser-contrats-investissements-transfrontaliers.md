@@ -2,7 +2,7 @@
 layout: post
 title: "Jurisprudence CCJA 2026 : 10 décisions clés pour sécuriser vos contrats et investissements transfrontaliers"
 date: 2026-03-14
-last_updated: 2026-03-14
+last_modified_at: 2026-03-14
 category: "Droit OHADA"
 tags: [OHADA, CCJA, Jurisprudence, Investissement, Recouvrement, Arbitrage, Immunité d'exécution, e-RCCM, AUPSRVE, Contrats transfrontaliers]
 author: "Gilles Sixte Feliho"

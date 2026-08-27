@@ -32,7 +32,7 @@ description: "Retrouvez toutes nos analyses juridiques, insights IA et perspecti
             <div class="article-content">
                 <div class="article-meta">
                     <time datetime="{{ post.date | date_to_xmlschema }}">
-                        {{ post.date | date: "%d %B %Y" }}
+                        {% include date-fr.html date=post.date %}
                     </time>
                     
                     {% if post.tags.size > 0 %}

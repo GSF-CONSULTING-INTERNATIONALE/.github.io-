@@ -3,7 +3,7 @@ layout: post
 title: "L'Effet Capgemini en Afrique : Quand la transformation juridique mondiale devient votre opportunité locale"
 permalink: /blog/transformation-juridique-ia-ohada-capgemini/
 date: 2026-03-22
-last_updated: 2026-03-22
+last_modified_at: 2026-03-22
 category: "Intelligence Artificielle"
 tags: [Droit OHADA, AI Act, LegalTech, Conformité, UEMOA, Transformation Digitale, Souveraineté Cognitive]
 author: "Gilles Sixte Feliho"

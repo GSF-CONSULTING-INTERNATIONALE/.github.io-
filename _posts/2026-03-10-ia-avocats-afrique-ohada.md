@@ -3,7 +3,7 @@ layout: post
 title: "L'IA va-t-elle remplacer les avocats en Afrique ? Analyse critique"
 permalink: /analyses/ia-avocats-afrique-ohada/
 date: 2026-03-10
-last_updated: 2026-03-10
+last_modified_at: 2026-03-10
 category: "Intelligence Artificielle"
 tags: [Droit OHADA, LegalTech, Expertise Humaine, UEMOA, Barreaux africains]
 author: "Gilles Sixte Feliho"

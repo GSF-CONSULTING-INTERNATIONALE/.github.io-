@@ -2,7 +2,7 @@
 layout: post
 title: "Clause IA et juges OHADA : 5 erreurs qui invalident vos contrats intelligents (AUPSRVE 2023)"
 date: 2026-03-15
-last_updated: 2026-03-15
+last_modified_at: 2026-03-15
 category: "Droit des affaires"
 tags: [IA, OHADA, AUPSRVE 2023, Souveraineté Cognitive, Contrats intelligents, Smart Contracts, CCJA, Formalisme, Recouvrement, Droit 4.0]
 author: "Gilles Sixte Feliho"

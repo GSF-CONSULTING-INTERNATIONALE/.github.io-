@@ -2,7 +2,7 @@
 layout: post
 title: "Le bac à sable réglementaire nigérian s’étend à l’IA : ce que la CBN apprend aux régulateurs UEMOA"
 date: 2026-03-17
-last_updated: 2026-03-17
+last_modified_at: 2026-03-17
 category: "IA et Réglementation"
 tags: [IA, CBN, UEMOA, BCEAO, Sandbox Réglementaire, Fintech Afrique, Compliance IA, AML, Souveraineté Cognitive, RegTech]
 author: "Gilles Sixte Feliho"

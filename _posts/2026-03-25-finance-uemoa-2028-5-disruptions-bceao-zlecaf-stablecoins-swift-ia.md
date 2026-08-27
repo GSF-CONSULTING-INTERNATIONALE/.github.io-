@@ -3,7 +3,7 @@ layout: post
 title: "Finance UEMOA 2028 : 5 disruptions BCEAO-ZLECAf, stablecoins, SWIFT & IA (et comment s’y préparer dès maintenant)"
 permalink: /analyses/finance-uemoa-2028-5-disruptions-bceao-zlecaf-stablecoins-swift-ia/
 date: 2026-03-25
-last_updated: 2026-03-25
+last_modified_at: 2026-03-25
 category: Finance & Marchés
 tags:
 - finance UEMOA
@@ -32,43 +32,6 @@ author: Gilles Sixte Feliho
 job_title: "Juriste Expert OHADA/UEMOA — Fondateur GSF Consulting International"
 schema_type: Article
 ---
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "Finance UEMOA 2028 : 5 disruptions BCEAO-ZLECAf, stablecoins, SWIFT & IA (et comment s’y préparer dès maintenant)",
-  "description": "Découvrez les 5 scénarios de disruption qui transformeront la finance UEMOA d’ici 2028 : harmonisation forcée BCEAO-BEAC-Banque de France post-ZLECAf, stablecoins & MNBC sur PAPSS, exclusion SWIFT, cyberattaques AI Factories et stress-tests carbone BCEAO. Feuille de route opérationnelle avec la méthodologie Souveraineté Cognitive™ de GSF Consulting.",
-  "author": {
-    "@type": "Person",
-    "name": "Gilles Sixte Feliho",
-    "jobTitle": "Juriste Expert OHADA/UEMOA — Fondateur GSF Consulting International",
-    "url": "https://gsfconsultinginternational.com/gilles-feliho/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "GSF Consulting International",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://gsfconsultinginternational.com/assets/img/logo-gsf.png"
-    }
-  },
-  "datePublished": "2026-03-25",
-  "dateModified": "2026-03-25",
-  "image": "https://gsfconsultinginternational.com/uploads/finance-uemoa-2028-5-ruptures-transformant-le-secteur.png",
-  "url": "https://gsfconsultinginternational.com/analyses/finance-uemoa-2028-5-disruptions-bceao-zlecaf-stablecoins-swift-ia/",
-  "keywords": ["finance UEMOA", "disruption bancaire UEMOA", "BCEAO", "ZLECAf", "stablecoins PAPSS", "sanctions SWIFT", "AI Factories", "stress-test carbone", "souveraineté cognitive", "RegTech OHADA"],
-  "about": {
-    "@type": "Thing",
-    "name": "Futur de la finance UEMOA 2028"
-  },
-  "isPartOf": {
-    "@type": "Blog",
-    "name": "Analyses GSF Consulting International",
-    "url": "https://gsfconsultinginternational.com/analyses/"
-  }
-}
-</script>
 
 # Finance UEMOA 2028 : 5 disruptions BCEAO-ZLECAf, stablecoins, SWIFT & IA (et comment s’y préparer dès maintenant)
 
@@ -139,7 +102,6 @@ La ZLECAf impose une fluidité des flux financiers identique à celle des marcha
 
 [![Offre RegTech GSF Consulting](/uploads/notre-offre-reg-tech-gsf-consulting-international.png)](/regtech-ohada/)
 
-
 ---
 
 ## II. Scénario Technologique : Disruption des stablecoins et MNBC sur le PAPSS
@@ -177,7 +139,6 @@ La ZLECAf impose une fluidité des flux financiers identique à celle des marcha
 ✅ **Action 1** : Intégrer un module de conformité crypto on-chain.  
 ✅ **Action 2** : Former les équipes AML à l’analyse blockchain.  
 ✅ **Action 3** : Migrer vers ISO 20022.
-
 
 ---
 

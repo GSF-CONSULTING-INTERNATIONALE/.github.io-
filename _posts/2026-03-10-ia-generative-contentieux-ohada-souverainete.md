@@ -2,7 +2,7 @@
 layout: post
 title: "L'IA générative au service du contentieux OHADA : automatisation des prédictions juridiques et enjeux souverains"
 date: 2026-03-10
-last_updated: 2026-03-10
+last_modified_at: 2026-03-10
 category: "Intelligence Artificielle"
 tags:
   - OHADA

@@ -3,7 +3,7 @@ layout: post
 title: "IA Arbitrage OHADA : Souveraineté Humaine vs Algorithmes – Architecture T-03 de GSF Arbitral AI"
 permalink: /analyses/ia-arbitrage-ohada-souverainete-humaine-architecture-t-03-gsf-arbitral-ai/
 date: 2026-04-20
-last_updated: 2026-04-20
+last_modified_at: 2026-04-20
 category: Arbitrage & Intelligence Artificielle
 tags:
   - IA Arbitrage OHADA

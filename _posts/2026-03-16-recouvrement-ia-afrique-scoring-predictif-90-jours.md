@@ -2,7 +2,7 @@
 layout: post
 title: "Recouvrement IA Afrique : Implémenter un Scoring Prédictif en 90 Jours (Guide UEMOA)"
 date: 2026-03-16
-last_updated: 2026-03-16
+last_modified_at: 2026-03-16
 category: "IA & Recouvrement"
 tags: [Recouvrement IA Afrique, Conformité BCEAO, Scoring Prédictif, UEMOA, Fintech, Agent IA, Creditinfo, Core Banking, DSO, AML]
 author: "Gilles Sixte Feliho"

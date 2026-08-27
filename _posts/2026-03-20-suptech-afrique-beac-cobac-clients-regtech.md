@@ -2,7 +2,7 @@
 layout: post
 title: "De la RegTech à la SupTech : Quand les Régulateurs Africains deviennent Clients de la Compliance"
 date: 2026-03-20
-last_updated: 2026-03-20
+last_modified_at: 2026-03-20
 category: "RegTech & SupTech"
 author: "Gilles Sixte Feliho"
 permalink: /analyses/regtech-suptech-regulateurs-africains-compliance/
@@ -16,38 +16,6 @@ tags: [SupTech, RegTech, CEMAC, OHADA, IA, B2G, Souveraineté Numérique, Compli
 excerpt: "En 2026, les régulateurs de la zone OHADA (BEAC, COBAC) passent à la SupTech. Découvrez comment l'IA et l'automatisation transforment la supervision en un nouveau marché B2G pour les Fintechs."
 source_url: "[https://gsfconsultinginternational.com](https://cio-mag.com/regtech-suptech-catalyseurs-dune-supervision-financiere-moderne-en-afrique/)"
 ---
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "AnalysisNewsArticle",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://gsfconsultinginternational.com/analyses/regtech-suptech-regulateurs-africains-compliance/"
-  },
-  "headline": "De la RegTech à la SupTech : Quand les Régulateurs Africains deviennent Clients de la Compliance",
-  "description": "Analyse de la transition vers la SupTech en zone OHADA (BEAC, COBAC). Focus sur l'IA, l'ISO 20022 et les opportunités B2G pour les Fintechs.",
-  "image": "https://gsfconsultinginternational.com/uploads/infographie-suptech-afrique-opportunites-b2g-fintech-gsf.png",
-  "author": {
-    "@type": "Person",
-    "name": "Gilles Sixte Feliho",
-    "jobTitle": "Expert Consultant en Droit OHADA et Compliance",
-    "url": "https://gsfconsultinginternational.com/about"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "GSF Consulting International",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://gsfconsultinginternational.com/logo.png"
-    }
-  },
-  "datePublished": "2026-03-22",
-  "dateModified": "2026-03-22",
-  "keywords": "SupTech, RegTech, OHADA, BEAC, COBAC, IA, Fintech, B2G, Compliance-by-design",
-  "articleSection": "RegTech & SupTech"
-}
-</script>
 
 # De la RegTech à la "SupTech" : Quand les Régulateurs Africains deviennent Clients de la Compliance
 

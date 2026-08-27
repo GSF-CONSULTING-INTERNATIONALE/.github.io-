@@ -3,7 +3,7 @@ layout: post
 title: "Les fintechs UEMOA qui recrutent en compliance IA en mars 2026 (et ce que cela révèle du marché)"
 permalink: /analyses/fintechs-uemoa-recrutement-compliance-ia-2026/
 date: 2026-03-24
-last_updated: 2026-03-24
+last_modified_at: 2026-03-24
 category: Conformité & Réglementation
 tags:
   - Fintech UEMOA
@@ -27,46 +27,6 @@ focus_keywords:
 author: Gilles Sixte Feliho
 schema_type: Article
 ---
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "Les fintechs UEMOA qui recrutent en compliance IA en mars 2026 (et ce que cela révèle du marché)",
-  "description": "Pourquoi les annonces « Compliance IA » restent rares dans les fintechs UEMOA en mars 2026 ? Nouvelle grammaire des fiches de poste, compétences clés et benchmark salarial. Focus veille GSF Consulting International.",
-  "author": {
-    "@type": "Person",
-    "name": "Gilles Sixte Feliho",
-    "jobTitle": "Juriste Expert OHADA/UEMOA — Fondateur GSF Consulting International",
-    "url": "https://gsfconsultinginternational.com/a-propos/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "GSF Consulting International",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://gsfconsultinginternational.com/assets/img/logo-gsf.png"
-    }
-  },
-  "datePublished": "2026-03-24",
-  "dateModified": "2026-03-24",
-  "image": "https://gsfconsultinginternational.com/uploads/evolution-compliance-ia-mutation-marche-fintech-uemoa-2026.png",
-  "url": "https://gsfconsultinginternational.com/analyses/fintechs-uemoa-recrutement-compliance-ia-2026/",
-  "keywords": [
-    "Fintech UEMOA", "Compliance IA", "Veille RH", "OHADA", 
-    "Souveraineté cognitive", "BCEAO", "Regtech", "AML", "KYC"
-  ],
-  "about": {
-    "@type": "Thing",
-    "name": "Recrutement compliance fintech UEMOA"
-  },
-  "isPartOf": {
-    "@type": "Blog",
-    "name": "Analyses GSF Consulting International",
-    "url": "https://gsfconsultinginternational.com/analyses/"
-  }
-}
-</script>
 
 ---
 
@@ -148,7 +108,6 @@ Le vrai enjeu n'est donc plus le recrutement « à l'ancienne », mais la **tran
     Exclusivité GSF : Évolution des compétences et grille salariale prospective 2026.
   </p>
 </div>
-
 
 ---
 

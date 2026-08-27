@@ -48,7 +48,7 @@
           "@type": "Organization",
           "name": "GSF Consulting International",
           "url": "https://gsfconsultinginternational.com",
-          "logo": "https://gsfconsultinginternational.com/uploads/logo.png",
+          "logo": "https://gsfconsultinginternational.com/logo-gsf.PNG",
           "email": "contact@gsfconsultinginternational.com"
         },
         "serviceType": "GSF Compliance Accelerator - Solution RegTech LCB-FT, KYC, Sapin II",
@@ -84,27 +84,16 @@
       "@type": "Organization",
       "name": "GSF Consulting International",
       "url": "https://gsfconsultinginternational.com",
-      "logo": "https://gsfconsultinginternational.com/uploads/logo.png",
+      "logo": "https://gsfconsultinginternational.com/logo-gsf.PNG",
       "email": "contact@gsfconsultinginternational.com",
       "sameAs": ["https://www.linkedin.com/in/gilles-feliho/"]
     }
     </script>
-    {% elsif page.layout == "post" %}
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Article",
-      "headline": {{ page.title | jsonify }},
-      "datePublished": "{{ page.date | date_to_xmlschema }}",
-      "author": { "@type": "Person", "name": "Gilles Feliho" },
-      "publisher": {
-        "@type": "Organization",
-        "name": "GSF Consulting International",
-        "logo": { "@type": "ImageObject", "url": "https://gsfconsultinginternational.com/uploads/logo.png" }
-      },
-      "mainEntityOfPage": { "@type": "WebPage", "@id": {{ page.url | absolute_url | jsonify }} }
-    }
-    </script>
+    {%- comment -%}
+      Pas de branche `post` ici : _layouts/post.html émet déjà un @graph
+      Article + BreadcrumbList strictement plus riche. En émettre un second
+      donnerait deux schémas Article concurrents sur la même page.
+    {%- endcomment -%}
     {% endif %}
 
     <!-- Styles -->

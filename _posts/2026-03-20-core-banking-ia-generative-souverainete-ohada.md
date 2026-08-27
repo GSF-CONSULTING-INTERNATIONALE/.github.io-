@@ -3,7 +3,7 @@ layout: post
 title: "Architecture Hybride Fintech OHADA : Core Banking + IA Générative = +45% Efficacité"
 permalink: /analyses/core-banking-ia-generative-souverainete-ohada/
 date: 2026-03-19
-last_updated: 2026-03-19
+last_modified_at: 2026-03-19
 category: "Fintech & Innovation"
 author: "Gilles Sixte Feliho"
 image: "/uploads/infographie-core-banking-ia-ohada-45-performance.png"
