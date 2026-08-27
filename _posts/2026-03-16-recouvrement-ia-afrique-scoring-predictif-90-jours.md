@@ -273,5 +273,5 @@ Le scoring interne ne nécessite pas d'agrément préalable, mais une **déclara
 
 ---
 
-*Mise à jour : 17 mars 2026 | Prochain article : [Conformité BCEAO et Bac à Sable Réglementaire : Ce que la CBN apprend aux régulateurs UEMOA](/analyses/conformite-bceao-cbn-sandbox-ia/)*
+*Mise à jour : 17 mars 2026 | Prochain article : [Le bac à sable réglementaire nigérian s’étend à l’IA : ce que la CBN apprend aux régulateurs UEMOA](/analyses/bac-a-sable-reglementaire-nigerian-ia-uemoa/)*
 

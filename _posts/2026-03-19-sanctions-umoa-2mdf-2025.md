@@ -145,7 +145,6 @@ L'écosystème financier de l'UMOA est donc en pleine mutation. La réussite de 
 <div class="cta-box">
   <h3>📋 Téléchargez l'Analyse Sanctions UMOA 2025 & Framework Résilience</h3>
   <p>Accédez au rapport complet sur les 2 milliards de FCFA de sanctions, la PI-SPI et le Cloud Souverain OHADA. Document stratégique réservé aux décideurs fintech & bancaires.</p>
-  <p><small>Page service liée : <a href="/services/audit-flash/">Audit Flash 48h GSF</a></small></p>
   <a href="mailto:contact@gsfconsultinginternational.com?subject=Demande Analyse Sanctions UMOA 2025&body=Bonjour GSF Consulting,%0A%0AJe souhaite recevoir l'analyse complète sur les sanctions 2025 et la stratégie de résilience UMOA.%0A%0AMes informations :%0A- Nom : [Votre nom]%0A- Société : [Votre entreprise]%0A- Fonction : [Votre poste]%0A- Pays : [UEMOA / CEMAC]%0A%0ACordialement," class="btn-primary">
     📧 Recevoir l'Analyse Complète
   </a>
@@ -171,8 +170,8 @@ L'écosystème financier de l'UMOA est donc en pleine mutation. La réussite de 
 
 ## Articles liés GSF (Maillage interne)
 * [De-risking Bancaire : Prouvez votre conformité 'By-Design' à vos partenaires](/analyses/flux-financiers-illicites-compliant-by-design/)
-* [PI-SPI BCEAO : Exigences techniques et interopérabilité](/analyses/pi-spi-2025/)
-* [Cloud Souverain OHADA : Enjeux réglementaires](/analyses/cloud-ohada-r2023/)
+* [Conformité BCEAO Fintech : Les 7 Obligations Réglementaires Ignorées qui Exposent à l'AMF UEMOA](/analyses/conformite-bceao-fintech-7-obligations-amf-uemoa/)
+* [L'impératif de la conformité pour les Fintech en UEMOA : Gouvernance, résilience technologique et enjeux géopolitiques](/analyses/imperatif-conformite-fintech-uemoa-gouvernance-resilience/)
 
 ---
 

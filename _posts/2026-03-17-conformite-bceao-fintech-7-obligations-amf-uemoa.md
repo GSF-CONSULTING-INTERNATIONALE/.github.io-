@@ -297,4 +297,4 @@ Implémentation d'un **dispositif de cotation des risques**, **surveillance auto
 
 ---
 
-*Mise à jour : 17 mars 2026 | Prochain article : [Conformité BCEAO et Recouvrement par IA : Comment réduire vos risques opérationnels de 40%](/analyses/conformite-bceao-recouvrement-ia-risques/)*
+*Mise à jour : 17 mars 2026 | Prochain article : [Recouvrement IA Afrique : Implémenter un Scoring Prédictif en 90 Jours (Guide UEMOA)](/analyses/recouvrement-ia-afrique-scoring-predictif-90-jours/)*

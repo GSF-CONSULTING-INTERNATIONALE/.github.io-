@@ -49,12 +49,12 @@ Nous privilégions une méthode en quatre temps :
 
 ## Pourquoi nous faire confiance
 
-GSF Consulting International développe un contenu éditorial déjà centré sur des sujets à forte valeur ajoutée : IA, OHADA, souveraineté cognitive, conformité bancaire et flux financiers illicites. Les publications récentes du site illustrent à la fois l’expertise terrain, la profondeur réglementaire et la capacité à relier enjeux juridiques, technologiques et géopolitiques. [Source](https://gsfconsultinginternational.com/blog.html) [Source](https://gsfconsultinginternational.com/analyses/interview-gilles-feliho-souverainete-cognitive/) [Source](https://gsfconsultinginternational.com/analyses/flux-financiers-illicites-benin-nigeria-950-milliards-fcfa/)
+GSF Consulting International développe un contenu éditorial déjà centré sur des sujets à forte valeur ajoutée : IA, OHADA, souveraineté cognitive, conformité bancaire et flux financiers illicites. Les publications récentes du site illustrent à la fois l’expertise terrain, la profondeur réglementaire et la capacité à relier enjeux juridiques, technologiques et géopolitiques. [Source](https://gsfconsultinginternational.com/analyses/) [Source](https://gsfconsultinginternational.com/analyses/interview-gilles-feliho-souverainete-cognitive/) [Source](https://gsfconsultinginternational.com/analyses/flux-financiers-illicites-benin-nigeria-950-milliards-fcfa/)
 
 ## Ressources utiles
 
 - [L’Expert : Gilles Feliho](/gilles-feliho/)
 - [Audit de Souveraineté Cognitive™](/audit-souverainete-cognitive/)
 - [Études de cas](/etudes-de-cas/)
-- [Blog / Analyses](/blog.html)
+- [Blog / Analyses](/analyses/)
 - [Politique de confidentialité](/politique-de-confidentialite/)
