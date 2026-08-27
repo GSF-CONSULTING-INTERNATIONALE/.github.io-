@@ -18,6 +18,54 @@
   status = 200
   force = true
 
+# --- Anciennes URL en .html -> URL canoniques ---
+# Ces pages ont reçu un `permalink:` correspondant à la canonical qu'elles
+# déclaraient déjà. Leur fichier de sortie passe de `foo.html` à `foo/index.html`,
+# donc les URL en .html déjà indexées ne correspondent plus à aucun fichier.
+# Ces 301 les rattachent à l'URL canonique et transmettent le signal aux moteurs.
+
+[[redirects]]
+  from = "/gilles-feliho.html"
+  to = "/gilles-feliho/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/politique-de-confidentialite.html"
+  to = "/politique-de-confidentialite/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/references-et-preuves.html"
+  to = "/references-et-preuves/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/etudes-de-cas/Index.html"
+  to = "/etudes-de-cas/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/etudes-de-cas/industrialisation-ecl-v2.html"
+  to = "/etudes-de-cas/industrialisation-ecl-v2/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/etudes-de-cas/flux-financiers-benin-nigeria.html"
+  to = "/etudes-de-cas/flux-financiers-benin-nigeria/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/etudes-de-cas/securisation-donnees-judiciaires-uemoa.html"
+  to = "/etudes-de-cas/securisation-donnees-judiciaires-uemoa/"
+  status = 301
+  force = true
+
 [[headers]]
   for = "/*"
   [headers.values]
