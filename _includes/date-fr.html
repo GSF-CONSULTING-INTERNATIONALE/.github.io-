@@ -1,0 +1,11 @@
+{%- comment -%}
+  Rend une date en français : « 19 mars 2026 », « 1er avril 2026 ».
+  Le filtre `date:` de Liquid utilise strftime sans localisation : `%B` renvoie
+  toujours le nom de mois anglais, quelle que soit la locale du serveur de build.
+  Usage : {% include date-fr.html date=page.date %}
+{%- endcomment -%}
+{%- assign dfr_mois = "janvier,février,mars,avril,mai,juin,juillet,août,septembre,octobre,novembre,décembre" | split: "," -%}
+{%- assign dfr_index = include.date | date: "%-m" | minus: 1 -%}
+{%- assign dfr_jour = include.date | date: "%-d" -%}
+{%- if dfr_jour == "1" -%}{%- assign dfr_jour = "1er" -%}{%- endif -%}
+{{- dfr_jour }} {{ dfr_mois[dfr_index] }} {{ include.date | date: "%Y" -}}

@@ -38,47 +38,6 @@ job_title: "Juriste Expert OHADA/UEMOA — Fondateur GSF Consulting Internationa
 schema_type: Article
 ---
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "IA agentique et fraude financière en Afrique : pourquoi banques et fintechs doivent reprendre le contrôle des données",
-  "description": "L’IA agentique transforme la fraude financière en Afrique. Banques, fintechs et régulateurs doivent reprendre le contrôle des données, des modèles et de la conformité.",
-  "author": {
-    "@type": "Person",
-    "name": "Gilles Sixte Feliho",
-    "jobTitle": "Juriste Expert OHADA/UEMOA — Fondateur GSF Consulting International",
-    "url": "https://gsfconsultinginternational.com/gilles-feliho/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "GSF Consulting International",
-    "url": "https://gsfconsultinginternational.com/"
-  },
-  "datePublished": "2026-08-27",
-  "dateModified": "2026-08-27",
-  "image": "https://gsfconsultinginternational.com/uploads/ia-agentique-fraude-financiere-afrique.png",
-  "url": "https://gsfconsultinginternational.com/analyses/ia-agentique-fraude-financiere-afrique/",
-  "keywords": [
-    "IA agentique",
-    "fraude financière",
-    "Afrique",
-    "souveraineté cognitive",
-    "conformité bancaire",
-    "UEMOA",
-    "OHADA",
-    "INTERPOL",
-    "BCEAO",
-    "GIABA"
-  ],
-  "isPartOf": {
-    "@type": "Blog",
-    "name": "Analyses GSF Consulting International",
-    "url": "https://gsfconsultinginternational.com/analyses/"
-  }
-}
-</script>
-
 > **Analyse Stratégique — Août 2026**  
 > *INTERPOL · Union africaine · BCEAO · GIABA · Conformité bancaire · Souveraineté cognitive*
 

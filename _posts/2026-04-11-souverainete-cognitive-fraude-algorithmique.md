@@ -42,43 +42,6 @@ job_title: "Juriste Expert OHADA/UEMOA — Fondateur GSF Consulting Internationa
 schema_type: Article
 ---
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "La Souveraineté Cognitive face à l'Industrialisation de la Fraude Algorithmique : Enjeux Réglementaires et Stratégiques pour la Finance Africaine à l'Horizon 2028",
-  "description": "Analyse stratégique exclusive GSF : Rapport INTERPOL mars 2026 sur l'IA agentique, portail S-COMPLIANCE BCEAO Article 14.C, modernisation AUPSRVE OHADA et méthodologie des 4D pour la résilience financière africaine face à la polycriminalité algorithmique.",
-  "author": {
-    "@type": "Person",
-    "name": "Gilles Sixte Feliho",
-    "jobTitle": "Juriste Expert OHADA/UEMOA — Fondateur GSF Consulting International",
-    "url": "https://gsfconsultinginternational.com/a-propos/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "GSF Consulting International",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://gsfconsultinginternational.com/assets/img/logo-gsf.png"
-    }
-  },
-  "datePublished": "2026-04-11",
-  "dateModified": "2026-04-11",
-  "image": "https://gsfconsultinginternational.com/uploads/souverainete-cognitive-fraude-algorithmique-finance-africaine-2028.png",
-  "url": "https://gsfconsultinginternational.com/analyses/souverainete-cognitive-fraude-algorithmique-finance-africaine-2028/",
-  "keywords": ["Souveraineté cognitive", "IA agentique", "Fraude algorithmique", "INTERPOL 2026", "BCEAO S-COMPLIANCE", "OHADA AUPSRVE", "Data poisoning", "AI Factories", "RegTech UEMOA"],
-  "about": {
-    "@type": "Thing",
-    "name": "Souveraineté cognitive et lutte contre la fraude algorithmique en Afrique"
-  },
-  "isPartOf": {
-    "@type": "Blog",
-    "name": "Analyses GSF Consulting International",
-    "url": "https://gsfconsultinginternational.com/analyses/"
-  }
-}
-</script>
-
 # La Souveraineté Cognitive face à l'Industrialisation de la Fraude Algorithmique : Enjeux Réglementaires et Stratégiques pour la Finance Africaine à l'Horizon 2028
 
 > **Analyse Stratégique — Avril 2026**  

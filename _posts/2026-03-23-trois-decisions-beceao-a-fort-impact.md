@@ -31,47 +31,6 @@ author: Gilles Sixte Feliho
 schema_type: Article
 ---
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "Radar Hebdo UEMOA #1 : 3 Décisions BCEAO à Fort Impact Conformité (Mars 2026)",
-  "description": "Veille réglementaire UEMOA : décryptage des 3 décisions BCEAO (taux directeurs, interopérabilité) et Conseil des ministres. Impacts opérationnels, risques LBC/FT et actions immédiates pour banques et fintechs.",
-  "author": {
-    "@type": "Person",
-    "name": "Gilles Sixte Feliho",
-    "jobTitle": "Juriste Expert OHADA/UEMOA — Fondateur GSF Consulting International",
-    "url": "https://gsfconsultinginternational.com/a-propos/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "GSF Consulting International",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://gsfconsultinginternational.com/assets/img/logo-gsf.png"
-    }
-  },
-  "datePublished": "2026-03-16",
-  "dateModified": "2026-03-16",
-  "image": "https://gsfconsultinginternational.com/uploads/radar-hebdo-uemoa-1-decisions-bceao-mars-2026.png",
-  "url": "https://gsfconsultinginternational.com/analyses/radar-hebdo-uemoa-1-decisions-bceao-conformite-mars-2026/",
-  "keywords": [
-    "BCEAO", "UEMOA", "taux directeurs", "conformité bancaire",
-    "interopérabilité paiements", "LBC/FT", "fintech", "IA conformité",
-    "souveraineté cognitive", "flux illicites"
-  ],
-  "about": {
-    "@type": "Thing",
-    "name": "Réglementation bancaire UEMOA"
-  },
-  "isPartOf": {
-    "@type": "Blog",
-    "name": "Analyses GSF Consulting International",
-    "url": "https://gsfconsultinginternational.com/analyses/"
-  }
-}
-</script>
-
 ---
 
 ## Radar Hebdo UEMOA #1 : 3 Décisions BCEAO et Conseil des Ministres à Fort Impact Conformité (Mars 2026)
@@ -135,7 +94,6 @@ Pour les directions financières, la fenêtre d'opportunité est réelle mais te
 → Intégrez un module IA de monitoring des flux de refinancement
 → Lancez un audit flash conformité sur vos procédures de scoring
 
-
 ---
 
 ## 2. Interopérabilité Généralisée des Paiements — Pleine Vigueur 2026
@@ -180,7 +138,6 @@ La fin des **silos nationaux de paiement** est actée. Les transferts transfront
 ✅ Avant fin Q2 2026
 → Formez vos équipes conformité aux nouvelles typologies de risque
 → Cartographiez vos flux transfrontaliers et identifiez les angles morts
-
 
 ---
 
@@ -229,7 +186,6 @@ Les budgets de supervision BCEAO sont augmentés et harmonisés, signalant une i
 ✅ Avant fin Q2 2026
 → Réalisez un audit Souveraineté Cognitive IA de vos outils de modélisation
 → Activez une veille dédiée finance durable et green bonds UEMOA
-
 
 ---
 
@@ -305,5 +261,4 @@ Ces trois décisions ouvrent une fenêtre d'action courte. Les équipes non pré
 ---
 
 *© 2026 GSF Consulting International — Analyses réservées à des fins d'information générale. Toute reproduction partielle ou totale est soumise à autorisation expresse.*
-
 
