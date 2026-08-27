@@ -2,7 +2,7 @@
 layout: post
 title: "Vers une Cyber-LAB Souveraine : Résilience Numérique et Intégrité Financière dans l'Espace OHADA à l'Horizon 2026"
 date: 2026-03-14
-last_updated: 2026-03-14
+last_modified_at: 2026-03-14
 category: "Cybersécurité"
 tags: [Cybersécurité, LCB-FT, OHADA, UEMOA, CEMAC, IA, Souveraineté Numérique, RegTech, Conformité]
 author: "Gilles Sixte Feliho"

@@ -3,7 +3,7 @@ layout: post
 title: "OHADA, e-justice et cybersécurité : Sécuriser la justice numérique et les flux contentieux en Afrique"
 permalink: /analyses/ohada-ejustice-cybersecurite-souverainete-numerique/
 date: 2026-06-04
-last_updated: 2026-06-04
+last_modified_at: 2026-06-04
 category: Analyses stratégiques
 tags:
   - OHADA

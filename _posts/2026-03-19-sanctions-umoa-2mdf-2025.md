@@ -2,7 +2,7 @@
 layout: post
 title: "Vers une Résilience de l'Écosystème Financier de l'UMOA : Conformité, Interopérabilité et Souveraineté Numérique face au Défi du De-risking"
 date: 2026-03-19
-last_updated: 2026-03-19
+last_modified_at: 2026-03-19
 category: "Conformité & Risques"
 tags: [De-risking, Sanctions UMOA, PI-SPI BCEAO, Cloud Souverain, Interopérabilité, OHADA, LBC-FT, ISO 20022]
 author: "Gilles Sixte Feliho"

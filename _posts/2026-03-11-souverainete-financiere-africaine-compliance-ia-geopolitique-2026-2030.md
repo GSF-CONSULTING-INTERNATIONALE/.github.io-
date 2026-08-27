@@ -3,7 +3,7 @@ layout: post
 title: "Souveraineté financière africaine : pourquoi la compliance IA est un enjeu géopolitique (et votre opportunité stratégique 2026-2030)"
 permalink: /analyses/souverainete-financiere-africaine-compliance-ia-geopolitique-2026-2030/
 date: 2026-03-25
-last_updated: 2026-03-25
+last_modified_at: 2026-03-25
 category: Conformité & Réglementation
 tags:
   - Souveraineté financière africaine IA

@@ -3,7 +3,7 @@ layout: post
 title: "La Souveraineté Cognitive face à l'Industrialisation de la Fraude Algorithmique : Enjeux Réglementaires et Stratégiques pour la Finance Africaine à l'Horizon 2028"
 permalink: /analyses/souverainete-cognitive-fraude-algorithmique-finance-africaine-2028/
 date: 2026-04-11
-last_updated: 2026-04-11
+last_modified_at: 2026-04-11
 category: Conformité & Réglementation
 tags:
   - Souveraineté cognitive

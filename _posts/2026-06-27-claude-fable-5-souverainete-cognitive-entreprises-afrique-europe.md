@@ -3,7 +3,7 @@ layout: post
 title: "Claude Fable 5 débranché par Washington : une alerte majeure pour la souveraineté cognitive des entreprises africaines et européennes"
 permalink: /analyses/claude-fable-5-souverainete-cognitive-entreprises-afrique-europe/
 date: 2026-06-27
-last_updated: 2026-06-27
+last_modified_at: 2026-06-27
 category: Analyses stratégiques
 tags:
   - Souveraineté cognitive

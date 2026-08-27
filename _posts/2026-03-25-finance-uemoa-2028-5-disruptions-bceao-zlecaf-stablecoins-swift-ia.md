@@ -3,7 +3,7 @@ layout: post
 title: "Finance UEMOA 2028 : 5 disruptions BCEAO-ZLECAf, stablecoins, SWIFT & IA (et comment s’y préparer dès maintenant)"
 permalink: /analyses/finance-uemoa-2028-5-disruptions-bceao-zlecaf-stablecoins-swift-ia/
 date: 2026-03-25
-last_updated: 2026-03-25
+last_modified_at: 2026-03-25
 category: Finance & Marchés
 tags:
 - finance UEMOA

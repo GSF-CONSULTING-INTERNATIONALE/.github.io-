@@ -2,7 +2,7 @@
 layout: post
 title: "Géopolitique des données judiciaires en Afrique francophone : qui contrôle les infrastructures du droit numérique ?"
 date: 2026-03-10
-last_updated: 2026-03-10
+last_modified_at: 2026-03-10
 category: "Intelligence Artificielle"
 tags:
   - OHADA

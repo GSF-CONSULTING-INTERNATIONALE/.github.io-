@@ -2,7 +2,7 @@
 layout: post
 title: "Recouvrement transfrontalier de créances et cyber-risques : la résilience des entreprises face aux attaques visant les systèmes juridictionnels africains"
 date: 2026-03-12
-last_updated: 2026-03-12
+last_modified_at: 2026-03-12
 category: "Intelligence Artificielle"
 tags:
   - OHADA

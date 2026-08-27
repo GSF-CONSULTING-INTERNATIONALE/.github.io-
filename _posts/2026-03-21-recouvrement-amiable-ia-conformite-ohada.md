@@ -2,7 +2,7 @@
 layout: post
 title: "Recouvrement Amiable par IA : Relances Performance-Ready et Conformité OHADA"
 date: 2026-03-21
-last_updated: 2026-03-21
+last_modified_at: 2026-03-21
 category: "Intelligence Artificielle"
 author: "Gilles Sixte Feliho"
 permalink: /analyses/recouvrement-amiable-ia-droit-ohada/
@@ -112,7 +112,7 @@ Le recouvrement amiable par IA n'est pas une simple commodité technique ; c'est
 layout: post
 title: "Recouvrement Amiable par IA : Relances Performance-Ready et Conformité OHADA"
 date: 2026-03-21
-last_updated: 2026-03-21
+last_modified_at: 2026-03-21
 category: "Intelligence Artificielle"
 author: "Gilles Sixte Feliho"
 permalink: /analyses/recouvrement-amiable-ia-droit-ohada/

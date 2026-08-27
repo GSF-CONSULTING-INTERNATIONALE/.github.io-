@@ -2,7 +2,7 @@
 layout: post
 title: "L'ingénierie de la confiance numérique et la souveraineté cognitive : les nouveaux actifs stratégiques de l'économie moderne dans l'espace OHADA"
 date: 2026-03-15
-last_updated: 2026-03-15
+last_modified_at: 2026-03-15
 category: "Confiance Numérique"
 tags: [Confiance Numérique, Souveraineté Cognitive, OHADA, Cybersécurité, LCB-FT, IA, RegTech, Finance, Économie Numérique]
 author: "Gilles Sixte Feliho"

@@ -2,7 +2,7 @@
 layout: post
 title: "Vers une Finance Augmentée : Risques de l'IA et Déontologie du Private Equity dans l'Espace OHADA"
 date: 2026-03-14
-last_updated: 2026-03-14
+last_modified_at: 2026-03-14
 category: "Intelligence Artificielle"
 tags: [Droit OHADA, UEMOA, Conformité, Intelligence Artificielle, Private Equity, Cybersécurité, Souveraineté Numérique, Finance, Déontologie]
 author: "Gilles Sixte Feliho"

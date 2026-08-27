@@ -2,7 +2,7 @@
 layout: post
 title: "Conformité BCEAO Fintech : Les 7 Obligations Réglementaires Ignorées qui Exposent à l'AMF UEMOA"
 date: 2026-03-17
-last_updated: 2026-03-17
+last_modified_at: 2026-03-17
 category: "Conformité BCEAO"
 tags: [Conformité BCEAO, Fintech UEMOA, AMF UEMOA, Agrégation Comptes, Cantonnement Fonds, LBC FT, PI-SPI, Instruction 001-01-2024, Sanctions BCEAO]
 author: "Gilles Sixte Feliho"

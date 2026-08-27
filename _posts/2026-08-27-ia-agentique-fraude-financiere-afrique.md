@@ -3,7 +3,7 @@ layout: post
 title: "IA agentique et fraude financière en Afrique : pourquoi banques et fintechs doivent reprendre le contrôle des données"
 permalink: /analyses/ia-agentique-fraude-financiere-afrique/
 date: 2026-08-27
-last_updated: 2026-08-27
+last_modified_at: 2026-08-27
 category: Conformité & Réglementation
 tags:
   - IA agentique

@@ -2,7 +2,7 @@
 layout: post
 title: "Capital-Investissement en Afrique Francophone : L'Expertise Conseil et RegTech comme Levier de Performance pour les Fonds et leurs Partenaires"
 date: 2026-03-13
-last_updated: 2026-03-13
+last_modified_at: 2026-03-13
 category: "Capital-Investissement"
 tags:
   - Capital-investissement Afrique

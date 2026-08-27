@@ -2,7 +2,7 @@
 layout: post
 title: "Directive BCEAO sur la surveillance renforcée : comment automatiser les rapports réglementaires"
 date: 2026-03-17
-last_updated: 2026-03-17
+last_modified_at: 2026-03-17
 category: "IA et Réglementation"
 tags: [BCEAO, Instruction 001-03-2025, Surveillance Renforcée, Reporting Automatisé, RegTech, Parsing NLP, LBC FT, Conformité Bancaire, OHADA, Souveraineté Cognitive]
 author: "Gilles Sixte Feliho"

@@ -57,9 +57,15 @@ layout: default
                 <span>{{ page.author }}</span>
                 {% endif %}
 
-                {% if page.last_updated %}
+                {%- comment -%}
+                  `last_modified_at` est la clé lue par jekyll-sitemap pour produire
+                  <lastmod> (son gabarit fait `doc.last_modified_at | default: doc.date`).
+                  Ne pas la renommer : toute autre clé serait ignorée par le sitemap et la
+                  date de dernière modification retomberait silencieusement sur `date`.
+                {%- endcomment -%}
+                {% if page.last_modified_at %}
                 <span class="post-meta-separator">•</span>
-                <span>Mis à jour le {{ page.last_updated | date: "%d %B %Y" }}</span>
+                <span>Mis à jour le {{ page.last_modified_at | date: "%d %B %Y" }}</span>
                 {% endif %}
 
                 <span class="post-meta-separator">•</span>
@@ -162,8 +168,8 @@ layout: default
             {% if page.date %}
             <p><strong>Date de publication :</strong> {{ page.date | date: "%d %B %Y" }}</p>
             {% endif %}
-            {% if page.last_updated %}
-            <p><strong>Dernière mise à jour :</strong> {{ page.last_updated | date: "%d %B %Y" }}</p>
+            {% if page.last_modified_at %}
+            <p><strong>Dernière mise à jour :</strong> {{ page.last_modified_at | date: "%d %B %Y" }}</p>
             {% endif %}
             {% if page.source_url %}
             <p>
@@ -252,7 +258,7 @@ layout: default
       "headline": {{ page.title | jsonify }},
       "description": {{ page.excerpt | default: site.description | jsonify }},
       "datePublished": "{{ page.date | date_to_xmlschema }}",
-      {% if page.last_updated %}"dateModified": "{{ page.last_updated | date_to_xmlschema }}",{% endif %}
+      {% if page.last_modified_at %}"dateModified": "{{ page.last_modified_at | date_to_xmlschema }}",{% endif %}
       {% if page.image %}"image": {
         "@type": "ImageObject",
         "url": "{{ page.image | absolute_url }}",

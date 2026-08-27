@@ -3,7 +3,7 @@ layout: post
 title: "BENCHMARK SALARIAL CONFIDENTIEL : Compliance & IA - UEMOA 2026"
 permalink: /contact/benchmark-compliance-ia-uemoa/
 date: 2026-03-24
-last_updated: 2026-03-24
+last_modified_at: 2026-03-24
 category: "Études & Analyses"
 tags: [Fintech, UEMOA, Compliance, IA, Salaire, RH]
 author: "Gilles Sixte Feliho"

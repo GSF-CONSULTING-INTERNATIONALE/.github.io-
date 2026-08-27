@@ -3,7 +3,7 @@ layout: post
 title: "Souveraineté cognitive : frein ou atout à la performance des entreprises ?"
 permalink: /analyses/souverainete-cognitive-frein-atout-performance-entreprises/
 date: 2026-06-11
-last_updated: 2026-06-11
+last_modified_at: 2026-06-11
 category: Analyses stratégiques
 tags:
   - Souveraineté cognitive

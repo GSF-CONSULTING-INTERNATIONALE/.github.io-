@@ -2,7 +2,7 @@
 layout: post
 title: "De-risking Bancaire : Prouvez votre conformité 'By-Design' à vos partenaires"
 date: 2026-03-19
-last_updated: 2026-03-19
+last_modified_at: 2026-03-19
 category: "Conformité & Risques"
 tags: [De-risking, Flux Financiers Illicites, Compliance-by-Design, LBC/FT, BCEAO, COBAC, Banque Correspondante, Standard Wolfsberg, Framework ASC, RBA]
 author: "Gilles Sixte Feliho"

@@ -3,7 +3,7 @@ layout: post
 title: "Les fintechs UEMOA qui recrutent en compliance IA en mars 2026 (et ce que cela révèle du marché)"
 permalink: /analyses/fintechs-uemoa-recrutement-compliance-ia-2026/
 date: 2026-03-24
-last_updated: 2026-03-24
+last_modified_at: 2026-03-24
 category: Conformité & Réglementation
 tags:
   - Fintech UEMOA
