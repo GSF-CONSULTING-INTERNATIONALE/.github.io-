@@ -2,18 +2,26 @@
 layout: default
 title: "Analyses & Publications"
 description: "Retrouvez toutes nos analyses juridiques, insights IA et perspectives stratégiques pour l'Afrique."
-permalink: /analyses/
-pagination:
-  enabled: true
-  per_page: 9
+# Ne pas réintroduire de `permalink` ici. jekyll-paginate régénère cette page pour
+# chaque page de pagination (Pagination#paginate → Page.new(site, source, page.dir, page.name))
+# puis fixe seulement `dir`. Un `permalink` figé dans le front matter l'emporte sur `dir`,
+# et toutes les pages générées écrasent alors /analyses/index.html.
+# Le fichier étant analyses/index.html, son URL est déjà /analyses/ — rien à déclarer.
+# Le nombre d'articles par page se règle via `paginate:` dans _config.yml.
 ---
+
+{%- comment -%}
+  paginator.posts si jekyll-paginate est actif, site.posts en repli
+  (le rendu reste correct même si le plugin venait à ne pas se charger).
+{%- endcomment -%}
+{% assign articles = paginator.posts | default: site.posts %}
 
 <div class="container analyses-section">
     <h1>Nos Analyses & Publications</h1>
-    
-    {% if site.posts.size > 0 %}
+
+    {% if articles.size > 0 %}
     <div class="articles-grid">
-        {% for post in site.posts %}
+        {% for post in articles %}
         <article class="glass-card article-card">
             {% if post.image %}
             <div class="article-image">
@@ -63,15 +71,56 @@ pagination:
     {% if paginator.total_pages > 1 %}
     <nav class="pagination" aria-label="Navigation des pages">
         {% if paginator.previous_page %}
-        <a href="{{ paginator.previous_page_path | relative_url }}" class="prev">← Précédent</a>
+        <a href="{{ paginator.previous_page_path | relative_url }}" class="prev" rel="prev">← Précédent</a>
         {% endif %}
-        
-        <span class="current">Page {{ paginator.page }} sur {{ paginator.total_pages }}</span>
-        
+
+        {%- comment -%}
+          Numéros de page. Au-delà de 9 pages, on n'affiche qu'une fenêtre
+          autour de la page courante, encadrée par la première et la dernière.
+        {%- endcomment -%}
+        {% if paginator.total_pages <= 9 %}
+            {% assign window_start = 1 %}
+            {% assign window_end = paginator.total_pages %}
+        {% else %}
+            {% assign window_start = paginator.page | minus: 2 %}
+            {% if window_start < 1 %}{% assign window_start = 1 %}{% endif %}
+            {% assign window_end = window_start | plus: 4 %}
+            {% if window_end > paginator.total_pages %}
+                {% assign window_end = paginator.total_pages %}
+                {% assign window_start = window_end | minus: 4 %}
+                {% if window_start < 1 %}{% assign window_start = 1 %}{% endif %}
+            {% endif %}
+        {% endif %}
+
+        {% if window_start > 1 %}
+        <a href="{{ '/analyses/' | relative_url }}" aria-label="Page 1">1</a>
+        {% if window_start > 2 %}<span class="ellipsis" aria-hidden="true">…</span>{% endif %}
+        {% endif %}
+
+        {% for num in (window_start..window_end) %}
+            {% if num == paginator.page %}
+        <span class="current" aria-current="page">{{ num }}</span>
+            {% elsif num == 1 %}
+        <a href="{{ '/analyses/' | relative_url }}" aria-label="Page 1">1</a>
+            {% else %}
+        <a href="{{ site.paginate_path | replace: ':num', num | relative_url }}" aria-label="Page {{ num }}">{{ num }}</a>
+            {% endif %}
+        {% endfor %}
+
+        {% if window_end < paginator.total_pages %}
+        {% assign penultimate = paginator.total_pages | minus: 1 %}
+        {% if window_end < penultimate %}<span class="ellipsis" aria-hidden="true">…</span>{% endif %}
+        <a href="{{ site.paginate_path | replace: ':num', paginator.total_pages | relative_url }}" aria-label="Page {{ paginator.total_pages }}">{{ paginator.total_pages }}</a>
+        {% endif %}
+
         {% if paginator.next_page %}
-        <a href="{{ paginator.next_page_path | relative_url }}" class="next">Suivant →</a>
+        <a href="{{ paginator.next_page_path | relative_url }}" class="next" rel="next">Suivant →</a>
         {% endif %}
     </nav>
+
+    <p class="pagination-status">
+        Page {{ paginator.page }} sur {{ paginator.total_pages }} — {{ paginator.total_posts }} analyses publiées
+    </p>
     {% endif %}
 
     {% else %}
@@ -221,6 +270,22 @@ pagination:
     .pagination .current {
         color: white;
         font-weight: bold;
+        padding: 10px 20px;
+        border: 1px solid #06b6d4;
+        border-radius: 6px;
+        background: rgba(6, 182, 212, 0.18);
+    }
+
+    .pagination .ellipsis {
+        color: #06b6d4;
+        padding: 10px 4px;
+    }
+
+    .pagination-status {
+        margin-top: 18px;
+        text-align: center;
+        color: #ccc;
+        font-size: 0.9rem;
     }
 
     .no-posts {

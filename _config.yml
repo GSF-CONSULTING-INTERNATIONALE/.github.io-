@@ -31,7 +31,9 @@ plugins:
 
 
 # ===== PAGINATION =====
-paginate: 8
+# 9 articles/page : valeur que analyses/index.html déclarait dans son front matter
+# (bloc `pagination:` de jekyll-paginate-v2, inerte ici) et qui donne 4 pages pleines.
+paginate: 9
 paginate_path: "/analyses/page:num/"
 
 # ===== COLLECTIONS =====
