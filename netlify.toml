@@ -66,6 +66,18 @@
   status = 301
   force = true
 
+[[redirects]]
+  from = "/mentions-legales.html"
+  to = "/mentions-legales/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/etudes-de-cas/souverainete-donnees-intelligence-bancaire-uemoa.html"
+  to = "/etudes-de-cas/souverainete-donnees-intelligence-bancaire-uemoa/"
+  status = 301
+  force = true
+
 [[headers]]
   for = "/*"
   [headers.values]
