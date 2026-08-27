@@ -77,18 +77,12 @@
       }
     }
     </script>
-    {% elsif page.url == "/" %}
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "GSF Consulting International",
-      "url": "https://gsfconsultinginternational.com",
-      "logo": "https://gsfconsultinginternational.com/logo-gsf.PNG",
-      "email": "contact@gsfconsultinginternational.com",
-      "sameAs": ["https://www.linkedin.com/in/gilles-feliho/"]
-    }
-    </script>
+    {%- comment -%}
+      Pas de branche `/` ici : la page d'accueil est en `layout: null` et
+      n'utilise donc pas ce gabarit — cette branche ne s'exécutait jamais.
+      Le schéma Organization + Person + WebSite est porté directement par
+      index.html, où il définit les @id référencés par les articles.
+    {%- endcomment -%}
     {%- comment -%}
       Pas de branche `post` ici : _layouts/post.html émet déjà un @graph
       Article + BreadcrumbList strictement plus riche. En émettre un second
