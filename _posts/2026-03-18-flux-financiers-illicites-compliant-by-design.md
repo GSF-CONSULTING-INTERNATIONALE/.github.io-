@@ -29,17 +29,17 @@ Les banques correspondantes, tant locales qu'internationales, exigent désormais
 
 Pour une fintech opérant en zone UEMOA ou CEMAC, la conformité n'est plus une pile de documents statiques. C'est une architecture logicielle. Être "compliant-by-design", c'est garantir au partenaire bancaire que la règle de droit (BCEAO ou COBAC) est intégrée directement dans le code.
 
-L'**Approche Basée sur les Risques (RBA)** est le cœur des recommandations du GAFI. Pour être efficace, votre **[cartographie risques dynamique RBA LCB-FT](/analyses/cartographie-risques-rba-2026/)** ne doit pas être un document annuel, mais un module reactif.
+L'**Approche Basée sur les Risques (RBA)** est le cœur des recommandations du GAFI. Pour être efficace, votre **[cartographie risques dynamique RBA LCB-FT](/uploads/notre-guide-rba-uemoa.pdf)** ne doit pas être un document annuel, mais un module reactif.
 
 ### Le Triptyque de Surveillance (KYC / KYB / KYT)
 
 Votre système doit croiser trois dimensions pour couvrir l'ensemble des vecteurs de menaces :
 
-1.  **Risque Client (KYC/KYB) :** Mettez en place une **[notation risque automatisé KYB UEMOA](/outils/scoring-kyb-uemoa/)** et un screening PEP/Sanctions via API pour filtrer les personnes morales à risque dès l'onboarding.
+1.  **Risque Client (KYC/KYB) :** Mettez en place une **[notation risque automatisé KYB UEMOA](/uploads/guide-technique-scoring-ia-uemoa.pdf)** et un screening PEP/Sanctions via API pour filtrer les personnes morales à risque dès l'onboarding.
 2.  **Risque Produit :** Analysez les vulnérabilités intrinsèques. Avec l'**instruction 001-01-2024 BCEAO risques produit**, les services d'agrégation ou d'initiation de paiement nécessitent une vigilance accrue.
-3.  **Risque Transactionnel (KYT) :** Opérez le passage ex-post vers une **[surveillance in-stream KYT BCEAO](/analyses/pi-spi-eda-bceao-2025/)**. L'analyse des flux en temps réel est la condition *sine qua non* pour rassurer les banques correspondantes.
+3.  **Risque Transactionnel (KYT) :** Opérez le passage ex-post vers une **surveillance in-stream KYT BCEAO**. L'analyse des flux en temps réel est la condition *sine qua non* pour rassurer les banques correspondantes.
 
-> **Le saviez-vous ?** Le **triptyque KYC KYB KYT flux illicites** forme la base de toute défense face à une demande de justification bancaire. [Découvrez notre guide RBA UEMOA](/analyses/cartographie-risques-rba-2026/).
+> **Le saviez-vous ?** Le **triptyque KYC KYB KYT flux illicites** forme la base de toute défense face à une demande de justification bancaire. [Découvrez notre guide RBA UEMOA](/uploads/notre-guide-rba-uemoa.pdf).
 
 ---
 
@@ -51,21 +51,21 @@ Ce tableau compare l'approche traditionnelle (Legacy) à l'architecture "Complia
 
 | Pilier | Approche "Legacy" | Framework ASC (Compliant-by-Design) | Impact Partenaire |
 | :--- | :--- | :--- | :--- |
-| **Gouvernance** | Procédures papier statiques | **[ISO 37301 gouvernance conformité](/services/iso37301-ohada/)** (Système de Management) | Confiance systémique |
-| **Technologie** | Batch processing (J+1) | **[Architecture event-driven EDA PI-SPI](/analyses/pi-spi-eda-bceao-2025/)** (Temps réel) | **[Réduction fraude 35% EDA](/etudes/eda-roi-35pct/)** |
-| **Données** | Cloud étranger (Cloud Act) | **[Souveraineté cognitive cloud UEMOA](/analyses/cloud-local-civ-2026/)** (Données locales) | Maîtrise juridique |
-| **Preuve** | Questionnaires ad-hoc | **[Passeport Wolfsberg CBDDQ fintech](/outils/cbddq-template/)** (Standard Mondial) | Interopérabilité globale |
+| **Gouvernance** | Procédures papier statiques | **ISO 37301 gouvernance conformité** (Système de Management) | Confiance systémique |
+| **Technologie** | Batch processing (J+1) | **Architecture event-driven EDA PI-SPI** (Temps réel) | **Réduction fraude 35% EDA** |
+| **Données** | Cloud étranger (Cloud Act) | **Souveraineté cognitive cloud UEMOA** (Données locales) | Maîtrise juridique |
+| **Preuve** | Questionnaires ad-hoc | **Passeport Wolfsberg CBDDQ fintech** (Standard Mondial) | Interopérabilité globale |
 
-> **Comparez Legacy vs ASC →** Consultez nos [Cas pratiques ASC Sénégal](/cases/asc-senegal-2026/).
+> **Comparez Legacy vs ASC →** Découvrez la méthodologie de l'[Audit de Souveraineté Cognitive™](/audit-souverainete-cognitive/).
 
 ### Pilier 1 : L'Architecture Event-Driven (EDA)
-Le lancement de la **PI-SPI** impose un traitement strict (exigence **PI-SPI 10 secondes BCEAO**). L'architecture EDA permet d'analyser chaque transaction avant validation. Pour aller plus loin, lire notre analyse sur [l'Interop PI-SPI](/analyses/pi-spi-interop-2025/).
+Le lancement de la **PI-SPI** impose un traitement strict (exigence **PI-SPI 10 secondes BCEAO**). L'architecture EDA permet d'analyser chaque transaction avant validation.
 
 ### Pilier 2 : Souveraineté Cognitive et Localisation
-Protégez vos données des lois extraterritoriales en optant pour un **[cloud local Sénégal CI Cameroun](/benchmarks/dc-uemoa/)**. C'est un gage de confiance majeur pour les régulateurs locaux.
+Protégez vos données des lois extraterritoriales en optant pour un **cloud local Sénégal CI Cameroun**. C'est un gage de confiance majeur pour les régulateurs locaux.
 
 ### Pilier 3 : Le Passeport Wolfsberg (CBDDQ)
-Le **[standard Wolfsberg gold fintech afrique](/formations/wolfsberg/)** via le questionnaire CBDDQ v1.4 est indispensable. Référez-vous à notre [FAQ Wolfsberg](/ressources/wolfsberg-faq/) pour comprendre les attentes précises des correspondants.
+Le **standard Wolfsberg gold fintech afrique** via le questionnaire CBDDQ v1.4 est indispensable.
 
 ---
 
@@ -73,7 +73,7 @@ Le **[standard Wolfsberg gold fintech afrique](/formations/wolfsberg/)** via le 
 
 Pour obtenir un **avis non-objection partenaire bancaire** et réussir votre **audit annuel fintech de-risking**, votre rapport doit valider ces points :
 
-1.  **[Réconciliation mensuelle DC/BR instruction 81/2025](/outils/dcbr-template/) :** Prouvez l'inscription en compte des clients finaux.
+1.  **Réconciliation mensuelle DC/BR instruction 81/2025 :** Prouvez l'inscription en compte des clients finaux.
 2.  **Explicabilité IA scoring LCB-FT BCEAO :** Justifiez chaque alerte (refus des "boîtes noires").
 3.  **Clauses audit cloud Commission Bancaire :** Contrats permettant l'audit direct par le régulateur.
 4.  **Reporting prudentiel automatisé COBAC :** Génération des canevas sans erreur de saisie (motif de 40% des **erreurs saisie 40% sanctions UMOA**).
@@ -93,7 +93,6 @@ Le **Framework ASC** de GSF Consulting International transforme votre départeme
 <div class="cta-box">
   <h3>📋 Téléchargez le Framework ASC (Architecture Souveraine & Conformité)</h3>
   <p>Accédez au guide complet pour <strong>télécharger framework ASC conformité</strong>, intégrer le standard Wolfsberg et sécuriser vos partenariats. Ce document stratégique est réservé aux décideurs.</p>
-  <p><small>Page service liée : <a href="/services/audit-flash/">Audit Flash 48h GSF</a></small></p>
   <a href="mailto:contact@gsfconsultinginternational.com?subject=Demande Framework ASC Compliance By-Design&body=Bonjour GSF Consulting,%0A%0AJe souhaite recevoir le Framework ASC pour structurer ma preuve de conformité.%0A%0AMes informations :%0A- Nom : [Votre nom]%0A- Société : [Votre entreprise]%0A- Fonction : [Votre poste]%0A- Pays : [UEMOA / CEMAC]%0A%0ASituation actuelle :%0A[ En cours de négociation bancaire / Audit réglementaire / Mise en place LBC-FT ]%0A%0ACordialement," class="btn-primary">
     📧 Recevoir le Framework ASC
   </a>
@@ -119,8 +118,8 @@ Le **Framework ASC** de GSF Consulting International transforme votre départeme
 
 ## Articles liés GSF (Maillage interne)
 * [Sanctions UMOA 2025 : Analyse des 2 milliards de FCFA](/analyses/sanctions-umoa-2mdf-2025/)
-* [PI-SPI BCEAO : Exigences techniques et interopérabilité](/analyses/pi-spi-2025/)
-* [Cloud Souverain OHADA : Enjeux réglementaires](/analyses/cloud-ohada-r2023/)
+* [Révélation : 700 à 950 milliards FCFA échappent chaque année aux contrôles entre le Bénin et le Nigeria](/analyses/flux-financiers-illicites-benin-nigeria-950-milliards-fcfa/)
+* [L'impératif de la conformité pour les Fintech en UEMOA : Gouvernance, résilience technologique et enjeux géopolitiques](/analyses/imperatif-conformite-fintech-uemoa-gouvernance-resilience/)
 
 ---
 

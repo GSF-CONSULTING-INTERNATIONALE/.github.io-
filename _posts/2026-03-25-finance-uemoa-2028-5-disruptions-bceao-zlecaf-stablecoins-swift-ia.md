@@ -178,7 +178,6 @@ La ZLECAf impose une fluidité des flux financiers identique à celle des marcha
 ✅ **Action 2** : Former les équipes AML à l’analyse blockchain.  
 ✅ **Action 3** : Migrer vers ISO 20022.
 
-→ **[Préparez votre banque aux stablecoins e-CFA et PAPSS](/ia-blockchain/)**
 
 ---
 
@@ -205,7 +204,7 @@ Le retrait de l’AES (Mali, Burkina, Niger) de la CEDEAO accélère la recherch
 ✅ **Action 2** : Renforcer PAPSS pour flux intra-africains.  
 ✅ **Action 3** : Screening automatique des bénéficiaires effectifs.
 
-→ **[Audit Souveraineté Financière™](/souverainete-cognitive/)**
+→ **[Audit Souveraineté Financière™](/audit-souverainete-cognitive/)**
 
 ---
 
@@ -232,7 +231,7 @@ Les banques délèguent massivement vers Rack Centre (Nigeria) et Sonatel/AWS (D
 ✅ **Action 2** : Maintenir redondance manuelle low-tech.  
 ✅ **Action 3** : Tests d’intrusion algorithmiques.
 
-→ **[Protégez vos modèles IA avec notre Audit Souveraineté Cognitive™](/services/audit-souverainete-cognitive/)**
+→ **[Protégez vos modèles IA avec notre Audit Souveraineté Cognitive™](/audit-souverainete-cognitive/)**
 
 ---
 

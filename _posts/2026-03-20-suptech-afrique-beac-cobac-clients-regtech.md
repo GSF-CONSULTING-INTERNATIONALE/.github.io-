@@ -172,7 +172,7 @@ GSF Consulting International accompagne cette transformation en reliant profonde
 ---
 
 ## Pour aller plus loin
-[Lire notre analyse complémentaire : "De-risking en Afrique : Quand la Compliance devient un Levier de Croissance"](/analyses/de-risking-afrique-compliance-levier-croissance/)
+[Lire notre analyse complémentaire : « De-risking Bancaire : Prouvez votre conformité 'By-Design' à vos partenaires »](/analyses/flux-financiers-illicites-compliant-by-design/)
 
 ---
 

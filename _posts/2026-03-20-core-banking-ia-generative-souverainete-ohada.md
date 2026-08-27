@@ -54,7 +54,7 @@ Le principe **compliance-by-design OHADA fintech** intègre LBC-FT, APDP et preu
 ### Protection données personnelles APDP Sénégal fintech  
 Hébergement local + isolement des bases de données garantit la conformité APDP et équivalents CEMAC.
 
-> **Le saviez-vous ?** Une architecture non conforme expose à des sanctions records (jusqu’à 2 milliards FCFA en 2025). Voir également : [De-risking bancaire UEMOA](/analyses/flux-financiers-illicit.../)
+> **Le saviez-vous ?** Une architecture non conforme expose à des sanctions records (jusqu’à 2 milliards FCFA en 2025). Voir également : [De-risking bancaire UEMOA](/analyses/flux-financiers-illicites-compliant-by-design/)
 
 ---
 
@@ -96,7 +96,6 @@ Pattern Database-per-Service pour isolement réglementaire.
 ### Migration monolithique microservices banque africaine  
 Strangler Fig Pattern pour migration progressive sans risque.
 
-Voir également : [PI-SPI BCEAO EDA](/analyses/pi-spi-eda-bceao-2025/)
 
 ---
 
@@ -129,7 +128,6 @@ Onboarding et scoring automatisés pour populations non bancarisées.
 > **LLM classique** → hallucinations fréquentes  
 > **RAG local** → réponses auditables et conformes OHADA
 
-Voir également : [Audit Flash de-risking 48h](/services/audit-flash/)
 
 ---
 
@@ -155,7 +153,6 @@ Obligation réglementaire stricte respectée.
 ### Cloud hybride core banking souverain  
 Private local + burst contrôlé pour élasticité maîtrisée.
 
-Voir également : [Cloud Souverain OHADA](/analyses/cloud-ohada-r2023/)
 
 ---
 
@@ -181,7 +178,7 @@ Détection automatique et génération de rapports prêts à transmettre.
 ### SHAP LIME IA finance transparence  
 Explicabilité totale exigée par les audits COBAC.
 
-Voir également : [Framework ASC LBC-FT](/analyses/flux-financiers-illicit.../)
+Voir également : [Framework ASC LBC-FT](/analyses/flux-financiers-illicites-compliant-by-design/)
 
 ---
 
@@ -214,7 +211,6 @@ Le Shadow Core est la seule approche sécurisée en zone OHADA.
 ### ROI migration core banking cloud 45 %  
 +45 % d’efficacité globale dès la première année.
 
-Voir également : [Audit Flash architecture](/services/audit-flash/)
 
 ---
 ---
@@ -222,7 +218,6 @@ Voir également : [Audit Flash architecture](/services/audit-flash/)
 <div class="cta-box">
   <h3>📋 Téléchargez l’Étude Complète « Architecture Hybride +45 % »</h3>
   <p>Accédez au guide stratégique réservé aux décideurs : schémas techniques, tableaux comparatifs, ROI détaillé et checklist d’implémentation. Ce document est exclusivement pour les institutions financières et fintechs OHADA/UEMOA/CEMAC.</p>
-  <p><small>Page service liée : <a href="/services/audit-flash/">Audit Flash 48h GSF</a></small></p>
   <a href="mailto:contact@gsfconsultinginternational.com?subject=Téléchargement Etude Architecture Hybride Core Banking IA OHADA&body=Bonjour Gilles,%0A%0AJe souhaite télécharger l’étude complète « Architecture Hybride Fintech OHADA : Core Banking + IA Générative = +45% Efficacité ».%0A%0AMes informations :%0A- Nom : [Votre nom]%0A- Société : [Votre entreprise]%0A- Fonction : [Votre poste]%0A- Pays : [UEMOA / CEMAC]%0A%0ACordialement," class="btn-primary">
     📧 Recevoir l’Étude Complète
   </a>
@@ -247,10 +242,10 @@ Voir également : [Audit Flash architecture](/services/audit-flash/)
 ---
 
 ## Articles liés GSF (Maillage interne)
-* [De-risking bancaire UEMOA et Framework ASC](/analyses/flux-financiers-illicit.../)
-* [PI-SPI BCEAO : EDA et interopérabilité](/analyses/pi-spi-eda-bceao-2025/)
-* [Cloud Souverain OHADA : Enjeux réglementaires](/analyses/cloud-ohada-r2023/)
-* [Audit Flash de-risking & Architecture](/services/audit-flash/)
+* [De-risking bancaire UEMOA et Framework ASC](/analyses/flux-financiers-illicites-compliant-by-design/)
+* [Directive BCEAO sur la surveillance renforcée : comment automatiser les rapports réglementaires](/analyses/directive-bceao-surveillance-renforcee-automatisation-rapports-reglementaires/)
+* [Vers une Cyber-LAB Souveraine : Résilience Numérique et Intégrité Financière dans l'Espace OHADA](/analyses/cyber-lab-souveraine-ohada/)
+* [L'ingénierie de la confiance numérique et la souveraineté cognitive dans l'espace OHADA](/analyses/ingenierie-confiance-numerique-ohada/)
 
 ---
 
