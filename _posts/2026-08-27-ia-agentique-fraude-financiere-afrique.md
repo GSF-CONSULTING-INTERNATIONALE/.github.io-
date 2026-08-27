@@ -79,8 +79,6 @@ schema_type: Article
 }
 </script>
 
-# IA agentique et fraude financière en Afrique : pourquoi banques et fintechs doivent reprendre le contrôle des données
-
 > **Analyse Stratégique — Août 2026**  
 > *INTERPOL · Union africaine · BCEAO · GIABA · Conformité bancaire · Souveraineté cognitive*
 
