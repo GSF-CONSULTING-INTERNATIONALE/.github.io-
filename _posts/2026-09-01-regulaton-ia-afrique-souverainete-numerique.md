@@ -1,5 +1,3 @@
-
-
 ---
 layout: post
 title: "Régulation de l’IA en Afrique : vers un modèle de souveraineté numérique pour les banques et les fintechs ?"
