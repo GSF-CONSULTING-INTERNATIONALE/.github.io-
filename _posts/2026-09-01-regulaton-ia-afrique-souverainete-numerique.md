@@ -2,8 +2,8 @@
 layout: post
 title: "Régulation de l’IA en Afrique : vers un modèle de souveraineté numérique pour les banques et les fintechs ?"
 permalink: /analyses/regulation-ia-afrique-souverainete-numerique/
-date: 2026-08-27
-last_updated: 2026-08-27
+date: 2026-09-01
+last_updated: 2026-09-01
 category: Conformité & Réglementation
 tags:
   - Régulation de l’IA
