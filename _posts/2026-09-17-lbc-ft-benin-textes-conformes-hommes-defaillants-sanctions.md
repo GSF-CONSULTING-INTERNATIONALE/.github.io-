@@ -21,7 +21,7 @@ tags:
 description: "Une succession dont les actes officiels se contredisent, neuf institutions saisies entre 2020 et 2026, aucune décision de fond : l’anatomie des mécanismes par lesquels un dispositif LBC/FT techniquement conforme cesse de sanctionner."
 excerpt: >
   Depuis la loi n° 2024-01 du 20 février 2024, le Bénin dispose d’un cadre LBC/FT/FP techniquement aligné sur les standards du GAFI. Le maintien du suivi renforcé par le GIABA et l’examen d’un dossier successoral documenté révèlent pourtant un paradoxe : des textes conformes peuvent rester sans effet lorsque la chaîne d’application se neutralise elle-même.
-  image: /upload/lbc-ft-benin-textes-conformes-hommes-defaillants-sanctions.png
+image: /upload/lbc-ft-benin-textes-conformes-hommes-defaillants-sanctions.png
 focus_keywords:
   - LBC/FT Bénin
   - GIABA Bénin
@@ -84,7 +84,7 @@ schema_type: Article
 
 - Un acte authentique — le certificat d’acquit de droits du 20 octobre 2016 (case 732, folio 21) — porte un décès au **10 juin 2016**, alors que la déclaration de décès de l’état civil le situe au **6 décembre 2010** : un écart de **5 ans, 6 mois et 4 jours** entre deux documents officiels.
 - La même déclaration retient une valeur de **138 300 000 FCFA** pour des immeubles, alors qu’une lettre de la banque [A.] du 5 octobre 2011 atteste **60 000 000 FCFA** de loyers annuels.
-- Une parcelle « B » du lot 488 (Gbégamey), que le jugement n° 114/14/3e CH-EP du 31 octobre 2014 dit léguée à l’héritier, est absente des registres publics : le registre municipal la porte au nom d’un tiers, l’Institut géographique national déclare ne disposer d’aucun document la concernant,suivant procès-verbal de compulsion dressé par Martin Jean D.C. GOUNADON, huissier de justice près de la Cour d’Appel et le Tribunal de Première Instance de première classe de Cotonou, le 19 décembre 2017.
+- Une parcelle « B » du lot 488 (Gbégamey), que le jugement n° 114/14/3e CH-EP du 31 octobre 2014 dit léguée à l’héritier, est absente des registres publics : le registre municipal la porte au nom d’un tiers, l’Institut géographique national déclare ne disposer d’aucun document la concernant, suivant procès-verbal de compulsion dressé par Martin Jean D.C. GOUNADON, huissier de justice près de la Cour d’Appel et le Tribunal de Première Instance de première classe de Cotonou, le 19 décembre 2017.
 
 Les contradictions sont matériellement établies par des actes officiels et authentiques, sans qu’aucune explication institutionnelle documentée n’ait, à ce jour, permis de les résoudre.
 
