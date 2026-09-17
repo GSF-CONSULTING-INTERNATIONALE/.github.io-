@@ -21,7 +21,7 @@ tags:
 description: "Une succession dont les actes officiels se contredisent, neuf institutions saisies entre 2020 et 2026, aucune décision de fond : l’anatomie des mécanismes par lesquels un dispositif LBC/FT techniquement conforme cesse de sanctionner."
 excerpt: >
   Depuis la loi n° 2024-01 du 20 février 2024, le Bénin dispose d’un cadre LBC/FT/FP techniquement aligné sur les standards du GAFI. Le maintien du suivi renforcé par le GIABA et l’examen d’un dossier successoral documenté révèlent pourtant un paradoxe : des textes conformes peuvent rester sans effet lorsque la chaîne d’application se neutralise elle-même.
-image: /upload/lbc-ft-benin-textes-conformes-hommes-defaillants-sanctions.png
+image: /uploads/lbc-ft-benin-textes-conformes-hommes-defaillants-sanctions.png
 focus_keywords:
   - LBC/FT Bénin
   - GIABA Bénin
@@ -42,6 +42,7 @@ schema_type: Article
   "@type": "Article",
   "headline": "LBC/FT au Bénin : des textes conformes, des hommes défaillants",
   "description": "Une succession dont les actes officiels se contredisent, neuf institutions saisies entre 2020 et 2026, aucune décision de fond : l’anatomie des mécanismes par lesquels un dispositif LBC/FT techniquement conforme cesse de sanctionner.",
+  "image": "https://gsfconsultinginternational.com/uploads/lbc-ft-benin-textes-conformes-hommes-defaillants-sanctions.png",
   "author": {
     "@type": "Person",
     "name": "Gilles Sixte Feliho",
@@ -53,8 +54,8 @@ schema_type: Article
     "name": "GSF Consulting International",
     "url": "https://gsfconsultinginternational.com/"
   },
-  "datePublished": "2026-09-15",
-  "dateModified": "2026-09-15",
+  "datePublished": "2026-09-17",
+  "dateModified": "2026-09-17",
   "url": "https://gsfconsultinginternational.com/analyses/lbc-ft-benin-textes-conformes-hommes-defaillants-sanctions/",
   "keywords": [
     "LBC/FT",
@@ -80,11 +81,28 @@ schema_type: Article
 
 **Thèse.** La chaîne **détection → déclaration → analyse → diffusion → enquête → poursuite → dissuasion** est intégralement écrite dans la loi. Elle s’interrompt à chaque maillon, non par absence de règle, mais par défaut d’application : quand un opérateur surveillé devient la source d’information sur l’autorité censée le contrôler, quand une alerte peut être disqualifiée sans être examinée, quand un délibéré annoncé n’est jamais notifié, quand un classement clôt un dossier sans audition, quand la supervision d’une profession assujettie ne retrouve même pas le dossier. La conformité ne se décrète pas ; elle s’administre. C’est là que se joue la souveraineté financière.
 
+<aside class="cta-inline cta-saisine" role="complementary" aria-label="Soumettre un dossier">
+  <p class="cta-eyebrow">Qualification documentaire</p>
+  <h3 class="cta-title">Vous détenez des pièces qui contredisent un acte officiel&nbsp;?</h3>
+  <p class="cta-body">
+    Écart de valorisation, discordance chronologique, mandat introuvable, acte de disposition non retrouvé&nbsp;:
+    ces signaux méritent une lecture qualifiée avant toute action contentieuse.
+    GSF Consulting International analyse les dossiers documentaires sous couvert de confidentialité professionnelle.
+  </p>
+  <a class="cta-button" href="/contact/?objet=qualification-documentaire" aria-label="Soumettre un dossier pour qualification documentaire">
+    Soumettre un dossier à l’analyse GSF
+    <span aria-hidden="true">→</span>
+  </a>
+  <p class="cta-mention">
+    Analyse préliminaire confidentielle. GSF n’exerce pas de mission de représentation contentieuse.
+  </p>
+</aside>
+
 ## 1. Le cas en trois faits
 
 - Un acte authentique — le certificat d’acquit de droits du 20 octobre 2016 (case 732, folio 21) — porte un décès au **10 juin 2016**, alors que la déclaration de décès de l’état civil le situe au **6 décembre 2010** : un écart de **5 ans, 6 mois et 4 jours** entre deux documents officiels.
 - La même déclaration retient une valeur de **138 300 000 FCFA** pour des immeubles, alors qu’une lettre de la banque [A.] du 5 octobre 2011 atteste **60 000 000 FCFA** de loyers annuels.
-- Une parcelle « B » du lot 488 (Gbégamey), que le jugement n° 114/14/3e CH-EP du 31 octobre 2014 dit léguée à l’héritier, est absente des registres publics : le registre municipal la porte au nom d’un tiers, l’Institut géographique national déclare ne disposer d’aucun document la concernant, suivant procès-verbal de compulsion dressé par Martin Jean D.C. GOUNADON, huissier de justice près de la Cour d’Appel et le Tribunal de Première Instance de première classe de Cotonou, le 19 décembre 2017.
+- Une parcelle « B » du lot 488 (Gbégamey), que le jugement n° 114/14/3e CH-EP du 31 octobre 2014 dit léguée à l’héritier, est absente des registres publics : le registre municipal la porte au nom d’un tiers, l’Institut géographique national déclare ne disposer d’aucun document la concernant, suivant procès-verbal de compulsion dressé par Martin Jean D.C. GOUNADON, huissier de justice près de la Cour d’appel et le Tribunal de première instance de première classe de Cotonou, le 19 décembre 2017.
 
 Les contradictions sont matériellement établies par des actes officiels et authentiques, sans qu’aucune explication institutionnelle documentée n’ait, à ce jour, permis de les résoudre.
 
@@ -110,6 +128,23 @@ Les contradictions sont matériellement établies par des actes officiels et aut
 | Mandat | Certificat d’acquit : déclaration « souscrite par Me Félix A. BALLEY, agissant en qualité de mandataire et au nom des héritiers » | Procès-verbal de compulsion du 12/07/2024 : **aucun mandat retrouvé** ; mandat dénié par l’héritier, héritier réservataire et légataire auquel la confidentialité notariale est opposée (selon la réclamation déontologique) | Mandat allégué par un acte authentique, jamais produit |
 | Parcelle « B » du lot 488 | Jugement du 31/10/2014 : parcelle léguée à l’héritier, présenté comme ayant « disposé » du bien | Registre de la mairie de Cotonou (PV de compulsion du 19/12/2017) : parcelle au nom d’un tiers ; réponse IGN du 21/12/2017 : « aucun document afférent » | Aucun acte de disposition au dossier ; détermination de la parcelle impossible |
 | Revenus locatifs | Lettre de la banque [A.] du 05/10/2011 : **60 000 000 FCFA de loyers annuels** | Valeur déclarée : **138 300 000 FCFA** | Rendement brut apparent **≈ 43,4 %/an**, à lire comme une **inférence économique** sous hypothèse de périmètre identique |
+
+<aside class="cta-inline cta-grille" role="complementary" aria-label="Recevoir la grille de cohérence probatoire">
+  <p class="cta-eyebrow">Outil opérationnel</p>
+  <h3 class="cta-title">La grille de qualification des contradictions documentaires</h3>
+  <p class="cta-body">
+    Écart de valorisation, rendement apparent atypique, discordance chronologique entre actes authentiques&nbsp;:
+    cette grille reprend la méthode appliquée au cas documenté, dans une version utilisable
+    par les équipes conformité, les notaires, les avocats et les auditeurs.
+  </p>
+  <a class="cta-button cta-button-secondary" href="/ressources/grille-coherence-probatoire/" aria-label="Recevoir la grille de cohérence probatoire">
+    Recevoir la grille (PDF confidentiel)
+    <span aria-hidden="true">↓</span>
+  </a>
+  <p class="cta-mention">
+    Document de travail à usage professionnel. Ne constitue pas un avis juridique.
+  </p>
+</aside>
 
 ### La cartographie des acteurs
 
@@ -226,9 +261,9 @@ Le PV n° 2 du 19 mars 2025 rapporte notamment la déclaration suivante de Me BA
 
 L’avocat Me FADE, lui, ne sera pas entendu : le bâtonnier, par lettre du 17 mars 2025, oppose au Procureur général l’article 6 alinéa 2 du Règlement n° 05/CM/UEMOA du 25 septembre 2014 pour revendiquer la consultation préalable à toute audition d’avocat.
 
-Le dossier d’observations se trouve ainsi bâti sur la seule parole d’un opérateur surveillé, à l’exclusion de celle de son contradicteur. Et les actes authentiques au dossier (PV d'huissier de justice), qui contredisent la parole du notaire sont occultés, en méconnaissance de la règle de hiérarchie des preuves. La Brigade reprend ensuite le procès d'intention du notaire et écrit que « l’objectif principal du plaingant est de faire échec à l’exécution des dispositions du testament laissé par son feu père », - ce qui n'a rien d'illégal et est au contraire expressément prévu par les textes - puis conclut que « cette décision de justice ayant autorité de la chose jugée est non assortie de recours », alors que le jugement du 31 octobre 2014 et sa signification portent expressément la mention « délai d’appel : 01 mois », et qu'un recours est pendant devant la Cour d'Appel de Cotonou. En statuant ainsi, la Brigade excède son rôle de police judiciaire.
+Le dossier d’observations se trouve ainsi bâti sur la seule parole d’un opérateur surveillé, à l’exclusion de celle de son contradicteur. Et les actes authentiques au dossier (PV d’huissier de justice), qui contredisent la parole du notaire, sont occultés, en méconnaissance de la règle de hiérarchie des preuves. La Brigade reprend ensuite le procès d’intention du notaire et écrit que « l’objectif principal du plaingant est de faire échec à l’exécution des dispositions du testament laissé par son feu père » — ce qui n’a rien d’illégal et est au contraire expressément prévu par les textes — puis conclut que « cette décision de justice ayant autorité de la chose jugée est non assortie de recours », alors que le jugement du 31 octobre 2014 et sa signification portent expressément la mention « délai d’appel : 01 mois », et qu’un recours est pendant devant la Cour d’Appel de Cotonou. En statuant ainsi, la Brigade excède son rôle de police judiciaire.
 
-La contradiction devient manifeste à propos de la parcelle « B » du lot 488. D’un côté, les observations soutiennent que l’héritier, à la lecture du testament, « est supposé détenir les documents relatifs à ladite parcelle ». De l’autre, la Brigade a adressé à la mairie de Cotonou la réquisition n° 60/2025, relancée le 27 mars 2025, afin d’obtenir, par voie de compulsion, la consultation du registre foncier relatif à cette même parcelle. Cette démarche établit à tout le moins que la détention, par l’héritier, des documents permettant de vérifier la réalité de l’acte de disposition n’était ni démontrée ni directement accessible. Elle contredit donc l’affirmation selon laquelle l’héritier aurait effectivement disposé du bien et en détiendrait les justificatifs. L’enjeu est d’autant plus sérieux que le jugement n° 114/14/3e CH-EP du 31 octobre 2014 énonce : « Que X a même déjà disposé de cet immeuble », avant d’en déduire qu’il aurait exécuté volontairement les dispositions testamentaires. Le verbe « constate » employé par le dispositif judiciaire ne constitue pas une simple hypothèse : il présente cette disposition comme un fait juridiquement établi. Or, si aucun acte de disposition n’est produit, retrouvé dans les registres ou identifié par l’enquête, cette absence prive le constat judiciaire de son support matériel apparent et constitue un élément probant majeur au soutien de la plainte pour faux en écriture publique. Elle impose, à tout le moins, d’identifier l’acte précis sur lequel le jugement s’est fondé, son auteur, sa date, son objet et son mode de conservation. Or, il est établi, par les autorités compétentes l’Institut G éographique National et la direction des affaires juridiques et du foncier de la mairie de Cotonou que le bien prédendument légué, n'existe pas.
+La contradiction devient manifeste à propos de la parcelle « B » du lot 488. D’un côté, les observations soutiennent que l’héritier, à la lecture du testament, « est supposé détenir les documents relatifs à ladite parcelle ». De l’autre, la Brigade a adressé à la mairie de Cotonou la réquisition n° 60/2025, relancée le 27 mars 2025, afin d’obtenir, par voie de compulsion, la consultation du registre foncier relatif à cette même parcelle. Cette démarche établit à tout le moins que la détention, par l’héritier, des documents permettant de vérifier la réalité de l’acte de disposition n’était ni démontrée ni directement accessible. Elle contredit donc l’affirmation selon laquelle l’héritier aurait effectivement disposé du bien et en détiendrait les justificatifs. L’enjeu est d’autant plus sérieux que le jugement n° 114/14/3e CH-EP du 31 octobre 2014 énonce : « Que X a même déjà disposé de cet immeuble », avant d’en déduire qu’il aurait exécuté volontairement les dispositions testamentaires. Le verbe « constate » employé par le dispositif judiciaire ne constitue pas une simple hypothèse : il présente cette disposition comme un fait juridiquement établi. Or, si aucun acte de disposition n’est produit, retrouvé dans les registres ou identifié par l’enquête, cette absence prive le constat judiciaire de son support matériel apparent et constitue un élément probant majeur au soutien de la plainte pour faux en écriture publique. Elle impose, à tout le moins, d’identifier l’acte précis sur lequel le jugement s’est fondé, son auteur, sa date, son objet et son mode de conservation. Or, il est établi par les autorités compétentes — l’Institut Géographique National et la direction des affaires juridiques et du foncier de la mairie de Cotonou — que le bien prétendument légué n’existe pas.
 
 ## 3. La portée pour la LBC/FT au Bénin
 
@@ -297,6 +332,22 @@ Le Bénin a fait le choix des textes : loi n° 2024-01, code du numérique, code
 Un dispositif dont la conformité technique est validée et dont l’effectivité reste nulle n’est pas en construction : il est **neutralisé dans son application**. À chaque maillon de la chaîne, l’interruption survient au même endroit — là où un fonctionnaire, un magistrat, un notaire ou un responsable institutionnel aurait dû répondre.
 
 La souveraineté financière ne se décrète pas : elle se démontre, dossier par dossier. Les textes sont prêts. Il reste les hommes.
+
+<aside class="cta-final cta-saisine" role="complementary" aria-label="Soumettre un dossier à l’analyse GSF">
+  <p class="cta-eyebrow">Passage à l’acte</p>
+  <h3 class="cta-title">La souveraineté financière se démontre, dossier par dossier.</h3>
+  <p class="cta-body">
+    Un texte conforme ne protège personne s’il n’est pas appliqué. Si vous portez un dossier documenté
+    dont la chaîne institutionnelle s’est interrompue, GSF peut en qualifier les points d’arrêt.
+  </p>
+  <a class="cta-button" href="/contact/?objet=qualification-documentaire" aria-label="Soumettre un dossier à l’analyse GSF">
+    Soumettre un dossier à l’analyse GSF
+    <span aria-hidden="true">→</span>
+  </a>
+  <p class="cta-mention">
+    Confidentialité professionnelle. Aucune promesse de résultat. Aucune représentation contentieuse.
+  </p>
+</aside>
 
 ## Annexe : pièces du dossier
 
