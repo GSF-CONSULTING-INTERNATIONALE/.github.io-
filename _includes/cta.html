@@ -1,0 +1,45 @@
+{%- comment -%}
+  Bloc d'appel à l'action (CTA) réutilisable.
+
+  Usage minimal :
+    {% include cta.html title="Titre" href="/contact/" label="Nous écrire" %}
+
+  Paramètres :
+    variant  : "inline" (au fil du texte, défaut) ou "final" (fin d'article, centré)
+    theme    : crochet CSS libre — "saisine" (défaut), "grille", ...
+    eyebrow  : surtitre court (optionnel)
+    title    : titre du bloc (obligatoire)
+    body     : paragraphe d'accroche (optionnel)
+    href     : destination du bouton (défaut : /contact/)
+    label    : libellé du bouton
+    icon     : caractère affiché après le libellé (défaut : →)
+    button   : "secondary" pour la variante de bouton en contour
+    mention  : mention légale ou avertissement sous le bouton (optionnel)
+    aria     : libellé accessible de la région (défaut : le titre)
+
+  Toute destination doit correspondre à une page réellement publiée :
+  un `href` sans page cible produit une 404 (page blanche).
+{%- endcomment -%}
+{%- assign cta_variant = include.variant | default: "inline" -%}
+{%- assign cta_theme = include.theme | default: "saisine" -%}
+{%- assign cta_href = include.href | default: "/contact/" -%}
+{%- assign cta_label = include.label | default: "Soumettre un dossier à l’analyse GSF" -%}
+{%- assign cta_icon = include.icon | default: "→" -%}
+{%- assign cta_aria = include.aria | default: include.title -%}
+<aside class="cta-{{ cta_variant }} cta-{{ cta_theme }}" aria-label="{{ cta_aria | strip_html | escape }}">
+  {%- if include.eyebrow %}
+  <p class="cta-eyebrow">{{ include.eyebrow }}</p>
+  {%- endif %}
+  <h3 class="cta-title">{{ include.title }}</h3>
+  {%- if include.body %}
+  <p class="cta-body">{{ include.body }}</p>
+  {%- endif %}
+  <p class="cta-action">
+    <a class="cta-button{% if include.button == 'secondary' %} cta-button-secondary{% endif %}" href="{{ cta_href | relative_url }}">
+      {{ cta_label }}<span aria-hidden="true">{{ cta_icon }}</span>
+    </a>
+  </p>
+  {%- if include.mention %}
+  <p class="cta-mention">{{ include.mention }}</p>
+  {%- endif %}
+</aside>

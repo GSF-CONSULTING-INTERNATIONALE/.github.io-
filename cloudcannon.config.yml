@@ -55,3 +55,63 @@ collections_config:
 
 # On supprime la section "data_config" car nous n'utilisons plus de JSON pour le blog.
 # Cela simplifie grandement la gestion.
+# ======================================================
+# SNIPPETS — blocs insérables depuis l'éditeur CloudCannon
+# Évite de recoller du HTML brut dans les articles : le CTA devient
+# un composant unique (_includes/cta.html), stylé par css/style.css.
+# ======================================================
+_snippets_imports:
+  jekyll: true
+
+_snippets:
+  cta_gsf:
+    template: jekyll_include
+    inline: false
+    definitions:
+      include: cta.html
+    preview:
+      text:
+        - key: title
+        - "Bloc CTA GSF"
+      subtext:
+        - key: label
+      icon: ads_click
+    _inputs:
+      variant:
+        type: select
+        label: "Emplacement"
+        options:
+          values: ["inline", "final"]
+        comment: "inline : au fil du texte — final : bloc de fin d'article"
+      theme:
+        type: select
+        label: "Thème"
+        options:
+          values: ["saisine", "grille"]
+      button:
+        type: select
+        label: "Style du bouton"
+        options:
+          values: ["", "secondary"]
+      eyebrow:
+        type: text
+        label: "Surtitre"
+      title:
+        type: text
+        label: "Titre"
+      body:
+        type: textarea
+        label: "Accroche"
+      href:
+        type: text
+        label: "Destination"
+        comment: "La page cible doit exister, sinon le CTA renvoie sur une 404."
+      label:
+        type: text
+        label: "Libellé du bouton"
+      mention:
+        type: textarea
+        label: "Mention sous le bouton"
+      aria:
+        type: text
+        label: "Libellé accessible"

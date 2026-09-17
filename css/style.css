@@ -300,3 +300,119 @@ nav.scrolled {
         margin: 1.5rem 0;
     }
 }
+
+/* ======================================================
+   CTA — blocs d'appel à l'action
+   Markup : _includes/cta.html
+   Variantes : .cta-inline (au fil du texte) / .cta-final (fin d'article)
+   .cta-saisine, .cta-grille : crochets de ciblage laissés libres
+   ====================================================== */
+
+.cta-inline,
+.cta-final {
+    margin: 3rem 0;
+    padding: 28px 32px;
+    background: rgba(15, 23, 42, 0.6);
+    border: 1px solid rgba(6, 182, 212, 0.2);
+    border-left: 4px solid #06b6d4;
+    border-radius: 0 12px 12px 0;
+}
+
+.cta-final {
+    margin-top: 3.5rem;
+    padding: 40px 32px;
+    text-align: center;
+    background: rgba(6, 182, 212, 0.06);
+    border-left: 1px solid rgba(6, 182, 212, 0.2);
+    border-top: 4px solid #06b6d4;
+    border-radius: 12px;
+}
+
+.cta-eyebrow {
+    margin: 0 0 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #06b6d4;
+}
+
+.cta-title {
+    margin: 0 0 0.9rem;
+    font-family: 'Syne', sans-serif;
+    font-size: 1.35rem;
+    font-weight: 800;
+    line-height: 1.3;
+    color: #ffffff;
+}
+
+.cta-body {
+    margin: 0 0 1.5rem;
+    color: rgba(255, 255, 255, 0.88);
+    line-height: 1.7;
+}
+
+.cta-action {
+    margin: 0;
+}
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6em;
+    padding: 14px 26px;
+    background: #06b6d4;
+    color: #050505;
+    border: 1px solid #06b6d4;
+    border-radius: 6px;
+    font-weight: 700;
+    line-height: 1.2;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.cta-button:hover,
+.cta-button:focus-visible {
+    background: transparent;
+    color: #06b6d4;
+}
+
+.cta-button:focus-visible {
+    outline: 2px solid #06b6d4;
+    outline-offset: 3px;
+}
+
+.cta-button-secondary {
+    background: transparent;
+    color: #06b6d4;
+}
+
+.cta-button-secondary:hover,
+.cta-button-secondary:focus-visible {
+    background: #06b6d4;
+    color: #050505;
+}
+
+.cta-mention {
+    margin: 1rem 0 0;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 768px) {
+    .cta-inline,
+    .cta-final {
+        margin: 2rem 0;
+        padding: 22px 20px;
+    }
+
+    .cta-title {
+        font-size: 1.15rem;
+    }
+
+    .cta-button {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+}

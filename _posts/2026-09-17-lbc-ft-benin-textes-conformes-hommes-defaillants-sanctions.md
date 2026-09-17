@@ -81,22 +81,17 @@ schema_type: Article
 
 **Thèse.** La chaîne **détection → déclaration → analyse → diffusion → enquête → poursuite → dissuasion** est intégralement écrite dans la loi. Elle s’interrompt à chaque maillon, non par absence de règle, mais par défaut d’application : quand un opérateur surveillé devient la source d’information sur l’autorité censée le contrôler, quand une alerte peut être disqualifiée sans être examinée, quand un délibéré annoncé n’est jamais notifié, quand un classement clôt un dossier sans audition, quand la supervision d’une profession assujettie ne retrouve même pas le dossier. La conformité ne se décrète pas ; elle s’administre. C’est là que se joue la souveraineté financière.
 
-<aside class="cta-inline cta-saisine" role="complementary" aria-label="Soumettre un dossier">
-  <p class="cta-eyebrow">Qualification documentaire</p>
-  <h3 class="cta-title">Vous détenez des pièces qui contredisent un acte officiel&nbsp;?</h3>
-  <p class="cta-body">
-    Écart de valorisation, discordance chronologique, mandat introuvable, acte de disposition non retrouvé&nbsp;:
-    ces signaux méritent une lecture qualifiée avant toute action contentieuse.
-    GSF Consulting International analyse les dossiers documentaires sous couvert de confidentialité professionnelle.
-  </p>
-  <a class="cta-button" href="/contact/?objet=qualification-documentaire" aria-label="Soumettre un dossier pour qualification documentaire">
-    Soumettre un dossier à l’analyse GSF
-    <span aria-hidden="true">→</span>
-  </a>
-  <p class="cta-mention">
-    Analyse préliminaire confidentielle. GSF n’exerce pas de mission de représentation contentieuse.
-  </p>
-</aside>
+{% include cta.html
+   variant="inline"
+   theme="saisine"
+   eyebrow="Qualification documentaire"
+   title="Vous détenez des pièces qui contredisent un acte officiel&nbsp;?"
+   body="Écart de valorisation, discordance chronologique, mandat introuvable, acte de disposition non retrouvé&nbsp;: ces signaux méritent une lecture qualifiée avant toute action contentieuse. GSF Consulting International analyse les dossiers documentaires sous couvert de confidentialité professionnelle."
+   href="/contact/?objet=qualification-documentaire"
+   label="Soumettre un dossier à l’analyse GSF"
+   mention="Analyse préliminaire confidentielle. GSF n’exerce pas de mission de représentation contentieuse."
+   aria="Soumettre un dossier pour qualification documentaire"
+%}
 
 ## 1. Le cas en trois faits
 
@@ -129,22 +124,18 @@ Les contradictions sont matériellement établies par des actes officiels et aut
 | Parcelle « B » du lot 488 | Jugement du 31/10/2014 : parcelle léguée à l’héritier, présenté comme ayant « disposé » du bien | Registre de la mairie de Cotonou (PV de compulsion du 19/12/2017) : parcelle au nom d’un tiers ; réponse IGN du 21/12/2017 : « aucun document afférent » | Aucun acte de disposition au dossier ; détermination de la parcelle impossible |
 | Revenus locatifs | Lettre de la banque [A.] du 05/10/2011 : **60 000 000 FCFA de loyers annuels** | Valeur déclarée : **138 300 000 FCFA** | Rendement brut apparent **≈ 43,4 %/an**, à lire comme une **inférence économique** sous hypothèse de périmètre identique |
 
-<aside class="cta-inline cta-grille" role="complementary" aria-label="Recevoir la grille de cohérence probatoire">
-  <p class="cta-eyebrow">Outil opérationnel</p>
-  <h3 class="cta-title">La grille de qualification des contradictions documentaires</h3>
-  <p class="cta-body">
-    Écart de valorisation, rendement apparent atypique, discordance chronologique entre actes authentiques&nbsp;:
-    cette grille reprend la méthode appliquée au cas documenté, dans une version utilisable
-    par les équipes conformité, les notaires, les avocats et les auditeurs.
-  </p>
-  <a class="cta-button cta-button-secondary" href="/ressources/grille-coherence-probatoire/" aria-label="Recevoir la grille de cohérence probatoire">
-    Recevoir la grille (PDF confidentiel)
-    <span aria-hidden="true">↓</span>
-  </a>
-  <p class="cta-mention">
-    Document de travail à usage professionnel. Ne constitue pas un avis juridique.
-  </p>
-</aside>
+{% include cta.html
+   variant="inline"
+   theme="grille"
+   button="secondary"
+   eyebrow="Outil opérationnel"
+   title="La grille de qualification des contradictions documentaires"
+   body="Écart de valorisation, rendement apparent atypique, discordance chronologique entre actes authentiques&nbsp;: cette grille reprend la méthode appliquée au cas documenté, dans une version utilisable par les équipes conformité, les notaires, les avocats et les auditeurs."
+   href="/ressources/grille-coherence-probatoire/"
+   label="Recevoir la grille (PDF confidentiel)"
+   mention="Document de travail à usage professionnel. Ne constitue pas un avis juridique."
+   aria="Recevoir la grille de cohérence probatoire"
+%}
 
 ### La cartographie des acteurs
 
@@ -333,21 +324,17 @@ Un dispositif dont la conformité technique est validée et dont l’effectivit�
 
 La souveraineté financière ne se décrète pas : elle se démontre, dossier par dossier. Les textes sont prêts. Il reste les hommes.
 
-<aside class="cta-final cta-saisine" role="complementary" aria-label="Soumettre un dossier à l’analyse GSF">
-  <p class="cta-eyebrow">Passage à l’acte</p>
-  <h3 class="cta-title">La souveraineté financière se démontre, dossier par dossier.</h3>
-  <p class="cta-body">
-    Un texte conforme ne protège personne s’il n’est pas appliqué. Si vous portez un dossier documenté
-    dont la chaîne institutionnelle s’est interrompue, GSF peut en qualifier les points d’arrêt.
-  </p>
-  <a class="cta-button" href="/contact/?objet=qualification-documentaire" aria-label="Soumettre un dossier à l’analyse GSF">
-    Soumettre un dossier à l’analyse GSF
-    <span aria-hidden="true">→</span>
-  </a>
-  <p class="cta-mention">
-    Confidentialité professionnelle. Aucune promesse de résultat. Aucune représentation contentieuse.
-  </p>
-</aside>
+{% include cta.html
+   variant="final"
+   theme="saisine"
+   eyebrow="Passage à l’acte"
+   title="La souveraineté financière se démontre, dossier par dossier."
+   body="Un texte conforme ne protège personne s’il n’est pas appliqué. Si vous portez un dossier documenté dont la chaîne institutionnelle s’est interrompue, GSF peut en qualifier les points d’arrêt."
+   href="/contact/?objet=qualification-documentaire"
+   label="Soumettre un dossier à l’analyse GSF"
+   mention="Confidentialité professionnelle. Aucune promesse de résultat. Aucune représentation contentieuse."
+   aria="Soumettre un dossier à l’analyse GSF"
+%}
 
 ## Annexe : pièces du dossier
 
