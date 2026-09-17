@@ -21,6 +21,7 @@ tags:
 description: "Une succession dont les actes officiels se contredisent, neuf institutions saisies entre 2020 et 2026, aucune décision de fond : l’anatomie des mécanismes par lesquels un dispositif LBC/FT techniquement conforme cesse de sanctionner."
 excerpt: >
   Depuis la loi n° 2024-01 du 20 février 2024, le Bénin dispose d’un cadre LBC/FT/FP techniquement aligné sur les standards du GAFI. Le maintien du suivi renforcé par le GIABA et l’examen d’un dossier successoral documenté révèlent pourtant un paradoxe : des textes conformes peuvent rester sans effet lorsque la chaîne d’application se neutralise elle-même.
+  image: /upload/lbc-ft-benin-textes-conformes-hommes-defaillants-sanctions.png
 focus_keywords:
   - LBC/FT Bénin
   - GIABA Bénin
