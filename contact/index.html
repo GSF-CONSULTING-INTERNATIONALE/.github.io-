@@ -1,0 +1,111 @@
+---
+layout: default
+title: "Contact — GSF Consulting International"
+permalink: /contact/
+description: "Soumettre un dossier documentaire, demander un diagnostic de conformité ou un échange avec Gilles Sixte Feliho. Traitement confidentiel."
+excerpt: "Soumettre un dossier documentaire, demander un diagnostic de conformité ou un échange avec Gilles Sixte Feliho. Traitement confidentiel."
+---
+
+<main class="legal-page">
+
+    <p class="section-kicker">GSF Consulting International</p>
+    <h1>Contact</h1>
+
+    <p id="contact-intro">
+        Pour toute demande de conseil, de diagnostic, d'audit, de qualification documentaire
+        ou d'intervention, vous pouvez écrire directement à Gilles Sixte Feliho.
+        Les demandes sont traitées de manière confidentielle.
+    </p>
+
+    <div class="glass-card legal-card">
+        <h2 style="margin-top: 0;">Écrire au cabinet</h2>
+        <p>
+            L'échange se fait par courriel, afin que chaque demande reste tracée et que les
+            pièces transmises restent sous le contrôle de leur expéditeur.
+        </p>
+        <p class="case-cta">
+            <a id="contact-mailto" class="cta-button" href="mailto:gilles.feliho@gsfconsultinginternational.com">
+                Écrire à GSF Consulting International<span aria-hidden="true">→</span>
+            </a>
+        </p>
+        <p class="cta-mention">
+            <a href="mailto:gilles.feliho@gsfconsultinginternational.com">gilles.feliho@gsfconsultinginternational.com</a>
+        </p>
+    </div>
+
+    <h2>Ce qu'il est utile de préciser</h2>
+    <ul>
+        <li>La nature de la demande : qualification documentaire, conformité LBC/FT, gouvernance de l'IA, recouvrement, OHADA.</li>
+        <li>Le contexte : juridiction concernée, institutions déjà saisies, état d'avancement.</li>
+        <li>Les pièces disponibles : actes officiels, correspondances, décisions, procès-verbaux.</li>
+        <li>L'échéance éventuelle : délai de recours, audience, date de remise.</li>
+    </ul>
+
+    <h2>Confidentialité et périmètre</h2>
+    <p>
+        Les éléments transmis sont traités sous couvert de confidentialité professionnelle.
+        GSF Consulting International intervient en qualité de conseil : le cabinet n'exerce
+        pas de mission de représentation contentieuse et ne formule aucune promesse de résultat.
+        L'analyse préliminaire ne constitue pas un avis juridique au sens d'une consultation formalisée.
+    </p>
+    <p>
+        Le traitement des données transmises est décrit dans la
+        <a href="/politique-de-confidentialite/">politique de confidentialité</a>.
+    </p>
+
+    <h2>Poursuivre la lecture</h2>
+    <ul>
+        <li><a href="/analyses/">Analyses &amp; publications</a></li>
+        <li><a href="/audit-souverainete-cognitive/">Audit de souveraineté cognitive (ASC™)</a></li>
+        <li><a href="/a-propos/">Le cabinet</a></li>
+        <li><a href="/gilles-feliho/">Gilles Sixte Feliho</a></li>
+    </ul>
+
+</main>
+
+<script>
+/* Pré-remplit l'objet du courriel à partir de ?objet=… (CTA des analyses).
+   Aucune dépendance : si le paramètre est absent ou inconnu, le lien mailto
+   reste valable avec son objet générique. */
+(function () {
+    var OBJETS = {
+        'qualification-documentaire': {
+            sujet: 'Qualification documentaire — soumission de dossier',
+            intro: 'Vous souhaitez soumettre un dossier documentaire à qualification. Précisez la nature des pièces et les contradictions constatées ; l’analyse préliminaire est confidentielle.'
+        },
+        'grille-coherence-probatoire': {
+            sujet: 'Demande — grille de cohérence probatoire',
+            intro: 'Vous demandez la grille de cohérence probatoire. Indiquez votre qualité professionnelle et le cadre d’usage envisagé.'
+        },
+        'audit-souverainete-cognitive': {
+            sujet: 'Audit de souveraineté cognitive (ASC™) — prise de contact',
+            intro: 'Vous souhaitez échanger sur un audit de souveraineté cognitive.'
+        },
+        'conformite': {
+            sujet: 'Conformité LBC/FT — prise de contact',
+            intro: 'Vous souhaitez échanger sur un sujet de conformité LBC/FT.'
+        }
+    };
+
+    var params = new URLSearchParams(window.location.search);
+    var cle = params.get('objet');
+    if (!cle || !Object.prototype.hasOwnProperty.call(OBJETS, cle)) { return; }
+
+    var choix = OBJETS[cle];
+    var lien = document.getElementById('contact-mailto');
+    if (lien) {
+        lien.href = 'mailto:gilles.feliho@gsfconsultinginternational.com'
+            + '?subject=' + encodeURIComponent(choix.sujet);
+    }
+
+    var intro = document.getElementById('contact-intro');
+    if (intro) {
+        var rappel = document.createElement('p');
+        rappel.className = 'contact-objet';
+        var fort = document.createElement('strong');
+        fort.textContent = choix.intro;
+        rappel.appendChild(fort);
+        intro.parentNode.insertBefore(rappel, intro);
+    }
+})();
+</script>

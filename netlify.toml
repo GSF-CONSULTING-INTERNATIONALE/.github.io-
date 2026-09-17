@@ -85,3 +85,10 @@
     X-XSS-Protection = "1; mode=block"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
+
+# --- /blog/ n'a jamais existé : les analyses sont sous /analyses/ ---
+[[redirects]]
+  from = "/blog/*"
+  to = "/analyses/"
+  status = 301
+  force = true
