@@ -23,7 +23,7 @@ tags:
 description: "An estate matter whose official documents contradict one another, nine institutions seized between 2020 and 2026, no decision on the merits: the anatomy of the mechanisms by which a technically compliant AML/CFT system ceases to sanction."
 excerpt: >
   Since Law No. 2024-01 of 20 February 2024, Benin has had an AML/CFT/CPF framework technically aligned with FATF standards. The continuation of enhanced follow-up by GIABA and the examination of a documented succession case nevertheless reveal a paradox: compliant texts may remain ineffective when the enforcement chain neutralizes itself.
-image: /uploads/lbc-ft-benin-textes-conformes-hommes-defaillants-sanctions.png
+image: /uploads/aml-cft-benin-compliant-texts-failing-men.png
 focus_keywords:
   - AML/CFT Benin
   - GIABA Benin
@@ -44,7 +44,7 @@ schema_type: Article
   "@type": "Article",
   "headline": "AML/CFT in Benin: compliant texts, failing men",
   "description": "An estate matter whose official documents contradict one another, nine institutions seized between 2020 and 2026, no decision on the merits: the anatomy of the mechanisms by which a technically compliant AML/CFT system ceases to sanction.",
-  "image": "https://gsfconsultinginternational.com/uploads/lbc-ft-benin-textes-conformes-hommes-defaillants-sanctions.png",
+  "image": "https://gsfconsultinginternational.com/uploads/aml-cft-benin-compliant-texts-failing-men.png",
   "author": {
     "@type": "Person",
     "name": "Gilles Sixte Feliho",
