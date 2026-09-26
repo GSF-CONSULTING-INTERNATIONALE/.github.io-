@@ -1,0 +1,53 @@
+{%- comment -%}
+  Vidéo intégrée réutilisable (YouTube ou Vimeo), responsive 16:9.
+
+  Usage minimal :
+    {% include video.html url="https://www.youtube.com/watch?v=3IC5DFtXiKA" title="Titre de la vidéo" %}
+
+  Paramètres :
+    url      : lien de la vidéo tel que copié depuis YouTube ou Vimeo
+               (youtube.com/watch?v=…, youtu.be/…, youtube.com/shorts/…, vimeo.com/…)
+    id       : identifiant seul, à la place de `url` (ex. "3IC5DFtXiKA")
+    provider : "youtube" (défaut) ou "vimeo" — déduit de `url` si fourni
+    title    : titre de la vidéo (obligatoire : lu par les lecteurs d'écran)
+    caption  : légende affichée sous la vidéo (optionnel)
+    start    : démarrage à N secondes (optionnel, ex. "90")
+
+  YouTube est servi depuis youtube-nocookie.com : aucun cookie n'est déposé
+  tant que le visiteur ne lance pas la lecture.
+{%- endcomment -%}
+{%- assign video_url = include.url | strip -%}
+{%- assign video_provider = include.provider | default: "youtube" -%}
+{%- assign video_id = include.id | strip -%}
+{%- if video_url != "" -%}
+  {%- if video_url contains "vimeo.com" -%}
+    {%- assign video_provider = "vimeo" -%}
+    {%- assign video_id = video_url | split: "?" | first | split: "#" | first | split: "/" | last -%}
+  {%- else -%}
+    {%- assign video_provider = "youtube" -%}
+    {%- if video_url contains "v=" -%}
+      {%- assign video_id = video_url | split: "v=" | last -%}
+    {%- else -%}
+      {%- assign video_id = video_url | split: "?" | first | split: "/" | last -%}
+    {%- endif -%}
+    {%- assign video_id = video_id | split: "&" | first | split: "#" | first -%}
+  {%- endif -%}
+{%- endif -%}
+{%- assign video_title = include.title | default: "Vidéo" -%}
+{%- if video_provider == "vimeo" -%}
+  {%- capture video_src %}https://player.vimeo.com/video/{{ video_id }}?dnt=1{% if include.start %}#t={{ include.start }}s{% endif %}{% endcapture -%}
+  {%- capture video_link %}https://vimeo.com/{{ video_id }}{% endcapture -%}
+  {%- assign video_name = "Vimeo" -%}
+{%- else -%}
+  {%- capture video_src %}https://www.youtube-nocookie.com/embed/{{ video_id }}?rel=0{% if include.start %}&amp;start={{ include.start }}{% endif %}{% endcapture -%}
+  {%- capture video_link %}https://www.youtube.com/watch?v={{ video_id }}{% endcapture -%}
+  {%- assign video_name = "YouTube" -%}
+{%- endif -%}
+{%- comment -%}
+  Balisage sans indentation : avec parse_block_html, kramdown lit toute ligne
+  indentée de 4 espaces comme un bloc de code et afficherait l'iframe en texte.
+{%- endcomment -%}
+<figure class="video-embed">
+<div class="video-frame"><iframe src="{{ video_src }}" title="{{ video_title | strip_html | escape }}" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe></div>
+<figcaption class="video-caption" markdown="span">{% if include.caption %}{{ include.caption }} · {% endif %}<a href="{{ video_link }}" target="_blank" rel="noopener">Voir sur {{ video_name }}</a></figcaption>
+</figure>
