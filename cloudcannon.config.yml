@@ -115,3 +115,31 @@ _snippets:
       aria:
         type: text
         label: "Libellé accessible"
+
+  video_gsf:
+    template: jekyll_include
+    inline: false
+    definitions:
+      include: video.html
+    preview:
+      text:
+        - key: title
+        - "Vidéo intégrée"
+      subtext:
+        - key: url
+      icon: smart_display
+    _inputs:
+      url:
+        type: url
+        label: "Lien de la vidéo"
+        comment: "Coller le lien YouTube ou Vimeo tel quel (youtube.com/watch?v=…, youtu.be/…, vimeo.com/…)."
+      title:
+        type: text
+        label: "Titre de la vidéo"
+        comment: "Obligatoire : lu par les lecteurs d'écran."
+      caption:
+        type: textarea
+        label: "Légende"
+      start:
+        type: number
+        label: "Démarrer à (secondes)"
