@@ -43,17 +43,11 @@
   {%- capture video_link %}https://www.youtube.com/watch?v={{ video_id }}{% endcapture -%}
   {%- assign video_name = "YouTube" -%}
 {%- endif -%}
+{%- comment -%}
+  Balisage sans indentation : avec parse_block_html, kramdown lit toute ligne
+  indentée de 4 espaces comme un bloc de code et afficherait l'iframe en texte.
+{%- endcomment -%}
 <figure class="video-embed">
-  <div class="video-frame">
-    <iframe src="{{ video_src }}"
-            title="{{ video_title | strip_html | escape }}"
-            loading="lazy"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
-            allowfullscreen></iframe>
-  </div>
-  <figcaption class="video-caption">
-    {%- if include.caption %}{{ include.caption }} · {% endif -%}
-    <a href="{{ video_link }}" target="_blank" rel="noopener">Voir sur {{ video_name }}</a>
-  </figcaption>
+<div class="video-frame"><iframe src="{{ video_src }}" title="{{ video_title | strip_html | escape }}" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe></div>
+<figcaption class="video-caption" markdown="span">{% if include.caption %}{{ include.caption }} · {% endif %}<a href="{{ video_link }}" target="_blank" rel="noopener">Voir sur {{ video_name }}</a></figcaption>
 </figure>
