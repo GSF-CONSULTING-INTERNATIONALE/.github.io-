@@ -18,6 +18,7 @@ tags:
   - AI Act
   - Conseil de l’Europe
   - Union africaine
+image: /uploads/ia-prend-de-vitesse-etat-souverainete-publique.png
 excerpt: >
   Avec les agents d’IA capables d’agir sans validation humaine à chaque étape, la question n’est plus seulement la fiabilité d’une réponse. Elle devient celle de la capacité d’un État à savoir ce qu’un système fait, à l’interrompre et à établir une responsabilité lorsqu’un dommage survient.
 focus_keywords:
@@ -93,15 +94,15 @@ Sans ces moyens, la conformité devient déclarative. Le fournisseur affirme que
 
 ## Les leviers dont disposent réellement les États
 
-Le premier levier est celui de l’accès au marché. Les autorités peuvent imposer des exigences de documentation, de transparence, d’évaluation et de signalement avant ou après le déploiement d’un système sensible. Cette intervention doit être proportionnée au risque, mais elle doit être vérifiable.
+### Matrice des leviers : de la règle écrite à la capacité de contrôle
 
-Le deuxième levier est la commande publique. Un État peut exiger, dans ses contrats, des journaux d’activité, une localisation et une gouvernance claires des données, un droit d’audit, des tests de sécurité, des procédures de rappel et une capacité d’arrêt d’urgence. Il peut également interdire qu’un agent dispose par défaut de pouvoirs irréversibles : transfert de fonds, modification d’un registre, décision administrative individuelle ou accès permanent à une infrastructure critique.
-
-Le troisième levier est l’architecture technique. La supervision humaine ne doit pas se réduire à la présence symbolique d’un agent devant un écran. Elle doit comprendre des limites d’autorisation, une séparation des privilèges, une authentification forte, des journaux inaltérables, des alertes, des environnements de test et un mécanisme d’arrêt indépendant du système contrôlé.
-
-Le quatrième levier est la capacité nationale d’évaluation. Les États n’ont pas besoin de reproduire immédiatement les plus grands laboratoires privés, mais ils doivent disposer d’équipes capables de tester les systèmes utilisés sur leur territoire. Cette capacité peut être mutualisée au niveau régional, universitaire ou interétatique.
-
-Le cinquième levier est la concurrence. Lorsqu’un seul fournisseur contrôle le modèle, le cloud, les interfaces et les données d’usage, l’administration devient captive. La politique de concurrence et la régulation des infrastructures numériques deviennent alors des instruments de souveraineté, au même titre que les règles de sécurité.
+| Levier | Mode d’action | Exigences concrètes |
+|---|---|---|
+| **Accès au marché** | Imposer des exigences avant ou après le déploiement d’un système sensible | Documentation, transparence, évaluation et signalement ; une intervention proportionnée au risque, mais vérifiable |
+| **Commande publique** | Fixer les conditions d’usage dans les contrats de l’État | Journaux d’activité, localisation et gouvernance claires des données, droit d’audit, tests de sécurité, procédures de rappel, capacité d’arrêt d’urgence ; aucun pouvoir irréversible par défaut pour un agent (transfert de fonds, modification d’un registre, décision administrative individuelle, accès permanent à une infrastructure critique) |
+| **Architecture technique** | Rendre la supervision humaine effective, et non symbolique | Limites d’autorisation, séparation des privilèges, authentification forte, journaux inaltérables, alertes, environnements de test, mécanisme d’arrêt indépendant du système contrôlé |
+| **Capacité nationale d’évaluation** | Disposer d’équipes capables de tester les systèmes utilisés sur le territoire | Sans reproduire immédiatement les plus grands laboratoires privés ; capacité mutualisable au niveau régional, universitaire ou interétatique |
+| **Concurrence** | Éviter la captivité face à un fournisseur qui contrôle le modèle, le cloud, les interfaces et les données d’usage | Politique de concurrence et régulation des infrastructures numériques, instruments de souveraineté au même titre que les règles de sécurité |
 
 ## En Afrique, la souveraineté passe par la capacité d’agir
 
