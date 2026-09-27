@@ -18,6 +18,7 @@ tags:
   - LCB-FT
   - Arbitrage
   - Legal tech
+image: /uploads/ia-juridique-proprietaire-souverainete-cognitive-ohada.png
 excerpt: >
   Kirkland & Ellis et Latham & Watkins investissent dans leur propre IA juridique. Quels enseignements pour les cabinets, banques et acteurs OHADA en Afrique francophone ?
 focus_keywords:
