@@ -66,6 +66,7 @@
         sub.textContent=c?c.t:''; sub.style.opacity=c?1:0;
         seekEl.value=Math.round(t/T.total*1000); time.textContent=fmt(t)+' / '+fmt(T.total);
       }
+      root.__mxSeek=seek; /* utilisé par _motion-src/render.js pour l'export MP4 */
       var raf=0, begun=false;
       function loop(){seek(audio.currentTime); raf=requestAnimationFrame(loop)}
       function setBtn(playing){pp.textContent=playing?'❚❚':'▶'; pp.setAttribute('aria-label',playing?'Pause':'Lecture')}
