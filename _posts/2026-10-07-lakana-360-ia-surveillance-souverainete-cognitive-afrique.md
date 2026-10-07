@@ -43,6 +43,44 @@ Le cas **Lakana 360**, présenté par Anthropic dans son rapport de septembre 20
 
 Ces éléments proviennent d’un rapport de sécurité publié par un fournisseur d’IA. Ils doivent donc être présentés comme des faits rapportés et non comme des constatations judiciaires définitives. Ils n’en soulèvent pas moins une question majeure pour les États, les opérateurs télécoms, les banques et les fintechs africaines : **comment construire une souveraineté numérique qui protège réellement la décision publique et les droits fondamentaux ?**
 
+## L’essentiel en motion design
+
+Cette animation commentée de 2.6 minutes remplace l’infographie traditionnelle : elle suit le raisonnement de l’analyse, du cas rapporté jusqu’aux six verbes de la souveraineté cognitive. Le son est nécessaire : lancez la lecture pour entendre la voix-off ; les sous-titres sont activés par défaut.
+
+{% include motion-design.html
+   src="/uploads/motion/lakana-360"
+   title="Lakana 360 : l’IA de surveillance et la souveraineté cognitive africaine — motion design commenté"
+   caption="Motion design GSF Consulting International (2 min 35), voix de synthèse. Les faits relatifs à Lakana 360 sont ceux rapportés par Anthropic [1]."
+%}
+
+<details class="mx-transcript" markdown="0">
+<summary>Lire la transcription de l’animation</summary>
+<ol>
+  <li>Septembre 2026 : dans un rapport sur les usages malveillants de l'IA, Anthropic décrit une plateforme de surveillance baptisée Lakana 360.</li>
+  <li>Selon ce rapport, elle aurait été conçue pour le service de renseignement de l'État malien, avec l'assistance de Claude.</li>
+  <li>Elle traiterait les données des trois opérateurs mobiles du pays, soit environ 25 millions de cartes SIM.</li>
+  <li>Appels, messages, voix, localisation : le rapport évoque aussi la détection des VPN et le rapprochement avec des registres biométriques.</li>
+  <li>Surtout, la génération d'un dossier sur un numéro n'exigerait pas systématiquement de procédure judiciaire, et certaines données seraient conservées sans limite de durée.</li>
+  <li>Attention : ce sont des faits rapportés par un fournisseur d'IA, non des constatations judiciaires définitives. Ils appellent des sources indépendantes.</li>
+  <li>Une infrastructure nationale n'est pas forcément souveraine. Il faut distinguer trois notions.</li>
+  <li>La localisation technique : où le système est hébergé.</li>
+  <li>La souveraineté numérique : maîtriser les infrastructures, les données, les prestataires et les accès.</li>
+  <li>La souveraineté cognitive : comprendre, contrôler et contester les mécanismes algorithmiques qui influencent une décision.</li>
+  <li>L'IA transforme des volumes de données en alertes et en profils. Cinq risques en découlent.</li>
+  <li>Le faux positif : une alerte n'est pas une preuve. Le profilage généralisé : des personnes non suspectées deviennent des objets d'analyse permanents.</li>
+  <li>Le contournement judiciaire, l'opacité institutionnelle, et la dépendance critique : suspendre un compte ne neutralise pas un logiciel déjà déployé localement.</li>
+  <li>Une IA de surveillance légitime suppose un cadre minimal.</li>
+  <li>Une finalité légale précise, une autorisation indépendante, une séparation des pouvoirs techniques, une journalisation inviolable.</li>
+  <li>Une conservation limitée, un audit indépendant, un recours effectif, et un arrêt d'urgence réellement indépendant.</li>
+  <li>Les banques et les fintechs sont concernées : KYC, détection de fraude et lutte contre le blanchiment croisent elles aussi des données et produisent des scores.</li>
+  <li>Une alerte n'est pas une condamnation. Un score de risque n'est pas une preuve.</li>
+  <li>La doctrine tient en six verbes : localiser, sécuriser, tracer, limiter, auditer, responsabiliser.</li>
+  <li>La souveraineté ne se mesure pas à la puissance de surveillance, mais à la capacité de la gouverner.</li>
+  <li>Qui autorise ? Qui vérifie ? Qui peut l'arrêter ? Et qui répond des conséquences ?</li>
+  <li>Analyse complète de GSF Consulting International.</li>
+</ol>
+</details>
+
 ## Lakana 360 : ce que rapporte la source principale
 
 Dans son rapport, Anthropic affirme avoir identifié une opération liée à la conception d’une plateforme appelée Lakana 360. Le système aurait été développé avec l’assistance de Claude, tandis que son déploiement final aurait reposé sur une architecture locale et des modèles exécutés sur site. Le rapport précise que les mesures prises contre le compte utilisé sur Claude n’ont pas permis, à elles seules, de désactiver le produit déployé localement. [1]

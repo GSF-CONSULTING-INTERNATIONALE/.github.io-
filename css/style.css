@@ -459,3 +459,95 @@ nav.scrolled {
         margin: 2rem 0;
     }
 }
+
+/* ======================================================
+   MOTION DESIGN COMMENTÉ — animation HTML + voix-off
+   Markup : _includes/motion-design.html
+   Scènes : uploads/motion/<nom>/scenes.html (sources : _motion-src/<nom>/)
+   ====================================================== */
+
+.mx { margin: 2.5rem 0; }
+
+.mx-frame {
+    container-type: inline-size;
+    position: relative;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: #050d1f;
+    border: 1px solid rgba(6, 182, 212, 0.25);
+    border-radius: 12px;
+}
+
+.mx-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1280px;
+    height: 720px;
+    transform-origin: 0 0;
+    background: radial-gradient(ellipse at 25% 15%, #12306b 0%, #0a1f44 45%, #050d1f 100%);
+    color: #f8fafc;
+    font-family: 'Space Grotesk', system-ui, sans-serif;
+}
+
+.mx-canvas * { box-sizing: border-box; }
+.mx-scene { position: absolute; inset: 0; opacity: 0; pointer-events: none; }
+.mx-el { position: absolute; opacity: 0; }
+.mx .c { color: #22d3ee; }
+.mx .r { color: #f87171; }
+
+.mx-tag { font-size: 20px; letter-spacing: .14em; text-transform: uppercase; color: #d4af37; font-weight: 700; }
+.mx-huge { font-family: 'Syne', sans-serif; font-size: 118px; font-weight: 800; line-height: 1; white-space: nowrap; }
+.mx-big { font-family: 'Syne', sans-serif; font-size: 64px; font-weight: 800; line-height: 1.15; }
+.mx-mid { font-size: 38px; font-weight: 700; line-height: 1.25; }
+.mx-note { font-size: 22px; color: #94a3b8; }
+
+.mx-stat b { display: block; font-family: 'Syne', sans-serif; font-size: 96px; line-height: 1; color: #22d3ee; }
+.mx-stat span { font-size: 28px; color: #cbd5e1; }
+
+.mx-chip { font-size: 25px; font-weight: 700; padding: 10px 22px; border-radius: 999px; background: rgba(34, 211, 238, .12); border: 1px solid rgba(34, 211, 238, .45); white-space: nowrap; }
+
+.mx-card { font-size: 26px; line-height: 1.35; padding: 20px 26px; border-radius: 16px; background: rgba(255, 255, 255, .07); border: 1px solid rgba(255, 255, 255, .2); }
+.mx-card b { color: #f8fafc; }
+.mx-card.bad { border-color: #f87171; background: rgba(248, 113, 113, .1); }
+.mx-card.bad b { color: #f87171; }
+.mx-card.tall { height: 320px; font-size: 23px; color: #cbd5e1; }
+.mx-card.tall b { display: block; font-size: 28px; line-height: 1.2; margin: 12px 0 10px; color: #f8fafc; }
+.mx-card.tall i, .mx-risk i, .mx-req i { font-style: normal; font-family: 'Syne', sans-serif; font-weight: 800; color: #d4af37; }
+.mx-card.tall i { font-size: 44px; }
+.mx-card.hot { border-color: #22d3ee; background: rgba(34, 211, 238, .1); }
+
+.mx-risk { font-size: 32px; font-weight: 700; width: 540px; padding: 12px 22px; border-radius: 12px; background: rgba(248, 113, 113, .1); border-left: 5px solid #f87171; }
+.mx-risk i { margin-right: 16px; }
+
+.mx-req { font-size: 27px; font-weight: 700; width: 540px; padding: 14px 22px; border-radius: 12px; background: rgba(255, 255, 255, .07); border-left: 5px solid #22d3ee; }
+.mx-req i { margin-right: 16px; }
+
+.mx-verb { font-family: 'Syne', sans-serif; font-size: 52px; font-weight: 800; width: 560px; }
+.mx-verb i { font-style: normal; font-size: 22px; color: #d4af37; margin-right: 16px; vertical-align: middle; }
+
+.mx-q { font-size: 44px; font-weight: 700; }
+.mx-brand { font-size: 26px; color: #94a3b8; padding: 26px 30px; border-radius: 16px; border: 1px solid #d4af37; background: rgba(212, 175, 55, .08); }
+.mx-brand b { display: block; font-family: 'Syne', sans-serif; font-size: 34px; color: #d4af37; margin-bottom: 8px; }
+
+.mx-sub { position: absolute; left: 6%; right: 6%; bottom: 4%; text-align: center; font-size: max(11px, 2.1cqw); line-height: 1.35; color: #fff; background: rgba(0, 0, 0, .62); padding: .45em .9em; border-radius: 10px; opacity: 0; transition: opacity .2s; pointer-events: none; }
+.mx.nocc .mx-sub, .mx:not(.started) .mx-sub { display: none; }
+
+.mx-start { position: absolute; inset: 0; width: 100%; border: 0; background: rgba(5, 13, 31, .45); color: #fff; font: 700 1.05rem 'Space Grotesk', sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; gap: .9rem; padding-bottom: 7%; cursor: pointer; transition: opacity .3s; }
+.mx-start span.mx-play { width: 72px; height: 72px; border-radius: 50%; background: #06b6d4; display: grid; place-items: center; font-size: 1.8rem; color: #04202a; box-shadow: 0 6px 24px rgba(6, 182, 212, .5); }
+.mx-start:hover span.mx-play, .mx-start:focus-visible span.mx-play { transform: scale(1.08); }
+.mx.started .mx-start { opacity: 0; pointer-events: none; }
+
+.mx-ctrl { display: flex; align-items: center; gap: .75rem; margin-top: .6rem; color: rgba(255, 255, 255, .75); font-size: .85rem; }
+.mx-ctrl button { border: 1px solid rgba(6, 182, 212, .4); background: rgba(6, 182, 212, .12); color: #06b6d4; border-radius: 8px; padding: .35rem .7rem; font: inherit; font-weight: 700; cursor: pointer; }
+.mx-ctrl button[aria-pressed="false"] { opacity: .55; }
+.mx-ctrl input[type=range] { flex: 1; accent-color: #06b6d4; min-width: 0; }
+.mx-ctrl .mx-time { font-variant-numeric: tabular-nums; white-space: nowrap; }
+
+.mx-transcript { margin-top: 1rem; font-size: .92rem; line-height: 1.65; color: rgba(255, 255, 255, .75); }
+.mx-transcript summary { cursor: pointer; color: #06b6d4; font-weight: 700; }
+.mx-transcript ol { margin: .8rem 0 0; padding-left: 1.2rem; }
+
+@media (prefers-reduced-motion: reduce) { .mx-start span.mx-play { transition: none; } }
+
+.mx-start[hidden], .mx-ctrl[hidden] { display: none; }

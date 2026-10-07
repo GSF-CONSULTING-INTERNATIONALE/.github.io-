@@ -1,0 +1,86 @@
+{%- comment -%}
+  Motion design commenté (animation HTML + voix-off + sous-titres), responsive 16:9.
+  Remplace l'infographie classique d'un article.
+
+  Usage :
+    {% include motion-design.html src="/uploads/motion/lakana-360" title="Titre de l'animation" %}
+
+  Paramètres :
+    src     : dossier contenant scenes.html, timeline.json et voix.mp3 (obligatoire)
+    title   : titre lu par les lecteurs d'écran (obligatoire)
+    caption : légende affichée sous l'animation (optionnel)
+    label   : texte du bouton de lecture (optionnel)
+
+  Sources et régénération de la voix : _motion-src/<nom>/ (voir README.md de ce dossier).
+  Rien n'est chargé tant que le visiteur ne clique pas sur « Lecture » (audio preload="none").
+  Sans JavaScript, le lecteur audio natif et la transcription restent disponibles.
+{%- endcomment -%}
+{%- assign mx_src = include.src | strip | remove_first: "/" | prepend: "/" | relative_url -%}
+<figure class="mx" data-mx data-src="{{ mx_src }}">
+<div class="mx-frame" role="group" aria-label="{{ include.title | strip_html | escape }}">
+<div class="mx-canvas" aria-hidden="true"></div>
+<div class="mx-sub" aria-hidden="true"></div>
+<button type="button" class="mx-start" hidden aria-label="Lancer : {{ include.title | strip_html | escape }}"><span class="mx-play" aria-hidden="true">▶</span>{{ include.label | default: "Lancer l’animation commentée" }}</button>
+</div>
+<div class="mx-ctrl" hidden>
+<button type="button" class="mx-pp" aria-label="Lecture">▶</button>
+<input type="range" class="mx-seek" min="0" max="1000" value="0" step="1" aria-label="Position dans l’animation">
+<span class="mx-time" aria-hidden="true">0:00</span>
+<button type="button" class="mx-cc" aria-pressed="true" aria-label="Sous-titres">CC</button>
+</div>
+<noscript><audio controls preload="none" src="{{ mx_src }}/voix.mp3" style="width:100%"></audio></noscript>
+{%- if include.caption %}
+<figcaption class="video-caption" markdown="span">{{ include.caption }}</figcaption>
+{%- endif %}
+<audio class="mx-audio" preload="none" src="{{ mx_src }}/voix.mp3"></audio>
+</figure>
+<script>
+(function(){
+  if(window.__mxInit){window.__mxInit();return;}
+  var clamp=function(x){return Math.max(0,Math.min(1,x))}, ease=function(x){return 1-Math.pow(1-x,3)};
+  var still=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var fmt=function(t){t=Math.max(0,t|0);return (t/60|0)+':'+('0'+t%60).slice(-2)};
+  function setup(root){
+    if(root.__mx) return; root.__mx=1;
+    var src=root.dataset.src, canvas=root.querySelector('.mx-canvas'), frame=root.querySelector('.mx-frame'),
+        sub=root.querySelector('.mx-sub'), start=root.querySelector('.mx-start'), ctrl=root.querySelector('.mx-ctrl'),
+        pp=root.querySelector('.mx-pp'), seekEl=root.querySelector('.mx-seek'), time=root.querySelector('.mx-time'),
+        cc=root.querySelector('.mx-cc'), audio=root.querySelector('.mx-audio'), noscript=root.querySelector('noscript');
+    Promise.all([fetch(src+'/scenes.html').then(function(r){return r.text()}), fetch(src+'/timeline.json').then(function(r){return r.json()})]).then(function(res){
+      var T=res[1]; canvas.innerHTML=res[0];
+      var scenes=[].slice.call(canvas.querySelectorAll('.mx-scene')).map(function(el,i){
+        var d=T.scenes[i]; return {el:el,s:d.s,e:d.e,els:[].slice.call(el.querySelectorAll('.mx-el')).map(function(x){
+          return {el:x,at:T.cues[+x.dataset.cue].s+(+x.dataset.d||0)};})};});
+      start.hidden=false; ctrl.hidden=false; if(noscript) noscript.remove();
+      var fit=function(){canvas.style.transform='scale('+(frame.clientWidth/1280)+')'};
+      fit(); if(window.ResizeObserver) new ResizeObserver(fit).observe(frame); else addEventListener('resize',fit);
+      function seek(t){
+        scenes.forEach(function(sc){
+          var inside=t>=sc.s&&t<sc.e;
+          sc.el.style.opacity=inside?Math.min(clamp((t-sc.s)/.45),clamp((sc.e-t)/.45)):0;
+          if(!inside) return;
+          sc.els.forEach(function(o){var p=ease(clamp((t-o.at)/(still?.01:.6)));
+            o.el.style.opacity=p; o.el.style.transform=still?'none':'translateY('+((1-p)*22)+'px)';});
+        });
+        var c=null; for(var i=0;i<T.cues.length;i++){if(t>=T.cues[i].s&&t<T.cues[i].e+.25){c=T.cues[i];break;}}
+        sub.textContent=c?c.t:''; sub.style.opacity=c?1:0;
+        seekEl.value=Math.round(t/T.total*1000); time.textContent=fmt(t)+' / '+fmt(T.total);
+      }
+      var raf=0, begun=false;
+      function loop(){seek(audio.currentTime); raf=requestAnimationFrame(loop)}
+      function setBtn(playing){pp.textContent=playing?'❚❚':'▶'; pp.setAttribute('aria-label',playing?'Pause':'Lecture')}
+      audio.addEventListener('play',function(){begun=true;root.classList.add('started');setBtn(true);cancelAnimationFrame(raf);loop()});
+      audio.addEventListener('pause',function(){setBtn(false);cancelAnimationFrame(raf);seek(audio.currentTime)});
+      audio.addEventListener('ended',function(){setBtn(false);cancelAnimationFrame(raf);seek(T.total-.01)});
+      function toggle(){if(audio.paused){if(audio.ended||audio.currentTime>=T.total-.1) audio.currentTime=0; audio.play().catch(function(){})} else audio.pause()}
+      start.addEventListener('click',toggle); pp.addEventListener('click',toggle);
+      seekEl.addEventListener('input',function(){var t=seekEl.value/1000*T.total; if(!begun){begun=true;root.classList.add('started')} audio.currentTime=t; seek(t)});
+      cc.addEventListener('click',function(){var on=root.classList.toggle('nocc')===false; cc.setAttribute('aria-pressed',on)});
+      seek(Math.min(T.scenes[0].e-.6,T.cues[0].s+3.5)); /* image d'accueil : titre visible */
+    }).catch(function(){root.querySelector('.mx-frame').hidden=true; root.querySelector('.mx-ctrl').hidden=true;
+      var a=root.querySelector('.mx-audio'); a.controls=true; a.style.width='100%'; });
+  }
+  window.__mxInit=function(){[].forEach.call(document.querySelectorAll('[data-mx]'),setup)};
+  window.__mxInit();
+})();
+</script>
