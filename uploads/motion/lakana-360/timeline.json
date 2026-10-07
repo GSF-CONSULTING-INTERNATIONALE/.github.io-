@@ -1,0 +1,162 @@
+{
+ "total": 154.96,
+ "scenes": [
+  {
+   "s": 0.0,
+   "e": 18.77,
+   "first": 0
+  },
+  {
+   "s": 18.77,
+   "e": 42.8,
+   "first": 2
+  },
+  {
+   "s": 42.8,
+   "e": 52.69,
+   "first": 5
+  },
+  {
+   "s": 52.69,
+   "e": 74.72,
+   "first": 6
+  },
+  {
+   "s": 74.72,
+   "e": 99.84,
+   "first": 10
+  },
+  {
+   "s": 99.84,
+   "e": 119.73,
+   "first": 13
+  },
+  {
+   "s": 119.73,
+   "e": 132.83,
+   "first": 16
+  },
+  {
+   "s": 132.83,
+   "e": 139.21,
+   "first": 18
+  },
+  {
+   "s": 139.21,
+   "e": 154.96,
+   "first": 19
+  }
+ ],
+ "cues": [
+  {
+   "s": 0.8,
+   "e": 11.65,
+   "t": "Septembre 2026 : dans un rapport sur les usages malveillants de l'IA, Anthropic décrit une plateforme de surveillance baptisée Lakana 360."
+  },
+  {
+   "s": 12.1,
+   "e": 18.32,
+   "t": "Selon ce rapport, elle aurait été conçue pour le service de renseignement de l'État malien, avec l'assistance de Claude."
+  },
+  {
+   "s": 19.22,
+   "e": 24.73,
+   "t": "Elle traiterait les données des trois opérateurs mobiles du pays, soit environ 25 millions de cartes SIM."
+  },
+  {
+   "s": 25.18,
+   "e": 33.05,
+   "t": "Appels, messages, voix, localisation : le rapport évoque aussi la détection des VPN et le rapprochement avec des registres biométriques."
+  },
+  {
+   "s": 33.5,
+   "e": 42.35,
+   "t": "Surtout, la génération d'un dossier sur un numéro n'exigerait pas systématiquement de procédure judiciaire, et certaines données seraient conservées sans limite de durée."
+  },
+  {
+   "s": 43.25,
+   "e": 52.24,
+   "t": "Attention : ce sont des faits rapportés par un fournisseur d'IA, non des constatations judiciaires définitives. Ils appellent des sources indépendantes."
+  },
+  {
+   "s": 53.14,
+   "e": 57.88,
+   "t": "Une infrastructure nationale n'est pas forcément souveraine. Il faut distinguer trois notions."
+  },
+  {
+   "s": 58.33,
+   "e": 61.17,
+   "t": "La localisation technique : où le système est hébergé."
+  },
+  {
+   "s": 61.62,
+   "e": 66.72,
+   "t": "La souveraineté numérique : maîtriser les infrastructures, les données, les prestataires et les accès."
+  },
+  {
+   "s": 67.17,
+   "e": 74.27,
+   "t": "La souveraineté cognitive : comprendre, contrôler et contester les mécanismes algorithmiques qui influencent une décision."
+  },
+  {
+   "s": 75.17,
+   "e": 81.46,
+   "t": "L'IA transforme des volumes de données en alertes et en profils. Cinq risques en découlent."
+  },
+  {
+   "s": 81.91,
+   "e": 89.87,
+   "t": "Le faux positif : une alerte n'est pas une preuve. Le profilage généralisé : des personnes non suspectées deviennent des objets d'analyse permanents."
+  },
+  {
+   "s": 90.32,
+   "e": 99.39,
+   "t": "Le contournement judiciaire, l'opacité institutionnelle, et la dépendance critique : suspendre un compte ne neutralise pas un logiciel déjà déployé localement."
+  },
+  {
+   "s": 100.29,
+   "e": 104.7,
+   "t": "Une IA de surveillance légitime suppose un cadre minimal."
+  },
+  {
+   "s": 105.15,
+   "e": 112.51,
+   "t": "Une finalité légale précise, une autorisation indépendante, une séparation des pouvoirs techniques, une journalisation inviolable."
+  },
+  {
+   "s": 112.96,
+   "e": 119.28,
+   "t": "Une conservation limitée, un audit indépendant, un recours effectif, et un arrêt d'urgence réellement indépendant."
+  },
+  {
+   "s": 120.18,
+   "e": 128.07,
+   "t": "Les banques et les fintechs sont concernées : KYC, détection de fraude et lutte contre le blanchiment croisent elles aussi des données et produisent des scores."
+  },
+  {
+   "s": 128.52,
+   "e": 132.38,
+   "t": "Une alerte n'est pas une condamnation. Un score de risque n'est pas une preuve."
+  },
+  {
+   "s": 133.28,
+   "e": 138.76,
+   "t": "La doctrine tient en six verbes : localiser, sécuriser, tracer, limiter, auditer, responsabiliser."
+  },
+  {
+   "s": 139.66,
+   "e": 145.02,
+   "t": "La souveraineté ne se mesure pas à la puissance de surveillance, mais à la capacité de la gouverner."
+  },
+  {
+   "s": 145.47,
+   "e": 149.31,
+   "t": "Qui autorise ? Qui vérifie ? Qui peut l'arrêter ? Et qui répond des conséquences ?"
+  },
+  {
+   "s": 149.76,
+   "e": 153.36,
+   "t": "Analyse complète de GSF Consulting International."
+  }
+ ]
+}

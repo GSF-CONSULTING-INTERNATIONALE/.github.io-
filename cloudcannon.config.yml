@@ -143,3 +143,31 @@ _snippets:
       start:
         type: number
         label: "Démarrer à (secondes)"
+
+  motion_gsf:
+    template: jekyll_include
+    inline: false
+    definitions:
+      include: motion-design.html
+    preview:
+      text:
+        - key: title
+        - "Motion design"
+      subtext:
+        - key: src
+      icon: slideshow
+    _inputs:
+      src:
+        type: text
+        label: "Dossier de l'animation"
+        comment: "Ex. /uploads/motion/lakana-360 — doit contenir scenes.html, timeline.json et voix.mp3."
+      title:
+        type: text
+        label: "Titre de l'animation"
+        comment: "Obligatoire : lu par les lecteurs d'écran."
+      caption:
+        type: textarea
+        label: "Légende"
+      label:
+        type: text
+        label: "Texte du bouton de lecture"
